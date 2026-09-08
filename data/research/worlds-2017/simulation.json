@@ -1,0 +1,699 @@
+{
+  "seed": 201718,
+  "runs": 10000,
+  "balance": {
+    "playerWeight": 0.8,
+    "compositionWeight": 0.2,
+    "probabilityScale": 6,
+    "minProbability": 0.08,
+    "maxProbability": 0.92,
+    "compositionBase": 62,
+    "mixedDamage": 8,
+    "frontline": 6,
+    "engage": 5,
+    "peel": 4,
+    "synergy": 6,
+    "synergyThreshold": 3
+  },
+  "policy": "Uniform independent selection from the three options per role; complete production simulation including recap RNG.",
+  "comparisons": [
+    {
+      "playerId": "huni-2017-skt",
+      "player": "Huni",
+      "role": "TOP",
+      "g1": 87,
+      "bo3": 87.66666666666667,
+      "bo5": 86.8,
+      "sd": 1.16619037896906,
+      "strongest": [
+        "Jayce",
+        "Trundle"
+      ],
+      "weakest": [
+        "Camille"
+      ]
+    },
+    {
+      "playerId": "peanut-2017-skt",
+      "player": "Peanut",
+      "role": "JUNGLE",
+      "g1": 84,
+      "bo3": 82.66666666666667,
+      "bo5": 82,
+      "sd": 1.2649110640673518,
+      "strongest": [
+        "JarvanIV"
+      ],
+      "weakest": [
+        "Gragas",
+        "Elise",
+        "RekSai"
+      ]
+    },
+    {
+      "playerId": "faker-2017-skt",
+      "player": "Faker",
+      "role": "MID",
+      "g1": 86,
+      "bo3": 86.66666666666667,
+      "bo5": 87,
+      "sd": 1.0954451150103321,
+      "strongest": [
+        "Galio"
+      ],
+      "weakest": [
+        "Cassiopeia",
+        "Taliyah"
+      ]
+    },
+    {
+      "playerId": "bang-2017-skt",
+      "player": "Bang",
+      "role": "ADC",
+      "g1": 83,
+      "bo3": 83,
+      "bo5": 83,
+      "sd": 1.2649110640673518,
+      "strongest": [
+        "Twitch"
+      ],
+      "weakest": [
+        "Varus"
+      ]
+    },
+    {
+      "playerId": "wolf-2017-skt",
+      "player": "Wolf",
+      "role": "SUPPORT",
+      "g1": 84,
+      "bo3": 83.33333333333333,
+      "bo5": 83,
+      "sd": 0.6324555320336759,
+      "strongest": [
+        "Janna"
+      ],
+      "weakest": [
+        "Leona"
+      ]
+    },
+    {
+      "playerId": "cuvee-2017-ssg",
+      "player": "CuVee",
+      "role": "TOP",
+      "g1": 91,
+      "bo3": 90.66666666666667,
+      "bo5": 91,
+      "sd": 1.0954451150103321,
+      "strongest": [
+        "Kennen",
+        "Shen"
+      ],
+      "weakest": [
+        "Maokai"
+      ]
+    },
+    {
+      "playerId": "ambition-2017-ssg",
+      "player": "Ambition",
+      "role": "JUNGLE",
+      "g1": 87,
+      "bo3": 87.33333333333333,
+      "bo5": 86.6,
+      "sd": 1.019803902718557,
+      "strongest": [
+        "Khazix"
+      ],
+      "weakest": [
+        "LeeSin"
+      ]
+    },
+    {
+      "playerId": "crown-2017-ssg",
+      "player": "Crown",
+      "role": "MID",
+      "g1": 87,
+      "bo3": 84.66666666666667,
+      "bo5": 84.8,
+      "sd": 1.3266499161421599,
+      "strongest": [
+        "Taliyah"
+      ],
+      "weakest": [
+        "Ryze"
+      ]
+    },
+    {
+      "playerId": "ruler-2017-ssg",
+      "player": "Ruler",
+      "role": "ADC",
+      "g1": 88,
+      "bo3": 86.66666666666667,
+      "bo5": 86.8,
+      "sd": 1.16619037896906,
+      "strongest": [
+        "Varus",
+        "Xayah"
+      ],
+      "weakest": [
+        "Twitch"
+      ]
+    },
+    {
+      "playerId": "corejj-2017-ssg",
+      "player": "CoreJJ",
+      "role": "SUPPORT",
+      "g1": 91,
+      "bo3": 90,
+      "bo5": 89.8,
+      "sd": 1.4696938456699067,
+      "strongest": [
+        "Taric",
+        "Lulu",
+        "Janna"
+      ],
+      "weakest": [
+        "Rakan",
+        "Braum"
+      ]
+    },
+    {
+      "playerId": "khan-2017-lz",
+      "player": "Khan",
+      "role": "TOP",
+      "g1": 90,
+      "bo3": 88.33333333333333,
+      "bo5": 87.6,
+      "sd": 1.3564659966250536,
+      "strongest": [
+        "JarvanIV"
+      ],
+      "weakest": [
+        "Jax"
+      ]
+    },
+    {
+      "playerId": "cuzz-2017-lz",
+      "player": "Cuzz",
+      "role": "JUNGLE",
+      "g1": 84,
+      "bo3": 85.66666666666667,
+      "bo5": 85.4,
+      "sd": 1.9595917942265422,
+      "strongest": [
+        "Gragas"
+      ],
+      "weakest": [
+        "Khazix",
+        "Sejuani",
+        "Elise"
+      ]
+    },
+    {
+      "playerId": "bdd-2017-lz",
+      "player": "Bdd",
+      "role": "MID",
+      "g1": 91,
+      "bo3": 90.33333333333333,
+      "bo5": 89.6,
+      "sd": 1.2,
+      "strongest": [
+        "Taliyah",
+        "Ryze"
+      ],
+      "weakest": [
+        "Orianna"
+      ]
+    },
+    {
+      "playerId": "pray-2017-lz",
+      "player": "PraY",
+      "role": "ADC",
+      "g1": 88,
+      "bo3": 88.66666666666667,
+      "bo5": 88.2,
+      "sd": 0.9797958971132712,
+      "strongest": [
+        "Varus"
+      ],
+      "weakest": [
+        "KogMaw"
+      ]
+    },
+    {
+      "playerId": "gorilla-2017-lz",
+      "player": "GorillA",
+      "role": "SUPPORT",
+      "g1": 87,
+      "bo3": 88.66666666666667,
+      "bo5": 88.4,
+      "sd": 1.019803902718557,
+      "strongest": [
+        "Rakan"
+      ],
+      "weakest": [
+        "Karma"
+      ]
+    }
+  ],
+  "dominance": [
+    {
+      "playerId": "huni-2017-skt",
+      "dominates": []
+    },
+    {
+      "playerId": "peanut-2017-skt",
+      "dominates": []
+    },
+    {
+      "playerId": "faker-2017-skt",
+      "dominates": []
+    },
+    {
+      "playerId": "bang-2017-skt",
+      "dominates": []
+    },
+    {
+      "playerId": "wolf-2017-skt",
+      "dominates": []
+    },
+    {
+      "playerId": "cuvee-2017-ssg",
+      "dominates": [
+        "huni-2017-skt",
+        "khan-2017-lz"
+      ]
+    },
+    {
+      "playerId": "ambition-2017-ssg",
+      "dominates": [
+        "peanut-2017-skt",
+        "cuzz-2017-lz"
+      ]
+    },
+    {
+      "playerId": "crown-2017-ssg",
+      "dominates": []
+    },
+    {
+      "playerId": "ruler-2017-ssg",
+      "dominates": [
+        "bang-2017-skt"
+      ]
+    },
+    {
+      "playerId": "corejj-2017-ssg",
+      "dominates": [
+        "wolf-2017-skt",
+        "gorilla-2017-lz"
+      ]
+    },
+    {
+      "playerId": "khan-2017-lz",
+      "dominates": [
+        "huni-2017-skt"
+      ]
+    },
+    {
+      "playerId": "cuzz-2017-lz",
+      "dominates": [
+        "peanut-2017-skt"
+      ]
+    },
+    {
+      "playerId": "bdd-2017-lz",
+      "dominates": [
+        "faker-2017-skt",
+        "crown-2017-ssg"
+      ]
+    },
+    {
+      "playerId": "pray-2017-lz",
+      "dominates": [
+        "bang-2017-skt",
+        "ruler-2017-ssg"
+      ]
+    },
+    {
+      "playerId": "gorilla-2017-lz",
+      "dominates": [
+        "wolf-2017-skt"
+      ]
+    }
+  ],
+  "compositionContexts": [
+    {
+      "playerId": "huni-2017-skt",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "cuvee-2017-ssg",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 53,
+        "bo3": 39,
+        "bo5": 78
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 6,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "khan-2017-lz",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 28,
+        "bo3": 36,
+        "bo5": 3
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 6,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "peanut-2017-skt",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 9,
+        "bo3": 3,
+        "bo5": 0
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "ambition-2017-ssg",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 72,
+        "bo3": 63,
+        "bo5": 65
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 4
+      }
+    },
+    {
+      "playerId": "cuzz-2017-lz",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 0,
+        "bo3": 15,
+        "bo5": 12
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 4
+      }
+    },
+    {
+      "playerId": "faker-2017-skt",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 36,
+        "bo3": 6,
+        "bo5": 24
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "crown-2017-ssg",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "bdd-2017-lz",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 45,
+        "bo3": 75,
+        "bo5": 57
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "bang-2017-skt",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "ruler-2017-ssg",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 4
+      },
+      "tiedBest": {
+        "g1": 63,
+        "bo3": 0,
+        "bo5": 2
+      }
+    },
+    {
+      "playerId": "pray-2017-lz",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 18,
+        "bo3": 81,
+        "bo5": 75
+      },
+      "tiedBest": {
+        "g1": 63,
+        "bo3": 0,
+        "bo5": 2
+      }
+    },
+    {
+      "playerId": "wolf-2017-skt",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 0
+      }
+    },
+    {
+      "playerId": "corejj-2017-ssg",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 81,
+        "bo3": 81,
+        "bo5": 57
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 3
+      }
+    },
+    {
+      "playerId": "gorilla-2017-lz",
+      "contexts": 81,
+      "strictBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 21
+      },
+      "tiedBest": {
+        "g1": 0,
+        "bo3": 0,
+        "bo5": 3
+      }
+    }
+  ],
+  "averageByGame": [
+    86.76182000000104,
+    87.83009000000114,
+    86.16610999999762,
+    86.29065999999946,
+    85.99734999999984
+  ],
+  "averageG1": 86.76182000000104,
+  "averageBO3": 86.91933999999992,
+  "averageBO5": 86.60920599999982,
+  "averageActuallyPlayed": 86.94511829156193,
+  "championshipRate": 0.0659,
+  "binomial95HalfWidth": 0.004862901408665407,
+  "outcomes": {
+    "Eliminado no Suíço": 5197,
+    "Quartas de final": 2417,
+    "Semifinalista": 1122,
+    "Campeão mundial": 659,
+    "Vice-campeão": 605
+  },
+  "seriesTotal": 49681,
+  "gamesTotal": 100303,
+  "players": [
+    {
+      "playerId": "huni-2017-skt",
+      "offered": 10000,
+      "selected": 3370,
+      "appearanceRate": 0.337,
+      "championshipsWhenSelected": 158,
+      "conditionalTitleRate": 0.04688427299703264
+    },
+    {
+      "playerId": "peanut-2017-skt",
+      "offered": 10000,
+      "selected": 3342,
+      "appearanceRate": 0.3342,
+      "championshipsWhenSelected": 159,
+      "conditionalTitleRate": 0.04757630161579892
+    },
+    {
+      "playerId": "faker-2017-skt",
+      "offered": 10000,
+      "selected": 3358,
+      "appearanceRate": 0.3358,
+      "championshipsWhenSelected": 236,
+      "conditionalTitleRate": 0.07027992852888625
+    },
+    {
+      "playerId": "bang-2017-skt",
+      "offered": 10000,
+      "selected": 3329,
+      "appearanceRate": 0.3329,
+      "championshipsWhenSelected": 155,
+      "conditionalTitleRate": 0.04656052868729348
+    },
+    {
+      "playerId": "wolf-2017-skt",
+      "offered": 10000,
+      "selected": 3313,
+      "appearanceRate": 0.3313,
+      "championshipsWhenSelected": 124,
+      "conditionalTitleRate": 0.03742831270751585
+    },
+    {
+      "playerId": "cuvee-2017-ssg",
+      "offered": 10000,
+      "selected": 3316,
+      "appearanceRate": 0.3316,
+      "championshipsWhenSelected": 252,
+      "conditionalTitleRate": 0.07599517490952955
+    },
+    {
+      "playerId": "ambition-2017-ssg",
+      "offered": 10000,
+      "selected": 3295,
+      "appearanceRate": 0.3295,
+      "championshipsWhenSelected": 273,
+      "conditionalTitleRate": 0.08285280728376328
+    },
+    {
+      "playerId": "crown-2017-ssg",
+      "offered": 10000,
+      "selected": 3284,
+      "appearanceRate": 0.3284,
+      "championshipsWhenSelected": 144,
+      "conditionalTitleRate": 0.0438489646772229
+    },
+    {
+      "playerId": "ruler-2017-ssg",
+      "offered": 10000,
+      "selected": 3315,
+      "appearanceRate": 0.3315,
+      "championshipsWhenSelected": 247,
+      "conditionalTitleRate": 0.07450980392156863
+    },
+    {
+      "playerId": "corejj-2017-ssg",
+      "offered": 10000,
+      "selected": 3357,
+      "appearanceRate": 0.3357,
+      "championshipsWhenSelected": 288,
+      "conditionalTitleRate": 0.08579088471849866
+    },
+    {
+      "playerId": "khan-2017-lz",
+      "offered": 10000,
+      "selected": 3314,
+      "appearanceRate": 0.3314,
+      "championshipsWhenSelected": 249,
+      "conditionalTitleRate": 0.07513578756789378
+    },
+    {
+      "playerId": "cuzz-2017-lz",
+      "offered": 10000,
+      "selected": 3363,
+      "appearanceRate": 0.3363,
+      "championshipsWhenSelected": 227,
+      "conditionalTitleRate": 0.06749925661611657
+    },
+    {
+      "playerId": "bdd-2017-lz",
+      "offered": 10000,
+      "selected": 3358,
+      "appearanceRate": 0.3358,
+      "championshipsWhenSelected": 279,
+      "conditionalTitleRate": 0.08308516974389518
+    },
+    {
+      "playerId": "pray-2017-lz",
+      "offered": 10000,
+      "selected": 3356,
+      "appearanceRate": 0.3356,
+      "championshipsWhenSelected": 257,
+      "conditionalTitleRate": 0.0765792610250298
+    },
+    {
+      "playerId": "gorilla-2017-lz",
+      "offered": 10000,
+      "selected": 3330,
+      "appearanceRate": 0.333,
+      "championshipsWhenSelected": 247,
+      "conditionalTitleRate": 0.07417417417417417
+    }
+  ]
+}

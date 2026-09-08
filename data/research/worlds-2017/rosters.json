@@ -1,0 +1,164 @@
+[
+  {
+    "player": "Huni",
+    "team": "SKT",
+    "role": "TOP",
+    "playable": true,
+    "games": 19,
+    "wins": 11,
+    "sourceId": "golgg-Huni"
+  },
+  {
+    "player": "Peanut",
+    "team": "SKT",
+    "role": "JUNGLE",
+    "playable": true,
+    "games": 10,
+    "wins": 6,
+    "sourceId": "golgg-Peanut"
+  },
+  {
+    "player": "Blank",
+    "team": "SKT",
+    "role": "JUNGLE",
+    "playable": false,
+    "games": 9,
+    "wins": 5,
+    "sourceId": "golgg-Blank"
+  },
+  {
+    "player": "Faker",
+    "team": "SKT",
+    "role": "MID",
+    "playable": true,
+    "games": 19,
+    "wins": 11,
+    "sourceId": "golgg-Faker"
+  },
+  {
+    "player": "Bang",
+    "team": "SKT",
+    "role": "ADC",
+    "playable": true,
+    "games": 19,
+    "wins": 11,
+    "sourceId": "golgg-Bang"
+  },
+  {
+    "player": "Wolf",
+    "team": "SKT",
+    "role": "SUPPORT",
+    "playable": true,
+    "games": 19,
+    "wins": 11,
+    "sourceId": "golgg-Wolf"
+  },
+  {
+    "player": "CuVee",
+    "team": "SSG",
+    "role": "TOP",
+    "playable": true,
+    "games": 16,
+    "wins": 13,
+    "sourceId": "golgg-CuVee"
+  },
+  {
+    "player": "Ambition",
+    "team": "SSG",
+    "role": "JUNGLE",
+    "playable": true,
+    "games": 15,
+    "wins": 12,
+    "sourceId": "golgg-Ambition"
+  },
+  {
+    "player": "Haru",
+    "team": "SSG",
+    "role": "JUNGLE",
+    "playable": false,
+    "games": 1,
+    "wins": 1,
+    "sourceId": "golgg-Haru"
+  },
+  {
+    "player": "Crown",
+    "team": "SSG",
+    "role": "MID",
+    "playable": true,
+    "games": 16,
+    "wins": 13,
+    "sourceId": "golgg-Crown"
+  },
+  {
+    "player": "Ruler",
+    "team": "SSG",
+    "role": "ADC",
+    "playable": true,
+    "games": 16,
+    "wins": 13,
+    "sourceId": "golgg-Ruler"
+  },
+  {
+    "player": "CoreJJ",
+    "team": "SSG",
+    "role": "SUPPORT",
+    "playable": true,
+    "games": 16,
+    "wins": 13,
+    "sourceId": "golgg-CoreJJ"
+  },
+  {
+    "player": "Khan",
+    "team": "LZ",
+    "role": "TOP",
+    "playable": true,
+    "games": 8,
+    "wins": 5,
+    "sourceId": "golgg-Khan"
+  },
+  {
+    "player": "Rascal",
+    "team": "LZ",
+    "role": "TOP",
+    "playable": false,
+    "games": 1,
+    "wins": 1,
+    "sourceId": "golgg-Rascal"
+  },
+  {
+    "player": "Cuzz",
+    "team": "LZ",
+    "role": "JUNGLE",
+    "playable": true,
+    "games": 9,
+    "wins": 6,
+    "sourceId": "golgg-Cuzz"
+  },
+  {
+    "player": "Bdd",
+    "team": "LZ",
+    "role": "MID",
+    "playable": true,
+    "games": 9,
+    "wins": 6,
+    "sourceId": "golgg-Bdd"
+  },
+  {
+    "player": "PraY",
+    "team": "LZ",
+    "role": "ADC",
+    "playable": true,
+    "games": 9,
+    "wins": 6,
+    "sourceId": "golgg-PraY"
+  },
+  {
+    "player": "GorillA",
+    "team": "LZ",
+    "role": "SUPPORT",
+    "playable": true,
+    "games": 9,
+    "wins": 6,
+    "sourceId": "golgg-GorillA"
+  }
+]

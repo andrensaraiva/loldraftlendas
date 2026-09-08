@@ -1,0 +1,8 @@
+* text=auto
+# Research hashes cover exact source bytes, including their original line endings.
+data/research/** -text whitespace=cr-at-eol
+src/data/*.json -text whitespace=cr-at-eol
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary

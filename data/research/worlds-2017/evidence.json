@@ -1,0 +1,5969 @@
+{
+  "huni-2017-skt-g1": {
+    "playerId": "huni-2017-skt",
+    "player": "Huni",
+    "champion": "Cho'Gath",
+    "championId": "Chogath",
+    "role": "TOP",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 4,
+      "deaths": 8,
+      "assists": 16,
+      "kda": 2.5,
+      "kp": 0.7314814814814815,
+      "aggregateKp": 0.8,
+      "efficiency": 1.0242311048967065,
+      "firstAppearance": "2017-10-06 12:12:21",
+      "lastAppearance": "2017-10-20 08:54:33",
+      "stages": {
+        "groups": 2,
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380220",
+        "TRLH1/1002390407",
+        "TRLH3/1002300075"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 357.7733666666667,
+      "damageshare": 0.22146833333333332,
+      "golddiffat15": 20.333333333333332,
+      "csdiffat15": 6.333333333333333,
+      "xpdiffat15": -94.0,
+      "wpm": 0.3902,
+      "wcpm": 0.14763333333333334
+    },
+    "worldsGames": 3,
+    "performanceScore": 55.977385883744674,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 58.86800483962583,
+      "B": 57.784022731170396,
+      "C": 56.19514869490163,
+      "D": null
+    },
+    "score": 57.925085363689476,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 37.7718524950468,
+      "kp": 74.3240865426731,
+      "dpm": 30.111394341132925,
+      "damageshare": 76.29420031978324,
+      "golddiffat15": 71.70649281120497,
+      "csdiffat15": 83.71585231158693,
+      "xpdiffat15": 41.12121442594309
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 39.25361758573982,
+      "kp": 44.315392930423556,
+      "dpm": 79.67468919400571,
+      "damageshare": 91.34764014646169,
+      "golddiffat15": 72.88575555600175,
+      "csdiffat15": 63.93122657133324,
+      "xpdiffat15": 63.29023603458794
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Huni"
+    ],
+    "firstAppearance": "2017-10-06 12:12:21",
+    "selectionShare": 0.15789473684210525,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "huni-2017-skt-g2": {
+    "playerId": "huni-2017-skt",
+    "player": "Huni",
+    "champion": "Jayce",
+    "championId": "Jayce",
+    "role": "TOP",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 3,
+      "losses": 1,
+      "winRate": 0.75,
+      "kills": 13,
+      "deaths": 10,
+      "assists": 13,
+      "kda": 2.6,
+      "kp": 0.5492424242424243,
+      "aggregateKp": 0.5777777777777777,
+      "efficiency": 1.2098408933722216,
+      "firstAppearance": "2017-10-15 06:45:12",
+      "lastAppearance": "2017-10-20 11:47:31",
+      "stages": {
+        "groups": 1,
+        "quarters": 3
+      },
+      "gameIds": [
+        "TRLH1/1002380485",
+        "TRLH3/1002300059",
+        "TRLH3/1002300076",
+        "TRLH3/1002300079"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 621.556425,
+      "damageshare": 0.3424245,
+      "golddiffat15": 531.0,
+      "csdiffat15": 13.5,
+      "xpdiffat15": 272.5,
+      "wpm": 0.50805,
+      "wcpm": 0.2128
+    },
+    "worldsGames": 4,
+    "performanceScore": 73.04931296965546,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 58.86800483962583,
+      "B": 65.17080845297234,
+      "C": 64.88856845230502,
+      "D": null
+    },
+    "score": 62.92249118820096,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 60.39665675251739,
+      "kp": 29.157871857743668,
+      "dpm": 99.86501019683699,
+      "damageshare": 99.78440768973329,
+      "golddiffat15": 86.48204265233062,
+      "csdiffat15": 77.4395092768979,
+      "xpdiffat15": 79.02018378826308
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 39.25361758573982,
+      "kp": 44.315392930423556,
+      "dpm": 79.67468919400571,
+      "damageshare": 91.34764014646169,
+      "golddiffat15": 72.88575555600175,
+      "csdiffat15": 63.93122657133324,
+      "xpdiffat15": 63.29023603458794
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Huni"
+    ],
+    "firstAppearance": "2017-10-15 06:45:12",
+    "selectionShare": 0.21052631578947367,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "huni-2017-skt-g3": {
+    "playerId": "huni-2017-skt",
+    "player": "Huni",
+    "champion": "Trundle",
+    "championId": "Trundle",
+    "role": "TOP",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 8,
+      "deaths": 5,
+      "assists": 26,
+      "kda": 6.8,
+      "kp": 0.8612179487179488,
+      "aggregateKp": 0.8717948717948718,
+      "efficiency": 1.6599313961912268,
+      "firstAppearance": "2017-10-15 08:36:55",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "groups": 1,
+        "quarters": 1,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380500",
+        "TRLH3/1002300078",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 407.86296666666664,
+      "damageshare": 0.190275,
+      "golddiffat15": 459.3333333333333,
+      "csdiffat15": 5.333333333333333,
+      "xpdiffat15": -45.666666666666664,
+      "wpm": 0.49956666666666666,
+      "wcpm": 0.16103333333333333
+    },
+    "worldsGames": 3,
+    "performanceScore": 78.44352892982502,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 58.86800483962583,
+      "B": 66.20882637345053,
+      "C": 56.19514869490163,
+      "D": null
+    },
+    "score": 62.13748718482955,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 95.13633106918608,
+      "kp": 93.43737859848886,
+      "dpm": 79.29399410952298,
+      "damageshare": 51.7031331269316,
+      "golddiffat15": 86.40692435771979,
+      "csdiffat15": 55.88843172726197,
+      "xpdiffat15": 50.29545117249399
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 39.25361758573982,
+      "kp": 44.315392930423556,
+      "dpm": 79.67468919400571,
+      "damageshare": 91.34764014646169,
+      "golddiffat15": 72.88575555600175,
+      "csdiffat15": 63.93122657133324,
+      "xpdiffat15": 63.29023603458794
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Huni"
+    ],
+    "firstAppearance": "2017-10-15 08:36:55",
+    "selectionShare": 0.15789473684210525,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "huni-2017-skt-g4": {
+    "playerId": "huni-2017-skt",
+    "player": "Huni",
+    "champion": "Camille",
+    "championId": "Camille",
+    "role": "TOP",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 5,
+      "deaths": 3,
+      "assists": 3,
+      "kda": 2.6666666666666665,
+      "kp": 0.26666666666666666,
+      "aggregateKp": 0.4444444444444444,
+      "efficiency": 0.6496414920651304,
+      "firstAppearance": "2017-10-28 08:43:03",
+      "lastAppearance": "2017-10-28 09:35:45",
+      "stages": {
+        "semis": 2
+      },
+      "gameIds": [
+        "TRLH1/1002410086",
+        "TRLH1/1002410088"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 377.63755000000003,
+      "damageshare": 0.2263465,
+      "golddiffat15": -108.5,
+      "csdiffat15": -9.5,
+      "xpdiffat15": -432.0,
+      "wpm": 0.46240000000000003,
+      "wcpm": 0.08635000000000001
+    },
+    "worldsGames": 2,
+    "performanceScore": 22.930775629346417,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 58.86800483962583,
+      "B": 48.60022506526029,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 51.78638624261603,
+    "rating": 85,
+    "normalizedMetrics": {
+      "efficiency": 7.049260993735363,
+      "kp": 0.7915215397043707,
+      "dpm": 46.032727639069364,
+      "damageshare": 70.7628971837022,
+      "golddiffat15": 34.054272064669576,
+      "csdiffat15": 13.190826606755135,
+      "xpdiffat15": 6.413098153503471
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 39.25361758573982,
+      "kp": 44.315392930423556,
+      "dpm": 79.67468919400571,
+      "damageshare": 91.34764014646169,
+      "golddiffat15": 72.88575555600175,
+      "csdiffat15": 63.93122657133324,
+      "xpdiffat15": 63.29023603458794
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Huni"
+    ],
+    "firstAppearance": "2017-10-28 08:43:03",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "huni-2017-skt-g5": {
+    "playerId": "huni-2017-skt",
+    "player": "Huni",
+    "champion": "Gnar",
+    "championId": "Gnar",
+    "role": "TOP",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 2,
+      "deaths": 3,
+      "assists": 9,
+      "kda": 3.6666666666666665,
+      "kp": 0.3851851851851852,
+      "aggregateKp": 0.5789473684210527,
+      "efficiency": 0.8796857765384195,
+      "firstAppearance": "2017-10-28 10:22:54",
+      "lastAppearance": "2017-11-04 06:52:19",
+      "stages": {
+        "semis": 2,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002410090",
+        "TRLH1/1002410092",
+        "TRLH3/1002320090"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 374.0657,
+      "damageshare": 0.267108,
+      "golddiffat15": 173.66666666666666,
+      "csdiffat15": -2.0,
+      "xpdiffat15": 307.6666666666667,
+      "wpm": 0.4759,
+      "wcpm": 0.08563333333333333
+    },
+    "worldsGames": 3,
+    "performanceScore": 35.161116327950275,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 58.86800483962583,
+      "B": 49.9779216477475,
+      "C": 56.19514869490163,
+      "D": null
+    },
+    "score": 54.02203482197804,
+    "rating": 86,
+    "normalizedMetrics": {
+      "efficiency": 22.38224152695466,
+      "kp": 5.144630201054729,
+      "dpm": 4.641180204130274,
+      "damageshare": 88.11331557197568,
+      "golddiffat15": 54.20655410517299,
+      "csdiffat15": 25.550042802492957,
+      "xpdiffat15": 86.00365432211049
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 39.25361758573982,
+      "kp": 44.315392930423556,
+      "dpm": 79.67468919400571,
+      "damageshare": 91.34764014646169,
+      "golddiffat15": 72.88575555600175,
+      "csdiffat15": 63.93122657133324,
+      "xpdiffat15": 63.29023603458794
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Huni"
+    ],
+    "firstAppearance": "2017-10-28 10:22:54",
+    "selectionShare": 0.15789473684210525,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "peanut-2017-skt-g1": {
+    "playerId": "peanut-2017-skt",
+    "player": "Peanut",
+    "champion": "Jarvan IV",
+    "championId": "JarvanIV",
+    "role": "JUNGLE",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 3,
+      "losses": 1,
+      "winRate": 0.75,
+      "kills": 9,
+      "deaths": 7,
+      "assists": 21,
+      "kda": 4.285714285714286,
+      "kp": 0.7458333333333333,
+      "aggregateKp": 0.7894736842105263,
+      "efficiency": 1.3853158862896067,
+      "firstAppearance": "2017-10-05 10:56:40",
+      "lastAppearance": "2017-10-28 11:23:39",
+      "stages": {
+        "groups": 2,
+        "quarters": 1,
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390223",
+        "TRLH1/1002380220",
+        "TRLH3/1002300075",
+        "TRLH1/1002410092"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 163.541375,
+      "damageshare": 0.1037931,
+      "golddiffat15": -204.75,
+      "csdiffat15": -12.0,
+      "xpdiffat15": -366.25,
+      "wpm": 0.902675,
+      "wcpm": 0.50535
+    },
+    "worldsGames": 4,
+    "performanceScore": 48.23366783626401,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 36.876792683997294,
+      "B": 41.92429275167139,
+      "C": 89.44271909999159,
+      "D": null
+    },
+    "score": 47.285431680233486,
+    "rating": 84,
+    "normalizedMetrics": {
+      "efficiency": 82.9749860254847,
+      "kp": 56.52033250616567,
+      "dpm": 15.852090825663346,
+      "damageshare": 29.532340423868252,
+      "golddiffat15": 15.429353549647102,
+      "xpdiffat15": 11.868738786962945
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 54.26207082692747,
+      "kp": 24.875281140252664,
+      "dpm": 21.903922874155278,
+      "damageshare": 46.343639458929474,
+      "golddiffat15": 9.917329903978779,
+      "xpdiffat15": 7.164507900546768
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Peanut"
+    ],
+    "firstAppearance": "2017-10-05 10:56:40",
+    "selectionShare": 0.4,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "peanut-2017-skt-g2": {
+    "playerId": "peanut-2017-skt",
+    "player": "Peanut",
+    "champion": "Sejuani",
+    "championId": "Sejuani",
+    "role": "JUNGLE",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 4,
+      "deaths": 2,
+      "assists": 17,
+      "kda": 10.5,
+      "kp": 0.8506944444444444,
+      "aggregateKp": 0.84,
+      "efficiency": 1.9691701568727598,
+      "firstAppearance": "2017-10-07 10:55:48",
+      "lastAppearance": "2017-10-20 05:14:54",
+      "stages": {
+        "groups": 1,
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390407",
+        "TRLH3/1002300059"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 226.46045,
+      "damageshare": 0.1180245,
+      "golddiffat15": -116.0,
+      "csdiffat15": -18.0,
+      "xpdiffat15": -377.0,
+      "wpm": 0.80785,
+      "wcpm": 0.4717
+    },
+    "worldsGames": 2,
+    "performanceScore": 66.57298884757347,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 36.876792683997294,
+      "B": 45.36142015930477,
+      "C": 63.245553203367585,
+      "D": null
+    },
+    "score": 45.07442049955658,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 99.86501019683699,
+      "kp": 91.84403085942469,
+      "dpm": 43.57653583944974,
+      "damageshare": 40.90114532645192,
+      "golddiffat15": 20.024786991318965,
+      "xpdiffat15": 4.367246541969982
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 54.26207082692747,
+      "kp": 24.875281140252664,
+      "dpm": 21.903922874155278,
+      "damageshare": 46.343639458929474,
+      "golddiffat15": 9.917329903978779,
+      "xpdiffat15": 7.164507900546768
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Peanut"
+    ],
+    "firstAppearance": "2017-10-07 10:55:48",
+    "selectionShare": 0.2,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "peanut-2017-skt-g3": {
+    "playerId": "peanut-2017-skt",
+    "player": "Peanut",
+    "champion": "Gragas",
+    "championId": "Gragas",
+    "role": "JUNGLE",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 1,
+      "losses": 3,
+      "winRate": 0.25,
+      "kills": 0,
+      "deaths": 6,
+      "assists": 9,
+      "kda": 1.5,
+      "kp": 0.5138888888888888,
+      "aggregateKp": 0.6428571428571429,
+      "efficiency": 0.5756462732485115,
+      "firstAppearance": "2017-10-15 03:54:43",
+      "lastAppearance": "2017-11-04 08:10:04",
+      "stages": {
+        "groups": 1,
+        "semis": 1,
+        "final": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390761",
+        "TRLH1/1002410090",
+        "TRLH3/1002320090",
+        "TRLH3/1002320097"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 177.26745,
+      "damageshare": 0.12213299999999999,
+      "golddiffat15": -584.0,
+      "csdiffat15": -17.25,
+      "xpdiffat15": -699.75,
+      "wpm": 0.81645,
+      "wcpm": 0.35302500000000003
+    },
+    "worldsGames": 4,
+    "performanceScore": 6.875424351475525,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 36.876792683997294,
+      "B": 23.542851202876506,
+      "C": 89.44271909999159,
+      "D": null
+    },
+    "score": 38.094710905836045,
+    "rating": 81,
+    "normalizedMetrics": {
+      "efficiency": 0.9263829903463583,
+      "kp": 0.5270580055285801,
+      "dpm": 19.5669201380189,
+      "damageshare": 66.40322431092837,
+      "golddiffat15": 3.7773281219493637,
+      "xpdiffat15": 5.2320400744653215
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 54.26207082692747,
+      "kp": 24.875281140252664,
+      "dpm": 21.903922874155278,
+      "damageshare": 46.343639458929474,
+      "golddiffat15": 9.917329903978779,
+      "xpdiffat15": 7.164507900546768
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Peanut"
+    ],
+    "firstAppearance": "2017-10-15 03:54:43",
+    "selectionShare": 0.4,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "peanut-2017-skt-g4": {
+    "playerId": "peanut-2017-skt",
+    "player": "Peanut",
+    "champion": "Elise",
+    "championId": "Elise",
+    "role": "JUNGLE",
+    "team": "SK Telecom T1",
+    "source": "SEASON_DATA",
+    "event": "LCK_SUMMER_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 6,
+      "wins": 4,
+      "losses": 2,
+      "winRate": 0.6666666666666666,
+      "kills": 9,
+      "deaths": 9,
+      "assists": 23,
+      "kda": 3.5555555555555554,
+      "kp": 0.6317693744164332,
+      "aggregateKp": 0.5714285714285714,
+      "efficiency": 1.2192654285392264,
+      "firstAppearance": "2017-07-02 10:35:41",
+      "lastAppearance": "2017-08-03 08:44:44",
+      "stages": {
+        "regular": 6
+      },
+      "gameIds": [
+        "ESPORTSTMNT06/280524",
+        "ESPORTSTMNT06/300762",
+        "ESPORTSTMNT06/330118",
+        "ESPORTSTMNT06/330140",
+        "ESPORTSTMNT06/320322",
+        "ESPORTSTMNT06/330780"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 242.38486666666665,
+      "damageshare": 0.1448205,
+      "golddiffat15": 99.83333333333333,
+      "csdiffat15": 5.166666666666667,
+      "xpdiffat15": 80.16666666666667,
+      "wpm": 0.8550333333333333,
+      "wcpm": 0.34553333333333336
+    },
+    "worldsGames": 0,
+    "performanceScore": 42.39110261163935,
+    "confidenceScore": 0.35454545454545455,
+    "components": {
+      "A": 36.876792683997294,
+      "B": 38.83186620379766,
+      "C": 30.618621784789724,
+      "D": null
+    },
+    "score": 36.91560380901634,
+    "rating": 81,
+    "normalizedMetrics": {
+      "efficiency": 58.999269942033564,
+      "kp": 25.324493470150845,
+      "dpm": 4.038568521450991,
+      "damageshare": 4.770071131240799,
+      "golddiffat15": 42.46099737408782,
+      "xpdiffat15": 81.37008961245402
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 54.26207082692747,
+      "kp": 24.875281140252664,
+      "dpm": 21.903922874155278,
+      "damageshare": 46.343639458929474,
+      "golddiffat15": 9.917329903978779,
+      "xpdiffat15": 7.164507900546768
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Peanut",
+      "golgg-summer-Peanut"
+    ],
+    "firstAppearance": "2017-07-02 10:35:41",
+    "selectionShare": 0.1875,
+    "notes": "Summer: separate event/role normalization, transfer factor 0.65."
+  },
+  "peanut-2017-skt-g5": {
+    "playerId": "peanut-2017-skt",
+    "player": "Peanut",
+    "champion": "Rek'Sai",
+    "championId": "RekSai",
+    "role": "JUNGLE",
+    "team": "SK Telecom T1",
+    "source": "SEASON_DATA",
+    "event": "LCK_SUMMER_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 3,
+      "losses": 1,
+      "winRate": 0.75,
+      "kills": 11,
+      "deaths": 9,
+      "assists": 24,
+      "kda": 3.888888888888889,
+      "kp": 0.7233333333333334,
+      "aggregateKp": 0.6363636363636364,
+      "efficiency": 1.240711157564977,
+      "firstAppearance": "2017-06-04 11:35:58",
+      "lastAppearance": "2017-08-06 08:39:25",
+      "stages": {
+        "regular": 4
+      },
+      "gameIds": [
+        "ESPORTSTMNT06/250523",
+        "ESPORTSTMNT06/290056",
+        "ESPORTSTMNT06/280539",
+        "ESPORTSTMNT06/331046"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 194.562825,
+      "damageshare": 0.102975525,
+      "golddiffat15": 208.0,
+      "csdiffat15": 8.0,
+      "xpdiffat15": 369.75,
+      "wpm": 0.7561,
+      "wcpm": 0.437475
+    },
+    "worldsGames": 0,
+    "performanceScore": 62.2163965699157,
+    "confidenceScore": 0.28888888888888886,
+    "components": {
+      "A": 36.876792683997294,
+      "B": 44.197122695484836,
+      "C": 25.0,
+      "D": null
+    },
+    "score": 38.75543878714147,
+    "rating": 81,
+    "normalizedMetrics": {
+      "efficiency": 62.64045523671875,
+      "kp": 61.35131650573723,
+      "dpm": 49.17077998879659,
+      "damageshare": 27.895801484108258,
+      "golddiffat15": 65.42283868968737,
+      "xpdiffat15": 81.09808736750068
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 54.26207082692747,
+      "kp": 24.875281140252664,
+      "dpm": 21.903922874155278,
+      "damageshare": 46.343639458929474,
+      "golddiffat15": 9.917329903978779,
+      "xpdiffat15": 7.164507900546768
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Peanut",
+      "golgg-summer-Peanut"
+    ],
+    "firstAppearance": "2017-06-04 11:35:58",
+    "selectionShare": 0.125,
+    "notes": "Summer: separate event/role normalization, transfer factor 0.65."
+  },
+  "faker-2017-skt-g1": {
+    "playerId": "faker-2017-skt",
+    "player": "Faker",
+    "champion": "Cassiopeia",
+    "championId": "Cassiopeia",
+    "role": "MID",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 7,
+      "kda": 2.75,
+      "kp": 0.4583333333333333,
+      "aggregateKp": 0.9166666666666666,
+      "efficiency": 0.7702225204735744,
+      "firstAppearance": "2017-10-05 10:56:40",
+      "lastAppearance": "2017-11-04 06:52:19",
+      "stages": {
+        "groups": 1,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390223",
+        "TRLH3/1002320090"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 423.0737,
+      "damageshare": 0.2787995,
+      "golddiffat15": 533.0,
+      "csdiffat15": 9.0,
+      "xpdiffat15": 547.0,
+      "wpm": 0.53925,
+      "wcpm": 0.1897
+    },
+    "worldsGames": 2,
+    "performanceScore": 42.83230214846093,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 60.031114366183566,
+      "B": 55.11716801826282,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 55.451946053412506,
+    "rating": 86,
+    "normalizedMetrics": {
+      "efficiency": 7.310536787779132,
+      "kp": 0.14427482177859496,
+      "dpm": 23.675897034234822,
+      "damageshare": 56.963348345509004,
+      "golddiffat15": 96.90809893812268,
+      "csdiffat15": 87.32302013702802,
+      "xpdiffat15": 96.43371594764845
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 62.3758652940801,
+      "kp": 59.16449278857678,
+      "dpm": 23.400011434296434,
+      "damageshare": 45.107741264360754,
+      "golddiffat15": 73.58708079537068,
+      "csdiffat15": 85.19574321166417,
+      "xpdiffat15": 88.35604713079806
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Faker"
+    ],
+    "firstAppearance": "2017-10-05 10:56:40",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "faker-2017-skt-g2": {
+    "playerId": "faker-2017-skt",
+    "player": "Faker",
+    "champion": "Orianna",
+    "championId": "Orianna",
+    "role": "MID",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 3,
+      "deaths": 6,
+      "assists": 18,
+      "kda": 3.5,
+      "kp": 0.9583333333333333,
+      "aggregateKp": 0.9545454545454546,
+      "efficiency": 1.416606672028108,
+      "firstAppearance": "2017-10-06 12:12:21",
+      "lastAppearance": "2017-10-15 08:36:55",
+      "stages": {
+        "groups": 2
+      },
+      "gameIds": [
+        "TRLH1/1002380220",
+        "TRLH1/1002380500"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 578.20115,
+      "damageshare": 0.29834499999999997,
+      "golddiffat15": -1261.5,
+      "csdiffat15": 11.5,
+      "xpdiffat15": -250.5,
+      "wpm": 0.50735,
+      "wcpm": 0.24325000000000002
+    },
+    "worldsGames": 2,
+    "performanceScore": 67.04987791790586,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 60.031114366183566,
+      "B": 62.03647538096136,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 58.91159973476178,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 77.74612814330675,
+      "kp": 99.6530289264478,
+      "dpm": 81.51327902873642,
+      "damageshare": 81.01583021401638,
+      "golddiffat15": 0.13498980316301035,
+      "csdiffat15": 86.57273080792291,
+      "xpdiffat15": 27.523076212475907
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 62.3758652940801,
+      "kp": 59.16449278857678,
+      "dpm": 23.400011434296434,
+      "damageshare": 45.107741264360754,
+      "golddiffat15": 73.58708079537068,
+      "csdiffat15": 85.19574321166417,
+      "xpdiffat15": 88.35604713079806
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Faker"
+    ],
+    "firstAppearance": "2017-10-06 12:12:21",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "faker-2017-skt-g3": {
+    "playerId": "faker-2017-skt",
+    "player": "Faker",
+    "champion": "Fizz",
+    "championId": "Fizz",
+    "role": "MID",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 7,
+      "deaths": 2,
+      "assists": 11,
+      "kda": 9.0,
+      "kp": 0.8611111111111112,
+      "aggregateKp": 0.8571428571428571,
+      "efficiency": 1.8317808230648234,
+      "firstAppearance": "2017-10-07 10:55:48",
+      "lastAppearance": "2017-10-15 06:45:12",
+      "stages": {
+        "groups": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390407",
+        "TRLH1/1002380485"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 372.5154,
+      "damageshare": 0.19436399999999998,
+      "golddiffat15": 288.0,
+      "csdiffat15": -6.5,
+      "xpdiffat15": 851.0,
+      "wpm": 0.49729999999999996,
+      "wcpm": 0.28045
+    },
+    "worldsGames": 2,
+    "performanceScore": 72.24780251242706,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 60.031114366183566,
+      "B": 63.52159669368171,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 59.65416039112195,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 98.56446282056181,
+      "kp": 94.46892940586856,
+      "dpm": 6.848492844753817,
+      "damageshare": 1.4935737717348352,
+      "golddiffat15": 87.16783502737282,
+      "csdiffat15": 48.53045668939585,
+      "xpdiffat15": 99.50473341418514
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 62.3758652940801,
+      "kp": 59.16449278857678,
+      "dpm": 23.400011434296434,
+      "damageshare": 45.107741264360754,
+      "golddiffat15": 73.58708079537068,
+      "csdiffat15": 85.19574321166417,
+      "xpdiffat15": 88.35604713079806
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Faker"
+    ],
+    "firstAppearance": "2017-10-07 10:55:48",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "faker-2017-skt-g4": {
+    "playerId": "faker-2017-skt",
+    "player": "Faker",
+    "champion": "Galio",
+    "championId": "Galio",
+    "role": "MID",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 6,
+      "wins": 4,
+      "losses": 2,
+      "winRate": 0.6666666666666666,
+      "kills": 13,
+      "deaths": 9,
+      "assists": 36,
+      "kda": 5.444444444444445,
+      "kp": 0.8405423280423281,
+      "aggregateKp": 0.8166666666666667,
+      "efficiency": 1.7026691108308372,
+      "firstAppearance": "2017-10-20 05:14:54",
+      "lastAppearance": "2017-10-28 11:23:39",
+      "stages": {
+        "quarters": 1,
+        "semis": 5
+      },
+      "gameIds": [
+        "TRLH3/1002300059",
+        "TRLH1/1002410083",
+        "TRLH1/1002410086",
+        "TRLH1/1002410088",
+        "TRLH1/1002410090",
+        "TRLH1/1002410092"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 339.9642,
+      "damageshare": 0.19623016666666668,
+      "golddiffat15": 141.0,
+      "csdiffat15": 6.833333333333333,
+      "xpdiffat15": 467.5,
+      "wpm": 0.47435,
+      "wcpm": 0.13473333333333334
+    },
+    "worldsGames": 6,
+    "performanceScore": 73.7148602938701,
+    "confidenceScore": 0.5454545454545454,
+    "components": {
+      "A": 60.031114366183566,
+      "B": 67.49497578128532,
+      "C": 79.47194142390262,
+      "D": null
+    },
+    "score": 66.6791691323923,
+    "rating": 89,
+    "normalizedMetrics": {
+      "efficiency": 95.9478222380932,
+      "kp": 91.33645809215291,
+      "dpm": 14.843367954393754,
+      "damageshare": 20.415217637223293,
+      "golddiffat15": 69.50947548210465,
+      "csdiffat15": 83.7101966355025,
+      "xpdiffat15": 91.3731357088857
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 62.3758652940801,
+      "kp": 59.16449278857678,
+      "dpm": 23.400011434296434,
+      "damageshare": 45.107741264360754,
+      "golddiffat15": 73.58708079537068,
+      "csdiffat15": 85.19574321166417,
+      "xpdiffat15": 88.35604713079806
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Faker"
+    ],
+    "firstAppearance": "2017-10-20 05:14:54",
+    "selectionShare": 0.3157894736842105,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "faker-2017-skt-g5": {
+    "playerId": "faker-2017-skt",
+    "player": "Faker",
+    "champion": "Taliyah",
+    "championId": "Taliyah",
+    "role": "MID",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 5,
+      "deaths": 2,
+      "assists": 2,
+      "kda": 3.5,
+      "kp": 0.356060606060606,
+      "aggregateKp": 0.4117647058823529,
+      "efficiency": 0.8958797346140275,
+      "firstAppearance": "2017-10-20 09:42:40",
+      "lastAppearance": "2017-10-20 11:47:31",
+      "stages": {
+        "quarters": 2
+      },
+      "gameIds": [
+        "TRLH3/1002300076",
+        "TRLH3/1002300079"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 419.18075,
+      "damageshare": 0.2659245,
+      "golddiffat15": 319.5,
+      "csdiffat15": 6.5,
+      "xpdiffat15": -3.5,
+      "wpm": 0.53725,
+      "wcpm": 0.16925
+    },
+    "worldsGames": 2,
+    "performanceScore": 37.766436255674,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 60.031114366183566,
+      "B": 53.66977776318083,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 54.728250925871514,
+    "rating": 86,
+    "normalizedMetrics": {
+      "efficiency": 15.336180099617792,
+      "kp": 0.13498980316301035,
+      "dpm": 5.865790365459212,
+      "damageshare": 48.68010057628418,
+      "golddiffat15": 87.750565636,
+      "csdiffat15": 90.05721351010192,
+      "xpdiffat15": 62.82497979552417
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 62.3758652940801,
+      "kp": 59.16449278857678,
+      "dpm": 23.400011434296434,
+      "damageshare": 45.107741264360754,
+      "golddiffat15": 73.58708079537068,
+      "csdiffat15": 85.19574321166417,
+      "xpdiffat15": 88.35604713079806
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Faker"
+    ],
+    "firstAppearance": "2017-10-20 09:42:40",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bang-2017-skt-g1": {
+    "playerId": "bang-2017-skt",
+    "player": "Bang",
+    "champion": "Kog'Maw",
+    "championId": "KogMaw",
+    "role": "ADC",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 10,
+      "deaths": 3,
+      "assists": 9,
+      "kda": 6.333333333333333,
+      "kp": 0.7685185185185185,
+      "aggregateKp": 0.76,
+      "efficiency": 1.499936556776755,
+      "firstAppearance": "2017-10-05 10:56:40",
+      "lastAppearance": "2017-10-28 10:22:54",
+      "stages": {
+        "groups": 1,
+        "quarters": 1,
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390223",
+        "TRLH3/1002300075",
+        "TRLH1/1002410090"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 597.2237,
+      "damageshare": 0.355813,
+      "golddiffat15": -381.0,
+      "csdiffat15": -3.6666666666666665,
+      "xpdiffat15": -177.0,
+      "wpm": 0.4565666666666667,
+      "wcpm": 0.12873333333333334
+    },
+    "worldsGames": 3,
+    "performanceScore": 59.72316023517506,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 39.733681796180505,
+      "B": 47.229736210803466,
+      "C": 56.19514869490163,
+      "D": null
+    },
+    "score": 45.950929038300146,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 83.52974415683114,
+      "kp": 95.87130632283221,
+      "dpm": 14.913727611477444,
+      "damageshare": 52.465087249350006,
+      "golddiffat15": 39.466005782467114,
+      "csdiffat15": 62.164764923955886,
+      "xpdiffat15": 68.88885134404303
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 55.51164111966186,
+      "kp": 18.026760255050036,
+      "dpm": 23.021229189645503,
+      "damageshare": 36.972680752193085,
+      "golddiffat15": 22.670462098171264,
+      "csdiffat15": 48.233033246725576,
+      "xpdiffat15": 64.19194615088257
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bang"
+    ],
+    "firstAppearance": "2017-10-05 10:56:40",
+    "selectionShare": 0.15789473684210525,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bang-2017-skt-g2": {
+    "playerId": "bang-2017-skt",
+    "player": "Bang",
+    "champion": "Twitch",
+    "championId": "Twitch",
+    "role": "ADC",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 4,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 17,
+      "deaths": 2,
+      "assists": 18,
+      "kda": 17.5,
+      "kp": 0.8083333333333333,
+      "aggregateKp": 0.813953488372093,
+      "efficiency": 1.9484482419213178,
+      "firstAppearance": "2017-10-06 12:12:21",
+      "lastAppearance": "2017-10-15 08:36:55",
+      "stages": {
+        "groups": 4
+      },
+      "gameIds": [
+        "TRLH1/1002380220",
+        "TRLH1/1002390407",
+        "TRLH1/1002380485",
+        "TRLH1/1002380500"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 679.793175,
+      "damageshare": 0.34606375,
+      "golddiffat15": -598.25,
+      "csdiffat15": -8.25,
+      "xpdiffat15": 102.75,
+      "wpm": 0.442825,
+      "wcpm": 0.22095
+    },
+    "worldsGames": 4,
+    "performanceScore": 71.73209177310248,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 39.733681796180505,
+      "B": 53.95519734147916,
+      "C": 64.88856845230502,
+      "D": null
+    },
+    "score": 50.61767256724851,
+    "rating": 85,
+    "normalizedMetrics": {
+      "efficiency": 99.46331202996743,
+      "kp": 99.03299878894131,
+      "dpm": 72.12174095942423,
+      "damageshare": 64.07638171220266,
+      "golddiffat15": 11.728109020241368,
+      "csdiffat15": 31.960157104797183,
+      "xpdiffat15": 72.13363772100652
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 55.51164111966186,
+      "kp": 18.026760255050036,
+      "dpm": 23.021229189645503,
+      "damageshare": 36.972680752193085,
+      "golddiffat15": 22.670462098171264,
+      "csdiffat15": 48.233033246725576,
+      "xpdiffat15": 64.19194615088257
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bang"
+    ],
+    "firstAppearance": "2017-10-06 12:12:21",
+    "selectionShare": 0.21052631578947367,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bang-2017-skt-g3": {
+    "playerId": "bang-2017-skt",
+    "player": "Bang",
+    "champion": "Varus",
+    "championId": "Varus",
+    "role": "ADC",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 1,
+      "losses": 3,
+      "winRate": 0.25,
+      "kills": 2,
+      "deaths": 6,
+      "assists": 8,
+      "kda": 1.6666666666666667,
+      "kp": 0.23333333333333334,
+      "aggregateKp": 0.5,
+      "efficiency": 0.4184941083929179,
+      "firstAppearance": "2017-10-15 03:54:43",
+      "lastAppearance": "2017-11-04 08:10:04",
+      "stages": {
+        "groups": 1,
+        "semis": 1,
+        "final": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390761",
+        "TRLH1/1002410086",
+        "TRLH3/1002320090",
+        "TRLH3/1002320097"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 327.74045,
+      "damageshare": 0.24514325,
+      "golddiffat15": 398.0,
+      "csdiffat15": 14.0,
+      "xpdiffat15": 137.25,
+      "wpm": 0.43485,
+      "wcpm": 0.21397500000000003
+    },
+    "worldsGames": 4,
+    "performanceScore": 21.86059380909634,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 39.733681796180505,
+      "B": 31.79008713525421,
+      "C": 64.88856845230502,
+      "D": null
+    },
+    "score": 39.535117464136036,
+    "rating": 81,
+    "normalizedMetrics": {
+      "efficiency": 0.23673288687575123,
+      "kp": 0.13498980316301035,
+      "dpm": 0.15295248718064647,
+      "damageshare": 1.8508512621633721,
+      "golddiffat15": 76.2462330736645,
+      "csdiffat15": 92.29137238515735,
+      "xpdiffat15": 92.38366768520261
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 55.51164111966186,
+      "kp": 18.026760255050036,
+      "dpm": 23.021229189645503,
+      "damageshare": 36.972680752193085,
+      "golddiffat15": 22.670462098171264,
+      "csdiffat15": 48.233033246725576,
+      "xpdiffat15": 64.19194615088257
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bang"
+    ],
+    "firstAppearance": "2017-10-15 03:54:43",
+    "selectionShare": 0.21052631578947367,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bang-2017-skt-g4": {
+    "playerId": "bang-2017-skt",
+    "player": "Bang",
+    "champion": "Caitlyn",
+    "championId": "Caitlyn",
+    "role": "ADC",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 6,
+      "deaths": 0,
+      "assists": 11,
+      "kda": 17.0,
+      "kp": 0.64375,
+      "aggregateKp": 0.6538461538461539,
+      "efficiency": 2.2154083994216567,
+      "firstAppearance": "2017-10-20 05:14:54",
+      "lastAppearance": "2017-10-28 11:23:39",
+      "stages": {
+        "quarters": 1,
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH3/1002300059",
+        "TRLH1/1002410092"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 650.3357,
+      "damageshare": 0.377714,
+      "golddiffat15": 585.5,
+      "csdiffat15": -1.5,
+      "xpdiffat15": 144.0,
+      "wpm": 0.49325,
+      "wcpm": 0.15380000000000002
+    },
+    "worldsGames": 2,
+    "performanceScore": 58.41159368188726,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 39.733681796180505,
+      "B": 45.070228049239574,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 43.324374669399816,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 99.86501019683699,
+      "kp": 43.896632780080644,
+      "dpm": 15.015794959994816,
+      "damageshare": 76.47143308325978,
+      "golddiffat15": 77.21312675757697,
+      "csdiffat15": 14.137823886262973,
+      "xpdiffat15": 65.03754393587978
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 55.51164111966186,
+      "kp": 18.026760255050036,
+      "dpm": 23.021229189645503,
+      "damageshare": 36.972680752193085,
+      "golddiffat15": 22.670462098171264,
+      "csdiffat15": 48.233033246725576,
+      "xpdiffat15": 64.19194615088257
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bang"
+    ],
+    "firstAppearance": "2017-10-20 05:14:54",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bang-2017-skt-g5": {
+    "playerId": "bang-2017-skt",
+    "player": "Bang",
+    "champion": "Tristana",
+    "championId": "Tristana",
+    "role": "ADC",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 5,
+      "wins": 2,
+      "losses": 3,
+      "winRate": 0.4,
+      "kills": 17,
+      "deaths": 11,
+      "assists": 13,
+      "kda": 2.727272727272727,
+      "kp": 0.5761446886446886,
+      "aggregateKp": 0.6666666666666666,
+      "efficiency": 0.9400960731584832,
+      "firstAppearance": "2017-10-20 10:48:37",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "quarters": 2,
+        "semis": 2,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH3/1002300078",
+        "TRLH3/1002300079",
+        "TRLH1/1002410083",
+        "TRLH1/1002410088",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 724.62318,
+      "damageshare": 0.3606072,
+      "golddiffat15": -300.4,
+      "csdiffat15": -1.6,
+      "xpdiffat15": -6.6,
+      "wpm": 0.42614,
+      "wcpm": 0.29042
+    },
+    "worldsGames": 5,
+    "performanceScore": 38.22241801955219,
+    "confidenceScore": 0.5,
+    "components": {
+      "A": 39.733681796180505,
+      "B": 38.97804990786635,
+      "C": 72.54762501100116,
+      "D": null
+    },
+    "score": 44.27795733424652,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 16.064764617014117,
+      "kp": 11.951264579811665,
+      "dpm": 73.2935709748676,
+      "damageshare": 65.40412335208633,
+      "golddiffat15": 18.616725679301155,
+      "csdiffat15": 42.33916173923097,
+      "xpdiffat15": 36.972314773744564
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 55.51164111966186,
+      "kp": 18.026760255050036,
+      "dpm": 23.021229189645503,
+      "damageshare": 36.972680752193085,
+      "golddiffat15": 22.670462098171264,
+      "csdiffat15": 48.233033246725576,
+      "xpdiffat15": 64.19194615088257
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bang"
+    ],
+    "firstAppearance": "2017-10-20 10:48:37",
+    "selectionShare": 0.2631578947368421,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "wolf-2017-skt-g1": {
+    "playerId": "wolf-2017-skt",
+    "player": "Wolf",
+    "champion": "Janna",
+    "championId": "Janna",
+    "role": "SUPPORT",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 1,
+      "deaths": 1,
+      "assists": 18,
+      "kda": 19.0,
+      "kp": 0.875,
+      "aggregateKp": 0.8636363636363636,
+      "efficiency": 2.0471722811110507,
+      "firstAppearance": "2017-10-05 10:56:40",
+      "lastAppearance": "2017-10-15 08:36:55",
+      "stages": {
+        "groups": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390223",
+        "TRLH1/1002380500"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 73.06725,
+      "damageshare": 0.0387006,
+      "golddiffat15": 6.5,
+      "csdiffat15": 12.5,
+      "xpdiffat15": 98.5,
+      "wpm": 0.95085,
+      "wcpm": 0.26665
+    },
+    "worldsGames": 2,
+    "performanceScore": 77.47168698737693,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 42.04426033509159,
+      "B": 52.16638223574454,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 47.68115425127118,
+    "rating": 84,
+    "normalizedMetrics": {
+      "efficiency": 99.60041747660514,
+      "kp": 95.39613026296703,
+      "wpm": 4.751132514629869,
+      "wcpm": 56.73483600888126
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 42.301345997972646,
+      "kp": 20.734374338055346,
+      "wpm": 32.6353507826518,
+      "wcpm": 86.6189326586156
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Wolf"
+    ],
+    "firstAppearance": "2017-10-05 10:56:40",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "wolf-2017-skt-g2": {
+    "playerId": "wolf-2017-skt",
+    "player": "Wolf",
+    "champion": "Rakan",
+    "championId": "Rakan",
+    "role": "SUPPORT",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 1,
+      "deaths": 3,
+      "assists": 11,
+      "kda": 4.0,
+      "kp": 1.0,
+      "aggregateKp": 1.0,
+      "efficiency": 1.3862943611198906,
+      "firstAppearance": "2017-10-06 12:12:21",
+      "lastAppearance": "2017-10-06 12:12:21",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380220"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 110.5228,
+      "damageshare": 0.0521319,
+      "golddiffat15": -732.0,
+      "csdiffat15": 11.0,
+      "xpdiffat15": -405.0,
+      "wpm": 1.0831,
+      "wcpm": 0.3159
+    },
+    "worldsGames": 1,
+    "performanceScore": 74.4160828296837,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 42.04426033509159,
+      "B": 47.43956408419028,
+      "C": 32.44428422615251,
+      "D": null
+    },
+    "score": 43.301915793300076,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 67.24365826780846,
+      "kp": 99.86430247765313,
+      "wpm": 24.0682965378765,
+      "wcpm": 82.12034725393784
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 42.301345997972646,
+      "kp": 20.734374338055346,
+      "wpm": 32.6353507826518,
+      "wcpm": 86.6189326586156
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Wolf"
+    ],
+    "firstAppearance": "2017-10-06 12:12:21",
+    "selectionShare": 0.05263157894736842,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "wolf-2017-skt-g3": {
+    "playerId": "wolf-2017-skt",
+    "player": "Wolf",
+    "champion": "Lulu",
+    "championId": "Lulu",
+    "role": "SUPPORT",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 9,
+      "wins": 4,
+      "losses": 5,
+      "winRate": 0.4444444444444444,
+      "kills": 1,
+      "deaths": 15,
+      "assists": 43,
+      "kda": 2.933333333333333,
+      "kp": 0.5767115600448933,
+      "aggregateKp": 0.7457627118644068,
+      "efficiency": 0.9628608761932639,
+      "firstAppearance": "2017-10-07 10:55:48",
+      "lastAppearance": "2017-11-04 08:10:04",
+      "stages": {
+        "groups": 3,
+        "quarters": 1,
+        "semis": 3,
+        "final": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390407",
+        "TRLH1/1002390761",
+        "TRLH1/1002380485",
+        "TRLH3/1002300076",
+        "TRLH1/1002410088",
+        "TRLH1/1002410090",
+        "TRLH1/1002410092",
+        "TRLH3/1002320090",
+        "TRLH3/1002320097"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 92.20773333333334,
+      "damageshare": 0.05898833333333333,
+      "golddiffat15": -109.77777777777777,
+      "csdiffat15": -3.4444444444444446,
+      "xpdiffat15": -315.44444444444446,
+      "wpm": 1.1157333333333332,
+      "wcpm": 0.33828888888888886
+    },
+    "worldsGames": 9,
+    "performanceScore": 26.665253160683257,
+    "confidenceScore": 0.6428571428571429,
+    "components": {
+      "A": 42.04426033509159,
+      "B": 32.15775572297195,
+      "C": 97.33285267845751,
+      "D": null
+    },
+    "score": 45.39429688053666,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 16.686795927546775,
+      "kp": 7.3424577877466755,
+      "wpm": 32.06444829061345,
+      "wcpm": 89.63564744492356
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 42.301345997972646,
+      "kp": 20.734374338055346,
+      "wpm": 32.6353507826518,
+      "wcpm": 86.6189326586156
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Wolf"
+    ],
+    "firstAppearance": "2017-10-07 10:55:48",
+    "selectionShare": 0.47368421052631576,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "wolf-2017-skt-g4": {
+    "playerId": "wolf-2017-skt",
+    "player": "Wolf",
+    "champion": "Trundle",
+    "championId": "Trundle",
+    "role": "SUPPORT",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 0,
+      "deaths": 1,
+      "assists": 13,
+      "kda": 13.0,
+      "kp": 0.8125,
+      "aggregateKp": 0.8125,
+      "efficiency": 2.0149030205422647,
+      "firstAppearance": "2017-10-20 05:14:54",
+      "lastAppearance": "2017-10-20 05:14:54",
+      "stages": {
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH3/1002300059"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 159.9736,
+      "damageshare": 0.0800079,
+      "golddiffat15": 333.0,
+      "csdiffat15": -1.0,
+      "xpdiffat15": 72.0,
+      "wpm": 0.7124,
+      "wcpm": 0.3166
+    },
+    "worldsGames": 1,
+    "performanceScore": 76.86614087476433,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 42.04426033509159,
+      "B": 47.84790709170372,
+      "C": 32.44428422615251,
+      "D": null
+    },
+    "score": 43.506087297056794,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 99.4531718692003,
+      "kp": 84.79324557836345,
+      "wpm": 0.13498980316301035,
+      "wcpm": 82.39764198428377
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 42.301345997972646,
+      "kp": 20.734374338055346,
+      "wpm": 32.6353507826518,
+      "wcpm": 86.6189326586156
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Wolf"
+    ],
+    "firstAppearance": "2017-10-20 05:14:54",
+    "selectionShare": 0.05263157894736842,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "wolf-2017-skt-g5": {
+    "playerId": "wolf-2017-skt",
+    "player": "Wolf",
+    "champion": "Leona",
+    "championId": "Leona",
+    "role": "SUPPORT",
+    "team": "SK Telecom T1",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 4,
+      "deaths": 4,
+      "assists": 13,
+      "kda": 4.25,
+      "kp": 0.5974358974358974,
+      "aggregateKp": 0.6071428571428571,
+      "efficiency": 1.3940464543878732,
+      "firstAppearance": "2017-10-28 08:43:03",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "semis": 1,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002410086",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 121.29765,
+      "damageshare": 0.06162245,
+      "golddiffat15": -196.0,
+      "csdiffat15": 12.0,
+      "xpdiffat15": 121.5,
+      "wpm": 1.07545,
+      "wcpm": 0.35609999999999997
+    },
+    "worldsGames": 2,
+    "performanceScore": 45.08243240610579,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 42.04426033509159,
+      "B": 42.91230949823851,
+      "C": 45.883146774112355,
+      "D": null
+    },
+    "score": 43.054117882518156,
+    "rating": 82,
+    "normalizedMetrics": {
+      "efficiency": 68.1723948889842,
+      "kp": 10.880299567373802,
+      "wpm": 22.364247384550772,
+      "wcpm": 93.72901492465246
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 42.301345997972646,
+      "kp": 20.734374338055346,
+      "wpm": 32.6353507826518,
+      "wcpm": 86.6189326586156
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Wolf"
+    ],
+    "firstAppearance": "2017-10-28 08:43:03",
+    "selectionShare": 0.10526315789473684,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuvee-2017-ssg-g1": {
+    "playerId": "cuvee-2017-ssg",
+    "player": "CuVee",
+    "champion": "Cho'Gath",
+    "championId": "Chogath",
+    "role": "TOP",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 4,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 9,
+      "deaths": 5,
+      "assists": 27,
+      "kda": 7.2,
+      "kp": 0.7041170634920635,
+      "aggregateKp": 0.7058823529411765,
+      "efficiency": 1.6837965034077151,
+      "firstAppearance": "2017-10-05 08:15:49",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "groups": 3,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390191",
+        "TRLH1/1002380358",
+        "TRLH1/1002380365",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 529.666775,
+      "damageshare": 0.2261375,
+      "golddiffat15": -427.5,
+      "csdiffat15": 1.5,
+      "xpdiffat15": -35.5,
+      "wpm": 0.6632,
+      "wcpm": 0.217125
+    },
+    "worldsGames": 4,
+    "performanceScore": 70.99030280954379,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 75.35438808118752,
+      "B": 73.41479462712364,
+      "C": 70.71067811865476,
+      "D": null
+    },
+    "score": 73.68803485977567,
+    "rating": 91,
+    "normalizedMetrics": {
+      "efficiency": 95.83777924719182,
+      "kp": 68.18429944384647,
+      "dpm": 99.86501019683699,
+      "damageshare": 80.87222970112778,
+      "golddiffat15": 14.396517600082653,
+      "csdiffat15": 65.4532329386281,
+      "xpdiffat15": 50.31437647655326
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 83.45617395873506,
+      "kp": 63.94602144190903,
+      "dpm": 93.57587849067983,
+      "damageshare": 91.18400199807084,
+      "golddiffat15": 75.3362203930868,
+      "csdiffat15": 92.59448520348093,
+      "xpdiffat15": 91.07024097868346
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CuVee"
+    ],
+    "firstAppearance": "2017-10-05 08:15:49",
+    "selectionShare": 0.25,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuvee-2017-ssg-g2": {
+    "playerId": "cuvee-2017-ssg",
+    "player": "CuVee",
+    "champion": "Maokai",
+    "championId": "Maokai",
+    "role": "TOP",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0.0,
+      "kills": 0,
+      "deaths": 3,
+      "assists": 0,
+      "kda": 0.0,
+      "kp": 0,
+      "aggregateKp": 0.0,
+      "efficiency": 0.0,
+      "firstAppearance": "2017-10-07 10:03:36",
+      "lastAppearance": "2017-10-07 10:03:36",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390388"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 206.8077,
+      "damageshare": 0.355646,
+      "golddiffat15": -183.0,
+      "csdiffat15": 12.0,
+      "xpdiffat15": 0.0,
+      "wpm": 0.5441,
+      "wcpm": 0.1814
+    },
+    "worldsGames": 1,
+    "performanceScore": 34.605113218629356,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 75.35438808118752,
+      "B": 68.56284227076117,
+      "C": 35.35533905932738,
+      "D": null
+    },
+    "score": 65.95875782269532,
+    "rating": 89,
+    "normalizedMetrics": {
+      "efficiency": 0.13498980316301035,
+      "kp": 0.13498980316301035,
+      "dpm": 0.13498980316301035,
+      "damageshare": 99.86501019683699,
+      "golddiffat15": 50.02485949400223,
+      "csdiffat15": 98.66020509036355,
+      "xpdiffat15": 71.74618374069313
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 83.45617395873506,
+      "kp": 63.94602144190903,
+      "dpm": 93.57587849067983,
+      "damageshare": 91.18400199807084,
+      "golddiffat15": 75.3362203930868,
+      "csdiffat15": 92.59448520348093,
+      "xpdiffat15": 91.07024097868346
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CuVee"
+    ],
+    "firstAppearance": "2017-10-07 10:03:36",
+    "selectionShare": 0.0625,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuvee-2017-ssg-g3": {
+    "playerId": "cuvee-2017-ssg",
+    "player": "CuVee",
+    "champion": "Kennen",
+    "championId": "Kennen",
+    "role": "TOP",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 7,
+      "deaths": 9,
+      "assists": 12,
+      "kda": 2.111111111111111,
+      "kp": 0.7994987468671679,
+      "aggregateKp": 0.7037037037037037,
+      "efficiency": 1.1240699482629677,
+      "firstAppearance": "2017-10-19 07:40:06",
+      "lastAppearance": "2017-11-04 06:52:19",
+      "stages": {
+        "quarters": 1,
+        "semis": 1,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH3/1002290025",
+        "TRLH1/1002410104",
+        "TRLH3/1002320090"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 522.6282333333334,
+      "damageshare": 0.3099713333333333,
+      "golddiffat15": 526.0,
+      "csdiffat15": 25.666666666666668,
+      "xpdiffat15": 463.0,
+      "wpm": 0.6218666666666667,
+      "wcpm": 0.14226666666666665
+    },
+    "worldsGames": 3,
+    "performanceScore": 83.55918825782076,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 75.35438808118752,
+      "B": 78.43118814742499,
+      "C": 61.23724356957945,
+      "D": null
+    },
+    "score": 74.77521643756504,
+    "rating": 92,
+    "normalizedMetrics": {
+      "efficiency": 49.9149909464252,
+      "kp": 86.47796081805271,
+      "dpm": 99.57334438514557,
+      "damageshare": 99.48980394829779,
+      "golddiffat15": 92.21015197266709,
+      "csdiffat15": 99.34479438052857,
+      "xpdiffat15": 94.57762111952024
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 83.45617395873506,
+      "kp": 63.94602144190903,
+      "dpm": 93.57587849067983,
+      "damageshare": 91.18400199807084,
+      "golddiffat15": 75.3362203930868,
+      "csdiffat15": 92.59448520348093,
+      "xpdiffat15": 91.07024097868346
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CuVee"
+    ],
+    "firstAppearance": "2017-10-19 07:40:06",
+    "selectionShare": 0.1875,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuvee-2017-ssg-g4": {
+    "playerId": "cuvee-2017-ssg",
+    "player": "CuVee",
+    "champion": "Shen",
+    "championId": "Shen",
+    "role": "TOP",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 7,
+      "deaths": 1,
+      "assists": 24,
+      "kda": 31.0,
+      "kp": 0.8405303030303031,
+      "aggregateKp": 0.8378378378378378,
+      "efficiency": 2.209347125393178,
+      "firstAppearance": "2017-10-19 09:17:05",
+      "lastAppearance": "2017-10-29 09:23:19",
+      "stages": {
+        "quarters": 2,
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH3/1002290033",
+        "TRLH3/1002290034",
+        "TRLH1/1002410112"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 490.5163333333333,
+      "damageshare": 0.23585,
+      "golddiffat15": 217.0,
+      "csdiffat15": 5.333333333333333,
+      "xpdiffat15": 291.6666666666667,
+      "wpm": 0.6305666666666666,
+      "wcpm": 0.18336666666666665
+    },
+    "worldsGames": 3,
+    "performanceScore": 94.83681839823085,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 75.35438808118752,
+      "B": 82.66029945007877,
+      "C": 61.23724356957945,
+      "D": null
+    },
+    "score": 76.88977208889193,
+    "rating": 92,
+    "normalizedMetrics": {
+      "efficiency": 99.86501019683699,
+      "kp": 91.50794357869181,
+      "dpm": 99.86501019683699,
+      "damageshare": 96.56704697320372,
+      "golddiffat15": 90.9483899473025,
+      "csdiffat15": 86.50407091072968,
+      "xpdiffat15": 92.15252502203566
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 83.45617395873506,
+      "kp": 63.94602144190903,
+      "dpm": 93.57587849067983,
+      "damageshare": 91.18400199807084,
+      "golddiffat15": 75.3362203930868,
+      "csdiffat15": 92.59448520348093,
+      "xpdiffat15": 91.07024097868346
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CuVee"
+    ],
+    "firstAppearance": "2017-10-19 09:17:05",
+    "selectionShare": 0.1875,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuvee-2017-ssg-g5": {
+    "playerId": "cuvee-2017-ssg",
+    "player": "CuVee",
+    "champion": "Gnar",
+    "championId": "Gnar",
+    "role": "TOP",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 11,
+      "deaths": 4,
+      "assists": 13,
+      "kda": 6.0,
+      "kp": 0.8023569023569024,
+      "aggregateKp": 0.8,
+      "efficiency": 1.5060529363328206,
+      "firstAppearance": "2017-10-29 08:33:35",
+      "lastAppearance": "2017-11-04 08:10:04",
+      "stages": {
+        "semis": 2,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002410111",
+        "TRLH1/1002410113",
+        "TRLH3/1002320097"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 428.19559999999996,
+      "damageshare": 0.25958800000000004,
+      "golddiffat15": -51.666666666666664,
+      "csdiffat15": 4.666666666666667,
+      "xpdiffat15": 121.33333333333333,
+      "wpm": 0.7199666666666666,
+      "wcpm": 0.1283
+    },
+    "worldsGames": 3,
+    "performanceScore": 64.16197704073154,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 75.35438808118752,
+      "B": 71.15723394101653,
+      "C": 61.23724356957945,
+      "D": null
+    },
+    "score": 71.1382393343608,
+    "rating": 91,
+    "normalizedMetrics": {
+      "efficiency": 88.12842346653727,
+      "kp": 86.88352088121158,
+      "dpm": 35.94527026240307,
+      "damageshare": 82.30804195809074,
+      "golddiffat15": 23.63947934539604,
+      "csdiffat15": 55.96081594443491,
+      "xpdiffat15": 63.32744810493056
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 83.45617395873506,
+      "kp": 63.94602144190903,
+      "dpm": 93.57587849067983,
+      "damageshare": 91.18400199807084,
+      "golddiffat15": 75.3362203930868,
+      "csdiffat15": 92.59448520348093,
+      "xpdiffat15": 91.07024097868346
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CuVee"
+    ],
+    "firstAppearance": "2017-10-29 08:33:35",
+    "selectionShare": 0.1875,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ambition-2017-ssg-g1": {
+    "playerId": "ambition-2017-ssg",
+    "player": "Ambition",
+    "champion": "Gragas",
+    "championId": "Gragas",
+    "role": "JUNGLE",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 3,
+      "deaths": 2,
+      "assists": 19,
+      "kda": 11.0,
+      "kp": 0.7276094276094276,
+      "aggregateKp": 0.7333333333333333,
+      "efficiency": 1.7215953246411715,
+      "firstAppearance": "2017-10-05 08:15:49",
+      "lastAppearance": "2017-10-29 09:23:19",
+      "stages": {
+        "groups": 1,
+        "semis": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390191",
+        "TRLH1/1002410111",
+        "TRLH1/1002410112"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 182.06363333333334,
+      "damageshare": 0.09740336666666667,
+      "golddiffat15": 49.0,
+      "csdiffat15": 8.333333333333334,
+      "xpdiffat15": -567.3333333333334,
+      "wpm": 1.0142,
+      "wcpm": 0.40449999999999997
+    },
+    "worldsGames": 3,
+    "performanceScore": 56.42252626139638,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 58.96546672292307,
+      "B": 58.01186404985056,
+      "C": 63.245553203367585,
+      "D": null
+    },
+    "score": 59.130678358453494,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 99.00205227454025,
+      "kp": 48.019209802349344,
+      "dpm": 22.366241691070716,
+      "damageshare": 22.38950582800704,
+      "golddiffat15": 72.03090804860373,
+      "xpdiffat15": 11.713049153078043
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.12357309280416,
+      "kp": 59.34774189125375,
+      "dpm": 51.104734468050786,
+      "damageshare": 50.5687819279405,
+      "golddiffat15": 53.01441961147076,
+      "xpdiffat15": 53.814710873317
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ambition"
+    ],
+    "firstAppearance": "2017-10-05 08:15:49",
+    "selectionShare": 0.2,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ambition-2017-ssg-g2": {
+    "playerId": "ambition-2017-ssg",
+    "player": "Ambition",
+    "champion": "Sejuani",
+    "championId": "Sejuani",
+    "role": "JUNGLE",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 6,
+      "wins": 4,
+      "losses": 2,
+      "winRate": 0.6666666666666666,
+      "kills": 10,
+      "deaths": 15,
+      "assists": 46,
+      "kda": 3.7333333333333334,
+      "kp": 0.6344412166780588,
+      "aggregateKp": 0.8115942028985508,
+      "efficiency": 1.1269272071286318,
+      "firstAppearance": "2017-10-07 10:03:36",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "groups": 2,
+        "quarters": 3,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390388",
+        "TRLH1/1002380375",
+        "TRLH3/1002290025",
+        "TRLH3/1002290033",
+        "TRLH3/1002290034",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 238.69971666666666,
+      "damageshare": 0.12913771666666668,
+      "golddiffat15": 134.16666666666666,
+      "csdiffat15": 9.333333333333334,
+      "xpdiffat15": 255.0,
+      "wpm": 0.9639833333333333,
+      "wcpm": 0.3502166666666667
+    },
+    "worldsGames": 6,
+    "performanceScore": 40.976297780881765,
+    "confidenceScore": 0.5454545454545454,
+    "components": {
+      "A": 58.96546672292307,
+      "B": 49.1531927545369,
+      "C": 89.44271909999159,
+      "D": null
+    },
+    "score": 58.63091759529026,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 45.91700589019523,
+      "kp": 12.653091388218385,
+      "dpm": 53.45089039031923,
+      "damageshare": 61.84289677975563,
+      "golddiffat15": 53.67729778240234,
+      "xpdiffat15": 64.00203294065162
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.12357309280416,
+      "kp": 59.34774189125375,
+      "dpm": 51.104734468050786,
+      "damageshare": 50.5687819279405,
+      "golddiffat15": 53.01441961147076,
+      "xpdiffat15": 53.814710873317
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ambition"
+    ],
+    "firstAppearance": "2017-10-07 10:03:36",
+    "selectionShare": 0.4,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ambition-2017-ssg-g3": {
+    "playerId": "ambition-2017-ssg",
+    "player": "Ambition",
+    "champion": "Kha'Zix",
+    "championId": "Khazix",
+    "role": "JUNGLE",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 5,
+      "deaths": 4,
+      "assists": 17,
+      "kda": 5.5,
+      "kp": 0.8452380952380952,
+      "aggregateKp": 0.8461538461538461,
+      "efficiency": 1.5993365587753408,
+      "firstAppearance": "2017-10-13 04:49:35",
+      "lastAppearance": "2017-10-13 05:45:44",
+      "stages": {
+        "groups": 2
+      },
+      "gameIds": [
+        "TRLH1/1002380358",
+        "TRLH1/1002380365"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 469.6259,
+      "damageshare": 0.177087,
+      "golddiffat15": -120.0,
+      "csdiffat15": 7.5,
+      "xpdiffat15": 126.5,
+      "wpm": 0.7887,
+      "wcpm": 0.4316
+    },
+    "worldsGames": 2,
+    "performanceScore": 84.03375812874316,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 58.96546672292307,
+      "B": 66.12783569601453,
+      "C": 51.63977794943222,
+      "D": null
+    },
+    "score": 61.44779789344517,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 96.61955221523296,
+      "kp": 90.83445676659406,
+      "dpm": 99.86501019683699,
+      "damageshare": 98.7061805058768,
+      "golddiffat15": 33.177976267492916,
+      "xpdiffat15": 63.719651749788156
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.12357309280416,
+      "kp": 59.34774189125375,
+      "dpm": 51.104734468050786,
+      "damageshare": 50.5687819279405,
+      "golddiffat15": 53.01441961147076,
+      "xpdiffat15": 53.814710873317
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ambition"
+    ],
+    "firstAppearance": "2017-10-13 04:49:35",
+    "selectionShare": 0.13333333333333333,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ambition-2017-ssg-g4": {
+    "playerId": "ambition-2017-ssg",
+    "player": "Ambition",
+    "champion": "Jarvan IV",
+    "championId": "JarvanIV",
+    "role": "JUNGLE",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 1,
+      "deaths": 5,
+      "assists": 9,
+      "kda": 2.0,
+      "kp": 1.0,
+      "aggregateKp": 1.0,
+      "efficiency": 0.94353482451619,
+      "firstAppearance": "2017-10-29 07:08:18",
+      "lastAppearance": "2017-11-04 08:10:04",
+      "stages": {
+        "semis": 1,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002410104",
+        "TRLH3/1002320097"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 169.39839999999998,
+      "damageshare": 0.11059355000000001,
+      "golddiffat15": -101.0,
+      "csdiffat15": 3.5,
+      "xpdiffat15": -119.5,
+      "wpm": 0.8225,
+      "wcpm": 0.40905
+    },
+    "worldsGames": 2,
+    "performanceScore": 47.79451581702666,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 58.96546672292307,
+      "B": 55.77376646409552,
+      "C": 51.63977794943222,
+      "D": null
+    },
+    "score": 56.27076327748566,
+    "rating": 86,
+    "normalizedMetrics": {
+      "efficiency": 19.715880619262734,
+      "kp": 99.86501019683699,
+      "dpm": 18.89636756368114,
+      "damageshare": 41.57827585857552,
+      "golddiffat15": 26.394302687932115,
+      "xpdiffat15": 35.41511836071092
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.12357309280416,
+      "kp": 59.34774189125375,
+      "dpm": 51.104734468050786,
+      "damageshare": 50.5687819279405,
+      "golddiffat15": 53.01441961147076,
+      "xpdiffat15": 53.814710873317
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ambition"
+    ],
+    "firstAppearance": "2017-10-29 07:08:18",
+    "selectionShare": 0.13333333333333333,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ambition-2017-ssg-g5": {
+    "playerId": "ambition-2017-ssg",
+    "player": "Ambition",
+    "champion": "Lee Sin",
+    "championId": "LeeSin",
+    "role": "JUNGLE",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 1,
+      "deaths": 3,
+      "assists": 5,
+      "kda": 2.0,
+      "kp": 0.6,
+      "aggregateKp": 0.6,
+      "efficiency": 0.9162907318741551,
+      "firstAppearance": "2017-10-29 10:23:09",
+      "lastAppearance": "2017-10-29 10:23:09",
+      "stages": {
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH1/1002410113"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 156.3608,
+      "damageshare": 0.1242,
+      "golddiffat15": -399.0,
+      "csdiffat15": 17.0,
+      "xpdiffat15": -5.0,
+      "wpm": 0.9331,
+      "wcpm": 0.2177
+    },
+    "worldsGames": 1,
+    "performanceScore": 19.78401256201799,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 58.96546672292307,
+      "B": 52.435224362772225,
+      "C": 36.51483716701107,
+      "D": null
+    },
+    "score": 52.332751109460844,
+    "rating": 85,
+    "normalizedMetrics": {
+      "efficiency": 16.774238606554558,
+      "kp": 6.092066763671911,
+      "dpm": 12.589790446138277,
+      "damageshare": 61.05958034389346,
+      "golddiffat15": 6.730571772239669,
+      "xpdiffat15": 52.92737141278386
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.12357309280416,
+      "kp": 59.34774189125375,
+      "dpm": 51.104734468050786,
+      "damageshare": 50.5687819279405,
+      "golddiffat15": 53.01441961147076,
+      "xpdiffat15": 53.814710873317
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ambition"
+    ],
+    "firstAppearance": "2017-10-29 10:23:09",
+    "selectionShare": 0.06666666666666667,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "crown-2017-ssg-g1": {
+    "playerId": "crown-2017-ssg",
+    "player": "Crown",
+    "champion": "Taliyah",
+    "championId": "Taliyah",
+    "role": "MID",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 3,
+      "losses": 1,
+      "winRate": 0.75,
+      "kills": 18,
+      "deaths": 3,
+      "assists": 16,
+      "kda": 11.333333333333334,
+      "kp": 0.9444444444444444,
+      "aggregateKp": 0.9444444444444444,
+      "efficiency": 1.7405608660665517,
+      "firstAppearance": "2017-10-05 08:15:49",
+      "lastAppearance": "2017-10-29 09:23:19",
+      "stages": {
+        "groups": 1,
+        "quarters": 1,
+        "semis": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390191",
+        "TRLH3/1002290033",
+        "TRLH1/1002410104",
+        "TRLH1/1002410112"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 495.552475,
+      "damageshare": 0.278659,
+      "golddiffat15": 1.25,
+      "csdiffat15": -5.25,
+      "xpdiffat15": -41.5,
+      "wpm": 0.640125,
+      "wcpm": 0.18412499999999998
+    },
+    "worldsGames": 4,
+    "performanceScore": 73.83863449772032,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 49.83257205056171,
+      "B": 60.50193313818776,
+      "C": 70.71067811865476,
+      "D": null
+    },
+    "score": 58.298968504588686,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 96.95766659370281,
+      "kp": 99.44886106782702,
+      "dpm": 34.91996490820793,
+      "damageshare": 66.87893879531802,
+      "golddiffat15": 58.24860265108541,
+      "csdiffat15": 49.59016219092922,
+      "xpdiffat15": 58.33248648620878
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.05003150529639,
+      "kp": 49.182697806523144,
+      "dpm": 27.862549429021282,
+      "damageshare": 33.79737817066345,
+      "golddiffat15": 32.665390512825795,
+      "csdiffat15": 53.21827862760228,
+      "xpdiffat15": 42.93574179080944
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Crown"
+    ],
+    "firstAppearance": "2017-10-05 08:15:49",
+    "selectionShare": 0.25,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "crown-2017-ssg-g2": {
+    "playerId": "crown-2017-ssg",
+    "player": "Crown",
+    "champion": "Ryze",
+    "championId": "Ryze",
+    "role": "MID",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0.0,
+      "kills": 0,
+      "deaths": 1,
+      "assists": 0,
+      "kda": 0.0,
+      "kp": 0,
+      "aggregateKp": 0.0,
+      "efficiency": 0.0,
+      "firstAppearance": "2017-10-07 10:03:36",
+      "lastAppearance": "2017-10-07 10:03:36",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390388"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 128.5973,
+      "damageshare": 0.221148,
+      "golddiffat15": -209.0,
+      "csdiffat15": -3.0,
+      "xpdiffat15": -118.0,
+      "wpm": 0.3628,
+      "wcpm": 0.0726
+    },
+    "worldsGames": 1,
+    "performanceScore": 16.329095148601255,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 49.83257205056171,
+      "B": 44.2486592335683,
+      "C": 35.35533905932738,
+      "D": null
+    },
+    "score": 44.869030693379855,
+    "rating": 83,
+    "normalizedMetrics": {
+      "efficiency": 0.13498980316301035,
+      "kp": 0.13498980316301035,
+      "dpm": 0.13498980316301035,
+      "damageshare": 14.582545190782719,
+      "golddiffat15": 28.76997667241864,
+      "csdiffat15": 47.81667596207957,
+      "xpdiffat15": 56.994321407125724
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.05003150529639,
+      "kp": 49.182697806523144,
+      "dpm": 27.862549429021282,
+      "damageshare": 33.79737817066345,
+      "golddiffat15": 32.665390512825795,
+      "csdiffat15": 53.21827862760228,
+      "xpdiffat15": 42.93574179080944
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Crown"
+    ],
+    "firstAppearance": "2017-10-07 10:03:36",
+    "selectionShare": 0.0625,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "crown-2017-ssg-g3": {
+    "playerId": "crown-2017-ssg",
+    "player": "Crown",
+    "champion": "Syndra",
+    "championId": "Syndra",
+    "role": "MID",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 3,
+      "deaths": 6,
+      "assists": 6,
+      "kda": 1.5,
+      "kp": 0.5634920634920635,
+      "aggregateKp": 0.5625,
+      "efficiency": 0.7702225204735744,
+      "firstAppearance": "2017-10-08 10:57:40",
+      "lastAppearance": "2017-10-13 09:15:07",
+      "stages": {
+        "groups": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390478",
+        "TRLH1/1002380375"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 586.27765,
+      "damageshare": 0.30511750000000004,
+      "golddiffat15": -91.0,
+      "csdiffat15": 13.0,
+      "xpdiffat15": -573.5,
+      "wpm": 0.61775,
+      "wcpm": 0.11395
+    },
+    "worldsGames": 2,
+    "performanceScore": 31.359147143778756,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 49.83257205056171,
+      "B": 44.55445064862372,
+      "C": 50.0,
+      "D": null
+    },
+    "score": 47.21862554200845,
+    "rating": 84,
+    "normalizedMetrics": {
+      "efficiency": 7.310536787779132,
+      "kp": 3.71144940590285,
+      "dpm": 75.21930929512067,
+      "damageshare": 74.06665713283496,
+      "golddiffat15": 34.80257694693832,
+      "csdiffat15": 82.69925934038567,
+      "xpdiffat15": 3.7031394677852436
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.05003150529639,
+      "kp": 49.182697806523144,
+      "dpm": 27.862549429021282,
+      "damageshare": 33.79737817066345,
+      "golddiffat15": 32.665390512825795,
+      "csdiffat15": 53.21827862760228,
+      "xpdiffat15": 42.93574179080944
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Crown"
+    ],
+    "firstAppearance": "2017-10-08 10:57:40",
+    "selectionShare": 0.125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "crown-2017-ssg-g4": {
+    "playerId": "crown-2017-ssg",
+    "player": "Crown",
+    "champion": "Malzahar",
+    "championId": "Malzahar",
+    "role": "MID",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 6,
+      "wins": 6,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 17,
+      "deaths": 11,
+      "assists": 31,
+      "kda": 4.363636363636363,
+      "kp": 0.646448824080403,
+      "aggregateKp": 0.631578947368421,
+      "efficiency": 1.3998350126230856,
+      "firstAppearance": "2017-10-13 04:49:35",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "groups": 1,
+        "quarters": 1,
+        "semis": 1,
+        "final": 3
+      },
+      "gameIds": [
+        "TRLH1/1002380358",
+        "TRLH3/1002290025",
+        "TRLH1/1002410111",
+        "TRLH3/1002320090",
+        "TRLH3/1002320097",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 527.5789666666667,
+      "damageshare": 0.2544195,
+      "golddiffat15": -591.6666666666666,
+      "csdiffat15": -10.166666666666666,
+      "xpdiffat15": -178.33333333333334,
+      "wpm": 0.7033333333333334,
+      "wcpm": 0.2589666666666667
+    },
+    "worldsGames": 6,
+    "performanceScore": 38.40371137641368,
+    "confidenceScore": 0.5454545454545454,
+    "components": {
+      "A": 49.83257205056171,
+      "B": 43.59864804648097,
+      "C": 86.60254037844386,
+      "D": null
+    },
+    "score": 52.231105297703664,
+    "rating": 85,
+    "normalizedMetrics": {
+      "efficiency": 75.99466637015789,
+      "kp": 19.964017404563638,
+      "dpm": 31.885049980536973,
+      "damageshare": 24.2548641122955,
+      "golddiffat15": 13.403612288256628,
+      "csdiffat15": 33.30187577949788,
+      "xpdiffat15": 44.5752047248995
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.05003150529639,
+      "kp": 49.182697806523144,
+      "dpm": 27.862549429021282,
+      "damageshare": 33.79737817066345,
+      "golddiffat15": 32.665390512825795,
+      "csdiffat15": 53.21827862760228,
+      "xpdiffat15": 42.93574179080944
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Crown"
+    ],
+    "firstAppearance": "2017-10-13 04:49:35",
+    "selectionShare": 0.375,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "crown-2017-ssg-g5": {
+    "playerId": "crown-2017-ssg",
+    "player": "Crown",
+    "champion": "Galio",
+    "championId": "Galio",
+    "role": "MID",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 4,
+      "deaths": 2,
+      "assists": 17,
+      "kda": 10.5,
+      "kp": 0.95,
+      "aggregateKp": 0.9545454545454546,
+      "efficiency": 1.9756218592907135,
+      "firstAppearance": "2017-10-13 05:45:44",
+      "lastAppearance": "2017-10-29 10:23:09",
+      "stages": {
+        "groups": 1,
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380365",
+        "TRLH1/1002410113"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 371.64455,
+      "damageshare": 0.179857,
+      "golddiffat15": -263.0,
+      "csdiffat15": 5.5,
+      "xpdiffat15": 147.0,
+      "wpm": 0.6949000000000001,
+      "wcpm": 0.18755
+    },
+    "worldsGames": 2,
+    "performanceScore": 66.5592482510248,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 49.83257205056171,
+      "B": 54.61162239355116,
+      "C": 50.0,
+      "D": null
+    },
+    "score": 52.247211414472176,
+    "rating": 85,
+    "normalizedMetrics": {
+      "efficiency": 99.63268079300177,
+      "kp": 99.54073661496615,
+      "dpm": 28.970509512705323,
+      "damageshare": 7.625187363052738,
+      "golddiffat15": 24.160514209376416,
+      "csdiffat15": 79.83257851708004,
+      "xpdiffat15": 64.76026059090849
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.05003150529639,
+      "kp": 49.182697806523144,
+      "dpm": 27.862549429021282,
+      "damageshare": 33.79737817066345,
+      "golddiffat15": 32.665390512825795,
+      "csdiffat15": 53.21827862760228,
+      "xpdiffat15": 42.93574179080944
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Crown"
+    ],
+    "firstAppearance": "2017-10-13 05:45:44",
+    "selectionShare": 0.125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ruler-2017-ssg-g1": {
+    "playerId": "ruler-2017-ssg",
+    "player": "Ruler",
+    "champion": "Varus",
+    "championId": "Varus",
+    "role": "ADC",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 6,
+      "wins": 5,
+      "losses": 1,
+      "winRate": 0.8333333333333334,
+      "kills": 16,
+      "deaths": 10,
+      "assists": 32,
+      "kda": 4.8,
+      "kp": 0.7228926166426166,
+      "aggregateKp": 0.7619047619047619,
+      "efficiency": 1.5022523548298912,
+      "firstAppearance": "2017-10-05 08:15:49",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "groups": 2,
+        "semis": 3,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390191",
+        "TRLH1/1002380375",
+        "TRLH1/1002410111",
+        "TRLH1/1002410112",
+        "TRLH1/1002410113",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 543.3082333333333,
+      "damageshare": 0.29656683333333334,
+      "golddiffat15": 276.8333333333333,
+      "csdiffat15": 4.833333333333333,
+      "xpdiffat15": 198.33333333333334,
+      "wpm": 0.5150833333333333,
+      "wcpm": 0.34181666666666666
+    },
+    "worldsGames": 6,
+    "performanceScore": 60.75507511240244,
+    "confidenceScore": 0.5454545454545454,
+    "components": {
+      "A": 58.21010282739436,
+      "B": 59.59826952830785,
+      "C": 86.60254037844386,
+      "D": null
+    },
+    "score": 63.163051810508534,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 83.73069535523885,
+      "kp": 85.19816325112124,
+      "dpm": 28.575157812510092,
+      "damageshare": 29.82675286144243,
+      "golddiffat15": 65.08650676461536,
+      "csdiffat15": 55.17136532887596,
+      "xpdiffat15": 96.55690169714049
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.39333683090851,
+      "kp": 63.11325131293627,
+      "dpm": 57.06339666471172,
+      "damageshare": 36.59349761964115,
+      "golddiffat15": 43.61401677527266,
+      "csdiffat15": 37.679424260321426,
+      "xpdiffat15": 78.58779953679213
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ruler"
+    ],
+    "firstAppearance": "2017-10-05 08:15:49",
+    "selectionShare": 0.375,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ruler-2017-ssg-g2": {
+    "playerId": "ruler-2017-ssg",
+    "player": "Ruler",
+    "champion": "Twitch",
+    "championId": "Twitch",
+    "role": "ADC",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 7,
+      "deaths": 3,
+      "assists": 3,
+      "kda": 3.3333333333333335,
+      "kp": 0.4166666666666667,
+      "aggregateKp": 0.8333333333333334,
+      "efficiency": 0.8958797346140275,
+      "firstAppearance": "2017-10-07 10:03:36",
+      "lastAppearance": "2017-10-13 05:45:44",
+      "stages": {
+        "groups": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390388",
+        "TRLH1/1002380365"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 692.9394000000001,
+      "damageshare": 0.285328,
+      "golddiffat15": -447.5,
+      "csdiffat15": -17.0,
+      "xpdiffat15": 610.5,
+      "wpm": 0.46240000000000003,
+      "wcpm": 0.3681
+    },
+    "worldsGames": 2,
+    "performanceScore": 27.17439441481962,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 58.21010282739436,
+      "B": 49.34275756665872,
+      "C": 50.0,
+      "D": null
+    },
+    "score": 52.54491477291738,
+    "rating": 85,
+    "normalizedMetrics": {
+      "efficiency": 12.565720837459232,
+      "kp": 0.13498980316301035,
+      "dpm": 76.80908482714771,
+      "damageshare": 6.9772022127349125,
+      "golddiffat15": 21.700085750511033,
+      "csdiffat15": 4.4105935274762755,
+      "xpdiffat15": 99.86501019683699
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.39333683090851,
+      "kp": 63.11325131293627,
+      "dpm": 57.06339666471172,
+      "damageshare": 36.59349761964115,
+      "golddiffat15": 43.61401677527266,
+      "csdiffat15": 37.679424260321426,
+      "xpdiffat15": 78.58779953679213
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ruler"
+    ],
+    "firstAppearance": "2017-10-07 10:03:36",
+    "selectionShare": 0.125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ruler-2017-ssg-g3": {
+    "playerId": "ruler-2017-ssg",
+    "player": "Ruler",
+    "champion": "Tristana",
+    "championId": "Tristana",
+    "role": "ADC",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 5,
+      "wins": 4,
+      "losses": 1,
+      "winRate": 0.8,
+      "kills": 15,
+      "deaths": 4,
+      "assists": 24,
+      "kda": 9.75,
+      "kp": 0.55764221158958,
+      "aggregateKp": 0.6964285714285714,
+      "efficiency": 1.497434738842748,
+      "firstAppearance": "2017-10-08 10:57:40",
+      "lastAppearance": "2017-10-29 07:08:18",
+      "stages": {
+        "groups": 1,
+        "quarters": 3,
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390478",
+        "TRLH3/1002290025",
+        "TRLH3/1002290033",
+        "TRLH3/1002290034",
+        "TRLH1/1002410104"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 723.51702,
+      "damageshare": 0.3317426,
+      "golddiffat15": -198.8,
+      "csdiffat15": -1.2,
+      "xpdiffat15": 49.0,
+      "wpm": 0.54342,
+      "wcpm": 0.5471
+    },
+    "worldsGames": 5,
+    "performanceScore": 50.920486985036824,
+    "confidenceScore": 0.5,
+    "components": {
+      "A": 58.21010282739436,
+      "B": 54.56529490621559,
+      "C": 79.05694150420949,
+      "D": null
+    },
+    "score": 59.51472466832725,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 83.31085208281648,
+      "kp": 7.247074035986273,
+      "dpm": 72.88775517580588,
+      "damageshare": 31.65921655710934,
+      "golddiffat15": 26.820205624984006,
+      "csdiffat15": 44.56271371004473,
+      "xpdiffat15": 50.81974813408616
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.39333683090851,
+      "kp": 63.11325131293627,
+      "dpm": 57.06339666471172,
+      "damageshare": 36.59349761964115,
+      "golddiffat15": 43.61401677527266,
+      "csdiffat15": 37.679424260321426,
+      "xpdiffat15": 78.58779953679213
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ruler"
+    ],
+    "firstAppearance": "2017-10-08 10:57:40",
+    "selectionShare": 0.3125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ruler-2017-ssg-g4": {
+    "playerId": "ruler-2017-ssg",
+    "player": "Ruler",
+    "champion": "Xayah",
+    "championId": "Xayah",
+    "role": "ADC",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 11,
+      "deaths": 0,
+      "assists": 17,
+      "kda": 28.0,
+      "kp": 0.9523809523809523,
+      "aggregateKp": 0.9333333333333333,
+      "efficiency": 2.3156586640451393,
+      "firstAppearance": "2017-10-13 04:49:35",
+      "lastAppearance": "2017-11-04 08:10:04",
+      "stages": {
+        "groups": 1,
+        "final": 2
+      },
+      "gameIds": [
+        "TRLH1/1002380358",
+        "TRLH3/1002320090",
+        "TRLH3/1002320097"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 718.8594666666667,
+      "damageshare": 0.37714966666666666,
+      "golddiffat15": 67.33333333333333,
+      "csdiffat15": -4.0,
+      "xpdiffat15": -218.0,
+      "wpm": 0.5857333333333333,
+      "wcpm": 0.4849
+    },
+    "worldsGames": 3,
+    "performanceScore": 74.6078738265159,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 58.21010282739436,
+      "B": 64.35926695206494,
+      "C": 61.23724356957945,
+      "D": null
+    },
+    "score": 61.73875600105742,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 99.86501019683699,
+      "kp": 99.86501019683699,
+      "dpm": 71.79843932247914,
+      "damageshare": 84.41786367665838,
+      "golddiffat15": 46.78374417778128,
+      "csdiffat15": 28.443693882123334,
+      "xpdiffat15": 2.3351705159211367
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.39333683090851,
+      "kp": 63.11325131293627,
+      "dpm": 57.06339666471172,
+      "damageshare": 36.59349761964115,
+      "golddiffat15": 43.61401677527266,
+      "csdiffat15": 37.679424260321426,
+      "xpdiffat15": 78.58779953679213
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ruler"
+    ],
+    "firstAppearance": "2017-10-13 04:49:35",
+    "selectionShare": 0.1875,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "ruler-2017-ssg-g5": {
+    "playerId": "ruler-2017-ssg",
+    "player": "Ruler",
+    "champion": "Ashe",
+    "championId": "Ashe",
+    "role": "ADC",
+    "team": "Samsung Galaxy",
+    "source": "SEASON_DATA",
+    "event": "LCK_SUMMER_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 10,
+      "wins": 5,
+      "losses": 5,
+      "winRate": 0.5,
+      "kills": 14,
+      "deaths": 19,
+      "assists": 43,
+      "kda": 3.0,
+      "kp": 0.651263687293099,
+      "aggregateKp": 0.76,
+      "efficiency": 1.124199124981967,
+      "firstAppearance": "2017-06-03 13:03:10",
+      "lastAppearance": "2017-08-01 11:49:32",
+      "stages": {
+        "regular": 10
+      },
+      "gameIds": [
+        "ESPORTSTMNT06/250447",
+        "ESPORTSTMNT06/250594",
+        "ESPORTSTMNT06/250609",
+        "ESPORTSTMNT06/260176",
+        "ESPORTSTMNT06/260182",
+        "ESPORTSTMNT06/260185",
+        "ESPORTSTMNT06/280436",
+        "ESPORTSTMNT06/300787",
+        "ESPORTSTMNT06/320181",
+        "ESPORTSTMNT06/330651"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 503.68702,
+      "damageshare": 0.2767321,
+      "golddiffat15": -149.3,
+      "csdiffat15": -0.3,
+      "xpdiffat15": -143.1,
+      "wpm": 0.42630999999999997,
+      "wcpm": 0.36424
+    },
+    "worldsGames": 0,
+    "performanceScore": 56.3508440994458,
+    "confidenceScore": 0.43333333333333335,
+    "components": {
+      "A": 58.21010282739436,
+      "B": 57.404424045283314,
+      "C": 32.96902366978935,
+      "D": null
+    },
+    "score": 54.021101562698085,
+    "rating": 86,
+    "normalizedMetrics": {
+      "efficiency": 43.6653019777925,
+      "kp": 72.08718906050098,
+      "dpm": 59.0667147417924,
+      "damageshare": 83.26110110223941,
+      "golddiffat15": 40.76766576750962,
+      "csdiffat15": 49.01257856524787,
+      "xpdiffat15": 26.818153979047732
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.39333683090851,
+      "kp": 63.11325131293627,
+      "dpm": 57.06339666471172,
+      "damageshare": 36.59349761964115,
+      "golddiffat15": 43.61401677527266,
+      "csdiffat15": 37.679424260321426,
+      "xpdiffat15": 78.58779953679213
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Ruler",
+      "golgg-summer-Ruler"
+    ],
+    "firstAppearance": "2017-06-03 13:03:10",
+    "selectionShare": 0.21739130434782608,
+    "notes": "Summer: separate event/role normalization, transfer factor 0.65."
+  },
+  "corejj-2017-ssg-g1": {
+    "playerId": "corejj-2017-ssg",
+    "player": "CoreJJ",
+    "champion": "Taric",
+    "championId": "Taric",
+    "role": "SUPPORT",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 5,
+      "wins": 4,
+      "losses": 1,
+      "winRate": 0.8,
+      "kills": 1,
+      "deaths": 5,
+      "assists": 41,
+      "kda": 8.4,
+      "kp": 0.9180555555555555,
+      "aggregateKp": 0.8936170212765957,
+      "efficiency": 1.5176014343112698,
+      "firstAppearance": "2017-10-05 08:15:49",
+      "lastAppearance": "2017-10-29 09:23:19",
+      "stages": {
+        "groups": 1,
+        "quarters": 2,
+        "semis": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390191",
+        "TRLH3/1002290033",
+        "TRLH3/1002290034",
+        "TRLH1/1002410104",
+        "TRLH1/1002410112"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 85.78764,
+      "damageshare": 0.04532294,
+      "golddiffat15": -129.8,
+      "csdiffat15": 13.4,
+      "xpdiffat15": 197.6,
+      "wpm": 0.99258,
+      "wcpm": 0.31318
+    },
+    "worldsGames": 5,
+    "performanceScore": 76.29080470881497,
+    "confidenceScore": 0.5,
+    "components": {
+      "A": 70.08485545054056,
+      "B": 73.18783007967777,
+      "C": 79.05694150420949,
+      "D": null
+    },
+    "score": 72.9821556731595,
+    "rating": 91,
+    "normalizedMetrics": {
+      "efficiency": 81.18965375918638,
+      "kp": 98.37048277275355,
+      "wpm": 8.614754236180305,
+      "wcpm": 81.01695858139308
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.77840511779918,
+      "kp": 80.62177703701074,
+      "wpm": 21.3761899258669,
+      "wcpm": 90.0992035718065
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CoreJJ"
+    ],
+    "firstAppearance": "2017-10-05 08:15:49",
+    "selectionShare": 0.3125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "corejj-2017-ssg-g2": {
+    "playerId": "corejj-2017-ssg",
+    "player": "CoreJJ",
+    "champion": "Rakan",
+    "championId": "Rakan",
+    "role": "SUPPORT",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 1,
+      "deaths": 6,
+      "assists": 22,
+      "kda": 3.8333333333333335,
+      "kp": 0.5456140350877193,
+      "aggregateKp": 0.7931034482758621,
+      "efficiency": 1.2688874965901067,
+      "firstAppearance": "2017-10-07 10:03:36",
+      "lastAppearance": "2017-10-29 10:23:09",
+      "stages": {
+        "groups": 1,
+        "quarters": 1,
+        "semis": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390388",
+        "TRLH3/1002290025",
+        "TRLH1/1002410113"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 88.7959,
+      "damageshare": 0.07681743333333334,
+      "golddiffat15": -48.333333333333336,
+      "csdiffat15": -9.0,
+      "xpdiffat15": -8.333333333333334,
+      "wpm": 1.0619333333333334,
+      "wcpm": 0.3564333333333333
+    },
+    "worldsGames": 3,
+    "performanceScore": 36.58317352569615,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 70.08485545054056,
+      "B": 57.5217247287239,
+      "C": 61.23724356957945,
+      "D": null
+    },
+    "score": 62.47614830748807,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 52.18470155653638,
+      "kp": 3.7733528463890833,
+      "wpm": 19.527638676651698,
+      "wcpm": 93.79139122116322
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.77840511779918,
+      "kp": 80.62177703701074,
+      "wpm": 21.3761899258669,
+      "wcpm": 90.0992035718065
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CoreJJ"
+    ],
+    "firstAppearance": "2017-10-07 10:03:36",
+    "selectionShare": 0.1875,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "corejj-2017-ssg-g3": {
+    "playerId": "corejj-2017-ssg",
+    "player": "CoreJJ",
+    "champion": "Lulu",
+    "championId": "Lulu",
+    "role": "SUPPORT",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 3,
+      "losses": 1,
+      "winRate": 0.75,
+      "kills": 4,
+      "deaths": 3,
+      "assists": 30,
+      "kda": 11.333333333333334,
+      "kp": 0.7348710317460317,
+      "aggregateKp": 0.7727272727272727,
+      "efficiency": 1.775281667990669,
+      "firstAppearance": "2017-10-08 10:57:40",
+      "lastAppearance": "2017-11-04 09:04:42",
+      "stages": {
+        "groups": 3,
+        "final": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390478",
+        "TRLH1/1002380365",
+        "TRLH1/1002380375",
+        "TRLH3/1002320098"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 173.741075,
+      "damageshare": 0.0769241,
+      "golddiffat15": 27.75,
+      "csdiffat15": -0.75,
+      "xpdiffat15": 159.25,
+      "wpm": 1.2832750000000002,
+      "wcpm": 0.41825
+    },
+    "worldsGames": 4,
+    "performanceScore": 80.54978999816313,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 70.08485545054056,
+      "B": 74.73593747170615,
+      "C": 70.71067811865476,
+      "D": null
+    },
+    "score": 72.50426986134048,
+    "rating": 91,
+    "normalizedMetrics": {
+      "efficiency": 95.9503214375348,
+      "kp": 58.381113942901095,
+      "wpm": 77.55014869818078,
+      "wcpm": 99.34176873522303
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.77840511779918,
+      "kp": 80.62177703701074,
+      "wpm": 21.3761899258669,
+      "wcpm": 90.0992035718065
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CoreJJ"
+    ],
+    "firstAppearance": "2017-10-08 10:57:40",
+    "selectionShare": 0.25,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "corejj-2017-ssg-g4": {
+    "playerId": "corejj-2017-ssg",
+    "player": "CoreJJ",
+    "champion": "Janna",
+    "championId": "Janna",
+    "role": "SUPPORT",
+    "team": "Samsung Galaxy",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 4,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 1,
+      "deaths": 3,
+      "assists": 35,
+      "kda": 12.0,
+      "kp": 0.8961038961038961,
+      "aggregateKp": 0.8780487804878049,
+      "efficiency": 1.906804941964864,
+      "firstAppearance": "2017-10-13 04:49:35",
+      "lastAppearance": "2017-11-04 08:10:04",
+      "stages": {
+        "groups": 1,
+        "semis": 1,
+        "final": 2
+      },
+      "gameIds": [
+        "TRLH1/1002380358",
+        "TRLH1/1002410111",
+        "TRLH3/1002320090",
+        "TRLH3/1002320097"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 42.909925,
+      "damageshare": 0.0224382625,
+      "golddiffat15": 222.0,
+      "csdiffat15": 0.75,
+      "xpdiffat15": 236.5,
+      "wpm": 0.963,
+      "wcpm": 0.28297500000000003
+    },
+    "worldsGames": 4,
+    "performanceScore": 79.28922926702994,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 70.08485545054056,
+      "B": 74.17568825786917,
+      "C": 70.71067811865476,
+      "D": null
+    },
+    "score": 72.22414525442198,
+    "rating": 91,
+    "normalizedMetrics": {
+      "efficiency": 98.55161952344537,
+      "kp": 97.16983412139864,
+      "wpm": 5.696324135654707,
+      "wcpm": 66.2151458065756
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.77840511779918,
+      "kp": 80.62177703701074,
+      "wpm": 21.3761899258669,
+      "wcpm": 90.0992035718065
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CoreJJ"
+    ],
+    "firstAppearance": "2017-10-13 04:49:35",
+    "selectionShare": 0.25,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "corejj-2017-ssg-g5": {
+    "playerId": "corejj-2017-ssg",
+    "player": "CoreJJ",
+    "champion": "Braum",
+    "championId": "Braum",
+    "role": "SUPPORT",
+    "team": "Samsung Galaxy",
+    "source": "SEASON_DATA",
+    "event": "LCK_SUMMER_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 12,
+      "wins": 8,
+      "losses": 4,
+      "winRate": 0.6666666666666666,
+      "kills": 5,
+      "deaths": 18,
+      "assists": 97,
+      "kda": 5.666666666666667,
+      "kp": 0.6616339459760512,
+      "aggregateKp": 0.7445255474452555,
+      "efficiency": 1.4788602476394317,
+      "firstAppearance": "2017-06-21 07:41:16",
+      "lastAppearance": "2017-08-06 10:43:48",
+      "stages": {
+        "regular": 12
+      },
+      "gameIds": [
+        "ESPORTSTMNT06/270615",
+        "ESPORTSTMNT06/270965",
+        "ESPORTSTMNT06/280133",
+        "ESPORTSTMNT06/280138",
+        "ESPORTSTMNT06/280143",
+        "ESPORTSTMNT06/280436",
+        "ESPORTSTMNT06/300189",
+        "ESPORTSTMNT06/300195",
+        "ESPORTSTMNT06/300766",
+        "ESPORTSTMNT06/320047",
+        "ESPORTSTMNT06/320181",
+        "ESPORTSTMNT06/331049"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 170.20265833333332,
+      "damageshare": 0.09076956666666666,
+      "golddiffat15": 236.33333333333334,
+      "csdiffat15": 7.5,
+      "xpdiffat15": -73.33333333333333,
+      "wpm": 1.235825,
+      "wcpm": 0.39268333333333333
+    },
+    "worldsGames": 0,
+    "performanceScore": 62.444851658674345,
+    "confidenceScore": 0.45882352941176474,
+    "components": {
+      "A": 70.08485545054056,
+      "B": 66.57944194603724,
+      "C": 36.11575592573076,
+      "D": null
+    },
+    "score": 63.236783769567424,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 85.26915947928816,
+      "kp": 61.20982907987147,
+      "wpm": 17.011169494993826,
+      "wcpm": 57.50353492479605
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 89.77840511779918,
+      "kp": 80.62177703701074,
+      "wpm": 21.3761899258669,
+      "wcpm": 90.0992035718065
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-CoreJJ",
+      "golgg-summer-CoreJJ"
+    ],
+    "firstAppearance": "2017-06-21 07:41:16",
+    "selectionShare": 0.2608695652173913,
+    "notes": "Summer: separate event/role normalization, transfer factor 0.65."
+  },
+  "khan-2017-lz-g1": {
+    "playerId": "khan-2017-lz",
+    "player": "Khan",
+    "champion": "Jarvan IV",
+    "championId": "JarvanIV",
+    "role": "TOP",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 12,
+      "deaths": 7,
+      "assists": 30,
+      "kda": 6.0,
+      "kp": 0.7755153343388638,
+      "aggregateKp": 0.7777777777777778,
+      "efficiency": 1.8305629198428588,
+      "firstAppearance": "2017-10-05 09:09:58",
+      "lastAppearance": "2017-10-12 06:46:43",
+      "stages": {
+        "groups": 3
+      },
+      "gameIds": [
+        "TRLH1/1002390201",
+        "TRLH1/1002380208",
+        "TRLH1/1002380331"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 439.40433333333334,
+      "damageshare": 0.22260766666666668,
+      "golddiffat15": 196.66666666666666,
+      "csdiffat15": 15.666666666666666,
+      "xpdiffat15": 844.6666666666666,
+      "wpm": 0.5789333333333333,
+      "wcpm": 0.19573333333333334
+    },
+    "worldsGames": 3,
+    "performanceScore": 86.38511330193258,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 60.6169481687205,
+      "B": 70.28001009367503,
+      "C": 86.60254037844386,
+      "D": null
+    },
+    "score": 69.34631796265627,
+    "rating": 90,
+    "normalizedMetrics": {
+      "efficiency": 98.56256246908524,
+      "kp": 82.73744030817592,
+      "dpm": 88.83368182868405,
+      "damageshare": 69.40148580778836,
+      "golddiffat15": 65.25450419542092,
+      "csdiffat15": 93.22332717703854,
+      "xpdiffat15": 99.58147436336438
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 76.54189457703363,
+      "kp": 57.64160824879217,
+      "dpm": 82.26151009214671,
+      "damageshare": 83.82034883316443,
+      "golddiffat15": 44.523497507140966,
+      "csdiffat15": 59.37624577422043,
+      "xpdiffat15": 61.33415291961949
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Khan"
+    ],
+    "firstAppearance": "2017-10-05 09:09:58",
+    "selectionShare": 0.375,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "khan-2017-lz-g2": {
+    "playerId": "khan-2017-lz",
+    "player": "Khan",
+    "champion": "Nasus",
+    "championId": "Nasus",
+    "role": "TOP",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 2,
+      "deaths": 0,
+      "assists": 0,
+      "kda": 2.0,
+      "kp": 0.4,
+      "aggregateKp": 0.4,
+      "efficiency": 1.0986122886681098,
+      "firstAppearance": "2017-10-08 10:13:50",
+      "lastAppearance": "2017-10-08 10:13:50",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390468"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 420.6709,
+      "damageshare": 0.290903,
+      "golddiffat15": 509.0,
+      "csdiffat15": 11.0,
+      "xpdiffat15": 441.0,
+      "wpm": 0.7188,
+      "wcpm": 0.1438
+    },
+    "worldsGames": 1,
+    "performanceScore": 66.51723628433055,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 60.6169481687205,
+      "B": 61.60032952132217,
+      "C": 50.0,
+      "D": null
+    },
+    "score": 59.51609661971326,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 46.771676298853336,
+      "kp": 6.260558154529811,
+      "dpm": 73.73736007732006,
+      "damageshare": 99.39283089392599,
+      "golddiffat15": 95.68755532583988,
+      "csdiffat15": 89.21825426355363,
+      "xpdiffat15": 96.10387660215784
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 76.54189457703363,
+      "kp": 57.64160824879217,
+      "dpm": 82.26151009214671,
+      "damageshare": 83.82034883316443,
+      "golddiffat15": 44.523497507140966,
+      "csdiffat15": 59.37624577422043,
+      "xpdiffat15": 61.33415291961949
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Khan"
+    ],
+    "firstAppearance": "2017-10-08 10:13:50",
+    "selectionShare": 0.125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "khan-2017-lz-g3": {
+    "playerId": "khan-2017-lz",
+    "player": "Khan",
+    "champion": "Jayce",
+    "championId": "Jayce",
+    "role": "TOP",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 4,
+      "deaths": 1,
+      "assists": 3,
+      "kda": 7.0,
+      "kp": 0.5,
+      "aggregateKp": 0.5,
+      "efficiency": 1.5040773967762742,
+      "firstAppearance": "2017-10-12 04:53:26",
+      "lastAppearance": "2017-10-12 04:53:26",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380323"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 654.8849,
+      "damageshare": 0.323616,
+      "golddiffat15": 548.0,
+      "csdiffat15": 16.0,
+      "xpdiffat15": 329.0,
+      "wpm": 0.5962,
+      "wcpm": 0.0314
+    },
+    "worldsGames": 1,
+    "performanceScore": 79.91870045837332,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 60.6169481687205,
+      "B": 63.833906883662635,
+      "C": 50.0,
+      "D": null
+    },
+    "score": 60.63288530088349,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 88.00646226294691,
+      "kp": 19.116579916381,
+      "dpm": 99.86501019683699,
+      "damageshare": 98.68027053348835,
+      "golddiffat15": 87.78630184297198,
+      "csdiffat15": 85.45434341270943,
+      "xpdiffat15": 84.88439704588315
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 76.54189457703363,
+      "kp": 57.64160824879217,
+      "dpm": 82.26151009214671,
+      "damageshare": 83.82034883316443,
+      "golddiffat15": 44.523497507140966,
+      "csdiffat15": 59.37624577422043,
+      "xpdiffat15": 61.33415291961949
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Khan"
+    ],
+    "firstAppearance": "2017-10-12 04:53:26",
+    "selectionShare": 0.125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "khan-2017-lz-g4": {
+    "playerId": "khan-2017-lz",
+    "player": "Khan",
+    "champion": "Jax",
+    "championId": "Jax",
+    "role": "TOP",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0.0,
+      "kills": 3,
+      "deaths": 4,
+      "assists": 4,
+      "kda": 1.75,
+      "kp": 0.4666666666666667,
+      "aggregateKp": 0.4666666666666667,
+      "efficiency": 0.8754687373538999,
+      "firstAppearance": "2017-10-19 07:40:06",
+      "lastAppearance": "2017-10-19 07:40:06",
+      "stages": {
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH3/1002290025"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 250.1048,
+      "damageshare": 0.130149,
+      "golddiffat15": -756.0,
+      "csdiffat15": -26.0,
+      "xpdiffat15": -1427.0,
+      "wpm": 0.6512,
+      "wcpm": 0.2919
+    },
+    "worldsGames": 1,
+    "performanceScore": 7.750613945063443,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 60.6169481687205,
+      "B": 51.805892464777656,
+      "C": 50.0,
+      "D": null
+    },
+    "score": 54.618878091441005,
+    "rating": 86,
+    "normalizedMetrics": {
+      "efficiency": 21.993473361971617,
+      "kp": 13.708868330459195,
+      "dpm": 0.13498980316301035,
+      "damageshare": 0.63107024298521,
+      "golddiffat15": 0.5349887044824864,
+      "csdiffat15": 0.18812574240013036,
+      "xpdiffat15": 0.13498980316301035
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 76.54189457703363,
+      "kp": 57.64160824879217,
+      "dpm": 82.26151009214671,
+      "damageshare": 83.82034883316443,
+      "golddiffat15": 44.523497507140966,
+      "csdiffat15": 59.37624577422043,
+      "xpdiffat15": 61.33415291961949
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Khan"
+    ],
+    "firstAppearance": "2017-10-19 07:40:06",
+    "selectionShare": 0.125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "khan-2017-lz-g5": {
+    "playerId": "khan-2017-lz",
+    "player": "Khan",
+    "champion": "Cho'Gath",
+    "championId": "Chogath",
+    "role": "TOP",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0.0,
+      "kills": 2,
+      "deaths": 1,
+      "assists": 1,
+      "kda": 3.0,
+      "kp": 0.6,
+      "aggregateKp": 0.6,
+      "efficiency": 0.9162907318741551,
+      "firstAppearance": "2017-10-19 09:17:05",
+      "lastAppearance": "2017-10-19 09:17:05",
+      "stages": {
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH3/1002290033"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 419.5966,
+      "damageshare": 0.293276,
+      "golddiffat15": -418.0,
+      "csdiffat15": -8.0,
+      "xpdiffat15": -543.0,
+      "wpm": 0.6387,
+      "wcpm": 0.0
+    },
+    "worldsGames": 1,
+    "performanceScore": 40.02996781031605,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 60.6169481687205,
+      "B": 57.18578477565309,
+      "C": 50.0,
+      "D": null
+    },
+    "score": 57.308824246878714,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 25.916298265272264,
+      "kp": 41.52914597159708,
+      "dpm": 83.82480237938317,
+      "damageshare": 99.86501019683699,
+      "golddiffat15": 15.198653097463733,
+      "csdiffat15": 22.579899929312347,
+      "xpdiffat15": 2.235120141164504
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 76.54189457703363,
+      "kp": 57.64160824879217,
+      "dpm": 82.26151009214671,
+      "damageshare": 83.82034883316443,
+      "golddiffat15": 44.523497507140966,
+      "csdiffat15": 59.37624577422043,
+      "xpdiffat15": 61.33415291961949
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Khan"
+    ],
+    "firstAppearance": "2017-10-19 09:17:05",
+    "selectionShare": 0.125,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuzz-2017-lz-g1": {
+    "playerId": "cuzz-2017-lz",
+    "player": "Cuzz",
+    "champion": "Kha'Zix",
+    "championId": "Khazix",
+    "role": "JUNGLE",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 2,
+      "deaths": 3,
+      "assists": 4,
+      "kda": 2.0,
+      "kp": 0.46153846153846156,
+      "aggregateKp": 0.46153846153846156,
+      "efficiency": 0.9162907318741551,
+      "firstAppearance": "2017-10-05 09:09:58",
+      "lastAppearance": "2017-10-05 09:09:58",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390201"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 173.8103,
+      "damageshare": 0.101264,
+      "golddiffat15": -394.0,
+      "csdiffat15": 7.0,
+      "xpdiffat15": -193.0,
+      "wpm": 0.9651,
+      "wcpm": 0.1664
+    },
+    "worldsGames": 1,
+    "performanceScore": 10.165865052683136,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 52.807257678345124,
+      "B": 45.70035890740146,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 48.403787452987,
+    "rating": 84,
+    "normalizedMetrics": {
+      "efficiency": 16.774238606554558,
+      "kp": 0.13498980316301035,
+      "dpm": 3.0688489327360347,
+      "damageshare": 8.107529276244046,
+      "golddiffat15": 7.2566725290314436,
+      "xpdiffat15": 24.367786131859432
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.37480683179935,
+      "kp": 57.21922573793231,
+      "dpm": 46.60879638277389,
+      "damageshare": 47.247252468207954,
+      "golddiffat15": 32.3396679366606,
+      "xpdiffat15": 24.87617634101605
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Cuzz"
+    ],
+    "firstAppearance": "2017-10-05 09:09:58",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuzz-2017-lz-g2": {
+    "playerId": "cuzz-2017-lz",
+    "player": "Cuzz",
+    "champion": "Gragas",
+    "championId": "Gragas",
+    "role": "JUNGLE",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 4,
+      "wins": 3,
+      "losses": 1,
+      "winRate": 0.75,
+      "kills": 8,
+      "deaths": 7,
+      "assists": 34,
+      "kda": 6.0,
+      "kp": 0.7746323529411765,
+      "aggregateKp": 0.8235294117647058,
+      "efficiency": 1.655018301632589,
+      "firstAppearance": "2017-10-06 10:33:25",
+      "lastAppearance": "2017-10-19 10:10:02",
+      "stages": {
+        "groups": 3,
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380208",
+        "TRLH1/1002390468",
+        "TRLH1/1002380331",
+        "TRLH3/1002290034"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 272.15575,
+      "damageshare": 0.1464405,
+      "golddiffat15": -114.25,
+      "csdiffat15": -16.75,
+      "xpdiffat15": -272.0,
+      "wpm": 0.87335,
+      "wcpm": 0.46992500000000004
+    },
+    "worldsGames": 4,
+    "performanceScore": 74.5347834736751,
+    "confidenceScore": 0.4444444444444444,
+    "components": {
+      "A": 52.807257678345124,
+      "B": 62.463935809602894,
+      "C": 94.28090415820634,
+      "D": null
+    },
+    "score": 63.85664371595319,
+    "rating": 89,
+    "normalizedMetrics": {
+      "efficiency": 98.00655178620737,
+      "kp": 69.22063708552955,
+      "dpm": 85.72408235838348,
+      "damageshare": 94.36194293434185,
+      "golddiffat15": 48.99830430049097,
+      "xpdiffat15": 41.17527333032998
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.37480683179935,
+      "kp": 57.21922573793231,
+      "dpm": 46.60879638277389,
+      "damageshare": 47.247252468207954,
+      "golddiffat15": 32.3396679366606,
+      "xpdiffat15": 24.87617634101605
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Cuzz"
+    ],
+    "firstAppearance": "2017-10-06 10:33:25",
+    "selectionShare": 0.4444444444444444,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuzz-2017-lz-g3": {
+    "playerId": "cuzz-2017-lz",
+    "player": "Cuzz",
+    "champion": "Sejuani",
+    "championId": "Sejuani",
+    "role": "JUNGLE",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 1,
+      "deaths": 2,
+      "assists": 5,
+      "kda": 3.0,
+      "kp": 0.42857142857142855,
+      "aggregateKp": 0.42857142857142855,
+      "efficiency": 1.0986122886681098,
+      "firstAppearance": "2017-10-12 04:53:26",
+      "lastAppearance": "2017-10-12 04:53:26",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380323"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 139.205,
+      "damageshare": 0.0687891,
+      "golddiffat15": 130.0,
+      "csdiffat15": -23.0,
+      "xpdiffat15": -231.0,
+      "wpm": 1.0669,
+      "wcpm": 0.4079
+    },
+    "worldsGames": 1,
+    "performanceScore": 19.681685397039242,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 52.807257678345124,
+      "B": 47.286328964794144,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 49.19677248168334,
+    "rating": 84,
+    "normalizedMetrics": {
+      "efficiency": 41.36321815832581,
+      "kp": 0.13498980316301035,
+      "dpm": 2.6676770048856326,
+      "damageshare": 0.4874911067875298,
+      "golddiffat15": 53.05954458815607,
+      "xpdiffat15": 10.90084195966033
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.37480683179935,
+      "kp": 57.21922573793231,
+      "dpm": 46.60879638277389,
+      "damageshare": 47.247252468207954,
+      "golddiffat15": 32.3396679366606,
+      "xpdiffat15": 24.87617634101605
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Cuzz"
+    ],
+    "firstAppearance": "2017-10-12 04:53:26",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuzz-2017-lz-g4": {
+    "playerId": "cuzz-2017-lz",
+    "player": "Cuzz",
+    "champion": "Jarvan IV",
+    "championId": "JarvanIV",
+    "role": "JUNGLE",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 1,
+      "losses": 2,
+      "winRate": 0.3333333333333333,
+      "kills": 4,
+      "deaths": 12,
+      "assists": 28,
+      "kda": 2.6666666666666665,
+      "kp": 0.9125,
+      "aggregateKp": 0.8888888888888888,
+      "efficiency": 1.1293519510796604,
+      "firstAppearance": "2017-10-12 08:52:47",
+      "lastAppearance": "2017-10-19 09:17:05",
+      "stages": {
+        "groups": 1,
+        "quarters": 2
+      },
+      "gameIds": [
+        "TRLH1/1002380337",
+        "TRLH3/1002290025",
+        "TRLH3/1002290033"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 192.5635,
+      "damageshare": 0.0942508,
+      "golddiffat15": -168.0,
+      "csdiffat15": -6.0,
+      "xpdiffat15": -340.0,
+      "wpm": 0.9213333333333333,
+      "wcpm": 0.5159333333333334
+    },
+    "worldsGames": 3,
+    "performanceScore": 51.526301061189955,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 52.807257678345124,
+      "B": 52.32689894691194,
+      "C": 81.6496580927726,
+      "D": null
+    },
+    "score": 56.89343837479265,
+    "rating": 86,
+    "normalizedMetrics": {
+      "efficiency": 46.31035193940454,
+      "kp": 98.29930769278337,
+      "dpm": 34.02713069564905,
+      "damageshare": 16.00574128891679,
+      "golddiffat15": 18.912500921275676,
+      "xpdiffat15": 13.661019635968486
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.37480683179935,
+      "kp": 57.21922573793231,
+      "dpm": 46.60879638277389,
+      "damageshare": 47.247252468207954,
+      "golddiffat15": 32.3396679366606,
+      "xpdiffat15": 24.87617634101605
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Cuzz"
+    ],
+    "firstAppearance": "2017-10-12 08:52:47",
+    "selectionShare": 0.3333333333333333,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "cuzz-2017-lz-g5": {
+    "playerId": "cuzz-2017-lz",
+    "player": "Cuzz",
+    "champion": "Elise",
+    "championId": "Elise",
+    "role": "JUNGLE",
+    "team": "Longzhu Gaming",
+    "source": "SEASON_DATA",
+    "event": "LCK_SUMMER_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 12,
+      "wins": 8,
+      "losses": 4,
+      "winRate": 0.6666666666666666,
+      "kills": 29,
+      "deaths": 24,
+      "assists": 68,
+      "kda": 4.041666666666667,
+      "kp": 0.6272814007439294,
+      "aggregateKp": 0.60625,
+      "efficiency": 1.4478925990640983,
+      "firstAppearance": "2017-05-30 10:41:00",
+      "lastAppearance": "2017-08-01 09:05:37",
+      "stages": {
+        "regular": 12
+      },
+      "gameIds": [
+        "ESPORTSTMNT06/240086",
+        "ESPORTSTMNT06/250218",
+        "ESPORTSTMNT06/250883",
+        "ESPORTSTMNT06/280138",
+        "ESPORTSTMNT06/280143",
+        "ESPORTSTMNT06/280426",
+        "ESPORTSTMNT06/310060",
+        "ESPORTSTMNT06/310066",
+        "ESPORTSTMNT06/300143",
+        "ESPORTSTMNT06/300959",
+        "ESPORTSTMNT06/320051",
+        "ESPORTSTMNT06/330639"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 342.956975,
+      "damageshare": 0.16620000000000001,
+      "golddiffat15": -212.75,
+      "csdiffat15": -19.666666666666668,
+      "xpdiffat15": -385.4166666666667,
+      "wpm": 0.8761416666666667,
+      "wcpm": 0.55185
+    },
+    "worldsGames": 0,
+    "performanceScore": 46.545991380166875,
+    "confidenceScore": 0.45882352941176474,
+    "components": {
+      "A": 52.807257678345124,
+      "B": 49.93444137682805,
+      "C": 35.35533905932738,
+      "D": null
+    },
+    "score": 48.75306173473392,
+    "rating": 84,
+    "normalizedMetrics": {
+      "efficiency": 89.22106227149922,
+      "kp": 23.853766293317523,
+      "dpm": 84.26872975011666,
+      "damageshare": 39.929817900451866,
+      "golddiffat15": 9.55942103665381,
+      "xpdiffat15": 8.294912246814762
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.37480683179935,
+      "kp": 57.21922573793231,
+      "dpm": 46.60879638277389,
+      "damageshare": 47.247252468207954,
+      "golddiffat15": 32.3396679366606,
+      "xpdiffat15": 24.87617634101605
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Cuzz",
+      "golgg-summer-Cuzz"
+    ],
+    "firstAppearance": "2017-05-30 10:41:00",
+    "selectionShare": 0.25,
+    "notes": "Summer: separate event/role normalization, transfer factor 0.65."
+  },
+  "bdd-2017-lz-g1": {
+    "playerId": "bdd-2017-lz",
+    "player": "Bdd",
+    "champion": "Taliyah",
+    "championId": "Taliyah",
+    "role": "MID",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 7,
+      "deaths": 2,
+      "assists": 20,
+      "kda": 13.5,
+      "kp": 0.7939102564102565,
+      "aggregateKp": 0.7941176470588235,
+      "efficiency": 1.8371368606695817,
+      "firstAppearance": "2017-10-05 09:09:58",
+      "lastAppearance": "2017-10-19 10:10:02",
+      "stages": {
+        "groups": 2,
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390201",
+        "TRLH1/1002380337",
+        "TRLH3/1002290034"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 536.9186666666667,
+      "damageshare": 0.260085,
+      "golddiffat15": -170.33333333333334,
+      "csdiffat15": 0.6666666666666666,
+      "xpdiffat15": 144.0,
+      "wpm": 0.5446,
+      "wcpm": 0.14633333333333332
+    },
+    "worldsGames": 3,
+    "performanceScore": 71.52905862402295,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 68.458361272487,
+      "B": 69.60987277931298,
+      "C": 81.6496580927726,
+      "D": null
+    },
+    "score": 71.01281154894282,
+    "rating": 91,
+    "normalizedMetrics": {
+      "efficiency": 98.63011163796254,
+      "kp": 79.73189145530259,
+      "dpm": 59.90656639817459,
+      "damageshare": 40.18897082194509,
+      "golddiffat15": 37.96968604009141,
+      "csdiffat15": 73.95196147061499,
+      "xpdiffat15": 78.2494964838462
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 95.61235275624112,
+      "kp": 73.8542914950092,
+      "dpm": 59.197274474218176,
+      "damageshare": 51.90560310354425,
+      "golddiffat15": 71.25480595731197,
+      "csdiffat15": 88.29305814452036,
+      "xpdiffat15": 94.11245469981455
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bdd"
+    ],
+    "firstAppearance": "2017-10-05 09:09:58",
+    "selectionShare": 0.3333333333333333,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bdd-2017-lz-g2": {
+    "playerId": "bdd-2017-lz",
+    "player": "Bdd",
+    "champion": "Ryze",
+    "championId": "Ryze",
+    "role": "MID",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 3,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 17,
+      "deaths": 3,
+      "assists": 22,
+      "kda": 13.0,
+      "kp": 0.69234360410831,
+      "aggregateKp": 0.7090909090909091,
+      "efficiency": 2.043742163161047,
+      "firstAppearance": "2017-10-06 10:33:25",
+      "lastAppearance": "2017-10-12 06:46:43",
+      "stages": {
+        "groups": 3
+      },
+      "gameIds": [
+        "TRLH1/1002380208",
+        "TRLH1/1002380323",
+        "TRLH1/1002380331"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 486.6453333333333,
+      "damageshare": 0.231517,
+      "golddiffat15": 420.3333333333333,
+      "csdiffat15": 10.666666666666666,
+      "xpdiffat15": 867.3333333333334,
+      "wpm": 0.5112666666666666,
+      "wcpm": 0.07656666666666667
+    },
+    "worldsGames": 3,
+    "performanceScore": 75.21340459555081,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 68.458361272487,
+      "B": 70.99150251863593,
+      "C": 81.6496580927726,
+      "D": null
+    },
+    "score": 71.7036264186043,
+    "rating": 91,
+    "normalizedMetrics": {
+      "efficiency": 99.82177392876885,
+      "kp": 37.38793996137114,
+      "dpm": 74.02886493354288,
+      "damageshare": 25.076459078341205,
+      "golddiffat15": 90.77609444489806,
+      "csdiffat15": 92.66925533477558,
+      "xpdiffat15": 99.86501019683699
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 95.61235275624112,
+      "kp": 73.8542914950092,
+      "dpm": 59.197274474218176,
+      "damageshare": 51.90560310354425,
+      "golddiffat15": 71.25480595731197,
+      "csdiffat15": 88.29305814452036,
+      "xpdiffat15": 94.11245469981455
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bdd"
+    ],
+    "firstAppearance": "2017-10-06 10:33:25",
+    "selectionShare": 0.3333333333333333,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bdd-2017-lz-g3": {
+    "playerId": "bdd-2017-lz",
+    "player": "Bdd",
+    "champion": "Galio",
+    "championId": "Galio",
+    "role": "MID",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 0,
+      "deaths": 0,
+      "assists": 4,
+      "kda": 4.0,
+      "kp": 0.8,
+      "aggregateKp": 0.8,
+      "efficiency": 1.6094379124341003,
+      "firstAppearance": "2017-10-08 10:13:50",
+      "lastAppearance": "2017-10-08 10:13:50",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390468"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 301.5815,
+      "damageshare": 0.20855,
+      "golddiffat15": 100.0,
+      "csdiffat15": -3.0,
+      "xpdiffat15": 204.0,
+      "wpm": 0.5751,
+      "wcpm": 0.0
+    },
+    "worldsGames": 1,
+    "performanceScore": 64.91630649256608,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 68.458361272487,
+      "B": 67.86801880916684,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 64.96550366181934,
+    "rating": 89,
+    "normalizedMetrics": {
+      "efficiency": 92.2912457181279,
+      "kp": 81.62736923408296,
+      "dpm": 5.096778087208264,
+      "damageshare": 35.47562395154852,
+      "golddiffat15": 65.07682764154958,
+      "csdiffat15": 45.96883710305427,
+      "xpdiffat15": 71.02373155803966
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 95.61235275624112,
+      "kp": 73.8542914950092,
+      "dpm": 59.197274474218176,
+      "damageshare": 51.90560310354425,
+      "golddiffat15": 71.25480595731197,
+      "csdiffat15": 88.29305814452036,
+      "xpdiffat15": 94.11245469981455
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bdd"
+    ],
+    "firstAppearance": "2017-10-08 10:13:50",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bdd-2017-lz-g4": {
+    "playerId": "bdd-2017-lz",
+    "player": "Bdd",
+    "champion": "Syndra",
+    "championId": "Syndra",
+    "role": "MID",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0.0,
+      "kills": 6,
+      "deaths": 4,
+      "assists": 5,
+      "kda": 2.75,
+      "kp": 0.7333333333333333,
+      "aggregateKp": 0.7333333333333333,
+      "efficiency": 1.1631508098056809,
+      "firstAppearance": "2017-10-19 07:40:06",
+      "lastAppearance": "2017-10-19 07:40:06",
+      "stages": {
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH3/1002290025"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 733.0913,
+      "damageshare": 0.381484,
+      "golddiffat15": 737.0,
+      "csdiffat15": 27.0,
+      "xpdiffat15": 263.0,
+      "wpm": 0.5389,
+      "wcpm": 0.1123
+    },
+    "worldsGames": 1,
+    "performanceScore": 75.06536494372928,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 68.458361272487,
+      "B": 69.55952855102737,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 65.8112585327496,
+    "rating": 89,
+    "normalizedMetrics": {
+      "efficiency": 45.797045564685256,
+      "kp": 55.72496072343878,
+      "dpm": 99.83967112079269,
+      "damageshare": 99.86501019683699,
+      "golddiffat15": 98.17943381025748,
+      "csdiffat15": 99.35303471605486,
+      "xpdiffat15": 78.38424732963125
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 95.61235275624112,
+      "kp": 73.8542914950092,
+      "dpm": 59.197274474218176,
+      "damageshare": 51.90560310354425,
+      "golddiffat15": 71.25480595731197,
+      "csdiffat15": 88.29305814452036,
+      "xpdiffat15": 94.11245469981455
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bdd"
+    ],
+    "firstAppearance": "2017-10-19 07:40:06",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "bdd-2017-lz-g5": {
+    "playerId": "bdd-2017-lz",
+    "player": "Bdd",
+    "champion": "Orianna",
+    "championId": "Orianna",
+    "role": "MID",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0.0,
+      "kills": 1,
+      "deaths": 3,
+      "assists": 4,
+      "kda": 1.6666666666666667,
+      "kp": 1.0,
+      "aggregateKp": 1.0,
+      "efficiency": 0.8109302162163288,
+      "firstAppearance": "2017-10-19 09:17:05",
+      "lastAppearance": "2017-10-19 09:17:05",
+      "stages": {
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH3/1002290033"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 396.7395,
+      "damageshare": 0.2773,
+      "golddiffat15": -368.0,
+      "csdiffat15": 20.0,
+      "xpdiffat15": 198.0,
+      "wpm": 0.605,
+      "wcpm": 0.0672
+    },
+    "worldsGames": 1,
+    "performanceScore": 50.307895373542905,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 68.458361272487,
+      "B": 65.43328362266298,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 63.74813606856742,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 9.451653823290012,
+      "kp": 99.86501019683699,
+      "dpm": 2.8483885354084917,
+      "damageshare": 54.074657135106776,
+      "golddiffat15": 31.045903902083648,
+      "csdiffat15": 97.94883022776106,
+      "xpdiffat15": 78.2790670321282
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 95.61235275624112,
+      "kp": 73.8542914950092,
+      "dpm": 59.197274474218176,
+      "damageshare": 51.90560310354425,
+      "golddiffat15": 71.25480595731197,
+      "csdiffat15": 88.29305814452036,
+      "xpdiffat15": 94.11245469981455
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-Bdd"
+    ],
+    "firstAppearance": "2017-10-19 09:17:05",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "pray-2017-lz-g1": {
+    "playerId": "pray-2017-lz",
+    "player": "PraY",
+    "champion": "Tristana",
+    "championId": "Tristana",
+    "role": "ADC",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 5,
+      "deaths": 1,
+      "assists": 5,
+      "kda": 10.0,
+      "kp": 0.7692307692307693,
+      "aggregateKp": 0.7692307692307693,
+      "efficiency": 1.791759469228055,
+      "firstAppearance": "2017-10-05 09:09:58",
+      "lastAppearance": "2017-10-05 09:09:58",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390201"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 649.2845,
+      "damageshare": 0.378281,
+      "golddiffat15": -245.0,
+      "csdiffat15": 7.0,
+      "xpdiffat15": 575.0,
+      "wpm": 0.3661,
+      "wcpm": 0.2329
+    },
+    "worldsGames": 1,
+    "performanceScore": 75.22796825485189,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 61.70635879336431,
+      "B": 63.95996037027891,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 60.648273574682435,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 97.72871744361252,
+      "kp": 95.965788855613,
+      "dpm": 41.463944118773384,
+      "damageshare": 82.40992740426827,
+      "golddiffat15": 22.88057170466093,
+      "csdiffat15": 84.65334950903951,
+      "xpdiffat15": 99.86501019683699
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.35634588973521,
+      "kp": 74.43871336627423,
+      "dpm": 71.58163272979426,
+      "damageshare": 61.01367698466977,
+      "golddiffat15": 73.14306918879346,
+      "csdiffat15": 60.19397608089406,
+      "xpdiffat15": 18.05830716682943
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-PraY"
+    ],
+    "firstAppearance": "2017-10-05 09:09:58",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "pray-2017-lz-g2": {
+    "playerId": "pray-2017-lz",
+    "player": "PraY",
+    "champion": "Xayah",
+    "championId": "Xayah",
+    "role": "ADC",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 8,
+      "deaths": 5,
+      "assists": 12,
+      "kda": 4.0,
+      "kp": 0.6313725490196078,
+      "aggregateKp": 0.625,
+      "efficiency": 1.4339494510220532,
+      "firstAppearance": "2017-10-06 10:33:25",
+      "lastAppearance": "2017-10-19 07:40:06",
+      "stages": {
+        "groups": 1,
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380208",
+        "TRLH3/1002290025"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 583.6251,
+      "damageshare": 0.311897,
+      "golddiffat15": 903.5,
+      "csdiffat15": 3.0,
+      "xpdiffat15": -89.5,
+      "wpm": 0.39935,
+      "wcpm": 0.1973
+    },
+    "worldsGames": 2,
+    "performanceScore": 47.92126378455625,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 61.70635879336431,
+      "B": 57.76776021941915,
+      "C": 66.66666666666666,
+      "D": null
+    },
+    "score": 60.481105687387085,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 77.13965124701534,
+      "kp": 36.65373082358189,
+      "dpm": 17.717576980628785,
+      "damageshare": 16.779819392856364,
+      "golddiffat15": 98.51124144173365,
+      "csdiffat15": 66.24517896688882,
+      "xpdiffat15": 12.043220066973525
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.35634588973521,
+      "kp": 74.43871336627423,
+      "dpm": 71.58163272979426,
+      "damageshare": 61.01367698466977,
+      "golddiffat15": 73.14306918879346,
+      "csdiffat15": 60.19397608089406,
+      "xpdiffat15": 18.05830716682943
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-PraY"
+    ],
+    "firstAppearance": "2017-10-06 10:33:25",
+    "selectionShare": 0.2222222222222222,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "pray-2017-lz-g3": {
+    "playerId": "pray-2017-lz",
+    "player": "PraY",
+    "champion": "Varus",
+    "championId": "Varus",
+    "role": "ADC",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 5,
+      "wins": 3,
+      "losses": 2,
+      "winRate": 0.6,
+      "kills": 20,
+      "deaths": 9,
+      "assists": 24,
+      "kda": 4.888888888888889,
+      "kp": 0.7058333333333333,
+      "aggregateKp": 0.8,
+      "efficiency": 1.359588082594986,
+      "firstAppearance": "2017-10-08 10:13:50",
+      "lastAppearance": "2017-10-19 10:10:02",
+      "stages": {
+        "groups": 3,
+        "quarters": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390468",
+        "TRLH1/1002380331",
+        "TRLH1/1002380337",
+        "TRLH3/1002290033",
+        "TRLH3/1002290034"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 725.65614,
+      "damageshare": 0.3406578,
+      "golddiffat15": 96.4,
+      "csdiffat15": 4.4,
+      "xpdiffat15": -461.8,
+      "wpm": 0.42588,
+      "wcpm": 0.32092
+    },
+    "worldsGames": 5,
+    "performanceScore": 69.22066561530714,
+    "confidenceScore": 0.5,
+    "components": {
+      "A": 61.70635879336431,
+      "B": 65.46351220433573,
+      "C": 100,
+      "D": null
+    },
+    "score": 69.32898167984537,
+    "rating": 90,
+    "normalizedMetrics": {
+      "efficiency": 68.51574606650397,
+      "kp": 78.42475520222233,
+      "dpm": 92.79709415715998,
+      "damageshare": 78.95601820583104,
+      "golddiffat15": 46.06974008069732,
+      "csdiffat15": 52.74160522207878,
+      "xpdiffat15": 0.8811945152709166
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.35634588973521,
+      "kp": 74.43871336627423,
+      "dpm": 71.58163272979426,
+      "damageshare": 61.01367698466977,
+      "golddiffat15": 73.14306918879346,
+      "csdiffat15": 60.19397608089406,
+      "xpdiffat15": 18.05830716682943
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-PraY"
+    ],
+    "firstAppearance": "2017-10-08 10:13:50",
+    "selectionShare": 0.5555555555555556,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "pray-2017-lz-g4": {
+    "playerId": "pray-2017-lz",
+    "player": "PraY",
+    "champion": "Kog'Maw",
+    "championId": "KogMaw",
+    "role": "ADC",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 3,
+      "deaths": 2,
+      "assists": 7,
+      "kda": 5.0,
+      "kp": 0.7142857142857143,
+      "aggregateKp": 0.7142857142857143,
+      "efficiency": 1.4663370687934272,
+      "firstAppearance": "2017-10-12 04:53:26",
+      "lastAppearance": "2017-10-12 04:53:26",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380323"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 681.6213,
+      "damageshare": 0.336828,
+      "golddiffat15": 625.0,
+      "csdiffat15": -5.0,
+      "xpdiffat15": 160.0,
+      "wpm": 0.3766,
+      "wcpm": 0.1255
+    },
+    "worldsGames": 1,
+    "performanceScore": 66.5433043155075,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 61.70635879336431,
+      "B": 62.51251638038818,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 59.92455157973707,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 80.43478031701333,
+      "kp": 81.98056248609996,
+      "dpm": 45.933316980438356,
+      "damageshare": 30.408188327671603,
+      "golddiffat15": 99.27442279829685,
+      "csdiffat15": 54.83342427625829,
+      "xpdiffat15": 99.57697021290495
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.35634588973521,
+      "kp": 74.43871336627423,
+      "dpm": 71.58163272979426,
+      "damageshare": 61.01367698466977,
+      "golddiffat15": 73.14306918879346,
+      "csdiffat15": 60.19397608089406,
+      "xpdiffat15": 18.05830716682943
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-PraY"
+    ],
+    "firstAppearance": "2017-10-12 04:53:26",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "pray-2017-lz-g5": {
+    "playerId": "pray-2017-lz",
+    "player": "PraY",
+    "champion": "Ashe",
+    "championId": "Ashe",
+    "role": "ADC",
+    "team": "Longzhu Gaming",
+    "source": "SEASON_DATA",
+    "event": "LCK_SUMMER_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 15,
+      "wins": 11,
+      "losses": 4,
+      "winRate": 0.7333333333333333,
+      "kills": 46,
+      "deaths": 29,
+      "assists": 101,
+      "kda": 5.068965517241379,
+      "kp": 0.6596956031136271,
+      "aggregateKp": 0.6681818181818182,
+      "efficiency": 1.6171165719830456,
+      "firstAppearance": "2017-05-30 10:41:00",
+      "lastAppearance": "2017-08-01 09:05:37",
+      "stages": {
+        "regular": 15
+      },
+      "gameIds": [
+        "ESPORTSTMNT06/240086",
+        "ESPORTSTMNT06/240103",
+        "ESPORTSTMNT06/240667",
+        "ESPORTSTMNT06/240685",
+        "ESPORTSTMNT06/250860",
+        "ESPORTSTMNT06/250885",
+        "ESPORTSTMNT06/270070",
+        "ESPORTSTMNT06/270074",
+        "ESPORTSTMNT06/270577",
+        "ESPORTSTMNT06/280138",
+        "ESPORTSTMNT06/280425",
+        "ESPORTSTMNT06/310066",
+        "ESPORTSTMNT06/300165",
+        "ESPORTSTMNT06/320051",
+        "ESPORTSTMNT06/330639"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 510.81134,
+      "damageshare": 0.228785,
+      "golddiffat15": 486.8,
+      "csdiffat15": 11.2,
+      "xpdiffat15": 307.06666666666666,
+      "wpm": 0.44596,
+      "wcpm": 0.25236
+    },
+    "worldsGames": 0,
+    "performanceScore": 72.6143452033673,
+    "confidenceScore": 0.48750000000000004,
+    "components": {
+      "A": 61.70635879336431,
+      "B": 67.02400216824077,
+      "C": 39.528470752104745,
+      "D": null
+    },
+    "score": 61.038497274613604,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 88.92054145883378,
+      "kp": 77.82133354412414,
+      "dpm": 63.23529099779849,
+      "damageshare": 18.89525367023033,
+      "golddiffat15": 91.76476780825809,
+      "csdiffat15": 93.5527762454176,
+      "xpdiffat15": 93.95818303156808
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 77.35634588973521,
+      "kp": 74.43871336627423,
+      "dpm": 71.58163272979426,
+      "damageshare": 61.01367698466977,
+      "golddiffat15": 73.14306918879346,
+      "csdiffat15": 60.19397608089406,
+      "xpdiffat15": 18.05830716682943
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-PraY",
+      "golgg-summer-PraY"
+    ],
+    "firstAppearance": "2017-05-30 10:41:00",
+    "selectionShare": 0.3125,
+    "notes": "Summer: separate event/role normalization, transfer factor 0.65."
+  },
+  "gorilla-2017-lz-g1": {
+    "playerId": "gorilla-2017-lz",
+    "player": "GorillA",
+    "champion": "Karma",
+    "championId": "Karma",
+    "role": "SUPPORT",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 1,
+      "deaths": 4,
+      "assists": 9,
+      "kda": 2.5,
+      "kp": 0.7692307692307693,
+      "aggregateKp": 0.7692307692307693,
+      "efficiency": 1.0986122886681098,
+      "firstAppearance": "2017-10-05 09:09:58",
+      "lastAppearance": "2017-10-05 09:09:58",
+      "stages": {
+        "groups": 1
+      },
+      "gameIds": [
+        "TRLH1/1002390201"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 92.6456,
+      "damageshare": 0.0539765,
+      "golddiffat15": -1118.0,
+      "csdiffat15": 1.0,
+      "xpdiffat15": -807.0,
+      "wpm": 0.9983,
+      "wcpm": 0.1664
+    },
+    "worldsGames": 1,
+    "performanceScore": 38.416786381562304,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 63.582645380493524,
+      "B": 59.38833554733832,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 59.01916146870737,
+    "rating": 87,
+    "normalizedMetrics": {
+      "efficiency": 30.379129418545613,
+      "kp": 71.66119996059248,
+      "wpm": 9.289896521619623,
+      "wcpm": 8.727910804140171
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 70.97691194167753,
+      "kp": 81.85912876682919,
+      "wpm": 63.24217135969554,
+      "wcpm": 54.330796858906815
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-GorillA"
+    ],
+    "firstAppearance": "2017-10-05 09:09:58",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "gorilla-2017-lz-g2": {
+    "playerId": "gorilla-2017-lz",
+    "player": "GorillA",
+    "champion": "Rakan",
+    "championId": "Rakan",
+    "role": "SUPPORT",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 3,
+      "wins": 2,
+      "losses": 1,
+      "winRate": 0.6666666666666666,
+      "kills": 1,
+      "deaths": 8,
+      "assists": 40,
+      "kda": 5.125,
+      "kp": 0.8606209150326798,
+      "aggregateKp": 0.8913043478260869,
+      "efficiency": 1.5007585876084861,
+      "firstAppearance": "2017-10-06 10:33:25",
+      "lastAppearance": "2017-10-19 10:10:02",
+      "stages": {
+        "groups": 2,
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380208",
+        "TRLH1/1002380331",
+        "TRLH3/1002290034"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 138.49783333333335,
+      "damageshare": 0.06904423333333333,
+      "golddiffat15": 611.0,
+      "csdiffat15": -0.6666666666666666,
+      "xpdiffat15": 348.0,
+      "wpm": 1.3000333333333334,
+      "wcpm": 0.2887
+    },
+    "worldsGames": 3,
+    "performanceScore": 83.23948640724643,
+    "confidenceScore": 0.375,
+    "components": {
+      "A": 63.582645380493524,
+      "B": 70.95396076552586,
+      "C": 81.6496580927726,
+      "D": null
+    },
+    "score": 69.97835497985156,
+    "rating": 90,
+    "normalizedMetrics": {
+      "efficiency": 79.63604831338422,
+      "kp": 93.7411599453998,
+      "wpm": 81.0412436048006,
+      "wcpm": 69.34184650634624
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 70.97691194167753,
+      "kp": 81.85912876682919,
+      "wpm": 63.24217135969554,
+      "wcpm": 54.330796858906815
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-GorillA"
+    ],
+    "firstAppearance": "2017-10-06 10:33:25",
+    "selectionShare": 0.3333333333333333,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "gorilla-2017-lz-g3": {
+    "playerId": "gorilla-2017-lz",
+    "player": "GorillA",
+    "champion": "Janna",
+    "championId": "Janna",
+    "role": "SUPPORT",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 2,
+      "losses": 0,
+      "winRate": 1.0,
+      "kills": 0,
+      "deaths": 2,
+      "assists": 18,
+      "kda": 9.0,
+      "kp": 0.8375,
+      "aggregateKp": 0.8571428571428571,
+      "efficiency": 1.6720194839111033,
+      "firstAppearance": "2017-10-08 10:13:50",
+      "lastAppearance": "2017-10-12 08:52:47",
+      "stages": {
+        "groups": 2
+      },
+      "gameIds": [
+        "TRLH1/1002390468",
+        "TRLH1/1002380337"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 74.2655,
+      "damageshare": 0.03109335,
+      "golddiffat15": 735.0,
+      "csdiffat15": 21.0,
+      "xpdiffat15": 380.0,
+      "wpm": 1.1102,
+      "wcpm": 0.1656
+    },
+    "worldsGames": 2,
+    "performanceScore": 69.6043143087365,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 63.582645380493524,
+      "B": 65.30312221713437,
+      "C": 66.66666666666666,
+      "D": null
+    },
+    "score": 64.90548699173992,
+    "rating": 89,
+    "normalizedMetrics": {
+      "efficiency": 91.92879881801436,
+      "kp": 90.15405650800632,
+      "wpm": 30.63270903718115,
+      "wcpm": 8.53605726034729
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 70.97691194167753,
+      "kp": 81.85912876682919,
+      "wpm": 63.24217135969554,
+      "wcpm": 54.330796858906815
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-GorillA"
+    ],
+    "firstAppearance": "2017-10-08 10:13:50",
+    "selectionShare": 0.2222222222222222,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "gorilla-2017-lz-g4": {
+    "playerId": "gorilla-2017-lz",
+    "player": "GorillA",
+    "champion": "Lulu",
+    "championId": "Lulu",
+    "role": "SUPPORT",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 2,
+      "wins": 1,
+      "losses": 1,
+      "winRate": 0.5,
+      "kills": 2,
+      "deaths": 4,
+      "assists": 12,
+      "kda": 3.5,
+      "kp": 0.6928571428571428,
+      "aggregateKp": 0.7368421052631579,
+      "efficiency": 1.215708982418507,
+      "firstAppearance": "2017-10-12 04:53:26",
+      "lastAppearance": "2017-10-19 09:17:05",
+      "stages": {
+        "groups": 1,
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH1/1002380323",
+        "TRLH3/1002290033"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 118.15894999999999,
+      "damageshare": 0.06780595,
+      "golddiffat15": 156.0,
+      "csdiffat15": 2.5,
+      "xpdiffat15": 54.5,
+      "wpm": 1.07015,
+      "wcpm": 0.30925
+    },
+    "worldsGames": 2,
+    "performanceScore": 45.19462253500248,
+    "confidenceScore": 0.2857142857142857,
+    "components": {
+      "A": 63.582645380493524,
+      "B": 58.32892456749608,
+      "C": 66.66666666666666,
+      "D": null
+    },
+    "score": 61.41838816692078,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 45.11719893887215,
+      "kp": 40.90644214935722,
+      "wpm": 21.22504532086431,
+      "wcpm": 79.3506090399504
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 70.97691194167753,
+      "kp": 81.85912876682919,
+      "wpm": 63.24217135969554,
+      "wcpm": 54.330796858906815
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-GorillA"
+    ],
+    "firstAppearance": "2017-10-12 04:53:26",
+    "selectionShare": 0.2222222222222222,
+    "notes": "Main Event; empirical champion adjustment."
+  },
+  "gorilla-2017-lz-g5": {
+    "playerId": "gorilla-2017-lz",
+    "player": "GorillA",
+    "champion": "Thresh",
+    "championId": "Thresh",
+    "role": "SUPPORT",
+    "team": "Longzhu Gaming",
+    "source": "WORLDS_DATA",
+    "event": "WORLDS_2017",
+    "methodVersion": "worlds-2017-v1.0.0",
+    "stats": {
+      "games": 1,
+      "wins": 0,
+      "losses": 1,
+      "winRate": 0.0,
+      "kills": 2,
+      "deaths": 3,
+      "assists": 10,
+      "kda": 4.0,
+      "kp": 0.8,
+      "aggregateKp": 0.8,
+      "efficiency": 1.3862943611198906,
+      "firstAppearance": "2017-10-19 07:40:06",
+      "lastAppearance": "2017-10-19 07:40:06",
+      "stages": {
+        "quarters": 1
+      },
+      "gameIds": [
+        "TRLH3/1002290025"
+      ],
+      "sourceId": "oe-2017",
+      "dpm": 107.9416,
+      "damageshare": 0.0561703,
+      "golddiffat15": 115.0,
+      "csdiffat15": 15.0,
+      "xpdiffat15": 537.0,
+      "wpm": 1.774,
+      "wcpm": 0.3817
+    },
+    "worldsGames": 1,
+    "performanceScore": 81.62852989743182,
+    "confidenceScore": 0.16666666666666666,
+    "components": {
+      "A": 63.582645380493524,
+      "B": 66.59029279998325,
+      "C": 47.14045207910317,
+      "D": null
+    },
+    "score": 62.62014009502983,
+    "rating": 88,
+    "normalizedMetrics": {
+      "efficiency": 67.24365826780846,
+      "kp": 81.49322356005693,
+      "wpm": 99.86501019683699,
+      "wcpm": 97.27246485435592
+    },
+    "playerNormalizedMetrics": {
+      "efficiency": 70.97691194167753,
+      "kp": 81.85912876682919,
+      "wpm": 63.24217135969554,
+      "wcpm": 54.330796858906815
+    },
+    "availableWeight": 1.0,
+    "sourceIds": [
+      "oe-2017",
+      "ddragon-7.18.1",
+      "golgg-GorillA"
+    ],
+    "firstAppearance": "2017-10-19 07:40:06",
+    "selectionShare": 0.1111111111111111,
+    "notes": "Main Event; empirical champion adjustment."
+  }
+}

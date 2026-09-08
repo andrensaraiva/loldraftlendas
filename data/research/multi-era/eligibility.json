@@ -1,0 +1,722 @@
+[
+  {
+    "year": 2015,
+    "region": "LCK",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCK",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCK",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCK",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCK",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCS",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCK",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCK",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCK",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCK",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCK",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LPL",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCS",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCK",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCK",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCK",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCK",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCK",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCS",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCK",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCK",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCK",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCK",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCK",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2020,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2020,
+    "region": "LPL",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2020,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2020,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LCK",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LCK",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LCK",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LCK",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LCK",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LPL",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2022,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LCS",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2022,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2023,
+    "region": "LCK",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LCK",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LCK",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LCK",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LCK",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2023,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2023,
+    "region": "LCS",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2023,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2023,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 3
+  }
+]

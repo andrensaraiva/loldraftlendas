@@ -1,0 +1,765 @@
+{
+  "Akali": {
+    "id": "Akali",
+    "name": "Akali",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Ekko": {
+    "id": "Ekko",
+    "name": "Ekko",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Evelynn": {
+    "id": "Evelynn",
+    "name": "Evelynn",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Kassadin": {
+    "id": "Kassadin",
+    "name": "Kassadin",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Leblanc": {
+    "id": "Leblanc",
+    "name": "LeBlanc",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Diana": {
+    "id": "Diana",
+    "name": "Diana",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Anivia": {
+    "id": "Anivia",
+    "name": "Anivia",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Annie": {
+    "id": "Annie",
+    "name": "Annie",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Lissandra": {
+    "id": "Lissandra",
+    "name": "Lissandra",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Neeko": {
+    "id": "Neeko",
+    "name": "Neeko",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Vex": {
+    "id": "Vex",
+    "name": "Vex",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Viktor": {
+    "id": "Viktor",
+    "name": "Viktor",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Veigar": {
+    "id": "Veigar",
+    "name": "Veigar",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Lux": {
+    "id": "Lux",
+    "name": "Lux",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL"
+    ]
+  },
+  "Heimerdinger": {
+    "id": "Heimerdinger",
+    "name": "Heimerdinger",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL"
+    ]
+  },
+  "Ziggs": {
+    "id": "Ziggs",
+    "name": "Ziggs",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL"
+    ]
+  },
+  "Zoe": {
+    "id": "Zoe",
+    "name": "Zoe",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL"
+    ]
+  },
+  "AurelionSol": {
+    "id": "AurelionSol",
+    "name": "Aurelion Sol",
+    "tags": [
+      "AP_DAMAGE",
+      "SCALING",
+      "CARRY"
+    ]
+  },
+  "Karthus": {
+    "id": "Karthus",
+    "name": "Karthus",
+    "tags": [
+      "AP_DAMAGE",
+      "SCALING",
+      "CARRY"
+    ]
+  },
+  "Kayle": {
+    "id": "Kayle",
+    "name": "Kayle",
+    "tags": [
+      "AP_DAMAGE",
+      "SCALING",
+      "CARRY"
+    ]
+  },
+  "Vladimir": {
+    "id": "Vladimir",
+    "name": "Vladimir",
+    "tags": [
+      "AP_DAMAGE",
+      "SCALING",
+      "CARRY"
+    ]
+  },
+  "Amumu": {
+    "id": "Amumu",
+    "name": "Amumu",
+    "tags": [
+      "AP_DAMAGE",
+      "ENGAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Fiddlesticks": {
+    "id": "Fiddlesticks",
+    "name": "Fiddlesticks",
+    "tags": [
+      "AP_DAMAGE",
+      "ENGAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Brand": {
+    "id": "Brand",
+    "name": "Brand",
+    "tags": [
+      "AP_DAMAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Rumble": {
+    "id": "Rumble",
+    "name": "Rumble",
+    "tags": [
+      "AP_DAMAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Lillia": {
+    "id": "Lillia",
+    "name": "Lillia",
+    "tags": [
+      "AP_DAMAGE",
+      "MOBILITY",
+      "SCALING"
+    ]
+  },
+  "Gwen": {
+    "id": "Gwen",
+    "name": "Gwen",
+    "tags": [
+      "AP_DAMAGE",
+      "MOBILITY",
+      "SCALING"
+    ]
+  },
+  "Mordekaiser": {
+    "id": "Mordekaiser",
+    "name": "Mordekaiser",
+    "tags": [
+      "AP_DAMAGE",
+      "FRONTLINE",
+      "SCALING"
+    ]
+  },
+  "Swain": {
+    "id": "Swain",
+    "name": "Swain",
+    "tags": [
+      "AP_DAMAGE",
+      "FRONTLINE",
+      "SCALING"
+    ]
+  },
+  "Singed": {
+    "id": "Singed",
+    "name": "Singed",
+    "tags": [
+      "AP_DAMAGE",
+      "FRONTLINE",
+      "MOBILITY"
+    ]
+  },
+  "Aphelios": {
+    "id": "Aphelios",
+    "name": "Aphelios",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "SCALING"
+    ]
+  },
+  "Jhin": {
+    "id": "Jhin",
+    "name": "Jhin",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "SCALING"
+    ]
+  },
+  "Vayne": {
+    "id": "Vayne",
+    "name": "Vayne",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "SCALING"
+    ]
+  },
+  "Zeri": {
+    "id": "Zeri",
+    "name": "Zeri",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "SCALING"
+    ]
+  },
+  "Sivir": {
+    "id": "Sivir",
+    "name": "Sivir",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "SCALING"
+    ]
+  },
+  "Draven": {
+    "id": "Draven",
+    "name": "Draven",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "CARRY"
+    ]
+  },
+  "Lucian": {
+    "id": "Lucian",
+    "name": "Lucian",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "CARRY"
+    ]
+  },
+  "MissFortune": {
+    "id": "MissFortune",
+    "name": "Miss Fortune",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "TEAMFIGHT"
+    ]
+  },
+  "Nilah": {
+    "id": "Nilah",
+    "name": "Nilah",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "TEAMFIGHT"
+    ]
+  },
+  "Gangplank": {
+    "id": "Gangplank",
+    "name": "Gangplank",
+    "tags": [
+      "AD_DAMAGE",
+      "SPLIT_PUSH",
+      "SCALING"
+    ]
+  },
+  "Irelia": {
+    "id": "Irelia",
+    "name": "Irelia",
+    "tags": [
+      "AD_DAMAGE",
+      "SPLIT_PUSH",
+      "MOBILITY"
+    ]
+  },
+  "Riven": {
+    "id": "Riven",
+    "name": "Riven",
+    "tags": [
+      "AD_DAMAGE",
+      "SPLIT_PUSH",
+      "MOBILITY"
+    ]
+  },
+  "Yasuo": {
+    "id": "Yasuo",
+    "name": "Yasuo",
+    "tags": [
+      "AD_DAMAGE",
+      "SPLIT_PUSH",
+      "MOBILITY"
+    ]
+  },
+  "Yone": {
+    "id": "Yone",
+    "name": "Yone",
+    "tags": [
+      "AD_DAMAGE",
+      "SPLIT_PUSH",
+      "MOBILITY"
+    ]
+  },
+  "Darius": {
+    "id": "Darius",
+    "name": "Darius",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "FRONTLINE"
+    ]
+  },
+  "Garen": {
+    "id": "Garen",
+    "name": "Garen",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "FRONTLINE"
+    ]
+  },
+  "Olaf": {
+    "id": "Olaf",
+    "name": "Olaf",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "FRONTLINE"
+    ]
+  },
+  "Sett": {
+    "id": "Sett",
+    "name": "Sett",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "FRONTLINE"
+    ]
+  },
+  "Urgot": {
+    "id": "Urgot",
+    "name": "Urgot",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "FRONTLINE"
+    ]
+  },
+  "Quinn": {
+    "id": "Quinn",
+    "name": "Quinn",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "MOBILITY"
+    ]
+  },
+  "XinZhao": {
+    "id": "XinZhao",
+    "name": "Xin Zhao",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "MOBILITY"
+    ]
+  },
+  "Kayn": {
+    "id": "Kayn",
+    "name": "Kayn",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Nocturne": {
+    "id": "Nocturne",
+    "name": "Nocturne",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Pyke": {
+    "id": "Pyke",
+    "name": "Pyke",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Qiyana": {
+    "id": "Qiyana",
+    "name": "Qiyana",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Rengar": {
+    "id": "Rengar",
+    "name": "Rengar",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Belveth": {
+    "id": "Belveth",
+    "name": "Bel'Veth",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "MOBILITY"
+    ]
+  },
+  "Kindred": {
+    "id": "Kindred",
+    "name": "Kindred",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "MOBILITY"
+    ]
+  },
+  "Hecarim": {
+    "id": "Hecarim",
+    "name": "Hecarim",
+    "tags": [
+      "AD_DAMAGE",
+      "ENGAGE",
+      "MOBILITY"
+    ]
+  },
+  "MonkeyKing": {
+    "id": "MonkeyKing",
+    "name": "Wukong",
+    "tags": [
+      "AD_DAMAGE",
+      "ENGAGE",
+      "MOBILITY"
+    ]
+  },
+  "Vi": {
+    "id": "Vi",
+    "name": "Vi",
+    "tags": [
+      "AD_DAMAGE",
+      "ENGAGE",
+      "MOBILITY"
+    ]
+  },
+  "Pantheon": {
+    "id": "Pantheon",
+    "name": "Pantheon",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "PICK"
+    ]
+  },
+  "Corki": {
+    "id": "Corki",
+    "name": "Corki",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "SCALING"
+    ]
+  },
+  "TwistedFate": {
+    "id": "TwistedFate",
+    "name": "Twisted Fate",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "CONTROL"
+    ]
+  },
+  "Shyvana": {
+    "id": "Shyvana",
+    "name": "Shyvana",
+    "tags": [
+      "AP_DAMAGE",
+      "FRONTLINE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Volibear": {
+    "id": "Volibear",
+    "name": "Volibear",
+    "tags": [
+      "AP_DAMAGE",
+      "FRONTLINE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Nunu": {
+    "id": "Nunu",
+    "name": "Nunu & Willump",
+    "tags": [
+      "AP_DAMAGE",
+      "FRONTLINE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Malphite": {
+    "id": "Malphite",
+    "name": "Malphite",
+    "tags": [
+      "FRONTLINE",
+      "ENGAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Rell": {
+    "id": "Rell",
+    "name": "Rell",
+    "tags": [
+      "FRONTLINE",
+      "ENGAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Sion": {
+    "id": "Sion",
+    "name": "Sion",
+    "tags": [
+      "FRONTLINE",
+      "ENGAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "Zac": {
+    "id": "Zac",
+    "name": "Zac",
+    "tags": [
+      "FRONTLINE",
+      "ENGAGE",
+      "TEAMFIGHT"
+    ]
+  },
+  "KSante": {
+    "id": "KSante",
+    "name": "K'Sante",
+    "tags": [
+      "FRONTLINE",
+      "PEEL",
+      "CONTROL"
+    ]
+  },
+  "Poppy": {
+    "id": "Poppy",
+    "name": "Poppy",
+    "tags": [
+      "FRONTLINE",
+      "PEEL",
+      "CONTROL"
+    ]
+  },
+  "Skarner": {
+    "id": "Skarner",
+    "name": "Skarner",
+    "tags": [
+      "FRONTLINE",
+      "PEEL",
+      "CONTROL"
+    ]
+  },
+  "Blitzcrank": {
+    "id": "Blitzcrank",
+    "name": "Blitzcrank",
+    "tags": [
+      "ENGAGE",
+      "PICK",
+      "CONTROL"
+    ]
+  },
+  "Morgana": {
+    "id": "Morgana",
+    "name": "Morgana",
+    "tags": [
+      "PEEL",
+      "CONTROL",
+      "AP_DAMAGE"
+    ]
+  },
+  "Seraphine": {
+    "id": "Seraphine",
+    "name": "Seraphine",
+    "tags": [
+      "PEEL",
+      "CONTROL",
+      "AP_DAMAGE"
+    ]
+  },
+  "Ivern": {
+    "id": "Ivern",
+    "name": "Ivern",
+    "tags": [
+      "PEEL",
+      "CONTROL"
+    ]
+  },
+  "Nami": {
+    "id": "Nami",
+    "name": "Nami",
+    "tags": [
+      "PEEL",
+      "CONTROL"
+    ]
+  },
+  "Renata": {
+    "id": "Renata",
+    "name": "Renata Glasc",
+    "tags": [
+      "PEEL",
+      "CONTROL"
+    ]
+  },
+  "Zilean": {
+    "id": "Zilean",
+    "name": "Zilean",
+    "tags": [
+      "PEEL",
+      "CONTROL"
+    ]
+  },
+  "Milio": {
+    "id": "Milio",
+    "name": "Milio",
+    "tags": [
+      "PEEL",
+      "SCALING"
+    ]
+  },
+  "Senna": {
+    "id": "Senna",
+    "name": "Senna",
+    "tags": [
+      "PEEL",
+      "SCALING"
+    ]
+  },
+  "Sona": {
+    "id": "Sona",
+    "name": "Sona",
+    "tags": [
+      "PEEL",
+      "SCALING"
+    ]
+  },
+  "Soraka": {
+    "id": "Soraka",
+    "name": "Soraka",
+    "tags": [
+      "PEEL",
+      "SCALING"
+    ]
+  },
+  "Yuumi": {
+    "id": "Yuumi",
+    "name": "Yuumi",
+    "tags": [
+      "PEEL",
+      "SCALING"
+    ]
+  }
+}

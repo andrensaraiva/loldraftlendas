@@ -1,0 +1,15 @@
+{
+  "mode": "frozen snapshot versus full CSV outputs",
+  "passed": true,
+  "sha256": {
+    "src/data/worlds-2017.json": "fd67dc93fd467c726497239085536a76a82648cf5f7d6fd1895fa6137869516f",
+    "data/research/worlds-2017/evidence.json": "6f081a29a6fdf85fba1905823b85e77a39f80adca78624a49a27ccce969f4ee5",
+    "data/research/worlds-2017/rosters.json": "0d5bcd9a5a18d7568d1d3a0d8f031be95af1e43cf74aa2ed4fd2d730f7ae1a65",
+    "data/research/worlds-2017/player-stats.json": "66e7097aa53b6618c22a7819d5e0ffae38c39f003fd778d1e58a6908643a6b07",
+    "data/research/worlds-2017/player-champion-stats.json": "aaaff0cfb6303229b57140bcc3f58fbd6eb17beed8d3d11cac73aecaa57d44d4",
+    "data/research/worlds-2017/normalization.json": "ed775f6aa703a5a14d6840aa02e703ad448836bdadd6a5ee9abb12898fa12fa4",
+    "data/research/worlds-2017/sources.json": "88753406fea573927880ce1fa07d5872f6d1164323ce284879bcb045fbf116f6",
+    "data/research/worlds-2017/coverage.json": "8391df55f0f228dd79cf8e841f75a22fec0b3ef69e5f71fc9d59ac4b204d61bf",
+    "data/research/worlds-2017/matches.json": "a66674c3c3b696080cbae8c47b276a577ad40d634dce21b5129729419cc38e20"
+  }
+}

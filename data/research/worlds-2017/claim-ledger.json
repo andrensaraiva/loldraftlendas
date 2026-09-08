@@ -1,0 +1,1307 @@
+{
+  "accessedAt": "2026-09-07",
+  "claims": [
+    {
+      "id": "main-event-scope",
+      "claim": "80 Main Event games; 800 player rows; patch 7.18; no play-ins.",
+      "kind": "observed",
+      "sourceIds": [
+        "oe-2017",
+        "golgg-event"
+      ],
+      "confidence": "high",
+      "limitation": "The main OE download was discovered through a third-party configuration."
+    },
+    {
+      "id": "rosters-and-substitutes",
+      "claim": "15 primary versions selected by most games per team/role; Blank 9, Haru 1, Rascal 1 retained in research.",
+      "kind": "observed + selection rule",
+      "sourceIds": [
+        "oe-2017",
+        "golgg-players"
+      ],
+      "confidence": "high",
+      "limitation": "Administrative non-playing roster registrations were not fully revalidated."
+    },
+    {
+      "id": "summer-fallbacks",
+      "claim": "Six fallback associations are observed in LCK Summer 2017, independently checked.",
+      "kind": "observed",
+      "sourceIds": [
+        "oe-2017",
+        "golgg-summer-Peanut",
+        "golgg-summer-Cuzz",
+        "golgg-summer-Ruler",
+        "golgg-summer-CoreJJ",
+        "golgg-summer-PraY"
+      ],
+      "confidence": "high",
+      "limitation": "Our cohort includes playoffs; consulted pages separate them. Selected fallback picks have identical counts."
+    },
+    {
+      "id": "kp-zero-kills",
+      "claim": "KP includes zero for a team with zero kills; aggregated facts agree within display rounding.",
+      "kind": "definition + validated observation",
+      "sourceIds": [
+        "oe-2017",
+        "golgg-players"
+      ],
+      "confidence": "high",
+      "limitation": "Mean per-game KP differs from aggregate K+A/team kills."
+    },
+    {
+      "id": "historical-art",
+      "claim": "All 40 playable champions have base art and icons extracted from the official 7.18.1 archive.",
+      "kind": "observed",
+      "sourceIds": [
+        "ddragon-7.18.1"
+      ],
+      "localEvidence": "asset-manifest.json",
+      "confidence": "high",
+      "limitation": "Public distribution does not imply an unrestricted reuse license."
+    },
+    {
+      "id": "portraits",
+      "claim": "2017 photos were not validated; champion art fallback is used for all 15 versions.",
+      "kind": "implementation + evidence gap",
+      "sourceIds": [],
+      "localEvidence": "portrait-manifest.json",
+      "confidence": "high for implemented fallback; historical-photo availability unresolved",
+      "limitation": "Absence of a verified photo here does not mean no historical photo exists."
+    },
+    {
+      "id": "ratings",
+      "claim": "Ratings are descriptive estimates using explicit role/event normalization and sample regression; no official or reputation-based scores.",
+      "kind": "model design",
+      "sourceIds": [
+        "oe-2017"
+      ],
+      "localEvidence": "normalization.json",
+      "confidence": "experimental",
+      "limitation": "No held-out predictive calibration, opposition-strength model or direct utility metrics."
+    },
+    {
+      "id": "simulation",
+      "claim": "10,000 campaigns with fixed seed and production engine; balance dominance is reported without modifying ratings.",
+      "kind": "local simulation",
+      "sourceIds": [],
+      "localEvidence": "simulation.json",
+      "confidence": "reproducible under fixed model",
+      "limitation": "Uniform bot choices and only three opponent rosters; not human preference or historical title probability."
+    },
+    {
+      "id": "huni-2017-skt-g1",
+      "claim": "Huni / Cho'Gath: 3 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Huni"
+      ],
+      "localEvidence": "evidence.json#huni-2017-skt-g1",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "huni-2017-skt-g2",
+      "claim": "Huni / Jayce: 4 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Huni"
+      ],
+      "localEvidence": "evidence.json#huni-2017-skt-g2",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "huni-2017-skt-g3",
+      "claim": "Huni / Trundle: 3 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Huni"
+      ],
+      "localEvidence": "evidence.json#huni-2017-skt-g3",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "huni-2017-skt-g4",
+      "claim": "Huni / Camille: 2 observed games in WORLDS_2017; derived rating 85.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Huni"
+      ],
+      "localEvidence": "evidence.json#huni-2017-skt-g4",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "huni-2017-skt-g5",
+      "claim": "Huni / Gnar: 3 observed games in WORLDS_2017; derived rating 86.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Huni"
+      ],
+      "localEvidence": "evidence.json#huni-2017-skt-g5",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "peanut-2017-skt-g1",
+      "claim": "Peanut / Jarvan IV: 4 observed games in WORLDS_2017; derived rating 84.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Peanut"
+      ],
+      "localEvidence": "evidence.json#peanut-2017-skt-g1",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "peanut-2017-skt-g2",
+      "claim": "Peanut / Sejuani: 2 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Peanut"
+      ],
+      "localEvidence": "evidence.json#peanut-2017-skt-g2",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "peanut-2017-skt-g3",
+      "claim": "Peanut / Gragas: 4 observed games in WORLDS_2017; derived rating 81.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Peanut"
+      ],
+      "localEvidence": "evidence.json#peanut-2017-skt-g3",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "peanut-2017-skt-g4",
+      "claim": "Peanut / Elise: 6 observed games in LCK_SUMMER_2017; derived rating 81.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Peanut",
+        "golgg-summer-Peanut"
+      ],
+      "localEvidence": "evidence.json#peanut-2017-skt-g4",
+      "confidence": 0.35454545454545455,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "peanut-2017-skt-g5",
+      "claim": "Peanut / Rek'Sai: 4 observed games in LCK_SUMMER_2017; derived rating 81.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Peanut",
+        "golgg-summer-Peanut"
+      ],
+      "localEvidence": "evidence.json#peanut-2017-skt-g5",
+      "confidence": 0.28888888888888886,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "faker-2017-skt-g1",
+      "claim": "Faker / Cassiopeia: 2 observed games in WORLDS_2017; derived rating 86.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Faker"
+      ],
+      "localEvidence": "evidence.json#faker-2017-skt-g1",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "faker-2017-skt-g2",
+      "claim": "Faker / Orianna: 2 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Faker"
+      ],
+      "localEvidence": "evidence.json#faker-2017-skt-g2",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "faker-2017-skt-g3",
+      "claim": "Faker / Fizz: 2 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Faker"
+      ],
+      "localEvidence": "evidence.json#faker-2017-skt-g3",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "faker-2017-skt-g4",
+      "claim": "Faker / Galio: 6 observed games in WORLDS_2017; derived rating 89.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Faker"
+      ],
+      "localEvidence": "evidence.json#faker-2017-skt-g4",
+      "confidence": 0.5454545454545454,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "faker-2017-skt-g5",
+      "claim": "Faker / Taliyah: 2 observed games in WORLDS_2017; derived rating 86.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Faker"
+      ],
+      "localEvidence": "evidence.json#faker-2017-skt-g5",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bang-2017-skt-g1",
+      "claim": "Bang / Kog'Maw: 3 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bang"
+      ],
+      "localEvidence": "evidence.json#bang-2017-skt-g1",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bang-2017-skt-g2",
+      "claim": "Bang / Twitch: 4 observed games in WORLDS_2017; derived rating 85.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bang"
+      ],
+      "localEvidence": "evidence.json#bang-2017-skt-g2",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bang-2017-skt-g3",
+      "claim": "Bang / Varus: 4 observed games in WORLDS_2017; derived rating 81.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bang"
+      ],
+      "localEvidence": "evidence.json#bang-2017-skt-g3",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bang-2017-skt-g4",
+      "claim": "Bang / Caitlyn: 2 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bang"
+      ],
+      "localEvidence": "evidence.json#bang-2017-skt-g4",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bang-2017-skt-g5",
+      "claim": "Bang / Tristana: 5 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bang"
+      ],
+      "localEvidence": "evidence.json#bang-2017-skt-g5",
+      "confidence": 0.5,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "wolf-2017-skt-g1",
+      "claim": "Wolf / Janna: 2 observed games in WORLDS_2017; derived rating 84.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Wolf"
+      ],
+      "localEvidence": "evidence.json#wolf-2017-skt-g1",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "wolf-2017-skt-g2",
+      "claim": "Wolf / Rakan: 1 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Wolf"
+      ],
+      "localEvidence": "evidence.json#wolf-2017-skt-g2",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "wolf-2017-skt-g3",
+      "claim": "Wolf / Lulu: 9 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Wolf"
+      ],
+      "localEvidence": "evidence.json#wolf-2017-skt-g3",
+      "confidence": 0.6428571428571429,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "wolf-2017-skt-g4",
+      "claim": "Wolf / Trundle: 1 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Wolf"
+      ],
+      "localEvidence": "evidence.json#wolf-2017-skt-g4",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "wolf-2017-skt-g5",
+      "claim": "Wolf / Leona: 2 observed games in WORLDS_2017; derived rating 82.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Wolf"
+      ],
+      "localEvidence": "evidence.json#wolf-2017-skt-g5",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuvee-2017-ssg-g1",
+      "claim": "CuVee / Cho'Gath: 4 observed games in WORLDS_2017; derived rating 91.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CuVee"
+      ],
+      "localEvidence": "evidence.json#cuvee-2017-ssg-g1",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuvee-2017-ssg-g2",
+      "claim": "CuVee / Maokai: 1 observed games in WORLDS_2017; derived rating 89.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CuVee"
+      ],
+      "localEvidence": "evidence.json#cuvee-2017-ssg-g2",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuvee-2017-ssg-g3",
+      "claim": "CuVee / Kennen: 3 observed games in WORLDS_2017; derived rating 92.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CuVee"
+      ],
+      "localEvidence": "evidence.json#cuvee-2017-ssg-g3",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuvee-2017-ssg-g4",
+      "claim": "CuVee / Shen: 3 observed games in WORLDS_2017; derived rating 92.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CuVee"
+      ],
+      "localEvidence": "evidence.json#cuvee-2017-ssg-g4",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuvee-2017-ssg-g5",
+      "claim": "CuVee / Gnar: 3 observed games in WORLDS_2017; derived rating 91.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CuVee"
+      ],
+      "localEvidence": "evidence.json#cuvee-2017-ssg-g5",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ambition-2017-ssg-g1",
+      "claim": "Ambition / Gragas: 3 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ambition"
+      ],
+      "localEvidence": "evidence.json#ambition-2017-ssg-g1",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ambition-2017-ssg-g2",
+      "claim": "Ambition / Sejuani: 6 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ambition"
+      ],
+      "localEvidence": "evidence.json#ambition-2017-ssg-g2",
+      "confidence": 0.5454545454545454,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ambition-2017-ssg-g3",
+      "claim": "Ambition / Kha'Zix: 2 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ambition"
+      ],
+      "localEvidence": "evidence.json#ambition-2017-ssg-g3",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ambition-2017-ssg-g4",
+      "claim": "Ambition / Jarvan IV: 2 observed games in WORLDS_2017; derived rating 86.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ambition"
+      ],
+      "localEvidence": "evidence.json#ambition-2017-ssg-g4",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ambition-2017-ssg-g5",
+      "claim": "Ambition / Lee Sin: 1 observed games in WORLDS_2017; derived rating 85.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ambition"
+      ],
+      "localEvidence": "evidence.json#ambition-2017-ssg-g5",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "crown-2017-ssg-g1",
+      "claim": "Crown / Taliyah: 4 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Crown"
+      ],
+      "localEvidence": "evidence.json#crown-2017-ssg-g1",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "crown-2017-ssg-g2",
+      "claim": "Crown / Ryze: 1 observed games in WORLDS_2017; derived rating 83.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Crown"
+      ],
+      "localEvidence": "evidence.json#crown-2017-ssg-g2",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "crown-2017-ssg-g3",
+      "claim": "Crown / Syndra: 2 observed games in WORLDS_2017; derived rating 84.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Crown"
+      ],
+      "localEvidence": "evidence.json#crown-2017-ssg-g3",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "crown-2017-ssg-g4",
+      "claim": "Crown / Malzahar: 6 observed games in WORLDS_2017; derived rating 85.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Crown"
+      ],
+      "localEvidence": "evidence.json#crown-2017-ssg-g4",
+      "confidence": 0.5454545454545454,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "crown-2017-ssg-g5",
+      "claim": "Crown / Galio: 2 observed games in WORLDS_2017; derived rating 85.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Crown"
+      ],
+      "localEvidence": "evidence.json#crown-2017-ssg-g5",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ruler-2017-ssg-g1",
+      "claim": "Ruler / Varus: 6 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ruler"
+      ],
+      "localEvidence": "evidence.json#ruler-2017-ssg-g1",
+      "confidence": 0.5454545454545454,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ruler-2017-ssg-g2",
+      "claim": "Ruler / Twitch: 2 observed games in WORLDS_2017; derived rating 85.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ruler"
+      ],
+      "localEvidence": "evidence.json#ruler-2017-ssg-g2",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ruler-2017-ssg-g3",
+      "claim": "Ruler / Tristana: 5 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ruler"
+      ],
+      "localEvidence": "evidence.json#ruler-2017-ssg-g3",
+      "confidence": 0.5,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ruler-2017-ssg-g4",
+      "claim": "Ruler / Xayah: 3 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ruler"
+      ],
+      "localEvidence": "evidence.json#ruler-2017-ssg-g4",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "ruler-2017-ssg-g5",
+      "claim": "Ruler / Ashe: 10 observed games in LCK_SUMMER_2017; derived rating 86.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Ruler",
+        "golgg-summer-Ruler"
+      ],
+      "localEvidence": "evidence.json#ruler-2017-ssg-g5",
+      "confidence": 0.43333333333333335,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "corejj-2017-ssg-g1",
+      "claim": "CoreJJ / Taric: 5 observed games in WORLDS_2017; derived rating 91.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CoreJJ"
+      ],
+      "localEvidence": "evidence.json#corejj-2017-ssg-g1",
+      "confidence": 0.5,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "corejj-2017-ssg-g2",
+      "claim": "CoreJJ / Rakan: 3 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CoreJJ"
+      ],
+      "localEvidence": "evidence.json#corejj-2017-ssg-g2",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "corejj-2017-ssg-g3",
+      "claim": "CoreJJ / Lulu: 4 observed games in WORLDS_2017; derived rating 91.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CoreJJ"
+      ],
+      "localEvidence": "evidence.json#corejj-2017-ssg-g3",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "corejj-2017-ssg-g4",
+      "claim": "CoreJJ / Janna: 4 observed games in WORLDS_2017; derived rating 91.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CoreJJ"
+      ],
+      "localEvidence": "evidence.json#corejj-2017-ssg-g4",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "corejj-2017-ssg-g5",
+      "claim": "CoreJJ / Braum: 12 observed games in LCK_SUMMER_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-CoreJJ",
+        "golgg-summer-CoreJJ"
+      ],
+      "localEvidence": "evidence.json#corejj-2017-ssg-g5",
+      "confidence": 0.45882352941176474,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "khan-2017-lz-g1",
+      "claim": "Khan / Jarvan IV: 3 observed games in WORLDS_2017; derived rating 90.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Khan"
+      ],
+      "localEvidence": "evidence.json#khan-2017-lz-g1",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "khan-2017-lz-g2",
+      "claim": "Khan / Nasus: 1 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Khan"
+      ],
+      "localEvidence": "evidence.json#khan-2017-lz-g2",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "khan-2017-lz-g3",
+      "claim": "Khan / Jayce: 1 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Khan"
+      ],
+      "localEvidence": "evidence.json#khan-2017-lz-g3",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "khan-2017-lz-g4",
+      "claim": "Khan / Jax: 1 observed games in WORLDS_2017; derived rating 86.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Khan"
+      ],
+      "localEvidence": "evidence.json#khan-2017-lz-g4",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "khan-2017-lz-g5",
+      "claim": "Khan / Cho'Gath: 1 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Khan"
+      ],
+      "localEvidence": "evidence.json#khan-2017-lz-g5",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuzz-2017-lz-g1",
+      "claim": "Cuzz / Kha'Zix: 1 observed games in WORLDS_2017; derived rating 84.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Cuzz"
+      ],
+      "localEvidence": "evidence.json#cuzz-2017-lz-g1",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuzz-2017-lz-g2",
+      "claim": "Cuzz / Gragas: 4 observed games in WORLDS_2017; derived rating 89.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Cuzz"
+      ],
+      "localEvidence": "evidence.json#cuzz-2017-lz-g2",
+      "confidence": 0.4444444444444444,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuzz-2017-lz-g3",
+      "claim": "Cuzz / Sejuani: 1 observed games in WORLDS_2017; derived rating 84.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Cuzz"
+      ],
+      "localEvidence": "evidence.json#cuzz-2017-lz-g3",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuzz-2017-lz-g4",
+      "claim": "Cuzz / Jarvan IV: 3 observed games in WORLDS_2017; derived rating 86.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Cuzz"
+      ],
+      "localEvidence": "evidence.json#cuzz-2017-lz-g4",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "cuzz-2017-lz-g5",
+      "claim": "Cuzz / Elise: 12 observed games in LCK_SUMMER_2017; derived rating 84.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Cuzz",
+        "golgg-summer-Cuzz"
+      ],
+      "localEvidence": "evidence.json#cuzz-2017-lz-g5",
+      "confidence": 0.45882352941176474,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bdd-2017-lz-g1",
+      "claim": "Bdd / Taliyah: 3 observed games in WORLDS_2017; derived rating 91.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bdd"
+      ],
+      "localEvidence": "evidence.json#bdd-2017-lz-g1",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bdd-2017-lz-g2",
+      "claim": "Bdd / Ryze: 3 observed games in WORLDS_2017; derived rating 91.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bdd"
+      ],
+      "localEvidence": "evidence.json#bdd-2017-lz-g2",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bdd-2017-lz-g3",
+      "claim": "Bdd / Galio: 1 observed games in WORLDS_2017; derived rating 89.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bdd"
+      ],
+      "localEvidence": "evidence.json#bdd-2017-lz-g3",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bdd-2017-lz-g4",
+      "claim": "Bdd / Syndra: 1 observed games in WORLDS_2017; derived rating 89.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bdd"
+      ],
+      "localEvidence": "evidence.json#bdd-2017-lz-g4",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "bdd-2017-lz-g5",
+      "claim": "Bdd / Orianna: 1 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-Bdd"
+      ],
+      "localEvidence": "evidence.json#bdd-2017-lz-g5",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "pray-2017-lz-g1",
+      "claim": "PraY / Tristana: 1 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-PraY"
+      ],
+      "localEvidence": "evidence.json#pray-2017-lz-g1",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "pray-2017-lz-g2",
+      "claim": "PraY / Xayah: 2 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-PraY"
+      ],
+      "localEvidence": "evidence.json#pray-2017-lz-g2",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "pray-2017-lz-g3",
+      "claim": "PraY / Varus: 5 observed games in WORLDS_2017; derived rating 90.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-PraY"
+      ],
+      "localEvidence": "evidence.json#pray-2017-lz-g3",
+      "confidence": 0.5,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "pray-2017-lz-g4",
+      "claim": "PraY / Kog'Maw: 1 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-PraY"
+      ],
+      "localEvidence": "evidence.json#pray-2017-lz-g4",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "pray-2017-lz-g5",
+      "claim": "PraY / Ashe: 15 observed games in LCK_SUMMER_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-PraY",
+        "golgg-summer-PraY"
+      ],
+      "localEvidence": "evidence.json#pray-2017-lz-g5",
+      "confidence": 0.48750000000000004,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "gorilla-2017-lz-g1",
+      "claim": "GorillA / Karma: 1 observed games in WORLDS_2017; derived rating 87.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-GorillA"
+      ],
+      "localEvidence": "evidence.json#gorilla-2017-lz-g1",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "gorilla-2017-lz-g2",
+      "claim": "GorillA / Rakan: 3 observed games in WORLDS_2017; derived rating 90.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-GorillA"
+      ],
+      "localEvidence": "evidence.json#gorilla-2017-lz-g2",
+      "confidence": 0.375,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "gorilla-2017-lz-g3",
+      "claim": "GorillA / Janna: 2 observed games in WORLDS_2017; derived rating 89.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-GorillA"
+      ],
+      "localEvidence": "evidence.json#gorilla-2017-lz-g3",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "gorilla-2017-lz-g4",
+      "claim": "GorillA / Lulu: 2 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-GorillA"
+      ],
+      "localEvidence": "evidence.json#gorilla-2017-lz-g4",
+      "confidence": 0.2857142857142857,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    },
+    {
+      "id": "gorilla-2017-lz-g5",
+      "claim": "GorillA / Thresh: 1 observed games in WORLDS_2017; derived rating 88.",
+      "kind": "observed association + derived estimate",
+      "sourceIds": [
+        "oe-2017",
+        "ddragon-7.18.1",
+        "golgg-GorillA"
+      ],
+      "localEvidence": "evidence.json#gorilla-2017-lz-g5",
+      "confidence": 0.16666666666666666,
+      "limitation": "Confidence is a shrinkage weight, not probability that the rating is correct."
+    }
+  ],
+  "sources": {
+    "oe-2017": {
+      "title": "oe-2017",
+      "publisher": "Oracle's Elixir",
+      "publicationDate": null,
+      "url": "https://drive.google.com/uc?export=download&id=11fx3nNjSYB0X8vKxLAbYOrS2Bu6avm9A",
+      "accessNotes": "Public download ID located in third-party configuration; publisher downloads page blocked. Archived bytes hashed; not independently authenticated by publisher."
+    },
+    "oe-worlds-mirror": {
+      "title": "oe-worlds-mirror",
+      "publisher": "Oracle's Elixir; mirror by ZD2525",
+      "publicationDate": null,
+      "url": "https://raw.githubusercontent.com/ZD2525/Basic-Exploratory-Data-Analysis/main/2017_LoL_esports_match_data_from_OraclesElixir.csv",
+      "accessNotes": "Same underlying statistical producer, not an independent source."
+    },
+    "ddragon-7.18.1": {
+      "title": "ddragon-7.18.1",
+      "publisher": "Riot Games",
+      "publicationDate": null,
+      "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion.json",
+      "accessNotes": ""
+    },
+    "golgg-event": {
+      "title": "golgg-event",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/tournament/tournament-stats/World%20Championship%202017/",
+      "accessNotes": ""
+    },
+    "riot-rosters": {
+      "title": "riot-rosters",
+      "publisher": "Riot Games",
+      "publicationDate": null,
+      "url": "https://na.leagueoflegends.com/en/featured/worlds-2017-meet-the-teams/",
+      "accessNotes": ""
+    },
+    "golgg-players": {
+      "title": "golgg-players",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/list/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": ""
+    },
+    "golgg-Huni": {
+      "title": "golgg-Huni",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/371/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Peanut": {
+      "title": "golgg-Peanut",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/392/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Faker": {
+      "title": "golgg-Faker",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/48/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Bang": {
+      "title": "golgg-Bang",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/100/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Wolf": {
+      "title": "golgg-Wolf",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/101/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Blank": {
+      "title": "golgg-Blank",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/411/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-CuVee": {
+      "title": "golgg-CuVee",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/216/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Ambition": {
+      "title": "golgg-Ambition",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/104/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Crown": {
+      "title": "golgg-Crown",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/451/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Ruler": {
+      "title": "golgg-Ruler",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/685/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-CoreJJ": {
+      "title": "golgg-CoreJJ",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/257/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Haru": {
+      "title": "golgg-Haru",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/683/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Khan": {
+      "title": "golgg-Khan",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/982/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Cuzz": {
+      "title": "golgg-Cuzz",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/983/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Bdd": {
+      "title": "golgg-Bdd",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/650/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-PraY": {
+      "title": "golgg-PraY",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/221/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-GorillA": {
+      "title": "golgg-GorillA",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/65/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-Rascal": {
+      "title": "golgg-Rascal",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/1061/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+      "accessNotes": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics."
+    },
+    "golgg-summer-Peanut": {
+      "title": "golgg-summer-Peanut",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/392/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+      "accessNotes": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games."
+    },
+    "golgg-summer-Cuzz": {
+      "title": "golgg-summer-Cuzz",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/983/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+      "accessNotes": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games."
+    },
+    "golgg-summer-Ruler": {
+      "title": "golgg-summer-Ruler",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/685/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+      "accessNotes": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games."
+    },
+    "golgg-summer-CoreJJ": {
+      "title": "golgg-summer-CoreJJ",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/257/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+      "accessNotes": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games."
+    },
+    "golgg-summer-PraY": {
+      "title": "golgg-summer-PraY",
+      "publisher": "Games of Legends",
+      "publicationDate": null,
+      "url": "https://gol.gg/players/player-stats/221/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+      "accessNotes": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games."
+    }
+  },
+  "internalResearchReferences": {
+    "golgg-event": [
+      "turn33view0"
+    ],
+    "golgg-players": [
+      "turn34view0",
+      "turn35view1"
+    ],
+    "golgg-Faker": [
+      "turn33view1"
+    ],
+    "golgg-summer-Peanut": [
+      "turn35view2"
+    ],
+    "golgg-summer-Ruler": [
+      "turn36view0"
+    ],
+    "golgg-summer-CoreJJ": [
+      "turn36view1"
+    ],
+    "golgg-summer-Cuzz": [
+      "turn36view2"
+    ],
+    "golgg-summer-PraY": [
+      "turn37view0"
+    ]
+  },
+  "stoppingReason": "All requested playable slots have observed evidence; independent aggregate/fallback checks and official versioned assets obtained. Remaining limits concern historical photos and causal/predictive rating calibration; further broad searches would not resolve those within this model."
+}

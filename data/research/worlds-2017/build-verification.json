@@ -1,0 +1,20 @@
+{
+  "verifiedAt": "2026-09-07",
+  "methodVersion": "worlds-2017-v1.0.0",
+  "checks": [
+    {"command": "npm run data:build", "result": "passed", "players": 15, "slots": 75},
+    {"command": "npm run data:validate", "result": "passed", "aggregateFacts": 108, "associationFacts": 21, "mirrorRows": 800, "numericalDifferences": 0},
+    {"command": "python scripts/data/verify_reproducibility.py", "result": "passed", "byteIdenticalOutputs": 9},
+    {"command": "npm run data:simulate", "result": "passed", "campaigns": 10000, "seed": 201718, "simulatedGames": 100303, "championshipRate": 0.0659},
+    {"command": "npm run data:report", "result": "passed", "playablePoolTables": 15},
+    {"command": "node scripts/data/preview-report.mjs", "result": "passed", "tables": 30, "headings": 39, "links": 58, "horizontalOverflow": false, "visualInspection": "Opening and dense pool section inspected."},
+    {"command": "npm test", "result": "passed", "tests": 33, "files": 3},
+    {"command": "npm run test:e2e", "result": "passed", "tests": 6, "projects": ["desktop", "mobile"], "browser": "Microsoft Edge"},
+    {"command": "npm run build", "result": "passed", "typescript": true, "productionBundle": true}
+  ],
+  "limitations": [
+    "Historical 2017 player photographs were not validated; champion fallback is used.",
+    "Ratings are descriptive estimates; no held-out predictive calibration was performed.",
+    "No remote deployment or database integration was performed."
+  ]
+}

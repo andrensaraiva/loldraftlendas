@@ -1,0 +1,692 @@
+[
+  {
+    "id": "huni-2017-skt",
+    "playerName": "Huni",
+    "team": "SKT",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "TOP",
+    "profile": "19 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Chogath",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huni-2017-skt-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Jayce",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huni-2017-skt-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Trundle",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huni-2017-skt-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Camille",
+        "rating": 85,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huni-2017-skt-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Gnar",
+        "rating": 86,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huni-2017-skt-g5"
+      }
+    ]
+  },
+  {
+    "id": "peanut-2017-skt",
+    "playerName": "Peanut",
+    "team": "SKT",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "JUNGLE",
+    "profile": "10 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "JarvanIV",
+        "rating": 84,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2017-skt-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Sejuani",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2017-skt-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Gragas",
+        "rating": 81,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2017-skt-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Elise",
+        "rating": 81,
+        "source": "SEASON_DATA",
+        "evidenceId": "peanut-2017-skt-g4"
+      },
+      {
+        "game": 5,
+        "championId": "RekSai",
+        "rating": 81,
+        "source": "SEASON_DATA",
+        "evidenceId": "peanut-2017-skt-g5"
+      }
+    ]
+  },
+  {
+    "id": "faker-2017-skt",
+    "playerName": "Faker",
+    "team": "SKT",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "MID",
+    "profile": "19 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Cassiopeia",
+        "rating": 86,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2017-skt-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Orianna",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2017-skt-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Fizz",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2017-skt-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Galio",
+        "rating": 89,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2017-skt-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Taliyah",
+        "rating": 86,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2017-skt-g5"
+      }
+    ]
+  },
+  {
+    "id": "bang-2017-skt",
+    "playerName": "Bang",
+    "team": "SKT",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "ADC",
+    "profile": "19 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "KogMaw",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2017-skt-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Twitch",
+        "rating": 85,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2017-skt-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Varus",
+        "rating": 81,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2017-skt-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Caitlyn",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2017-skt-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Tristana",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2017-skt-g5"
+      }
+    ]
+  },
+  {
+    "id": "wolf-2017-skt",
+    "playerName": "Wolf",
+    "team": "SKT",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "SUPPORT",
+    "profile": "19 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Janna",
+        "rating": 84,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2017-skt-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Rakan",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2017-skt-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Lulu",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2017-skt-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Trundle",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2017-skt-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Leona",
+        "rating": 82,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2017-skt-g5"
+      }
+    ]
+  },
+  {
+    "id": "cuvee-2017-ssg",
+    "playerName": "CuVee",
+    "team": "SSG",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "TOP",
+    "profile": "16 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Chogath",
+        "rating": 91,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2017-ssg-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Maokai",
+        "rating": 89,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2017-ssg-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Kennen",
+        "rating": 92,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2017-ssg-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Shen",
+        "rating": 92,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2017-ssg-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Gnar",
+        "rating": 91,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2017-ssg-g5"
+      }
+    ]
+  },
+  {
+    "id": "ambition-2017-ssg",
+    "playerName": "Ambition",
+    "team": "SSG",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "JUNGLE",
+    "profile": "15 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Gragas",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2017-ssg-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Sejuani",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2017-ssg-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Khazix",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2017-ssg-g3"
+      },
+      {
+        "game": 4,
+        "championId": "JarvanIV",
+        "rating": 86,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2017-ssg-g4"
+      },
+      {
+        "game": 5,
+        "championId": "LeeSin",
+        "rating": 85,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2017-ssg-g5"
+      }
+    ]
+  },
+  {
+    "id": "crown-2017-ssg",
+    "playerName": "Crown",
+    "team": "SSG",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "MID",
+    "profile": "16 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Taliyah",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2017-ssg-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Ryze",
+        "rating": 83,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2017-ssg-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Syndra",
+        "rating": 84,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2017-ssg-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Malzahar",
+        "rating": 85,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2017-ssg-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Galio",
+        "rating": 85,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2017-ssg-g5"
+      }
+    ]
+  },
+  {
+    "id": "ruler-2017-ssg",
+    "playerName": "Ruler",
+    "team": "SSG",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "ADC",
+    "profile": "16 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Varus",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2017-ssg-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Twitch",
+        "rating": 85,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2017-ssg-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Tristana",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2017-ssg-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Xayah",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2017-ssg-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 86,
+        "source": "SEASON_DATA",
+        "evidenceId": "ruler-2017-ssg-g5"
+      }
+    ]
+  },
+  {
+    "id": "corejj-2017-ssg",
+    "playerName": "CoreJJ",
+    "team": "SSG",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "SUPPORT",
+    "profile": "16 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Taric",
+        "rating": 91,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2017-ssg-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Rakan",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2017-ssg-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Lulu",
+        "rating": 91,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2017-ssg-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Janna",
+        "rating": 91,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2017-ssg-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Braum",
+        "rating": 88,
+        "source": "SEASON_DATA",
+        "evidenceId": "corejj-2017-ssg-g5"
+      }
+    ]
+  },
+  {
+    "id": "khan-2017-lz",
+    "playerName": "Khan",
+    "team": "LZ",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "TOP",
+    "profile": "8 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "JarvanIV",
+        "rating": 90,
+        "source": "WORLDS_DATA",
+        "evidenceId": "khan-2017-lz-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Nasus",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "khan-2017-lz-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Jayce",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "khan-2017-lz-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Jax",
+        "rating": 86,
+        "source": "WORLDS_DATA",
+        "evidenceId": "khan-2017-lz-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Chogath",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "khan-2017-lz-g5"
+      }
+    ]
+  },
+  {
+    "id": "cuzz-2017-lz",
+    "playerName": "Cuzz",
+    "team": "LZ",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "JUNGLE",
+    "profile": "9 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Khazix",
+        "rating": 84,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuzz-2017-lz-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Gragas",
+        "rating": 89,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuzz-2017-lz-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Sejuani",
+        "rating": 84,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuzz-2017-lz-g3"
+      },
+      {
+        "game": 4,
+        "championId": "JarvanIV",
+        "rating": 86,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuzz-2017-lz-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Elise",
+        "rating": 84,
+        "source": "SEASON_DATA",
+        "evidenceId": "cuzz-2017-lz-g5"
+      }
+    ]
+  },
+  {
+    "id": "bdd-2017-lz",
+    "playerName": "Bdd",
+    "team": "LZ",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "MID",
+    "profile": "9 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Taliyah",
+        "rating": 91,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bdd-2017-lz-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Ryze",
+        "rating": 91,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bdd-2017-lz-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Galio",
+        "rating": 89,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bdd-2017-lz-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Syndra",
+        "rating": 89,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bdd-2017-lz-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Orianna",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bdd-2017-lz-g5"
+      }
+    ]
+  },
+  {
+    "id": "pray-2017-lz",
+    "playerName": "PraY",
+    "team": "LZ",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "ADC",
+    "profile": "9 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Tristana",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2017-lz-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Xayah",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2017-lz-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Varus",
+        "rating": 90,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2017-lz-g3"
+      },
+      {
+        "game": 4,
+        "championId": "KogMaw",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2017-lz-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 88,
+        "source": "SEASON_DATA",
+        "evidenceId": "pray-2017-lz-g5"
+      }
+    ]
+  },
+  {
+    "id": "gorilla-2017-lz",
+    "playerName": "GorillA",
+    "team": "LZ",
+    "region": "LCK",
+    "worldsYear": 2017,
+    "role": "SUPPORT",
+    "profile": "9 jogos no Worlds · dados pesquisados",
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Karma",
+        "rating": 87,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2017-lz-g1"
+      },
+      {
+        "game": 2,
+        "championId": "Rakan",
+        "rating": 90,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2017-lz-g2"
+      },
+      {
+        "game": 3,
+        "championId": "Janna",
+        "rating": 89,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2017-lz-g3"
+      },
+      {
+        "game": 4,
+        "championId": "Lulu",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2017-lz-g4"
+      },
+      {
+        "game": 5,
+        "championId": "Thresh",
+        "rating": 88,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2017-lz-g5"
+      }
+    ]
+  }
+]

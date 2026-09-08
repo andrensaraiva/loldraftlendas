@@ -1,0 +1,47 @@
+{
+  "2015": {
+    "url": "https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2015_LoL_esports_match_data_from_OraclesElixir_20201011.csv",
+    "sha256": "70369d7e31d3f751d96087bcd3713dad204d50fbf1c0b2faaec17e5ae4b6c5c6",
+    "bytes": 11487805,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-07",
+    "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  },
+  "2019": {
+    "url": "https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2019_LoL_esports_match_data_from_OraclesElixir_20201011.csv",
+    "sha256": "b5e26a0971166104690669579e9ffff25148b25765d7999ca02dec734e9e9d03",
+    "bytes": 38708895,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-07",
+    "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  },
+  "2020": {
+    "url": "https://raw.githubusercontent.com/AdamLewis73/League-of-Legends-Stats-Analyzer/main/2020_LoL_esports_match_data_from_OraclesElixir_20210710.csv",
+    "sha256": "6000690074ba151affa28d1502cd1d270b4332d05d780bc302af63b87566fc99",
+    "bytes": 64540068,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-07",
+    "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  },
+  "2022": {
+    "url": "https://raw.githubusercontent.com/twodotone/finalLOL/main/data/csv/2022_LoL_esports_match_data_from_OraclesElixir.csv",
+    "sha256": "cd14d6e3500c08e4a48d737144aa2d2dce72111f4dcf51028949a3b811832a93",
+    "bytes": 96582739,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-07",
+    "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  },
+  "2023": {
+    "url": "https://raw.githubusercontent.com/twodotone/finalLOL/main/data/csv/2023_LoL_esports_match_data_from_OraclesElixir.csv",
+    "sha256": "d42294fc703ac41e16427560f1838e43c0832d65c126ca3ecfe95bd9df311f98",
+    "bytes": 85835850,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-07",
+    "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-09-07",
+  "sourceId": "golgg-players",
+  "note": "Manually transcribed aggregate facts; rounded display values. DPM tolerance 1, KDA 0.06, KP 0.001. Blank is displayed as blank. Season pages separate regular season from playoffs; our Summer cohort includes both.",
+  "columns": ["player", "games", "wins", "kda", "dpm", "kp"],
+  "players": [
+    ["Huni", 19, 11, 2.8, 442, 0.611],
+    ["Peanut", 10, 6, 4.0, 182, 0.674],
+    ["Faker", 19, 11, 3.7, 420, 0.741],
+    ["Bang", 19, 11, 4.5, 587, 0.594],
+    ["Wolf", 19, 11, 3.9, 101, 0.637],
+    ["CuVee", 16, 13, 4.7, 453, 0.687],
+    ["Ambition", 15, 12, 4.2, 232, 0.752],
+    ["Crown", 16, 13, 5.0, 479, 0.719],
+    ["Ruler", 16, 13, 7.4, 651, 0.676],
+    ["CoreJJ", 16, 13, 7.9, 98, 0.797],
+    ["Khan", 8, 5, 4.4, 433, 0.662],
+    ["Cuzz", 9, 6, 3.6, 220, 0.747],
+    ["Bdd", 9, 6, 7.2, 500, 0.777],
+    ["PraY", 9, 6, 4.9, 681, 0.697],
+    ["GorillA", 9, 6, 4.5, 111, 0.801],
+    ["Blank", 9, 5, 2.8, 175, 0.768],
+    ["Haru", 1, 1, 9.0, 403, 1.0],
+    ["Rascal", 1, 1, 8.0, 394, 1.0]
+  ],
+  "champions": [
+    {"player": "Faker", "event": "WORLDS_2017", "champion": "Galio", "games": 6, "wins": 4, "kda": 5.4, "sourceId": "golgg-Faker"},
+    {"player": "Peanut", "event": "LCK_SUMMER_2017", "champion": "Elise", "games": 6, "wins": 4, "kda": 3.6, "url": "https://gol.gg/players/player-stats/392/season-ALL/split-ALL/tournament-LCK%20Summer%202017/"},
+    {"player": "Peanut", "event": "LCK_SUMMER_2017", "champion": "Rek'Sai", "games": 4, "wins": 3, "kda": 3.9, "sourceId": "golgg-summer-Peanut"},
+    {"player": "Ruler", "event": "LCK_SUMMER_2017", "champion": "Ashe", "games": 10, "wins": 5, "kda": 3.0, "sourceId": "golgg-summer-Ruler"},
+    {"player": "CoreJJ", "event": "LCK_SUMMER_2017", "champion": "Braum", "games": 12, "wins": 8, "kda": 5.7, "sourceId": "golgg-summer-CoreJJ"},
+    {"player": "Cuzz", "event": "LCK_SUMMER_2017", "champion": "Elise", "games": 12, "wins": 8, "kda": 4.0, "sourceId": "golgg-summer-Cuzz"},
+    {"player": "PraY", "event": "LCK_SUMMER_2017", "champion": "Ashe", "games": 15, "wins": 11, "kda": 5.1, "sourceId": "golgg-summer-PraY"}
+  ]
+}

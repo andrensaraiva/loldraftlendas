@@ -1,0 +1,42 @@
+{
+  "version": "multi-era-v1.0.0",
+  "formula": "round(clamp(84.5 + 5 * (historicalScore - pooledRoleMean) / pooledRoleSD, 70, 99))",
+  "parameters": {
+    "TOP": {
+      "mean": 53.96326283207769,
+      "sd": 12.007327241795286,
+      "n": 390,
+      "center": 84.5,
+      "spread": 5
+    },
+    "JUNGLE": {
+      "mean": 52.86486742376279,
+      "sd": 9.474322971945767,
+      "n": 390,
+      "center": 84.5,
+      "spread": 5
+    },
+    "MID": {
+      "mean": 54.5605938493348,
+      "sd": 9.858483811151148,
+      "n": 390,
+      "center": 84.5,
+      "spread": 5
+    },
+    "ADC": {
+      "mean": 55.67344660554813,
+      "sd": 10.613342619691284,
+      "n": 390,
+      "center": 84.5,
+      "spread": 5
+    },
+    "SUPPORT": {
+      "mean": 54.76426133124196,
+      "sd": 10.54406894594643,
+      "n": 390,
+      "center": 84.5,
+      "spread": 5
+    }
+  },
+  "frozen2017Sha256": "fd67dc93fd467c726497239085536a76a82648cf5f7d6fd1895fa6137869516f"
+}

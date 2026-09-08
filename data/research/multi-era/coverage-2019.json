@@ -1,0 +1,22 @@
+{
+  "players": 60,
+  "slots": 300,
+  "missing": [],
+  "worldsGames": 77,
+  "matchesSha256": "a59a22438e37a377056d967b418bc6accf0c6d9417db769f97128a52e4e35506",
+  "missingMetrics": {
+    "result": 0,
+    "kills": 0,
+    "deaths": 0,
+    "assists": 0,
+    "teamkills": 0,
+    "dpm": 0,
+    "damageshare": 0,
+    "golddiffat15": 220,
+    "csdiffat15": 220,
+    "xpdiffat15": 220,
+    "gamelength": 0,
+    "wpm": 0,
+    "wcpm": 0
+  }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "label": "desktop",
+    "cardTop": 496.859375,
+    "cardHeight": 489.1875,
+    "pageHeight": 1186,
+    "overflow": false
+  },
+  {
+    "label": "mobile",
+    "cardTop": 439.796875,
+    "cardHeight": 253.390625,
+    "pageHeight": 1417,
+    "overflow": false
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "note": "Five slots missing from OE's 2015 LPL coverage. Verified public Games of Legends observations; no fabricated per-match metrics. Aggregate-only observations receive zero performance confidence (B=A). Counts are scoped to each cited page, not assumed to cover all Summer matches. AmazingJ is one documented occurrence, not a claim that Shen was his most-played Summer champion.",
+  "accessedAt": "2026-09-07",
+  "players": {
+    "AmazingJ": [{"championId":"Shen","games":1,"wins":1,"kda":20,"seasonGames":null,"firstAppearance":"2015-06-26","sourceUrl":"https://gol.gg/champion/champion-matchlist/79/season-S5/split-Summer/tournament-/","match":"Edward vs LGD Gaming; 2/1/18","scope":"One verified LPL Summer match; season coverage unavailable"}],
+    "Zz1tai": [{"championId":"Maokai","games":16,"wins":10,"kda":4.9,"seasonGames":73,"firstAppearance":null,"sourceUrl":"https://gol.gg/players/player-stats/160/season-S5/split-Summer/tournament-ALL/champion-ALL/","scope":"S5 Summer filter including playoffs/qualifiers/Worlds; Maokai has zero Worlds occurrences in OE"}],
+    "Kid": [{"championId":"Vayne","games":7,"wins":6,"kda":8.3,"seasonGames":36,"firstAppearance":null,"sourceUrl":"https://gol.gg/players/player-stats/161/season-ALL/split-ALL/tournament-LPL%20Summer%202015/champion-ALL/","scope":"LPL Summer regular season"}],
+    "Acorn": [{"championId":"Shen","games":4,"wins":2,"kda":5.5,"seasonGames":27,"firstAppearance":null,"sourceUrl":"https://gol.gg/players/player-stats/41/season-ALL/split-ALL/tournament-LPL%20Summer%202015/","scope":"LPL Summer regular season"},{"championId":"Maokai","games":3,"wins":2,"kda":4.6,"seasonGames":27,"firstAppearance":null,"sourceUrl":"https://gol.gg/players/player-stats/41/season-ALL/split-ALL/tournament-LPL%20Summer%202015/","scope":"LPL Summer regular season"}]
+  }
+}

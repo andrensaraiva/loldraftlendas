@@ -1,0 +1,45 @@
+{
+  "name": "draft-lendas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "data:build": "python scripts/data/build_worlds_2017.py",
+    "data:validate": "python scripts/data/validate_research.py",
+    "data:simulate": "node scripts/data/simulate-worlds-2017.mjs",
+    "data:report": "python scripts/data/write_report.py",
+    "data:multi:download": "python scripts/data/download_multi_era.py",
+    "data:multi:build": "python scripts/data/build_multi_era.py --snapshot",
+    "data:multi:validate": "python scripts/data/validate_multi_era.py",
+    "data:multi:simulate": "node scripts/data/simulate-multi-era.mjs",
+    "data:multi:report": "python scripts/data/write_multi_report.py",
+    "data:multi:reproduce": "python scripts/data/verify_multi_reproducibility.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fontsource/barlow-condensed": "^5.3.0",
+    "@fontsource/dm-sans": "^5.3.0",
+    "lucide-react": "^1.41.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "vitest": "^5.0.0"
+  }
+}

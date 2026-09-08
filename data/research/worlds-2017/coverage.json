@@ -1,0 +1,30 @@
+{
+  "events": {
+    "LCK_SUMMER_2017": 2330,
+    "WORLDS_2017": 800
+  },
+  "worldsGames": 80,
+  "worldsPlayers": 85,
+  "playablePlayers": 15,
+  "slots": 75,
+  "missing": {
+    "result": 0,
+    "kills": 0,
+    "deaths": 0,
+    "assists": 0,
+    "teamkills": 0,
+    "dpm": 0,
+    "damageshare": 0,
+    "golddiffat15": 0,
+    "csdiffat15": 0,
+    "xpdiffat15": 0,
+    "gamelength": 0,
+    "wpm": 0,
+    "wcpm": 0
+  },
+  "matchesSha256": "a66674c3c3b696080cbae8c47b276a577ad40d634dce21b5129729419cc38e20",
+  "sourceCounts": {
+    "WORLDS_DATA": 69,
+    "SEASON_DATA": 6
+  }
+}

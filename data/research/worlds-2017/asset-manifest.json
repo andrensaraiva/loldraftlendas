@@ -1,0 +1,730 @@
+{
+  "patch": "7.18.1",
+  "publisher": "Riot Games",
+  "archiveUrl": "https://ddragon.leagueoflegends.com/cdn/dragontail-7.18.1.tgz",
+  "archiveSha256": "e525e5335864eb021acbc60fb752aa346090d96289cb8e6dd11d8015b0259b7a",
+  "archiveBytes": 721652051,
+  "usageNote": "Copyright Riot Games. Official static distribution; not a public-domain or open-license assertion. No endorsement.",
+  "assets": [
+    {
+      "championId": "Ashe",
+      "archivePath": "7.18.1/img/champion/Ashe.png",
+      "localFile": "public/assets/2017/champions/Ashe.png",
+      "sha256": "4d85a00539749caad328e437d47a16e7ed2a2137e4a31313c546a2d167f99371"
+    },
+    {
+      "championId": "Ashe",
+      "archivePath": "img/champion/splash/Ashe_0.jpg",
+      "localFile": "public/assets/2017/splash/Ashe.jpg",
+      "sha256": "f32400a6fa85f3af892a0fdfa301839b8e514ba6b2fbd1cf69b52bfe6a20dce3"
+    },
+    {
+      "championId": "Ashe",
+      "archivePath": "7.18.1/data/en_US/champion/Ashe.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Ashe.json",
+      "sha256": "8277255e4388d3f4d18b51cb83eecf8264cf74913f31384655592ce79ede91cd"
+    },
+    {
+      "championId": "Braum",
+      "archivePath": "7.18.1/img/champion/Braum.png",
+      "localFile": "public/assets/2017/champions/Braum.png",
+      "sha256": "ace198b61fb25cef4004121c6887de44483b3dd34343573fd2cd6001f50e2fa0"
+    },
+    {
+      "championId": "Braum",
+      "archivePath": "img/champion/splash/Braum_0.jpg",
+      "localFile": "public/assets/2017/splash/Braum.jpg",
+      "sha256": "1da7d508ee0d1927fa92af2bdd07a726a7f0bf735032f752583bd27c86e09fcc"
+    },
+    {
+      "championId": "Braum",
+      "archivePath": "7.18.1/data/en_US/champion/Braum.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Braum.json",
+      "sha256": "8e940788ae877e973c943466b69ee3e83cd3572841993b93e6035a7ad8048379"
+    },
+    {
+      "championId": "Caitlyn",
+      "archivePath": "7.18.1/img/champion/Caitlyn.png",
+      "localFile": "public/assets/2017/champions/Caitlyn.png",
+      "sha256": "d7ea1fa15ef656d9c3f19f8540d473286437de3e3fc36379e0ef9806ef2fcc13"
+    },
+    {
+      "championId": "Caitlyn",
+      "archivePath": "img/champion/splash/Caitlyn_0.jpg",
+      "localFile": "public/assets/2017/splash/Caitlyn.jpg",
+      "sha256": "7f5cadc544b4fa12af40a6934647ec2eeff9ddd95a5a65c04be466607ce5d789"
+    },
+    {
+      "championId": "Caitlyn",
+      "archivePath": "7.18.1/data/en_US/champion/Caitlyn.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Caitlyn.json",
+      "sha256": "87f6fa0daf78762b441c27f7ea93c790edd5d9e80fea5b4641cf93e24801e4fe"
+    },
+    {
+      "championId": "Camille",
+      "archivePath": "7.18.1/img/champion/Camille.png",
+      "localFile": "public/assets/2017/champions/Camille.png",
+      "sha256": "8d5f3292eb0413ba40e1740bbac69aade753fa8c93f8ed674edbed6560f6b4e3"
+    },
+    {
+      "championId": "Camille",
+      "archivePath": "img/champion/splash/Camille_0.jpg",
+      "localFile": "public/assets/2017/splash/Camille.jpg",
+      "sha256": "c2304c36a5b0f098a4088ac9fa6a2bfeb2b2c9d30443692c387a4e3922291dd5"
+    },
+    {
+      "championId": "Camille",
+      "archivePath": "7.18.1/data/en_US/champion/Camille.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Camille.json",
+      "sha256": "345c6cf6f60f974ba118a4a41e5d703be87703c2297a6635578980442a149e1a"
+    },
+    {
+      "championId": "Cassiopeia",
+      "archivePath": "7.18.1/img/champion/Cassiopeia.png",
+      "localFile": "public/assets/2017/champions/Cassiopeia.png",
+      "sha256": "e23744f41f17a345a17b50111438e903c87a5509799349c5b0f0da6b9c53c3d8"
+    },
+    {
+      "championId": "Cassiopeia",
+      "archivePath": "img/champion/splash/Cassiopeia_0.jpg",
+      "localFile": "public/assets/2017/splash/Cassiopeia.jpg",
+      "sha256": "4b472a385bffd0030da0b000192f788c8fb0c1d9c2e1880df75647e0d2e7ea5c"
+    },
+    {
+      "championId": "Cassiopeia",
+      "archivePath": "7.18.1/data/en_US/champion/Cassiopeia.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Cassiopeia.json",
+      "sha256": "3b128ff1fd50b91cfa524d8b962affee04fe451141873a5b904c90db59fcc279"
+    },
+    {
+      "championId": "Chogath",
+      "archivePath": "7.18.1/img/champion/Chogath.png",
+      "localFile": "public/assets/2017/champions/Chogath.png",
+      "sha256": "1b6231c68e4e52b65f7e8f96362a784020916e5fca7c609a34c535357490b4f6"
+    },
+    {
+      "championId": "Chogath",
+      "archivePath": "img/champion/splash/Chogath_0.jpg",
+      "localFile": "public/assets/2017/splash/Chogath.jpg",
+      "sha256": "c2a3b2d4231f5ba4c79338503f59a6a4ad1397d72b841603e2f0d37f1432d62e"
+    },
+    {
+      "championId": "Chogath",
+      "archivePath": "7.18.1/data/en_US/champion/Chogath.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Chogath.json",
+      "sha256": "82f1834487112db44667767f29ffa9822c8a29f076960516163e3970104ebf93"
+    },
+    {
+      "championId": "Elise",
+      "archivePath": "7.18.1/img/champion/Elise.png",
+      "localFile": "public/assets/2017/champions/Elise.png",
+      "sha256": "49981b4b57917d8f3a75ec7c106adcd7ed5fc0a79940ad4de44311f7845c3964"
+    },
+    {
+      "championId": "Elise",
+      "archivePath": "img/champion/splash/Elise_0.jpg",
+      "localFile": "public/assets/2017/splash/Elise.jpg",
+      "sha256": "a39589f42c5d0e0092150d30d81feeab57db00ceb649c8cff327a46eb68c5dd9"
+    },
+    {
+      "championId": "Elise",
+      "archivePath": "7.18.1/data/en_US/champion/Elise.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Elise.json",
+      "sha256": "1975cd5abf4c8b80e45bec7c26e9374de9dbd2f6152214c716b1071607ab5567"
+    },
+    {
+      "championId": "Fizz",
+      "archivePath": "7.18.1/img/champion/Fizz.png",
+      "localFile": "public/assets/2017/champions/Fizz.png",
+      "sha256": "036c071db8a101b0a5aa2fde97674c3bc4de82146ee537dd9a6a2cb249181667"
+    },
+    {
+      "championId": "Fizz",
+      "archivePath": "img/champion/splash/Fizz_0.jpg",
+      "localFile": "public/assets/2017/splash/Fizz.jpg",
+      "sha256": "6bedbbac4c5b92fa1759e6a71cf763a6e4d7ea37e41377fa1741d02feaaba893"
+    },
+    {
+      "championId": "Fizz",
+      "archivePath": "7.18.1/data/en_US/champion/Fizz.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Fizz.json",
+      "sha256": "752d0bf6fee385292670da3d6e4179a46d676690f72349f273358ee64f728428"
+    },
+    {
+      "championId": "Galio",
+      "archivePath": "7.18.1/img/champion/Galio.png",
+      "localFile": "public/assets/2017/champions/Galio.png",
+      "sha256": "2d4c98d574ae866bd0e327d8a6f6d2ccf0cc8ca07fa67b61dc8bd49518dea45b"
+    },
+    {
+      "championId": "Galio",
+      "archivePath": "img/champion/splash/Galio_0.jpg",
+      "localFile": "public/assets/2017/splash/Galio.jpg",
+      "sha256": "35d8506bdef4119650cdc50e1c48ee590820e8e2645499511b48299b28d00dc3"
+    },
+    {
+      "championId": "Galio",
+      "archivePath": "7.18.1/data/en_US/champion/Galio.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Galio.json",
+      "sha256": "3cfd4101c7be2d5fbff8b96094af43c540d997c97098f3fa1f10378257e060eb"
+    },
+    {
+      "championId": "Gnar",
+      "archivePath": "7.18.1/img/champion/Gnar.png",
+      "localFile": "public/assets/2017/champions/Gnar.png",
+      "sha256": "07aeea3f498a530470c40a30f7980309814cbcc14e8bc6364fe7836666c39c69"
+    },
+    {
+      "championId": "Gnar",
+      "archivePath": "img/champion/splash/Gnar_0.jpg",
+      "localFile": "public/assets/2017/splash/Gnar.jpg",
+      "sha256": "8ad3e0c582aa4251abc0812c43712b3fa4fa2166915f0c8425f69e7a991d2cd3"
+    },
+    {
+      "championId": "Gnar",
+      "archivePath": "7.18.1/data/en_US/champion/Gnar.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Gnar.json",
+      "sha256": "8eeccc947d52883c36df6601d0a065592b728b43b69f0d9632119cda5d3e4115"
+    },
+    {
+      "championId": "Gragas",
+      "archivePath": "7.18.1/img/champion/Gragas.png",
+      "localFile": "public/assets/2017/champions/Gragas.png",
+      "sha256": "55d4999721337dd49b968e07e026e7029629b7bffcc519929c8a38d83bdfca09"
+    },
+    {
+      "championId": "Gragas",
+      "archivePath": "img/champion/splash/Gragas_0.jpg",
+      "localFile": "public/assets/2017/splash/Gragas.jpg",
+      "sha256": "87927b21422a74cd4becd0e9b0d38c6a0672a0bc60a033d3fb103491d3124464"
+    },
+    {
+      "championId": "Gragas",
+      "archivePath": "7.18.1/data/en_US/champion/Gragas.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Gragas.json",
+      "sha256": "d0c859bfad85f115f99d3c75644066b20c0274b5d18af3513efd399ae78aff44"
+    },
+    {
+      "championId": "Janna",
+      "archivePath": "7.18.1/img/champion/Janna.png",
+      "localFile": "public/assets/2017/champions/Janna.png",
+      "sha256": "3f50197b04523d60e5c064486cada230505cd9f66c254161423ccce024613c5d"
+    },
+    {
+      "championId": "Janna",
+      "archivePath": "img/champion/splash/Janna_0.jpg",
+      "localFile": "public/assets/2017/splash/Janna.jpg",
+      "sha256": "c8f438cfbee6273a0d0dddeb80f13b383e9d99729b0c6fb5a980ebe2310e6a02"
+    },
+    {
+      "championId": "Janna",
+      "archivePath": "7.18.1/data/en_US/champion/Janna.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Janna.json",
+      "sha256": "20caa40ea9dfeb470c1173728e83bef4b492d575de3ee236a6ad76f0e4b0cb06"
+    },
+    {
+      "championId": "JarvanIV",
+      "archivePath": "7.18.1/img/champion/JarvanIV.png",
+      "localFile": "public/assets/2017/champions/JarvanIV.png",
+      "sha256": "d06c0d9c574e42b580f16ee4218d1230d4e2b6caa0bf5024ff39f09dd13defd9"
+    },
+    {
+      "championId": "JarvanIV",
+      "archivePath": "img/champion/splash/JarvanIV_0.jpg",
+      "localFile": "public/assets/2017/splash/JarvanIV.jpg",
+      "sha256": "bf11f0bf27a792986c197aad56601a9eee9def864fd709c3983e300a98e55d42"
+    },
+    {
+      "championId": "JarvanIV",
+      "archivePath": "7.18.1/data/en_US/champion/JarvanIV.json",
+      "localFile": "data/research/worlds-2017/champion-kits/JarvanIV.json",
+      "sha256": "fab293e3f389730a70c7703de464ad1ba64ac88a166a44a2bb345b48fb5c9892"
+    },
+    {
+      "championId": "Jax",
+      "archivePath": "7.18.1/img/champion/Jax.png",
+      "localFile": "public/assets/2017/champions/Jax.png",
+      "sha256": "10260d8b1b447c1d5047735969658184c4873af8953072bdea182673452b32e7"
+    },
+    {
+      "championId": "Jax",
+      "archivePath": "img/champion/splash/Jax_0.jpg",
+      "localFile": "public/assets/2017/splash/Jax.jpg",
+      "sha256": "c3125b1adc318fe1285c3a141a1cc6e7882ac3e23df4168beb1980897beafc0e"
+    },
+    {
+      "championId": "Jax",
+      "archivePath": "7.18.1/data/en_US/champion/Jax.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Jax.json",
+      "sha256": "1519f17dbf7c9294fb4e2e817edd989fb43cc58c2b77125eb12b4e2dff7e3d66"
+    },
+    {
+      "championId": "Jayce",
+      "archivePath": "7.18.1/img/champion/Jayce.png",
+      "localFile": "public/assets/2017/champions/Jayce.png",
+      "sha256": "6ce19d3fb0dde75626da78e69667918cf3b25fdabf4697c31da9072702889cf1"
+    },
+    {
+      "championId": "Jayce",
+      "archivePath": "img/champion/splash/Jayce_0.jpg",
+      "localFile": "public/assets/2017/splash/Jayce.jpg",
+      "sha256": "e63ba0c568c423ff6eae41210e2d2e69d6c71d5e0598f8f5d712a348ab573b8f"
+    },
+    {
+      "championId": "Jayce",
+      "archivePath": "7.18.1/data/en_US/champion/Jayce.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Jayce.json",
+      "sha256": "514c5f304057e617512f82569e212934a30774dbdb73090bbfd45789d6141280"
+    },
+    {
+      "championId": "Karma",
+      "archivePath": "7.18.1/img/champion/Karma.png",
+      "localFile": "public/assets/2017/champions/Karma.png",
+      "sha256": "990dbadc10d73674c8f49f5baa716e5e01c8d3c0a353e63cb2aac8197ef4b4e9"
+    },
+    {
+      "championId": "Karma",
+      "archivePath": "img/champion/splash/Karma_0.jpg",
+      "localFile": "public/assets/2017/splash/Karma.jpg",
+      "sha256": "73d7d61d5feaed5ccec0da8d52dcc93d4d701cb5b1753f7b73a2ef2107a3a824"
+    },
+    {
+      "championId": "Karma",
+      "archivePath": "7.18.1/data/en_US/champion/Karma.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Karma.json",
+      "sha256": "01eb59191b96ce4be99974346b8404a08c5c56e740b6164ae38c8da9f9b8a76e"
+    },
+    {
+      "championId": "Kennen",
+      "archivePath": "7.18.1/img/champion/Kennen.png",
+      "localFile": "public/assets/2017/champions/Kennen.png",
+      "sha256": "525af93d806c1dc79d7d7e39530dab7fdbc039cddeb1bc94cfd4bb601f1f3c12"
+    },
+    {
+      "championId": "Kennen",
+      "archivePath": "img/champion/splash/Kennen_0.jpg",
+      "localFile": "public/assets/2017/splash/Kennen.jpg",
+      "sha256": "d2ab684b3af9047a271bdd5c4b40970627d13efaef2c1dec9d21e743e218b8f5"
+    },
+    {
+      "championId": "Kennen",
+      "archivePath": "7.18.1/data/en_US/champion/Kennen.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Kennen.json",
+      "sha256": "81be3beee2caa9350eae94762b9e423e5d5678187f9555cddb10648cb851b7ad"
+    },
+    {
+      "championId": "Khazix",
+      "archivePath": "7.18.1/img/champion/Khazix.png",
+      "localFile": "public/assets/2017/champions/Khazix.png",
+      "sha256": "80e9e337a76a285de15678c2dde9cc26c21e81d0191881aa8d6bab62054c81fc"
+    },
+    {
+      "championId": "Khazix",
+      "archivePath": "img/champion/splash/Khazix_0.jpg",
+      "localFile": "public/assets/2017/splash/Khazix.jpg",
+      "sha256": "3d24cb42cc23f1436a474fa74ca55965ede52ddf83b73c4c4961b5d33d2dea7a"
+    },
+    {
+      "championId": "Khazix",
+      "archivePath": "7.18.1/data/en_US/champion/Khazix.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Khazix.json",
+      "sha256": "91d60ea84088f6a2335c879f5d6b61109bb4a11962b0f1a0bce9a5bb314442f4"
+    },
+    {
+      "championId": "KogMaw",
+      "archivePath": "7.18.1/img/champion/KogMaw.png",
+      "localFile": "public/assets/2017/champions/KogMaw.png",
+      "sha256": "3893ba8ad2e2461486fe9fcbd8a1a3753648ee155aa6a13b159ae988a6d4815c"
+    },
+    {
+      "championId": "KogMaw",
+      "archivePath": "img/champion/splash/KogMaw_0.jpg",
+      "localFile": "public/assets/2017/splash/KogMaw.jpg",
+      "sha256": "262ddda83221898c8509b851adbd588530f81c77c170835ebdc27bb39e9e226a"
+    },
+    {
+      "championId": "KogMaw",
+      "archivePath": "7.18.1/data/en_US/champion/KogMaw.json",
+      "localFile": "data/research/worlds-2017/champion-kits/KogMaw.json",
+      "sha256": "03849b2bf684a612993d0132fdc248bf9a319d2ad3839718c6b1b381724396eb"
+    },
+    {
+      "championId": "LeeSin",
+      "archivePath": "7.18.1/img/champion/LeeSin.png",
+      "localFile": "public/assets/2017/champions/LeeSin.png",
+      "sha256": "d40a994ffd958e82b12c3f28c202170562bcca691b4677f4fca8523272cb9bbe"
+    },
+    {
+      "championId": "LeeSin",
+      "archivePath": "img/champion/splash/LeeSin_0.jpg",
+      "localFile": "public/assets/2017/splash/LeeSin.jpg",
+      "sha256": "c50add4233afe9395a15776acaca54fc7e26bfe48b260fc0669824e5ce0d3309"
+    },
+    {
+      "championId": "LeeSin",
+      "archivePath": "7.18.1/data/en_US/champion/LeeSin.json",
+      "localFile": "data/research/worlds-2017/champion-kits/LeeSin.json",
+      "sha256": "11e7fad5ded8cbd630e7b9b2298549f2f5719a4d871ff343ef242e31b40dac7b"
+    },
+    {
+      "championId": "Leona",
+      "archivePath": "7.18.1/img/champion/Leona.png",
+      "localFile": "public/assets/2017/champions/Leona.png",
+      "sha256": "709602b8151cddd5410b14ebd93b99a07811ca647847a528c635c7f1ef8d5d0d"
+    },
+    {
+      "championId": "Leona",
+      "archivePath": "img/champion/splash/Leona_0.jpg",
+      "localFile": "public/assets/2017/splash/Leona.jpg",
+      "sha256": "ded6d6d2ab5d89a96e8459cd87f756f5fef1fd8fad292548f6bf10f23fc854b7"
+    },
+    {
+      "championId": "Leona",
+      "archivePath": "7.18.1/data/en_US/champion/Leona.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Leona.json",
+      "sha256": "a0d3c607c3e1e8f13907a1f946f4b70babd23ab1174b23beb7ad4069f40de779"
+    },
+    {
+      "championId": "Lulu",
+      "archivePath": "7.18.1/img/champion/Lulu.png",
+      "localFile": "public/assets/2017/champions/Lulu.png",
+      "sha256": "4bb17ed8113cb7c79a190c747a74f40003a9a2bb62d537922a7bb47b8d55f4c2"
+    },
+    {
+      "championId": "Lulu",
+      "archivePath": "img/champion/splash/Lulu_0.jpg",
+      "localFile": "public/assets/2017/splash/Lulu.jpg",
+      "sha256": "33aca2bc1fe89eec40e785337a40012f27db071c4d1f08d22010e3bfa230f31f"
+    },
+    {
+      "championId": "Lulu",
+      "archivePath": "7.18.1/data/en_US/champion/Lulu.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Lulu.json",
+      "sha256": "a9a4ec76ce1b9b35aacf156aaf30bb97d055380688c4e5d4ff21f4b6d3f1de12"
+    },
+    {
+      "championId": "Malzahar",
+      "archivePath": "7.18.1/img/champion/Malzahar.png",
+      "localFile": "public/assets/2017/champions/Malzahar.png",
+      "sha256": "13a0c8fc1bbafd9e7d94f71abe99b272959a9bc460b5d7ee7155321a21495973"
+    },
+    {
+      "championId": "Malzahar",
+      "archivePath": "img/champion/splash/Malzahar_0.jpg",
+      "localFile": "public/assets/2017/splash/Malzahar.jpg",
+      "sha256": "d8945c1e95b4a774c7431193dce22ada96ca321028067d97e2cc1236f9a196e2"
+    },
+    {
+      "championId": "Malzahar",
+      "archivePath": "7.18.1/data/en_US/champion/Malzahar.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Malzahar.json",
+      "sha256": "c35885790ab6b5dd3f486376d7c6f68fc1ec9666307e073019e2270cd0b6cc6a"
+    },
+    {
+      "championId": "Maokai",
+      "archivePath": "7.18.1/img/champion/Maokai.png",
+      "localFile": "public/assets/2017/champions/Maokai.png",
+      "sha256": "5d265885580c7305f05dbfb0e5144dfc6e7ed612837466e4daa419de643f3004"
+    },
+    {
+      "championId": "Maokai",
+      "archivePath": "img/champion/splash/Maokai_0.jpg",
+      "localFile": "public/assets/2017/splash/Maokai.jpg",
+      "sha256": "e31d28b551e33935de82e641d01f7ee213ef134d7b885f2a0528318b750ea66b"
+    },
+    {
+      "championId": "Maokai",
+      "archivePath": "7.18.1/data/en_US/champion/Maokai.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Maokai.json",
+      "sha256": "1157906c895009d264c3f4bb4fe7505ea26c02b93c5006d62a25730d352ad8c8"
+    },
+    {
+      "championId": "Nasus",
+      "archivePath": "7.18.1/img/champion/Nasus.png",
+      "localFile": "public/assets/2017/champions/Nasus.png",
+      "sha256": "cfce255aac5aac04192ee1f288916b8f3d5bb4b42253e6fce3419b52fca5409a"
+    },
+    {
+      "championId": "Nasus",
+      "archivePath": "img/champion/splash/Nasus_0.jpg",
+      "localFile": "public/assets/2017/splash/Nasus.jpg",
+      "sha256": "f4d2cae2acb9746572eb90b74432f2e356846ac6a93afdbe575ae73d8748bc22"
+    },
+    {
+      "championId": "Nasus",
+      "archivePath": "7.18.1/data/en_US/champion/Nasus.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Nasus.json",
+      "sha256": "4ab41325f54f6c7919c976e01a8dbd5f64e2a9e148d42ff1228e1479fdbd41ac"
+    },
+    {
+      "championId": "Orianna",
+      "archivePath": "7.18.1/img/champion/Orianna.png",
+      "localFile": "public/assets/2017/champions/Orianna.png",
+      "sha256": "58366162e366adefe738b38bbe95ad71c9d3dc43bb163ca06af2735749025bf7"
+    },
+    {
+      "championId": "Orianna",
+      "archivePath": "img/champion/splash/Orianna_0.jpg",
+      "localFile": "public/assets/2017/splash/Orianna.jpg",
+      "sha256": "9436ee64f84d8acf82d841f7351de5d57fb8cade711f4be926a677ddada3bd65"
+    },
+    {
+      "championId": "Orianna",
+      "archivePath": "7.18.1/data/en_US/champion/Orianna.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Orianna.json",
+      "sha256": "9c55c30d32e9ae40eda703bc69f60657b2064758316f55408feb83ff51287a1b"
+    },
+    {
+      "championId": "Rakan",
+      "archivePath": "7.18.1/img/champion/Rakan.png",
+      "localFile": "public/assets/2017/champions/Rakan.png",
+      "sha256": "bad9550da91fb32433cbd05a788d6491e67355d8b04f162e6b04a76467c1017f"
+    },
+    {
+      "championId": "Rakan",
+      "archivePath": "img/champion/splash/Rakan_0.jpg",
+      "localFile": "public/assets/2017/splash/Rakan.jpg",
+      "sha256": "26b6dd2cfedc9b37375b1ca6998a415a2237f453a63e6df6afe0c63b58957fc9"
+    },
+    {
+      "championId": "Rakan",
+      "archivePath": "7.18.1/data/en_US/champion/Rakan.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Rakan.json",
+      "sha256": "52330b1ce6310494b9f007714c7c3410c46ea4217140867fe6003ef40f08fa2e"
+    },
+    {
+      "championId": "RekSai",
+      "archivePath": "7.18.1/img/champion/RekSai.png",
+      "localFile": "public/assets/2017/champions/RekSai.png",
+      "sha256": "2a9592743d9eb2d7e28a14259c796e239ac73848f75398f099b3bddcbe4e81bc"
+    },
+    {
+      "championId": "RekSai",
+      "archivePath": "img/champion/splash/RekSai_0.jpg",
+      "localFile": "public/assets/2017/splash/RekSai.jpg",
+      "sha256": "f8f5b97323fd662867caee211195845aac0aa74d0f5bac26f72bead5c85f5eec"
+    },
+    {
+      "championId": "RekSai",
+      "archivePath": "7.18.1/data/en_US/champion/RekSai.json",
+      "localFile": "data/research/worlds-2017/champion-kits/RekSai.json",
+      "sha256": "53b6ed51e020a0e0d459c337b4dc4060d8e58ed29a915efcb4e7937e1b57bd03"
+    },
+    {
+      "championId": "Ryze",
+      "archivePath": "7.18.1/img/champion/Ryze.png",
+      "localFile": "public/assets/2017/champions/Ryze.png",
+      "sha256": "a03aefbb60837aea5513ac64942482d0ad1dd903d3222d0bc88cf2c36c065f37"
+    },
+    {
+      "championId": "Ryze",
+      "archivePath": "img/champion/splash/Ryze_0.jpg",
+      "localFile": "public/assets/2017/splash/Ryze.jpg",
+      "sha256": "e9c3d277fc1058ae97442e816b66001a07e82c875d0341f878bce4ad4db091a8"
+    },
+    {
+      "championId": "Ryze",
+      "archivePath": "7.18.1/data/en_US/champion/Ryze.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Ryze.json",
+      "sha256": "62f77ad884a726265c7ed9bce13c2471206ac630c4f6f0331a55c97b6bab98f2"
+    },
+    {
+      "championId": "Sejuani",
+      "archivePath": "7.18.1/img/champion/Sejuani.png",
+      "localFile": "public/assets/2017/champions/Sejuani.png",
+      "sha256": "2fe33b705836902ffd9e936fdcaa588673d7c881f8750004de7c2e90b37292de"
+    },
+    {
+      "championId": "Sejuani",
+      "archivePath": "img/champion/splash/Sejuani_0.jpg",
+      "localFile": "public/assets/2017/splash/Sejuani.jpg",
+      "sha256": "1388c4bea565e55dc7e33b8dfcfa02c34d8361fcf0c85f0a189c1ae74267814e"
+    },
+    {
+      "championId": "Sejuani",
+      "archivePath": "7.18.1/data/en_US/champion/Sejuani.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Sejuani.json",
+      "sha256": "96ffff34a16a81dc841e689f647202b6418dbe3cb96fe5ec075bdd4d08d0401d"
+    },
+    {
+      "championId": "Shen",
+      "archivePath": "7.18.1/img/champion/Shen.png",
+      "localFile": "public/assets/2017/champions/Shen.png",
+      "sha256": "b3436d97483701e6a39619d05a875474dee5fc0867e042482747bb0345b9089d"
+    },
+    {
+      "championId": "Shen",
+      "archivePath": "img/champion/splash/Shen_0.jpg",
+      "localFile": "public/assets/2017/splash/Shen.jpg",
+      "sha256": "20dd44f004a4098f44ff552b5b18421d3c1bbb8674afc2249400e315fa57e316"
+    },
+    {
+      "championId": "Shen",
+      "archivePath": "7.18.1/data/en_US/champion/Shen.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Shen.json",
+      "sha256": "5945e00d9598caecd157301b0235911ae7bd3e08af9d9befe2790421c0339d57"
+    },
+    {
+      "championId": "Syndra",
+      "archivePath": "7.18.1/img/champion/Syndra.png",
+      "localFile": "public/assets/2017/champions/Syndra.png",
+      "sha256": "e8305aefb17acf51f155c401542acdea829c1b0a7ae50145aa60da42e50e8f92"
+    },
+    {
+      "championId": "Syndra",
+      "archivePath": "img/champion/splash/Syndra_0.jpg",
+      "localFile": "public/assets/2017/splash/Syndra.jpg",
+      "sha256": "a650172b317be24c13ec0d190c670b11e8443d2bacd7642622a9a2cdd707af78"
+    },
+    {
+      "championId": "Syndra",
+      "archivePath": "7.18.1/data/en_US/champion/Syndra.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Syndra.json",
+      "sha256": "29e0bbabb167ed298cb538e9e745c2fae53bd9265a1f4c1114d1fb589c9c7045"
+    },
+    {
+      "championId": "Taliyah",
+      "archivePath": "7.18.1/img/champion/Taliyah.png",
+      "localFile": "public/assets/2017/champions/Taliyah.png",
+      "sha256": "4bff59c4d95836b048c00bd36fff8053bd325fac6599eb48fb78bde45c78cadd"
+    },
+    {
+      "championId": "Taliyah",
+      "archivePath": "img/champion/splash/Taliyah_0.jpg",
+      "localFile": "public/assets/2017/splash/Taliyah.jpg",
+      "sha256": "f4d916ab5eb38ea09ff4921c71cd8b396b949b29e2b6814f91f8acd3609d9beb"
+    },
+    {
+      "championId": "Taliyah",
+      "archivePath": "7.18.1/data/en_US/champion/Taliyah.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Taliyah.json",
+      "sha256": "47249c2dc7bee536d65f99f591ef8232310174f292a3e1afcd250c4192288bcd"
+    },
+    {
+      "championId": "Taric",
+      "archivePath": "7.18.1/img/champion/Taric.png",
+      "localFile": "public/assets/2017/champions/Taric.png",
+      "sha256": "642698ce96915e694bc5178dfd1500df1f9e0f91f85332a2aa2585d7170e491c"
+    },
+    {
+      "championId": "Taric",
+      "archivePath": "img/champion/splash/Taric_0.jpg",
+      "localFile": "public/assets/2017/splash/Taric.jpg",
+      "sha256": "96d1e9c85936c7cb69f09362f2120af3cbad2583dc43dda36097f35f62819ecf"
+    },
+    {
+      "championId": "Taric",
+      "archivePath": "7.18.1/data/en_US/champion/Taric.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Taric.json",
+      "sha256": "f8ef75657308e7c863ad6f53f8da96446c828975021873b8629dd87035837f33"
+    },
+    {
+      "championId": "Thresh",
+      "archivePath": "7.18.1/img/champion/Thresh.png",
+      "localFile": "public/assets/2017/champions/Thresh.png",
+      "sha256": "732019bf3204d8fe677f5a3c91d2bd6e7ba709f30e0394513b5dc4eba2bbd721"
+    },
+    {
+      "championId": "Thresh",
+      "archivePath": "img/champion/splash/Thresh_0.jpg",
+      "localFile": "public/assets/2017/splash/Thresh.jpg",
+      "sha256": "e8462cd3a76fdbf548d5d7db8d1ae4074421ac1242de2b84be2663f2244cdf67"
+    },
+    {
+      "championId": "Thresh",
+      "archivePath": "7.18.1/data/en_US/champion/Thresh.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Thresh.json",
+      "sha256": "e4da01c79719e62503aa60b9f2113190227d2ccfa262a9582833b7047e737f16"
+    },
+    {
+      "championId": "Tristana",
+      "archivePath": "7.18.1/img/champion/Tristana.png",
+      "localFile": "public/assets/2017/champions/Tristana.png",
+      "sha256": "dea8f08acec184ab98e86a1cedebc67e5edf3b177513b27efb3c8fdf6a8ae750"
+    },
+    {
+      "championId": "Tristana",
+      "archivePath": "img/champion/splash/Tristana_0.jpg",
+      "localFile": "public/assets/2017/splash/Tristana.jpg",
+      "sha256": "7b6500ee23046de2c7e85be8e02bf9dedd5f482171f07f6c6e73a7789190218e"
+    },
+    {
+      "championId": "Tristana",
+      "archivePath": "7.18.1/data/en_US/champion/Tristana.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Tristana.json",
+      "sha256": "496616719f1bd025cfd2c4a98bcee0f92667bc87149bcf136bda620ecba335b0"
+    },
+    {
+      "championId": "Trundle",
+      "archivePath": "7.18.1/img/champion/Trundle.png",
+      "localFile": "public/assets/2017/champions/Trundle.png",
+      "sha256": "d03b780e2b6d5281c9e00fe9fc28ad96e3eaca3a07b5e5b9b2d7318d244c69db"
+    },
+    {
+      "championId": "Trundle",
+      "archivePath": "img/champion/splash/Trundle_0.jpg",
+      "localFile": "public/assets/2017/splash/Trundle.jpg",
+      "sha256": "259616a54a91245041f8ed3e8c2f28b567dee28039c85e18e98415c933554504"
+    },
+    {
+      "championId": "Trundle",
+      "archivePath": "7.18.1/data/en_US/champion/Trundle.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Trundle.json",
+      "sha256": "1aa6beca964f19ce48c76eb546a416aefa94cc0d23b7056324a638aa928f9f7b"
+    },
+    {
+      "championId": "Twitch",
+      "archivePath": "7.18.1/img/champion/Twitch.png",
+      "localFile": "public/assets/2017/champions/Twitch.png",
+      "sha256": "bb963f487993cc4c3b8cf316fa6c4bb074349a02ac4560858e6b3a0f5b993cf1"
+    },
+    {
+      "championId": "Twitch",
+      "archivePath": "img/champion/splash/Twitch_0.jpg",
+      "localFile": "public/assets/2017/splash/Twitch.jpg",
+      "sha256": "9c614a9d69c82e7ebda443f848e2c0b5b68c1077420c8e73f8b31c3021ead996"
+    },
+    {
+      "championId": "Twitch",
+      "archivePath": "7.18.1/data/en_US/champion/Twitch.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Twitch.json",
+      "sha256": "4801a9caa13d42d6518f0d7aff5095f919e72caf8f78cf5e487f06a69ebaf59a"
+    },
+    {
+      "championId": "Varus",
+      "archivePath": "7.18.1/img/champion/Varus.png",
+      "localFile": "public/assets/2017/champions/Varus.png",
+      "sha256": "ef7e0a5868e6151de26a01dd01aeba665c25ffc78af9d37fd8e3d5f5aaff95f0"
+    },
+    {
+      "championId": "Varus",
+      "archivePath": "img/champion/splash/Varus_0.jpg",
+      "localFile": "public/assets/2017/splash/Varus.jpg",
+      "sha256": "6067b698809f387d82116eb494b0325068281a12aa9fa682d502b56849126246"
+    },
+    {
+      "championId": "Varus",
+      "archivePath": "7.18.1/data/en_US/champion/Varus.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Varus.json",
+      "sha256": "aa89b7d644b5c7db03b2d93fc030745df9c8d58b3d3fc1339cd9296e168ccb61"
+    },
+    {
+      "championId": "Xayah",
+      "archivePath": "7.18.1/img/champion/Xayah.png",
+      "localFile": "public/assets/2017/champions/Xayah.png",
+      "sha256": "cf9013719e268024d16f766dacb79baa6cc4341daad1b93b76f8adcd48d036f8"
+    },
+    {
+      "championId": "Xayah",
+      "archivePath": "img/champion/splash/Xayah_0.jpg",
+      "localFile": "public/assets/2017/splash/Xayah.jpg",
+      "sha256": "753cd0492677f498dbdcefedfa2dd02db5837b4f24cc3de5a611aff7854c52a9"
+    },
+    {
+      "championId": "Xayah",
+      "archivePath": "7.18.1/data/en_US/champion/Xayah.json",
+      "localFile": "data/research/worlds-2017/champion-kits/Xayah.json",
+      "sha256": "dabefb12cd2c8bf129470b4daaf0e8f8b3afbed1923dce933f7fb6fd78735d45"
+    }
+  ]
+}

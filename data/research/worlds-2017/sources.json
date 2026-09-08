@@ -1,0 +1,240 @@
+{
+  "oe-2017": {
+    "publisher": "Oracle's Elixir",
+    "url": "https://drive.google.com/uc?export=download&id=11fx3nNjSYB0X8vKxLAbYOrS2Bu6avm9A",
+    "discovery": "https://github.com/HerrKurz/Esports_Data_Pipeline/blob/master/config.py",
+    "note": "Public download ID located in third-party configuration; publisher downloads page blocked. Archived bytes hashed; not independently authenticated by publisher.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017",
+    "sha256": "88ab7e0b99186293a435cb5d8e271df0973968775013ee509c5e0ebe2d981805",
+    "bytes": 47260594,
+    "localFile": "raw/oe-2017.csv"
+  },
+  "oe-worlds-mirror": {
+    "publisher": "Oracle's Elixir; mirror by ZD2525",
+    "url": "https://raw.githubusercontent.com/ZD2525/Basic-Exploratory-Data-Analysis/main/2017_LoL_esports_match_data_from_OraclesElixir.csv",
+    "note": "Same underlying statistical producer, not an independent source.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017",
+    "sha256": "33f5354f50e7314d0145305be35751a391641584cba41c9f688d8a22866cb607",
+    "bytes": 897885,
+    "localFile": "raw/oe-worlds-2017-mirror.csv"
+  },
+  "ddragon-7.18.1": {
+    "publisher": "Riot Games",
+    "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion.json",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017",
+    "sha256": "5bd8a47b5c7093b1d3f690d137a6c24ae57056f3025448563b160db42695389d",
+    "bytes": 129086,
+    "localFile": "raw/ddragon-7.18.1.json"
+  },
+  "golgg-event": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/tournament/tournament-stats/World%20Championship%202017/",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "riot-rosters": {
+    "publisher": "Riot Games",
+    "url": "https://na.leagueoflegends.com/en/featured/worlds-2017-meet-the-teams/",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-players": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/list/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Huni": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/371/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Peanut": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/392/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Faker": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/48/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Bang": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/100/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Wolf": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/101/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Blank": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/411/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-CuVee": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/216/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Ambition": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/104/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Crown": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/451/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Ruler": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/685/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-CoreJJ": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/257/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Haru": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/683/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Khan": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/982/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Cuzz": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/983/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Bdd": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/650/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-PraY": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/221/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-GorillA": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/65/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-Rascal": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/1061/season-ALL/split-ALL/tournament-World%20Championship%202017/",
+    "note": "Independent aggregate/Worlds pick cross-check reference; not the source of per-match Summer metrics.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-summer-Peanut": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/392/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+    "note": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-summer-Cuzz": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/983/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+    "note": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-summer-Ruler": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/685/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+    "note": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-summer-CoreJJ": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/257/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+    "note": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  },
+  "golgg-summer-PraY": {
+    "publisher": "Games of Legends",
+    "url": "https://gol.gg/players/player-stats/221/season-ALL/split-ALL/tournament-LCK%20Summer%202017/",
+    "note": "Independently checked all six fallback associations, games, wins and KDA. Page excludes playoffs; the chosen associations have no additional playoff games.",
+    "accessedAt": "2026-09-07",
+    "publicationDate": null,
+    "dataPeriod": "2017"
+  }
+}

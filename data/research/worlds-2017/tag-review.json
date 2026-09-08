@@ -1,0 +1,825 @@
+[
+  {
+    "championId": "Ashe",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "ENGAGE",
+      "PICK"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Ataques físicos e ultimate de iniciação/pick; controle por lentidão.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Ashe.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Ashe.json",
+    "abilities": [
+      "Ranger's Focus",
+      "Volley",
+      "Hawkshot",
+      "Enchanted Crystal Arrow"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Braum",
+    "patch": "7.18.1",
+    "tags": [
+      "PEEL",
+      "FRONTLINE",
+      "TEAMFIGHT"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Escudo, interrupção de projéteis e controle favorecem proteção e linha de frente.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Braum.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Braum.json",
+    "abilities": [
+      "Winter's Bite",
+      "Stand Behind Me",
+      "Unbreakable",
+      "Glacial Fissure"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Caitlyn",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "POKE"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Alcance e armadilhas sustentam pressão inicial e dano físico à distância.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Caitlyn.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Caitlyn.json",
+    "abilities": [
+      "Piltover Peacemaker",
+      "Yordle Snap Trap",
+      "90 Caliber Net",
+      "Ace in the Hole"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Camille",
+    "patch": "7.18.1",
+    "tags": [
+      "PICK",
+      "SPLIT_PUSH",
+      "AD_DAMAGE",
+      "MOBILITY"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Mobilidade e isolamento no ultimate favorecem pick e pressão lateral.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Camille.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Camille.json",
+    "abilities": [
+      "Precision Protocol",
+      "Tactical Sweep",
+      "Hookshot",
+      "The Hextech Ultimatum"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Cassiopeia",
+    "patch": "7.18.1",
+    "tags": [
+      "SCALING",
+      "AP_DAMAGE",
+      "CARRY",
+      "CONTROL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Dano mágico sustentado, miasma e ultimate de controle; escala como carry.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Cassiopeia.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Cassiopeia.json",
+    "abilities": [
+      "Noxious Blast",
+      "Miasma",
+      "Twin Fang",
+      "Petrifying Gaze"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Chogath",
+    "patch": "7.18.1",
+    "tags": [
+      "FRONTLINE",
+      "CONTROL",
+      "AP_DAMAGE",
+      "SCALING"
+    ],
+    "change": "added champion",
+    "rationale": "Vida acumulada, silêncio e knock-up sustentam tanque e controle; dano mágico relevante.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Chogath.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Chogath.json",
+    "abilities": [
+      "Rupture",
+      "Feral Scream",
+      "Vorpal Spikes",
+      "Feast"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Elise",
+    "patch": "7.18.1",
+    "tags": [
+      "EARLY_GAME",
+      "AP_DAMAGE",
+      "PICK"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Cocoon cria picks; forma aranha favorece pressão inicial e dano mágico.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Elise.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Elise.json",
+    "abilities": [
+      "Neurotoxin / Venomous Bite",
+      "Volatile Spiderling / Skittering Frenzy",
+      "Cocoon / Rappel",
+      "Spider Form"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Fizz",
+    "patch": "7.18.1",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ],
+    "change": "added champion",
+    "rationale": "Mobilidade, evasão e ultimate de alvo favorecem assassinato e pick mágico.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Fizz.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Fizz.json",
+    "abilities": [
+      "Urchin Strike",
+      "Seastone Trident",
+      "Playful / Trickster",
+      "Chum the Waters"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Galio",
+    "patch": "7.18.1",
+    "tags": [
+      "TEAMFIGHT",
+      "ENGAGE",
+      "AP_DAMAGE",
+      "FRONTLINE"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Taunt, entrada com ultimate e proteção de aliado no kit 7.18; iniciação coletiva e linha de frente.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Galio.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Galio.json",
+    "abilities": [
+      "Winds of War",
+      "Shield of Durand",
+      "Justice Punch",
+      "Hero's Entrance"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Gnar",
+    "patch": "7.18.1",
+    "tags": [
+      "ENGAGE",
+      "TEAMFIGHT",
+      "AD_DAMAGE",
+      "FRONTLINE"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Forma Mega inicia lutas e oferece resistência; forma Mini aplica dano físico.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Gnar.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Gnar.json",
+    "abilities": [
+      "Boomerang Throw / Boulder Toss",
+      "Hyper / Wallop",
+      "Hop / Crunch",
+      "GNAR!"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Gragas",
+    "patch": "7.18.1",
+    "tags": [
+      "ENGAGE",
+      "AP_DAMAGE",
+      "FRONTLINE",
+      "PEEL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Deslocamentos, colisão e resistência permitem iniciar ou afastar ameaças de aliados.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Gragas.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Gragas.json",
+    "abilities": [
+      "Barrel Roll",
+      "Drunken Rage",
+      "Body Slam",
+      "Explosive Cask"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Janna",
+    "patch": "7.18.1",
+    "tags": [
+      "PEEL",
+      "CONTROL"
+    ],
+    "change": "added champion",
+    "rationale": "Escudo, tornado e ultimate priorizam proteção e desengage; dano não é fonte principal.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Janna.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Janna.json",
+    "abilities": [
+      "Howling Gale",
+      "Zephyr",
+      "Eye Of The Storm",
+      "Monsoon"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "JarvanIV",
+    "patch": "7.18.1",
+    "tags": [
+      "ENGAGE",
+      "AD_DAMAGE",
+      "FRONTLINE",
+      "TEAMFIGHT"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Combo de entrada e arena favorecem engage, teamfight e dano físico na linha de frente.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/JarvanIV.json",
+    "localSource": "data/research/worlds-2017/champion-kits/JarvanIV.json",
+    "abilities": [
+      "Dragon Strike",
+      "Golden Aegis",
+      "Demacian Standard",
+      "Cataclysm"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Jax",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "SPLIT_PUSH",
+      "CARRY"
+    ],
+    "change": "added champion",
+    "rationale": "Ataques repetidos e resistência no duelo favorecem escala e pressão lateral.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Jax.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Jax.json",
+    "abilities": [
+      "Leap Strike",
+      "Empower",
+      "Counter Strike",
+      "Grandmaster's Might"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Jayce",
+    "patch": "7.18.1",
+    "tags": [
+      "POKE",
+      "EARLY_GAME",
+      "AD_DAMAGE",
+      "SPLIT_PUSH"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Forma canhão e aceleração permitem poke físico; pressão de rota e lateral.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Jayce.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Jayce.json",
+    "abilities": [
+      "To the Skies! / Shock Blast",
+      "Lightning Field / Hyper Charge",
+      "Thundering Blow / Acceleration Gate",
+      "Mercury Cannon / Mercury Hammer"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Karma",
+    "patch": "7.18.1",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "PEEL"
+    ],
+    "change": "added champion",
+    "rationale": "Escudo e aceleração protegem aliados; projéteis sustentam poke mágico.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Karma.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Karma.json",
+    "abilities": [
+      "Inner Flame",
+      "Focused Resolve",
+      "Inspire",
+      "Mantra"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Kennen",
+    "patch": "7.18.1",
+    "tags": [
+      "TEAMFIGHT",
+      "ENGAGE",
+      "AP_DAMAGE",
+      "MOBILITY"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Entrada móvel e ultimate em área favorecem engage e teamfight mágico.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Kennen.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Kennen.json",
+    "abilities": [
+      "Thundering Shuriken",
+      "Electrical Surge",
+      "Lightning Rush",
+      "Slicing Maelstrom"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Khazix",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY",
+      "CARRY"
+    ],
+    "change": "added champion",
+    "rationale": "Isolamento, salto e invisibilidade favorecem picks e dano físico de carry.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Khazix.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Khazix.json",
+    "abilities": [
+      "Taste Their Fear",
+      "Void Spike",
+      "Leap",
+      "Void Assault"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "KogMaw",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "CARRY"
+    ],
+    "change": "added champion",
+    "rationale": "Amplificação de ataques e alcance favorecem carry de escala; composição considera sua fonte física sustentada.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/KogMaw.json",
+    "localSource": "data/research/worlds-2017/champion-kits/KogMaw.json",
+    "abilities": [
+      "Caustic Spittle",
+      "Bio-Arcane Barrage",
+      "Void Ooze",
+      "Living Artillery"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "LeeSin",
+    "patch": "7.18.1",
+    "tags": [
+      "EARLY_GAME",
+      "MOBILITY",
+      "AD_DAMAGE",
+      "PICK"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Mobilidade e deslocamento do ultimate criam picks e pressão inicial.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/LeeSin.json",
+    "localSource": "data/research/worlds-2017/champion-kits/LeeSin.json",
+    "abilities": [
+      "Sonic Wave / Resonating Strike",
+      "Safeguard / Iron Will",
+      "Tempest / Cripple",
+      "Dragon's Rage"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Leona",
+    "patch": "7.18.1",
+    "tags": [
+      "ENGAGE",
+      "FRONTLINE",
+      "CONTROL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Múltiplos controles e resistência favorecem iniciação e linha de frente.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Leona.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Leona.json",
+    "abilities": [
+      "Shield of Daybreak",
+      "Eclipse",
+      "Zenith Blade",
+      "Solar Flare"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Lulu",
+    "patch": "7.18.1",
+    "tags": [
+      "PEEL",
+      "SCALING"
+    ],
+    "change": "removed AP_DAMAGE",
+    "rationale": "Escudo, polimorfia e crescimento do aliado priorizam peel e escala de carries; AP_DAMAGE removido.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Lulu.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Lulu.json",
+    "abilities": [
+      "Glitterlance",
+      "Whimsy",
+      "Help, Pix!",
+      "Wild Growth"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Malzahar",
+    "patch": "7.18.1",
+    "tags": [
+      "AP_DAMAGE",
+      "CONTROL",
+      "PICK"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Supressão cria picks; zonas e dano mágico sustentam controle.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Malzahar.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Malzahar.json",
+    "abilities": [
+      "Call of the Void",
+      "Void Swarm",
+      "Malefic Visions",
+      "Nether Grasp"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Maokai",
+    "patch": "7.18.1",
+    "tags": [
+      "ENGAGE",
+      "FRONTLINE",
+      "PEEL",
+      "CONTROL"
+    ],
+    "change": "added champion",
+    "rationale": "Root, deslocamento e ultimate de área favorecem engage, controle e proteção.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Maokai.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Maokai.json",
+    "abilities": [
+      "Bramble Smash",
+      "Twisted Advance",
+      "Sapling Toss",
+      "Nature's Grasp"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Nasus",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "SPLIT_PUSH",
+      "FRONTLINE"
+    ],
+    "change": "added champion",
+    "rationale": "Acúmulo no Q, resistência e pressão em estruturas favorecem escala e lateral.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Nasus.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Nasus.json",
+    "abilities": [
+      "Siphoning Strike",
+      "Wither",
+      "Spirit Fire",
+      "Fury of the Sands"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Orianna",
+    "patch": "7.18.1",
+    "tags": [
+      "TEAMFIGHT",
+      "CONTROL",
+      "AP_DAMAGE",
+      "SCALING"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Bola, escudo e ultimate em área sustentam controle, escala e teamfight mágico.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Orianna.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Orianna.json",
+    "abilities": [
+      "Command: Attack",
+      "Command: Dissonance",
+      "Command: Protect",
+      "Command: Shockwave"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Rakan",
+    "patch": "7.18.1",
+    "tags": [
+      "ENGAGE",
+      "TEAMFIGHT",
+      "MOBILITY",
+      "PEEL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Avanço, charm e escudos permitem iniciação coletiva e proteção móvel.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Rakan.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Rakan.json",
+    "abilities": [
+      "Gleaming Quill",
+      "Grand Entrance",
+      "Battle Dance",
+      "The Quickness"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "RekSai",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "EARLY_GAME",
+      "ENGAGE",
+      "MOBILITY"
+    ],
+    "change": "added champion",
+    "rationale": "Kit após atualização de 2017 mantém entrada, knock-up e pressão física inicial; não usa o antigo ultimate global.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/RekSai.json",
+    "localSource": "data/research/worlds-2017/champion-kits/RekSai.json",
+    "abilities": [
+      "Queen's Wrath / Prey Seeker",
+      "Burrow / Un-burrow",
+      "Furious Bite / Tunnel",
+      "Void Rush"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Ryze",
+    "patch": "7.18.1",
+    "tags": [
+      "SCALING",
+      "AP_DAMAGE",
+      "SPLIT_PUSH",
+      "CONTROL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Dano mágico escalável e root favorecem controle e pressão lateral.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Ryze.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Ryze.json",
+    "abilities": [
+      "Overload",
+      "Rune Prison",
+      "Spell Flux",
+      "Realm Warp"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Sejuani",
+    "patch": "7.18.1",
+    "tags": [
+      "ENGAGE",
+      "FRONTLINE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Resistência e controles encadeados favorecem engage e tanque coletivo.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Sejuani.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Sejuani.json",
+    "abilities": [
+      "Arctic Assault",
+      "Winter's Wrath",
+      "Permafrost",
+      "Glacial Prison"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Shen",
+    "patch": "7.18.1",
+    "tags": [
+      "FRONTLINE",
+      "PEEL",
+      "ENGAGE",
+      "SPLIT_PUSH"
+    ],
+    "change": "added champion",
+    "rationale": "Proteção global, taunt e bloqueio de ataques conectam lateral e ajuda ao time.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Shen.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Shen.json",
+    "abilities": [
+      "Twilight Assault",
+      "Spirit's Refuge",
+      "Shadow Dash",
+      "Stand United"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Syndra",
+    "patch": "7.18.1",
+    "tags": [
+      "AP_DAMAGE",
+      "PICK",
+      "CONTROL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Esferas, stun e dano concentrado favorecem controle e pick mágico.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Syndra.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Syndra.json",
+    "abilities": [
+      "Dark Sphere",
+      "Force of Will",
+      "Scatter the Weak",
+      "Unleashed Power"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Taliyah",
+    "patch": "7.18.1",
+    "tags": [
+      "CONTROL",
+      "AP_DAMAGE",
+      "PICK"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Parede e deslocamentos limitam caminhos e criam picks mágicos.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Taliyah.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Taliyah.json",
+    "abilities": [
+      "Threaded Volley",
+      "Seismic Shove",
+      "Unraveled Earth",
+      "Weaver's Wall"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Taric",
+    "patch": "7.18.1",
+    "tags": [
+      "PEEL",
+      "FRONTLINE",
+      "TEAMFIGHT"
+    ],
+    "change": "added champion",
+    "rationale": "Cura, escudo, stun e invulnerabilidade favorecem proteção e lutas coletivas.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Taric.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Taric.json",
+    "abilities": [
+      "Starlight's Touch",
+      "Bastion",
+      "Dazzle",
+      "Cosmic Radiance"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Thresh",
+    "patch": "7.18.1",
+    "tags": [
+      "PICK",
+      "PEEL",
+      "ENGAGE",
+      "CONTROL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Gancho, lanterna e deslocamento sustentam pick, peel e controle.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Thresh.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Thresh.json",
+    "abilities": [
+      "Death Sentence",
+      "Dark Passage",
+      "Flay",
+      "The Box"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Tristana",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "MOBILITY",
+      "CARRY"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Alcance crescente, salto e ataques físicos favorecem carry de escala.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Tristana.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Tristana.json",
+    "abilities": [
+      "Rapid Fire",
+      "Rocket Jump",
+      "Explosive Charge",
+      "Buster Shot"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Trundle",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "FRONTLINE",
+      "SPLIT_PUSH",
+      "PEEL"
+    ],
+    "change": "added champion",
+    "rationale": "Pilar cria bloqueio e proteção; roubo de resistências e ataques favorecem linha de frente e lateral.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Trundle.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Trundle.json",
+    "abilities": [
+      "Chomp",
+      "Frozen Domain",
+      "Pillar of Ice",
+      "Subjugate"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Twitch",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "CARRY",
+      "TEAMFIGHT"
+    ],
+    "change": "added champion",
+    "rationale": "Invisibilidade e ataques atravessando alvos favorecem carry físico de lutas coletivas.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Twitch.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Twitch.json",
+    "abilities": [
+      "Ambush",
+      "Venom Cask",
+      "Contaminate",
+      "Spray and Pray"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Varus",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "POKE",
+      "CONTROL"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Projéteis e ultimate de enraizamento favorecem poke físico e controle.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Varus.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Varus.json",
+    "abilities": [
+      "Piercing Arrow",
+      "Blighted Quiver",
+      "Hail of Arrows",
+      "Chain of Corruption"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  },
+  {
+    "championId": "Xayah",
+    "patch": "7.18.1",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "SCALING",
+      "TEAMFIGHT"
+    ],
+    "change": "reviewed; retained",
+    "rationale": "Ataques e penas favorecem dano físico em área, escala e carry.",
+    "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/7.18.1/data/en_US/champion/Xayah.json",
+    "localSource": "data/research/worlds-2017/champion-kits/Xayah.json",
+    "abilities": [
+      "Double Daggers",
+      "Deadly Plumage",
+      "Bladecaller",
+      "Featherstorm"
+    ],
+    "note": "Editorial composition interpretation; not an official Riot classification or a rating input."
+  }
+]

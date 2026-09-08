@@ -1,0 +1,100 @@
+[
+  {
+    "year": 2015,
+    "worldsGames": 73,
+    "player": "Bang",
+    "observedKDA": [
+      83,
+      12,
+      107
+    ],
+    "independentKDA": [
+      83,
+      12,
+      107
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202015/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
+    "year": 2017,
+    "worldsGames": 80,
+    "player": "Ruler",
+    "observedKDA": [
+      49,
+      17,
+      76
+    ],
+    "independentKDA": null,
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202017/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
+    "year": 2019,
+    "worldsGames": 77,
+    "player": "Viper",
+    "observedKDA": [
+      54,
+      14,
+      63
+    ],
+    "independentKDA": [
+      54,
+      14,
+      63
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202019/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
+    "year": 2020,
+    "worldsGames": 76,
+    "player": "Canyon",
+    "observedKDA": [
+      87,
+      27,
+      108
+    ],
+    "independentKDA": [
+      87,
+      27,
+      108
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202020/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
+    "year": 2022,
+    "worldsGames": 80,
+    "player": "Gumayusi",
+    "observedKDA": [
+      90,
+      26,
+      107
+    ],
+    "independentKDA": [
+      90,
+      26,
+      107
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202022/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
+    "year": 2023,
+    "worldsGames": 79,
+    "player": "Gumayusi",
+    "observedKDA": [
+      56,
+      12,
+      71
+    ],
+    "independentKDA": [
+      56,
+      12,
+      71
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202023/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  }
+]

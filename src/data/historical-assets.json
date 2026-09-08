@@ -1,0 +1,202 @@
+{
+  "Ashe": {
+    "square": "/assets/2017/champions/Ashe.png",
+    "splash": "/assets/2017/splash/Ashe.jpg",
+    "patch": "7.18.1"
+  },
+  "Braum": {
+    "square": "/assets/2017/champions/Braum.png",
+    "splash": "/assets/2017/splash/Braum.jpg",
+    "patch": "7.18.1"
+  },
+  "Caitlyn": {
+    "square": "/assets/2017/champions/Caitlyn.png",
+    "splash": "/assets/2017/splash/Caitlyn.jpg",
+    "patch": "7.18.1"
+  },
+  "Camille": {
+    "square": "/assets/2017/champions/Camille.png",
+    "splash": "/assets/2017/splash/Camille.jpg",
+    "patch": "7.18.1"
+  },
+  "Cassiopeia": {
+    "square": "/assets/2017/champions/Cassiopeia.png",
+    "splash": "/assets/2017/splash/Cassiopeia.jpg",
+    "patch": "7.18.1"
+  },
+  "Chogath": {
+    "square": "/assets/2017/champions/Chogath.png",
+    "splash": "/assets/2017/splash/Chogath.jpg",
+    "patch": "7.18.1"
+  },
+  "Elise": {
+    "square": "/assets/2017/champions/Elise.png",
+    "splash": "/assets/2017/splash/Elise.jpg",
+    "patch": "7.18.1"
+  },
+  "Fizz": {
+    "square": "/assets/2017/champions/Fizz.png",
+    "splash": "/assets/2017/splash/Fizz.jpg",
+    "patch": "7.18.1"
+  },
+  "Galio": {
+    "square": "/assets/2017/champions/Galio.png",
+    "splash": "/assets/2017/splash/Galio.jpg",
+    "patch": "7.18.1"
+  },
+  "Gnar": {
+    "square": "/assets/2017/champions/Gnar.png",
+    "splash": "/assets/2017/splash/Gnar.jpg",
+    "patch": "7.18.1"
+  },
+  "Gragas": {
+    "square": "/assets/2017/champions/Gragas.png",
+    "splash": "/assets/2017/splash/Gragas.jpg",
+    "patch": "7.18.1"
+  },
+  "Janna": {
+    "square": "/assets/2017/champions/Janna.png",
+    "splash": "/assets/2017/splash/Janna.jpg",
+    "patch": "7.18.1"
+  },
+  "JarvanIV": {
+    "square": "/assets/2017/champions/JarvanIV.png",
+    "splash": "/assets/2017/splash/JarvanIV.jpg",
+    "patch": "7.18.1"
+  },
+  "Jax": {
+    "square": "/assets/2017/champions/Jax.png",
+    "splash": "/assets/2017/splash/Jax.jpg",
+    "patch": "7.18.1"
+  },
+  "Jayce": {
+    "square": "/assets/2017/champions/Jayce.png",
+    "splash": "/assets/2017/splash/Jayce.jpg",
+    "patch": "7.18.1"
+  },
+  "Karma": {
+    "square": "/assets/2017/champions/Karma.png",
+    "splash": "/assets/2017/splash/Karma.jpg",
+    "patch": "7.18.1"
+  },
+  "Kennen": {
+    "square": "/assets/2017/champions/Kennen.png",
+    "splash": "/assets/2017/splash/Kennen.jpg",
+    "patch": "7.18.1"
+  },
+  "Khazix": {
+    "square": "/assets/2017/champions/Khazix.png",
+    "splash": "/assets/2017/splash/Khazix.jpg",
+    "patch": "7.18.1"
+  },
+  "KogMaw": {
+    "square": "/assets/2017/champions/KogMaw.png",
+    "splash": "/assets/2017/splash/KogMaw.jpg",
+    "patch": "7.18.1"
+  },
+  "LeeSin": {
+    "square": "/assets/2017/champions/LeeSin.png",
+    "splash": "/assets/2017/splash/LeeSin.jpg",
+    "patch": "7.18.1"
+  },
+  "Leona": {
+    "square": "/assets/2017/champions/Leona.png",
+    "splash": "/assets/2017/splash/Leona.jpg",
+    "patch": "7.18.1"
+  },
+  "Lulu": {
+    "square": "/assets/2017/champions/Lulu.png",
+    "splash": "/assets/2017/splash/Lulu.jpg",
+    "patch": "7.18.1"
+  },
+  "Malzahar": {
+    "square": "/assets/2017/champions/Malzahar.png",
+    "splash": "/assets/2017/splash/Malzahar.jpg",
+    "patch": "7.18.1"
+  },
+  "Maokai": {
+    "square": "/assets/2017/champions/Maokai.png",
+    "splash": "/assets/2017/splash/Maokai.jpg",
+    "patch": "7.18.1"
+  },
+  "Nasus": {
+    "square": "/assets/2017/champions/Nasus.png",
+    "splash": "/assets/2017/splash/Nasus.jpg",
+    "patch": "7.18.1"
+  },
+  "Orianna": {
+    "square": "/assets/2017/champions/Orianna.png",
+    "splash": "/assets/2017/splash/Orianna.jpg",
+    "patch": "7.18.1"
+  },
+  "Rakan": {
+    "square": "/assets/2017/champions/Rakan.png",
+    "splash": "/assets/2017/splash/Rakan.jpg",
+    "patch": "7.18.1"
+  },
+  "RekSai": {
+    "square": "/assets/2017/champions/RekSai.png",
+    "splash": "/assets/2017/splash/RekSai.jpg",
+    "patch": "7.18.1"
+  },
+  "Ryze": {
+    "square": "/assets/2017/champions/Ryze.png",
+    "splash": "/assets/2017/splash/Ryze.jpg",
+    "patch": "7.18.1"
+  },
+  "Sejuani": {
+    "square": "/assets/2017/champions/Sejuani.png",
+    "splash": "/assets/2017/splash/Sejuani.jpg",
+    "patch": "7.18.1"
+  },
+  "Shen": {
+    "square": "/assets/2017/champions/Shen.png",
+    "splash": "/assets/2017/splash/Shen.jpg",
+    "patch": "7.18.1"
+  },
+  "Syndra": {
+    "square": "/assets/2017/champions/Syndra.png",
+    "splash": "/assets/2017/splash/Syndra.jpg",
+    "patch": "7.18.1"
+  },
+  "Taliyah": {
+    "square": "/assets/2017/champions/Taliyah.png",
+    "splash": "/assets/2017/splash/Taliyah.jpg",
+    "patch": "7.18.1"
+  },
+  "Taric": {
+    "square": "/assets/2017/champions/Taric.png",
+    "splash": "/assets/2017/splash/Taric.jpg",
+    "patch": "7.18.1"
+  },
+  "Thresh": {
+    "square": "/assets/2017/champions/Thresh.png",
+    "splash": "/assets/2017/splash/Thresh.jpg",
+    "patch": "7.18.1"
+  },
+  "Tristana": {
+    "square": "/assets/2017/champions/Tristana.png",
+    "splash": "/assets/2017/splash/Tristana.jpg",
+    "patch": "7.18.1"
+  },
+  "Trundle": {
+    "square": "/assets/2017/champions/Trundle.png",
+    "splash": "/assets/2017/splash/Trundle.jpg",
+    "patch": "7.18.1"
+  },
+  "Twitch": {
+    "square": "/assets/2017/champions/Twitch.png",
+    "splash": "/assets/2017/splash/Twitch.jpg",
+    "patch": "7.18.1"
+  },
+  "Varus": {
+    "square": "/assets/2017/champions/Varus.png",
+    "splash": "/assets/2017/splash/Varus.jpg",
+    "patch": "7.18.1"
+  },
+  "Xayah": {
+    "square": "/assets/2017/champions/Xayah.png",
+    "splash": "/assets/2017/splash/Xayah.jpg",
+    "patch": "7.18.1"
+  }
+}

@@ -1,0 +1,7175 @@
+{
+  "methodVersion": "worlds-2017-v1.0.0",
+  "roleWeights": {
+    "TOP": {
+      "efficiency": 0.25,
+      "kp": 0.15,
+      "dpm": 0.15,
+      "damageshare": 0.1,
+      "golddiffat15": 0.15,
+      "csdiffat15": 0.1,
+      "xpdiffat15": 0.1
+    },
+    "JUNGLE": {
+      "efficiency": 0.3,
+      "kp": 0.3,
+      "dpm": 0.1,
+      "damageshare": 0.05,
+      "golddiffat15": 0.1,
+      "xpdiffat15": 0.15
+    },
+    "MID": {
+      "efficiency": 0.25,
+      "kp": 0.2,
+      "dpm": 0.1,
+      "damageshare": 0.1,
+      "golddiffat15": 0.15,
+      "csdiffat15": 0.1,
+      "xpdiffat15": 0.1
+    },
+    "ADC": {
+      "efficiency": 0.25,
+      "kp": 0.15,
+      "dpm": 0.2,
+      "damageshare": 0.15,
+      "golddiffat15": 0.1,
+      "csdiffat15": 0.1,
+      "xpdiffat15": 0.05
+    },
+    "SUPPORT": {
+      "efficiency": 0.35,
+      "kp": 0.35,
+      "wpm": 0.15,
+      "wcpm": 0.15
+    }
+  },
+  "baselines": [
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.1810831698881177,
+          "sd": 0.35672801839135,
+          "players": 11
+        },
+        "kp": {
+          "mean": 0.6239518561192421,
+          "sd": 0.046652314389004,
+          "players": 11
+        },
+        "dpm": {
+          "mean": 503.07187506244856,
+          "sd": 65.46276417635997,
+          "players": 11
+        },
+        "damageshare": {
+          "mean": 0.2708355460257262,
+          "sd": 0.02596932622832197,
+          "players": 11
+        },
+        "golddiffat15": {
+          "mean": -109.73679298807036,
+          "sd": 391.94133120245647,
+          "players": 11
+        },
+        "csdiffat15": {
+          "mean": -2.162027061572483,
+          "sd": 7.452864156431219,
+          "players": 11
+        },
+        "xpdiffat15": {
+          "mean": -49.39811119881945,
+          "sd": 207.48882425751881,
+          "players": 11
+        },
+        "wpm": {
+          "mean": 0.410841396339572,
+          "sd": 0.05183269042041324,
+          "players": 11
+        },
+        "wcpm": {
+          "mean": 0.2930273515948446,
+          "sd": 0.040136599254592016,
+          "players": 11
+        }
+      }
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.1678048068397497,
+          "sd": 0.22617449067331188,
+          "players": 16
+        },
+        "kp": {
+          "mean": 0.6956097481711881,
+          "sd": 0.09609981106843261,
+          "players": 16
+        },
+        "dpm": {
+          "mean": 231.98363488889964,
+          "sd": 36.5478636341602,
+          "players": 16
+        },
+        "damageshare": {
+          "mean": 0.13135243504162636,
+          "sd": 0.015136954058423236,
+          "players": 16
+        },
+        "golddiffat15": {
+          "mean": -22.2295207512695,
+          "sd": 279.85243247541337,
+          "players": 16
+        },
+        "csdiffat15": {
+          "mean": -0.8324908948406149,
+          "sd": 6.911926102143783,
+          "players": 16
+        },
+        "xpdiffat15": {
+          "mean": -66.66788880189269,
+          "sd": 204.46133723011368,
+          "players": 16
+        },
+        "wpm": {
+          "mean": 0.9648612717798981,
+          "sd": 0.14579784565588705,
+          "players": 16
+        },
+        "wcpm": {
+          "mean": 0.4069125269828366,
+          "sd": 0.04910771595768003,
+          "players": 16
+        }
+      }
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.1861779329570254,
+          "sd": 0.3471090757726472,
+          "players": 12
+        },
+        "kp": {
+          "mean": 0.6895547365959354,
+          "sd": 0.036932167211377175,
+          "players": 12
+        },
+        "dpm": {
+          "mean": 475.7401308339577,
+          "sd": 63.46967951873598,
+          "players": 12
+        },
+        "damageshare": {
+          "mean": 0.2706025850340684,
+          "sd": 0.009103558025382198,
+          "players": 12
+        },
+        "golddiffat15": {
+          "mean": -59.441384589085224,
+          "sd": 208.84445760405038,
+          "players": 12
+        },
+        "csdiffat15": {
+          "mean": -1.0121613253598345,
+          "sd": 5.258814759823528,
+          "players": 12
+        },
+        "xpdiffat15": {
+          "mean": -45.11640428412225,
+          "sd": 191.46618710682708,
+          "players": 12
+        },
+        "wpm": {
+          "mean": 0.4930892030525429,
+          "sd": 0.0673973993528922,
+          "players": 12
+        },
+        "wcpm": {
+          "mean": 0.23691677787182114,
+          "sd": 0.06251357148070569,
+          "players": 12
+        }
+      }
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.0856742818765863,
+          "sd": 0.375160512422654,
+          "players": 12
+        },
+        "kp": {
+          "mean": 0.6078073885094781,
+          "sd": 0.18900298090874593,
+          "players": 12
+        },
+        "dpm": {
+          "mean": 159.92928855323893,
+          "sd": 18.14073930842022,
+          "players": 12
+        },
+        "damageshare": {
+          "mean": 0.08983597860464677,
+          "sd": 0.006560172408841972,
+          "players": 12
+        },
+        "golddiffat15": {
+          "mean": -62.404130729468285,
+          "sd": 183.00842227437556,
+          "players": 12
+        },
+        "csdiffat15": {
+          "mean": 0.7452958372097669,
+          "sd": 3.54879752546683,
+          "players": 12
+        },
+        "xpdiffat15": {
+          "mean": -81.29439732120854,
+          "sd": 259.69922861942985,
+          "players": 12
+        },
+        "wpm": {
+          "mean": 1.3701309520644758,
+          "sd": 0.14082266783438815,
+          "players": 12
+        },
+        "wcpm": {
+          "mean": 0.37941695409289056,
+          "sd": 0.0701150841306805,
+          "players": 12
+        }
+      }
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.047321684603553,
+          "sd": 0.20418975943200368,
+          "players": 15
+        },
+        "kp": {
+          "mean": 0.6003556658979908,
+          "sd": 0.07302553782606915,
+          "players": 15
+        },
+        "dpm": {
+          "mean": 406.2045286131098,
+          "sd": 44.46623806161162,
+          "players": 15
+        },
+        "damageshare": {
+          "mean": 0.22652251351645558,
+          "sd": 0.01859533494323634,
+          "players": 15
+        },
+        "golddiffat15": {
+          "mean": -91.96780221303797,
+          "sd": 288.1499106570602,
+          "players": 15
+        },
+        "csdiffat15": {
+          "mean": -1.0783352657032395,
+          "sd": 5.891906854939431,
+          "players": 15
+        },
+        "xpdiffat15": {
+          "mean": -41.39340570226839,
+          "sd": 229.31961721511962,
+          "players": 15
+        },
+        "wpm": {
+          "mean": 0.5519840678162976,
+          "sd": 0.04049157062157891,
+          "players": 15
+        },
+        "wcpm": {
+          "mean": 0.13337068935614468,
+          "sd": 0.025111761375106383,
+          "players": 15
+        }
+      }
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.2223623861792647,
+          "sd": 0.28460014778243825,
+          "players": 16
+        },
+        "kp": {
+          "mean": 0.6538917904606989,
+          "sd": 0.06603138068854308,
+          "players": 16
+        },
+        "dpm": {
+          "mean": 661.6379763351946,
+          "sd": 89.97354321761797,
+          "players": 16
+        },
+        "damageshare": {
+          "mean": 0.3407889010419166,
+          "sd": 0.03304461641547804,
+          "players": 16
+        },
+        "golddiffat15": {
+          "mean": 6.438404267701186,
+          "sd": 371.00708173770005,
+          "players": 16
+        },
+        "csdiffat15": {
+          "mean": -0.3725629107997368,
+          "sd": 7.078754061647251,
+          "players": 16
+        },
+        "xpdiffat15": {
+          "mean": -20.11263428454747,
+          "sd": 157.44634719784986,
+          "players": 16
+        },
+        "wpm": {
+          "mean": 0.3931365261164274,
+          "sd": 0.06056473374830694,
+          "players": 16
+        },
+        "wcpm": {
+          "mean": 0.32847261227761637,
+          "sd": 0.06470537336592677,
+          "players": 16
+        }
+      }
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.152020699525122,
+          "sd": 0.24475530740082851,
+          "players": 18
+        },
+        "kp": {
+          "mean": 0.7318424081568229,
+          "sd": 0.08521956320777696,
+          "players": 18
+        },
+        "dpm": {
+          "mean": 237.2112208634346,
+          "sd": 49.28756725727639,
+          "players": 18
+        },
+        "damageshare": {
+          "mean": 0.12451887481035151,
+          "sd": 0.02091128481344194,
+          "players": 18
+        },
+        "golddiffat15": {
+          "mean": 38.899518066780104,
+          "sd": 268.11903314078296,
+          "players": 18
+        },
+        "csdiffat15": {
+          "mean": -0.6648075142406823,
+          "sd": 11.358577110730778,
+          "players": 18
+        },
+        "xpdiffat15": {
+          "mean": 15.24317285054386,
+          "sd": 305.5966110464997,
+          "players": 18
+        },
+        "wpm": {
+          "mean": 0.9101179657687991,
+          "sd": 0.11565521304986123,
+          "players": 18
+        },
+        "wcpm": {
+          "mean": 0.3586291117524451,
+          "sd": 0.07307724348702654,
+          "players": 18
+        }
+      }
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.1939284485402255,
+          "sd": 0.29159824867890766,
+          "players": 17
+        },
+        "kp": {
+          "mean": 0.7206560120170719,
+          "sd": 0.08803719815833407,
+          "players": 17
+        },
+        "dpm": {
+          "mean": 505.4874593538381,
+          "sd": 64.79549118355096,
+          "players": 17
+        },
+        "damageshare": {
+          "mean": 0.2680688208072911,
+          "sd": 0.02711407800268318,
+          "players": 17
+        },
+        "golddiffat15": {
+          "mean": -44.841084844142536,
+          "sd": 333.47294442384947,
+          "players": 17
+        },
+        "csdiffat15": {
+          "mean": -1.9782219161055696,
+          "sd": 9.072716264699167,
+          "players": 17
+        },
+        "xpdiffat15": {
+          "mean": -64.55273077561144,
+          "sd": 325.3013834384842,
+          "players": 17
+        },
+        "wpm": {
+          "mean": 0.4588359354044648,
+          "sd": 0.1016618266827757,
+          "players": 17
+        },
+        "wcpm": {
+          "mean": 0.20271832779363738,
+          "sd": 0.06399638436727945,
+          "players": 17
+        }
+      }
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.252471770139766,
+          "sd": 0.2996131093721243,
+          "players": 17
+        },
+        "kp": {
+          "mean": 0.7147345731307195,
+          "sd": 0.09513899702060774,
+          "players": 17
+        },
+        "dpm": {
+          "mean": 101.08739060444933,
+          "sd": 15.653358903689696,
+          "players": 17
+        },
+        "damageshare": {
+          "mean": 0.056143256138675005,
+          "sd": 0.010337907778565907,
+          "players": 17
+        },
+        "golddiffat15": {
+          "mean": -68.93133022471756,
+          "sd": 272.1812781525113,
+          "players": 17
+        },
+        "csdiffat15": {
+          "mean": -0.39522844669856594,
+          "sd": 5.910867464311384,
+          "players": 17
+        },
+        "xpdiffat15": {
+          "mean": -44.162834822548,
+          "sd": 260.6528261511417,
+          "players": 17
+        },
+        "wpm": {
+          "mean": 1.179558470608339,
+          "sd": 0.13699398574723495,
+          "players": 17
+        },
+        "wcpm": {
+          "mean": 0.25551609980276,
+          "sd": 0.0656374449793672,
+          "players": 17
+        }
+      }
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "metrics": {
+        "efficiency": {
+          "mean": 1.1247576632454697,
+          "sd": 0.3227401838087646,
+          "players": 17
+        },
+        "kp": {
+          "mean": 0.6324342633440315,
+          "sd": 0.15159455513620765,
+          "players": 17
+        },
+        "dpm": {
+          "mean": 392.0888396309018,
+          "sd": 40.98373088383539,
+          "players": 17
+        },
+        "damageshare": {
+          "mean": 0.21045027779651104,
+          "sd": 0.029664449227151512,
+          "players": 17
+        },
+        "golddiffat15": {
+          "mean": 0.4781588101698304,
+          "sd": 273.6001003889864,
+          "players": 17
+        },
+        "csdiffat15": {
+          "mean": -0.07189833247704377,
+          "sd": 8.258430471485555,
+          "players": 17
+        },
+        "xpdiffat15": {
+          "mean": -36.849813590490136,
+          "sd": 251.82050375324633,
+          "players": 17
+        },
+        "wpm": {
+          "mean": 0.5441755554997119,
+          "sd": 0.058425789771550746,
+          "players": 17
+        },
+        "wcpm": {
+          "mean": 0.1347676890086178,
+          "sd": 0.030403258546844628,
+          "players": 17
+        }
+      }
+    }
+  ],
+  "championOffsets": [
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "csdiffat15",
+      "offset": 2.046511627906977
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "damageshare",
+      "offset": -0.01915175930731612
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "dpm",
+      "offset": -14.392944041321497
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "golddiffat15",
+      "offset": 51.96511627906977
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "xpdiffat15",
+      "offset": 34.593023255813954
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "csdiffat15",
+      "offset": 1.375
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "damageshare",
+      "offset": 0.015625123390557955
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "dpm",
+      "offset": 16.113420111319762
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "golddiffat15",
+      "offset": 59.828125
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "xpdiffat15",
+      "offset": -36.203125
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Corki",
+      "metric": "csdiffat15",
+      "offset": -0.3076923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Corki",
+      "metric": "damageshare",
+      "offset": 0.00646850280620667
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Corki",
+      "metric": "dpm",
+      "offset": 6.559287850775831
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Corki",
+      "metric": "golddiffat15",
+      "offset": -10.923076923076923
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Corki",
+      "metric": "xpdiffat15",
+      "offset": -30.846153846153847
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Draven",
+      "metric": "csdiffat15",
+      "offset": 0.5384615384615384
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Draven",
+      "metric": "damageshare",
+      "offset": -0.005237727963024101
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Draven",
+      "metric": "dpm",
+      "offset": -15.354342918454934
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Draven",
+      "metric": "golddiffat15",
+      "offset": 94.84615384615384
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Draven",
+      "metric": "xpdiffat15",
+      "offset": 15.307692307692308
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jhin",
+      "metric": "csdiffat15",
+      "offset": -0.92
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jhin",
+      "metric": "damageshare",
+      "offset": -0.021278281030042912
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jhin",
+      "metric": "dpm",
+      "offset": -35.949594128755365
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jhin",
+      "metric": "golddiffat15",
+      "offset": -32.88
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jhin",
+      "metric": "xpdiffat15",
+      "offset": -139.68
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "csdiffat15",
+      "offset": -0.6153846153846154
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "damageshare",
+      "offset": 0.00506450280620667
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "dpm",
+      "offset": -0.3423967646087843
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "golddiffat15",
+      "offset": -39.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "xpdiffat15",
+      "offset": -0.8461538461538461
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kalista",
+      "metric": "csdiffat15",
+      "offset": 3.5308641975308643
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kalista",
+      "metric": "damageshare",
+      "offset": -0.02125164176336566
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kalista",
+      "metric": "dpm",
+      "offset": -38.66323330684045
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kalista",
+      "metric": "golddiffat15",
+      "offset": 73.25925925925925
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kalista",
+      "metric": "xpdiffat15",
+      "offset": 22.40740740740741
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "csdiffat15",
+      "offset": -3.282051282051282
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "damageshare",
+      "offset": 0.03919608935842414
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "dpm",
+      "offset": 93.19188040057227
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "golddiffat15",
+      "offset": -181.92307692307693
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "xpdiffat15",
+      "offset": -83.43589743589743
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Lucian",
+      "metric": "csdiffat15",
+      "offset": 0.2857142857142857
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Lucian",
+      "metric": "damageshare",
+      "offset": 0.013828790925812382
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Lucian",
+      "metric": "dpm",
+      "offset": 15.717963151440845
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Lucian",
+      "metric": "golddiffat15",
+      "offset": 3.5
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Lucian",
+      "metric": "xpdiffat15",
+      "offset": 7.857142857142857
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "csdiffat15",
+      "offset": 2.8666666666666667
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "damageshare",
+      "offset": 0.005797173962804003
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "dpm",
+      "offset": 28.07164841201718
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "golddiffat15",
+      "offset": 60.53333333333333
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "xpdiffat15",
+      "offset": 188.33333333333334
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "csdiffat15",
+      "offset": -0.74
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "damageshare",
+      "offset": 0.009513167725321871
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "dpm",
+      "offset": -3.203596034334778
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "golddiffat15",
+      "offset": -59.96
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "xpdiffat15",
+      "offset": -48.98
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "csdiffat15",
+      "offset": -3.5757575757575752
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "damageshare",
+      "offset": 0.02115070503316427
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "dpm",
+      "offset": 57.642808583690964
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "golddiffat15",
+      "offset": -1.3636363636363635
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "xpdiffat15",
+      "offset": 71.57575757575758
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "csdiffat15",
+      "offset": 0.8064516129032258
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "damageshare",
+      "offset": -0.024435070377036332
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "dpm",
+      "offset": -51.362745087452126
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "golddiffat15",
+      "offset": -17.462365591397848
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "xpdiffat15",
+      "offset": -59.38709677419355
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "csdiffat15",
+      "offset": -3.4680851063829787
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "damageshare",
+      "offset": 0.02186637224910966
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "dpm",
+      "offset": 33.18931115879831
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "golddiffat15",
+      "offset": -26.340425531914892
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "xpdiffat15",
+      "offset": 84.90425531914893
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ziggs",
+      "metric": "csdiffat15",
+      "offset": -2.6923076923076925
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ziggs",
+      "metric": "damageshare",
+      "offset": 0.004055964344668206
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ziggs",
+      "metric": "dpm",
+      "offset": -0.3784198415318612
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ziggs",
+      "metric": "golddiffat15",
+      "offset": -54.84615384615385
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "ADC",
+      "champion": "Ziggs",
+      "metric": "xpdiffat15",
+      "offset": -63.07692307692308
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Amumu",
+      "metric": "csdiffat15",
+      "offset": 1.2307692307692308
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Amumu",
+      "metric": "damageshare",
+      "offset": -0.004998073374050843
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Amumu",
+      "metric": "dpm",
+      "offset": -4.945878342687356
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Amumu",
+      "metric": "golddiffat15",
+      "offset": -73.76923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Amumu",
+      "metric": "xpdiffat15",
+      "offset": -94.76923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "csdiffat15",
+      "offset": 1.2
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "damageshare",
+      "offset": 0.002781422560801139
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "dpm",
+      "offset": -12.518837024320458
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "golddiffat15",
+      "offset": -17.6
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "xpdiffat15",
+      "offset": 18.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "csdiffat15",
+      "offset": -5.855555555555555
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "damageshare",
+      "offset": 0.03870997220791606
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "dpm",
+      "offset": 74.22212845016689
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "golddiffat15",
+      "offset": 175.26666666666668
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "xpdiffat15",
+      "offset": -35.46666666666666
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "csdiffat15",
+      "offset": -0.1553398058252427
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "damageshare",
+      "offset": -0.007434094189341233
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "dpm",
+      "offset": -9.745969702904308
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "golddiffat15",
+      "offset": -122.44660194174757
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "xpdiffat15",
+      "offset": -97.53398058252426
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "csdiffat15",
+      "offset": 7.153846153846154
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "damageshare",
+      "offset": 0.02646293194123472
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "dpm",
+      "offset": 24.942328249147128
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "golddiffat15",
+      "offset": 155.12820512820514
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "xpdiffat15",
+      "offset": 297.2307692307692
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "csdiffat15",
+      "offset": -5.2
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "damageshare",
+      "offset": -0.010111664105865526
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "dpm",
+      "offset": -26.75760369098713
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "golddiffat15",
+      "offset": -139.26666666666668
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "xpdiffat15",
+      "offset": -140.93333333333334
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "csdiffat15",
+      "offset": -1.3714285714285714
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "damageshare",
+      "offset": -0.03126988682403435
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "dpm",
+      "offset": -42.25355212752913
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "golddiffat15",
+      "offset": -53.114285714285714
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "xpdiffat15",
+      "offset": 41.371428571428574
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jax",
+      "metric": "csdiffat15",
+      "offset": -2.857142857142857
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jax",
+      "metric": "damageshare",
+      "offset": -0.003440386266094422
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jax",
+      "metric": "dpm",
+      "offset": -8.349716922133663
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jax",
+      "metric": "golddiffat15",
+      "offset": 7.928571428571429
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jax",
+      "metric": "xpdiffat15",
+      "offset": -47.285714285714285
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jayce",
+      "metric": "csdiffat15",
+      "offset": -0.07692307692307693
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jayce",
+      "metric": "damageshare",
+      "offset": 0.0068213112413337725
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jayce",
+      "metric": "dpm",
+      "offset": 9.602583195774182
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jayce",
+      "metric": "golddiffat15",
+      "offset": -68.84615384615384
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Jayce",
+      "metric": "xpdiffat15",
+      "offset": -25.76923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "csdiffat15",
+      "offset": -2.3137254901960786
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "damageshare",
+      "offset": 0.021879494105023975
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "dpm",
+      "offset": 59.451952554068846
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "golddiffat15",
+      "offset": -90.33333333333333
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "xpdiffat15",
+      "offset": -164.62745098039215
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "csdiffat15",
+      "offset": -3.9722222222222223
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "damageshare",
+      "offset": -0.01556873099666191
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "dpm",
+      "offset": -34.003840379113036
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "golddiffat15",
+      "offset": 23.61111111111111
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "xpdiffat15",
+      "offset": -75.84722222222223
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "csdiffat15",
+      "offset": 1.105263157894737
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "damageshare",
+      "offset": 0.014399648576914389
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "dpm",
+      "offset": 7.220182674497401
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "golddiffat15",
+      "offset": -98.57894736842105
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "xpdiffat15",
+      "offset": 5.894736842105263
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "csdiffat15",
+      "offset": 4.8125
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "damageshare",
+      "offset": 0.013377136534334762
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "dpm",
+      "offset": 11.424539136266091
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "golddiffat15",
+      "offset": -24.875
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "xpdiffat15",
+      "offset": 83.0625
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nunu & Willump",
+      "metric": "csdiffat15",
+      "offset": -1.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nunu & Willump",
+      "metric": "damageshare",
+      "offset": -0.006195857989435458
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nunu & Willump",
+      "metric": "dpm",
+      "offset": -13.105455265764279
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nunu & Willump",
+      "metric": "golddiffat15",
+      "offset": 10.538461538461538
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Nunu & Willump",
+      "metric": "xpdiffat15",
+      "offset": -2.230769230769231
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Olaf",
+      "metric": "csdiffat15",
+      "offset": 4.217391304347826
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Olaf",
+      "metric": "damageshare",
+      "offset": -0.0042345909777943705
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Olaf",
+      "metric": "dpm",
+      "offset": -8.751261000186611
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Olaf",
+      "metric": "golddiffat15",
+      "offset": -55.30434782608695
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Olaf",
+      "metric": "xpdiffat15",
+      "offset": 11.91304347826087
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "csdiffat15",
+      "offset": 7.467532467532467
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "damageshare",
+      "offset": -0.01950756754640211
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "dpm",
+      "offset": -36.66109090351709
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "golddiffat15",
+      "offset": 119.1948051948052
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "xpdiffat15",
+      "offset": 256.1818181818182
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "csdiffat15",
+      "offset": 3.9375
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "damageshare",
+      "offset": -0.006027325965665242
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "dpm",
+      "offset": -20.39766086373391
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "golddiffat15",
+      "offset": -187.1875
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "xpdiffat15",
+      "offset": -46.8125
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rumble",
+      "metric": "csdiffat15",
+      "offset": 2.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rumble",
+      "metric": "damageshare",
+      "offset": 0.011125324034334763
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rumble",
+      "metric": "dpm",
+      "offset": 24.3247516362661
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rumble",
+      "metric": "golddiffat15",
+      "offset": 21.25
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Rumble",
+      "metric": "xpdiffat15",
+      "offset": 33.1875
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "csdiffat15",
+      "offset": -2.393939393939394
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "damageshare",
+      "offset": -0.012616258518663031
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "dpm",
+      "offset": -17.013284471322685
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "golddiffat15",
+      "offset": -43.212121212121204
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "xpdiffat15",
+      "offset": -22.606060606060606
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Skarner",
+      "metric": "csdiffat15",
+      "offset": -1.6923076923076923
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Skarner",
+      "metric": "damageshare",
+      "offset": -0.006138757989435458
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Skarner",
+      "metric": "dpm",
+      "offset": -6.60525526576428
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Skarner",
+      "metric": "golddiffat15",
+      "offset": 1.3076923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Skarner",
+      "metric": "xpdiffat15",
+      "offset": -19.46153846153846
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Warwick",
+      "metric": "csdiffat15",
+      "offset": -1.3076923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Warwick",
+      "metric": "damageshare",
+      "offset": -0.003468719527896997
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Warwick",
+      "metric": "dpm",
+      "offset": -12.928909111918127
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Warwick",
+      "metric": "golddiffat15",
+      "offset": -125.15384615384616
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Warwick",
+      "metric": "xpdiffat15",
+      "offset": -27.153846153846153
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "csdiffat15",
+      "offset": 2.161290322580645
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "damageshare",
+      "offset": -0.02787806527066317
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "dpm",
+      "offset": -47.77980163367023
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "golddiffat15",
+      "offset": -13.903225806451614
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "xpdiffat15",
+      "offset": -55.29032258064516
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ahri",
+      "metric": "csdiffat15",
+      "offset": -1.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ahri",
+      "metric": "damageshare",
+      "offset": 0.0050067663090128745
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ahri",
+      "metric": "dpm",
+      "offset": 0.23950968730840064
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ahri",
+      "metric": "golddiffat15",
+      "offset": -37.42857142857143
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ahri",
+      "metric": "xpdiffat15",
+      "offset": -22.571428571428573
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Anivia",
+      "metric": "csdiffat15",
+      "offset": -2.5384615384615383
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Anivia",
+      "metric": "damageshare",
+      "offset": -0.003832587372069991
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Anivia",
+      "metric": "dpm",
+      "offset": -25.833364014526246
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Anivia",
+      "metric": "golddiffat15",
+      "offset": -91.61538461538461
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Anivia",
+      "metric": "xpdiffat15",
+      "offset": -45.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "csdiffat15",
+      "offset": -3.3333333333333335
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "damageshare",
+      "offset": -0.003360060500715312
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "dpm",
+      "offset": -7.815626437768242
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "golddiffat15",
+      "offset": -14.6
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "xpdiffat15",
+      "offset": -60.4
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Azir",
+      "metric": "csdiffat15",
+      "offset": 0.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Azir",
+      "metric": "damageshare",
+      "offset": -0.00340004891053153
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Azir",
+      "metric": "dpm",
+      "offset": -16.400448629910862
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Azir",
+      "metric": "golddiffat15",
+      "offset": 0.23076923076923078
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Azir",
+      "metric": "xpdiffat15",
+      "offset": -9.23076923076923
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "csdiffat15",
+      "offset": 7.2
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "damageshare",
+      "offset": -0.006554345085836927
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "dpm",
+      "offset": -17.87886503218885
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "golddiffat15",
+      "offset": 154.025
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "xpdiffat15",
+      "offset": 99.925
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "csdiffat15",
+      "offset": 2.873015873015873
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "damageshare",
+      "offset": 0.06728402495742217
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "dpm",
+      "offset": 120.2579152122079
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "golddiffat15",
+      "offset": 4.9523809523809526
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "xpdiffat15",
+      "offset": 10.365079365079366
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "csdiffat15",
+      "offset": 0.8461538461538461
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "damageshare",
+      "offset": 0.0034429510894684687
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "dpm",
+      "offset": 2.796574447012216
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "golddiffat15",
+      "offset": 45.76923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "xpdiffat15",
+      "offset": 39.69230769230769
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fiora",
+      "metric": "csdiffat15",
+      "offset": -1.2307692307692308
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fiora",
+      "metric": "damageshare",
+      "offset": 0.003030181858699239
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fiora",
+      "metric": "dpm",
+      "offset": -11.259094783757016
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fiora",
+      "metric": "golddiffat15",
+      "offset": -51.92307692307692
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fiora",
+      "metric": "xpdiffat15",
+      "offset": -82.76923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "csdiffat15",
+      "offset": -2.142857142857143
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "damageshare",
+      "offset": -0.01980351940527284
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "dpm",
+      "offset": -42.768868884120174
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "golddiffat15",
+      "offset": -116.71428571428571
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "xpdiffat15",
+      "offset": -50.5
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "csdiffat15",
+      "offset": -6.2
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "damageshare",
+      "offset": -0.07574717969343962
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "dpm",
+      "offset": -132.8239752421827
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "golddiffat15",
+      "offset": -112.71428571428571
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "xpdiffat15",
+      "offset": -45.74285714285714
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Gangplank",
+      "metric": "csdiffat15",
+      "offset": 0.23076923076923078
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Gangplank",
+      "metric": "damageshare",
+      "offset": 0.005497412627930008
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Gangplank",
+      "metric": "dpm",
+      "offset": 17.619874447012215
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Gangplank",
+      "metric": "golddiffat15",
+      "offset": 34.46153846153846
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Gangplank",
+      "metric": "xpdiffat15",
+      "offset": 14.461538461538462
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "csdiffat15",
+      "offset": 0.8571428571428571
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "damageshare",
+      "offset": -0.0022629479767014094
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "dpm",
+      "offset": -3.559483169834461
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "golddiffat15",
+      "offset": 31.214285714285715
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "xpdiffat15",
+      "offset": 61.357142857142854
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "csdiffat15",
+      "offset": 1.475
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "damageshare",
+      "offset": -0.03172447008583692
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "dpm",
+      "offset": -52.21651003218883
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "golddiffat15",
+      "offset": -1.25
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "xpdiffat15",
+      "offset": 78.4
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "csdiffat15",
+      "offset": -5.931034482758621
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "damageshare",
+      "offset": -0.002428372731981658
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "dpm",
+      "offset": -8.023784386562102
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "golddiffat15",
+      "offset": -80.96551724137932
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "xpdiffat15",
+      "offset": 14.620689655172415
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "csdiffat15",
+      "offset": 2.125
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "damageshare",
+      "offset": 0.004587946351931327
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "dpm",
+      "offset": 23.678064256974203
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "golddiffat15",
+      "offset": 226.125
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "xpdiffat15",
+      "offset": 234.40625
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "csdiffat15",
+      "offset": 8.564102564102564
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "damageshare",
+      "offset": 0.006139688010344415
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "dpm",
+      "offset": -8.426442797402895
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "golddiffat15",
+      "offset": 208.28205128205127
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "xpdiffat15",
+      "offset": 166.33333333333334
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "csdiffat15",
+      "offset": -2.066666666666667
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "damageshare",
+      "offset": 0.006581872832618019
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "dpm",
+      "offset": 21.106460228898424
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "golddiffat15",
+      "offset": 52.4
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "xpdiffat15",
+      "offset": 14.733333333333333
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "csdiffat15",
+      "offset": 3.8260869565217392
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "damageshare",
+      "offset": -0.0034146398581825148
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "dpm",
+      "offset": 4.930948096659805
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "golddiffat15",
+      "offset": 74.72826086956522
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "xpdiffat15",
+      "offset": 49.69565217391305
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "csdiffat15",
+      "offset": -2.8260869565217392
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "damageshare",
+      "offset": -0.009373426488150772
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "dpm",
+      "offset": -37.8504977047957
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "golddiffat15",
+      "offset": -124.84782608695652
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "xpdiffat15",
+      "offset": -217.1086956521739
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "csdiffat15",
+      "offset": -3.75
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "damageshare",
+      "offset": 0.024312075868123263
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "dpm",
+      "offset": 55.2549244732735
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "golddiffat15",
+      "offset": -92.73863636363636
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "xpdiffat15",
+      "offset": -107.98863636363636
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Viktor",
+      "metric": "csdiffat15",
+      "offset": -1.342857142857143
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Viktor",
+      "metric": "damageshare",
+      "offset": 0.0340617535928878
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Viktor",
+      "metric": "dpm",
+      "offset": 68.23720456161863
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Viktor",
+      "metric": "golddiffat15",
+      "offset": -56.542857142857144
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Viktor",
+      "metric": "xpdiffat15",
+      "offset": -18.82857142857143
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "csdiffat15",
+      "offset": -2.066666666666667
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "damageshare",
+      "offset": -0.003788593834048648
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "dpm",
+      "offset": -28.339813104434917
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "golddiffat15",
+      "offset": -106.33333333333333
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "xpdiffat15",
+      "offset": -172.06666666666666
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Zed",
+      "metric": "csdiffat15",
+      "offset": 0.625
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Zed",
+      "metric": "damageshare",
+      "offset": -0.007614533959227468
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Zed",
+      "metric": "dpm",
+      "offset": -20.83873929721031
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Zed",
+      "metric": "golddiffat15",
+      "offset": 64.5625
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "MID",
+      "champion": "Zed",
+      "metric": "xpdiffat15",
+      "offset": 68.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "csdiffat15",
+      "offset": 5.14
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "damageshare",
+      "offset": -0.017631690712446357
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "dpm",
+      "offset": -29.906084025751067
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "golddiffat15",
+      "offset": -80.32
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "xpdiffat15",
+      "offset": -63.18
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Bard",
+      "metric": "csdiffat15",
+      "offset": -5.181818181818182
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Bard",
+      "metric": "damageshare",
+      "offset": 0.027721328521264136
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Bard",
+      "metric": "dpm",
+      "offset": 44.141468884120165
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Bard",
+      "metric": "golddiffat15",
+      "offset": -143.27272727272728
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Bard",
+      "metric": "xpdiffat15",
+      "offset": 1.9090909090909092
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "csdiffat15",
+      "offset": 3.3666666666666667
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "damageshare",
+      "offset": -0.004316233018597998
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "dpm",
+      "offset": -22.12587107296137
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "golddiffat15",
+      "offset": 117.06666666666666
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "xpdiffat15",
+      "offset": -21.666666666666668
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Brand",
+      "metric": "csdiffat15",
+      "offset": -1.3571428571428572
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Brand",
+      "metric": "damageshare",
+      "offset": 0.01365253182096873
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Brand",
+      "metric": "dpm",
+      "offset": 9.412954506437773
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Brand",
+      "metric": "golddiffat15",
+      "offset": 37.07142857142857
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Brand",
+      "metric": "xpdiffat15",
+      "offset": -23.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "csdiffat15",
+      "offset": 5.163265306122449
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "damageshare",
+      "offset": -0.006056798405885965
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "dpm",
+      "offset": -12.914966195147587
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "golddiffat15",
+      "offset": 53.785714285714285
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "xpdiffat15",
+      "offset": -7.3061224489795915
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Galio",
+      "metric": "csdiffat15",
+      "offset": 3.933333333333333
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Galio",
+      "metric": "damageshare",
+      "offset": 0.001077491216022891
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Galio",
+      "metric": "dpm",
+      "offset": 0.5284929756795407
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Galio",
+      "metric": "golddiffat15",
+      "offset": 130.66666666666666
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Galio",
+      "metric": "xpdiffat15",
+      "offset": 62.333333333333336
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "csdiffat15",
+      "offset": 1.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "damageshare",
+      "offset": -0.008506855450643776
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "dpm",
+      "offset": -18.57292035765379
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "golddiffat15",
+      "offset": 152.6
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "xpdiffat15",
+      "offset": 40.06666666666667
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "csdiffat15",
+      "offset": -2.9310344827586206
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "damageshare",
+      "offset": 0.010400665058457898
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "dpm",
+      "offset": 24.006439181589464
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "golddiffat15",
+      "offset": -54.55172413793103
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "xpdiffat15",
+      "offset": 76.17241379310344
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Kennen",
+      "metric": "csdiffat15",
+      "offset": -0.42105263157894735
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Kennen",
+      "metric": "damageshare",
+      "offset": 0.027008950485656203
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Kennen",
+      "metric": "dpm",
+      "offset": 55.19248530607634
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Kennen",
+      "metric": "golddiffat15",
+      "offset": 123.57894736842105
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Kennen",
+      "metric": "xpdiffat15",
+      "offset": 128.94736842105263
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "csdiffat15",
+      "offset": -6.2
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "damageshare",
+      "offset": -0.008285147909258123
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "dpm",
+      "offset": -13.17410498467197
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "golddiffat15",
+      "offset": -107.2
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "xpdiffat15",
+      "offset": -69.88571428571429
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Maokai",
+      "metric": "csdiffat15",
+      "offset": 0.38461538461538464
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Maokai",
+      "metric": "damageshare",
+      "offset": 0.008018055595906239
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Maokai",
+      "metric": "dpm",
+      "offset": 10.639217811158801
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Maokai",
+      "metric": "golddiffat15",
+      "offset": -44.07692307692308
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Maokai",
+      "metric": "xpdiffat15",
+      "offset": -63.46153846153846
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Miss Fortune",
+      "metric": "csdiffat15",
+      "offset": 0.9230769230769231
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Miss Fortune",
+      "metric": "damageshare",
+      "offset": 0.0037093632882139313
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Miss Fortune",
+      "metric": "dpm",
+      "offset": 3.975825503466491
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Miss Fortune",
+      "metric": "golddiffat15",
+      "offset": 9.461538461538462
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Miss Fortune",
+      "metric": "xpdiffat15",
+      "offset": -54.23076923076923
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "csdiffat15",
+      "offset": -1.0588235294117647
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "damageshare",
+      "offset": -0.002357558015652611
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "dpm",
+      "offset": 2.932879866195405
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "golddiffat15",
+      "offset": 88.6470588235294
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "xpdiffat15",
+      "offset": 82.70588235294117
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "csdiffat15",
+      "offset": -0.23076923076923078
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "damageshare",
+      "offset": -0.0016081751733245302
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "dpm",
+      "offset": -2.3087591119181243
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "golddiffat15",
+      "offset": -25.53846153846154
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "xpdiffat15",
+      "offset": -2.076923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nunu & Willump",
+      "metric": "csdiffat15",
+      "offset": 0.23076923076923078
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nunu & Willump",
+      "metric": "damageshare",
+      "offset": -0.0008162059425552992
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nunu & Willump",
+      "metric": "dpm",
+      "offset": -1.6332206503796622
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nunu & Willump",
+      "metric": "golddiffat15",
+      "offset": -36.61538461538461
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Nunu & Willump",
+      "metric": "xpdiffat15",
+      "offset": 19.76923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "csdiffat15",
+      "offset": -9.816901408450704
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "damageshare",
+      "offset": -0.003673500816055126
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "dpm",
+      "offset": -6.02365688508735
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "golddiffat15",
+      "offset": -2.591549295774648
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "xpdiffat15",
+      "offset": -27.507042253521124
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "csdiffat15",
+      "offset": 0.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "damageshare",
+      "offset": 0.0014118248266754702
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "dpm",
+      "offset": -2.2223514196104324
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "golddiffat15",
+      "offset": -18.307692307692307
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "xpdiffat15",
+      "offset": 17.923076923076923
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "csdiffat15",
+      "offset": 4.285714285714286
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "damageshare",
+      "offset": -0.015426216056100549
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "dpm",
+      "offset": -24.88511807173512
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "golddiffat15",
+      "offset": -10.803571428571429
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "xpdiffat15",
+      "offset": -31.785714285714285
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "csdiffat15",
+      "offset": -2.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "damageshare",
+      "offset": -0.01695946017167382
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "dpm",
+      "offset": -36.280411596566516
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "golddiffat15",
+      "offset": 44.4
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "xpdiffat15",
+      "offset": 97.04
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "csdiffat15",
+      "offset": 3.6
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "damageshare",
+      "offset": -0.018132718900470062
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "dpm",
+      "offset": -37.04229777437154
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "golddiffat15",
+      "offset": -36.60952380952381
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "xpdiffat15",
+      "offset": -44.84761904761905
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "csdiffat15",
+      "offset": -1.6153846153846154
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "damageshare",
+      "offset": 0.001891363288213932
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "dpm",
+      "offset": 0.4131024265434134
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "golddiffat15",
+      "offset": 7.230769230769231
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "xpdiffat15",
+      "offset": 65.6923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zyra",
+      "metric": "csdiffat15",
+      "offset": -6.745098039215686
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zyra",
+      "metric": "damageshare",
+      "offset": 0.07292295268871496
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zyra",
+      "metric": "dpm",
+      "offset": 152.18389667171593
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zyra",
+      "metric": "golddiffat15",
+      "offset": 0.4117647058823529
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "SUPPORT",
+      "champion": "Zyra",
+      "metric": "xpdiffat15",
+      "offset": 115.27450980392157
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Akali",
+      "metric": "csdiffat15",
+      "offset": 2.076923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Akali",
+      "metric": "damageshare",
+      "offset": 0.01967156112578409
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Akali",
+      "metric": "dpm",
+      "offset": 41.10651424562562
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Akali",
+      "metric": "golddiffat15",
+      "offset": 118.76923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Akali",
+      "metric": "xpdiffat15",
+      "offset": 168.23076923076923
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "csdiffat15",
+      "offset": -5.054054054054054
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "damageshare",
+      "offset": 0.009038036915671035
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "dpm",
+      "offset": 1.9570791845493785
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "golddiffat15",
+      "offset": -152.6216216216216
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "xpdiffat15",
+      "offset": -216.35135135135135
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cassiopeia",
+      "metric": "csdiffat15",
+      "offset": 1.8571428571428572
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cassiopeia",
+      "metric": "damageshare",
+      "offset": 0.006275327805027593
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cassiopeia",
+      "metric": "dpm",
+      "offset": -4.633830686695278
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cassiopeia",
+      "metric": "golddiffat15",
+      "offset": -68.85714285714286
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cassiopeia",
+      "metric": "xpdiffat15",
+      "offset": 74.5
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "csdiffat15",
+      "offset": -0.034482758620689655
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "damageshare",
+      "offset": -0.011394482455231619
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "dpm",
+      "offset": -17.552677645404767
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "golddiffat15",
+      "offset": -57.93103448275862
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "xpdiffat15",
+      "offset": 30.724137931034484
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Fiora",
+      "metric": "csdiffat15",
+      "offset": -2.107142857142857
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Fiora",
+      "metric": "damageshare",
+      "offset": 0.01449045407725323
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Fiora",
+      "metric": "dpm",
+      "offset": 15.435852253218886
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Fiora",
+      "metric": "golddiffat15",
+      "offset": -192.78571428571428
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Fiora",
+      "metric": "xpdiffat15",
+      "offset": -117.92857142857143
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "csdiffat15",
+      "offset": -3.625
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "damageshare",
+      "offset": 0.0017978236587982838
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "dpm",
+      "offset": -6.906453701716742
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "golddiffat15",
+      "offset": -148.375
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "xpdiffat15",
+      "offset": -70.6875
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "csdiffat15",
+      "offset": -1.5121951219512193
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "damageshare",
+      "offset": 0.001137379132209775
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "dpm",
+      "offset": -0.8203275463205328
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "golddiffat15",
+      "offset": -156.09756097560975
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "xpdiffat15",
+      "offset": -5.829268292682927
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gragas",
+      "metric": "csdiffat15",
+      "offset": -2.2972972972972974
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gragas",
+      "metric": "damageshare",
+      "offset": -0.01610458470595059
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gragas",
+      "metric": "dpm",
+      "offset": -30.90436405869389
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gragas",
+      "metric": "golddiffat15",
+      "offset": -112.8108108108108
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Gragas",
+      "metric": "xpdiffat15",
+      "offset": -33.027027027027025
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "csdiffat15",
+      "offset": -2.419753086419753
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "damageshare",
+      "offset": -0.014685428026810787
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "dpm",
+      "offset": -39.97022989720763
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "golddiffat15",
+      "offset": -38.69135802469136
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "xpdiffat15",
+      "offset": -40.53086419753087
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "csdiffat15",
+      "offset": 4.620689655172414
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "damageshare",
+      "offset": -0.006569275558679894
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "dpm",
+      "offset": 8.301401664940052
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "golddiffat15",
+      "offset": 49.206896551724135
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "xpdiffat15",
+      "offset": 98.41379310344827
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "csdiffat15",
+      "offset": 6.475
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "damageshare",
+      "offset": 0.02767438124463518
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "dpm",
+      "offset": 95.63202713519316
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "golddiffat15",
+      "offset": 280.875
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "xpdiffat15",
+      "offset": -35.1
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "csdiffat15",
+      "offset": 3.8484848484848486
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "damageshare",
+      "offset": 0.03539291476785016
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "dpm",
+      "offset": 30.353829971387693
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "golddiffat15",
+      "offset": -60.63636363636364
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "xpdiffat15",
+      "offset": -50.90909090909091
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kled",
+      "metric": "csdiffat15",
+      "offset": -4.414634146341464
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kled",
+      "metric": "damageshare",
+      "offset": -0.014690352575107304
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kled",
+      "metric": "dpm",
+      "offset": -52.96772266827174
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kled",
+      "metric": "golddiffat15",
+      "offset": -185.26829268292684
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Kled",
+      "metric": "xpdiffat15",
+      "offset": -189.78048780487805
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Lucian",
+      "metric": "csdiffat15",
+      "offset": 0.9285714285714286
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Lucian",
+      "metric": "damageshare",
+      "offset": 0.008499184947884736
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Lucian",
+      "metric": "dpm",
+      "offset": 1.3420978847332938
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Lucian",
+      "metric": "golddiffat15",
+      "offset": 19.714285714285715
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Lucian",
+      "metric": "xpdiffat15",
+      "offset": -22.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Malphite",
+      "metric": "csdiffat15",
+      "offset": -2.230769230769231
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Malphite",
+      "metric": "damageshare",
+      "offset": 0.00040879189501485735
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Malphite",
+      "metric": "dpm",
+      "offset": -1.5983703697589948
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Malphite",
+      "metric": "golddiffat15",
+      "offset": -57.53846153846154
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Malphite",
+      "metric": "xpdiffat15",
+      "offset": 25.46153846153846
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "csdiffat15",
+      "offset": -8.28125
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "damageshare",
+      "offset": 0.0009010591469957134
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "dpm",
+      "offset": 26.592306370708165
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "golddiffat15",
+      "offset": -240.75
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "xpdiffat15",
+      "offset": -167.65625
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "csdiffat15",
+      "offset": -2.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "damageshare",
+      "offset": 0.003763022664245627
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "dpm",
+      "offset": 19.50709886101024
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "golddiffat15",
+      "offset": 18.0
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "xpdiffat15",
+      "offset": -44.53846153846154
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "csdiffat15",
+      "offset": 10.561643835616438
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "damageshare",
+      "offset": -0.024695811332235872
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "dpm",
+      "offset": -50.138050729025785
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "golddiffat15",
+      "offset": 423.4109589041096
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "xpdiffat15",
+      "offset": 256.5890410958904
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "csdiffat15",
+      "offset": 1.140625
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "damageshare",
+      "offset": 0.0459420362660944
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "dpm",
+      "offset": 97.75303640692059
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "golddiffat15",
+      "offset": 87.71875
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "xpdiffat15",
+      "offset": 109.484375
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sejuani",
+      "metric": "csdiffat15",
+      "offset": -2.35
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sejuani",
+      "metric": "damageshare",
+      "offset": -0.016217782145922743
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sejuani",
+      "metric": "dpm",
+      "offset": -37.69645592274678
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sejuani",
+      "metric": "golddiffat15",
+      "offset": -47.35
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sejuani",
+      "metric": "xpdiffat15",
+      "offset": 78.65
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "csdiffat15",
+      "offset": -10.384615384615385
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "damageshare",
+      "offset": -0.026472619098712437
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "dpm",
+      "offset": -38.08068717398479
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "golddiffat15",
+      "offset": -198.74358974358975
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "xpdiffat15",
+      "offset": -132.30769230769232
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sion",
+      "metric": "csdiffat15",
+      "offset": 0.21428571428571427
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sion",
+      "metric": "damageshare",
+      "offset": -0.004632743623543838
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sion",
+      "metric": "dpm",
+      "offset": -16.006802115266705
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sion",
+      "metric": "golddiffat15",
+      "offset": 15.857142857142858
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Sion",
+      "metric": "xpdiffat15",
+      "offset": 33.07142857142857
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "csdiffat15",
+      "offset": 7.5
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "damageshare",
+      "offset": -0.019258932145922746
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "dpm",
+      "offset": -12.590745922746782
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "golddiffat15",
+      "offset": 262.65
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "xpdiffat15",
+      "offset": 244.8
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "csdiffat15",
+      "offset": 1.3846153846153846
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "damageshare",
+      "offset": -0.004472977335754375
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "dpm",
+      "offset": 13.875298861010238
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "golddiffat15",
+      "offset": -15.076923076923077
+    },
+    {
+      "event": "LCK_SUMMER_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "xpdiffat15",
+      "offset": -39.76923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "csdiffat15",
+      "offset": 1.9230769230769231
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "damageshare",
+      "offset": -0.009993162019230771
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "dpm",
+      "offset": -10.052134663461542
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "golddiffat15",
+      "offset": 58.92307692307692
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Ashe",
+      "metric": "xpdiffat15",
+      "offset": 14.307692307692308
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "csdiffat15",
+      "offset": 6.476190476190476
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "damageshare",
+      "offset": 0.013081763988095232
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "dpm",
+      "offset": 81.8883783035714
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "golddiffat15",
+      "offset": 302.3333333333333
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Caitlyn",
+      "metric": "xpdiffat15",
+      "offset": 103.28571428571429
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "csdiffat15",
+      "offset": 1.3076923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "damageshare",
+      "offset": 0.0026069918269230755
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "dpm",
+      "offset": 0.4265422596153817
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "golddiffat15",
+      "offset": 25.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Jinx",
+      "metric": "xpdiffat15",
+      "offset": 1.6153846153846154
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "csdiffat15",
+      "offset": -5.487179487179487
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "damageshare",
+      "offset": 0.012980952083333315
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "dpm",
+      "offset": 29.170864951923075
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "golddiffat15",
+      "offset": -288.3076923076923
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Kog'Maw",
+      "metric": "xpdiffat15",
+      "offset": -234.46153846153845
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "csdiffat15",
+      "offset": 1.2666666666666666
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "damageshare",
+      "offset": 0.002448578749999997
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "dpm",
+      "offset": 44.29616987500001
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "golddiffat15",
+      "offset": 138.6
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Sivir",
+      "metric": "xpdiffat15",
+      "offset": -37.6
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "csdiffat15",
+      "offset": 0.14035087719298245
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "damageshare",
+      "offset": 0.006724231907894699
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "dpm",
+      "offset": 7.047205646929791
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "golddiffat15",
+      "offset": 24.140350877192983
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Tristana",
+      "metric": "xpdiffat15",
+      "offset": 65.87719298245614
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "csdiffat15",
+      "offset": -4.5588235294117645
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "damageshare",
+      "offset": -0.006637774632352972
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "dpm",
+      "offset": -34.61085334558824
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "golddiffat15",
+      "offset": -163.6764705882353
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Twitch",
+      "metric": "xpdiffat15",
+      "offset": 30.470588235294116
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "csdiffat15",
+      "offset": 4.285714285714286
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "damageshare",
+      "offset": -0.02672858410714287
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "dpm",
+      "offset": -67.4191932678572
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "golddiffat15",
+      "offset": 126.57142857142857
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Varus",
+      "metric": "xpdiffat15",
+      "offset": -68.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Vayne",
+      "metric": "csdiffat15",
+      "offset": -0.0625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Vayne",
+      "metric": "damageshare",
+      "offset": -0.0032545265625000125
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Vayne",
+      "metric": "dpm",
+      "offset": -28.667600156250018
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Vayne",
+      "metric": "golddiffat15",
+      "offset": -117.3125
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Vayne",
+      "metric": "xpdiffat15",
+      "offset": 41.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "csdiffat15",
+      "offset": 0.40540540540540543
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "damageshare",
+      "offset": 0.002926847128378348
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "dpm",
+      "offset": 5.318976604729718
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "golddiffat15",
+      "offset": 90.83783783783784
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "ADC",
+      "champion": "Xayah",
+      "metric": "xpdiffat15",
+      "offset": 115.27027027027027
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "csdiffat15",
+      "offset": 2.1538461538461537
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "damageshare",
+      "offset": 0.0042292906250000015
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "dpm",
+      "offset": -2.293708701923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "golddiffat15",
+      "offset": -68.38461538461539
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Cho'Gath",
+      "metric": "xpdiffat15",
+      "offset": 33.07692307692308
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "csdiffat15",
+      "offset": -2.642857142857143
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "damageshare",
+      "offset": 0.0015218254464285732
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "dpm",
+      "offset": 3.5051695535714322
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "golddiffat15",
+      "offset": -139.28571428571428
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Elise",
+      "metric": "xpdiffat15",
+      "offset": -212.57142857142858
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ezreal",
+      "metric": "csdiffat15",
+      "offset": -7.055555555555555
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ezreal",
+      "metric": "damageshare",
+      "offset": 0.041093814930555556
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ezreal",
+      "metric": "dpm",
+      "offset": 76.06517895833332
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ezreal",
+      "metric": "golddiffat15",
+      "offset": 16.11111111111111
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ezreal",
+      "metric": "xpdiffat15",
+      "offset": -22.055555555555557
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "csdiffat15",
+      "offset": -3.3333333333333335
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "damageshare",
+      "offset": -0.01124166015625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "dpm",
+      "offset": -17.694828593749996
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "golddiffat15",
+      "offset": -146.41666666666666
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Gragas",
+      "metric": "xpdiffat15",
+      "offset": -219.08333333333334
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "csdiffat15",
+      "offset": 2.4285714285714284
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "damageshare",
+      "offset": 0.011733396875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "dpm",
+      "offset": 30.45747669642858
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "golddiffat15",
+      "offset": 14.5
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Graves",
+      "metric": "xpdiffat15",
+      "offset": 85.71428571428571
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "csdiffat15",
+      "offset": -1.6428571428571428
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "damageshare",
+      "offset": -0.005547474553571428
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "dpm",
+      "offset": -12.133466160714287
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "golddiffat15",
+      "offset": 21.285714285714285
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Ivern",
+      "metric": "xpdiffat15",
+      "offset": 109.57142857142857
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "csdiffat15",
+      "offset": -0.7551020408163265
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "damageshare",
+      "offset": -0.00947761651785714
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "dpm",
+      "offset": -24.35490582908162
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "golddiffat15",
+      "offset": 29.346938775510203
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Jarvan IV",
+      "metric": "xpdiffat15",
+      "offset": -20.408163265306122
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kayn",
+      "metric": "csdiffat15",
+      "offset": 4.6
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kayn",
+      "metric": "damageshare",
+      "offset": 0.010241282291666664
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kayn",
+      "metric": "dpm",
+      "offset": 24.014590708333337
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kayn",
+      "metric": "golddiffat15",
+      "offset": 71.73333333333333
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kayn",
+      "metric": "xpdiffat15",
+      "offset": 78.6
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "csdiffat15",
+      "offset": 1.4666666666666666
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "damageshare",
+      "offset": 0.005976488958333337
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "dpm",
+      "offset": 28.80477737500001
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "golddiffat15",
+      "offset": -42.266666666666666
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Kha'Zix",
+      "metric": "xpdiffat15",
+      "offset": 4.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "csdiffat15",
+      "offset": 1.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "damageshare",
+      "offset": -0.006192274218749998
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "dpm",
+      "offset": -24.36694703125
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "golddiffat15",
+      "offset": -36.75
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Lee Sin",
+      "metric": "xpdiffat15",
+      "offset": -42.6875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "csdiffat15",
+      "offset": -0.6153846153846154
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "damageshare",
+      "offset": 0.003257982932692309
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "dpm",
+      "offset": 5.868614374999999
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "golddiffat15",
+      "offset": -70.6923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Maokai",
+      "metric": "xpdiffat15",
+      "offset": -85.76923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "csdiffat15",
+      "offset": -0.7692307692307693
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "damageshare",
+      "offset": 0.0004264444711538469
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "dpm",
+      "offset": 1.3456528365384617
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "golddiffat15",
+      "offset": 16.46153846153846
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nidalee",
+      "metric": "xpdiffat15",
+      "offset": -38.07692307692308
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nocturne",
+      "metric": "csdiffat15",
+      "offset": 4.714285714285714
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nocturne",
+      "metric": "damageshare",
+      "offset": 0.005359396874999998
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nocturne",
+      "metric": "dpm",
+      "offset": 10.513440982142855
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nocturne",
+      "metric": "golddiffat15",
+      "offset": 121.5
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Nocturne",
+      "metric": "xpdiffat15",
+      "offset": 185.64285714285714
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "csdiffat15",
+      "offset": 7.130434782608695
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "damageshare",
+      "offset": 0.0008776286684782599
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "dpm",
+      "offset": -1.6610627989130402
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "golddiffat15",
+      "offset": 112.73913043478261
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rek'Sai",
+      "metric": "xpdiffat15",
+      "offset": 94.56521739130434
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "csdiffat15",
+      "offset": 1.2307692307692308
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "damageshare",
+      "offset": 0.0021408290865384625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "dpm",
+      "offset": 12.106014375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "golddiffat15",
+      "offset": 50.84615384615385
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Rengar",
+      "metric": "xpdiffat15",
+      "offset": 25.46153846153846
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "csdiffat15",
+      "offset": 0.23214285714285715
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "damageshare",
+      "offset": -0.0016829261160714265
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "dpm",
+      "offset": -2.780258526785699
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "golddiffat15",
+      "offset": 70.51785714285714
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Sejuani",
+      "metric": "xpdiffat15",
+      "offset": 130.19642857142858
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "csdiffat15",
+      "offset": -1.625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "damageshare",
+      "offset": -0.007466667968749997
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "dpm",
+      "offset": -13.068353281249998
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "golddiffat15",
+      "offset": -25.9375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "JUNGLE",
+      "champion": "Zac",
+      "metric": "xpdiffat15",
+      "offset": 23.9375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "csdiffat15",
+      "offset": 0.07692307692307693
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "damageshare",
+      "offset": -0.002049838846153846
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "dpm",
+      "offset": 25.37855879807692
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "golddiffat15",
+      "offset": 37.76923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Aurelion Sol",
+      "metric": "xpdiffat15",
+      "offset": 63.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "csdiffat15",
+      "offset": 0.6190476190476191
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "damageshare",
+      "offset": 0.005973755000000009
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "dpm",
+      "offset": -35.97049622023809
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "golddiffat15",
+      "offset": -44.904761904761905
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Cassiopeia",
+      "metric": "xpdiffat15",
+      "offset": 24.904761904761905
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "csdiffat15",
+      "offset": -1.8571428571428572
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "damageshare",
+      "offset": 0.04326334000000002
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "dpm",
+      "offset": 77.0720010714286
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "golddiffat15",
+      "offset": 47.607142857142854
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Corki",
+      "metric": "xpdiffat15",
+      "offset": -35.714285714285715
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "csdiffat15",
+      "offset": -0.5384615384615384
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "damageshare",
+      "offset": -0.0012232234615384612
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "dpm",
+      "offset": -7.331379663461541
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "golddiffat15",
+      "offset": 7.384615384615385
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ekko",
+      "metric": "xpdiffat15",
+      "offset": 78.3076923076923
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "csdiffat15",
+      "offset": -4.1875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "damageshare",
+      "offset": -0.014818726249999997
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "dpm",
+      "offset": -36.61013390625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "golddiffat15",
+      "offset": -45.4375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Fizz",
+      "metric": "xpdiffat15",
+      "offset": 76.5625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "csdiffat15",
+      "offset": -0.10344827586206896
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "damageshare",
+      "offset": -0.04941853051724138
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "dpm",
+      "offset": -97.930238125
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "golddiffat15",
+      "offset": 15.655172413793103
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Galio",
+      "metric": "xpdiffat15",
+      "offset": 88.3103448275862
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "csdiffat15",
+      "offset": 1.0666666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "damageshare",
+      "offset": 0.005781285666666669
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "dpm",
+      "offset": 19.54003954166667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "golddiffat15",
+      "offset": 66.8
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Jayce",
+      "metric": "xpdiffat15",
+      "offset": 148.06666666666666
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "csdiffat15",
+      "offset": -1.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "damageshare",
+      "offset": -0.018784447666666662
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "dpm",
+      "offset": -24.915020458333334
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "golddiffat15",
+      "offset": -58.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Karma",
+      "metric": "xpdiffat15",
+      "offset": -79.13333333333334
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "csdiffat15",
+      "offset": 2.8125
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "damageshare",
+      "offset": 0.007276023749999999
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "dpm",
+      "offset": 5.099684843749998
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "golddiffat15",
+      "offset": 43.375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Kassadin",
+      "metric": "xpdiffat15",
+      "offset": 87.875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "csdiffat15",
+      "offset": -1.9375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "damageshare",
+      "offset": 0.001351148750000003
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "dpm",
+      "offset": 10.230678593750014
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "golddiffat15",
+      "offset": 113.5625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "LeBlanc",
+      "metric": "xpdiffat15",
+      "offset": -44.25
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lissandra",
+      "metric": "csdiffat15",
+      "offset": 0.15384615384615385
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lissandra",
+      "metric": "damageshare",
+      "offset": -0.0038962234615384614
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lissandra",
+      "metric": "dpm",
+      "offset": -2.1910027403846164
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lissandra",
+      "metric": "golddiffat15",
+      "offset": 34.30769230769231
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lissandra",
+      "metric": "xpdiffat15",
+      "offset": -11.692307692307692
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "csdiffat15",
+      "offset": -0.7058823529411765
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "damageshare",
+      "offset": 0.013754498529411777
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "dpm",
+      "offset": 35.081783639705876
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "golddiffat15",
+      "offset": 55.529411764705884
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Lucian",
+      "metric": "xpdiffat15",
+      "offset": -90.29411764705883
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "csdiffat15",
+      "offset": -4.2727272727272725
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "damageshare",
+      "offset": 0.005279770454545469
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "dpm",
+      "offset": 52.604715625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "golddiffat15",
+      "offset": -177.5
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Malzahar",
+      "metric": "xpdiffat15",
+      "offset": -69.4090909090909
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "csdiffat15",
+      "offset": 3.44
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "damageshare",
+      "offset": 0.0064570094
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "dpm",
+      "offset": 14.594017475000022
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "golddiffat15",
+      "offset": -158.24
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Orianna",
+      "metric": "xpdiffat15",
+      "offset": 8.28
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ryze",
+      "metric": "csdiffat15",
+      "offset": -0.525
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ryze",
+      "metric": "damageshare",
+      "offset": -0.01832883849999999
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ryze",
+      "metric": "dpm",
+      "offset": -60.58568493749999
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ryze",
+      "metric": "golddiffat15",
+      "offset": 22.625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Ryze",
+      "metric": "xpdiffat15",
+      "offset": -110.775
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "csdiffat15",
+      "offset": 6.428571428571429
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "damageshare",
+      "offset": 0.01954920528571431
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "dpm",
+      "offset": 36.63807087500003
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "golddiffat15",
+      "offset": 84.11428571428571
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Syndra",
+      "metric": "xpdiffat15",
+      "offset": 72.11428571428571
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "csdiffat15",
+      "offset": -3.1785714285714284
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "damageshare",
+      "offset": -0.0012470885714285704
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "dpm",
+      "offset": 15.17211178571428
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "golddiffat15",
+      "offset": -23.357142857142858
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Taliyah",
+      "metric": "xpdiffat15",
+      "offset": -45.392857142857146
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "csdiffat15",
+      "offset": -0.23076923076923078
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "damageshare",
+      "offset": 0.008753007307692308
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "dpm",
+      "offset": 8.608720336538463
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "golddiffat15",
+      "offset": -27.846153846153847
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Vladimir",
+      "metric": "xpdiffat15",
+      "offset": -28.53846153846154
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Yasuo",
+      "metric": "csdiffat15",
+      "offset": 0.6923076923076923
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Yasuo",
+      "metric": "damageshare",
+      "offset": -0.004439838846153845
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Yasuo",
+      "metric": "dpm",
+      "offset": 10.625381874999999
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Yasuo",
+      "metric": "golddiffat15",
+      "offset": 22.615384615384617
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "MID",
+      "champion": "Yasuo",
+      "metric": "xpdiffat15",
+      "offset": -24.76923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "csdiffat15",
+      "offset": -4.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "damageshare",
+      "offset": 0.002059182571428571
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "dpm",
+      "offset": 3.546561785714285
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "golddiffat15",
+      "offset": -49.142857142857146
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Alistar",
+      "metric": "xpdiffat15",
+      "offset": -33.42857142857143
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "csdiffat15",
+      "offset": 0.06666666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "damageshare",
+      "offset": 0.0081318356
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "dpm",
+      "offset": 14.243489833333332
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "golddiffat15",
+      "offset": 27.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Blitzcrank",
+      "metric": "xpdiffat15",
+      "offset": -23.333333333333332
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "csdiffat15",
+      "offset": 0.6923076923076923
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "damageshare",
+      "offset": -4.881707692307703e-05
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "dpm",
+      "offset": 2.332737115384615
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "golddiffat15",
+      "offset": 4.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Braum",
+      "metric": "xpdiffat15",
+      "offset": 17.153846153846153
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "csdiffat15",
+      "offset": 0.6071428571428571
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "damageshare",
+      "offset": -0.015293258
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "dpm",
+      "offset": -22.559469107142863
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "golddiffat15",
+      "offset": 251.55357142857147
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Janna",
+      "metric": "xpdiffat15",
+      "offset": 173.57142857142858
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "csdiffat15",
+      "offset": 0.7
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "damageshare",
+      "offset": 0.0098617712
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "dpm",
+      "offset": 15.523452999999995
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "golddiffat15",
+      "offset": -91.3
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Karma",
+      "metric": "xpdiffat15",
+      "offset": -63.25
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Leona",
+      "metric": "csdiffat15",
+      "offset": 3.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Leona",
+      "metric": "damageshare",
+      "offset": 0.0030174556000000007
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Leona",
+      "metric": "dpm",
+      "offset": 7.351643166666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Leona",
+      "metric": "golddiffat15",
+      "offset": 72.6
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Leona",
+      "metric": "xpdiffat15",
+      "offset": 133.86666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "csdiffat15",
+      "offset": -1.5932203389830508
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "damageshare",
+      "offset": -0.0006831107457627115
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "dpm",
+      "offset": 0.10528605932203365
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "golddiffat15",
+      "offset": -107.91525423728814
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Lulu",
+      "metric": "xpdiffat15",
+      "offset": -120.72881355932203
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "csdiffat15",
+      "offset": -0.07142857142857142
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "damageshare",
+      "offset": 0.006640211142857143
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "dpm",
+      "offset": 13.266033214285711
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "golddiffat15",
+      "offset": 109.64285714285714
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Morgana",
+      "metric": "xpdiffat15",
+      "offset": 79.35714285714286
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "csdiffat15",
+      "offset": 0.3076923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "damageshare",
+      "offset": 0.004101713692307692
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "dpm",
+      "offset": 8.427744807692306
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "golddiffat15",
+      "offset": -78.61538461538461
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Nami",
+      "metric": "xpdiffat15",
+      "offset": -128.92307692307693
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "csdiffat15",
+      "offset": -1.46875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "damageshare",
+      "offset": 0.012294879999999994
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "dpm",
+      "offset": 14.701373437499994
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "golddiffat15",
+      "offset": 23.375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Rakan",
+      "metric": "xpdiffat15",
+      "offset": -0.9375
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "csdiffat15",
+      "offset": -0.23076923076923078
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "damageshare",
+      "offset": 0.00018142907692307692
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "dpm",
+      "offset": -1.9477090384615394
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "golddiffat15",
+      "offset": -17.384615384615383
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Sona",
+      "metric": "xpdiffat15",
+      "offset": -52.76923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Soraka",
+      "metric": "csdiffat15",
+      "offset": 1.5625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Soraka",
+      "metric": "damageshare",
+      "offset": 0.00244136325
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Soraka",
+      "metric": "dpm",
+      "offset": 4.937083124999997
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Soraka",
+      "metric": "golddiffat15",
+      "offset": -23.6875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Soraka",
+      "metric": "xpdiffat15",
+      "offset": -68.75
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "csdiffat15",
+      "offset": 1.4615384615384615
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "damageshare",
+      "offset": 0.0038645598461538467
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "dpm",
+      "offset": 3.758075576923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "golddiffat15",
+      "offset": -1.0769230769230769
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Tahm Kench",
+      "metric": "xpdiffat15",
+      "offset": -16.384615384615383
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "csdiffat15",
+      "offset": 1.6666666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "damageshare",
+      "offset": -0.006825066533333332
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "dpm",
+      "offset": -16.543920500000006
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "golddiffat15",
+      "offset": -229.96666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Taric",
+      "metric": "xpdiffat15",
+      "offset": -2.066666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "csdiffat15",
+      "offset": -0.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "damageshare",
+      "offset": 0.00011418226666666669
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "dpm",
+      "offset": -3.764336833333334
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "golddiffat15",
+      "offset": -35.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Thresh",
+      "metric": "xpdiffat15",
+      "offset": 21.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Trundle",
+      "metric": "csdiffat15",
+      "offset": -0.07692307692307693
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Trundle",
+      "metric": "damageshare",
+      "offset": 0.0021227829230769236
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Trundle",
+      "metric": "dpm",
+      "offset": 4.970121730769231
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Trundle",
+      "metric": "golddiffat15",
+      "offset": 25.615384615384617
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Trundle",
+      "metric": "xpdiffat15",
+      "offset": 5.538461538461538
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "csdiffat15",
+      "offset": 0.07692307692307693
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "damageshare",
+      "offset": 0.0037014829230769225
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "dpm",
+      "offset": 12.512214038461538
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "golddiffat15",
+      "offset": -23.307692307692307
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "SUPPORT",
+      "champion": "Zilean",
+      "metric": "xpdiffat15",
+      "offset": -36.84615384615385
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "csdiffat15",
+      "offset": -0.2
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "damageshare",
+      "offset": -0.0003145459583333343
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "dpm",
+      "offset": -10.368931083333337
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "golddiffat15",
+      "offset": 3.466666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Camille",
+      "metric": "xpdiffat15",
+      "offset": -12.133333333333333
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "csdiffat15",
+      "offset": -1.7115384615384615
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "damageshare",
+      "offset": -0.010215702403846155
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "dpm",
+      "offset": -12.954777884615396
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "golddiffat15",
+      "offset": -137.23076923076923
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Cho'Gath",
+      "metric": "xpdiffat15",
+      "offset": -0.6346153846153846
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "csdiffat15",
+      "offset": -1.625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "damageshare",
+      "offset": -0.011258872031250006
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "dpm",
+      "offset": -23.091490937500012
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "golddiffat15",
+      "offset": 25.6875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Galio",
+      "metric": "xpdiffat15",
+      "offset": -87.5625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gangplank",
+      "metric": "csdiffat15",
+      "offset": 1.2307692307692308
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gangplank",
+      "metric": "damageshare",
+      "offset": 0.016477918221153846
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gangplank",
+      "metric": "dpm",
+      "offset": 23.68617778846154
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gangplank",
+      "metric": "golddiffat15",
+      "offset": 26.53846153846154
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gangplank",
+      "metric": "xpdiffat15",
+      "offset": 33.92307692307692
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "csdiffat15",
+      "offset": 3.5
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "damageshare",
+      "offset": 0.02163378535714284
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "dpm",
+      "offset": 50.85771
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "golddiffat15",
+      "offset": 144.28571428571428
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Gnar",
+      "metric": "xpdiffat15",
+      "offset": 72.42857142857143
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "csdiffat15",
+      "offset": 3.411764705882353
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "damageshare",
+      "offset": -0.0028902891544117628
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "dpm",
+      "offset": -2.5916496323529428
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "golddiffat15",
+      "offset": 88.88235294117646
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jarvan IV",
+      "metric": "xpdiffat15",
+      "offset": 217.52941176470588
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "csdiffat15",
+      "offset": -2.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "damageshare",
+      "offset": -0.00630992793269231
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "dpm",
+      "offset": -10.57411451923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "golddiffat15",
+      "offset": -58.15384615384615
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jax",
+      "metric": "xpdiffat15",
+      "offset": -109.76923076923077
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "csdiffat15",
+      "offset": 7.35
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "damageshare",
+      "offset": 0.04730007474999999
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "dpm",
+      "offset": 73.4244645
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "golddiffat15",
+      "offset": 228.95
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Jayce",
+      "metric": "xpdiffat15",
+      "offset": 106.1
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "csdiffat15",
+      "offset": 5.25
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "damageshare",
+      "offset": 0.02331779671875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "dpm",
+      "offset": 22.743409062499993
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "golddiffat15",
+      "offset": 137.1875
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Kennen",
+      "metric": "xpdiffat15",
+      "offset": 95.625
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "csdiffat15",
+      "offset": -6.216216216216216
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "damageshare",
+      "offset": -0.004272099408783798
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "dpm",
+      "offset": -31.157030236486484
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "golddiffat15",
+      "offset": -183.64864864864865
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Maokai",
+      "metric": "xpdiffat15",
+      "offset": -108.02702702702703
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "csdiffat15",
+      "offset": -2.1538461538461537
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "damageshare",
+      "offset": -0.005495620240384616
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "dpm",
+      "offset": -17.746876057692308
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "golddiffat15",
+      "offset": -83.3076923076923
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Mordekaiser",
+      "metric": "xpdiffat15",
+      "offset": -119.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nasus",
+      "metric": "csdiffat15",
+      "offset": 0.8461538461538461
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nasus",
+      "metric": "damageshare",
+      "offset": 0.006055764375000001
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nasus",
+      "metric": "dpm",
+      "offset": 2.546354711538461
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nasus",
+      "metric": "golddiffat15",
+      "offset": 39.15384615384615
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nasus",
+      "metric": "xpdiffat15",
+      "offset": 33.92307692307692
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nautilus",
+      "metric": "csdiffat15",
+      "offset": -1.4666666666666666
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nautilus",
+      "metric": "damageshare",
+      "offset": -0.003202812625000001
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nautilus",
+      "metric": "dpm",
+      "offset": -8.44455108333334
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nautilus",
+      "metric": "golddiffat15",
+      "offset": 23.066666666666666
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Nautilus",
+      "metric": "xpdiffat15",
+      "offset": -77.6
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "csdiffat15",
+      "offset": 3.6
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "damageshare",
+      "offset": 0.004377187374999997
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "dpm",
+      "offset": 15.517602249999992
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "golddiffat15",
+      "offset": 245.86666666666667
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Renekton",
+      "metric": "xpdiffat15",
+      "offset": 130.4
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "csdiffat15",
+      "offset": -2.263157894736842
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "damageshare",
+      "offset": 0.023864871480263162
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "dpm",
+      "offset": 54.90830940789474
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "golddiffat15",
+      "offset": -42.68421052631579
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Rumble",
+      "metric": "xpdiffat15",
+      "offset": -91.10526315789474
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "csdiffat15",
+      "offset": -3.7058823529411766
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "damageshare",
+      "offset": -0.028609055551470607
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "dpm",
+      "offset": -41.31403389705882
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "golddiffat15",
+      "offset": -149.44117647058823
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Shen",
+      "metric": "xpdiffat15",
+      "offset": -27.911764705882348
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Singed",
+      "metric": "csdiffat15",
+      "offset": 2.142857142857143
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Singed",
+      "metric": "damageshare",
+      "offset": -0.0015797233035714311
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Singed",
+      "metric": "dpm",
+      "offset": 6.673715892857144
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Singed",
+      "metric": "golddiffat15",
+      "offset": 47.0
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Singed",
+      "metric": "xpdiffat15",
+      "offset": 112.35714285714286
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "csdiffat15",
+      "offset": 4.181818181818182
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "damageshare",
+      "offset": -0.021442074147727277
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "dpm",
+      "offset": -17.695835795454556
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "golddiffat15",
+      "offset": 158.22727272727272
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Trundle",
+      "metric": "xpdiffat15",
+      "offset": -10.681818181818182
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Urgot",
+      "metric": "csdiffat15",
+      "offset": 1.1428571428571428
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Urgot",
+      "metric": "damageshare",
+      "offset": -0.00048222330357142976
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Urgot",
+      "metric": "dpm",
+      "offset": 5.028023035714284
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Urgot",
+      "metric": "golddiffat15",
+      "offset": -15.785714285714286
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Urgot",
+      "metric": "xpdiffat15",
+      "offset": -19.857142857142858
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "csdiffat15",
+      "offset": -0.9285714285714286
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "damageshare",
+      "offset": -0.009911866160714286
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "dpm",
+      "offset": -25.20912696428572
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "golddiffat15",
+      "offset": 4.857142857142857
+    },
+    {
+      "event": "WORLDS_2017",
+      "role": "TOP",
+      "champion": "Yasuo",
+      "metric": "xpdiffat15",
+      "offset": -60.357142857142854
+    }
+  ]
+}

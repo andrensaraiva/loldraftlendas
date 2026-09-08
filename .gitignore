@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+.vercel/
+data/research/worlds-2017/raw/oe-2017.csv
+data/research/worlds-2017/raw/*.tgz
+__pycache__/
+
+data/research/multi-era/raw/*.csv
+data/research/multi-era/raw/*.tgz
+data/research/multi-era/raw/*.partial
+data/research/multi-era/raw/candidate*
