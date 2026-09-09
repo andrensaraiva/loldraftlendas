@@ -1,7 +1,7 @@
 """Audit every production association, original release, period asset and calibration."""
 from collections import Counter
 import json, math
-from build_multi_era import ROOT, OUT, RAW, CONFIG, sha, write, event_url
+from build_multi_era import ROOT, OUT, RAW, CONFIG, DRAFT_REGION_GROUP_VERSION, sha, write, event_url
 
 players=json.loads((ROOT/'src/data/multi-era.json').read_text(encoding='utf-8'))
 cal=json.loads((OUT/'calibration.json').read_text(encoding='utf-8'))
@@ -49,5 +49,16 @@ manifest=json.loads((OUT/'asset-manifest.json').read_text(encoding='utf-8'))
 assert len(manifest['assets'])==884
 for asset in manifest['assets']:assert sha(ROOT/asset['localFile'])==asset['sha256'],asset['localFile']
 assert all(x['count']>=3 for x in json.loads((OUT/'eligibility.json').read_text(encoding='utf-8')))
+draft_groups=json.loads((ROOT/'src/data/draft-region-groups.json').read_text(encoding='utf-8'))
+assert draft_groups['version']==DRAFT_REGION_GROUP_VERSION and draft_groups['datasetVersion']==cal['version']
+assert {entry['year'] for entry in draft_groups['groups']}==set(CONFIG)
+for entry in draft_groups['groups']:
+    year=entry['year'];groups=entry['groups']
+    canonical=lambda player:player.get('canonicalRegion') or player.get('historicalLeague') or player['region']
+    available={canonical(player) for player in players if player['worldsYear']==year}
+    assigned={region for group in groups for region in group['canonicalRegions']}
+    assert available==assigned,(year,available,assigned)
+    for group in groups:
+        assert all(len({player['id'] for player in players if player['worldsYear']==year and player['role']==role and canonical(player) in group['canonicalRegions']})>=3 for role in ['TOP','JUNGLE','MID','ADC','SUPPORT']),(year,group)
 write(OUT/'crosschecks.json',checks)
-print('Validated 390 players, 1950 proven associations, 120 eligible pools, 884 period assets and six event crosschecks.')
+print('Validated 390 players, 1950 proven associations, generated draft groups, 120 eligible pools, 884 period assets and six event crosschecks.')

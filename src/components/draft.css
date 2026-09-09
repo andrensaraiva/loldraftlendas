@@ -340,20 +340,15 @@
     gap: 10px;
   }
   .draft-screen .player-card {
-    display: grid;
-    grid-template-columns: 83px minmax(0, 1fr);
     min-height: 0;
-    padding: 0;
     border-radius: 10px;
   }
   .draft-screen .player-art {
-    width: 83px;
-    height: 100%;
-    min-height: 150px;
-    border-radius: 8px 0 0 8px;
-  }
-  .draft-screen .player-art img {
-    object-position: 46% center;
+    width: auto;
+    height: 94px;
+    min-height: 0;
+    margin: 10px -10px 0;
+    border-radius: 0;
   }
   .draft-screen .card-team {
     font-size: 13px;

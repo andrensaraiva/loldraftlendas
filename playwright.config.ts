@@ -3,11 +3,11 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   workers: 2,
-  use: { baseURL: 'http://127.0.0.1:5173', headless: true, channel: 'msedge' },
+  use: { baseURL: 'http://127.0.0.1:5173', headless: true },
   webServer: {
     command: 'npm run dev -- --port 5173',
     url: 'http://127.0.0.1:5173',
-    reuseExistingServer: true,
+    reuseExistingServer: !process.env.CI,
   },
   projects: [
     {
@@ -16,7 +16,7 @@ export default defineConfig({
     },
     {
       name: 'mobile',
-      use: { ...devices['iPhone 13'], defaultBrowserType: 'chromium', channel: 'msedge' },
+      use: { ...devices['iPhone 13'], defaultBrowserType: 'chromium' },
     },
   ],
 });

@@ -140,6 +140,16 @@ nav {
 main {
   min-height: calc(100svh - 207px);
 }
+.maintenance-banner {
+  margin: 16px 0 -20px;
+  border-left: 3px solid #c58c22;
+  background: #fff7dc;
+  padding: 10px 13px;
+  color: #705719;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.45;
+}
 main > section {
   padding: 44px 0 30px;
 }
@@ -254,6 +264,20 @@ main > section {
 .start-button {
   margin-top: 29px;
   min-width: 234px;
+}
+.home-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 29px;
+}
+.home-actions .start-button {
+  margin-top: 0;
+}
+.new-draft-button {
+  min-height: 40px;
+  font-size: 11px;
+  font-weight: 700;
 }
 .start-note {
   font-size: 10px;
@@ -545,7 +569,8 @@ main > section {
   color: var(--green);
 }
 .team-slot > img,
-.team-slot > .image-fallback {
+.team-slot > .image-fallback,
+.team-slot > .team-avatar {
   width: 33px;
   height: 33px;
   border-radius: 4px;
@@ -656,37 +681,109 @@ main > section {
   height: 185px;
   position: relative;
   overflow: hidden;
-  background: #202c31;
-}
-.player-art > img:first-child {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 55% 28%;
-  filter: saturate(0.72);
-  transition: transform 0.3s;
-}
-.player-card:hover .player-art > img:first-child {
-  transform: scale(1.04);
+  margin: 16px -17px 0;
+  background: #1c2b29;
 }
 .player-art:after {
   content: '';
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, #08111944, transparent 40%, #08111975);
+  z-index: 1;
 }
-.player-art.has-portrait > img:first-child {
-  filter: blur(2px) brightness(0.55);
+.player-avatar {
+  --avatar-primary: #396f5a;
+  --avatar-secondary: #a8d34c;
+  --avatar-ink: #12231f;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(145deg, var(--avatar-primary), #162726 74%);
 }
-.player-art .player-portrait {
+.avatar-top {
+  --avatar-primary: #8c5c3e;
+  --avatar-secondary: #f0be57;
+}
+.avatar-jungle {
+  --avatar-primary: #2c6f66;
+  --avatar-secondary: #91d699;
+}
+.avatar-mid {
+  --avatar-primary: #4b597f;
+  --avatar-secondary: #d9b564;
+}
+.avatar-adc {
+  --avatar-primary: #8a4150;
+  --avatar-secondary: #ee9a68;
+}
+.avatar-support {
+  --avatar-primary: #645a8d;
+  --avatar-secondary: #9bc8df;
+}
+.player-art > .player-avatar {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
-  filter: saturate(0.65);
-  z-index: 1;
+  z-index: 0;
+}
+.avatar-sun {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  top: 10%;
+  right: 14%;
+  border-radius: 50%;
+  background: var(--avatar-secondary);
+  opacity: 0.8;
+  box-shadow: -28px 27px 0 -20px #f9f8dd;
+}
+.avatar-head {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  left: calc(50% - 27px);
+  top: 26%;
+  border-radius: 48% 48% 44% 44%;
+  background: #d2a783;
+  box-shadow: inset -12px -3px #b37864;
+}
+.avatar-body {
+  position: absolute;
+  width: 145px;
+  height: 115px;
+  left: calc(50% - 72px);
+  bottom: -44px;
+  border-radius: 48% 48% 8px 8px;
+  background: var(--avatar-ink);
+  box-shadow: inset 24px 0 var(--avatar-primary);
+}
+.avatar-mark {
+  position: absolute;
+  left: 14px;
+  bottom: 10px;
+  color: #f5f4df;
+  font: 800 42px/1 var(--display);
+  opacity: 0.8;
+}
+.team-avatar .avatar-sun,
+.team-avatar .avatar-mark {
+  display: none;
+}
+.team-avatar .avatar-head {
+  width: 13px;
+  height: 13px;
+  left: calc(50% - 6.5px);
+  top: 6px;
+  box-shadow: inset -3px -1px #b37864;
+}
+.team-avatar .avatar-body {
+  width: 30px;
+  height: 27px;
+  left: calc(50% - 15px);
+  bottom: -9px;
+  box-shadow: inset 5px 0 var(--avatar-primary);
 }
 .card-team,
 .card-role,

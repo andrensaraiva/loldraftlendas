@@ -70,3 +70,24 @@ test('player exchange introduces a new candidate and exhausted exchanges are dis
   await expect(page.getByRole('button', { name: 'Trocar jogadores' })).toBeDisabled();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
+
+test('a browser-local campaign can be resumed or replaced from the home screen', async ({ page }) => {
+  await page.addInitScript(() => {
+    Math.random = () => 0;
+  });
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Começar draft' }).click();
+  await page.locator('.player-card').first().click();
+  await expect(page.locator('.team-slot.filled')).toHaveCount(1);
+
+  await page.reload();
+  await expect(page.getByRole('button', { name: 'Continuar campanha' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continuar campanha' }).click();
+  await expect(page.locator('.team-slot.filled')).toHaveCount(1);
+  await expect(page.locator('.player-card')).toHaveCount(3);
+
+  await page.reload();
+  await page.getByRole('button', { name: 'Novo draft' }).click();
+  await expect(page.locator('.team-slot.filled')).toHaveCount(0);
+  await expect(page.locator('.player-card')).toHaveCount(3);
+});

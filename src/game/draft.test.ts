@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { players } from '../data/players';
 import { createDraft, eligiblePools, exchangeRound, offerKey, rollRound } from './draft';
+import { ROLES } from './types';
 import type { DraftRound } from './types';
 
 const seeded = (seed: number) => () => {
@@ -20,7 +21,10 @@ describe('multi-era draft and exchanges', () => {
         expect(new Set(r.options.map((p) => p.id)).size).toBe(3);
         expect(
           r.options.every(
-            (p) => p.role === r.role && p.region === r.region && p.worldsYear === r.year,
+            (p) =>
+              p.role === r.role &&
+              r.region.canonicalRegions.includes(p.canonicalRegion ?? p.historicalLeague ?? p.region) &&
+              p.worldsYear === r.year,
           ),
         ).toBe(true);
       }
@@ -61,11 +65,11 @@ describe('multi-era draft and exchanges', () => {
       history = next.rejected;
     }
     const yr = exchangeRound(initial, pools, 'year', 3, [], seeded(5));
-    expect(yr.round.region).toBe(initial.region);
+    expect(yr.round.region.id).toBe(initial.region.id);
     expect(yr.round.year).not.toBe(initial.year);
     const region = exchangeRound(initial, pools, 'region', 3, [], seeded(5));
     expect(region.round.year).toBe(initial.year);
-    expect(region.round.region).not.toBe(initial.region);
+    expect(region.round.region.id).not.toBe(initial.region.id);
   });
   it('is deterministic and cannot spend below zero', () => {
     const run = () => {
@@ -87,5 +91,26 @@ describe('multi-era draft and exchanges', () => {
     expect(run()).toEqual(run());
     expect(run().remaining).toBe(0);
     expect(run().rejected).toHaveLength(3);
+  });
+  it('groups undersized canonical regions deterministically and prioritizes three teams', () => {
+    const template = players[0];
+    const sample = ROLES.flatMap((role) =>
+      ['TEAM 1', 'TEAM 2', 'TEAM 3'].map((team, index) => ({
+        ...template,
+        id: `minor-${role}-${index}`,
+        team,
+        region: 'LJL',
+        canonicalRegion: 'LJL',
+        worldsYear: 2025,
+        role,
+      })),
+    );
+    const pool = eligiblePools(sample).find((candidate) => candidate.region.id === 'OTHER_REGIONS')!;
+    expect(pool.region).toMatchObject({ label: 'OUTRAS REGIÕES', canonicalRegions: ['LJL'] });
+    expect(rollRound([pool], 'TOP', seeded(1)).options.map((player) => player.team)).toEqual([
+      'TEAM 1',
+      'TEAM 2',
+      'TEAM 3',
+    ]);
   });
 });

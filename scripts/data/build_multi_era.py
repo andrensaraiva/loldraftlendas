@@ -11,6 +11,7 @@ from build_worlds_2017 import ROOT, ROLES, NUMBERS, METRICS, WEIGHTS, aggregate,
 OUT = ROOT/'data/research/multi-era'
 RAW = OUT/'raw'
 VERSION = 'multi-era-v1.0.0'
+DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.0.0'
 CONFIG = {
  2015: ('10-01', 73, '5.18.1', {'LCK':['SK Telecom T1','ROX Tigers','KT Rolster'], 'LPL':['EDward Gaming','Invictus Gaming','LGD Gaming'], 'EU LCS':['Fnatic','Origen','H2k-Gaming'], 'NA LCS':['Cloud9','Counter Logic Gaming','Team SoloMid']}),
  2017: ('10-05', 80, '7.18.1', {'LCK':['SK Telecom T1','Samsung Galaxy','Longzhu Gaming'], 'LPL':['Royal Never Give Up','Team WE','EDward Gaming'], 'EU LCS':['Fnatic','G2 Esports','Misfits Gaming'], 'NA LCS':['Cloud9','Team SoloMid','Immortals']}),
@@ -141,7 +142,7 @@ def build_year(year, snapshot=False):
                     stats=dict(games=extra['games'],winRate=extra['wins']/extra['games'],kda=extra['kda'],confidence=0,event='LPL_SEASON_2015',sourceUrl=extra['sourceUrl'])
                     evidence[eid]=dict(playerId=pid,championId=cid,historicalScore=hs,role=role,year=year,region=region,event='LPL_SEASON_2015',stats=stats,confidenceScore=0,availableWeight=0,components=dict(A=A,B=A,C=C),sourceId='golgg-supplement-2015',methodVersion=VERSION,observation=extra,firstAppearance=extra['firstAppearance'],note='Aggregate-only or partial season evidence: no inferred match metrics; B=A. Selection among documented available champions.')
                     slots.append(dict(game=i,championId=cid,rating=0,gameRating=0,historicalScore=hs,source='SEASON_DATA',evidenceId=eid,stats=stats))
-                players.append(dict(id=pid,playerName=player,team=short,teamName=ALIASES.get((year,team),team),region=region,historicalLeague=league,worldsYear=year,role=role,profile=f"{overall['games']} jogos no Worlds",worldsStats=dict(games=overall['games'],winRate=overall['winRate'],kda=overall['kda']),championPool=slots))
+                players.append(dict(id=pid,playerName=player,team=short,teamName=ALIASES.get((year,team),team),region=region,canonicalRegion=league,historicalLeague=league,worldsYear=year,role=role,profile=f"{overall['games']} jogos no Worlds",worldsStats=dict(games=overall['games'],winRate=overall['winRate'],kda=overall['kda']),championPool=slots))
     write(OUT/f'evidence-{year}.json',evidence,True)
     write(OUT/f'rosters-{year}.json',rosters)
     write(OUT/f'normalization-{year}.json',dict(weights=WEIGHTS,baselines=[dict(event=k[0],role=k[1],metrics=v) for k,v in sorted(baselines.items())],offsets=[dict(event=k[0],role=k[1],champion=k[2],metric=k[3],offset=v) for k,v in sorted(offsets.items())]),True)
@@ -152,6 +153,36 @@ def build_year(year, snapshot=False):
 def event_url(year):
     event=f'Worlds%20Main%20Event%20{year}' if year==2023 else f'World%20Championship%20{year}'
     return f'https://gol.gg/tournament/tournament-stats/{event}/'
+
+def draft_region_manifest(players):
+    """Assign stable UI groups after checking complete, role-valid yearly candidate coverage."""
+    families={'KOREA':{'LCK'},'CHINA':{'LPL'},'EUROPE':{'EU LCS','LEC'},'NORTH_AMERICA':{'NA LCS','LCS'}}
+    labels={'KOREA':'KOREA','CHINA':'CHINA','EUROPE':'EUROPA','NORTH_AMERICA':'AMÉRICA DO NORTE','OTHER_REGIONS':'OUTRAS REGIÕES','EUROPE_NORTH_AMERICA':'EUROPA + AMÉRICA DO NORTE'}
+    def canonical(player): return player.get('canonicalRegion') or player.get('historicalLeague') or player['region']
+    def eligible(year, regions):
+        return bool(regions) and all(len({p['id'] for p in players if p['worldsYear']==year and p['role']==role and canonical(p) in regions})>=3 for role in ROLES.values())
+    def entry(group_id, regions): return dict(id=group_id,label=labels[group_id],canonicalRegions=sorted(regions))
+    groups=[]
+    for year in sorted({p['worldsYear'] for p in players}):
+        by_family={key:set() for key in families}
+        other=set()
+        for player in (p for p in players if p['worldsYear']==year):
+            region=canonical(player)
+            target=next((key for key, members in families.items() if region in members),'OTHER_REGIONS')
+            (by_family[target] if target in by_family else other).add(region)
+        year_groups=[]
+        for group_id in ['KOREA','CHINA']:
+            regions=by_family[group_id]
+            if eligible(year,regions): year_groups.append(entry(group_id,regions))
+            else: other.update(regions)
+        europe,north_america=by_family['EUROPE'],by_family['NORTH_AMERICA']
+        if eligible(year,europe) and eligible(year,north_america):
+            year_groups.extend([entry('EUROPE',europe),entry('NORTH_AMERICA',north_america)])
+        elif eligible(year,europe|north_america): year_groups.append(entry('EUROPE_NORTH_AMERICA',europe|north_america))
+        else: other.update(europe,north_america)
+        if eligible(year,other): year_groups.append(entry('OTHER_REGIONS',other))
+        groups.append(dict(year=year,groups=year_groups))
+    return dict(version=DRAFT_REGION_GROUP_VERSION,datasetVersion=VERSION,groups=groups)
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--snapshot',action='store_true');parser.add_argument('--year',type=int,choices=CONFIG);parser.add_argument('--region',choices=['LCK','LPL','LEC','LCS']);args=parser.parse_args()
@@ -172,6 +203,7 @@ def main():
     matrix=[dict(year=y,region=r,role=role,count=sum(p['worldsYear']==y and p['region']==r and p['role']==role for p in players)) for y in CONFIG for r in ['LCK','LPL','LEC','LCS'] for role in ROLES.values()]
     write(OUT/'eligibility.json',matrix)
     assert all(x['count']>=3 for x in matrix),[x for x in matrix if x['count']<3]
+    write(ROOT/'src/data/draft-region-groups.json',draft_region_manifest(players),True)
     write(ROOT/'src/data/multi-era.json',players)
     print(f'Production: {len(players)} players, {len(players)*5} slots, {len(matrix)} valid pools.')
 

@@ -4,9 +4,12 @@ import { createHash } from 'node:crypto';
 import { players } from './players';
 import { champions } from './champions';
 import { validateData } from '../game/engine';
+import { eligiblePools } from '../game/draft';
+import type { DraftRegionManifest } from '../game/types';
 import calibration from '../../data/research/multi-era/calibration.json';
 import frozen from './worlds-2017.json';
 import frozenEvidence from '../../data/research/worlds-2017/evidence.json';
+import draftRegionManifest from './draft-region-groups.json';
 
 describe('production evidence and global calibration', () => {
   it('has 390 real player versions and five documented period-valid champions each', () => {
@@ -51,5 +54,30 @@ describe('production evidence and global calibration', () => {
         expect(slot.championId).toBe(p.championPool[slot.game - 1].championId);
       }
     }
+  });
+  it('uses a generated, complete, role-valid draft region manifest', () => {
+    expect(draftRegionManifest.datasetVersion).toBe(calibration.version);
+    expect(draftRegionManifest.groups.map((entry) => entry.year)).toEqual(
+      [...new Set(players.map((player) => player.worldsYear))],
+    );
+    for (const entry of draftRegionManifest.groups) {
+      const canonical = (player: (typeof players)[number]) =>
+        player.canonicalRegion ?? player.historicalLeague ?? player.region;
+      const assigned = new Set(entry.groups.flatMap((group) => group.canonicalRegions));
+      expect(
+        new Set(players.filter((player) => player.worldsYear === entry.year).map(canonical)),
+      ).toEqual(assigned);
+      for (const group of entry.groups)
+        for (const role of ['TOP', 'JUNGLE', 'MID', 'ADC', 'SUPPORT'] as const)
+          expect(
+            players.filter(
+              (player) =>
+                player.worldsYear === entry.year &&
+                player.role === role &&
+                group.canonicalRegions.includes(canonical(player)),
+            ).length,
+          ).toBeGreaterThanOrEqual(3);
+    }
+    expect(eligiblePools(players, draftRegionManifest as DraftRegionManifest)).toHaveLength(120);
   });
 });

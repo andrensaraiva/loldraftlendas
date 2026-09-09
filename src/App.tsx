@@ -6,7 +6,15 @@ import {
   offerKey,
 } from './game/draft';
 import type { Exchange } from './game/draft';
+import { clearCampaign, loadCampaign, saveCampaign } from './game/campaign';
+import type { CampaignScreen, CampaignState } from './game/campaign';
+import { analyticsPlayerId, createAnalyticsTracker } from './game/analytics';
+import type { AnalyticsProperties } from './game/analytics';
+import { defaultDraftAvailability, loadPublicProductConfig, safeDraftAvailability } from './game/product-config';
+import type { DraftAvailability } from './game/draft';
+import { canonicalRegionFor } from './game/regions';
 import { ResearchDialog } from './components/ResearchDialog';
+import { CampaignFeedback } from './components/CampaignFeedback';
 import { championArt } from './data/art';
 import { useEffect, useRef, useState } from 'react';
 import {
@@ -65,9 +73,18 @@ const stageLabel = {
   semis: 'Semifinal',
   final: 'Grande final',
 };
-type Screen = 'home' | 'draft' | 'team' | 'tournament' | 'match' | 'result';
+type Screen = 'home' | CampaignScreen;
 const repository = new LocalDataRepository();
+const analytics = createAnalyticsTracker();
 type ReportSelection = { result: GameResult; series: Series };
+function draftEventProperties(round: DraftRound): AnalyticsProperties {
+  return {
+    role: round.role,
+    worlds_year: round.year,
+    draft_region_group: round.region.id,
+    candidate_ids: round.options.map((player) => analyticsPlayerId(player.id)),
+  };
+}
 function ReportDialog({
   report,
   team,
@@ -165,7 +182,7 @@ function Art({ src, alt, className = '' }: { src: string; alt: string; className
     <img className={className} src={src} alt={alt} onError={() => setBroken(true)} loading="lazy" />
   );
 }
-function HowTo({ close }: { close: () => void }) {
+function HowTo({ close, years, regionGroups }: { close: () => void; years: number; regionGroups: number }) {
   const dialog = useRef<HTMLDialogElement>(null);
   useEffect(() => {
     dialog.current?.showModal();
@@ -224,42 +241,15 @@ function HowTo({ close }: { close: () => void }) {
         </li>
       </ol>
       <div className="data-note">
-        Seis edições do Worlds · quatro regiões. Pools comprovados; ratings estimados a partir das
-        estatísticas. A simulação e o KDA das partidas do jogo são fictícios. As cartas usam a arte
-        do campeão de abertura no patch histórico de cada edição.
+        {years} edições do Worlds · {regionGroups} grupos de draft. Pools comprovados; ratings
+        estimados a partir das estatísticas globais por posição. A simulação e o KDA das partidas
+        do jogo são fictícios. As cartas usam avatares originais e neutros para os jogadores.
       </div>
       <details className="image-credits">
         <summary>Créditos das imagens</summary>
         <p>
-          Campeões: Riot Games / Data Dragon. Fotos via Wikimedia Commons:{' '}
-          <a
-            href="https://commons.wikimedia.org/wiki/File:Faker_2020_interview.jpg"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Faker
-          </a>{' '}
-          e{' '}
-          <a
-            href="https://commons.wikimedia.org/wiki/File:Zeus_2024_post-match_interview.jpg"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Zeus
-          </a>
-          , Fomos Esports;{' '}
-          <a
-            href="https://commons.wikimedia.org/wiki/File:Heo_%22Huni%22_Seung-hoon_(October_2018).jpg"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Huni
-          </a>
-          , Echo Fox. Fotos sob{' '}
-          <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noreferrer">
-            CC BY 3.0
-          </a>
-          , enquadradas e com saturação ajustada na interface.
+          Campeões: Riot Games / Data Dragon. Avatares dos jogadores: ilustrações originais e
+          neutras criadas para esta interface; não representam retratos oficiais ou fotorrealistas.
         </p>
       </details>
       <button className="primary full" onClick={close}>
@@ -268,7 +258,23 @@ function HowTo({ close }: { close: () => void }) {
     </dialog>
   );
 }
-function TeamStrip({ team, active = 5, data }: { team: Team; active?: number; data: GameData }) {
+function PlayerAvatar({ player, className = '' }: { player: PlayerVersion; className?: string }) {
+  return (
+    <span
+      className={`player-avatar avatar-${player.role.toLowerCase()} ${className}`}
+      role="img"
+      aria-label={`Avatar estilizado de ${player.playerName}`}
+    >
+      <span className="avatar-sun" />
+      <span className="avatar-head" />
+      <span className="avatar-body" />
+      <span className="avatar-mark" aria-hidden="true">
+        {player.playerName.charAt(0).toUpperCase()}
+      </span>
+    </span>
+  );
+}
+function TeamStrip({ team, active = 5 }: { team: Team; active?: number }) {
   return (
     <div className="team-strip">
       <span className="strip-title">
@@ -282,14 +288,7 @@ function TeamStrip({ team, active = 5, data }: { team: Team; active?: number; da
               key={role}
               className={`team-slot ${i === active ? 'current' : ''} ${p ? 'filled' : ''}`}
             >
-              {p && (
-                <Art
-                  src={
-                    championArt(data.champions[p.championPool[0].championId], p.worldsYear).image
-                  }
-                  alt=""
-                />
-              )}
+              {p && <PlayerAvatar player={p} className="team-avatar" />}
               <div>
                 <span className="slot-role">{roleLabel[role]}</span>
                 <b>{p ? p.playerName : '—'}</b>
@@ -355,8 +354,6 @@ function PlayerCard({
   selected: boolean;
   disabled: boolean;
 }) {
-  const first = data.champions[player.championPool[0].championId];
-  const portrait = player.image;
   return (
     <button
       className={`player-card ${selected ? 'is-picked' : ''}`}
@@ -366,21 +363,6 @@ function PlayerCard({
       aria-label={`Escolher ${player.playerName}, ${player.team}, ${player.worldsYear}`}
       style={{ animationDelay: `${index * 65}ms` }}
     >
-      <div className={`player-art ${portrait ? 'has-portrait' : ''}`}>
-        <Art
-          src={championArt(first, player.worldsYear).splash}
-          alt={portrait ? '' : `Arte de ${first.name}, campeão G1 de ${player.playerName}`}
-        />
-        {portrait && <Art className="player-portrait" src={portrait} alt={player.playerName} />}
-        <span className="card-team">
-          {player.team}
-          <span>{player.worldsYear}</span>
-        </span>
-        <span className="card-role">{roleLabel[player.role]}</span>
-        <span className="art-caption">
-          {portrait ? 'FOTO DE ARQUIVO' : `${first.name.toUpperCase()} · CAMPEÃO G1`}
-        </span>
-      </div>
       <div className="player-info">
         <div className="player-title">
           <div>
@@ -392,6 +374,15 @@ function PlayerCard({
           <span className="pick-arrow">
             <ArrowUpRight size={23} />
           </span>
+        </div>
+        <div className="player-art">
+          <PlayerAvatar player={player} />
+          <span className="card-team">
+            {player.team}
+            <span>{player.worldsYear}</span>
+          </span>
+          <span className="card-role">{roleLabel[player.role]}</span>
+          <span className="art-caption">AVATAR ORIGINAL · PERFIL DE JOGADOR</span>
         </div>
         <div className="profile-label">
           <span /> {player.profile}
@@ -425,6 +416,11 @@ export default function App() {
   const [data, setData] = useState<GameData | null>(null);
   const [error, setError] = useState('');
   const [screen, setScreen] = useState<Screen>('home');
+  const [hasSavedCampaign, setHasSavedCampaign] = useState(false);
+  const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
+  const [nextDraftAvailability, setNextDraftAvailability] = useState<DraftAvailability | null>(null);
+  const [campaignAvailability, setCampaignAvailability] = useState<DraftAvailability | null>(null);
+  const [maintenanceBanner, setMaintenanceBanner] = useState<string | null>(null);
   const [help, setHelp] = useState(false);
   const [remaining, setRemaining] = useState<number>(DRAFT_CONFIG.exchanges);
   const [rejected, setRejected] = useState<string[]>([]);
@@ -459,7 +455,17 @@ export default function App() {
       .load()
       .then((snapshot) => {
         validateData(snapshot.players, snapshot.champions);
-        if (active) setData(snapshot);
+        const saved = loadCampaign(snapshot.draftRegionManifest.datasetVersion);
+        if (active) {
+          setData(snapshot);
+          setNextDraftAvailability(defaultDraftAvailability(snapshot));
+          setHasSavedCampaign(!!saved);
+        }
+        void loadPublicProductConfig().then((configuration) => {
+          if (!active) return;
+          setNextDraftAvailability(safeDraftAvailability(snapshot, configuration));
+          setMaintenanceBanner(configuration?.maintenanceBanner ?? null);
+        });
       })
       .catch(() =>
         setError('Não foi possível carregar o jogo. Atualize a página para tentar novamente.'),
@@ -469,9 +475,67 @@ export default function App() {
     };
   }, []);
   useEffect(() => {
+    let active = true;
+    void analytics.initialize().then((enabled) => {
+      if (active) setAnalyticsEnabled(enabled);
+    });
+    return () => {
+      active = false;
+    };
+  }, []);
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
     title.current?.focus({ preventScroll: true });
   }, [screen, team.length]);
+  useEffect(() => {
+    if (!data || screen === 'home') return;
+    const campaign: CampaignState = {
+      screen,
+      draftStep: team.length,
+      ...(campaignAvailability ? { draftAvailability: campaignAvailability } : {}),
+      remaining,
+      rejected,
+      rounds,
+      team,
+      preview,
+      tournament,
+      series,
+      settings,
+      playResult,
+      momentIndex,
+    };
+    setHasSavedCampaign(saveCampaign(campaign, data.draftRegionManifest.datasetVersion));
+  }, [
+    data,
+    screen,
+    remaining,
+    rejected,
+    rounds,
+    team,
+    preview,
+    tournament,
+    series,
+    settings,
+    playResult,
+    momentIndex,
+    campaignAvailability,
+  ]);
+  useEffect(() => {
+    if (tournament.stage === 'quarters') analytics.trackOnce('playoffs_reached', 'playoffs_reached');
+  }, [analyticsEnabled, tournament.stage]);
+  useEffect(() => {
+    if (screen !== 'result' || !tournament.outcome) return;
+    const properties = {
+      outcome: tournament.outcome,
+      campaign_duration_ms: analytics.campaignElapsedMs(),
+    };
+    analytics.trackOnce('campaign_finished', 'campaign_finished', properties);
+    if (tournament.outcome === 'Campeão mundial') analytics.trackOnce('worlds_won', 'worlds_won', properties);
+  }, [analyticsEnabled, screen, tournament.outcome]);
+  useEffect(() => {
+    if (screen === 'tournament' || screen === 'match' || screen === 'result')
+      analytics.trackOnce('worlds_started', 'worlds_started');
+  }, [analyticsEnabled, screen]);
   // A single cancellable timer owns progression. Pausing, help, report inspection,
   // speed/mode changes and unmount all cancel the previous scheduled step.
   useEffect(() => {
@@ -481,12 +545,7 @@ export default function App() {
     let step: () => void;
     if (screen === 'tournament') {
       delay = quick ? 850 : 2400;
-      step = () => {
-        setSeries(createSeries(tournament, data.players));
-        setPlayResult(null);
-        setMomentIndex(0);
-        setScreen('match');
-      };
+      step = beginSeries;
     } else if (screen === 'match' && series) {
       if (!playResult) {
         delay = quick ? 550 : 1400;
@@ -500,7 +559,15 @@ export default function App() {
         step = () => setMomentIndex(quick ? playResult.recap.moments.length - 1 : momentIndex + 1);
       } else if (series.games.length < playResult.game) {
         delay = quick ? 200 : 650;
-        step = () => setSeries({ ...series, games: [...series.games, playResult] });
+        step = () => {
+          analytics.track('game_completed', {
+            stage: series.stage,
+            game: playResult.game,
+            best_of: series.bestOf,
+            won: playResult.won,
+          });
+          setSeries({ ...series, games: [...series.games, playResult] });
+        };
       } else if (seriesDone(series)) {
         delay = quick ? 1700 : 5000;
         step = () => {
@@ -525,12 +592,21 @@ export default function App() {
   function start() {
     if (!data) return;
     if (draftTimer.current) clearTimeout(draftTimer.current);
+    const replay = screen === 'result';
+    if (replay) analytics.track('play_again');
+    clearCampaign();
+    setHasSavedCampaign(false);
+    analytics.startCampaign();
+    const availability = nextDraftAvailability ?? defaultDraftAvailability(data);
+    setCampaignAvailability(availability);
     draftLock.current = false;
     setPending(null);
     setRolling(false);
     setRejected([]);
-    setRemaining(DRAFT_CONFIG.exchanges);
-    setRounds(createDraft(data.players));
+    setRemaining(availability.startingExchanges);
+    const nextRounds = createDraft(data.players, Math.random, data.draftRegionManifest, availability);
+    nextRounds.forEach((round) => analytics.track('roll_generated', { roll_source: 'initial', ...draftEventProperties(round) }));
+    setRounds(nextRounds);
     setTeam([]);
     setTournament(newTournament());
     setSeries(null);
@@ -541,6 +617,37 @@ export default function App() {
     setPreview(1);
     setScreen('draft');
   }
+  function resume() {
+    if (!data) return;
+    const campaign = loadCampaign(data.draftRegionManifest.datasetVersion);
+    if (
+      !campaign ||
+      campaign.draftStep !== campaign.team.length ||
+      (campaign.screen === 'draft' && !campaign.rounds[campaign.draftStep])
+    ) {
+      clearCampaign();
+      setHasSavedCampaign(false);
+      return;
+    }
+    if (draftTimer.current) clearTimeout(draftTimer.current);
+    analytics.track('save_resumed', { draft_step: campaign.draftStep });
+    setCampaignAvailability(campaign.draftAvailability ?? defaultDraftAvailability(data));
+    draftLock.current = false;
+    setPending(null);
+    setRolling(false);
+    setRemaining(campaign.remaining);
+    setRejected(campaign.rejected);
+    setRounds(campaign.rounds);
+    setTeam(campaign.team);
+    setPreview(campaign.preview);
+    setTournament(campaign.tournament);
+    setSeries(campaign.series);
+    setSettings(campaign.settings);
+    setPlayResult(campaign.playResult);
+    setMomentIndex(campaign.momentIndex);
+    setReport(null);
+    setScreen(campaign.screen);
+  }
   function choose(p: PlayerVersion) {
     if (
       draftLock.current ||
@@ -548,26 +655,45 @@ export default function App() {
       !rounds[team.length].options.some((option) => option.id === p.id)
     )
       return;
+    const round = rounds[team.length];
+    analytics.track('player_selected', { player_id: analyticsPlayerId(p.id), ...draftEventProperties(round) });
     draftLock.current = true;
     setPending(p.id);
     draftTimer.current = setTimeout(() => {
-      setTeam([...team, p]);
+      const selectedTeam = [...team, p];
+      setTeam(selectedTeam);
       setPending(null);
       setRejected([]);
       draftLock.current = false;
-      if (team.length === 4) setScreen('team');
+      if (team.length === 4) {
+        analytics.trackOnce('draft_completed', 'draft_completed', {
+          draft_duration_ms: analytics.draftElapsedMs(),
+          selected_player_ids: selectedTeam.map((player) => analyticsPlayerId(player.id)),
+        });
+        setScreen('team');
+      }
     }, DRAFT_CONFIG.selectionMs);
   }
   function exchange(kind: Exchange) {
     if (!data || draftLock.current || !rounds[team.length]) return;
     const result = exchangeRound(
       rounds[team.length],
-      eligiblePools(data.players),
+      eligiblePools(data.players, data.draftRegionManifest, campaignAvailability ?? undefined),
       kind,
       remaining,
       rejected,
     );
     if (!result.changed) return;
+    analytics.track('exchange_used', {
+      exchange_type: kind,
+      rejected_candidate_ids: rounds[team.length].options.map((player) => analyticsPlayerId(player.id)),
+      ...draftEventProperties(rounds[team.length]),
+    });
+    analytics.track('roll_generated', {
+      roll_source: 'exchange',
+      exchange_type: kind,
+      ...draftEventProperties(result.round),
+    });
     draftLock.current = true;
     setRolling(true);
     setRemaining(result.remaining);
@@ -578,12 +704,21 @@ export default function App() {
       draftLock.current = false;
     }, DRAFT_CONFIG.rollMs);
   }
-  function enterMatch() {
+  function beginSeries() {
     if (!data) return;
-    setSeries(createSeries(tournament, data.players));
+    const nextSeries = createSeries(tournament, data.players);
+    analytics.track('series_started', {
+      stage: nextSeries.stage,
+      best_of: nextSeries.bestOf,
+    });
+    setSeries(nextSeries);
     setPlayResult(null);
     setMomentIndex(0);
     setScreen('match');
+  }
+  function enterMatch() {
+    analytics.trackOnce('worlds_started', 'worlds_started');
+    beginSeries();
   }
   function finishSeries() {
     if (!series) return;
@@ -593,6 +728,16 @@ export default function App() {
     setPlayResult(null);
     setMomentIndex(0);
     setScreen(next.outcome ? 'result' : 'tournament');
+  }
+  function openHelp() {
+    analytics.track('how_to_play_opened');
+    setHelp(true);
+  }
+  function openResearch(selection: PlayerVersion | 'method') {
+    analytics.track('rating_details_opened',
+      selection === 'method' ? { detail_type: 'method' } : { detail_type: 'player', player_id: selection.id },
+    );
+    setResearch(selection);
   }
   const draft = rounds[team.length];
   const currentGame =
@@ -618,6 +763,16 @@ export default function App() {
         <p>Preparando suas lendas…</p>
       </main>
     );
+  const availableYears = new Set(data.players.map((player) => player.worldsYear)).size;
+  const availableRegionGroups = new Set(
+    eligiblePools(data.players, data.draftRegionManifest, nextDraftAvailability ?? undefined).map(
+      (pool) => pool.region.id,
+    ),
+  ).size;
+  const featuredPlayer =
+    data.players.find((player) => player.playerName === 'Faker' && player.worldsYear === 2017) ??
+    data.players[0];
+  const featuredChampion = data.champions[featuredPlayer.championPool[0].championId];
   return (
     <div className={`app-shell ${screen === 'draft' ? 'draft-active' : ''}`}>
       <header className="site-header">
@@ -632,13 +787,13 @@ export default function App() {
           <span className="edition-badge">
             <span /> WORLDS EDITION
           </span>
-          <button className="help-button" onClick={() => setHelp(true)}>
+          <button className="help-button" onClick={openHelp}>
             <CircleHelp size={17} />
             <span>Como jogar</span>
           </button>
           <button
             className="icon-button mobile-menu"
-            onClick={() => setHelp(true)}
+            onClick={openHelp}
             aria-label="Abrir instruções"
           >
             <Menu />
@@ -646,6 +801,7 @@ export default function App() {
         </nav>
       </header>
       <main>
+        {maintenanceBanner && <p className="maintenance-banner" role="status">{maintenanceBanner}</p>}
         {(screen === 'tournament' || screen === 'match') && (
           <div className="active-playback">
             <AutoplayControls settings={settings} onChange={setSettings} active />
@@ -672,47 +828,59 @@ export default function App() {
                 <br />
                 Combine seus pools. Encare o mundo.
               </p>
-              <button className="primary start-button" onClick={start}>
-                Começar draft <ArrowRight size={23} />
-              </button>
+              {hasSavedCampaign ? (
+                <div className="home-actions">
+                  <button className="primary start-button" onClick={resume}>
+                    Continuar campanha <ArrowRight size={23} />
+                  </button>
+                  <button className="text-button new-draft-button" onClick={start}>
+                    Novo draft <RotateCcw size={15} />
+                  </button>
+                </div>
+              ) : (
+                <button className="primary start-button" onClick={start}>
+                  Começar draft <ArrowRight size={23} />
+                </button>
+              )}
               <span className="start-note">5 escolhas · Sem cadastro · Draft em 2 minutos</span>
             </div>
             <div className="home-visual">
               <div className="hero-art">
                 <Art
-                  src={championArt(data.champions.Galio, 2017).splash}
-                  alt="Galio, campeão de Faker no Worlds 2017"
+                  src={championArt(featuredChampion, featuredPlayer.worldsYear).splash}
+                  alt={`${featuredChampion.name}, campeão de ${featuredPlayer.playerName} no Worlds ${featuredPlayer.worldsYear}`}
                 />
                 <div className="hero-shade" />
                 <div className="hero-tag">
                   <Sparkles size={14} /> REESCREVA O WORLDS
                 </div>
-                <span className="hero-year">2017</span>
+                <span className="hero-year">{featuredPlayer.worldsYear}</span>
                 <div className="hero-player">
-                  <span>MID · SK TELECOM T1</span>
+                  <span>
+                    {roleLabel[featuredPlayer.role]} · {featuredPlayer.teamName ?? featuredPlayer.team}
+                  </span>
                   <h2>
-                    FAKER<span>O INABALÁVEL.</span>
+                    {featuredPlayer.playerName}
+                    <span>{featuredPlayer.profile.toUpperCase()}</span>
                   </h2>
                 </div>
                 <div className="hero-pool">
-                  {data.players
-                    .find((p) => p.playerName === 'Faker' && p.worldsYear === 2017)
-                    ?.championPool.map((slot) => (
-                      <div key={slot.game}>
-                        <span>G{slot.game}</span>
-                        <Art
-                          src={championArt(data.champions[slot.championId], 2017).image}
-                          alt={data.champions[slot.championId].name}
-                        />
-                        <b>{slot.rating}</b>
-                      </div>
-                    ))}
+                  {featuredPlayer.championPool.map((slot) => (
+                    <div key={slot.game}>
+                      <span>G{slot.game}</span>
+                      <Art
+                        src={championArt(data.champions[slot.championId], featuredPlayer.worldsYear).image}
+                        alt={data.champions[slot.championId].name}
+                      />
+                      <b>{slot.rating}</b>
+                    </div>
+                  ))}
                 </div>
               </div>
               <div className="hero-sticker">
                 <Swords size={22} />
                 <span>
-                  SEIS EDIÇÕES DO WORLDS.
+                  {availableYears} EDIÇÕES DO WORLDS.
                   <br />
                   <b>UMA SÓ EQUIPE.</b>
                 </span>
@@ -758,7 +926,7 @@ export default function App() {
                 </div>
               ))}
             </div>
-            <TeamStrip team={team} active={team.length} data={data} />
+            <TeamStrip team={team} active={team.length} />
             <div className="section-heading">
               <div>
                 <span className="eyebrow green">
@@ -781,7 +949,11 @@ export default function App() {
                     !!pending ||
                     rolling ||
                     remaining === 0 ||
-                    !exchangeAlternatives(draft, eligiblePools(data.players), 'year').length
+                    !exchangeAlternatives(
+                      draft,
+                      eligiblePools(data.players, data.draftRegionManifest),
+                      'year',
+                    ).length
                   }
                   aria-label="Trocar ano"
                 >
@@ -795,12 +967,16 @@ export default function App() {
                     !!pending ||
                     rolling ||
                     remaining === 0 ||
-                    !exchangeAlternatives(draft, eligiblePools(data.players), 'region').length
+                    !exchangeAlternatives(
+                      draft,
+                      eligiblePools(data.players, data.draftRegionManifest),
+                      'region',
+                    ).length
                   }
                   aria-label="Trocar região"
                 >
                   <small>REGIÃO</small>
-                  <strong>{draft.options[0].historicalLeague ?? draft.region}</strong>
+                  <strong>{draft.region.label}</strong>
                   <RotateCcw size={15} />
                 </button>
               </div>
@@ -815,7 +991,11 @@ export default function App() {
                     !!pending ||
                     rolling ||
                     remaining === 0 ||
-                    !exchangeAlternatives(draft, eligiblePools(data.players), 'players').length
+                    !exchangeAlternatives(
+                      draft,
+                      eligiblePools(data.players, data.draftRegionManifest),
+                      'players',
+                    ).length
                   }
                   title="Precisa de mais de três jogadores neste pool"
                 >
@@ -836,7 +1016,7 @@ export default function App() {
                   />
                   <button
                     className="player-details text-button"
-                    onClick={() => setResearch(p)}
+                    onClick={() => openResearch(p)}
                     disabled={!!pending || rolling}
                     aria-label={`Detalhes de ${p.playerName}`}
                   >
@@ -853,7 +1033,7 @@ export default function App() {
                     ? 'Sorteando novas opções…'
                     : 'Cinco campeões reais. Uma ordem fixa por série.'}
               </span>
-              <button className="text-button" onClick={() => setResearch('method')}>
+              <button className="text-button" onClick={() => openResearch('method')}>
                 Como calculamos? <CircleHelp size={14} />
               </button>
             </div>
@@ -873,7 +1053,7 @@ export default function App() {
                 <Check />
               </span>
             </div>
-            <TeamStrip team={team} data={data} />
+            <TeamStrip team={team} />
             <div className="subheading">
               <h2>Seu plano para cada jogo</h2>
               <span>CAMPEÕES EM ORDEM FIXA</span>
@@ -1042,7 +1222,7 @@ export default function App() {
                   <Shield />
                 </span>
                 <b>{series.opponentName}</b>
-                <small>ELENCO HISTÓRICO · LCK</small>
+                <small>ELENCO HISTÓRICO · {canonicalRegionFor(series.opponent[0])}</small>
               </div>
             </div>
             <div className="game-results">
@@ -1208,11 +1388,12 @@ export default function App() {
                 <span>CONFRONTOS</span>
               </div>
             </div>
-            <TeamStrip team={team} data={data} />
+            <TeamStrip team={team} />
             <button className="primary" onClick={start}>
               Jogar novamente <RotateCcw size={19} />
             </button>
             <CampaignHistory tournament={tournament} open={setReport} />
+            {analyticsEnabled && <CampaignFeedback tracker={analytics} />}
           </section>
         )}
       </main>
@@ -1221,13 +1402,15 @@ export default function App() {
           DRAFT LENDAS<span className="footer-dot"> / </span> UM NOVO JEITO DE VIVER O WORLDS.
         </span>
         <span>
-          WORLDS 2015–2023 · RATINGS ESTIMADOS
-          <button onClick={() => setHelp(true)} aria-label="Sobre os dados">
+          {availableYears} EDIÇÕES · RATINGS ESTIMADOS
+          <button onClick={openHelp} aria-label="Sobre os dados">
             <CircleHelp size={14} />
           </button>
         </span>
       </footer>
-      {help && <HowTo close={() => setHelp(false)} />}
+      {help && (
+        <HowTo close={() => setHelp(false)} years={availableYears} regionGroups={availableRegionGroups} />
+      )}
       {research && (
         <ResearchDialog
           player={research === 'method' ? null : research}

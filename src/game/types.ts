@@ -1,5 +1,24 @@
 export const ROLES = ['TOP', 'JUNGLE', 'MID', 'ADC', 'SUPPORT'] as const;
 export type Role = (typeof ROLES)[number];
+export const DRAFT_REGION_GROUP_IDS = [
+  'KOREA',
+  'CHINA',
+  'EUROPE',
+  'NORTH_AMERICA',
+  'OTHER_REGIONS',
+  'EUROPE_NORTH_AMERICA',
+] as const;
+export type DraftRegionGroupId = (typeof DRAFT_REGION_GROUP_IDS)[number];
+export interface DraftRegionGroup {
+  id: DraftRegionGroupId;
+  label: string;
+  canonicalRegions: string[];
+}
+export interface DraftRegionManifest {
+  version: string;
+  datasetVersion: string;
+  groups: Array<{ year: number; groups: DraftRegionGroup[] }>;
+}
 export type Tag =
   | 'ENGAGE'
   | 'TEAMFIGHT'
@@ -45,6 +64,7 @@ export interface PlayerVersion {
   playerName: string;
   team: string;
   region: string;
+  canonicalRegion?: string;
   worldsYear: number;
   role: Role;
   image?: string;
@@ -58,7 +78,7 @@ export type Team = PlayerVersion[];
 export interface DraftRound {
   role: Role;
   year: number;
-  region: string;
+  region: DraftRegionGroup;
   options: PlayerVersion[];
 }
 export type Stage = 'swiss' | 'quarters' | 'semis' | 'final';

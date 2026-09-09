@@ -23,7 +23,7 @@ describe('researched Worlds 2017 production snapshot', () => {
     expect(players).toHaveLength(15);
     for (const round of createDraft(players)) {
       expect(round.year).toBe(2017);
-      expect(round.region).toBe('LCK');
+      expect(round.region).toMatchObject({ id: 'KOREA', canonicalRegions: ['LCK'] });
       expect(round.options.map((p) => p.team).sort()).toEqual(['LZ', 'SKT', 'SSG']);
     }
     expect(players.find((p) => p.playerName === 'Faker')?.id).toBe('faker-2017-skt');

@@ -1,29 +1,60 @@
 import { ROLES } from './types';
-import type { DraftRound, PlayerVersion, Role } from './types';
+import { draftRegionGroups, playerIsInDraftRegion } from './regions';
+import type {
+  DraftRegionGroupId,
+  DraftRegionManifest,
+  DraftRound,
+  PlayerVersion,
+  Role,
+} from './types';
 
 export const DRAFT_CONFIG = { exchanges: 3, choices: 3, selectionMs: 320, rollMs: 320 } as const;
 export type Exchange = 'year' | 'region' | 'players';
+export interface DraftAvailability {
+  startingExchanges: number;
+  activeYears: number[];
+  activeRegionGroups: DraftRegionGroupId[];
+}
 type Random = () => number;
 export type DraftPool = Omit<DraftRound, 'options'> & { players: PlayerVersion[] };
 const choose = <T>(xs: T[], rng: Random): T =>
   xs[Math.min(xs.length - 1, Math.floor(rng() * xs.length))];
-export function eligiblePools(players: PlayerVersion[]): DraftPool[] {
+export function eligiblePools(
+  players: PlayerVersion[],
+  manifest?: DraftRegionManifest,
+  availability?: DraftAvailability,
+): DraftPool[] {
   const groups = new Map<string, DraftPool>();
-  for (const p of players) {
-    const key = `${p.worldsYear}/${p.region}/${p.role}`;
-    const pool = groups.get(key) ?? {
-      year: p.worldsYear,
-      region: p.region,
-      role: p.role,
-      players: [],
-    };
-    if (!pool.players.some((x) => x.id === p.id)) pool.players.push(p);
-    groups.set(key, pool);
+  for (const year of new Set(players.map((player) => player.worldsYear))) {
+    for (const region of draftRegionGroups(players, year, DRAFT_CONFIG.choices, manifest)) {
+      for (const role of ROLES) {
+        const poolPlayers = [
+          ...new Map(
+            players
+              .filter(
+                (player) =>
+                  player.worldsYear === year &&
+                  player.role === role &&
+                  playerIsInDraftRegion(player, region),
+              )
+              .map((player) => [player.id, player]),
+          ).values(),
+        ];
+        const key = `${year}/${region.id}/${role}`;
+        groups.set(key, { year, region, role, players: poolPlayers });
+      }
+    }
   }
-  return [...groups.values()].filter((p) => p.players.length >= DRAFT_CONFIG.choices);
+  return [...groups.values()].filter(
+    (pool) =>
+      pool.players.length >= DRAFT_CONFIG.choices &&
+      (!availability ||
+        (availability.activeYears.includes(pool.year) &&
+          availability.activeRegionGroups.includes(pool.region.id))),
+  );
 }
 export const offerKey = (r: DraftRound) =>
-  `${r.role}/${r.year}/${r.region}/${r.options
+  `${r.role}/${r.year}/${r.region.id}/${r.options
     .map((p) => p.id)
     .sort()
     .join(',')}`;
@@ -35,6 +66,11 @@ function combinations(players: PlayerVersion[]): PlayerVersion[][] {
         result.push([players[i], players[j], players[k]]);
   return result;
 }
+function diverseCombinations(players: PlayerVersion[]): PlayerVersion[][] {
+  const options = combinations(players);
+  const maxTeams = Math.max(...options.map((candidate) => new Set(candidate.map((p) => p.team)).size));
+  return options.filter((candidate) => new Set(candidate.map((p) => p.team)).size === maxTeams);
+}
 export function rollRound(pools: DraftPool[], role: Role, rng: Random = Math.random): DraftRound {
   const valid = pools.filter((p) => p.role === role);
   if (!valid.length) throw new Error(`Sem pools válidos para ${role}`);
@@ -43,10 +79,15 @@ export function rollRound(pools: DraftPool[], role: Role, rng: Random = Math.ran
     valid.filter((p) => p.year === year),
     rng,
   );
-  return { role, year, region: pool.region, options: choose(combinations(pool.players), rng) };
+  return { role, year, region: pool.region, options: choose(diverseCombinations(pool.players), rng) };
 }
-export function createDraft(players: PlayerVersion[], rng: Random = Math.random): DraftRound[] {
-  const pools = eligiblePools(players);
+export function createDraft(
+  players: PlayerVersion[],
+  rng: Random = Math.random,
+  manifest?: DraftRegionManifest,
+  availability?: DraftAvailability,
+): DraftRound[] {
+  const pools = eligiblePools(players, manifest, availability);
   return ROLES.map((role) => rollRound(pools, role, rng));
 }
 export function exchangeAlternatives(
@@ -59,13 +100,13 @@ export function exchangeAlternatives(
       (p) =>
         p.role === round.role &&
         (kind === 'year'
-          ? p.region === round.region && p.year !== round.year
+          ? p.region.id === round.region.id && p.year !== round.year
           : kind === 'region'
-            ? p.year === round.year && p.region !== round.region
-            : p.year === round.year && p.region === round.region),
+            ? p.year === round.year && p.region.id !== round.region.id
+            : p.year === round.year && p.region.id === round.region.id),
     )
     .flatMap((p) =>
-      combinations(p.players).map((options) => ({
+      diverseCombinations(p.players).map((options) => ({
         role: p.role,
         year: p.year,
         region: p.region,
@@ -97,11 +138,11 @@ export function exchangeRound(
     alternatives = alternatives.filter((r) => overlap(r) === min);
   }
   // Equal chance per destination year/region, independent of its number of combinations.
-  const destinations = [...new Set(alternatives.map((r) => `${r.year}/${r.region}`))];
+  const destinations = [...new Set(alternatives.map((r) => `${r.year}/${r.region.id}`))];
   const destination = choose(destinations, rng);
   return {
     round: choose(
-      alternatives.filter((r) => `${r.year}/${r.region}` === destination),
+      alternatives.filter((r) => `${r.year}/${r.region.id}` === destination),
       rng,
     ),
     remaining: remaining - 1,

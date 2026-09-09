@@ -1,0 +1,60 @@
+{
+  "version": "draft-region-groups-v1.0.0",
+  "datasetVersion": "multi-era-v1.0.0",
+  "groups": [
+    {
+      "year": 2015,
+      "groups": [
+        { "id": "KOREA", "label": "KOREA", "canonicalRegions": ["LCK"] },
+        { "id": "CHINA", "label": "CHINA", "canonicalRegions": ["LPL"] },
+        { "id": "EUROPE", "label": "EUROPA", "canonicalRegions": ["EU LCS"] },
+        { "id": "NORTH_AMERICA", "label": "AMÉRICA DO NORTE", "canonicalRegions": ["NA LCS"] }
+      ]
+    },
+    {
+      "year": 2017,
+      "groups": [
+        { "id": "KOREA", "label": "KOREA", "canonicalRegions": ["LCK"] },
+        { "id": "CHINA", "label": "CHINA", "canonicalRegions": ["LPL"] },
+        { "id": "EUROPE", "label": "EUROPA", "canonicalRegions": ["EU LCS"] },
+        { "id": "NORTH_AMERICA", "label": "AMÉRICA DO NORTE", "canonicalRegions": ["NA LCS"] }
+      ]
+    },
+    {
+      "year": 2019,
+      "groups": [
+        { "id": "KOREA", "label": "KOREA", "canonicalRegions": ["LCK"] },
+        { "id": "CHINA", "label": "CHINA", "canonicalRegions": ["LPL"] },
+        { "id": "EUROPE", "label": "EUROPA", "canonicalRegions": ["LEC"] },
+        { "id": "NORTH_AMERICA", "label": "AMÉRICA DO NORTE", "canonicalRegions": ["LCS"] }
+      ]
+    },
+    {
+      "year": 2020,
+      "groups": [
+        { "id": "KOREA", "label": "KOREA", "canonicalRegions": ["LCK"] },
+        { "id": "CHINA", "label": "CHINA", "canonicalRegions": ["LPL"] },
+        { "id": "EUROPE", "label": "EUROPA", "canonicalRegions": ["LEC"] },
+        { "id": "NORTH_AMERICA", "label": "AMÉRICA DO NORTE", "canonicalRegions": ["LCS"] }
+      ]
+    },
+    {
+      "year": 2022,
+      "groups": [
+        { "id": "KOREA", "label": "KOREA", "canonicalRegions": ["LCK"] },
+        { "id": "CHINA", "label": "CHINA", "canonicalRegions": ["LPL"] },
+        { "id": "EUROPE", "label": "EUROPA", "canonicalRegions": ["LEC"] },
+        { "id": "NORTH_AMERICA", "label": "AMÉRICA DO NORTE", "canonicalRegions": ["LCS"] }
+      ]
+    },
+    {
+      "year": 2023,
+      "groups": [
+        { "id": "KOREA", "label": "KOREA", "canonicalRegions": ["LCK"] },
+        { "id": "CHINA", "label": "CHINA", "canonicalRegions": ["LPL"] },
+        { "id": "EUROPE", "label": "EUROPA", "canonicalRegions": ["LEC"] },
+        { "id": "NORTH_AMERICA", "label": "AMÉRICA DO NORTE", "canonicalRegions": ["LCS"] }
+      ]
+    }
+  ]
+}

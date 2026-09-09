@@ -37,7 +37,10 @@ describe('dataset and draft', () => {
         expect(r.options.length).toBeGreaterThanOrEqual(3);
         expect(
           r.options.every(
-            (p) => p.role === r.role && p.worldsYear === r.year && p.region === r.region,
+            (p) =>
+              p.role === r.role &&
+              p.worldsYear === r.year &&
+              r.region.canonicalRegions.includes(p.canonicalRegion ?? p.historicalLeague ?? p.region),
           ),
         ).toBe(true);
       });
