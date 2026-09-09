@@ -8,6 +8,8 @@ Admin privado e configuração: [guia de setup do Supabase](docs/admin-setup.md)
 
 Telemetria anônima e feedback: [política e contrato de dados](docs/analytics-privacy.md).
 
+Status técnico e próximos passos: [documento de handoff](docs/status-do-projeto.md).
+
 Base original congelada: [Worlds 2017 / LCK](docs/worlds-2017-lck-research.md) · [Balanceamento de 2017](docs/worlds-2017-balance.md).
 
 Documento do protótipo original, anterior à importação histórica: [PDF](docs/COMO-O-JOGO-FOI-IMPLEMENTADO.pdf) · [Markdown](docs/COMO-O-JOGO-FOI-IMPLEMENTADO.md). As seções de dados desse documento descrevem o antigo conjunto MOCK.
