@@ -52,5 +52,14 @@
     "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
     "accessedAt": "2026-09-09",
     "note": "Public source is hash-pinned; normalized snapshots are committed and raw CSVs are ignored."
+  },
+  "2025": {
+    "url": "https://raw.githubusercontent.com/cbplexiglass/LoL-Esports-Regional-Analyses/main/2025_LoL_esports_match_data_from_OraclesElixir.csv",
+    "sha256": "1adfa81d8ea54cd62b332d18f8a4089cb64331da448b11f0ff7084fac55ed406",
+    "bytes": 79130187,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-10",
+    "note": "The publisher's public Drive file (ID 1v6LRphp2kYciU4SXp0PCjEMuev1bDejc; advertised as 79,169,638 bytes) was quota-limited. This 79,130,187-byte mirror is hash-pinned but not independently authenticated against that later Drive revision. Raw CSV ignored; normalized snapshots committed."
   }
 }

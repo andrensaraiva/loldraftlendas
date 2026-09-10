@@ -34,6 +34,11 @@
       "square": "/assets/2024/champions/Alistar.png",
       "splash": "/assets/2024/splash/Alistar.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Alistar.png",
+      "splash": "/assets/2025/splash/Alistar.jpg",
+      "patch": "15.20.1"
     }
   },
   "Anivia": {
@@ -46,6 +51,11 @@
       "square": "/assets/2019/champions/Anivia.png",
       "splash": "/assets/2019/splash/Anivia.jpg",
       "patch": "9.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Anivia.png",
+      "splash": "/assets/2025/splash/Anivia.jpg",
+      "patch": "15.20.1"
     }
   },
   "Annie": {
@@ -58,6 +68,11 @@
       "square": "/assets/2023/champions/Annie.png",
       "splash": "/assets/2023/splash/Annie.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Annie.png",
+      "splash": "/assets/2025/splash/Annie.jpg",
+      "patch": "15.20.1"
     }
   },
   "Ashe": {
@@ -95,6 +110,11 @@
       "square": "/assets/2024/champions/Ashe.png",
       "splash": "/assets/2024/splash/Ashe.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Ashe.png",
+      "splash": "/assets/2025/splash/Ashe.jpg",
+      "patch": "15.20.1"
     }
   },
   "Azir": {
@@ -117,6 +137,11 @@
       "square": "/assets/2023/champions/Azir.png",
       "splash": "/assets/2023/splash/Azir.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Azir.png",
+      "splash": "/assets/2025/splash/Azir.jpg",
+      "patch": "15.20.1"
     }
   },
   "Bard": {
@@ -144,6 +169,11 @@
       "square": "/assets/2023/champions/Bard.png",
       "splash": "/assets/2023/splash/Bard.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Bard.png",
+      "splash": "/assets/2025/splash/Bard.jpg",
+      "patch": "15.20.1"
     }
   },
   "Blitzcrank": {
@@ -225,6 +255,11 @@
       "square": "/assets/2024/champions/Braum.png",
       "splash": "/assets/2024/splash/Braum.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Braum.png",
+      "splash": "/assets/2025/splash/Braum.jpg",
+      "patch": "15.20.1"
     }
   },
   "Caitlyn": {
@@ -262,6 +297,11 @@
       "square": "/assets/2024/champions/Caitlyn.png",
       "splash": "/assets/2024/splash/Caitlyn.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Caitlyn.png",
+      "splash": "/assets/2025/splash/Caitlyn.jpg",
+      "patch": "15.20.1"
     }
   },
   "Corki": {
@@ -284,6 +324,11 @@
       "square": "/assets/2024/champions/Corki.png",
       "splash": "/assets/2024/splash/Corki.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Corki.png",
+      "splash": "/assets/2025/splash/Corki.jpg",
+      "patch": "15.20.1"
     }
   },
   "Darius": {
@@ -337,6 +382,11 @@
       "square": "/assets/2019/champions/Elise.png",
       "splash": "/assets/2019/splash/Elise.jpg",
       "patch": "9.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Elise.png",
+      "splash": "/assets/2025/splash/Elise.jpg",
+      "patch": "15.20.1"
     }
   },
   "Evelynn": {
@@ -555,6 +605,11 @@
       "square": "/assets/2024/champions/JarvanIV.png",
       "splash": "/assets/2024/splash/JarvanIV.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/JarvanIV.png",
+      "splash": "/assets/2025/splash/JarvanIV.jpg",
+      "patch": "15.20.1"
     }
   },
   "Jayce": {
@@ -587,6 +642,11 @@
       "square": "/assets/2023/champions/Jayce.png",
       "splash": "/assets/2023/splash/Jayce.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Jayce.png",
+      "splash": "/assets/2025/splash/Jayce.jpg",
+      "patch": "15.20.1"
     }
   },
   "Jinx": {
@@ -673,6 +733,11 @@
       "square": "/assets/2023/champions/Karma.png",
       "splash": "/assets/2023/splash/Karma.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Karma.png",
+      "splash": "/assets/2025/splash/Karma.jpg",
+      "patch": "15.20.1"
     }
   },
   "Kassadin": {
@@ -761,6 +826,11 @@
       "square": "/assets/2024/champions/Leblanc.png",
       "splash": "/assets/2024/splash/Leblanc.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Leblanc.png",
+      "splash": "/assets/2025/splash/Leblanc.jpg",
+      "patch": "15.20.1"
     }
   },
   "LeeSin": {
@@ -852,6 +922,11 @@
       "square": "/assets/2024/champions/Lucian.png",
       "splash": "/assets/2024/splash/Lucian.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Lucian.png",
+      "splash": "/assets/2025/splash/Lucian.jpg",
+      "patch": "15.20.1"
     }
   },
   "Lulu": {
@@ -884,6 +959,11 @@
       "square": "/assets/2023/champions/Lulu.png",
       "splash": "/assets/2023/splash/Lulu.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Lulu.png",
+      "splash": "/assets/2025/splash/Lulu.jpg",
+      "patch": "15.20.1"
     }
   },
   "Malphite": {
@@ -928,6 +1008,11 @@
       "square": "/assets/2024/champions/Maokai.png",
       "splash": "/assets/2024/splash/Maokai.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Maokai.png",
+      "splash": "/assets/2025/splash/Maokai.jpg",
+      "patch": "15.20.1"
     }
   },
   "Mordekaiser": {
@@ -945,6 +1030,11 @@
       "square": "/assets/2020/champions/Mordekaiser.png",
       "splash": "/assets/2020/splash/Mordekaiser.jpg",
       "patch": "10.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Mordekaiser.png",
+      "splash": "/assets/2025/splash/Mordekaiser.jpg",
+      "patch": "15.20.1"
     }
   },
   "Morgana": {
@@ -962,6 +1052,11 @@
       "square": "/assets/2019/champions/Morgana.png",
       "splash": "/assets/2019/splash/Morgana.jpg",
       "patch": "9.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Morgana.png",
+      "splash": "/assets/2025/splash/Morgana.jpg",
+      "patch": "15.20.1"
     }
   },
   "Nautilus": {
@@ -999,6 +1094,11 @@
       "square": "/assets/2024/champions/Nautilus.png",
       "splash": "/assets/2024/splash/Nautilus.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Nautilus.png",
+      "splash": "/assets/2025/splash/Nautilus.jpg",
+      "patch": "15.20.1"
     }
   },
   "Nidalee": {
@@ -1097,6 +1197,11 @@
       "square": "/assets/2024/champions/Orianna.png",
       "splash": "/assets/2024/splash/Orianna.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Orianna.png",
+      "splash": "/assets/2025/splash/Orianna.jpg",
+      "patch": "15.20.1"
     }
   },
   "RekSai": {
@@ -1114,6 +1219,11 @@
       "square": "/assets/2019/champions/RekSai.png",
       "splash": "/assets/2019/splash/RekSai.jpg",
       "patch": "9.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/RekSai.png",
+      "splash": "/assets/2025/splash/RekSai.jpg",
+      "patch": "15.20.1"
     }
   },
   "Renekton": {
@@ -1151,6 +1261,11 @@
       "square": "/assets/2024/champions/Renekton.png",
       "splash": "/assets/2024/splash/Renekton.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Renekton.png",
+      "splash": "/assets/2025/splash/Renekton.jpg",
+      "patch": "15.20.1"
     }
   },
   "Riven": {
@@ -1185,6 +1300,11 @@
       "square": "/assets/2024/champions/Rumble.png",
       "splash": "/assets/2024/splash/Rumble.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Rumble.png",
+      "splash": "/assets/2025/splash/Rumble.jpg",
+      "patch": "15.20.1"
     }
   },
   "Ryze": {
@@ -1217,6 +1337,11 @@
       "square": "/assets/2024/champions/Ryze.png",
       "splash": "/assets/2024/splash/Ryze.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Ryze.png",
+      "splash": "/assets/2025/splash/Ryze.jpg",
+      "patch": "15.20.1"
     }
   },
   "Sejuani": {
@@ -1249,6 +1374,11 @@
       "square": "/assets/2024/champions/Sejuani.png",
       "splash": "/assets/2024/splash/Sejuani.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Sejuani.png",
+      "splash": "/assets/2025/splash/Sejuani.jpg",
+      "patch": "15.20.1"
     }
   },
   "Shen": {
@@ -1310,6 +1440,11 @@
       "square": "/assets/2023/champions/Sivir.png",
       "splash": "/assets/2023/splash/Sivir.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Sivir.png",
+      "splash": "/assets/2025/splash/Sivir.jpg",
+      "patch": "15.20.1"
     }
   },
   "Skarner": {
@@ -1327,6 +1462,11 @@
       "square": "/assets/2024/champions/Skarner.png",
       "splash": "/assets/2024/splash/Skarner.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Skarner.png",
+      "splash": "/assets/2025/splash/Skarner.jpg",
+      "patch": "15.20.1"
     }
   },
   "Syndra": {
@@ -1428,6 +1568,11 @@
       "square": "/assets/2023/champions/Thresh.png",
       "splash": "/assets/2023/splash/Thresh.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Thresh.png",
+      "splash": "/assets/2025/splash/Thresh.jpg",
+      "patch": "15.20.1"
     }
   },
   "Tristana": {
@@ -1531,6 +1676,11 @@
       "square": "/assets/2024/champions/Varus.png",
       "splash": "/assets/2024/splash/Varus.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Varus.png",
+      "splash": "/assets/2025/splash/Varus.jpg",
+      "patch": "15.20.1"
     }
   },
   "Vayne": {
@@ -1553,6 +1703,11 @@
       "square": "/assets/2020/champions/Vayne.png",
       "splash": "/assets/2020/splash/Vayne.jpg",
       "patch": "10.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Vayne.png",
+      "splash": "/assets/2025/splash/Vayne.jpg",
+      "patch": "15.20.1"
     }
   },
   "Veigar": {
@@ -1587,6 +1742,11 @@
       "square": "/assets/2024/champions/Vi.png",
       "splash": "/assets/2024/splash/Vi.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Vi.png",
+      "splash": "/assets/2025/splash/Vi.jpg",
+      "patch": "15.20.1"
     }
   },
   "Viktor": {
@@ -1599,6 +1759,11 @@
       "square": "/assets/2022/champions/Viktor.png",
       "splash": "/assets/2022/splash/Viktor.jpg",
       "patch": "12.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Viktor.png",
+      "splash": "/assets/2025/splash/Viktor.jpg",
+      "patch": "15.20.1"
     }
   },
   "Vladimir": {
@@ -1716,6 +1881,11 @@
       "square": "/assets/2024/champions/Cassiopeia.png",
       "splash": "/assets/2024/splash/Cassiopeia.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Cassiopeia.png",
+      "splash": "/assets/2025/splash/Cassiopeia.jpg",
+      "patch": "15.20.1"
     }
   },
   "Chogath": {
@@ -1760,6 +1930,11 @@
       "square": "/assets/2024/champions/Ezreal.png",
       "splash": "/assets/2024/splash/Ezreal.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Ezreal.png",
+      "splash": "/assets/2025/splash/Ezreal.jpg",
+      "patch": "15.20.1"
     }
   },
   "Fizz": {
@@ -1794,6 +1969,11 @@
       "square": "/assets/2024/champions/Galio.png",
       "splash": "/assets/2024/splash/Galio.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Galio.png",
+      "splash": "/assets/2025/splash/Galio.jpg",
+      "patch": "15.20.1"
     }
   },
   "Ivern": {
@@ -1806,6 +1986,11 @@
       "square": "/assets/2024/champions/Ivern.png",
       "splash": "/assets/2024/splash/Ivern.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Ivern.png",
+      "splash": "/assets/2025/splash/Ivern.jpg",
+      "patch": "15.20.1"
     }
   },
   "Jax": {
@@ -1833,6 +2018,11 @@
       "square": "/assets/2024/champions/Jax.png",
       "splash": "/assets/2024/splash/Jax.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Jax.png",
+      "splash": "/assets/2025/splash/Jax.jpg",
+      "patch": "15.20.1"
     }
   },
   "Khazix": {
@@ -1882,6 +2072,11 @@
       "square": "/assets/2024/champions/Leona.png",
       "splash": "/assets/2024/splash/Leona.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Leona.png",
+      "splash": "/assets/2025/splash/Leona.jpg",
+      "patch": "15.20.1"
     }
   },
   "Malzahar": {
@@ -1906,6 +2101,11 @@
       "square": "/assets/2024/champions/Nami.png",
       "splash": "/assets/2024/splash/Nami.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Nami.png",
+      "splash": "/assets/2025/splash/Nami.jpg",
+      "patch": "15.20.1"
     }
   },
   "Nasus": {
@@ -1945,6 +2145,11 @@
       "square": "/assets/2024/champions/Nocturne.png",
       "splash": "/assets/2024/splash/Nocturne.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Nocturne.png",
+      "splash": "/assets/2025/splash/Nocturne.jpg",
+      "patch": "15.20.1"
     }
   },
   "Rakan": {
@@ -1977,6 +2182,11 @@
       "square": "/assets/2024/champions/Rakan.png",
       "splash": "/assets/2024/splash/Rakan.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Rakan.png",
+      "splash": "/assets/2025/splash/Rakan.jpg",
+      "patch": "15.20.1"
     }
   },
   "Singed": {
@@ -2018,6 +2228,11 @@
       "square": "/assets/2023/champions/Soraka.png",
       "splash": "/assets/2023/splash/Soraka.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Soraka.png",
+      "splash": "/assets/2025/splash/Soraka.jpg",
+      "patch": "15.20.1"
     }
   },
   "Taliyah": {
@@ -2045,6 +2260,11 @@
       "square": "/assets/2024/champions/Taliyah.png",
       "splash": "/assets/2024/splash/Taliyah.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Taliyah.png",
+      "splash": "/assets/2025/splash/Taliyah.jpg",
+      "patch": "15.20.1"
     }
   },
   "Taric": {
@@ -2079,6 +2299,11 @@
       "square": "/assets/2022/champions/Trundle.png",
       "splash": "/assets/2022/splash/Trundle.jpg",
       "patch": "12.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Trundle.png",
+      "splash": "/assets/2025/splash/Trundle.jpg",
+      "patch": "15.20.1"
     }
   },
   "Xayah": {
@@ -2101,6 +2326,11 @@
       "square": "/assets/2024/champions/Xayah.png",
       "splash": "/assets/2024/splash/Xayah.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Xayah.png",
+      "splash": "/assets/2025/splash/Xayah.jpg",
+      "patch": "15.20.1"
     }
   },
   "Aatrox": {
@@ -2118,6 +2348,11 @@
       "square": "/assets/2023/champions/Aatrox.png",
       "splash": "/assets/2023/splash/Aatrox.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Aatrox.png",
+      "splash": "/assets/2025/splash/Aatrox.jpg",
+      "patch": "15.20.1"
     }
   },
   "Akali": {
@@ -2145,6 +2380,11 @@
       "square": "/assets/2024/champions/Akali.png",
       "splash": "/assets/2024/splash/Akali.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Akali.png",
+      "splash": "/assets/2025/splash/Akali.jpg",
+      "patch": "15.20.1"
     }
   },
   "Draven": {
@@ -2172,6 +2412,11 @@
       "square": "/assets/2024/champions/Draven.png",
       "splash": "/assets/2024/splash/Draven.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Draven.png",
+      "splash": "/assets/2025/splash/Draven.jpg",
+      "patch": "15.20.1"
     }
   },
   "Fiddlesticks": {
@@ -2252,6 +2497,11 @@
       "square": "/assets/2024/champions/Kaisa.png",
       "splash": "/assets/2024/splash/Kaisa.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Kaisa.png",
+      "splash": "/assets/2025/splash/Kaisa.jpg",
+      "patch": "15.20.1"
     }
   },
   "Karthus": {
@@ -2315,6 +2565,11 @@
       "square": "/assets/2023/champions/Ornn.png",
       "splash": "/assets/2023/splash/Ornn.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Ornn.png",
+      "splash": "/assets/2025/splash/Ornn.jpg",
+      "patch": "15.20.1"
     }
   },
   "Poppy": {
@@ -2337,6 +2592,11 @@
       "square": "/assets/2024/champions/Poppy.png",
       "splash": "/assets/2024/splash/Poppy.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Poppy.png",
+      "splash": "/assets/2025/splash/Poppy.jpg",
+      "patch": "15.20.1"
     }
   },
   "Pyke": {
@@ -2356,6 +2616,11 @@
       "square": "/assets/2019/champions/Qiyana.png",
       "splash": "/assets/2019/splash/Qiyana.jpg",
       "patch": "9.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Qiyana.png",
+      "splash": "/assets/2025/splash/Qiyana.jpg",
+      "patch": "15.20.1"
     }
   },
   "Rengar": {
@@ -2380,6 +2645,11 @@
       "square": "/assets/2024/champions/Sion.png",
       "splash": "/assets/2024/splash/Sion.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Sion.png",
+      "splash": "/assets/2025/splash/Sion.jpg",
+      "patch": "15.20.1"
     }
   },
   "Sylas": {
@@ -2407,6 +2677,11 @@
       "square": "/assets/2024/champions/Sylas.png",
       "splash": "/assets/2024/splash/Sylas.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Sylas.png",
+      "splash": "/assets/2025/splash/Sylas.jpg",
+      "patch": "15.20.1"
     }
   },
   "Urgot": {
@@ -2482,6 +2757,11 @@
       "square": "/assets/2024/champions/Jhin.png",
       "splash": "/assets/2024/splash/Jhin.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Jhin.png",
+      "splash": "/assets/2025/splash/Jhin.jpg",
+      "patch": "15.20.1"
     }
   },
   "Kindred": {
@@ -2533,6 +2813,11 @@
       "square": "/assets/2024/champions/MissFortune.png",
       "splash": "/assets/2024/splash/MissFortune.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/MissFortune.png",
+      "splash": "/assets/2025/splash/MissFortune.jpg",
+      "patch": "15.20.1"
     }
   },
   "MonkeyKing": {
@@ -2555,6 +2840,11 @@
       "square": "/assets/2024/champions/MonkeyKing.png",
       "splash": "/assets/2024/splash/MonkeyKing.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/MonkeyKing.png",
+      "splash": "/assets/2025/splash/MonkeyKing.jpg",
+      "patch": "15.20.1"
     }
   },
   "Pantheon": {
@@ -2562,6 +2852,11 @@
       "square": "/assets/2020/champions/Pantheon.png",
       "splash": "/assets/2020/splash/Pantheon.jpg",
       "patch": "10.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Pantheon.png",
+      "splash": "/assets/2025/splash/Pantheon.jpg",
+      "patch": "15.20.1"
     }
   },
   "Quinn": {
@@ -2586,6 +2881,11 @@
       "square": "/assets/2023/champions/Senna.png",
       "splash": "/assets/2023/splash/Senna.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Senna.png",
+      "splash": "/assets/2025/splash/Senna.jpg",
+      "patch": "15.20.1"
     }
   },
   "Sett": {
@@ -2670,6 +2970,11 @@
       "square": "/assets/2023/champions/Gwen.png",
       "splash": "/assets/2023/splash/Gwen.jpg",
       "patch": "13.19.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Gwen.png",
+      "splash": "/assets/2025/splash/Gwen.jpg",
+      "patch": "15.20.1"
     }
   },
   "Kayn": {
@@ -2694,6 +2999,11 @@
       "square": "/assets/2024/champions/Rell.png",
       "splash": "/assets/2024/splash/Rell.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Rell.png",
+      "splash": "/assets/2025/splash/Rell.jpg",
+      "patch": "15.20.1"
     }
   },
   "Renata": {
@@ -2711,6 +3021,11 @@
       "square": "/assets/2024/champions/Renata.png",
       "splash": "/assets/2024/splash/Renata.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Renata.png",
+      "splash": "/assets/2025/splash/Renata.jpg",
+      "patch": "15.20.1"
     }
   },
   "Seraphine": {
@@ -2730,6 +3045,11 @@
       "square": "/assets/2024/champions/Swain.png",
       "splash": "/assets/2024/splash/Swain.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Swain.png",
+      "splash": "/assets/2025/splash/Swain.jpg",
+      "patch": "15.20.1"
     }
   },
   "Viego": {
@@ -2759,6 +3079,11 @@
       "square": "/assets/2024/champions/XinZhao.png",
       "splash": "/assets/2024/splash/XinZhao.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/XinZhao.png",
+      "splash": "/assets/2025/splash/XinZhao.jpg",
+      "patch": "15.20.1"
     }
   },
   "Yone": {
@@ -2776,6 +3101,11 @@
       "square": "/assets/2024/champions/Yone.png",
       "splash": "/assets/2024/splash/Yone.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Yone.png",
+      "splash": "/assets/2025/splash/Yone.jpg",
+      "patch": "15.20.1"
     }
   },
   "Zeri": {
@@ -2793,6 +3123,11 @@
       "square": "/assets/2024/champions/Zeri.png",
       "splash": "/assets/2024/splash/Zeri.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Zeri.png",
+      "splash": "/assets/2025/splash/Zeri.jpg",
+      "patch": "15.20.1"
     }
   },
   "KSante": {
@@ -2805,6 +3140,11 @@
       "square": "/assets/2024/champions/KSante.png",
       "splash": "/assets/2024/splash/KSante.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/KSante.png",
+      "splash": "/assets/2025/splash/KSante.jpg",
+      "patch": "15.20.1"
     }
   },
   "Milio": {
@@ -2824,6 +3164,11 @@
       "square": "/assets/2024/champions/Neeko.png",
       "splash": "/assets/2024/splash/Neeko.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Neeko.png",
+      "splash": "/assets/2025/splash/Neeko.jpg",
+      "patch": "15.20.1"
     }
   },
   "Nilah": {
@@ -2850,6 +3195,11 @@
       "square": "/assets/2024/champions/Ziggs.png",
       "splash": "/assets/2024/splash/Ziggs.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Ziggs.png",
+      "splash": "/assets/2025/splash/Ziggs.jpg",
+      "patch": "15.20.1"
     }
   },
   "Aurora": {
@@ -2857,6 +3207,11 @@
       "square": "/assets/2024/champions/Aurora.png",
       "splash": "/assets/2024/splash/Aurora.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Aurora.png",
+      "splash": "/assets/2025/splash/Aurora.jpg",
+      "patch": "15.20.1"
     }
   },
   "Hwei": {
@@ -2871,6 +3226,11 @@
       "square": "/assets/2024/champions/Kled.png",
       "splash": "/assets/2024/splash/Kled.jpg",
       "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Kled.png",
+      "splash": "/assets/2025/splash/Kled.jpg",
+      "patch": "15.20.1"
     }
   },
   "Smolder": {
@@ -2885,6 +3245,48 @@
       "square": "/assets/2024/champions/Zyra.png",
       "splash": "/assets/2024/splash/Zyra.jpg",
       "patch": "14.18.1"
+    }
+  },
+  "Ambessa": {
+    "2025": {
+      "square": "/assets/2025/champions/Ambessa.png",
+      "splash": "/assets/2025/splash/Ambessa.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "DrMundo": {
+    "2025": {
+      "square": "/assets/2025/champions/DrMundo.png",
+      "splash": "/assets/2025/splash/DrMundo.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Naafiri": {
+    "2025": {
+      "square": "/assets/2025/champions/Naafiri.png",
+      "splash": "/assets/2025/splash/Naafiri.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Yorick": {
+    "2025": {
+      "square": "/assets/2025/champions/Yorick.png",
+      "splash": "/assets/2025/splash/Yorick.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Yunara": {
+    "2025": {
+      "square": "/assets/2025/champions/Yunara.png",
+      "splash": "/assets/2025/splash/Yunara.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Zed": {
+    "2025": {
+      "square": "/assets/2025/champions/Zed.png",
+      "splash": "/assets/2025/splash/Zed.jpg",
+      "patch": "15.20.1"
     }
   }
 }

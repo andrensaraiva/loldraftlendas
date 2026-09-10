@@ -31,66 +31,6 @@
   },
   {
     "year": 2015,
-    "region": "LPL",
-    "role": "TOP",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LPL",
-    "role": "JUNGLE",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LPL",
-    "role": "MID",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LPL",
-    "role": "ADC",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LPL",
-    "role": "SUPPORT",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LEC",
-    "role": "TOP",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LEC",
-    "role": "JUNGLE",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LEC",
-    "role": "MID",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LEC",
-    "role": "ADC",
-    "count": 3
-  },
-  {
-    "year": 2015,
-    "region": "LEC",
-    "role": "SUPPORT",
-    "count": 3
-  },
-  {
-    "year": 2015,
     "region": "LCS",
     "role": "TOP",
     "count": 3
@@ -120,6 +60,66 @@
     "count": 3
   },
   {
+    "year": 2015,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
     "year": 2017,
     "region": "LCK",
     "role": "TOP",
@@ -151,31 +151,31 @@
   },
   {
     "year": 2017,
-    "region": "LPL",
+    "region": "LCS",
     "role": "TOP",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LPL",
+    "region": "LCS",
     "role": "JUNGLE",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LPL",
+    "region": "LCS",
     "role": "MID",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LPL",
+    "region": "LCS",
     "role": "ADC",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LPL",
+    "region": "LCS",
     "role": "SUPPORT",
     "count": 3
   },
@@ -211,31 +211,31 @@
   },
   {
     "year": 2017,
-    "region": "LCS",
+    "region": "LPL",
     "role": "TOP",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LCS",
+    "region": "LPL",
     "role": "JUNGLE",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LCS",
+    "region": "LPL",
     "role": "MID",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LCS",
+    "region": "LPL",
     "role": "ADC",
     "count": 3
   },
   {
     "year": 2017,
-    "region": "LCS",
+    "region": "LPL",
     "role": "SUPPORT",
     "count": 3
   },
@@ -271,66 +271,6 @@
   },
   {
     "year": 2019,
-    "region": "LPL",
-    "role": "TOP",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LPL",
-    "role": "JUNGLE",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LPL",
-    "role": "MID",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LPL",
-    "role": "ADC",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LPL",
-    "role": "SUPPORT",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LEC",
-    "role": "TOP",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LEC",
-    "role": "JUNGLE",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LEC",
-    "role": "MID",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LEC",
-    "role": "ADC",
-    "count": 3
-  },
-  {
-    "year": 2019,
-    "region": "LEC",
-    "role": "SUPPORT",
-    "count": 3
-  },
-  {
-    "year": 2019,
     "region": "LCS",
     "role": "TOP",
     "count": 3
@@ -360,6 +300,66 @@
     "count": 3
   },
   {
+    "year": 2019,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
     "year": 2020,
     "region": "LCK",
     "role": "TOP",
@@ -386,6 +386,66 @@
   {
     "year": 2020,
     "region": "LCK",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "region": "LEC",
     "role": "SUPPORT",
     "count": 3
   },
@@ -420,66 +480,6 @@
     "count": 4
   },
   {
-    "year": 2020,
-    "region": "LEC",
-    "role": "TOP",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LEC",
-    "role": "JUNGLE",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LEC",
-    "role": "MID",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LEC",
-    "role": "ADC",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LEC",
-    "role": "SUPPORT",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LCS",
-    "role": "TOP",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LCS",
-    "role": "JUNGLE",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LCS",
-    "role": "MID",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LCS",
-    "role": "ADC",
-    "count": 3
-  },
-  {
-    "year": 2020,
-    "region": "LCS",
-    "role": "SUPPORT",
-    "count": 3
-  },
-  {
     "year": 2022,
     "region": "LCK",
     "role": "TOP",
@@ -511,33 +511,33 @@
   },
   {
     "year": 2022,
-    "region": "LPL",
+    "region": "LCS",
     "role": "TOP",
-    "count": 4
+    "count": 3
   },
   {
     "year": 2022,
-    "region": "LPL",
+    "region": "LCS",
     "role": "JUNGLE",
-    "count": 4
+    "count": 3
   },
   {
     "year": 2022,
-    "region": "LPL",
+    "region": "LCS",
     "role": "MID",
-    "count": 4
+    "count": 3
   },
   {
     "year": 2022,
-    "region": "LPL",
+    "region": "LCS",
     "role": "ADC",
-    "count": 4
+    "count": 3
   },
   {
     "year": 2022,
-    "region": "LPL",
+    "region": "LCS",
     "role": "SUPPORT",
-    "count": 4
+    "count": 3
   },
   {
     "year": 2022,
@@ -571,33 +571,33 @@
   },
   {
     "year": 2022,
-    "region": "LCS",
+    "region": "LPL",
     "role": "TOP",
-    "count": 3
+    "count": 4
   },
   {
     "year": 2022,
-    "region": "LCS",
+    "region": "LPL",
     "role": "JUNGLE",
-    "count": 3
+    "count": 4
   },
   {
     "year": 2022,
-    "region": "LCS",
+    "region": "LPL",
     "role": "MID",
-    "count": 3
+    "count": 4
   },
   {
     "year": 2022,
-    "region": "LCS",
+    "region": "LPL",
     "role": "ADC",
-    "count": 3
+    "count": 4
   },
   {
     "year": 2022,
-    "region": "LCS",
+    "region": "LPL",
     "role": "SUPPORT",
-    "count": 3
+    "count": 4
   },
   {
     "year": 2023,
@@ -631,66 +631,6 @@
   },
   {
     "year": 2023,
-    "region": "LPL",
-    "role": "TOP",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LPL",
-    "role": "JUNGLE",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LPL",
-    "role": "MID",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LPL",
-    "role": "ADC",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LPL",
-    "role": "SUPPORT",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LEC",
-    "role": "TOP",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LEC",
-    "role": "JUNGLE",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LEC",
-    "role": "MID",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LEC",
-    "role": "ADC",
-    "count": 4
-  },
-  {
-    "year": 2023,
-    "region": "LEC",
-    "role": "SUPPORT",
-    "count": 4
-  },
-  {
-    "year": 2023,
     "region": "LCS",
     "role": "TOP",
     "count": 3
@@ -718,6 +658,66 @@
     "region": "LCS",
     "role": "SUPPORT",
     "count": 3
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2023,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 4
   },
   {
     "year": 2024,
@@ -748,66 +748,6 @@
     "region": "LCK",
     "role": "SUPPORT",
     "count": 4
-  },
-  {
-    "year": 2024,
-    "region": "LPL",
-    "role": "TOP",
-    "count": 4
-  },
-  {
-    "year": 2024,
-    "region": "LPL",
-    "role": "JUNGLE",
-    "count": 4
-  },
-  {
-    "year": 2024,
-    "region": "LPL",
-    "role": "MID",
-    "count": 4
-  },
-  {
-    "year": 2024,
-    "region": "LPL",
-    "role": "ADC",
-    "count": 4
-  },
-  {
-    "year": 2024,
-    "region": "LPL",
-    "role": "SUPPORT",
-    "count": 4
-  },
-  {
-    "year": 2024,
-    "region": "LEC",
-    "role": "TOP",
-    "count": 3
-  },
-  {
-    "year": 2024,
-    "region": "LEC",
-    "role": "JUNGLE",
-    "count": 3
-  },
-  {
-    "year": 2024,
-    "region": "LEC",
-    "role": "MID",
-    "count": 3
-  },
-  {
-    "year": 2024,
-    "region": "LEC",
-    "role": "ADC",
-    "count": 3
-  },
-  {
-    "year": 2024,
-    "region": "LEC",
-    "role": "SUPPORT",
-    "count": 3
   },
   {
     "year": 2024,
@@ -838,5 +778,245 @@
     "region": "LCS",
     "role": "SUPPORT",
     "count": 2
+  },
+  {
+    "year": 2024,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2024,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2024,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2024,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2024,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2024,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2024,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2024,
+    "region": "LPL",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2024,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2024,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2025,
+    "region": "LCK",
+    "role": "TOP",
+    "count": 4
+  },
+  {
+    "year": 2025,
+    "region": "LCK",
+    "role": "JUNGLE",
+    "count": 4
+  },
+  {
+    "year": 2025,
+    "region": "LCK",
+    "role": "MID",
+    "count": 4
+  },
+  {
+    "year": 2025,
+    "region": "LCK",
+    "role": "ADC",
+    "count": 4
+  },
+  {
+    "year": 2025,
+    "region": "LCK",
+    "role": "SUPPORT",
+    "count": 4
+  },
+  {
+    "year": 2025,
+    "region": "LCP",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LCP",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LCP",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LCP",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LCP",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LCS",
+    "role": "TOP",
+    "count": 2
+  },
+  {
+    "year": 2025,
+    "region": "LCS",
+    "role": "JUNGLE",
+    "count": 2
+  },
+  {
+    "year": 2025,
+    "region": "LCS",
+    "role": "MID",
+    "count": 2
+  },
+  {
+    "year": 2025,
+    "region": "LCS",
+    "role": "ADC",
+    "count": 2
+  },
+  {
+    "year": 2025,
+    "region": "LCS",
+    "role": "SUPPORT",
+    "count": 2
+  },
+  {
+    "year": 2025,
+    "region": "LEC",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LEC",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LEC",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LEC",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LEC",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LPL",
+    "role": "TOP",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LPL",
+    "role": "JUNGLE",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LPL",
+    "role": "MID",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LPL",
+    "role": "ADC",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LPL",
+    "role": "SUPPORT",
+    "count": 3
+  },
+  {
+    "year": 2025,
+    "region": "LTA S",
+    "role": "TOP",
+    "count": 1
+  },
+  {
+    "year": 2025,
+    "region": "LTA S",
+    "role": "JUNGLE",
+    "count": 1
+  },
+  {
+    "year": 2025,
+    "region": "LTA S",
+    "role": "MID",
+    "count": 1
+  },
+  {
+    "year": 2025,
+    "region": "LTA S",
+    "role": "ADC",
+    "count": 1
+  },
+  {
+    "year": 2025,
+    "region": "LTA S",
+    "role": "SUPPORT",
+    "count": 1
   }
 ]

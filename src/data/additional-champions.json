@@ -811,5 +811,64 @@
       "CONTROL",
       "TEAMFIGHT"
     ]
+  },
+  "Ambessa": {
+    "id": "Ambessa",
+    "name": "Ambessa",
+    "tags": [
+      "AD_DAMAGE",
+      "MOBILITY",
+      "ENGAGE",
+      "CARRY"
+    ]
+  },
+  "Yunara": {
+    "id": "Yunara",
+    "name": "Yunara",
+    "tags": [
+      "AD_DAMAGE",
+      "CARRY",
+      "SCALING",
+      "TEAMFIGHT"
+    ]
+  },
+  "DrMundo": {
+    "id": "DrMundo",
+    "name": "Dr. Mundo",
+    "tags": [
+      "FRONTLINE",
+      "SCALING",
+      "TEAMFIGHT"
+    ]
+  },
+  "Naafiri": {
+    "id": "Naafiri",
+    "name": "Naafiri",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY",
+      "CARRY"
+    ]
+  },
+  "Yorick": {
+    "id": "Yorick",
+    "name": "Yorick",
+    "tags": [
+      "AD_DAMAGE",
+      "SPLIT_PUSH",
+      "SCALING",
+      "FRONTLINE"
+    ]
+  },
+  "Zed": {
+    "id": "Zed",
+    "name": "Zed",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY",
+      "CARRY"
+    ]
   }
 }

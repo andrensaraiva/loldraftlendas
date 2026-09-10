@@ -23,7 +23,7 @@ const REGION_FAMILIES: Record<Exclude<DraftRegionGroupId, 'EUROPE_NORTH_AMERICA'
   KOREA: ['LCK'],
   CHINA: ['LPL'],
   EUROPE: ['EU LCS', 'LEC'],
-  NORTH_AMERICA: ['NA LCS', 'LCS'],
+  NORTH_AMERICA: ['NA LCS', 'LCS', 'LTA N'],
   OTHER_REGIONS: [],
 };
 
@@ -33,9 +33,9 @@ export function canonicalRegionFor(player: PlayerVersion): string {
 
 function familyFor(canonicalRegion: string): Exclude<DraftRegionGroupId, 'EUROPE_NORTH_AMERICA'> {
   return (
-    (Object.entries(REGION_FAMILIES).find(([, regions]) => regions.includes(canonicalRegion))?.[0] as
-      | Exclude<DraftRegionGroupId, 'EUROPE_NORTH_AMERICA'>
-      | undefined) ?? 'OTHER_REGIONS'
+    (Object.entries(REGION_FAMILIES).find(([, regions]) =>
+      regions.includes(canonicalRegion),
+    )?.[0] as Exclude<DraftRegionGroupId, 'EUROPE_NORTH_AMERICA'> | undefined) ?? 'OTHER_REGIONS'
   );
 }
 
@@ -77,14 +77,19 @@ export function draftRegionGroups(
     fromManifest.every((entry) => isEligible(players, year, entry.canonicalRegions, choices)) &&
     canonicalRegions.length ===
       new Set(fromManifest.flatMap((entry) => entry.canonicalRegions)).size &&
-    canonicalRegions.every((region) => fromManifest.some((entry) => entry.canonicalRegions.includes(region)))
+    canonicalRegions.every((region) =>
+      fromManifest.some((entry) => entry.canonicalRegions.includes(region)),
+    )
   )
     return fromManifest;
 
   const regionsByFamily = new Map<Exclude<DraftRegionGroupId, 'EUROPE_NORTH_AMERICA'>, string[]>();
   for (const player of players.filter((candidate) => candidate.worldsYear === year)) {
     const family = familyFor(canonicalRegionFor(player));
-    regionsByFamily.set(family, [...(regionsByFamily.get(family) ?? []), canonicalRegionFor(player)]);
+    regionsByFamily.set(family, [
+      ...(regionsByFamily.get(family) ?? []),
+      canonicalRegionFor(player),
+    ]);
   }
 
   const regions = (id: Exclude<DraftRegionGroupId, 'EUROPE_NORTH_AMERICA'>) =>
@@ -96,7 +101,8 @@ export function draftRegionGroups(
 
   for (const id of ['KOREA', 'CHINA'] as const) {
     const canonicalRegions = regions(id);
-    if (isEligible(players, year, canonicalRegions, choices)) output.push(group(id, canonicalRegions));
+    if (isEligible(players, year, canonicalRegions, choices))
+      output.push(group(id, canonicalRegions));
     else other.push(...canonicalRegions);
   }
 

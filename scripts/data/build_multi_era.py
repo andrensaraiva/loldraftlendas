@@ -10,8 +10,8 @@ from build_worlds_2017 import ROOT, ROLES, NUMBERS, METRICS, WEIGHTS, aggregate,
 
 OUT = ROOT/'data/research/multi-era'
 RAW = OUT/'raw'
-VERSION = 'multi-era-v1.1.0'
-DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.1.0'
+VERSION = 'multi-era-v1.2.0'
+DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.2.0'
 CONFIG = {
  2015: ('10-01', 73, '5.18.1', {'LCK':['SK Telecom T1','ROX Tigers','KT Rolster'], 'LPL':['EDward Gaming','Invictus Gaming','LGD Gaming'], 'EU LCS':['Fnatic','Origen','H2k-Gaming'], 'NA LCS':['Cloud9','Counter Logic Gaming','Team SoloMid']}),
  2017: ('10-05', 80, '7.18.1', {'LCK':['SK Telecom T1','Samsung Galaxy','Longzhu Gaming'], 'LPL':['Royal Never Give Up','Team WE','EDward Gaming'], 'EU LCS':['Fnatic','G2 Esports','Misfits Gaming'], 'NA LCS':['Cloud9','Team SoloMid','Immortals']}),
@@ -20,8 +20,9 @@ CONFIG = {
  2022: ('10-07', 80, '12.18.1', {'LCK':['Gen.G','T1','Dplus Kia','DRX'], 'LPL':['JD Gaming','Top Esports','EDward Gaming','Royal Never Give Up'], 'LEC':['Rogue','G2 Esports','Fnatic'], 'LCS':['Cloud9','100 Thieves','Evil Geniuses']}),
  2023: ('10-19', 79, '13.19.1', {'LCK':['Gen.G','T1','KT Rolster','Dplus Kia'], 'LPL':['JD Gaming','Bilibili Gaming','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI','Team BDS'], 'LCS':['NRG','Cloud9','Team Liquid']}),
  2024: ('10-03', 82, '14.18.1', {'LCK':['Hanwha Life Esports','Gen.G','Dplus Kia','T1'], 'LPL':['Bilibili Gaming','Top Esports','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI'], 'LCS':['FlyQuest','Team Liquid']}),
+ 2025: ('10-15', 80, '15.20.1', {'LCK':['Gen.G','Hanwha Life Esports','KT Rolster','T1'], 'LPL':["Anyone's Legend",'Bilibili Gaming','Top Esports'], 'LEC':['G2 Esports','Movistar KOI','Fnatic'], 'LTA N':['FlyQuest','100 Thieves'], 'LTA S':['Vivo Keyd Stars'], 'LCP':['CTBC Flying Oyster','PSG Talon','Team Secret Whales']}),
 }
-SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE'}
+SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE',"Anyone's Legend":'AL','Movistar KOI':'MKOI','Vivo Keyd Stars':'VKS','CTBC Flying Oyster':'CFO','PSG Talon':'PSG','Team Secret Whales':'TSW'}
 ALIASES = {(2015,'ROX Tigers'):'KOO Tigers', (2022,'Dplus Kia'):'DWG KIA', (2023,'MAD Lions KOI'):'MAD Lions'}
 
 def ingest(year, snapshot):
@@ -43,7 +44,7 @@ def ingest(year, snapshot):
             date=r['date']; league=r['league']; split=r['split']
             if year==2015 and league=='LTC': league='LCK'
             world=league in ('WCS','WLDs') and f'{year}-{start}'<=date<f'{year}-11-30'
-            domestic=league in regions and date<f'{year}-{start}' and split in ('Summer','Spring','Winter','')
+            domestic=league in regions and date<f'{year}-{start}' and (year>=2025 or split in ('Summer','Spring','Winter',''))
             msi=league=='MSI' or league=='WCS' and f'{year}-05-01'<=date<f'{year}-06-01'
             if not (world or domestic or msi):continue
             phase='WORLDS' if world else 'MSI' if msi else f'{league}_{split.upper() or "QUALIFIER"}'
@@ -103,7 +104,7 @@ def build_year(year, snapshot=False):
     frozen=json.loads((ROOT/'src/data/worlds-2017.json').read_text(encoding='utf-8'))
     frozen_ev=json.loads((ROOT/'data/research/worlds-2017/evidence.json').read_text(encoding='utf-8'))
     for league,teams in CONFIG[year][3].items():
-        region={'EU LCS':'LEC','NA LCS':'LCS'}.get(league,league)
+        region={'EU LCS':'LEC','NA LCS':'LCS','LTA N':'LCS'}.get(league,league)
         for team in teams:
             for role in ROLES.values():
                 candidates=sorted([(k,a) for k,a in aggregates.items() if k[:3]==(f'WORLDS_{year}',role,team)],key=lambda x:(-x[1]['games'],x[0][3]))
@@ -113,7 +114,10 @@ def build_year(year, snapshot=False):
                 for k,a in candidates:rosters.append(dict(player=k[3],team=ALIASES.get((year,team),team),rawTeam=team,role=role,region=region,historicalLeague=league,playable=k==key,games=a['games'],selection='Most main-event games; name breaks ties.'))
                 selected=sorted([k for k in by_champ if k[:4]==key],key=lambda k:(-champ_aggs[k]['games'],champ_aggs[k]['firstAppearance'],k[-1]))[:5]
                 selected.sort(key=lambda k:(champ_aggs[k]['firstAppearance'],k[-1]))
-                for phase in [f'{league}_SUMMER',f'{league}_QUALIFIER','MSI',f'{league}_SPRING',f'{league}_WINTER']:
+                fallback_phases=[f'{league}_SUMMER',f'{league}_QUALIFIER','MSI',f'{league}_SPRING',f'{league}_WINTER']
+                if year>=2025:
+                    fallback_phases=sorted({k[0].removesuffix(f'_{year}') for k in by_champ if k[1:4]==key[1:4] and k[0]!=f'WORLDS_{year}'},key=lambda phase:max(r['date'] for k,v in by_champ.items() if k[0]==f'{phase}_{year}' and k[1:4]==key[1:4] for r in v),reverse=True)
+                for phase in fallback_phases:
                     fallback=[k for k in by_champ if k[0]==f'{phase}_{year}' and k[1:4]==key[1:4] and k[-1] not in {s[-1] for s in selected}]
                     fallback.sort(key=lambda k:(-champ_aggs[k]['games'],-int(champ_aggs[k]['lastAppearance'][:10].replace('-','')),k[-1]))
                     selected+=fallback[:max(0,5-len(selected))]
@@ -157,7 +161,7 @@ def event_url(year):
 
 def draft_region_manifest(players):
     """Assign stable UI groups after checking complete, role-valid yearly candidate coverage."""
-    families={'KOREA':{'LCK'},'CHINA':{'LPL'},'EUROPE':{'EU LCS','LEC'},'NORTH_AMERICA':{'NA LCS','LCS'}}
+    families={'KOREA':{'LCK'},'CHINA':{'LPL'},'EUROPE':{'EU LCS','LEC'},'NORTH_AMERICA':{'NA LCS','LCS','LTA N'}}
     labels={'KOREA':'KOREA','CHINA':'CHINA','EUROPE':'EUROPA','NORTH_AMERICA':'AMÉRICA DO NORTE','OTHER_REGIONS':'OUTRAS REGIÕES','EUROPE_NORTH_AMERICA':'EUROPA + AMÉRICA DO NORTE'}
     def canonical(player): return player.get('canonicalRegion') or player.get('historicalLeague') or player['region']
     def eligible(year, regions):
@@ -186,7 +190,7 @@ def draft_region_manifest(players):
     return dict(version=DRAFT_REGION_GROUP_VERSION,datasetVersion=VERSION,groups=groups)
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--snapshot',action='store_true');parser.add_argument('--year',type=int,choices=CONFIG);parser.add_argument('--region',choices=['LCK','LPL','LEC','LCS']);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--snapshot',action='store_true');parser.add_argument('--year',type=int,choices=CONFIG);parser.add_argument('--region',choices=sorted({league for _,_,_,regions in CONFIG.values() for league in regions}));args=parser.parse_args()
     OUT.mkdir(parents=True,exist_ok=True);RAW.mkdir(parents=True,exist_ok=True)
     players=[]
     for year in ([args.year] if args.year else CONFIG):players+=build_year(year,args.snapshot)
@@ -201,7 +205,7 @@ def main():
         b=calibration[p['role']]
         for s in p['championPool']:s['rating']=s['gameRating']=max(70,min(99,math.floor(84.5+5*(s['historicalScore']-b['mean'])/b['sd']+.5)))
     write(OUT/'calibration.json',dict(version=VERSION,formula='round(clamp(84.5 + 5 * (historicalScore - pooledRoleMean) / pooledRoleSD, 70, 99))',parameters=calibration,frozen2017Sha256=sha(ROOT/'src/data/worlds-2017.json')))
-    matrix=[dict(year=y,region=r,role=role,count=sum(p['worldsYear']==y and p['region']==r and p['role']==role for p in players)) for y in CONFIG for r in ['LCK','LPL','LEC','LCS'] for role in ROLES.values()]
+    matrix=[dict(year=y,region=r,role=role,count=sum(p['worldsYear']==y and p['region']==r and p['role']==role for p in players)) for y in CONFIG for r in sorted({p['region'] for p in players if p['worldsYear']==y}) for role in ROLES.values()]
     write(OUT/'eligibility.json',matrix)
     manifest=draft_region_manifest(players)
     assert all(len(group['canonicalRegions']) and all(sum(p['worldsYear']==entry['year'] and p['role']==role and (p.get('canonicalRegion') or p.get('historicalLeague') or p['region']) in group['canonicalRegions'] for p in players)>=3 for role in ROLES.values()) for entry in manifest['groups'] for group in entry['groups'])

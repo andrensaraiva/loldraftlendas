@@ -4,12 +4,14 @@
 
 ## Concepts
 
-- **Canonical region** is the historical competition stored on a player version: for example `LCK`, `LPL`, `EU LCS`, `LEC`, `NA LCS`, `LCS`, `CBLOL`, `LJL`, `VCS`, `PCS`, `LMS`, `OPL`, `LCO`, `LLA`, `TCL`, or `LCL`.
+- **Canonical region** is the historical competition stored on a player version: for example `LCK`, `LPL`, `EU LCS`, `LEC`, `NA LCS`, `LCS`, `LTA N`, `LTA S`, `LCP`, `CBLOL`, `LJL`, `VCS`, `PCS`, `LMS`, `OPL`, `LCO`, `LLA`, `TCL`, or `LCL`.
 - **Draft region group** is the label shown to players: Korea, China, Europe, North America, Other Regions, or the year-specific Europe + North America group.
 
 ## Generation Rule
 
 For each year, a group is valid only when every role has at least three unique eligible player versions. Korea and China remain independent when valid. Europe and North America remain independent only when both are valid; otherwise they are combined. Any other historical canonical region is assigned to Other Regions. A major group that is incomplete is also merged into Other Regions where possible.
+
+`LTA N` mantém a continuidade da família norte-americana; `LTA S` e `LCP` permanecem canônicas e entram em Outras Regiões. Assim, em 2025, os dois times da LTA Norte se combinam com a Europa, enquanto LCP + LTA Sul formam um quarto grupo elegível. Nenhuma liga é renomeada no registro histórico.
 
 The generated manifest must cover every canonical region available for the year and every declared group must remain role-valid. `scripts/data/validate_multi_era.py` enforces both conditions.
 

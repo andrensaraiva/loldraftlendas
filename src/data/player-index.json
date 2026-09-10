@@ -2728,5 +2728,485 @@
     "playerName": "CoreJJ",
     "worldsYear": 2024,
     "team": "TL"
+  },
+  {
+    "id": "kiin-2025-gen",
+    "playerName": "Kiin",
+    "worldsYear": 2025,
+    "team": "GEN"
+  },
+  {
+    "id": "canyon-2025-gen",
+    "playerName": "Canyon",
+    "worldsYear": 2025,
+    "team": "GEN"
+  },
+  {
+    "id": "chovy-2025-gen",
+    "playerName": "Chovy",
+    "worldsYear": 2025,
+    "team": "GEN"
+  },
+  {
+    "id": "ruler-2025-gen",
+    "playerName": "Ruler",
+    "worldsYear": 2025,
+    "team": "GEN"
+  },
+  {
+    "id": "duro-2025-gen",
+    "playerName": "Duro",
+    "worldsYear": 2025,
+    "team": "GEN"
+  },
+  {
+    "id": "zeus-2025-hle",
+    "playerName": "Zeus",
+    "worldsYear": 2025,
+    "team": "HLE"
+  },
+  {
+    "id": "peanut-2025-hle",
+    "playerName": "Peanut",
+    "worldsYear": 2025,
+    "team": "HLE"
+  },
+  {
+    "id": "zeka-2025-hle",
+    "playerName": "Zeka",
+    "worldsYear": 2025,
+    "team": "HLE"
+  },
+  {
+    "id": "viper-2025-hle",
+    "playerName": "Viper",
+    "worldsYear": 2025,
+    "team": "HLE"
+  },
+  {
+    "id": "delight-2025-hle",
+    "playerName": "Delight",
+    "worldsYear": 2025,
+    "team": "HLE"
+  },
+  {
+    "id": "perfect-2025-kt",
+    "playerName": "PerfecT",
+    "worldsYear": 2025,
+    "team": "KT"
+  },
+  {
+    "id": "cuzz-2025-kt",
+    "playerName": "Cuzz",
+    "worldsYear": 2025,
+    "team": "KT"
+  },
+  {
+    "id": "bdd-2025-kt",
+    "playerName": "Bdd",
+    "worldsYear": 2025,
+    "team": "KT"
+  },
+  {
+    "id": "deokdam-2025-kt",
+    "playerName": "deokdam",
+    "worldsYear": 2025,
+    "team": "KT"
+  },
+  {
+    "id": "peter-2025-kt",
+    "playerName": "Peter",
+    "worldsYear": 2025,
+    "team": "KT"
+  },
+  {
+    "id": "doran-2025-t1",
+    "playerName": "Doran",
+    "worldsYear": 2025,
+    "team": "T1"
+  },
+  {
+    "id": "oner-2025-t1",
+    "playerName": "Oner",
+    "worldsYear": 2025,
+    "team": "T1"
+  },
+  {
+    "id": "faker-2025-t1",
+    "playerName": "Faker",
+    "worldsYear": 2025,
+    "team": "T1"
+  },
+  {
+    "id": "gumayusi-2025-t1",
+    "playerName": "Gumayusi",
+    "worldsYear": 2025,
+    "team": "T1"
+  },
+  {
+    "id": "keria-2025-t1",
+    "playerName": "Keria",
+    "worldsYear": 2025,
+    "team": "T1"
+  },
+  {
+    "id": "flandre-2025-al",
+    "playerName": "Flandre",
+    "worldsYear": 2025,
+    "team": "AL"
+  },
+  {
+    "id": "tarzan-2025-al",
+    "playerName": "Tarzan",
+    "worldsYear": 2025,
+    "team": "AL"
+  },
+  {
+    "id": "shanks-2025-al",
+    "playerName": "Shanks",
+    "worldsYear": 2025,
+    "team": "AL"
+  },
+  {
+    "id": "hope-2025-al",
+    "playerName": "Hope",
+    "worldsYear": 2025,
+    "team": "AL"
+  },
+  {
+    "id": "kael-2025-al",
+    "playerName": "Kael",
+    "worldsYear": 2025,
+    "team": "AL"
+  },
+  {
+    "id": "bin-2025-blg",
+    "playerName": "Bin",
+    "worldsYear": 2025,
+    "team": "BLG"
+  },
+  {
+    "id": "shad0w-2025-blg",
+    "playerName": "Shad0w",
+    "worldsYear": 2025,
+    "team": "BLG"
+  },
+  {
+    "id": "knight-2025-blg",
+    "playerName": "Knight",
+    "worldsYear": 2025,
+    "team": "BLG"
+  },
+  {
+    "id": "elk-2025-blg",
+    "playerName": "Elk",
+    "worldsYear": 2025,
+    "team": "BLG"
+  },
+  {
+    "id": "on-2025-blg",
+    "playerName": "ON",
+    "worldsYear": 2025,
+    "team": "BLG"
+  },
+  {
+    "id": "369-2025-tes",
+    "playerName": "369",
+    "worldsYear": 2025,
+    "team": "TES"
+  },
+  {
+    "id": "kanavi-2025-tes",
+    "playerName": "Kanavi",
+    "worldsYear": 2025,
+    "team": "TES"
+  },
+  {
+    "id": "creme-2025-tes",
+    "playerName": "Creme",
+    "worldsYear": 2025,
+    "team": "TES"
+  },
+  {
+    "id": "jackeylove-2025-tes",
+    "playerName": "JackeyLove",
+    "worldsYear": 2025,
+    "team": "TES"
+  },
+  {
+    "id": "hang-2025-tes",
+    "playerName": "Hang",
+    "worldsYear": 2025,
+    "team": "TES"
+  },
+  {
+    "id": "brokenblade-2025-g2",
+    "playerName": "BrokenBlade",
+    "worldsYear": 2025,
+    "team": "G2"
+  },
+  {
+    "id": "skewmond-2025-g2",
+    "playerName": "SkewMond",
+    "worldsYear": 2025,
+    "team": "G2"
+  },
+  {
+    "id": "caps-2025-g2",
+    "playerName": "Caps",
+    "worldsYear": 2025,
+    "team": "G2"
+  },
+  {
+    "id": "hans sama-2025-g2",
+    "playerName": "Hans Sama",
+    "worldsYear": 2025,
+    "team": "G2"
+  },
+  {
+    "id": "labrov-2025-g2",
+    "playerName": "Labrov",
+    "worldsYear": 2025,
+    "team": "G2"
+  },
+  {
+    "id": "myrwn-2025-mkoi",
+    "playerName": "Myrwn",
+    "worldsYear": 2025,
+    "team": "MKOI"
+  },
+  {
+    "id": "elyoya-2025-mkoi",
+    "playerName": "Elyoya",
+    "worldsYear": 2025,
+    "team": "MKOI"
+  },
+  {
+    "id": "jojopyun-2025-mkoi",
+    "playerName": "Jojopyun",
+    "worldsYear": 2025,
+    "team": "MKOI"
+  },
+  {
+    "id": "supa-2025-mkoi",
+    "playerName": "Supa",
+    "worldsYear": 2025,
+    "team": "MKOI"
+  },
+  {
+    "id": "alvaro-2025-mkoi",
+    "playerName": "Alvaro",
+    "worldsYear": 2025,
+    "team": "MKOI"
+  },
+  {
+    "id": "oscarinin-2025-fnc",
+    "playerName": "Oscarinin",
+    "worldsYear": 2025,
+    "team": "FNC"
+  },
+  {
+    "id": "razork-2025-fnc",
+    "playerName": "Razork",
+    "worldsYear": 2025,
+    "team": "FNC"
+  },
+  {
+    "id": "poby-2025-fnc",
+    "playerName": "Poby",
+    "worldsYear": 2025,
+    "team": "FNC"
+  },
+  {
+    "id": "upset-2025-fnc",
+    "playerName": "Upset",
+    "worldsYear": 2025,
+    "team": "FNC"
+  },
+  {
+    "id": "mikyx-2025-fnc",
+    "playerName": "Mikyx",
+    "worldsYear": 2025,
+    "team": "FNC"
+  },
+  {
+    "id": "bwipo-2025-fly",
+    "playerName": "Bwipo",
+    "worldsYear": 2025,
+    "team": "FLY"
+  },
+  {
+    "id": "inspired-2025-fly",
+    "playerName": "Inspired",
+    "worldsYear": 2025,
+    "team": "FLY"
+  },
+  {
+    "id": "quad-2025-fly",
+    "playerName": "Quad",
+    "worldsYear": 2025,
+    "team": "FLY"
+  },
+  {
+    "id": "massu-2025-fly",
+    "playerName": "Massu",
+    "worldsYear": 2025,
+    "team": "FLY"
+  },
+  {
+    "id": "busio-2025-fly",
+    "playerName": "Busio",
+    "worldsYear": 2025,
+    "team": "FLY"
+  },
+  {
+    "id": "dhokla-2025-100t",
+    "playerName": "Dhokla",
+    "worldsYear": 2025,
+    "team": "100T"
+  },
+  {
+    "id": "river-2025-100t",
+    "playerName": "River",
+    "worldsYear": 2025,
+    "team": "100T"
+  },
+  {
+    "id": "quid-2025-100t",
+    "playerName": "Quid",
+    "worldsYear": 2025,
+    "team": "100T"
+  },
+  {
+    "id": "fbi-2025-100t",
+    "playerName": "FBI",
+    "worldsYear": 2025,
+    "team": "100T"
+  },
+  {
+    "id": "eyla-2025-100t",
+    "playerName": "Eyla",
+    "worldsYear": 2025,
+    "team": "100T"
+  },
+  {
+    "id": "boal-2025-vks",
+    "playerName": "Boal",
+    "worldsYear": 2025,
+    "team": "VKS"
+  },
+  {
+    "id": "disamis-2025-vks",
+    "playerName": "Disamis",
+    "worldsYear": 2025,
+    "team": "VKS"
+  },
+  {
+    "id": "mireu-2025-vks",
+    "playerName": "Mireu",
+    "worldsYear": 2025,
+    "team": "VKS"
+  },
+  {
+    "id": "morttheus-2025-vks",
+    "playerName": "Morttheus",
+    "worldsYear": 2025,
+    "team": "VKS"
+  },
+  {
+    "id": "trymbi-2025-vks",
+    "playerName": "Trymbi",
+    "worldsYear": 2025,
+    "team": "VKS"
+  },
+  {
+    "id": "rest-2025-cfo",
+    "playerName": "Rest",
+    "worldsYear": 2025,
+    "team": "CFO"
+  },
+  {
+    "id": "junjia-2025-cfo",
+    "playerName": "JunJia",
+    "worldsYear": 2025,
+    "team": "CFO"
+  },
+  {
+    "id": "hongq-2025-cfo",
+    "playerName": "HongQ",
+    "worldsYear": 2025,
+    "team": "CFO"
+  },
+  {
+    "id": "doggo-2025-cfo",
+    "playerName": "Doggo",
+    "worldsYear": 2025,
+    "team": "CFO"
+  },
+  {
+    "id": "kaiwing-2025-cfo",
+    "playerName": "Kaiwing",
+    "worldsYear": 2025,
+    "team": "CFO"
+  },
+  {
+    "id": "azhi-2025-psg",
+    "playerName": "Azhi",
+    "worldsYear": 2025,
+    "team": "PSG"
+  },
+  {
+    "id": "karsa-2025-psg",
+    "playerName": "Karsa",
+    "worldsYear": 2025,
+    "team": "PSG"
+  },
+  {
+    "id": "maple-2025-psg",
+    "playerName": "Maple",
+    "worldsYear": 2025,
+    "team": "PSG"
+  },
+  {
+    "id": "betty-2025-psg",
+    "playerName": "Betty",
+    "worldsYear": 2025,
+    "team": "PSG"
+  },
+  {
+    "id": "woody-2025-psg",
+    "playerName": "Woody",
+    "worldsYear": 2025,
+    "team": "PSG"
+  },
+  {
+    "id": "hiro02-2025-tsw",
+    "playerName": "Hiro02",
+    "worldsYear": 2025,
+    "team": "TSW"
+  },
+  {
+    "id": "hizto-2025-tsw",
+    "playerName": "Hizto",
+    "worldsYear": 2025,
+    "team": "TSW"
+  },
+  {
+    "id": "dire-2025-tsw",
+    "playerName": "Dire",
+    "worldsYear": 2025,
+    "team": "TSW"
+  },
+  {
+    "id": "eddie-2025-tsw",
+    "playerName": "Eddie",
+    "worldsYear": 2025,
+    "team": "TSW"
+  },
+  {
+    "id": "taki-2025-tsw",
+    "playerName": "Taki",
+    "worldsYear": 2025,
+    "team": "TSW"
   }
 ]

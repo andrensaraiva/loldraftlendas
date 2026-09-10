@@ -10,7 +10,8 @@ URLS={
 2020:'https://raw.githubusercontent.com/AdamLewis73/League-of-Legends-Stats-Analyzer/main/2020_LoL_esports_match_data_from_OraclesElixir_20210710.csv',
 2022:'https://raw.githubusercontent.com/twodotone/finalLOL/main/data/csv/2022_LoL_esports_match_data_from_OraclesElixir.csv',
 2023:'https://raw.githubusercontent.com/twodotone/finalLOL/main/data/csv/2023_LoL_esports_match_data_from_OraclesElixir.csv',
-2024:'https://drive.usercontent.google.com/download?id=1IjIEhLc9n8eLKeY-yh_YigKVWbhgGBsN&export=download&confirm=t'}
+2024:'https://drive.usercontent.google.com/download?id=1IjIEhLc9n8eLKeY-yh_YigKVWbhgGBsN&export=download&confirm=t',
+2025:'https://raw.githubusercontent.com/cbplexiglass/LoL-Esports-Regional-Analyses/main/2025_LoL_esports_match_data_from_OraclesElixir.csv'}
 def get(item):
     year,url=item;path=RAW/f'oe-{year}.csv'
     if not path.exists():
@@ -25,6 +26,6 @@ def get(item):
         if pinned: assert pinned['sha256']==digest,f'{year}: source hash changed; review before updating.'
     print(year,path.stat().st_size,digest,flush=True)
     direct=year==2024
-    return str(year),dict(url=url,sha256=digest,bytes=path.stat().st_size,publisher="Oracle's Elixir public Google Drive" if direct else "Oracle's Elixir; third-party public mirror",originalPublisher='https://lol.timsevenhuysen.com/matchdata/',accessedAt='2026-09-09' if direct else '2026-09-07',note='Public source is hash-pinned; normalized snapshots are committed and raw CSVs are ignored.' if direct else 'Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed.')
+    return str(year),dict(url=url,sha256=digest,bytes=path.stat().st_size,publisher="Oracle's Elixir public Google Drive" if direct else "Oracle's Elixir; third-party public mirror",originalPublisher='https://lol.timsevenhuysen.com/matchdata/',accessedAt='2026-09-10' if year==2025 else '2026-09-09' if direct else '2026-09-07',note="The publisher's public Drive file (ID 1v6LRphp2kYciU4SXp0PCjEMuev1bDejc; advertised as 79,169,638 bytes) was quota-limited. This 79,130,187-byte mirror is hash-pinned but not independently authenticated against that later Drive revision. Raw CSV ignored; normalized snapshots committed." if year==2025 else 'Public source is hash-pinned; normalized snapshots are committed and raw CSVs are ignored.' if direct else 'Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed.')
 with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:result=dict(pool.map(get,URLS.items()))
 (BASE/'downloads.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')

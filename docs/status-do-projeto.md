@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-10. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3, com a fundação da Fase 4 publicada no commit-base remoto `5ffe8ea` (`feat: add historical readiness inventory`) e a edição de 2024 integrada.
+Atualizado em 2026-09-10. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3, com a fundação da Fase 4 e a edição de 2024 publicadas. O commit-base remoto é `1a557dc` (`feat: add Worlds 2024 historical data`); a edição de 2025 está integrada neste checkpoint.
 
 ## Objetivo Preservado
 
@@ -77,13 +77,14 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
 - Relatório legível por ano, região, posição, assets, métricas ausentes e confiança em [historical-readiness-2011-2025.md](historical-readiness-2011-2025.md).
-- 2015, 2017, 2019, 2020, 2022, 2023 e 2024 atingem `VALIDATED`; os outros oito anos permanecem `INCOMPLETE` e nenhum ano é promovido automaticamente a `PRODUCTION_READY`.
+- 2015, 2017, 2019, 2020, 2022, 2023, 2024 e 2025 atingem `VALIDATED`; os outros sete anos permanecem `INCOMPLETE` e nenhum ano é promovido automaticamente a `PRODUCTION_READY`.
 - A edição de 2024 adiciona 65 versões de jogadores, 325 slots e 76 pares de assets. O recorte é o Main Event no patch 14.18, com 82 partidas; Europa e América do Norte formam um grupo de draft conjunto porque apenas duas equipes da LCS chegaram ao evento principal.
+- A edição de 2025 cobre os 16 times do Main Event no patch 15.20: 80 versões, 400 slots e 78 pares de assets. LCP e LTA Sul entram em Outras Regiões; LTA Norte preserva a continuidade norte-americana e se combina com a Europa por ter somente dois times.
 - Aprovações externas são registros manuais em [external-reviews.json](../data/research/multi-era/external-reviews.json) e exigem revisor, data e evidência.
 - O aviso vigente da Riot foi conferido na General Policy oficial, registrado no inventário e exibido no rodapé público. Isso não representa aconselhamento jurídico nem aprovação da Riot.
 - As partes específicas de League of Legends e os limites reais de reutilização do motor estão em [game-domain-boundaries.md](game-domain-boundaries.md).
 - A CI passa a rejeitar inventário ou relatório de readiness desatualizados.
-- Após a integração de 2024, o bundle inicial ficou em 325,90 kB (89,16 kB gzip), sem aviso de chunk acima de 500 kB.
+- Após a integração de 2025, o bundle inicial ficou em 335,07 kB (90,02 kB gzip), sem aviso de chunk acima de 500 kB.
 
 ## Estado de Validação
 
@@ -98,7 +99,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 455 jogadores, chunks anuais, índices compactos, 2.275 associações, 135 pools elegíveis, 1.036 assets históricos e 7 crosschecks de evento; 48 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 25 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
+Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 535 jogadores, chunks anuais, índices compactos, 2.675 associações, 155 pools elegíveis, 1.192 assets históricos e 8 crosschecks de evento; 54 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 25 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -117,11 +118,11 @@ O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions a
 
 ## Como Retomar
 
-### Próxima Entrega: Fase 4, Expansão da Pesquisa
+### Próxima Entrega: Fase 4, Backfill Histórico
 
-- Criar para 2025 o pacote completo de matches, rosters, evidências, normalização, cobertura e assets, sem ativá-lo no draft antes de todos os gates passarem.
+- Priorizar 2021 como próximo pacote completo de matches, rosters, evidências, normalização, cobertura e assets, sem ativá-lo no draft antes de todos os gates passarem.
 - Recalibrar toda a população ao adicionar uma edição e versionar o dataset; não misturar ratings produzidos por populações diferentes.
-- Submeter os sete anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
+- Submeter os oito anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
 
 ## Comandos de Trabalho
 

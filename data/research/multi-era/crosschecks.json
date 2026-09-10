@@ -113,5 +113,22 @@
     ],
     "sourceUrl": "https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202024/",
     "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
+    "year": 2025,
+    "worldsGames": 80,
+    "player": "Viper",
+    "observedKDA": [
+      62,
+      14,
+      51
+    ],
+    "independentKDA": [
+      62,
+      14,
+      51
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202025/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
   }
 ]

@@ -11,13 +11,15 @@ player_count=len(players);slot_count=sum(len(p['championPool']) for p in players
 pair_count=len({(p['worldsYear'],s['championId']) for p in players for s in p['championPool']})
 asset_count=len(asset_manifest['assets']);pool_count=sum(len(entry['groups'])*5 for entry in draft_manifest['groups'])
 team_count=player_count//5;event_count=len(CONFIG);slot_label=f'{slot_count:,}'.replace(',','.')
-lines=['# Draft Lendas — pesquisa, UX e balanceamento multi-era v1.1','',
+lines=['# Draft Lendas — pesquisa, UX e balanceamento multi-era v1.2','',
 f'A versão reúne {player_count} PlayerVersions reais, {slot_label} associações jogador–campeão e {pool_count} pools elegíveis. Foram executadas 100.000 campanhas em dez cenários e uma auditoria adicional de 10.000 drafts. A escolha estratégica e as trocas aumentam a chance de título; a LCK e a LPL continuam favorecidas. Este relatório não declara equilíbrio competitivo nem validação de diversão com pessoas reais.','',
 '## Escopo e cobertura','',
 '| Worlds | Patch | Jogos do evento principal | Jogadores jogáveis | Slots | Regiões |',
 '|---|---|---:|---:|---:|---|']
 for y,(_,games,patch,_) in CONFIG.items():
- ps=[p for p in players if p['worldsYear']==y];lines.append(f'| [{y}]({event_url(y)}) | {patch} | {games} | {len(ps)} | {len(ps)*5} | LCK, LPL, Europa, NA |')
+ ps=[p for p in players if p['worldsYear']==y]
+ regions=', '.join(sorted({p['canonicalRegion'] for p in ps}))
+ lines.append(f'| [{y}]({event_url(y)}) | {patch} | {games} | {len(ps)} | {len(ps)*5} | {regions} |')
 sources=Counter(s['source'] for p in players for s in p['championPool'])
 lines += ['',f"Slots: **{sources['WORLDS_DATA']} WORLDS_DATA** e **{sources['SEASON_DATA']} SEASON_DATA**. Nenhuma associação MOCK na produção. 2019 foi incluído porque a mesma importação cobriu o evento e a temporada sem um fluxo separado.",'',
 'São apenas participantes do evento principal: grupos até 2022, Suíço a partir de 2023. Play-ins não entram nos pools nem nas estatísticas do Worlds. Cada time contribui com o jogador que disputou mais jogos em cada posição. Empates usam ordem alfabética documentada, sem preferência por fama. Isso seleciona Acorn sobre Flame (3–3) em 2015 e Blaber sobre Svenskeren (3–3) em 2019.','',
@@ -28,8 +30,8 @@ for y in CONFIG:
  for p in read(OUT/f'rosters-{y}.json'):
   if not p['playable']:lines.append(f"| {y} | {p['player']} | {p['team']} | {p['role']} | {p['games']} |")
 lines += ['', '### Fontes e rastreabilidade','',
-'O produtor estatístico principal é [Oracle’s Elixir / Tim Sevenhuysen](https://lol.timsevenhuysen.com/matchdata/). CSVs anuais foram obtidos de espelhos públicos; os arquivos e suas origens estão fixados por SHA-256 em [downloads.json](../data/research/multi-era/downloads.json). A atribuição não autentica independentemente os espelhos. A distribuição antiga por Drive atingiu a cota pública e não foi contornada.','',
-'Espelhos: [2015/2019 — competitive-league-analysis](https://github.com/victoraccete/competitive-league-analysis/tree/master/original_data), [2020 — League-of-Legends-Stats-Analyzer](https://github.com/AdamLewis73/League-of-Legends-Stats-Analyzer), [2022/2023 — finalLOL](https://github.com/twodotone/finalLOL/tree/main/data/csv). Para 2017, a fonte e o snapshot congelados continuam disponíveis em `data/research/worlds-2017/`.','',
+'O produtor estatístico principal é [Oracle’s Elixir / Tim Sevenhuysen](https://lol.timsevenhuysen.com/matchdata/). Os arquivos e suas origens estão fixados por SHA-256 em [downloads.json](../data/research/multi-era/downloads.json). O CSV de 2024 veio da pasta pública do produtor; os demais anos não congelados usam espelhos públicos cuja atribuição não foi autenticada linha a linha. Em 2025, a cópia do Drive estava bloqueada por cota e anunciava 79.169.638 bytes, enquanto o espelho disponível tem 79.130.187 bytes; a diferença e os hashes permanecem explícitos, sem alegação de identidade com a revisão posterior.','',
+'Espelhos: [2015/2019 — competitive-league-analysis](https://github.com/victoraccete/competitive-league-analysis/tree/master/original_data), [2020 — League-of-Legends-Stats-Analyzer](https://github.com/AdamLewis73/League-of-Legends-Stats-Analyzer), [2022/2023 — finalLOL](https://github.com/twodotone/finalLOL/tree/main/data/csv) e [2025 — LoL-Esports-Regional-Analyses](https://github.com/cbplexiglass/LoL-Esports-Regional-Analyses). Para 2017, a fonte e o snapshot congelados continuam disponíveis em `data/research/worlds-2017/`.','',
 f'Cada slot aponta para uma evidência com jogo(s), linha(s) da fonte, evento, métricas, confiança e fórmula. `matches-{{year}}.json` contém o recorte normalizado necessário para reconstrução offline; `normalization-{{year}}.json` guarda baselines e ajustes por campeão. `rosters-{{year}}.json` documenta titulares, reservas e nomes de época. As contagens dos {event_count} eventos e um agregado por edição foram conferidos com Games of Legends, registrados em `crosschecks.json`; isso não equivale a uma segunda verificação independente de cada partida.','',
 '### Cinco exceções de cobertura de 2015','',
 'A planilha OE não cobre a temporada chinesa de 2015. Cinco slots foram completados com observações públicas do Games of Legends: **AmazingJ–Shen, Zz1tai–Maokai, Kid–Vayne, Acorn–Shen e Acorn–Maokai**. [O suplemento](../data/research/multi-era/season-supplement-2015.json) contém as URLs, o escopo, as contagens e as limitações.','',
@@ -72,7 +74,7 @@ lines += ['', f'A diferença entre as médias anuais BO5 é de aproximadamente {
 for d in sorted(sim['dominance'],key=lambda d:-d['crossEra'])[:10]:lines.append(f"| {d['id']} | {len(d['withinPool'])} | {d['crossEra']} |")
 lines += ['', 'Casos como Uzi 2019 e Canyon 2020 tornam algumas ofertas fáceis de otimizar por rating. Os IDs dominados estão no JSON completo, assim como contagens de oferta/escolha por jogador, distribuições de força, composição e rating por role para cada política.','',
 '### Rejeições e escolhas com três trocas','', '| Região | Ofertas rejeitadas | Jogadores escolhidos |','|---|---:|---:|']
-for region in ['LCK','LPL','LEC','LCS']:lines.append(f"| {region} | {rr['rejectRegions'].get(region,0)} | {rr['regionPicks'].get(region,0)} |")
+for region in sorted(set(rr['rejectRegions'])|set(rr['regionPicks'])):lines.append(f"| {region} | {rr['rejectRegions'].get(region,0)} | {rr['regionPicks'].get(region,0)} |")
 lines += ['', '| Ano | Ofertas rejeitadas | Jogadores escolhidos |','|---|---:|---:|']
 for year in CONFIG:lines.append(f"| {year} | {rr['rejectYears'].get(str(year),0)} | {rr['yearPicks'].get(str(year),0)} |")
 lines += ['',f"Trocas por tipo: {rr['exchangesByKind']}. Os totais de rejeição de jogadores contam as três pessoas presentes em cada oferta rejeitada, não decisões explícitas sobre cada pessoa.",'',
