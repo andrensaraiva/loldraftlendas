@@ -4,6 +4,8 @@ Protótipo jogável em português inspirado na referência visual: fundo claro, 
 
 Pesquisa e implementação atual: **[Multi-era v1: dados, UX e 100.000 campanhas](docs/multi-era-balance-v1.md)**.
 
+Cobertura honesta de 2011–2025: **[inventário de readiness histórico](docs/historical-readiness-2011-2025.md)**. Apenas 2015, 2017, 2019, 2020, 2022 e 2023 estão validados; os demais anos continuam explicitamente incompletos e nenhum ano é marcado como pronto para produção sem revisão externa registrada.
+
 Admin privado e configuração: [guia de setup do Supabase](docs/admin-setup.md).
 
 Telemetria anônima e feedback: [política e contrato de dados](docs/analytics-privacy.md).
@@ -124,6 +126,8 @@ npm run data:multi:validate  # 1.950 associações, calibração e 884 assets
 npm run data:multi:simulate  # 100.000 campanhas + 10.000 drafts de diversidade
 npm run data:multi:reproduce # Reconstrução byte a byte
 npm run data:multi:report    # Relatório multi-era a partir das medições
+npm run data:readiness:build # Regera o inventário de cobertura 2011–2025
+npm run data:readiness:validate # Falha se inventário ou relatório estiverem desatualizados
 ```
 
 Para baixar os CSVs de pesquisa: `npm run data:multi:download`. Para inspecionar um lote: `python scripts/data/build_multi_era.py --snapshot --year 2020 --region LPL`. O preview não substitui a produção. O limite de trocas fica em `DRAFT_CONFIG.exchanges`; a simulação aceita `DRAFT_SAMPLES` e `EXCHANGE_GAIN_THRESHOLD`.

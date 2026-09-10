@@ -1,0 +1,1281 @@
+{
+  "schemaVersion": "historical-readiness-v1.0.0",
+  "range": {
+    "firstYear": 2011,
+    "lastYear": 2025
+  },
+  "statusOrder": [
+    "INCOMPLETE",
+    "RESEARCHED",
+    "VALIDATED",
+    "PRODUCTION_READY"
+  ],
+  "statusDefinitions": {
+    "INCOMPLETE": "Não existe um pacote local completo de pesquisa.",
+    "RESEARCHED": "Há artefatos de pesquisa, mas um ou mais gates de validação falham.",
+    "VALIDATED": "Validação local determinística, evidências, pools e assets passam.",
+    "PRODUCTION_READY": "Validado e aprovado por uma revisão externa independente documentada."
+  },
+  "legalNotice": {
+    "text": "Draft Lendas isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.",
+    "source": "https://developer.riotgames.com/policies/general",
+    "sourceLastUpdated": "2025-05-29",
+    "verifiedOn": "2026-09-09",
+    "visibleIn": "src/App.tsx",
+    "note": "Policy verification is not legal advice or Riot approval of this project."
+  },
+  "provenance": {
+    "statistics": "Oracle's Elixir data from pinned public mirrors; hashes and limitations are recorded in downloads.json.",
+    "crosschecks": "Games of Legends event totals and one aggregate per edition; not row-by-row independent verification.",
+    "assets": "Versioned Riot Games Data Dragon archives with local-file SHA-256 verification.",
+    "method": "scripts/data/build_multi_era.py and scripts/data/validate_multi_era.py",
+    "externalReviews": "data/research/multi-era/external-reviews.json; manual records are never generated automatically."
+  },
+  "years": [
+    {
+      "year": 2011,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2011.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2011.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2011.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2011.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2011.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2012,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2012.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2012.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2012.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2012.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2012.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2013,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2013.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2013.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2013.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2013.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2013.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2014,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2014.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2014.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2014.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2014.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2014.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2015,
+      "status": "VALIDATED",
+      "players": 60,
+      "slots": 300,
+      "regions": {
+        "LCK": 15,
+        "LCS": 15,
+        "LEC": 15,
+        "LPL": 15
+      },
+      "roles": {
+        "TOP": 12,
+        "JUNGLE": 12,
+        "MID": 12,
+        "ADC": 12,
+        "SUPPORT": 12
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LCS": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LEC": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LPL": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        }
+      },
+      "confidence": {
+        "minimum": 0,
+        "median": 0.285714,
+        "mean": 0.266341,
+        "maximum": 0.583333,
+        "zeroConfidenceSlots": 5
+      },
+      "assets": {
+        "requiredPairs": 69,
+        "completePairs": 69,
+        "complete": true
+      },
+      "eligiblePools": 20,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": true,
+          "path": "data/research/multi-era/matches-2015.json",
+          "sha256": "fcd9dcfbb8feaba30b45a59554869ec9c05bbbcfbe5609173d233142e84c24d6"
+        },
+        "evidence": {
+          "present": true,
+          "path": "data/research/multi-era/evidence-2015.json",
+          "sha256": "52c1614f254105b5f9d26fbe073abc28df403b084285f250ee2467b888a0e392"
+        },
+        "rosters": {
+          "present": true,
+          "path": "data/research/multi-era/rosters-2015.json",
+          "sha256": "a2ebd507ef2ea67c97ae3d6a26a765730fe38a0b26445a397a649a17fa1d5039"
+        },
+        "normalization": {
+          "present": true,
+          "path": "data/research/multi-era/normalization-2015.json",
+          "sha256": "8cd873cedfe9f86b498a0973a1045ea0328309e316a4c136bef868a392cf82c6"
+        },
+        "coverage": {
+          "present": true,
+          "path": "data/research/multi-era/coverage-2015.json",
+          "sha256": "334e8196070747cfcee0650eeb2c36015ee89154006a8037a37a90a3602c0519"
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
+    },
+    {
+      "year": 2016,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2016.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2016.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2016.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2016.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2016.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2017,
+      "status": "VALIDATED",
+      "players": 60,
+      "slots": 300,
+      "regions": {
+        "LCK": 15,
+        "LCS": 15,
+        "LEC": 15,
+        "LPL": 15
+      },
+      "roles": {
+        "TOP": 12,
+        "JUNGLE": 12,
+        "MID": 12,
+        "ADC": 12,
+        "SUPPORT": 12
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LCS": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LEC": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LPL": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        }
+      },
+      "confidence": {
+        "minimum": 0.166667,
+        "median": 0.285714,
+        "mean": 0.301582,
+        "maximum": 0.642857,
+        "zeroConfidenceSlots": 0
+      },
+      "assets": {
+        "requiredPairs": 64,
+        "completePairs": 64,
+        "complete": true
+      },
+      "eligiblePools": 20,
+      "missingMetrics": {
+        "dpm": 20,
+        "damageshare": 20,
+        "golddiffat15": 3450,
+        "csdiffat15": 3450,
+        "xpdiffat15": 3450,
+        "wpm": 20,
+        "wcpm": 20
+      },
+      "researchArtifacts": {
+        "matches": {
+          "present": true,
+          "path": "data/research/multi-era/matches-2017.json",
+          "sha256": "d123cac0c689874b32c1640d9d31d62df9b57ab5de02d56207bc8c0a7656ef3d"
+        },
+        "evidence": {
+          "present": true,
+          "path": "data/research/multi-era/evidence-2017.json",
+          "sha256": "6e238f3a93c417d5acb2040846c71bc02066aa4c8a5b615e181b192c5c7a15ef"
+        },
+        "rosters": {
+          "present": true,
+          "path": "data/research/multi-era/rosters-2017.json",
+          "sha256": "a03b78e6655b779982c488c5eb7fafadb7fc6ff2151ef0214dabb9f3a1298061"
+        },
+        "normalization": {
+          "present": true,
+          "path": "data/research/multi-era/normalization-2017.json",
+          "sha256": "7c031b6a3bb4048f60b51b7822d18fc4e71385224ea0e097c4ec488394a443be"
+        },
+        "coverage": {
+          "present": true,
+          "path": "data/research/multi-era/coverage-2017.json",
+          "sha256": "df8aec37b3f6ec19f0ded78be3ea63be018594f1fc0cf04d7b1ad11c5530ab0f"
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
+    },
+    {
+      "year": 2018,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2018.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2018.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2018.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2018.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2018.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2019,
+      "status": "VALIDATED",
+      "players": 60,
+      "slots": 300,
+      "regions": {
+        "LCK": 15,
+        "LCS": 15,
+        "LEC": 15,
+        "LPL": 15
+      },
+      "roles": {
+        "TOP": 12,
+        "JUNGLE": 12,
+        "MID": 12,
+        "ADC": 12,
+        "SUPPORT": 12
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LCS": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LEC": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LPL": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        }
+      },
+      "confidence": {
+        "minimum": 0.108333,
+        "median": 0.285714,
+        "mean": 0.276696,
+        "maximum": 0.545455,
+        "zeroConfidenceSlots": 0
+      },
+      "assets": {
+        "requiredPairs": 75,
+        "completePairs": 75,
+        "complete": true
+      },
+      "eligiblePools": 20,
+      "missingMetrics": {
+        "golddiffat15": 220,
+        "csdiffat15": 220,
+        "xpdiffat15": 220
+      },
+      "researchArtifacts": {
+        "matches": {
+          "present": true,
+          "path": "data/research/multi-era/matches-2019.json",
+          "sha256": "a59a22438e37a377056d967b418bc6accf0c6d9417db769f97128a52e4e35506"
+        },
+        "evidence": {
+          "present": true,
+          "path": "data/research/multi-era/evidence-2019.json",
+          "sha256": "b92244e82c9aeb4a1eb2351c7d56f01b2d0f0475fc3a307cea060981d43bcd1e"
+        },
+        "rosters": {
+          "present": true,
+          "path": "data/research/multi-era/rosters-2019.json",
+          "sha256": "642f0e440eb5bfbfc7784508eafe7d8bf445e510b2f2bc82748d646153cc642a"
+        },
+        "normalization": {
+          "present": true,
+          "path": "data/research/multi-era/normalization-2019.json",
+          "sha256": "e826057a978d5d4d55e86dbee46835fcae6e051e4270c20287c581fcc0057d2e"
+        },
+        "coverage": {
+          "present": true,
+          "path": "data/research/multi-era/coverage-2019.json",
+          "sha256": "b1dc47a9ecf876f62535f81941df68aef64f50d44718c11bb50a1836c9dca6b4"
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
+    },
+    {
+      "year": 2020,
+      "status": "VALIDATED",
+      "players": 65,
+      "slots": 325,
+      "regions": {
+        "LCK": 15,
+        "LCS": 15,
+        "LEC": 15,
+        "LPL": 20
+      },
+      "roles": {
+        "TOP": 13,
+        "JUNGLE": 13,
+        "MID": 13,
+        "ADC": 13,
+        "SUPPORT": 13
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LCS": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LEC": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LPL": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        }
+      },
+      "confidence": {
+        "minimum": 0.166667,
+        "median": 0.285714,
+        "mean": 0.277146,
+        "maximum": 0.6875,
+        "zeroConfidenceSlots": 0
+      },
+      "assets": {
+        "requiredPairs": 73,
+        "completePairs": 73,
+        "complete": true
+      },
+      "eligiblePools": 20,
+      "missingMetrics": {
+        "golddiffat15": 40,
+        "csdiffat15": 40,
+        "xpdiffat15": 40
+      },
+      "researchArtifacts": {
+        "matches": {
+          "present": true,
+          "path": "data/research/multi-era/matches-2020.json",
+          "sha256": "c711cf58747f0da377550e947b1344acd77af651c29555944b515633d35c8f51"
+        },
+        "evidence": {
+          "present": true,
+          "path": "data/research/multi-era/evidence-2020.json",
+          "sha256": "5d818f3fa9f2f5c32b0842b8f4f9257da8d8a11c6a7402a07b55c95c5f2c2a97"
+        },
+        "rosters": {
+          "present": true,
+          "path": "data/research/multi-era/rosters-2020.json",
+          "sha256": "ca064d6d347e3048bc80e9438721970013edde0fe27224cc60e28130b27f8aaa"
+        },
+        "normalization": {
+          "present": true,
+          "path": "data/research/multi-era/normalization-2020.json",
+          "sha256": "fe9d1446c78be85b94496c9beb74d65aabb926f7b822029f8df261f71431a1c9"
+        },
+        "coverage": {
+          "present": true,
+          "path": "data/research/multi-era/coverage-2020.json",
+          "sha256": "4727992bc223f1dded5ee7785fd10fea0ad5e4d0c42e11c4e1a5b131c3ded276"
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
+    },
+    {
+      "year": 2021,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2021.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2021.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2021.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2021.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2021.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2022,
+      "status": "VALIDATED",
+      "players": 70,
+      "slots": 350,
+      "regions": {
+        "LCK": 20,
+        "LCS": 15,
+        "LEC": 15,
+        "LPL": 20
+      },
+      "roles": {
+        "TOP": 14,
+        "JUNGLE": 14,
+        "MID": 14,
+        "ADC": 14,
+        "SUPPORT": 14
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        },
+        "LCS": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LEC": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LPL": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        }
+      },
+      "confidence": {
+        "minimum": 0.166667,
+        "median": 0.285714,
+        "mean": 0.273165,
+        "maximum": 0.642857,
+        "zeroConfidenceSlots": 0
+      },
+      "assets": {
+        "requiredPairs": 83,
+        "completePairs": 83,
+        "complete": true
+      },
+      "eligiblePools": 20,
+      "missingMetrics": {
+        "golddiffat15": 7860,
+        "csdiffat15": 7860,
+        "xpdiffat15": 7860
+      },
+      "researchArtifacts": {
+        "matches": {
+          "present": true,
+          "path": "data/research/multi-era/matches-2022.json",
+          "sha256": "d01c0582e4a05a11cfa4645da9b404451a072a4902b1f8444c314a80e04730dd"
+        },
+        "evidence": {
+          "present": true,
+          "path": "data/research/multi-era/evidence-2022.json",
+          "sha256": "03296132e5b42f74858a1eeb584cf9e65a53b657de11b7177d606324fa6a5826"
+        },
+        "rosters": {
+          "present": true,
+          "path": "data/research/multi-era/rosters-2022.json",
+          "sha256": "27a24faec8f8e972620f196c3c0f7f6e338327524889236449e3dfab2f7bfdc9"
+        },
+        "normalization": {
+          "present": true,
+          "path": "data/research/multi-era/normalization-2022.json",
+          "sha256": "1edc76d821075dab390f504a55b3bf0d6430b54154039c8d786ce458f9358119"
+        },
+        "coverage": {
+          "present": true,
+          "path": "data/research/multi-era/coverage-2022.json",
+          "sha256": "6a824317e69282ce03e8c374cf22effc15ce599cbf3dd95bafb49d4eb88ba4f4"
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
+    },
+    {
+      "year": 2023,
+      "status": "VALIDATED",
+      "players": 75,
+      "slots": 375,
+      "regions": {
+        "LCK": 20,
+        "LCS": 15,
+        "LEC": 20,
+        "LPL": 20
+      },
+      "roles": {
+        "TOP": 15,
+        "JUNGLE": 15,
+        "MID": 15,
+        "ADC": 15,
+        "SUPPORT": 15
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        },
+        "LCS": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LEC": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        },
+        "LPL": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        }
+      },
+      "confidence": {
+        "minimum": 0.166667,
+        "median": 0.285714,
+        "mean": 0.264872,
+        "maximum": 0.615385,
+        "zeroConfidenceSlots": 0
+      },
+      "assets": {
+        "requiredPairs": 78,
+        "completePairs": 78,
+        "complete": true
+      },
+      "eligiblePools": 20,
+      "missingMetrics": {
+        "golddiffat15": 7560,
+        "csdiffat15": 7560,
+        "xpdiffat15": 7560
+      },
+      "researchArtifacts": {
+        "matches": {
+          "present": true,
+          "path": "data/research/multi-era/matches-2023.json",
+          "sha256": "229618d54a08c389abb2b228eef706de783061d6e87cabbcb6988322998d3a1a"
+        },
+        "evidence": {
+          "present": true,
+          "path": "data/research/multi-era/evidence-2023.json",
+          "sha256": "416dd14d48919a83071e5ee925391b3e1947a0d8300e74f5b7f8262a98458cc5"
+        },
+        "rosters": {
+          "present": true,
+          "path": "data/research/multi-era/rosters-2023.json",
+          "sha256": "8bd7cf026ad718be5564cc608d90613746746834e7e010fe6a1b7981292c0be2"
+        },
+        "normalization": {
+          "present": true,
+          "path": "data/research/multi-era/normalization-2023.json",
+          "sha256": "61442adf4e009bdfd1f70daafb6350cd1d2c089fd9a4ccb388e62a51431e2472"
+        },
+        "coverage": {
+          "present": true,
+          "path": "data/research/multi-era/coverage-2023.json",
+          "sha256": "ba7dfdfc532fb64b85aa881a28f194eafeee733e88c824ee1f57aef54dad6225"
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
+    },
+    {
+      "year": 2024,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2024.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2024.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2024.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2024.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2024.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    },
+    {
+      "year": 2025,
+      "status": "INCOMPLETE",
+      "players": 0,
+      "slots": 0,
+      "regions": {},
+      "roles": {},
+      "regionRoleMatrix": {},
+      "confidence": null,
+      "assets": {
+        "requiredPairs": 0,
+        "completePairs": 0,
+        "complete": false
+      },
+      "eligiblePools": 0,
+      "missingMetrics": {},
+      "researchArtifacts": {
+        "matches": {
+          "present": false,
+          "path": "data/research/multi-era/matches-2025.json",
+          "sha256": null
+        },
+        "evidence": {
+          "present": false,
+          "path": "data/research/multi-era/evidence-2025.json",
+          "sha256": null
+        },
+        "rosters": {
+          "present": false,
+          "path": "data/research/multi-era/rosters-2025.json",
+          "sha256": null
+        },
+        "normalization": {
+          "present": false,
+          "path": "data/research/multi-era/normalization-2025.json",
+          "sha256": null
+        },
+        "coverage": {
+          "present": false,
+          "path": "data/research/multi-era/coverage-2025.json",
+          "sha256": null
+        }
+      },
+      "validationGates": {
+        "researchArtifactsComplete": false,
+        "productionSnapshotMatchesCoverage": false,
+        "fiveDistinctSlotsPerPlayer": false,
+        "evidenceLinked": false,
+        "assetsComplete": false,
+        "draftPoolsEligible": false
+      },
+      "productionGates": {
+        "legalNoticeVisible": true,
+        "externalReviewApproved": false
+      },
+      "externalReview": {
+        "status": "PENDING",
+        "reviewer": null,
+        "reviewedOn": null,
+        "evidence": null
+      },
+      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+    }
+  ]
+}

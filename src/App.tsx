@@ -1577,6 +1577,13 @@ export default function App() {
             <CircleHelp size={14} />
           </button>
         </span>
+        <p className="riot-disclaimer">
+          Draft Lendas isn't endorsed by Riot Games and doesn't reflect the views or opinions of
+          Riot Games or anyone officially involved in producing or managing Riot Games properties.
+          Riot Games, and all associated properties are trademarks or registered trademarks of Riot
+          Games, Inc.{' '}
+          <a href="https://developer.riotgames.com/policies/general">Política oficial</a>.
+        </p>
       </footer>
       {help && (
         <HowTo

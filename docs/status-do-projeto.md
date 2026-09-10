@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-09. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3. O commit-base remoto é `110c43c` (`docs: add project handoff status`).
+Atualizado em 2026-09-09. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3, com a fundação da Fase 4 em andamento. O commit-base remoto é `d436bf6` (`feat: optimize loading and production readiness`).
 
 ## Objetivo Preservado
 
@@ -73,6 +73,17 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - Novos testes E2E cobrem teclado, metadados, redução de movimento, alvos de toque e carregamento progressivo dos dados.
 - Após as mudanças de SEO e resiliência, o bundle inicial ficou em 316,66 kB (88,15 kB gzip), ainda sem aviso de chunk acima de 500 kB.
 
+### Fase 4: Fundação de Cobertura Histórica e Readiness
+
+- Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
+- Relatório legível por ano, região, posição, assets, métricas ausentes e confiança em [historical-readiness-2011-2025.md](historical-readiness-2011-2025.md).
+- Apenas 2015, 2017, 2019, 2020, 2022 e 2023 atingem `VALIDATED`; os outros nove anos permanecem `INCOMPLETE` e nenhum ano é promovido automaticamente a `PRODUCTION_READY`.
+- Aprovações externas são registros manuais em [external-reviews.json](../data/research/multi-era/external-reviews.json) e exigem revisor, data e evidência.
+- O aviso vigente da Riot foi conferido na General Policy oficial, registrado no inventário e exibido no rodapé público. Isso não representa aconselhamento jurídico nem aprovação da Riot.
+- As partes específicas de League of Legends e os limites reais de reutilização do motor estão em [game-domain-boundaries.md](game-domain-boundaries.md).
+- A CI passa a rejeitar inventário ou relatório de readiness desatualizados.
+- Com o aviso legal visível, o bundle inicial atual ficou em 317,11 kB (88,37 kB gzip), sem aviso de chunk acima de 500 kB.
+
 ## Estado de Validação
 
 Executados com sucesso neste ponto:
@@ -86,7 +97,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 390 jogadores, chunks anuais, índices compactos, 1.950 associações, 120 pools elegíveis e 884 assets históricos; 23 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
+Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 390 jogadores, chunks anuais, índices compactos, 1.950 associações, 120 pools elegíveis e 884 assets históricos; o inventário de readiness 2011–2025 está reproduzível; 25 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -105,13 +116,12 @@ O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions a
 
 ## Como Retomar
 
-### Próxima Entrega: Fase 4, Cobertura Histórica e Readiness
+### Próxima Entrega: Fase 4, Expansão da Pesquisa
 
-- Estados de cobertura por ano entre 2011 e 2025: `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
-- Relatórios por ano, região, posição, assets e confiança, sem alegar completude que ainda não exista.
-- Documentação de proveniência, readiness de produção e revisão externa.
-- Adicionar o boilerplate de disclaimer vigente da Riot somente após conferir a fonte oficial atual.
-- Isolar e documentar as partes específicas de League of Legends sem reescrever o motor para outro jogo.
+- Selecionar uma edição ainda `INCOMPLETE` e criar o pacote completo de matches, rosters, evidências, normalização, cobertura e assets.
+- Priorizar 2024 e 2025 pela continuidade com o pipeline atual, sem ativá-los no draft antes de todos os gates passarem.
+- Recalibrar toda a população ao adicionar uma edição e versionar o dataset; não misturar ratings produzidos por populações diferentes.
+- Submeter os seis anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
 
 ## Comandos de Trabalho
 
@@ -139,4 +149,4 @@ npm.cmd run dev
 - O modo demo não autentica, não envia requests e não preserva métricas, feedback ou configurações.
 - A fase Suíça é a regra da campanha, não uma tabela histórica completa de todas as equipes.
 - Dados remotos de jogadores não foram migrados para Supabase; o jogo continua consumindo o snapshot local pesquisado.
-- Não iniciar a Fase 4 sem nova aprovação explícita.
+- Não marcar um ano como `PRODUCTION_READY` nem habilitar um ano novo no draft sem todos os gates e a revisão exigida.

@@ -19,7 +19,9 @@
     "data:multi:validate": "python scripts/data/validate_multi_era.py",
     "data:multi:simulate": "node scripts/data/simulate-multi-era.mjs",
     "data:multi:report": "python scripts/data/write_multi_report.py",
-    "data:multi:reproduce": "python scripts/data/verify_multi_reproducibility.py"
+    "data:multi:reproduce": "python scripts/data/verify_multi_reproducibility.py",
+    "data:readiness:build": "python scripts/data/build_readiness.py",
+    "data:readiness:validate": "python scripts/data/build_readiness.py --check"
   },
   "keywords": [],
   "author": "",

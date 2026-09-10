@@ -45,6 +45,9 @@ jobs:
       - name: Validate historical data
         run: npm run data:multi:validate
 
+      - name: Validate historical readiness inventory
+        run: npm run data:readiness:validate
+
       - name: Production build
         run: npm run build
 

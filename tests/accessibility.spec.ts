@@ -34,6 +34,17 @@ test('metadata is indexable only on the public route', async ({ page }) => {
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
 });
 
+test('the current Riot legal notice is visible from the public route', async ({ page }) => {
+  await page.goto('/');
+
+  const footer = page.locator('footer');
+  await expect(footer).toContainText("Draft Lendas isn't endorsed by Riot Games");
+  await expect(footer.getByRole('link', { name: 'Política oficial' })).toHaveAttribute(
+    'href',
+    'https://developer.riotgames.com/policies/general',
+  );
+});
+
 test('reduced-motion users do not receive card animations', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.addInitScript(() => {

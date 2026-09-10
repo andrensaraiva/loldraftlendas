@@ -1,0 +1,5 @@
+{
+  "schemaVersion": "historical-external-reviews-v1.0.0",
+  "instructions": "Records are manual. APPROVED requires reviewer, reviewedOn and an evidence path or URL. The readiness generator never creates approvals.",
+  "reviews": {}
+}

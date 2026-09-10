@@ -226,9 +226,11 @@ main > section {
   min-height: 91px;
   border-top: 1px solid var(--line);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  padding: 16px 0;
   font-size: 8px;
   font-weight: 700;
   letter-spacing: 0.9px;
@@ -244,6 +246,20 @@ main > section {
   padding: 4px;
   color: #7b8274;
   display: flex;
+}
+.riot-disclaimer {
+  flex-basis: 100%;
+  margin: 0;
+  max-width: 980px;
+  color: #666d65;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 1.45;
+}
+.riot-disclaimer a {
+  color: inherit;
+  font-weight: 700;
 }
 .footer-dot {
   color: #a3b194;
