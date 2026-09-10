@@ -10,8 +10,8 @@ from build_worlds_2017 import ROOT, ROLES, NUMBERS, METRICS, WEIGHTS, aggregate,
 
 OUT = ROOT/'data/research/multi-era'
 RAW = OUT/'raw'
-VERSION = 'multi-era-v1.0.0'
-DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.0.0'
+VERSION = 'multi-era-v1.1.0'
+DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.1.0'
 CONFIG = {
  2015: ('10-01', 73, '5.18.1', {'LCK':['SK Telecom T1','ROX Tigers','KT Rolster'], 'LPL':['EDward Gaming','Invictus Gaming','LGD Gaming'], 'EU LCS':['Fnatic','Origen','H2k-Gaming'], 'NA LCS':['Cloud9','Counter Logic Gaming','Team SoloMid']}),
  2017: ('10-05', 80, '7.18.1', {'LCK':['SK Telecom T1','Samsung Galaxy','Longzhu Gaming'], 'LPL':['Royal Never Give Up','Team WE','EDward Gaming'], 'EU LCS':['Fnatic','G2 Esports','Misfits Gaming'], 'NA LCS':['Cloud9','Team SoloMid','Immortals']}),
@@ -19,8 +19,9 @@ CONFIG = {
  2020: ('10-03', 76, '10.19.1', {'LCK':['DAMWON Gaming','DRX','Gen.G'], 'LPL':['Top Esports','JD Gaming','Suning','LGD Gaming'], 'LEC':['G2 Esports','Fnatic','Rogue'], 'LCS':['Team SoloMid','Team Liquid','FlyQuest']}),
  2022: ('10-07', 80, '12.18.1', {'LCK':['Gen.G','T1','Dplus Kia','DRX'], 'LPL':['JD Gaming','Top Esports','EDward Gaming','Royal Never Give Up'], 'LEC':['Rogue','G2 Esports','Fnatic'], 'LCS':['Cloud9','100 Thieves','Evil Geniuses']}),
  2023: ('10-19', 79, '13.19.1', {'LCK':['Gen.G','T1','KT Rolster','Dplus Kia'], 'LPL':['JD Gaming','Bilibili Gaming','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI','Team BDS'], 'LCS':['NRG','Cloud9','Team Liquid']}),
+ 2024: ('10-03', 82, '14.18.1', {'LCK':['Hanwha Life Esports','Gen.G','Dplus Kia','T1'], 'LPL':['Bilibili Gaming','Top Esports','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI'], 'LCS':['FlyQuest','Team Liquid']}),
 }
-SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions KOI':'MAD','Team BDS':'BDS'}
+SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE'}
 ALIASES = {(2015,'ROX Tigers'):'KOO Tigers', (2022,'Dplus Kia'):'DWG KIA', (2023,'MAD Lions KOI'):'MAD Lions'}
 
 def ingest(year, snapshot):
@@ -151,7 +152,7 @@ def build_year(year, snapshot=False):
     return players
 
 def event_url(year):
-    event=f'Worlds%20Main%20Event%20{year}' if year==2023 else f'World%20Championship%20{year}'
+    event=f'Worlds%20Main%20Event%20{year}' if year>=2023 else f'World%20Championship%20{year}'
     return f'https://gol.gg/tournament/tournament-stats/{event}/'
 
 def draft_region_manifest(players):
@@ -202,8 +203,9 @@ def main():
     write(OUT/'calibration.json',dict(version=VERSION,formula='round(clamp(84.5 + 5 * (historicalScore - pooledRoleMean) / pooledRoleSD, 70, 99))',parameters=calibration,frozen2017Sha256=sha(ROOT/'src/data/worlds-2017.json')))
     matrix=[dict(year=y,region=r,role=role,count=sum(p['worldsYear']==y and p['region']==r and p['role']==role for p in players)) for y in CONFIG for r in ['LCK','LPL','LEC','LCS'] for role in ROLES.values()]
     write(OUT/'eligibility.json',matrix)
-    assert all(x['count']>=3 for x in matrix),[x for x in matrix if x['count']<3]
-    write(ROOT/'src/data/draft-region-groups.json',draft_region_manifest(players),True)
+    manifest=draft_region_manifest(players)
+    assert all(len(group['canonicalRegions']) and all(sum(p['worldsYear']==entry['year'] and p['role']==role and (p.get('canonicalRegion') or p.get('historicalLeague') or p['region']) in group['canonicalRegions'] for p in players)>=3 for role in ROLES.values()) for entry in manifest['groups'] for group in entry['groups'])
+    write(ROOT/'src/data/draft-region-groups.json',manifest,True)
     write(ROOT/'src/data/multi-era.json',players)
     split_dir=ROOT/'src/data/years';split_dir.mkdir(parents=True,exist_ok=True)
     for year in sorted(CONFIG):
@@ -214,6 +216,7 @@ def main():
         dict(id=p['id'],playerName=p['playerName'],worldsYear=p['worldsYear'],team=p['team'])
         for p in players
     ])
-    print(f'Production: {len(players)} players, {len(players)*5} slots, {len(matrix)} valid pools.')
+    valid_pools=sum(len(entry['groups'])*len(ROLES) for entry in manifest['groups'])
+    print(f'Production: {len(players)} players, {len(players)*5} slots, {valid_pools} valid draft pools.')
 
 if __name__=='__main__':main()

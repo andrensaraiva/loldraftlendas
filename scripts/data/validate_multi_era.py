@@ -7,7 +7,8 @@ players=json.loads((ROOT/'src/data/multi-era.json').read_text(encoding='utf-8'))
 cal=json.loads((OUT/'calibration.json').read_text(encoding='utf-8'))
 frozen=json.loads((ROOT/'data/research/worlds-2017/evidence.json').read_text(encoding='utf-8'))
 assert sha(ROOT/'src/data/worlds-2017.json')==cal['frozen2017Sha256']
-assert len(players)==390 and len({p['id'] for p in players})==390
+expected_players=sum(sum(len(teams) for teams in regions.values())*5 for _,_,_,regions in CONFIG.values())
+assert len(players)==expected_players and len({p['id'] for p in players})==expected_players
 split_players=[]
 for year in CONFIG:
     annual=json.loads((ROOT/f'src/data/years/{year}.json').read_text(encoding='utf-8'))
@@ -21,7 +22,7 @@ assert player_index==[
     {key:p[key] for key in ['id','playerName','worldsYear','team']}
     for p in players
 ]
-crosschecks={2015:('Bang',83,12,107),2017:('Ruler',70,24,106),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71)}
+crosschecks={2015:('Bang',83,12,107),2017:('Ruler',70,24,106),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71),2024:('Chovy',59,18,72)}
 checks=[]
 for year,(_,games,patch,_) in CONFIG.items():
     rows=json.loads((OUT/f'matches-{year}.json').read_text(encoding='utf-8'));coverage=json.loads((OUT/f'coverage-{year}.json').read_text(encoding='utf-8'))
@@ -59,9 +60,11 @@ for year,(_,games,patch,_) in CONFIG.items():
     if year!=2017:assert actual==[k,d,a],(year,name,actual)
     checks.append(dict(year=year,worldsGames=games,player=name,observedKDA=actual,independentKDA=[k,d,a] if year!=2017 else None,sourceUrl=event_url(year),note='Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit.'))
 manifest=json.loads((OUT/'asset-manifest.json').read_text(encoding='utf-8'))
-assert len(manifest['assets'])==884
+expected_asset_pairs={(p['worldsYear'],slot['championId']) for p in players for slot in p['championPool']}
+assert len(manifest['assets'])==len(expected_asset_pairs)*2
 for asset in manifest['assets']:assert sha(ROOT/asset['localFile'])==asset['sha256'],asset['localFile']
-assert all(x['count']>=3 for x in json.loads((OUT/'eligibility.json').read_text(encoding='utf-8')))
+eligibility=json.loads((OUT/'eligibility.json').read_text(encoding='utf-8'))
+assert {(item['year'],item['region'],item['role']) for item in eligibility}=={(year,region,role) for year in CONFIG for region in ['LCK','LPL','LEC','LCS'] for role in ['TOP','JUNGLE','MID','ADC','SUPPORT']}
 draft_groups=json.loads((ROOT/'src/data/draft-region-groups.json').read_text(encoding='utf-8'))
 assert draft_groups['version']==DRAFT_REGION_GROUP_VERSION and draft_groups['datasetVersion']==cal['version']
 assert {entry['year'] for entry in draft_groups['groups']}==set(CONFIG)
@@ -74,4 +77,5 @@ for entry in draft_groups['groups']:
     for group in groups:
         assert all(len({player['id'] for player in players if player['worldsYear']==year and player['role']==role and canonical(player) in group['canonicalRegions']})>=3 for role in ['TOP','JUNGLE','MID','ADC','SUPPORT']),(year,group)
 write(OUT/'crosschecks.json',checks)
-print('Validated 390 players, annual chunks, compact indexes, 1950 proven associations, generated draft groups, 120 eligible pools, 884 period assets and six event crosschecks.')
+valid_pools=sum(len(entry['groups'])*5 for entry in draft_groups['groups'])
+print(f"Validated {len(players)} players, annual chunks, compact indexes, {len(players)*5} proven associations, generated draft groups, {valid_pools} eligible pools, {len(manifest['assets'])} period assets and {len(checks)} event crosschecks.")

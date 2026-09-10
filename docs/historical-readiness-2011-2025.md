@@ -26,7 +26,7 @@ Este inventário é derivado apenas dos artefatos locais. Um ano não é promovi
 | 2021 | INCOMPLETE | — | — | — | — | — | — | PENDING |
 | 2022 | VALIDATED | 70 | 350 | 4 | 20 | 83/83 | 0.2732 | PENDING |
 | 2023 | VALIDATED | 75 | 375 | 4 | 20 | 78/78 | 0.2649 | PENDING |
-| 2024 | INCOMPLETE | — | — | — | — | — | — | PENDING |
+| 2024 | VALIDATED | 65 | 325 | 4 | 15 | 76/76 | 0.2787 | PENDING |
 | 2025 | INCOMPLETE | — | — | — | — | — | — | PENDING |
 
 ## Anos com dados validados
@@ -113,6 +113,20 @@ Este inventário é derivado apenas dos artefatos locais. Um ano não é promovi
 - Confiança dos slots: mínima 0.1667, mediana 0.2857, média 0.2649, máxima 0.6154; slots com confiança zero: 0.
 - Assets completos: 78/78 pares campeão/ano.
 - Métricas ausentes no snapshot normalizado: golddiffat15: 7560, csdiffat15: 7560, xpdiffat15: 7560. Ausência registrada reduz a cobertura do cálculo; não vira zero fictício.
+- Próximo gate: Obter e registrar uma revisão externa independente antes de declarar readiness de produção.
+
+### 2024 — VALIDATED
+
+| Região | TOP | JUNGLE | MID | ADC | SUPPORT | Total |
+|---|---:|---:|---:|---:|---:|---:|
+| LCK | 4 | 4 | 4 | 4 | 4 | 20 |
+| LCS | 2 | 2 | 2 | 2 | 2 | 10 |
+| LEC | 3 | 3 | 3 | 3 | 3 | 15 |
+| LPL | 4 | 4 | 4 | 4 | 4 | 20 |
+
+- Confiança dos slots: mínima 0.1667, mediana 0.2857, média 0.2787, máxima 0.6429; slots com confiança zero: 0.
+- Assets completos: 76/76 pares campeão/ano.
+- Métricas ausentes no snapshot normalizado: golddiffat15: 6650, csdiffat15: 6650, xpdiffat15: 6650. Ausência registrada reduz a cobertura do cálculo; não vira zero fictício.
 - Próximo gate: Obter e registrar uma revisão externa independente antes de declarar readiness de produção.
 
 ## Proveniência e Limites

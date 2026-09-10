@@ -761,5 +761,55 @@
       "PEEL",
       "SCALING"
     ]
+  },
+  "Aurora": {
+    "id": "Aurora",
+    "name": "Aurora",
+    "tags": [
+      "AP_DAMAGE",
+      "MOBILITY",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Hwei": {
+    "id": "Hwei",
+    "name": "Hwei",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
+  },
+  "Kled": {
+    "id": "Kled",
+    "name": "Kled",
+    "tags": [
+      "ENGAGE",
+      "EARLY_GAME",
+      "AD_DAMAGE",
+      "SPLIT_PUSH"
+    ]
+  },
+  "Smolder": {
+    "id": "Smolder",
+    "name": "Smolder",
+    "tags": [
+      "AD_DAMAGE",
+      "SCALING",
+      "POKE",
+      "CARRY"
+    ]
+  },
+  "Zyra": {
+    "id": "Zyra",
+    "name": "Zyra",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL",
+      "TEAMFIGHT"
+    ]
   }
 }

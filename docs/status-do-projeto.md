@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-09. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3, com a fundação da Fase 4 em andamento. O commit-base remoto é `d436bf6` (`feat: optimize loading and production readiness`).
+Atualizado em 2026-09-10. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3, com a fundação da Fase 4 publicada no commit-base remoto `5ffe8ea` (`feat: add historical readiness inventory`) e a edição de 2024 integrada.
 
 ## Objetivo Preservado
 
@@ -54,7 +54,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 ### Fase 3.2: Performance
 
 - A home usa apenas o manifesto de anos/grupos e um jogador de destaque leve; o JSON completo não bloqueia mais a primeira renderização.
-- O dataset de 390 jogadores foi separado em seis chunks anuais, gerados pelo pipeline e carregados com cache em memória.
+- O dataset foi separado em chunks anuais, gerados pelo pipeline e carregados com cache em memória.
 - O draft primeiro sorteia seus contextos usando o manifesto e carrega somente os anos selecionados. Uma troca de ano busca os demais anos habilitados sob demanda.
 - Ao terminar o draft, os anos restantes são pré-carregados em idle para que a criação de adversários não atrase o torneio.
 - A rota `/admin` usa import dinâmico e um índice compacto de nomes; código, CSS e dados administrativos não entram no carregamento inicial do jogo.
@@ -73,16 +73,17 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - Novos testes E2E cobrem teclado, metadados, redução de movimento, alvos de toque e carregamento progressivo dos dados.
 - Após as mudanças de SEO e resiliência, o bundle inicial ficou em 316,66 kB (88,15 kB gzip), ainda sem aviso de chunk acima de 500 kB.
 
-### Fase 4: Fundação de Cobertura Histórica e Readiness
+### Fase 4: Cobertura Histórica e Readiness
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
 - Relatório legível por ano, região, posição, assets, métricas ausentes e confiança em [historical-readiness-2011-2025.md](historical-readiness-2011-2025.md).
-- Apenas 2015, 2017, 2019, 2020, 2022 e 2023 atingem `VALIDATED`; os outros nove anos permanecem `INCOMPLETE` e nenhum ano é promovido automaticamente a `PRODUCTION_READY`.
+- 2015, 2017, 2019, 2020, 2022, 2023 e 2024 atingem `VALIDATED`; os outros oito anos permanecem `INCOMPLETE` e nenhum ano é promovido automaticamente a `PRODUCTION_READY`.
+- A edição de 2024 adiciona 65 versões de jogadores, 325 slots e 76 pares de assets. O recorte é o Main Event no patch 14.18, com 82 partidas; Europa e América do Norte formam um grupo de draft conjunto porque apenas duas equipes da LCS chegaram ao evento principal.
 - Aprovações externas são registros manuais em [external-reviews.json](../data/research/multi-era/external-reviews.json) e exigem revisor, data e evidência.
 - O aviso vigente da Riot foi conferido na General Policy oficial, registrado no inventário e exibido no rodapé público. Isso não representa aconselhamento jurídico nem aprovação da Riot.
 - As partes específicas de League of Legends e os limites reais de reutilização do motor estão em [game-domain-boundaries.md](game-domain-boundaries.md).
 - A CI passa a rejeitar inventário ou relatório de readiness desatualizados.
-- Com o aviso legal visível, o bundle inicial atual ficou em 317,11 kB (88,37 kB gzip), sem aviso de chunk acima de 500 kB.
+- Após a integração de 2024, o bundle inicial ficou em 325,90 kB (89,16 kB gzip), sem aviso de chunk acima de 500 kB.
 
 ## Estado de Validação
 
@@ -97,7 +98,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 390 jogadores, chunks anuais, índices compactos, 1.950 associações, 120 pools elegíveis e 884 assets históricos; o inventário de readiness 2011–2025 está reproduzível; 25 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
+Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 455 jogadores, chunks anuais, índices compactos, 2.275 associações, 135 pools elegíveis, 1.036 assets históricos e 7 crosschecks de evento; 48 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 25 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -118,10 +119,9 @@ O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions a
 
 ### Próxima Entrega: Fase 4, Expansão da Pesquisa
 
-- Selecionar uma edição ainda `INCOMPLETE` e criar o pacote completo de matches, rosters, evidências, normalização, cobertura e assets.
-- Priorizar 2024 e 2025 pela continuidade com o pipeline atual, sem ativá-los no draft antes de todos os gates passarem.
+- Criar para 2025 o pacote completo de matches, rosters, evidências, normalização, cobertura e assets, sem ativá-lo no draft antes de todos os gates passarem.
 - Recalibrar toda a população ao adicionar uma edição e versionar o dataset; não misturar ratings produzidos por populações diferentes.
-- Submeter os seis anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
+- Submeter os sete anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
 
 ## Comandos de Trabalho
 

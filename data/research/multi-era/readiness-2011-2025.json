@@ -355,7 +355,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2015.json",
-          "sha256": "52c1614f254105b5f9d26fbe073abc28df403b084285f250ee2467b888a0e392"
+          "sha256": "a791c1ed1d823bfbb005da5fd16e1a472a04b54f678414e4a6fedf34bba9f05d"
         },
         "rosters": {
           "present": true,
@@ -535,7 +535,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2017.json",
-          "sha256": "6e238f3a93c417d5acb2040846c71bc02066aa4c8a5b615e181b192c5c7a15ef"
+          "sha256": "d25cd452256adf87823626de8a1ef750e0865cf476f938690e5d1e3df53ad945"
         },
         "rosters": {
           "present": true,
@@ -711,7 +711,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2019.json",
-          "sha256": "b92244e82c9aeb4a1eb2351c7d56f01b2d0f0475fc3a307cea060981d43bcd1e"
+          "sha256": "91ff497bae0aa41bf2ef388311756c49bd52883d59664185d408a280e7db1fe8"
         },
         "rosters": {
           "present": true,
@@ -824,7 +824,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2020.json",
-          "sha256": "5d818f3fa9f2f5c32b0842b8f4f9257da8d8a11c6a7402a07b55c95c5f2c2a97"
+          "sha256": "254f33b9b3d074545ac98428006c1a5e020ba01a2da71a555d6c9670a9b4ca11"
         },
         "rosters": {
           "present": true,
@@ -1000,7 +1000,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2022.json",
-          "sha256": "03296132e5b42f74858a1eeb584cf9e65a53b657de11b7177d606324fa6a5826"
+          "sha256": "7c36aa4ccf4b870610bdb72d41b76a01dfa489305da587b5ae466b1fd2b05490"
         },
         "rosters": {
           "present": true,
@@ -1113,7 +1113,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2023.json",
-          "sha256": "416dd14d48919a83071e5ee925391b3e1947a0d8300e74f5b7f8262a98458cc5"
+          "sha256": "ced2b9b5aee60c6b4cbb7f78972c6389bfd7053fff4a9399237380a77fcc718e"
         },
         "rosters": {
           "present": true,
@@ -1153,54 +1153,104 @@
     },
     {
       "year": 2024,
-      "status": "INCOMPLETE",
-      "players": 0,
-      "slots": 0,
-      "regions": {},
-      "roles": {},
-      "regionRoleMatrix": {},
-      "confidence": null,
-      "assets": {
-        "requiredPairs": 0,
-        "completePairs": 0,
-        "complete": false
+      "status": "VALIDATED",
+      "players": 65,
+      "slots": 325,
+      "regions": {
+        "LCK": 20,
+        "LCS": 10,
+        "LEC": 15,
+        "LPL": 20
       },
-      "eligiblePools": 0,
-      "missingMetrics": {},
+      "roles": {
+        "TOP": 13,
+        "JUNGLE": 13,
+        "MID": 13,
+        "ADC": 13,
+        "SUPPORT": 13
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        },
+        "LCS": {
+          "TOP": 2,
+          "JUNGLE": 2,
+          "MID": 2,
+          "ADC": 2,
+          "SUPPORT": 2
+        },
+        "LEC": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LPL": {
+          "TOP": 4,
+          "JUNGLE": 4,
+          "MID": 4,
+          "ADC": 4,
+          "SUPPORT": 4
+        }
+      },
+      "confidence": {
+        "minimum": 0.166667,
+        "median": 0.285714,
+        "mean": 0.278674,
+        "maximum": 0.642857,
+        "zeroConfidenceSlots": 0
+      },
+      "assets": {
+        "requiredPairs": 76,
+        "completePairs": 76,
+        "complete": true
+      },
+      "eligiblePools": 15,
+      "missingMetrics": {
+        "golddiffat15": 6650,
+        "csdiffat15": 6650,
+        "xpdiffat15": 6650
+      },
       "researchArtifacts": {
         "matches": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/matches-2024.json",
-          "sha256": null
+          "sha256": "aaecf8719d6e7faa5421fb97e797c884dad42074f0c9193cb1d2fc80658abe80"
         },
         "evidence": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/evidence-2024.json",
-          "sha256": null
+          "sha256": "782fae25b41bfe2bcf5cbad562d06b383d36193e4446ad650a882ecc5000ea94"
         },
         "rosters": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/rosters-2024.json",
-          "sha256": null
+          "sha256": "d3644782b8bccb6360aedd7682b8d43e6cb534d4f1c6eb4e801c116d5d0d83f1"
         },
         "normalization": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/normalization-2024.json",
-          "sha256": null
+          "sha256": "4619c4e34eb285963be59cdf4625197f3cab95306a07a58314f80fb44a6fd62c"
         },
         "coverage": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/coverage-2024.json",
-          "sha256": null
+          "sha256": "f06e99d866ff91e98350e778b2c51845a1a6a12d0f9182e53f833bd959d984b4"
         }
       },
       "validationGates": {
-        "researchArtifactsComplete": false,
-        "productionSnapshotMatchesCoverage": false,
-        "fiveDistinctSlotsPerPlayer": false,
-        "evidenceLinked": false,
-        "assetsComplete": false,
-        "draftPoolsEligible": false
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
       },
       "productionGates": {
         "legalNoticeVisible": true,
@@ -1212,7 +1262,7 @@
         "reviewedOn": null,
         "evidence": null
       },
-      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
     },
     {
       "year": 2025,

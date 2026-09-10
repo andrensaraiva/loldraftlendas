@@ -14,3 +14,4 @@ data/research/multi-era/raw/*.csv
 data/research/multi-era/raw/*.tgz
 data/research/multi-era/raw/*.partial
 data/research/multi-era/raw/candidate*
+data/research/multi-era/batch-preview.json

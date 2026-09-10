@@ -1,11 +1,28 @@
 {
-  "verifiedAt": "2026-09-08",
-  "unitTests": { "passed": 40, "files": 5 },
-  "browserTests": { "passed": 10, "projects": ["desktop", "mobile"], "browser": "Microsoft Edge", "workers": 2 },
-  "productionBuild": "passed",
-  "historicalAudit": { "players": 390, "slots": 1950, "eligiblePools": 120, "periodAssets": 884, "status": "passed" },
+  "verifiedAt": "2026-09-10",
+  "unitTests": { "passed": 59, "files": 12 },
+  "browserTests": {
+    "passed": 25,
+    "skipped": 1,
+    "projects": ["desktop", "mobile"],
+    "browser": "Playwright Chromium",
+    "workers": 2
+  },
+  "productionBuild": {
+    "status": "passed",
+    "initialBundleKb": 325.9,
+    "initialBundleGzipKb": 89.16
+  },
+  "historicalAudit": {
+    "players": 455,
+    "slots": 2275,
+    "eligiblePools": 135,
+    "periodAssets": 1036,
+    "eventCrosschecks": 7,
+    "status": "passed"
+  },
   "multiEraSimulation": { "campaigns": 100000, "scenarios": 10, "extraVarietyDrafts": 10000 },
-  "offlineReproduction": { "multiEraFiles": 33, "frozen2017Files": 9, "status": "byte-identical" },
+  "offlineReproduction": { "multiEraFiles": 48, "frozen2017Files": 9, "status": "byte-identical" },
   "frozen2017Pipeline": "build, validate, simulate and report passed; original draft RNG consumption preserved",
   "note": "The first full browser run with eight workers alongside CPU-heavy data work had timeouts. The complete suite passed with two workers, now the default. These are automated tests and visual inspection, not user research."
 }

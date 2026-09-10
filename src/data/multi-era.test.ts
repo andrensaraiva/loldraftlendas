@@ -12,11 +12,11 @@ import frozenEvidence from '../../data/research/worlds-2017/evidence.json';
 import draftRegionManifest from './draft-region-groups.json';
 
 describe('production evidence and global calibration', () => {
-  it('has 390 real player versions and five documented period-valid champions each', () => {
+  it('has 455 real player versions and five documented period-valid champions each', () => {
     validateData(players, champions);
-    expect(players).toHaveLength(390);
+    expect(players).toHaveLength(455);
     const years = [...new Set(players.map((p) => p.worldsYear))];
-    expect(years).toEqual([2015, 2017, 2019, 2020, 2022, 2023]);
+    expect(years).toEqual([2015, 2017, 2019, 2020, 2022, 2023, 2024]);
     for (const year of years) {
       const evidence = JSON.parse(
         readFileSync(`data/research/multi-era/evidence-${year}.json`, 'utf8'),
@@ -57,9 +57,9 @@ describe('production evidence and global calibration', () => {
   });
   it('uses a generated, complete, role-valid draft region manifest', () => {
     expect(draftRegionManifest.datasetVersion).toBe(calibration.version);
-    expect(draftRegionManifest.groups.map((entry) => entry.year)).toEqual(
-      [...new Set(players.map((player) => player.worldsYear))],
-    );
+    expect(draftRegionManifest.groups.map((entry) => entry.year)).toEqual([
+      ...new Set(players.map((player) => player.worldsYear)),
+    ]);
     for (const entry of draftRegionManifest.groups) {
       const canonical = (player: (typeof players)[number]) =>
         player.canonicalRegion ?? player.historicalLeague ?? player.region;
@@ -78,6 +78,9 @@ describe('production evidence and global calibration', () => {
             ).length,
           ).toBeGreaterThanOrEqual(3);
     }
-    expect(eligiblePools(players, draftRegionManifest as DraftRegionManifest)).toHaveLength(120);
+    expect(eligiblePools(players, draftRegionManifest as DraftRegionManifest)).toHaveLength(135);
+    const groups2024 = draftRegionManifest.groups.find((entry) => entry.year === 2024)!.groups;
+    expect(groups2024.map((group) => group.id)).toEqual(['KOREA', 'CHINA', 'EUROPE_NORTH_AMERICA']);
+    expect(groups2024[2].canonicalRegions).toEqual(['LCS', 'LEC']);
   });
 });

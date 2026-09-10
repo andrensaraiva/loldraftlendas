@@ -43,5 +43,14 @@
     "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
     "accessedAt": "2026-09-07",
     "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  },
+  "2024": {
+    "url": "https://drive.usercontent.google.com/download?id=1IjIEhLc9n8eLKeY-yh_YigKVWbhgGBsN&export=download&confirm=t",
+    "sha256": "93b5ed6036435120d7d97541b947ffceed6c7158508df4e6cb9b0f8a35cb17ac",
+    "bytes": 79127713,
+    "publisher": "Oracle's Elixir public Google Drive",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-09",
+    "note": "Public source is hash-pinned; normalized snapshots are committed and raw CSVs are ignored."
   }
 }

@@ -2,9 +2,9 @@
 
 Protótipo jogável em português inspirado na referência visual: fundo claro, tipografia editorial, verde lima e cartas de jogadores com pools visíveis. React + TypeScript + Vite, sem conta e sem backend.
 
-Pesquisa e implementação atual: **[Multi-era v1: dados, UX e 100.000 campanhas](docs/multi-era-balance-v1.md)**.
+Pesquisa e implementação atual: **[Multi-era v1.1: dados, UX e 100.000 campanhas](docs/multi-era-balance-v1.md)**.
 
-Cobertura honesta de 2011–2025: **[inventário de readiness histórico](docs/historical-readiness-2011-2025.md)**. Apenas 2015, 2017, 2019, 2020, 2022 e 2023 estão validados; os demais anos continuam explicitamente incompletos e nenhum ano é marcado como pronto para produção sem revisão externa registrada.
+Cobertura honesta de 2011–2025: **[inventário de readiness histórico](docs/historical-readiness-2011-2025.md)**. Apenas 2015, 2017, 2019, 2020, 2022, 2023 e 2024 estão validados; os demais anos continuam explicitamente incompletos e nenhum ano é marcado como pronto para produção sem revisão externa registrada.
 
 Admin privado e configuração: [guia de setup do Supabase](docs/admin-setup.md).
 
@@ -31,7 +31,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 
 - Home e instruções.
 - Cinco escolhas imediatas: TOP → JUNGLE → MID → ADC → SUPPORT. Cada posição sorteia ano e grupo regional dentre grupos disponíveis.
-- 390 versões pesquisadas: Worlds 2015, 2017, 2019, 2020, 2022 e 2023. Regiões canônicas e grupos de draft são separados: Coreia, China, Europa, América do Norte e Outras Regiões, com fusão determinística quando uma cobertura anual não tiver três candidatos por posição. Veja [a regra de agrupamento](docs/draft-region-grouping.md).
+- 455 versões pesquisadas: Worlds 2015, 2017, 2019, 2020, 2022, 2023 e 2024. Regiões canônicas e grupos de draft são separados: Coreia, China, Europa, América do Norte e Outras Regiões, com fusão determinística quando uma cobertura anual não tiver três candidatos por posição. Em 2024, Europa e América do Norte formam um grupo conjunto porque apenas duas equipes da LCS chegaram ao evento principal. Veja [a regra de agrupamento](docs/draft-region-grouping.md).
 - Cada posição mostra exatamente três candidatos válidos do ano/grupo sorteado e prioriza combinações de times distintos.
 - Três trocas compartilhadas por draft: ano, região ou jogadores. Ações impossíveis não gastam saldo. Configuração em `src/game/draft.ts`.
 - Escolha com um clique, confirmação visual de 320 ms e avanço automático. Os cartões priorizam o nome e usam avatares originais e neutros, não fotos ou retratos fotorrealistas.
@@ -52,11 +52,11 @@ O Suíço é uma simulação da campanha do usuário: não existe uma tabela com
 
 ## Dados e imagens
 
-**Pools comprovados; ratings estimados, não oficiais.** O conjunto padrão tem 1.950 slots com `evidenceId`, `historicalScore` e `gameRating`. O modelo histórico normaliza por evento/posição, com ajuste por campeão e regressão para amostras pequenas. Uma transformação global por posição produz a escala visível de 70–99. Fórmulas, fontes e partidas ficam em `data/research/multi-era/`; os 75 scores e pools originais de 2017 permanecem intactos. As 45 versões MOCK ficam apenas em `src/data/fixtures/mock-players.ts` para testes.
+**Pools comprovados; ratings estimados, não oficiais.** O conjunto padrão tem 2.275 slots com `evidenceId`, `historicalScore` e `gameRating`. O modelo histórico normaliza por evento/posição, com ajuste por campeão e regressão para amostras pequenas. Uma transformação global por posição produz a escala visível de 70–99. Fórmulas, fontes e partidas ficam em `data/research/multi-era/`; os 75 scores e pools originais de 2017 permanecem intactos. As 45 versões MOCK ficam apenas em `src/data/fixtures/mock-players.ts` para testes.
 
 O acervo anterior de 44 campeões permanece em `public/assets/champions` e `public/assets/splash`, para as fixtures e o fallback de outras eras. `scripts/download-assets.mjs` atualiza somente esse acervo padrão; não gera os assets históricos.
 
-Os 442 pares campeão/ano usam ícones e splashes dos arquivos oficiais Data Dragon de cada edição, com hashes e créditos no [manifesto multi-era](data/research/multi-era/asset-manifest.json). `championArt` seleciona a arte histórica pelo ano para o pool G1–G5; ela não é usada como retrato do jogador. O manifesto e acervo originais de 2017 permanecem disponíveis. Fontes tipográficas também estão empacotadas localmente.
+Os 518 pares campeão/ano usam ícones e splashes dos arquivos oficiais Data Dragon de cada edição, com hashes e créditos no [manifesto multi-era](data/research/multi-era/asset-manifest.json). `championArt` seleciona a arte histórica pelo ano para o pool G1–G5; ela não é usada como retrato do jogador. O manifesto e acervo originais de 2017 permanecem disponíveis. Fontes tipográficas também estão empacotadas localmente.
 
 Participação e estatísticas foram conferidas com Games of Legends; limitações de acesso às demais fontes estão no relatório. Este é um projeto independente, sem vínculo com a Riot Games; League of Legends e seus personagens pertencem à Riot Games. A fase Suíça é a regra do jogo, não o formato histórico de 2017.
 
@@ -122,7 +122,7 @@ Pipeline de pesquisa (Python 3, sem bibliotecas adicionais):
 
 ```sh
 npm run data:multi:build     # Recria a produção e os grupos de draft a partir de snapshots offline
-npm run data:multi:validate  # 1.950 associações, calibração e 884 assets
+npm run data:multi:validate  # 2.275 associações, calibração e 1.036 assets
 npm run data:multi:simulate  # 100.000 campanhas + 10.000 drafts de diversidade
 npm run data:multi:reproduce # Reconstrução byte a byte
 npm run data:multi:report    # Relatório multi-era a partir das medições

@@ -43,7 +43,6 @@ def rounded(value: float) -> float:
 def build_inventory() -> dict[str, Any]:
     players = read_json(ROOT / "src/data/multi-era.json")
     assets = read_json(OUT / "asset-manifest.json")["assets"]
-    eligibility = read_json(OUT / "eligibility.json")
     draft_manifest = read_json(ROOT / "src/data/draft-region-groups.json")
     review_manifest = read_json(REVIEWS_TARGET)
     app_source = (ROOT / "src/App.tsx").read_text(encoding="utf-8")
@@ -143,9 +142,10 @@ def build_inventory() -> dict[str, Any]:
             for region in sorted(region_counts)
         }
         confidences = [slot["stats"]["confidence"] for slot in slots]
-        eligible_pools = sum(
-            item["year"] == year and item["count"] >= 3 for item in eligibility
+        year_groups = next(
+            (entry["groups"] for entry in draft_manifest["groups"] if entry["year"] == year), []
         )
+        eligible_pools = len(year_groups) * len(ROLES)
         gates = {
             "researchArtifactsComplete": all_research,
             "productionSnapshotMatchesCoverage": coverage["players"] == len(year_players)
@@ -160,7 +160,22 @@ def build_inventory() -> dict[str, Any]:
                 slot.get("evidenceId") in evidence for slot in slots
             ),
             "assetsComplete": complete_pairs == len(champion_pairs),
-            "draftPoolsEligible": eligible_pools == len(region_counts) * len(ROLES)
+            "draftPoolsEligible": bool(year_groups)
+            and all(
+                sum(
+                    player["role"] == role
+                    and (
+                        player.get("canonicalRegion")
+                        or player.get("historicalLeague")
+                        or player["region"]
+                    )
+                    in group["canonicalRegions"]
+                    for player in year_players
+                )
+                >= 3
+                for group in year_groups
+                for role in ROLES
+            )
             and year in draft_years,
         }
         validated = all(gates.values())

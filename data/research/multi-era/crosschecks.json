@@ -96,5 +96,22 @@
     ],
     "sourceUrl": "https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202023/",
     "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
+    "year": 2024,
+    "worldsGames": 82,
+    "player": "Chovy",
+    "observedKDA": [
+      59,
+      18,
+      72
+    ],
+    "independentKDA": [
+      59,
+      18,
+      72
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202024/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
   }
 ]
