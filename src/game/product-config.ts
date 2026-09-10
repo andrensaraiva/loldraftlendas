@@ -1,7 +1,7 @@
-import { DRAFT_CONFIG, eligiblePools } from './draft';
-import { DRAFT_REGION_GROUP_IDS, ROLES } from './types';
+import { DRAFT_CONFIG } from './draft';
+import { DRAFT_REGION_GROUP_IDS } from './types';
 import type { DraftAvailability } from './draft';
-import type { DraftRegionGroupId, DraftRegionManifest, PlayerVersion } from './types';
+import type { DraftRegionGroupId, DraftRegionManifest } from './types';
 
 export interface PublicProductConfig {
   startingExchanges: number;
@@ -22,7 +22,6 @@ interface PublicProductConfigRow {
 }
 
 export interface ProductData {
-  players: PlayerVersion[];
   draftRegionManifest: DraftRegionManifest;
 }
 
@@ -57,8 +56,12 @@ export function publicProductConfigFromRow(row: PublicProductConfigRow): PublicP
 export function defaultDraftAvailability(data: ProductData): DraftAvailability {
   return {
     startingExchanges: DRAFT_CONFIG.exchanges,
-    activeYears: [...new Set(data.players.map((player) => player.worldsYear))].sort((a, b) => a - b),
-    activeRegionGroups: [...new Set(eligiblePools(data.players, data.draftRegionManifest).map((pool) => pool.region.id))],
+    activeYears: data.draftRegionManifest.groups.map((entry) => entry.year).sort((a, b) => a - b),
+    activeRegionGroups: [
+      ...new Set(
+        data.draftRegionManifest.groups.flatMap((entry) => entry.groups.map((group) => group.id)),
+      ),
+    ],
   };
 }
 
@@ -74,8 +77,12 @@ export function safeDraftAvailability(
     activeYears: configuration.activeYears,
     activeRegionGroups: configuration.activeRegionGroups,
   };
-  const pools = eligiblePools(data.players, data.draftRegionManifest, availability);
-  return ROLES.every((role) => pools.some((pool) => pool.role === role)) ? availability : fallback;
+  const hasEligibleGroup = data.draftRegionManifest.groups.some(
+    (entry) =>
+      availability.activeYears.includes(entry.year) &&
+      entry.groups.some((group) => availability.activeRegionGroups.includes(group.id)),
+  );
+  return hasEligibleGroup ? availability : fallback;
 }
 
 export async function loadPublicProductConfig(): Promise<PublicProductConfig | null> {

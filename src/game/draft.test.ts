@@ -1,8 +1,18 @@
 import { describe, expect, it } from 'vitest';
 import { players } from '../data/players';
-import { createDraft, eligiblePools, exchangeRound, offerKey, rollRound } from './draft';
+import {
+  createDraft,
+  createDraftFromPlan,
+  eligiblePools,
+  exchangeRound,
+  offerKey,
+  planDraft,
+  rollRound,
+} from './draft';
+import manifest from '../data/draft-region-groups.json';
+import type { DraftAvailability } from './draft';
 import { ROLES } from './types';
-import type { DraftRound } from './types';
+import type { DraftRegionManifest, DraftRound } from './types';
 
 const seeded = (seed: number) => () => {
   seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
@@ -23,12 +33,47 @@ describe('multi-era draft and exchanges', () => {
           r.options.every(
             (p) =>
               p.role === r.role &&
-              r.region.canonicalRegions.includes(p.canonicalRegion ?? p.historicalLeague ?? p.region) &&
+              r.region.canonicalRegions.includes(
+                p.canonicalRegion ?? p.historicalLeague ?? p.region,
+              ) &&
               p.worldsYear === r.year,
           ),
         ).toBe(true);
       }
     }
+  });
+  it('plans a draft from lightweight metadata and hydrates only its selected years', () => {
+    const availability: DraftAvailability = {
+      startingExchanges: 3,
+      activeYears: [2017, 2023],
+      activeRegionGroups: ['KOREA', 'CHINA'],
+    };
+    const plan = planDraft(manifest as DraftRegionManifest, availability, seeded(17));
+    const selectedYears = new Set(plan.map((round) => round.year));
+    const hydrated = createDraftFromPlan(
+      players.filter((player) => selectedYears.has(player.worldsYear)),
+      plan,
+      manifest as DraftRegionManifest,
+    );
+    expect(hydrated).toHaveLength(5);
+    expect(hydrated.map(({ role, year, region }) => ({ role, year, region }))).toEqual(
+      plan.map(({ optionRoll: _optionRoll, ...round }) => round),
+    );
+    expect(hydrated.every((round) => round.options.length === 3)).toBe(true);
+  });
+  it('keeps the same seeded result when planning and hydration are split', () => {
+    const draftManifest = manifest as DraftRegionManifest;
+    const availability: DraftAvailability = {
+      startingExchanges: 3,
+      activeYears: draftManifest.groups.map((entry) => entry.year),
+      activeRegionGroups: [
+        ...new Set(draftManifest.groups.flatMap((entry) => entry.groups.map((group) => group.id))),
+      ],
+    };
+    const plan = planDraft(draftManifest, availability, seeded(91));
+    expect(createDraftFromPlan(players, plan, draftManifest)).toEqual(
+      createDraft(players, seeded(91), draftManifest, availability),
+    );
   });
   it('rejects undersized groups and duplicate copies of the same player', () => {
     expect(eligiblePools([players[0], players[0], players[0]])).toEqual([]);
@@ -105,7 +150,9 @@ describe('multi-era draft and exchanges', () => {
         role,
       })),
     );
-    const pool = eligiblePools(sample).find((candidate) => candidate.region.id === 'OTHER_REGIONS')!;
+    const pool = eligiblePools(sample).find(
+      (candidate) => candidate.region.id === 'OTHER_REGIONS',
+    )!;
     expect(pool.region).toMatchObject({ label: 'OUTRAS REGIÕES', canonicalRegions: ['LJL'] });
     expect(rollRound([pool], 'TOP', seeded(1)).options.map((player) => player.team)).toEqual([
       'TEAM 1',

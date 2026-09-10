@@ -65,7 +65,10 @@ src/
   data/
     champions.ts   # Identidade, imagens e tags
     players.ts     # Snapshot de produção multi-era
-    multi-era.json # 390 jogadores / 1.950 slots com evidência
+    multi-era.json # Snapshot integral de pesquisa e testes
+    years/          # Chunks anuais carregados sob demanda no jogo
+    featured-player.json # Destaque leve usado pela home
+    player-index.json # Índice compacto usado pelo painel admin
     draft-region-groups.json # Grupos de draft versionados por ano
     worlds-2017.json # Snapshot original congelado
     fixtures/      # MOCK preservado exclusivamente para testes
@@ -102,6 +105,8 @@ O frontend é estático e pode ser hospedado em qualquer uma das duas plataforma
 
 - **Vercel:** importar o repositório, preset Vite, build `npm run build`, saída `dist`. `vercel.json` já está incluído. [Documentação oficial](https://vercel.com/docs/frameworks/frontend/vite).
 - **Firebase Hosting:** build igual, `firebase.json` incluído, diretório `dist`. Vincular um projeto Firebase antes de executar `firebase deploy --only hosting`.
+
+O build usa `VITE_SITE_URL` para gerar canonical, Open Graph, Twitter Card, `robots.txt` e sitemap com URLs absolutas. Na Vercel, `VERCEL_PROJECT_PRODUCTION_URL` é usado automaticamente quando `VITE_SITE_URL` não estiver definido. Em outros provedores, configure por exemplo `VITE_SITE_URL=https://seu-dominio.example`, sem barra final.
 
 Quando houver necessidade de dados remotos, implemente `DataRepository.load()` com Supabase ou Firestore e substitua a instância local em `App.tsx`. Retorne `{ players, champions, draftRegionManifest }`; o motor e as telas continuam usando o mesmo contrato. Em Supabase, uma futura modelagem pode separar `champions`, `player_versions` e `champion_pool_slots` (chave composta `player_version_id + game`). Em Firestore, versões podem conter os cinco slots, mantendo a coleção de campeões separada.
 

@@ -49,12 +49,12 @@
   letter-spacing: 1.5px;
 }
 .admin-brand small {
-  color: #72806b;
+  color: #5f695c;
   margin-left: 6px;
 }
 .admin-header-status {
   justify-self: end;
-  color: #788372;
+  color: #5f695c;
 }
 .admin-state,
 .admin-login-layout,
@@ -326,7 +326,7 @@
 }
 .admin-feedback-notes small,
 .admin-dashboard-timestamp {
-  color: #7a8476;
+  color: #5f695c;
   font-size: 9px;
 }
 .admin-dashboard-timestamp {
@@ -423,7 +423,9 @@
   background: white;
   color: var(--ink);
   padding: 10px;
-  font: 500 14px 'DM Sans', sans-serif;
+  font:
+    500 14px 'DM Sans',
+    sans-serif;
 }
 .admin-login-form input:focus,
 .admin-config-form input:focus,

@@ -8,6 +8,19 @@ cal=json.loads((OUT/'calibration.json').read_text(encoding='utf-8'))
 frozen=json.loads((ROOT/'data/research/worlds-2017/evidence.json').read_text(encoding='utf-8'))
 assert sha(ROOT/'src/data/worlds-2017.json')==cal['frozen2017Sha256']
 assert len(players)==390 and len({p['id'] for p in players})==390
+split_players=[]
+for year in CONFIG:
+    annual=json.loads((ROOT/f'src/data/years/{year}.json').read_text(encoding='utf-8'))
+    assert annual==[p for p in players if p['worldsYear']==year],f'{year}: stale annual dataset'
+    split_players+=annual
+assert split_players==players
+featured=json.loads((ROOT/'src/data/featured-player.json').read_text(encoding='utf-8'))
+assert featured==next(p for p in players if p['playerName']=='Faker' and p['worldsYear']==2017)
+player_index=json.loads((ROOT/'src/data/player-index.json').read_text(encoding='utf-8'))
+assert player_index==[
+    {key:p[key] for key in ['id','playerName','worldsYear','team']}
+    for p in players
+]
 crosschecks={2015:('Bang',83,12,107),2017:('Ruler',70,24,106),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71)}
 checks=[]
 for year,(_,games,patch,_) in CONFIG.items():
@@ -61,4 +74,4 @@ for entry in draft_groups['groups']:
     for group in groups:
         assert all(len({player['id'] for player in players if player['worldsYear']==year and player['role']==role and canonical(player) in group['canonicalRegions']})>=3 for role in ['TOP','JUNGLE','MID','ADC','SUPPORT']),(year,group)
 write(OUT/'crosschecks.json',checks)
-print('Validated 390 players, 1950 proven associations, generated draft groups, 120 eligible pools, 884 period assets and six event crosschecks.')
+print('Validated 390 players, annual chunks, compact indexes, 1950 proven associations, generated draft groups, 120 eligible pools, 884 period assets and six event crosschecks.')

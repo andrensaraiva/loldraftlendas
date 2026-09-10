@@ -5,7 +5,7 @@
   font-synthesis: none;
   --paper: #f7f8f4;
   --ink: #171a17;
-  --muted: #747a73;
+  --muted: #666d65;
   --line: #dfe3da;
   --lime: #a4f442;
   --green: #347d16;
@@ -34,8 +34,7 @@ button:disabled {
   cursor: wait;
   opacity: 0.65;
 }
-button:focus-visible,
-a:focus-visible {
+:where(button, a, input, textarea, select, summary):focus-visible {
   outline: 3px solid #478920;
   outline-offset: 5px;
 }
@@ -58,6 +57,34 @@ button {
 ::selection {
   background: var(--lime);
   color: var(--ink);
+}
+.skip-link {
+  position: fixed;
+  z-index: 1000;
+  top: 12px;
+  left: 12px;
+  transform: translateY(-160%);
+  border-radius: 4px;
+  background: var(--ink);
+  padding: 11px 15px;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.skip-link:focus {
+  transform: translateY(0);
+}
+.error-fallback {
+  gap: 16px;
+  padding: 24px;
+  text-align: center;
+}
+.error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 .app-shell {
   max-width: 1256px;
@@ -2576,5 +2603,12 @@ main > section {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;
+  }
+}
+@media (pointer: coarse) {
+  button,
+  a,
+  summary {
+    min-height: 44px;
   }
 }

@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-09. Este documento registra o ponto de parada após as Fases 1, 2 e a subfase 3.1. O commit-base é `76d584c` (`feat: add campaign foundations and admin operations`), publicado em `main` e `origin/main`.
+Atualizado em 2026-09-09. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3. O commit-base remoto é `110c43c` (`docs: add project handoff status`).
 
 ## Objetivo Preservado
 
@@ -51,6 +51,28 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - Workflow [ci.yml](../.github/workflows/ci.yml) executa `npm ci`, type check, unit tests, validação histórica, build e E2E em Chromium para cada push e pull request.
 - Artefatos Playwright são publicados pelo job quando a execução falha ou conclui.
 
+### Fase 3.2: Performance
+
+- A home usa apenas o manifesto de anos/grupos e um jogador de destaque leve; o JSON completo não bloqueia mais a primeira renderização.
+- O dataset de 390 jogadores foi separado em seis chunks anuais, gerados pelo pipeline e carregados com cache em memória.
+- O draft primeiro sorteia seus contextos usando o manifesto e carrega somente os anos selecionados. Uma troca de ano busca os demais anos habilitados sob demanda.
+- Ao terminar o draft, os anos restantes são pré-carregados em idle para que a criação de adversários não atrase o torneio.
+- A rota `/admin` usa import dinâmico e um índice compacto de nomes; código, CSS e dados administrativos não entram no carregamento inicial do jogo.
+- Relatórios de partida, detalhes de pesquisa e feedback de campanha também são carregados somente quando aparecem.
+- O bundle inicial minificado caiu de 1.108,19 kB (160,64 kB gzip) para 314,85 kB (87,59 kB gzip). O aviso de chunk acima de 500 kB foi eliminado.
+- Um E2E dedicado garante que a home não solicite datasets anuais e que um draft determinístico carregue apenas o ano sorteado.
+
+### Fase 3.3: SEO, Acessibilidade e Resiliência
+
+- Metadados públicos completos: title, description, canonical, Open Graph e Twitter Card com URLs absolutas definidas no build.
+- Preview social original em [og-draft-lendas.jpg](../public/og-draft-lendas.jpg), `robots.txt` e sitemap gerados pelo Vite.
+- A rota pública permanece indexável e `/admin` recebe `noindex, nofollow` tanto no HTML quanto nos headers da Vercel.
+- Link para pular ao conteúdo, landmarks, nomes acessíveis de diálogos, foco de teclado previsível, contraste revisado e alvos de toque de pelo menos 44 px no mobile.
+- A preferência `prefers-reduced-motion` desativa as animações de cartas.
+- Uma fronteira de erro global oferece recarregamento seguro e, no jogo, opção para limpar uma campanha salva incompatível.
+- Novos testes E2E cobrem teclado, metadados, redução de movimento, alvos de toque e carregamento progressivo dos dados.
+- Após as mudanças de SEO e resiliência, o bundle inicial ficou em 316,66 kB (88,15 kB gzip), ainda sem aviso de chunk acima de 500 kB.
+
 ## Estado de Validação
 
 Executados com sucesso neste ponto:
@@ -61,18 +83,12 @@ npm run typecheck
 npm run build
 py -3 scripts/data/validate_multi_era.py
 npx playwright install chromium
-npx playwright test tests/admin.spec.ts --project=desktop
-```
-
-Resultados registrados: 55 testes unitários passaram; type check e build passaram; a validação histórica confirmou 390 jogadores, 1.950 associações, 120 pools elegíveis e 884 assets históricos; o teste administrativo no Chromium passou.
-
-O Playwright completo foi iniciado durante a implementação e não apresentou falha registrada, mas a saída integrada não devolveu o resumo final de alguns cenários mobile. Antes de um deploy, execute novamente:
-
-```sh
 npm run test:e2e
 ```
 
-O build emite aviso de chunk acima de 500 kB. É esperado com o dataset atual e é o primeiro alvo da próxima subfase de performance.
+Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 390 jogadores, chunks anuais, índices compactos, 1.950 associações, 120 pools elegíveis e 884 assets históricos; 23 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
+
+O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
 ## Configuração Externa Pendente
 
@@ -89,24 +105,7 @@ O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions a
 
 ## Como Retomar
 
-### Próxima Entrega: Fase 3.2, Performance
-
-Começar por [repository.ts](../src/data/repository.ts), [App.tsx](../src/App.tsx) e o manifesto de dados. O objetivo é evitar que o JSON histórico inteiro e todo o código administrativo sejam enviados no primeiro carregamento.
-
-- Criar um manifesto leve de anos/grupos válidos.
-- Separar o dataset por ano, ou por ano + grupo regional, carregando apenas o necessário e mantendo cache em memória.
-- Prefetch do próximo contexto de draft quando houver valor claro.
-- Carregamento inicial prioritário para a experiência acima da dobra; manter lazy loading apenas para arte não crítica.
-- Usar code splitting para a rota `/admin` e para superfícies que não pertencem à home/draft.
-- Medir bundle, rede e renderização antes/depois. Não alterar regras de rating, draft ou simulação durante essa subfase.
-
-### Depois: Fase 3.3, SEO, Acessibilidade e Resiliência
-
-- Metadados title/description/canonical/OG/Twitter, preview image, favicon, `robots.txt` e sitemap.
-- Auditoria de teclado, foco, contraste, alvos de toque e redução de movimento.
-- Error boundary e estados seguros de erro de dados/rede; analytics já é fail-safe, mas a aplicação ainda precisa da fronteira de erro visual.
-
-### Fase 4: Cobertura Histórica e Readiness
+### Próxima Entrega: Fase 4, Cobertura Histórica e Readiness
 
 - Estados de cobertura por ano entre 2011 e 2025: `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
 - Relatórios por ano, região, posição, assets e confiança, sem alegar completude que ainda não exista.
@@ -140,4 +139,4 @@ npm.cmd run dev
 - O modo demo não autentica, não envia requests e não preserva métricas, feedback ou configurações.
 - A fase Suíça é a regra da campanha, não uma tabela histórica completa de todas as equipes.
 - Dados remotos de jogadores não foram migrados para Supabase; o jogo continua consumindo o snapshot local pesquisado.
-- Não iniciar Fase 3.2, Fase 3.3 ou Fase 4 sem nova aprovação explícita.
+- Não iniciar a Fase 4 sem nova aprovação explícita.

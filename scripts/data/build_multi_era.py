@@ -205,6 +205,15 @@ def main():
     assert all(x['count']>=3 for x in matrix),[x for x in matrix if x['count']<3]
     write(ROOT/'src/data/draft-region-groups.json',draft_region_manifest(players),True)
     write(ROOT/'src/data/multi-era.json',players)
+    split_dir=ROOT/'src/data/years';split_dir.mkdir(parents=True,exist_ok=True)
+    for year in sorted(CONFIG):
+        write(split_dir/f'{year}.json',[p for p in players if p['worldsYear']==year])
+    featured=next((p for p in players if p['playerName']=='Faker' and p['worldsYear']==2017),players[0])
+    write(ROOT/'src/data/featured-player.json',featured,True)
+    write(ROOT/'src/data/player-index.json',[
+        dict(id=p['id'],playerName=p['playerName'],worldsYear=p['worldsYear'],team=p['team'])
+        for p in players
+    ])
     print(f'Production: {len(players)} players, {len(players)*5} slots, {len(matrix)} valid pools.')
 
 if __name__=='__main__':main()

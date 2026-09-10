@@ -40,7 +40,8 @@ function message(error: unknown): string {
 }
 
 function toggle<T>(items: T[], item: T): T[] {
-  if (items.includes(item)) return items.length > 1 ? items.filter((current) => current !== item) : items;
+  if (items.includes(item))
+    return items.length > 1 ? items.filter((current) => current !== item) : items;
   return [...items, item];
 }
 
@@ -58,11 +59,15 @@ function localDemoConfig(): ProductConfig {
 }
 
 export default function AdminApp() {
-  const [session, setSession] = useState<AdminSession | null>(() => client?.restoreSession() ?? null);
+  const [session, setSession] = useState<AdminSession | null>(
+    () => client?.restoreSession() ?? null,
+  );
   const [access, setAccess] = useState<AccessState>(() =>
     localDemo ? 'ready' : client ? 'sign-in' : 'setup',
   );
-  const [config, setConfig] = useState<ProductConfig | null>(() => (localDemo ? localDemoConfig() : null));
+  const [config, setConfig] = useState<ProductConfig | null>(() =>
+    localDemo ? localDemoConfig() : null,
+  );
   const [dashboard, setDashboard] = useState<DashboardMetrics | null>(() =>
     localDemo ? localDemoDashboard() : null,
   );
@@ -184,7 +189,10 @@ export default function AdminApp() {
   }
 
   return (
-    <main className="admin-shell">
+    <main className="admin-shell" id="admin-main" tabIndex={-1}>
+      <a className="skip-link" href="#admin-main">
+        Pular para o conteúdo
+      </a>
       <header className="admin-header">
         <a href="/" className="admin-back">
           <ArrowLeft size={17} /> Voltar ao jogo
@@ -238,7 +246,11 @@ export default function AdminApp() {
                 required
               />
             </label>
-            {notice && <p className="admin-notice error" role="alert">{notice}</p>}
+            {notice && (
+              <p className="admin-notice error" role="alert">
+                {notice}
+              </p>
+            )}
             <button className="admin-primary" type="submit" disabled={busy}>
               {busy ? <LoaderCircle className="spin" size={18} /> : <ShieldCheck size={18} />}
               Entrar
@@ -271,7 +283,10 @@ export default function AdminApp() {
           {localDemo && (
             <div className="admin-demo-banner" role="status">
               <CircleAlert size={17} />
-              <span>MODO DE DEMONSTRAÇÃO LOCAL. Métricas ilustrativas e alterações desaparecem ao recarregar.</span>
+              <span>
+                MODO DE DEMONSTRAÇÃO LOCAL. Métricas ilustrativas e alterações desaparecem ao
+                recarregar.
+              </span>
             </div>
           )}
           <AdminDashboard
@@ -317,7 +332,9 @@ export default function AdminApp() {
                     <input
                       type="checkbox"
                       checked={config.activeYears.includes(year)}
-                      onChange={() => setConfig({ ...config, activeYears: toggle(config.activeYears, year) })}
+                      onChange={() =>
+                        setConfig({ ...config, activeYears: toggle(config.activeYears, year) })
+                      }
                     />
                     <span>{year}</span>
                   </label>
@@ -350,7 +367,9 @@ export default function AdminApp() {
               <input
                 type="checkbox"
                 checked={config.analyticsEnabled}
-                onChange={(event) => setConfig({ ...config, analyticsEnabled: event.target.checked })}
+                onChange={(event) =>
+                  setConfig({ ...config, analyticsEnabled: event.target.checked })
+                }
               />
               <span>Analytics anônimo ativo</span>
             </label>
@@ -379,7 +398,9 @@ export default function AdminApp() {
                 className={`admin-notice ${notice.includes('simulada') || notice === 'Configuração salva.' ? 'success' : 'error'}`}
                 role="status"
               >
-                {(notice.includes('simulada') || notice === 'Configuração salva.') && <Check size={15} />}
+                {(notice.includes('simulada') || notice === 'Configuração salva.') && (
+                  <Check size={15} />
+                )}
                 {notice}
               </p>
             )}
@@ -387,7 +408,10 @@ export default function AdminApp() {
 
           <div className="admin-scope-note">
             <Settings2 size={18} />
-            <p>Alterações ficam disponíveis para novos lançamentos de campanha; saves existentes não são reescritos.</p>
+            <p>
+              Alterações ficam disponíveis para novos lançamentos de campanha; saves existentes não
+              são reescritos.
+            </p>
           </div>
         </section>
       )}

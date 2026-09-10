@@ -20,6 +20,7 @@ export function ResearchDialog({
     <dialog
       ref={dialog}
       className="help-dialog research-dialog"
+      aria-labelledby="research-dialog-title"
       onCancel={close}
       onClick={(e) => {
         if (e.target === e.currentTarget) close();
@@ -29,7 +30,9 @@ export function ResearchDialog({
         <X />
       </button>
       <span className="eyebrow green">HISTÓRIA E ESTATÍSTICA</span>
-      <h2>{player ? `${player.playerName} · ${player.worldsYear}` : 'Como calculamos?'}</h2>
+      <h2 id="research-dialog-title">
+        {player ? `${player.playerName} · ${player.worldsYear}` : 'Como calculamos?'}
+      </h2>
       {player && (
         <p>
           {player.teamName ?? player.team} · {player.historicalLeague ?? player.region} ·{' '}

@@ -1,10 +1,10 @@
 import { BarChart3, MessageSquareText, RefreshCw, Trophy } from 'lucide-react';
-import { players } from '../data/players';
+import playerIndex from '../data/player-index.json';
 import { analyticsPlayerId } from '../game/analytics';
 import type { DashboardMetrics, MetricCount } from './dashboard';
 
 const playerLabels = new Map(
-  players.map((player) => [
+  playerIndex.map((player) => [
     analyticsPlayerId(player.id),
     `${player.playerName} · ${player.worldsYear} ${player.team}`,
   ]),
@@ -29,7 +29,15 @@ function duration(seconds: number | null): string {
   return minutes ? `${minutes} min ${remainingSeconds}s` : `${remainingSeconds}s`;
 }
 
-function MetricCard({ label, value, detail }: { label: string; value: string | number; detail?: string }) {
+function MetricCard({
+  label,
+  value,
+  detail,
+}: {
+  label: string;
+  value: string | number;
+  detail?: string;
+}) {
   return (
     <article className="admin-metric-card">
       <span>{label}</span>
@@ -119,7 +127,9 @@ export function AdminDashboard({
     return (
       <section className="admin-dashboard-state admin-dashboard-error" role="alert">
         <span>As métricas não estão disponíveis.</span>
-        <button className="admin-secondary" onClick={onRefresh}>Tentar novamente</button>
+        <button className="admin-secondary" onClick={onRefresh}>
+          Tentar novamente
+        </button>
       </section>
     );
 
@@ -132,20 +142,40 @@ export function AdminDashboard({
           <span className="admin-kicker">VISÃO GERAL</span>
           <h1>Campanhas em movimento.</h1>
         </div>
-        <button className="admin-refresh" onClick={onRefresh} disabled={loading} title="Atualizar métricas">
+        <button
+          className="admin-refresh"
+          onClick={onRefresh}
+          disabled={loading}
+          title="Atualizar métricas"
+        >
           <RefreshCw className={loading ? 'spin' : ''} size={17} />
           Atualizar
         </button>
       </div>
-      {error && <p className="admin-notice error" role="alert">{error}</p>}
+      {error && (
+        <p className="admin-notice error" role="alert">
+          {error}
+        </p>
+      )}
 
       <div className="admin-metric-grid">
         <MetricCard label="Drafts iniciados" value={overview.draftsStarted} />
-        <MetricCard label="Drafts concluídos" value={overview.draftsCompleted} detail={percent(overview.draftCompletionRate)} />
-        <MetricCard label="Worlds iniciados" value={overview.worldsStarted} detail={percent(overview.worldsStartRate)} />
+        <MetricCard
+          label="Drafts concluídos"
+          value={overview.draftsCompleted}
+          detail={percent(overview.draftCompletionRate)}
+        />
+        <MetricCard
+          label="Worlds iniciados"
+          value={overview.worldsStarted}
+          detail={percent(overview.worldsStartRate)}
+        />
         <MetricCard label="Jogar novamente" value={percent(overview.playAgainRate)} />
         <MetricCard label="Duração média do draft" value={duration(overview.averageDraftSeconds)} />
-        <MetricCard label="Duração média campanha" value={duration(overview.averageCampaignSeconds)} />
+        <MetricCard
+          label="Duração média campanha"
+          value={duration(overview.averageCampaignSeconds)}
+        />
         <MetricCard label="Trocas usadas" value={overview.exchangesUsed} />
         <MetricCard label="Feedback recebido" value={feedback.total} />
       </div>
@@ -185,9 +215,15 @@ export function AdminDashboard({
           <MessageSquareText size={21} />
         </div>
         <div className="admin-feedback-stats">
-          <span className="good"><b>{feedback.good}</b> Bom</span>
-          <span className="ok"><b>{feedback.ok}</b> Ok</span>
-          <span className="bad"><b>{feedback.bad}</b> Ruim</span>
+          <span className="good">
+            <b>{feedback.good}</b> Bom
+          </span>
+          <span className="ok">
+            <b>{feedback.ok}</b> Ok
+          </span>
+          <span className="bad">
+            <b>{feedback.bad}</b> Ruim
+          </span>
         </div>
         {feedback.notes.length ? (
           <div className="admin-feedback-notes">
@@ -204,7 +240,8 @@ export function AdminDashboard({
         )}
       </section>
       <p className="admin-dashboard-timestamp">
-        <BarChart3 size={15} /> Atualizado em {new Date(metrics.generatedAt).toLocaleString('pt-BR')}
+        <BarChart3 size={15} /> Atualizado em{' '}
+        {new Date(metrics.generatedAt).toLocaleString('pt-BR')}
       </p>
     </section>
   );

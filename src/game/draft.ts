@@ -17,8 +17,11 @@ export interface DraftAvailability {
 }
 type Random = () => number;
 export type DraftPool = Omit<DraftRound, 'options'> & { players: PlayerVersion[] };
+export type DraftPlanEntry = Omit<DraftRound, 'options'> & { optionRoll: number };
 const choose = <T>(xs: T[], rng: Random): T =>
   xs[Math.min(xs.length - 1, Math.floor(rng() * xs.length))];
+const chooseByRoll = <T>(xs: T[], roll: number): T =>
+  xs[Math.min(xs.length - 1, Math.floor(roll * xs.length))];
 export function eligiblePools(
   players: PlayerVersion[],
   manifest?: DraftRegionManifest,
@@ -68,7 +71,9 @@ function combinations(players: PlayerVersion[]): PlayerVersion[][] {
 }
 function diverseCombinations(players: PlayerVersion[]): PlayerVersion[][] {
   const options = combinations(players);
-  const maxTeams = Math.max(...options.map((candidate) => new Set(candidate.map((p) => p.team)).size));
+  const maxTeams = Math.max(
+    ...options.map((candidate) => new Set(candidate.map((p) => p.team)).size),
+  );
   return options.filter((candidate) => new Set(candidate.map((p) => p.team)).size === maxTeams);
 }
 export function rollRound(pools: DraftPool[], role: Role, rng: Random = Math.random): DraftRound {
@@ -79,7 +84,12 @@ export function rollRound(pools: DraftPool[], role: Role, rng: Random = Math.ran
     valid.filter((p) => p.year === year),
     rng,
   );
-  return { role, year, region: pool.region, options: choose(diverseCombinations(pool.players), rng) };
+  return {
+    role,
+    year,
+    region: pool.region,
+    options: choose(diverseCombinations(pool.players), rng),
+  };
 }
 export function createDraft(
   players: PlayerVersion[],
@@ -89,6 +99,49 @@ export function createDraft(
 ): DraftRound[] {
   const pools = eligiblePools(players, manifest, availability);
   return ROLES.map((role) => rollRound(pools, role, rng));
+}
+
+export function planDraft(
+  manifest: DraftRegionManifest,
+  availability: DraftAvailability,
+  rng: Random = Math.random,
+): DraftPlanEntry[] {
+  const years = manifest.groups.filter(
+    (entry) =>
+      availability.activeYears.includes(entry.year) &&
+      entry.groups.some((group) => availability.activeRegionGroups.includes(group.id)),
+  );
+  if (!years.length) throw new Error('Sem anos e grupos válidos para o draft');
+  return ROLES.map((role) => {
+    const year = choose(years, rng);
+    const region = choose(
+      year.groups.filter((group) => availability.activeRegionGroups.includes(group.id)),
+      rng,
+    );
+    return { role, year: year.year, region, optionRoll: rng() };
+  });
+}
+
+export function createDraftFromPlan(
+  players: PlayerVersion[],
+  plan: DraftPlanEntry[],
+  manifest?: DraftRegionManifest,
+): DraftRound[] {
+  const pools = eligiblePools(players, manifest);
+  return plan.map(({ optionRoll, ...context }) => {
+    const pool = pools.find(
+      (candidate) =>
+        candidate.role === context.role &&
+        candidate.year === context.year &&
+        candidate.region.id === context.region.id,
+    );
+    if (!pool)
+      throw new Error(`Sem pool válido para ${context.role}/${context.year}/${context.region.id}`);
+    return {
+      ...context,
+      options: chooseByRoll(diverseCombinations(pool.players), optionRoll),
+    };
+  });
 }
 export function exchangeAlternatives(
   round: DraftRound,
