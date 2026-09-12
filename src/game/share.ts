@@ -13,6 +13,7 @@ export interface CampaignShareSummary {
   losses: number;
   confrontations: number;
   team: SharePlayer[];
+  challengeCode?: string;
 }
 
 export interface CampaignCard {
@@ -42,14 +43,17 @@ export function campaignCardFileName(summary: CampaignShareSummary): string {
   return `draft-lendas-${safeOutcomeSlug(summary.outcome) || 'campanha'}.png`;
 }
 
-export function campaignShareText(summary: CampaignShareSummary): string {
+export function campaignShareText(summary: CampaignShareSummary, challengeUrl?: string): string {
   const lineup = summary.team
     .map(
       (player) =>
         `${roleLabels[player.role]} ${player.playerName} (${player.team} ${player.worldsYear})`,
     )
     .join(' · ');
-  return `Meu Draft Lendas terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?`;
+  const challenge = challengeUrl
+    ? ` Desafio ${summary.challengeCode ?? ''}: tente vencer meu draft nas mesmas condições: ${challengeUrl}`
+    : '';
+  return `Meu Draft Lendas terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?${challenge}`;
 }
 
 function roundedRect(
@@ -179,7 +183,11 @@ export async function createCampaignCard(summary: CampaignShareSummary): Promise
   context.fillStyle = '#5ea929';
   context.textAlign = 'right';
   context.font = '700 25px "DM Sans", Arial, sans-serif';
-  context.fillText('DRAFT LENDAS', 1008, 1289);
+  context.fillText(
+    summary.challengeCode ? `DESAFIO ${summary.challengeCode}` : 'DRAFT LENDAS',
+    1008,
+    1289,
+  );
   context.textAlign = 'left';
 
   const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'));

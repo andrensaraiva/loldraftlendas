@@ -1,10 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import {
-  CAMPAIGN_SAVE_KEY,
-  clearCampaign,
-  loadCampaign,
-  saveCampaign,
-} from './campaign';
+import { CAMPAIGN_SAVE_KEY, clearCampaign, loadCampaign, saveCampaign } from './campaign';
 import type { CampaignState, CampaignStorage } from './campaign';
 
 function storage(): CampaignStorage & { values: Map<string, string> } {
@@ -18,6 +13,9 @@ function storage(): CampaignStorage & { values: Map<string, string> } {
 }
 
 const campaign: CampaignState = {
+  seed: 'draftlendas2026a',
+  randomVersion: 1,
+  campaignSource: 'organic',
   screen: 'draft',
   draftStep: 0,
   draftAvailability: {
@@ -61,5 +59,31 @@ describe('campaign persistence', () => {
     saveCampaign(campaign, 'dataset-v1', local);
     clearCampaign(local);
     expect(local.getItem(CAMPAIGN_SAVE_KEY)).toBeNull();
+  });
+
+  it('migrates a compatible v1 save to a deterministic organic campaign', () => {
+    const local = storage();
+    const {
+      seed: _seed,
+      randomVersion: _randomVersion,
+      campaignSource: _source,
+      ...legacy
+    } = campaign;
+    local.setItem(
+      CAMPAIGN_SAVE_KEY,
+      JSON.stringify({
+        version: 1,
+        datasetVersion: 'dataset-v1',
+        savedAt: '2026-09-12T12:00:00.000Z',
+        campaign: legacy,
+      }),
+    );
+    const migrated = loadCampaign('dataset-v1', local);
+    expect(migrated).toMatchObject({
+      randomVersion: 1,
+      campaignSource: 'organic',
+      screen: 'draft',
+    });
+    expect(migrated?.seed).toMatch(/^[a-z0-9]{16}$/);
   });
 });

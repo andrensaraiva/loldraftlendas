@@ -45,6 +45,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Prévia de cada partida com probabilidade de vitória, força, rating médio, composição e bônus ativos antes de revelar o resultado.
 - Adversários com elencos históricos, sem repetição na mesma campanha enquanto houver opções.
 - Card final compartilhável em PNG com equipe, anos e campanha; usa o compartilhamento nativo do dispositivo quando disponível e oferece download/cópia como fallback, sem dados pessoais.
+- Seed versionada em toda campanha: ofertas, trocas, adversários, resultados e relatos são reproduzíveis pelas mesmas regras e decisões. O card final inclui um link/código para desafiar amigos nas mesmas condições, sem conta ou ranking não verificável.
 - Save de campanha versionado no armazenamento local do navegador: seleções, trocas, draft, série, torneio, resultados e preferências de reprodução são retomados por **Continuar campanha**. Saves incompatíveis com uma nova versão de dados são descartados com segurança.
 - Painel privado em `/admin`: allowlist explícita de administradores, configuração versionada, funil de campanhas, resultados, duração, trocas, compartilhamentos, picks, rejeições, anos, regiões, dispositivos e feedback anônimo. O modo local de demonstração usa métricas ilustrativas e não envia dados.
 - Configuração remota opcional para novos drafts: trocas iniciais, anos, grupos regionais, analytics e aviso de manutenção. Um snapshot das regras fica salvo na campanha ativa, evitando alterações retroativas.
@@ -82,7 +83,9 @@ src/
     draft.ts       # Pools válidos, sorteios, trocas e DRAFT_CONFIG
     regions.ts     # Região canônica, grupos e fallback determinístico
     campaign.ts    # Save versionado no armazenamento local
+    challenge.ts   # Payload validado, código e URL de desafio
     engine.ts      # Ratings, composição, séries e torneio
+    random.ts      # Streams determinísticos separados por operação
     recap.ts       # Narrativa e snapshots cumulativos de KDA
     share.ts       # Texto e card PNG da campanha
     engine.test.ts # Casos de domínio e transições

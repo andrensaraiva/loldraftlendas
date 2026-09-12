@@ -7,6 +7,7 @@ const summary: CampaignShareSummary = {
   wins: 13,
   losses: 2,
   confrontations: 6,
+  challengeCode: 'DRAF-TLEN',
   team: [
     { role: 'TOP', playerName: 'Khan', team: 'LZ', worldsYear: 2017 },
     { role: 'JUNGLE', playerName: 'Canyon', team: 'DWG', worldsYear: 2020 },
@@ -23,6 +24,9 @@ describe('campaign sharing', () => {
     expect(text).toContain('TOP Khan (LZ 2017)');
     expect(text).toContain('SUP Keria (T1 2023)');
     expect(text).toContain('Você faria um draft melhor?');
+    expect(campaignShareText(summary, 'https://draft.example/desafio')).toContain(
+      'Desafio DRAF-TLEN',
+    );
   });
 
   it('creates a stable and filesystem-safe card name', () => {

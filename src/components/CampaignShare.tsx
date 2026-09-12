@@ -1,9 +1,10 @@
-import { Download, Share2 } from 'lucide-react';
+import { Copy, Download, Share2 } from 'lucide-react';
 import { useState } from 'react';
 import { campaignShareText, createCampaignCard, downloadCampaignCard } from '../game/share';
 import type { CampaignShareSummary } from '../game/share';
 
-export type CampaignShareEvent = 'share_started' | 'share_completed' | 'card_downloaded';
+export type CampaignShareEvent =
+  'share_started' | 'share_completed' | 'card_downloaded' | 'challenge_link_copied';
 export type CampaignShareMethod = 'file' | 'link' | 'download';
 
 function shareFile(card: Awaited<ReturnType<typeof createCampaignCard>>): File | null {
@@ -23,9 +24,11 @@ function canShareFile(file: File | null): file is File {
 
 export function CampaignShare({
   summary,
+  challengeUrl,
   onTrack,
 }: {
   summary: CampaignShareSummary;
+  challengeUrl?: string;
   onTrack: (event: CampaignShareEvent, method: CampaignShareMethod) => void;
 }) {
   const [busy, setBusy] = useState(false);
@@ -54,7 +57,7 @@ export function CampaignShare({
     try {
       const card = await createCampaignCard(summary);
       const file = shareFile(card);
-      const text = campaignShareText(summary);
+      const text = campaignShareText(summary, challengeUrl);
       if (canShareFile(file)) {
         onTrack('share_started', 'file');
         await navigator.share({ title: 'Meu Draft Lendas', text, files: [file] });
@@ -62,14 +65,20 @@ export function CampaignShare({
         setStatus('Campanha compartilhada.');
       } else if (typeof navigator.share === 'function') {
         onTrack('share_started', 'link');
-        await navigator.share({ title: 'Meu Draft Lendas', text, url: window.location.origin });
+        await navigator.share({
+          title: 'Meu Draft Lendas',
+          text,
+          url: challengeUrl ?? window.location.origin,
+        });
         onTrack('share_completed', 'link');
         setStatus('Campanha compartilhada.');
       } else {
         onTrack('share_started', 'download');
         downloadCampaignCard(card);
         try {
-          await navigator.clipboard?.writeText(`${text} ${window.location.origin}`);
+          await navigator.clipboard?.writeText(
+            challengeUrl ? text : `${text} ${window.location.origin}`,
+          );
         } catch {
           // The image download remains the successful fallback when clipboard access is blocked.
         }
@@ -85,12 +94,31 @@ export function CampaignShare({
     }
   }
 
+  async function copyChallenge(): Promise<void> {
+    if (!challengeUrl || busy) return;
+    setBusy(true);
+    try {
+      await navigator.clipboard.writeText(challengeUrl);
+      onTrack('challenge_link_copied', 'link');
+      setStatus(`Desafio ${summary.challengeCode ?? ''} copiado. Envie o link para um amigo.`);
+    } catch {
+      setStatus('Não foi possível copiar. Use “Compartilhar campanha” para enviar o desafio.');
+    } finally {
+      setBusy(false);
+    }
+  }
+
   return (
     <div className="campaign-share">
       <div className="final-actions">
         <button className="primary" onClick={share} disabled={busy}>
           <Share2 size={18} /> {busy ? 'Preparando…' : 'Compartilhar campanha'}
         </button>
+        {challengeUrl && (
+          <button className="secondary" onClick={copyChallenge} disabled={busy}>
+            <Copy size={18} /> Copiar desafio {summary.challengeCode}
+          </button>
+        )}
         <button className="secondary" onClick={download} disabled={busy}>
           <Download size={18} /> Baixar card
         </button>

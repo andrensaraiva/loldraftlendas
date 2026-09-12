@@ -27,6 +27,10 @@ export interface DashboardMetrics {
     shareIntentRate: number;
     sharesCompleted: number;
     cardsDownloaded: number;
+    challengesOpened: number;
+    challengesStarted: number;
+    challengeCompletionRate: number;
+    challengeLinksCopied: number;
   };
   outcomes: MetricCount[];
   exchanges: MetricCount[];
@@ -53,6 +57,10 @@ interface DashboardResponse {
     share_intent_rate: number;
     shares_completed: number;
     cards_downloaded: number;
+    challenges_opened: number;
+    challenges_started: number;
+    challenge_completion_rate: number;
+    challenge_links_copied: number;
   };
   outcomes: Array<{ key: string; label: string; count: number }>;
   exchanges: Array<{ key: string; label: string; count: number }>;
@@ -123,6 +131,10 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     numberValue(overview.share_intent_rate) === null ||
     numberValue(overview.shares_completed) === null ||
     numberValue(overview.cards_downloaded) === null ||
+    numberValue(overview.challenges_opened) === null ||
+    numberValue(overview.challenges_started) === null ||
+    numberValue(overview.challenge_completion_rate) === null ||
+    numberValue(overview.challenge_links_copied) === null ||
     numberValue(feedback.total) === null ||
     numberValue(feedback.good) === null ||
     numberValue(feedback.ok) === null ||
@@ -154,6 +166,10 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
       shareIntentRate: overview.share_intent_rate,
       sharesCompleted: overview.shares_completed,
       cardsDownloaded: overview.cards_downloaded,
+      challengesOpened: overview.challenges_opened,
+      challengesStarted: overview.challenges_started,
+      challengeCompletionRate: overview.challenge_completion_rate,
+      challengeLinksCopied: overview.challenge_links_copied,
     },
     outcomes: lists[0]!,
     exchanges: lists[1]!,
@@ -192,6 +208,10 @@ export function localDemoDashboard(): DashboardMetrics {
       shareIntentRate: 18.8,
       sharesCompleted: 24,
       cardsDownloaded: 11,
+      challengesOpened: 31,
+      challengesStarted: 22,
+      challengeCompletionRate: 63.6,
+      challengeLinksCopied: 19,
     },
     outcomes: [
       { key: 'swiss_eliminated', label: 'Eliminado no Suíço', count: 76 },

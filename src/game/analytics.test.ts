@@ -65,6 +65,11 @@ describe('anonymous analytics', () => {
       share_method: 'file',
       email: 'still-never-sent@example.test',
     });
+    tracker.track('challenge_started', {
+      campaign_source: 'challenge',
+      challenge_version: 1,
+      seed: 'must-never-be-sent',
+    });
     await tracker.flush();
 
     expect(remote.events.map((event) => event.event_name)).toEqual([
@@ -72,6 +77,7 @@ describe('anonymous analytics', () => {
       'draft_started',
       'player_selected',
       'share_started',
+      'challenge_started',
     ]);
     expect(remote.events[2]).toMatchObject({
       device_type: 'mobile',
@@ -85,6 +91,10 @@ describe('anonymous analytics', () => {
     expect(remote.events[3].properties).toEqual({
       outcome: 'Campeão mundial',
       share_method: 'file',
+    });
+    expect(remote.events[4].properties).toEqual({
+      campaign_source: 'challenge',
+      challenge_version: 1,
     });
     expect(tracker.campaignElapsedMs()).toBe(0);
     expect(tracker.draftElapsedMs()).toBe(0);

@@ -180,6 +180,13 @@ export function AdminDashboard({
         <MetricCard label="Campanhas com share" value={percent(overview.shareIntentRate)} />
         <MetricCard label="Shares concluídos" value={overview.sharesCompleted} />
         <MetricCard label="Cards baixados" value={overview.cardsDownloaded} />
+        <MetricCard label="Desafios abertos" value={overview.challengesOpened} />
+        <MetricCard label="Desafios iniciados" value={overview.challengesStarted} />
+        <MetricCard
+          label="Conclusão dos desafios"
+          value={percent(overview.challengeCompletionRate)}
+        />
+        <MetricCard label="Links de desafio copiados" value={overview.challengeLinksCopied} />
         <MetricCard label="Feedback recebido" value={feedback.total} />
       </div>
 

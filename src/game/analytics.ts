@@ -18,6 +18,10 @@ export const ANALYTICS_EVENTS = [
   'share_started',
   'share_completed',
   'card_downloaded',
+  'challenge_opened',
+  'challenge_started',
+  'challenge_completed',
+  'challenge_link_copied',
 ] as const;
 
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];
@@ -70,7 +74,15 @@ const ONCE_KEY = 'draft-lendas.analytics-once';
 const MAX_QUEUE_SIZE = 50;
 const MAX_PROPERTY_STRING_LENGTH = 120;
 const MAX_PROPERTIES_BYTES = 1200;
-const BLOCKED_PROPERTY_KEYS = new Set(['email', 'name', 'note', 'password', 'token']);
+const BLOCKED_PROPERTY_KEYS = new Set([
+  'email',
+  'name',
+  'note',
+  'password',
+  'token',
+  'seed',
+  'challenge_url',
+]);
 
 export function analyticsPlayerId(playerId: string): string {
   return playerId
@@ -182,12 +194,12 @@ export class AnalyticsTracker {
     return this.enabled;
   }
 
-  startCampaign(): void {
+  startCampaign(properties: AnalyticsProperties = {}): void {
     this.campaignId = this.randomId();
     persist(this.localStorage, CAMPAIGN_KEY, this.campaignId);
     persist(this.localStorage, CAMPAIGN_STARTED_AT_KEY, this.now());
     persist(this.localStorage, DRAFT_STARTED_AT_KEY, this.now());
-    this.trackOnce('draft_started', 'draft_started');
+    this.trackOnce('draft_started', 'draft_started', properties);
   }
 
   campaignElapsedMs(): number {

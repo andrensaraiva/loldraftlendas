@@ -18,9 +18,10 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 ### Estado de execução
 
 - ✅ **1.1 Card compartilhável:** implementado com PNG 1080 × 1350, Web Share, download e fallback de cópia.
-- 🟡 **1.2 Métricas sociais:** `share_started`, `share_completed` e `card_downloaded` já chegam ao contrato e ao dashboard; origem do convite entra junto com o link de desafio em 2.2.
+- ✅ **1.2 Métricas sociais:** compartilhamento e o funil anônimo de abertura, início e conclusão do desafio chegam ao dashboard sem armazenar seed, URL ou destinatário.
 - ✅ **1.3 Explicação pré-jogo:** chance, forças, ratings médios, composição e bônus ativos estão visíveis antes do resultado.
-- ⏭️ **Próximo pacote técnico:** 2.1 e 2.2, com seed persistida, reprodução determinística e link/código de desafio.
+- ✅ **2.1 e 2.2 Seed e desafio:** seed persistida, save v2 com migração, reprodução por operação e link/código validado estão implementados.
+- ⏭️ **Próximo pacote de produto:** 1.4, feedback contextual para contestar um rating sem enviar dados pessoais.
 - 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
 
 Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila atual precisa de duas trilhas: **confiabilidade/dados** e **produto/retenção**.

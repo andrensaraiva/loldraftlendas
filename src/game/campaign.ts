@@ -1,8 +1,9 @@
 import type { DraftRound, GameResult, Series, Team, Tournament } from './types';
 import { DRAFT_REGION_GROUP_IDS } from './types';
 import type { DraftAvailability } from './draft';
+import { CAMPAIGN_RANDOM_VERSION, campaignSeedFromText, isCampaignSeed } from './random';
 
-export const CAMPAIGN_SAVE_VERSION = 1;
+export const CAMPAIGN_SAVE_VERSION = 2;
 export const CAMPAIGN_SAVE_KEY = 'draft-lendas.campaign';
 export type CampaignScreen = 'draft' | 'team' | 'tournament' | 'match' | 'result';
 export interface CampaignSettings {
@@ -11,6 +12,9 @@ export interface CampaignSettings {
   paused: boolean;
 }
 export interface CampaignState {
+  seed: string;
+  randomVersion: typeof CAMPAIGN_RANDOM_VERSION;
+  campaignSource: 'organic' | 'challenge';
   screen: CampaignScreen;
   draftStep: number;
   draftAvailability?: DraftAvailability;
@@ -45,7 +49,9 @@ function browserStorage(): CampaignStorage | null {
   }
 }
 
-function isCampaignState(value: unknown): value is CampaignState {
+type LegacyCampaignState = Omit<CampaignState, 'seed' | 'randomVersion' | 'campaignSource'>;
+
+function isCampaignCore(value: unknown): value is LegacyCampaignState {
   if (!value || typeof value !== 'object') return false;
   const candidate = value as Partial<CampaignState>;
   const tournament = candidate.tournament as Partial<Tournament> | undefined;
@@ -59,7 +65,9 @@ function isCampaignState(value: unknown): value is CampaignState {
         availability.startingExchanges >= 0 &&
         availability.startingExchanges <= 9 &&
         Array.isArray(availability.activeYears) &&
-        availability.activeYears.every((year) => Number.isInteger(year) && year >= 2011 && year <= 2100) &&
+        availability.activeYears.every(
+          (year) => Number.isInteger(year) && year >= 2011 && year <= 2100,
+        ) &&
         Array.isArray(availability.activeRegionGroups) &&
         availability.activeRegionGroups.every((group) =>
           (DRAFT_REGION_GROUP_IDS as readonly string[]).includes(group),
@@ -82,16 +90,33 @@ function isCampaignState(value: unknown): value is CampaignState {
   );
 }
 
+function isCampaignState(value: unknown): value is CampaignState {
+  if (!isCampaignCore(value)) return false;
+  const candidate = value as Partial<CampaignState>;
+  return (
+    isCampaignSeed(candidate.seed) &&
+    candidate.randomVersion === CAMPAIGN_RANDOM_VERSION &&
+    ['organic', 'challenge'].includes(candidate.campaignSource ?? '')
+  );
+}
+
 function migrate(save: unknown, datasetVersion: string): CampaignState | null {
   if (!save || typeof save !== 'object') return null;
   const candidate = save as Partial<CampaignSave>;
-  if (
-    candidate.version !== CAMPAIGN_SAVE_VERSION ||
-    candidate.datasetVersion !== datasetVersion ||
-    !isCampaignState(candidate.campaign)
-  )
-    return null;
-  return candidate.campaign;
+  if (candidate.datasetVersion !== datasetVersion) return null;
+  if (candidate.version === CAMPAIGN_SAVE_VERSION && isCampaignState(candidate.campaign))
+    return candidate.campaign;
+  if (candidate.version === 1 && isCampaignCore(candidate.campaign)) {
+    return {
+      ...candidate.campaign,
+      seed: campaignSeedFromText(
+        `${candidate.datasetVersion}:${candidate.savedAt ?? ''}:${JSON.stringify(candidate.campaign.rounds)}`,
+      ),
+      randomVersion: CAMPAIGN_RANDOM_VERSION,
+      campaignSource: 'organic',
+    };
+  }
+  return null;
 }
 
 export function loadCampaign(

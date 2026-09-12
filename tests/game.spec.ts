@@ -1,12 +1,37 @@
 import { test, expect } from '@playwright/test';
 import type { Page } from '@playwright/test';
-async function draft(page: Page, roll = 0) {
-  await page.addInitScript((roll) => {
-    Math.random = () => roll;
-  }, roll);
-  await page.goto('/');
+import { CHALLENGE_VERSION, encodeChallenge } from '../src/game/challenge';
+
+function challengePath(seed: string): string {
+  const challenge = encodeChallenge({
+    version: CHALLENGE_VERSION,
+    seed,
+    datasetVersion: 'multi-era-v1.2.0',
+    availability: {
+      startingExchanges: 3,
+      activeYears: [2015, 2017, 2019, 2020, 2022, 2023, 2024, 2025],
+      activeRegionGroups: [
+        'KOREA',
+        'CHINA',
+        'EUROPE',
+        'NORTH_AMERICA',
+        'OTHER_REGIONS',
+        'EUROPE_NORTH_AMERICA',
+      ],
+    },
+  });
+  return `/?challenge=${challenge}`;
+}
+
+async function draft(page: Page, challengeSeed?: string) {
+  await page.addInitScript(() => {
+    Math.random = () => 0;
+  });
+  await page.goto(challengeSeed ? challengePath(challengeSeed) : '/');
   await expect(page.locator('footer')).toContainText('RATINGS ESTIMADOS');
-  await page.getByRole('button', { name: 'Começar draft' }).click();
+  await page
+    .getByRole('button', { name: challengeSeed ? 'Aceitar desafio' : 'Começar draft' })
+    .click();
   for (let i = 0; i < 5; i++) {
     await expect(page.locator('.pick-counter')).toContainText(`0${i + 1}`);
     await expect(page.locator('.player-card')).toHaveCount(3);
@@ -16,12 +41,45 @@ async function draft(page: Page, roll = 0) {
     await page.locator('.player-card').first().click();
   }
 }
+
+test('challenge link reproduces the same opening offer and rejects incompatible payloads', async ({
+  page,
+}) => {
+  const path = challengePath('draftlendas2026a');
+  await page.goto(path);
+  await expect(page.locator('.challenge-invite')).toContainText('DRAF-TLEN');
+  await page.screenshot({
+    path: `test-results/challenge-invite-${test.info().project.name}.png`,
+    fullPage: true,
+  });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.getByRole('button', { name: 'Aceitar desafio' }).click();
+  await expect(page.locator('.player-card')).toHaveCount(3);
+  const firstOffer = await page
+    .locator('.player-card')
+    .evaluateAll((cards) => cards.map((card) => card.getAttribute('aria-label')));
+
+  await page.goto(path);
+  await page.getByRole('button', { name: 'Aceitar desafio' }).click();
+  await expect(page.locator('.player-card')).toHaveCount(3);
+  expect(
+    await page
+      .locator('.player-card')
+      .evaluateAll((cards) => cards.map((card) => card.getAttribute('aria-label'))),
+  ).toEqual(firstOffer);
+
+  await page.evaluate(() => localStorage.clear());
+  await page.goto('/?challenge=invalid-payload');
+  await expect(page.getByRole('alert')).toContainText('inválido');
+  await expect(page.getByRole('button', { name: 'Começar draft' })).toBeVisible();
+});
+
 test('quick mode automatically wins Swiss and all playoffs, keeps reports and replays', async ({
   page,
 }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
-  await draft(page);
+  await draft(page, '00000000000000ly');
   for (let i = 1; i <= 5; i++) {
     await page.getByRole('tab', { name: `Jogo ${i}` }).click();
     await expect(page.locator('.comp-champion')).toHaveCount(5);
@@ -33,6 +91,7 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
     timeout: 25000,
   });
   await expect(page.getByRole('button', { name: 'Compartilhar campanha' })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Copiar desafio 0000-0000/ })).toBeVisible();
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Baixar card' }).click();
   const download = await downloadPromise;
@@ -61,7 +120,7 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
 test('quick mode eliminates after three Swiss losses and preserves every game', async ({
   page,
 }) => {
-  await draft(page, 0.999);
+  await draft(page, '0000000000000007');
   await page.getByRole('button', { name: 'Resultado rápido' }).click();
   await page.getByRole('button', { name: '4×', exact: true }).click();
   await page.getByRole('button', { name: 'Entrar no Worlds' }).click();

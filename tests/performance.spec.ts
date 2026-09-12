@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 
-test('the home defers annual datasets and the first draft loads only selected years', async ({
+test('the home defers annual datasets and the first draft loads only its planned years', async ({
   page,
 }) => {
   await page.addInitScript(() => {
@@ -18,6 +18,23 @@ test('the home defers annual datasets and the first draft loads only selected ye
 
   await page.getByRole('button', { name: 'Começar draft' }).click();
   await expect(page.locator('.player-card')).toHaveCount(3);
-  expect(annualRequests).toHaveLength(1);
-  expect(annualRequests[0]).toContain('/src/data/years/2015.json');
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const raw = localStorage.getItem('draft-lendas.campaign');
+        return raw ? JSON.parse(raw).campaign.rounds.length : 0;
+      }),
+    )
+    .toBe(5);
+  const plannedYears = await page.evaluate(() => {
+    const raw = localStorage.getItem('draft-lendas.campaign')!;
+    const save = JSON.parse(raw) as { campaign: { rounds: Array<{ year: number }> } };
+    return [...new Set(save.campaign.rounds.map((round) => round.year))].sort();
+  });
+  const requestedYears = [
+    ...new Set(annualRequests.map((url) => Number(url.match(/\/years\/(\d{4})\.json/)?.[1]))),
+  ].sort();
+  expect(requestedYears).toEqual(plannedYears);
+  expect(requestedYears.length).toBeLessThanOrEqual(5);
+  expect(requestedYears.length).toBeLessThan(8);
 });

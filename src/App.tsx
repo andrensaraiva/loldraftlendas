@@ -10,6 +10,14 @@ import {
 import type { Exchange } from './game/draft';
 import { clearCampaign, loadCampaign, saveCampaign } from './game/campaign';
 import type { CampaignScreen, CampaignState } from './game/campaign';
+import {
+  CHALLENGE_QUERY_PARAM,
+  CHALLENGE_VERSION,
+  challengeCode,
+  createChallengeUrl,
+  decodeChallenge,
+} from './game/challenge';
+import type { CampaignChallenge } from './game/challenge';
 import { analyticsPlayerId, createAnalyticsTracker } from './game/analytics';
 import type { AnalyticsProperties } from './game/analytics';
 import {
@@ -19,6 +27,7 @@ import {
 } from './game/product-config';
 import type { DraftAvailability } from './game/draft';
 import { canonicalRegionFor } from './game/regions';
+import { CAMPAIGN_RANDOM_VERSION, campaignRandom, createCampaignSeed } from './game/random';
 import { championArt } from './data/art';
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import {
@@ -104,6 +113,14 @@ function draftEventProperties(round: DraftRound): AnalyticsProperties {
     draft_region_group: round.region.id,
     candidate_ids: round.options.map((player) => analyticsPlayerId(player.id)),
   };
+}
+
+function challengeFromBrowser(): { challenge: CampaignChallenge | null; invalid: boolean } {
+  if (typeof window === 'undefined') return { challenge: null, invalid: false };
+  const value = new URL(window.location.href).searchParams.get(CHALLENGE_QUERY_PARAM);
+  if (!value) return { challenge: null, invalid: false };
+  const challenge = decodeChallenge(value, catalog.draftRegionManifest);
+  return { challenge, invalid: !challenge };
 }
 function ReportDialog({
   report,
@@ -544,12 +561,19 @@ export default function App() {
   const [loadingGame, setLoadingGame] = useState(false);
   const [error, setError] = useState('');
   const [screen, setScreen] = useState<Screen>('home');
+  const initialChallenge = useRef(challengeFromBrowser()).current;
+  const [pendingChallenge, setPendingChallenge] = useState<CampaignChallenge | null>(
+    initialChallenge.challenge,
+  );
+  const [challengeInvalid, setChallengeInvalid] = useState(initialChallenge.invalid);
   const [hasSavedCampaign, setHasSavedCampaign] = useState(false);
   const [analyticsEnabled, setAnalyticsEnabled] = useState(false);
   const [nextDraftAvailability, setNextDraftAvailability] = useState<DraftAvailability | null>(
     null,
   );
   const [campaignAvailability, setCampaignAvailability] = useState<DraftAvailability | null>(null);
+  const [campaignSeed, setCampaignSeed] = useState<string | null>(null);
+  const [campaignSource, setCampaignSource] = useState<'organic' | 'challenge'>('organic');
   const [maintenanceBanner, setMaintenanceBanner] = useState<string | null>(null);
   const [help, setHelp] = useState(false);
   const [remaining, setRemaining] = useState<number>(DRAFT_CONFIG.exchanges);
@@ -595,6 +619,13 @@ export default function App() {
     };
   }, []);
   useEffect(() => {
+    if (!analyticsEnabled || !pendingChallenge) return;
+    analytics.trackOnce(`challenge_opened:${pendingChallenge.seed}`, 'challenge_opened', {
+      campaign_source: 'challenge',
+      challenge_version: pendingChallenge.version,
+    });
+  }, [analyticsEnabled, pendingChallenge]);
+  useEffect(() => {
     let active = true;
     void analytics.initialize().then((enabled) => {
       if (active) setAnalyticsEnabled(enabled);
@@ -608,8 +639,11 @@ export default function App() {
     if (screen !== 'home') title.current?.focus({ preventScroll: true });
   }, [screen, team.length]);
   useEffect(() => {
-    if (!data || screen === 'home') return;
+    if (!data || !campaignSeed || screen === 'home') return;
     const campaign: CampaignState = {
+      seed: campaignSeed,
+      randomVersion: CAMPAIGN_RANDOM_VERSION,
+      campaignSource,
       screen,
       draftStep: team.length,
       ...(campaignAvailability ? { draftAvailability: campaignAvailability } : {}),
@@ -639,6 +673,8 @@ export default function App() {
     playResult,
     momentIndex,
     campaignAvailability,
+    campaignSeed,
+    campaignSource,
   ]);
   useEffect(() => {
     if (tournament.stage === 'quarters')
@@ -651,9 +687,15 @@ export default function App() {
       campaign_duration_ms: analytics.campaignElapsedMs(),
     };
     analytics.trackOnce('campaign_finished', 'campaign_finished', properties);
+    if (campaignSource === 'challenge')
+      analytics.trackOnce('challenge_completed', 'challenge_completed', {
+        ...properties,
+        campaign_source: 'challenge',
+        challenge_version: CHALLENGE_VERSION,
+      });
     if (tournament.outcome === 'Campeão mundial')
       analytics.trackOnce('worlds_won', 'worlds_won', properties);
-  }, [analyticsEnabled, screen, tournament.outcome]);
+  }, [analyticsEnabled, campaignSource, screen, tournament.outcome]);
   useEffect(() => {
     if (screen === 'tournament' || screen === 'match' || screen === 'result')
       analytics.trackOnce('worlds_started', 'worlds_started');
@@ -679,7 +721,7 @@ export default function App() {
   // A single cancellable timer owns progression. Pausing, help, report inspection,
   // speed/mode changes and unmount all cancel the previous scheduled step.
   useEffect(() => {
-    if (!data || settings.paused || help || report || tournament.outcome) return;
+    if (!data || !campaignSeed || settings.paused || help || report || tournament.outcome) return;
     const quick = settings.mode === 'quick';
     let delay: number;
     let step: () => void;
@@ -690,7 +732,15 @@ export default function App() {
       if (!playResult) {
         delay = quick ? 550 : 1400;
         step = () => {
-          const result = simulateGame(series, team, data.champions);
+          const result = simulateGame(
+            series,
+            team,
+            data.champions,
+            campaignRandom(
+              campaignSeed,
+              `series/${tournament.history.length}/${series.stage}/${series.opponentName}/game/${series.games.length + 1}`,
+            ),
+          );
           setPlayResult(result);
           setMomentIndex(quick ? result.recap.moments.length - 1 : 0);
         };
@@ -728,7 +778,19 @@ export default function App() {
     } else return;
     const timeout = setTimeout(step, delay / settings.speed);
     return () => clearTimeout(timeout);
-  }, [data, settings, help, report, tournament, screen, series, playResult, momentIndex, team]);
+  }, [
+    data,
+    settings,
+    help,
+    report,
+    tournament,
+    screen,
+    series,
+    playResult,
+    momentIndex,
+    team,
+    campaignSeed,
+  ]);
   async function loadYears(years: number[], visible = true): Promise<GameData | null> {
     if (visible) setLoadingGame(true);
     try {
@@ -748,10 +810,17 @@ export default function App() {
       if (visible) setLoadingGame(false);
     }
   }
-  async function start() {
+  async function start(challenge: CampaignChallenge | null = null) {
     if (loadingGame) return;
-    const availability = nextDraftAvailability ?? defaultDraftAvailability(catalog);
-    const plan = planDraft(catalog.draftRegionManifest, availability, Math.random);
+    const availability =
+      challenge?.availability ?? nextDraftAvailability ?? defaultDraftAvailability(catalog);
+    const seed = challenge?.seed ?? createCampaignSeed();
+    const source = challenge ? 'challenge' : 'organic';
+    const plan = planDraft(
+      catalog.draftRegionManifest,
+      availability,
+      campaignRandom(seed, 'draft/initial'),
+    );
     const snapshot = await loadYears(plan.map((round) => round.year));
     if (!snapshot) return;
     if (draftTimer.current) clearTimeout(draftTimer.current);
@@ -760,7 +829,14 @@ export default function App() {
     clearCampaign();
     setHasSavedCampaign(false);
     analytics.startCampaign();
+    if (challenge)
+      analytics.track('challenge_started', {
+        campaign_source: 'challenge',
+        challenge_version: challenge.version,
+      });
     setCampaignAvailability(availability);
+    setCampaignSeed(seed);
+    setCampaignSource(source);
     draftLock.current = false;
     setPending(null);
     setRolling(false);
@@ -780,6 +856,13 @@ export default function App() {
     setSettings({ ...settings, paused: false });
     setPreview(1);
     setScreen('draft');
+    if (challenge || pendingChallenge || challengeInvalid) {
+      setPendingChallenge(null);
+      setChallengeInvalid(false);
+      const cleanUrl = new URL(window.location.href);
+      cleanUrl.searchParams.delete(CHALLENGE_QUERY_PARAM);
+      window.history.replaceState(null, '', cleanUrl);
+    }
   }
   async function resume() {
     if (loadingGame) return;
@@ -805,6 +888,8 @@ export default function App() {
     if (draftTimer.current) clearTimeout(draftTimer.current);
     analytics.track('save_resumed', { draft_step: campaign.draftStep });
     setCampaignAvailability(campaign.draftAvailability ?? defaultDraftAvailability(catalog));
+    setCampaignSeed(campaign.seed);
+    setCampaignSource(campaign.campaignSource);
     draftLock.current = false;
     setPending(null);
     setRolling(false);
@@ -851,7 +936,7 @@ export default function App() {
     }, DRAFT_CONFIG.selectionMs);
   }
   async function exchange(kind: Exchange) {
-    if (!data || draftLock.current || !rounds[team.length]) return;
+    if (!data || !campaignSeed || draftLock.current || !rounds[team.length]) return;
     let exchangeData = data;
     if (kind === 'year') {
       const availability = campaignAvailability ?? defaultDraftAvailability(catalog);
@@ -869,6 +954,10 @@ export default function App() {
       kind,
       remaining,
       rejected,
+      campaignRandom(
+        campaignSeed,
+        `draft/exchange/${team.length}/${remaining}/${kind}/${offerKey(rounds[team.length])}`,
+      ),
     );
     if (!result.changed) return;
     analytics.track('exchange_used', {
@@ -894,7 +983,7 @@ export default function App() {
     }, DRAFT_CONFIG.rollMs);
   }
   async function beginSeries() {
-    if (seriesLock.current) return;
+    if (seriesLock.current || !campaignSeed) return;
     seriesLock.current = true;
     const snapshot = await loadYears(
       catalog.draftRegionManifest.groups.map((entry) => entry.year),
@@ -904,7 +993,11 @@ export default function App() {
       seriesLock.current = false;
       return;
     }
-    const nextSeries = createSeries(tournament, snapshot.players);
+    const nextSeries = createSeries(
+      tournament,
+      snapshot.players,
+      campaignRandom(campaignSeed, `series/${tournament.history.length}/${tournament.stage}`),
+    );
     analytics.track('series_started', {
       stage: nextSeries.stage,
       best_of: nextSeries.bestOf,
@@ -980,6 +1073,19 @@ export default function App() {
   const featuredPlayer = catalog.featuredPlayer;
   const featuredChampion = catalog.champions[featuredPlayer.championPool[0].championId];
   const activeDraftAvailability = campaignAvailability ?? availability;
+  const activeChallenge: CampaignChallenge | null =
+    campaignSeed && campaignAvailability
+      ? {
+          version: CHALLENGE_VERSION,
+          seed: campaignSeed,
+          datasetVersion: catalog.draftRegionManifest.datasetVersion,
+          availability: campaignAvailability,
+        }
+      : null;
+  const activeChallengeUrl =
+    activeChallenge && typeof window !== 'undefined'
+      ? createChallengeUrl(activeChallenge, window.location.href)
+      : undefined;
   const yearExchangeAvailable =
     !!draft &&
     catalog.draftRegionManifest.groups.some(
@@ -1054,6 +1160,30 @@ export default function App() {
                 <br />
                 Combine seus pools. Encare o mundo.
               </p>
+              {pendingChallenge && (
+                <aside className="challenge-invite" aria-labelledby="challenge-invite-title">
+                  <span>DESAFIO ENTRE AMIGOS · {challengeCode(pendingChallenge)}</span>
+                  <h2 id="challenge-invite-title">Mesmas condições. Sua própria campanha.</h2>
+                  <p>
+                    Anos, regiões, trocas e sorteios serão os mesmos. Suas escolhas continuam livres
+                    e o resultado não vale como ranking verificado.
+                  </p>
+                  <button
+                    className="primary"
+                    onClick={() => void start(pendingChallenge)}
+                    disabled={loadingGame}
+                  >
+                    {loadingGame ? 'Preparando desafio…' : 'Aceitar desafio'}
+                    <Swords size={19} />
+                  </button>
+                </aside>
+              )}
+              {challengeInvalid && (
+                <p className="challenge-invalid" role="alert">
+                  Este desafio é inválido ou pertence a outra versão dos dados. Você ainda pode
+                  começar um draft normal.
+                </p>
+              )}
               {hasSavedCampaign ? (
                 <div className="home-actions">
                   <button className="primary start-button" onClick={resume} disabled={loadingGame}>
@@ -1062,14 +1192,18 @@ export default function App() {
                   </button>
                   <button
                     className="text-button new-draft-button"
-                    onClick={start}
+                    onClick={() => void start()}
                     disabled={loadingGame}
                   >
                     Novo draft <RotateCcw size={15} />
                   </button>
                 </div>
               ) : (
-                <button className="primary start-button" onClick={start} disabled={loadingGame}>
+                <button
+                  className="primary start-button"
+                  onClick={() => void start()}
+                  disabled={loadingGame}
+                >
                   {loadingGame ? 'Preparando draft…' : 'Começar draft'} <ArrowRight size={23} />
                 </button>
               )}
@@ -1637,11 +1771,13 @@ export default function App() {
             </div>
             <TeamStrip team={team} />
             <CampaignShare
+              challengeUrl={activeChallengeUrl}
               summary={{
                 outcome: tournament.outcome ?? 'Campanha concluída',
                 wins: totalWins,
                 losses: totalLosses,
                 confrontations: tournament.history.length,
+                challengeCode: activeChallenge ? challengeCode(activeChallenge) : undefined,
                 team: team.map((player) => ({
                   role: player.role,
                   playerName: player.playerName,
@@ -1656,7 +1792,7 @@ export default function App() {
                 })
               }
             />
-            <button className="primary" onClick={start}>
+            <button className="primary" onClick={() => void start()}>
               Jogar novamente <RotateCcw size={19} />
             </button>
             <CampaignHistory tournament={tournament} open={setReport} />
