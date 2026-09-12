@@ -7,8 +7,14 @@ test('the admin route is locked or explicitly marked as local demo', async ({ pa
   if (await demo.isVisible()) {
     await expect(page.getByRole('heading', { name: 'Campanhas em movimento.' })).toBeVisible();
     await expect(page.getByRole('button', { name: 'Salvar configuração' })).toBeVisible();
+    await expect(page.getByText('Ratings contestados')).toBeVisible();
+    await expect(
+      page.getByRole('heading', { name: 'Contestações no contexto da evidência.' }),
+    ).toBeVisible();
   } else {
-    await expect(page.getByRole('heading', { name: 'Configure o acesso administrativo.' })).toBeVisible();
+    await expect(
+      page.getByRole('heading', { name: 'Configure o acesso administrativo.' }),
+    ).toBeVisible();
     await expect(page.getByText('SUPABASE NÃO CONFIGURADO')).toBeVisible();
   }
 });

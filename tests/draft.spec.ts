@@ -24,6 +24,16 @@ test('exchanges preserve context, details do not select, and five single clicks 
   await page.locator('.player-details').first().click();
   await expect(page.getByRole('dialog')).toBeVisible();
   await expect(page.locator('.evidence-slots > div')).toHaveCount(5);
+  await expect(page.getByRole('button', { name: 'Discorda deste rating?' })).toHaveCount(5);
+  await page.getByRole('button', { name: 'Discorda deste rating?' }).first().click();
+  await page.screenshot({
+    path: `test-results/rating-feedback-${test.info().project.name}.png`,
+    fullPage: true,
+  });
+  await page.getByRole('radio', { name: 'Rating baixo demais' }).check();
+  await page.getByLabel('Observação opcional').fill('Revisar impacto no jogo decisivo.');
+  await page.getByRole('button', { name: 'Enviar revisão' }).click();
+  await expect(page.getByRole('status')).toContainText('Revisão registrada para o G1');
   await page.getByRole('button', { name: 'Fechar detalhes' }).click();
   await expect(page.locator('.team-slot.filled')).toHaveCount(0);
   for (let i = 0; i < 5; i++) {
@@ -71,7 +81,9 @@ test('player exchange introduces a new candidate and exhausted exchanges are dis
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
-test('a browser-local campaign can be resumed or replaced from the home screen', async ({ page }) => {
+test('a browser-local campaign can be resumed or replaced from the home screen', async ({
+  page,
+}) => {
   await page.addInitScript(() => {
     Math.random = () => 0;
   });

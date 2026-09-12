@@ -25,6 +25,8 @@ Challenge events contain only the campaign source, challenge format version, out
 
 At the end of a campaign, a player may choose `Bom`, `Ok`, or `Ruim` and optionally send a note up to 500 characters. The UI asks players not to include personal data. Feedback is stored separately from analytics events, is readable only by explicit administrators, and permits one entry per anonymous campaign ID.
 
+In a player's evidence dialog, the player may also ask for a specific G1–G5 rating to be reviewed. This sends the normalized public player/champion ID, Worlds year, role, game slot, displayed rating, one categorized reason, and an optional note up to 300 characters. It does not send the seed, challenge URL, candidate list, result, account data, or contact information. One review per campaign/player/slot is accepted.
+
 ## Storage and Failure Behavior
 
 Up to 50 unsent events are held in browser-local storage and retried on later interactions. The queue is never shown to the player, analytics errors are ignored, and neither tracking nor feedback changes a game result, campaign save, timer, or navigation.
@@ -33,4 +35,4 @@ The development-only `VITE_ADMIN_DEMO_MODE=true` setting uses an in-memory trans
 
 ## Administrative Reporting
 
-Only users in `admin_users` can call `get_admin_dashboard_metrics()`. The RPC returns aggregate counts, sharing and challenge conversion totals, rates, top-ten ranked public player IDs, device totals, and up to ten recent optional feedback notes. It does not return raw analytics-event rows to the browser.
+Only users in `admin_users` can call `get_admin_dashboard_metrics()`. The RPC returns aggregate counts, sharing and challenge conversion totals, rates, top-ten ranked public player IDs, device totals, categorized rating-review totals, and up to ten recent optional notes of each feedback type. It does not return raw analytics-event rows or anonymous campaign identifiers to the browser.

@@ -12,6 +12,19 @@ export interface FeedbackMetrics {
   notes: Array<{ rating: 'good' | 'ok' | 'bad'; note: string; createdAt: string }>;
 }
 
+export interface RatingFeedbackMetrics {
+  total: number;
+  reasons: MetricCount[];
+  notes: Array<{
+    playerId: string;
+    worldsYear: number;
+    game: number;
+    reason: string;
+    note: string;
+    createdAt: string;
+  }>;
+}
+
 export interface DashboardMetrics {
   generatedAt: string;
   overview: {
@@ -40,6 +53,7 @@ export interface DashboardMetrics {
   regionGroups: MetricCount[];
   devices: MetricCount[];
   feedback: FeedbackMetrics;
+  ratingFeedback: RatingFeedbackMetrics;
 }
 
 interface DashboardResponse {
@@ -76,6 +90,18 @@ interface DashboardResponse {
     bad: number;
     notes: Array<{ rating: 'good' | 'ok' | 'bad'; note: string; created_at: string }>;
   };
+  rating_feedback: {
+    total: number;
+    reasons: Array<{ key: string; label: string; count: number }>;
+    notes: Array<{
+      player_id: string;
+      worlds_year: number;
+      game: number;
+      reason: string;
+      note: string;
+      created_at: string;
+    }>;
+  };
 }
 
 function numberValue(value: unknown, nullable = false): number | null {
@@ -111,12 +137,16 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     counts(response.devices),
   ];
   const feedback = response.feedback;
+  const ratingFeedback = response.rating_feedback;
+  const ratingReasons = counts(ratingFeedback?.reasons);
   if (
     typeof response.generated_at !== 'string' ||
     Number.isNaN(Date.parse(response.generated_at)) ||
     !overview ||
     !lists.every((list) => list !== null) ||
     !feedback ||
+    !ratingFeedback ||
+    !ratingReasons ||
     numberValue(overview.drafts_started) === null ||
     numberValue(overview.drafts_completed) === null ||
     numberValue(overview.draft_completion_rate) === null ||
@@ -145,6 +175,25 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
         note &&
         typeof note.note === 'string' &&
         ['good', 'ok', 'bad'].includes(note.rating) &&
+        typeof note.created_at === 'string' &&
+        !Number.isNaN(Date.parse(note.created_at)),
+    ) ||
+    numberValue(ratingFeedback.total) === null ||
+    !Array.isArray(ratingFeedback.notes) ||
+    !ratingFeedback.notes.every(
+      (note) =>
+        note &&
+        typeof note.player_id === 'string' &&
+        /^[a-z0-9-]+-[0-9]{4}-[a-z0-9-]+$/.test(note.player_id) &&
+        Number.isInteger(note.worlds_year) &&
+        note.worlds_year >= 2011 &&
+        note.worlds_year <= 2100 &&
+        Number.isInteger(note.game) &&
+        note.game >= 1 &&
+        note.game <= 5 &&
+        typeof note.reason === 'string' &&
+        typeof note.note === 'string' &&
+        note.note.length <= 300 &&
         typeof note.created_at === 'string' &&
         !Number.isNaN(Date.parse(note.created_at)),
     )
@@ -185,6 +234,18 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
       bad: feedback.bad,
       notes: feedback.notes.map((note) => ({
         rating: note.rating,
+        note: note.note,
+        createdAt: note.created_at,
+      })),
+    },
+    ratingFeedback: {
+      total: ratingFeedback.total,
+      reasons: ratingReasons,
+      notes: ratingFeedback.notes.map((note) => ({
+        playerId: note.player_id,
+        worldsYear: note.worlds_year,
+        game: note.game,
+        reason: note.reason,
         note: note.note,
         createdAt: note.created_at,
       })),
@@ -278,6 +339,26 @@ export function localDemoDashboard(): DashboardMetrics {
           rating: 'good',
           note: 'Acompanhar a série ficou bem claro no celular.',
           createdAt: '2026-09-08T20:15:00.000Z',
+        },
+      ],
+    },
+    ratingFeedback: {
+      total: 18,
+      reasons: [
+        { key: 'too_low', label: 'Rating baixo demais', count: 8 },
+        { key: 'too_high', label: 'Rating alto demais', count: 5 },
+        { key: 'wrong_champion', label: 'Campeão não representa', count: 3 },
+        { key: 'wrong_evidence', label: 'Evidência incorreta', count: 1 },
+        { key: 'other', label: 'Outro motivo', count: 1 },
+      ],
+      notes: [
+        {
+          playerId: 'faker-2017-skt',
+          worldsYear: 2017,
+          game: 1,
+          reason: 'Rating baixo demais',
+          note: 'O impacto do Galio naquela campanha parece subestimado.',
+          createdAt: '2026-09-09T14:12:00.000Z',
         },
       ],
     },

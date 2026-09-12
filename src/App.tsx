@@ -1834,6 +1834,8 @@ export default function App() {
           <ResearchDialog
             player={research === 'method' ? null : research}
             data={viewData}
+            tracker={analytics}
+            feedbackEnabled={analyticsEnabled}
             close={() => setResearch(null)}
           />
         </Suspense>

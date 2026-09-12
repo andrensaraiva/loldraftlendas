@@ -29,6 +29,20 @@ const response = {
   region_groups: [],
   devices: [],
   feedback: { total: 1, good: 1, ok: 0, bad: 0, notes: [] },
+  rating_feedback: {
+    total: 2,
+    reasons: [{ key: 'too_low', label: 'Rating baixo demais', count: 2 }],
+    notes: [
+      {
+        player_id: 'faker-2017-skt',
+        worlds_year: 2017,
+        game: 1,
+        reason: 'Rating baixo demais',
+        note: 'Revisar o impacto deste campeão.',
+        created_at: '2026-09-09T15:00:00.000Z',
+      },
+    ],
+  },
 };
 
 describe('admin dashboard metrics', () => {
@@ -46,6 +60,7 @@ describe('admin dashboard metrics', () => {
         challengeLinksCopied: 3,
       },
       feedback: { total: 1 },
+      ratingFeedback: { total: 2 },
     });
     expect(localDemoDashboard().playerPicks).toHaveLength(5);
   });

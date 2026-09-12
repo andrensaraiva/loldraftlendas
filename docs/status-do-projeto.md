@@ -42,6 +42,7 @@ Migrations Supabase, em ordem:
 4. [20260909172000_public_config_and_analytics_validation.sql](../supabase/migrations/20260909172000_public_config_and_analytics_validation.sql)
 5. [20260912110000_campaign_sharing_analytics.sql](../supabase/migrations/20260912110000_campaign_sharing_analytics.sql)
 6. [20260912120000_deterministic_challenges.sql](../supabase/migrations/20260912120000_deterministic_challenges.sql)
+7. [20260912130000_contextual_rating_feedback.sql](../supabase/migrations/20260912130000_contextual_rating_feedback.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -92,6 +93,14 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - A telemetria mede abertura, início, conclusão e cópia do link sem enviar seed, URL, destinatário ou conteúdo compartilhado. O dashboard mostra a conversão agregada.
 - Testes de domínio reproduzem uma campanha completa byte a byte no estado em memória; E2E repete a oferta inicial pelo mesmo link em desktop e mobile e rejeita versões inválidas.
 
+### Fase 3.6: Feedback Contextual de Rating
+
+- Cada slot de evidência G1–G5 oferece **Discorda deste rating?** quando o feedback está habilitado.
+- O formulário registra somente jogador/campeão públicos, edição, posição, slot, rating exibido, motivo categorizado e uma nota opcional de até 300 caracteres.
+- A nova tabela possui RLS, unicidade por campanha/jogador/slot e RPC anônima com validação estrita; visitantes não conseguem ler as revisões.
+- O dashboard administrativo agrega volume e motivos e mostra até dez observações recentes sem expor o identificador anônimo da campanha.
+- O E2E exercita abertura, seleção do motivo, envio, confirmação acessível e ausência de seleção acidental do jogador em desktop e mobile.
+
 ### Fase 4: Cobertura Histórica e Readiness
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
@@ -118,7 +127,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 68 testes unitários passaram; type check e build passaram; a validação histórica confirmou 535 jogadores, chunks anuais, índices compactos, 2.675 associações, 155 pools elegíveis, 1.192 assets históricos e 8 crosschecks de evento; 54 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 27 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 350,07 kB (95,08 kB gzip), sem aviso de chunk acima de 500 kB.
+Resultados registrados: 68 testes unitários passaram; type check e build passaram; a validação histórica confirmou 535 jogadores, chunks anuais, índices compactos, 2.675 associações, 155 pools elegíveis, 1.192 assets históricos e 8 crosschecks de evento; 54 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 27 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 350,51 kB (95,20 kB gzip), sem aviso de chunk acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -126,7 +135,7 @@ O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, con
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
 
-1. Crie um projeto Supabase e aplique as seis migrations na ordem acima.
+1. Crie um projeto Supabase e aplique as sete migrations na ordem acima.
 2. Crie a conta do mantenedor no Supabase Auth.
 3. Insira manualmente o UUID dela em `public.admin_users`.
 4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.

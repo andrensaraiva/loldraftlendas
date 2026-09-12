@@ -1,21 +1,64 @@
-import { useEffect, useRef } from 'react';
-import { X } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Check, Flag, Send, X } from 'lucide-react';
 import type { GameData } from '../data/repository';
+import type { AnalyticsTracker, RatingFeedbackReason } from '../game/analytics';
 import type { PlayerVersion } from '../game/types';
+
+const feedbackReasons: Array<{ id: RatingFeedbackReason; label: string }> = [
+  { id: 'too_high', label: 'Rating alto demais' },
+  { id: 'too_low', label: 'Rating baixo demais' },
+  { id: 'wrong_champion', label: 'Campeão não representa o jogador' },
+  { id: 'wrong_evidence', label: 'Evidência ou estatística incorreta' },
+  { id: 'other', label: 'Outro motivo' },
+];
 
 export function ResearchDialog({
   player,
   data,
+  tracker,
+  feedbackEnabled = false,
   close,
 }: {
   player: PlayerVersion | null;
   data: GameData;
+  tracker?: AnalyticsTracker;
+  feedbackEnabled?: boolean;
   close: () => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
+  const [feedbackGame, setFeedbackGame] = useState<number | null>(null);
+  const [reason, setReason] = useState<RatingFeedbackReason | null>(null);
+  const [note, setNote] = useState('');
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
   useEffect(() => {
     dialog.current?.showModal();
   }, []);
+
+  function openFeedback(game: number) {
+    setFeedbackGame(game);
+    setReason(null);
+    setNote('');
+    setStatus('idle');
+  }
+
+  async function submitFeedback(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!player || !tracker || !reason || feedbackGame === null || status === 'sending') return;
+    const slot = player.championPool.find((candidate) => candidate.game === feedbackGame);
+    if (!slot) return;
+    setStatus('sending');
+    const sent = await tracker.submitRatingFeedback({
+      player_id: player.id,
+      worlds_year: player.worldsYear,
+      role: player.role,
+      game: slot.game,
+      champion_id: slot.championId,
+      displayed_rating: slot.rating,
+      reason,
+      note,
+    });
+    setStatus(sent ? 'sent' : 'error');
+  }
   return (
     <dialog
       ref={dialog}
@@ -81,6 +124,70 @@ export function ResearchDialog({
                 <a href={slot.stats.sourceUrl} target="_blank" rel="noreferrer">
                   Consultar fonte ↗
                 </a>
+              )}
+              {feedbackEnabled && tracker && feedbackGame !== slot.game && (
+                <button
+                  className="rating-feedback-trigger"
+                  type="button"
+                  onClick={() => openFeedback(slot.game)}
+                >
+                  <Flag size={13} /> Discorda deste rating?
+                </button>
+              )}
+              {feedbackEnabled && tracker && feedbackGame === slot.game && status === 'sent' && (
+                <p className="rating-feedback-sent" role="status">
+                  <Check size={14} /> Revisão registrada para o G{slot.game}. Obrigado.
+                </p>
+              )}
+              {feedbackEnabled && tracker && feedbackGame === slot.game && status !== 'sent' && (
+                <form className="rating-feedback-form" onSubmit={submitFeedback}>
+                  <fieldset>
+                    <legend>Por que este rating deveria ser revisado?</legend>
+                    {feedbackReasons.map((option) => (
+                      <label key={option.id}>
+                        <input
+                          type="radio"
+                          name={`rating-feedback-${slot.game}`}
+                          value={option.id}
+                          checked={reason === option.id}
+                          onChange={() => setReason(option.id)}
+                        />
+                        <span>{option.label}</span>
+                      </label>
+                    ))}
+                  </fieldset>
+                  <label className="rating-feedback-note">
+                    <span>Observação opcional</span>
+                    <textarea
+                      value={note}
+                      onChange={(event) => setNote(event.target.value)}
+                      maxLength={300}
+                      rows={2}
+                      placeholder="Não inclua nome, e-mail ou outro dado pessoal."
+                    />
+                  </label>
+                  {status === 'error' && (
+                    <p className="rating-feedback-error" role="alert">
+                      Não foi possível enviar agora. Tente novamente mais tarde.
+                    </p>
+                  )}
+                  <div>
+                    <button
+                      className="rating-feedback-cancel"
+                      type="button"
+                      onClick={() => setFeedbackGame(null)}
+                    >
+                      Cancelar
+                    </button>
+                    <button
+                      className="rating-feedback-submit"
+                      type="submit"
+                      disabled={!reason || status === 'sending'}
+                    >
+                      <Send size={13} /> {status === 'sending' ? 'Enviando' : 'Enviar revisão'}
+                    </button>
+                  </div>
+                </form>
               )}
             </div>
           ))}

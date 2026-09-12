@@ -3,6 +3,7 @@ import { analyticsPlayerId, AnalyticsTracker } from './analytics';
 import type {
   AnalyticsEvent,
   AnalyticsFeedback,
+  AnalyticsRatingFeedback,
   AnalyticsStorage,
   AnalyticsTransport,
 } from './analytics';
@@ -17,20 +18,27 @@ function storage(): AnalyticsStorage & { values: Map<string, string> } {
   };
 }
 
-function transport(
-  enabled = true,
-): AnalyticsTransport & { events: AnalyticsEvent[]; feedback: AnalyticsFeedback[] } {
+function transport(enabled = true): AnalyticsTransport & {
+  events: AnalyticsEvent[];
+  feedback: AnalyticsFeedback[];
+  ratingFeedback: AnalyticsRatingFeedback[];
+} {
   const events: AnalyticsEvent[] = [];
   const feedback: AnalyticsFeedback[] = [];
+  const ratingFeedback: AnalyticsRatingFeedback[] = [];
   return {
     events,
     feedback,
+    ratingFeedback,
     loadEnabled: async () => enabled,
     send: async (event) => {
       events.push(event);
     },
     submitFeedback: async (entry) => {
       feedback.push(entry);
+    },
+    submitRatingFeedback: async (entry) => {
+      ratingFeedback.push(entry);
     },
   };
 }
@@ -117,6 +125,24 @@ describe('anonymous analytics', () => {
     );
     expect(await tracker.submitFeedback('good', ` ${'x'.repeat(600)} `)).toBe(true);
     expect(remote.feedback[0]).toMatchObject({ rating: 'good', note: 'x'.repeat(500) });
+    expect(
+      await tracker.submitRatingFeedback({
+        player_id: 'Faker-2017-SKT',
+        worlds_year: 2017,
+        role: 'MID',
+        game: 1,
+        champion_id: 'Galio!',
+        displayed_rating: 95,
+        reason: 'too_low',
+        note: ` ${'y'.repeat(400)} `,
+      }),
+    ).toBe(true);
+    expect(remote.ratingFeedback[0]).toMatchObject({
+      player_id: 'faker-2017-skt',
+      champion_id: 'galio',
+      reason: 'too_low',
+      note: 'y'.repeat(300),
+    });
 
     const disabled = new AnalyticsTracker({ transport: transport(false), storage: local });
     expect(await disabled.initialize()).toBe(false);

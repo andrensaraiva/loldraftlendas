@@ -26,6 +26,8 @@ export const ANALYTICS_EVENTS = [
 
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];
 export type FeedbackRating = 'good' | 'ok' | 'bad';
+export type RatingFeedbackReason =
+  'too_high' | 'too_low' | 'wrong_champion' | 'wrong_evidence' | 'other';
 export type DeviceType = 'mobile' | 'desktop';
 type AnalyticsValue = string | number | boolean | string[];
 export type AnalyticsProperties = Record<string, AnalyticsValue>;
@@ -45,9 +47,24 @@ export interface AnalyticsFeedback {
   note: string | null;
 }
 
+export interface AnalyticsRatingFeedback {
+  campaign_id: string;
+  player_id: string;
+  worlds_year: number;
+  role: string;
+  game: number;
+  champion_id: string;
+  displayed_rating: number;
+  reason: RatingFeedbackReason;
+  note: string | null;
+}
+
+export type RatingFeedbackInput = Omit<AnalyticsRatingFeedback, 'campaign_id'>;
+
 export interface AnalyticsTransport {
   send(event: AnalyticsEvent): Promise<void>;
   submitFeedback(feedback: AnalyticsFeedback): Promise<void>;
+  submitRatingFeedback(feedback: AnalyticsRatingFeedback): Promise<void>;
   loadEnabled(): Promise<boolean>;
 }
 
@@ -253,6 +270,22 @@ export class AnalyticsTracker {
     }
   }
 
+  async submitRatingFeedback(feedback: RatingFeedbackInput): Promise<boolean> {
+    if (!this.enabled || !this.options.transport) return false;
+    try {
+      await this.options.transport.submitRatingFeedback({
+        ...feedback,
+        player_id: analyticsPlayerId(feedback.player_id),
+        champion_id: feedback.champion_id.toLowerCase().replace(/[^a-z0-9-]/g, ''),
+        note: feedback.note?.trim().slice(0, 300) || null,
+        campaign_id: this.campaignId,
+      });
+      return true;
+    } catch {
+      return false;
+    }
+  }
+
   async flush(): Promise<void> {
     if (!this.enabled || !this.options.transport) return;
     const activeFlush = this.flushPromise;
@@ -345,6 +378,20 @@ class SupabaseAnalyticsTransport implements AnalyticsTransport {
     });
   }
 
+  async submitRatingFeedback(feedback: AnalyticsRatingFeedback): Promise<void> {
+    await this.request('/rest/v1/rpc/submit_rating_feedback', {
+      p_campaign_id: feedback.campaign_id,
+      p_player_id: feedback.player_id,
+      p_worlds_year: feedback.worlds_year,
+      p_role: feedback.role,
+      p_game: feedback.game,
+      p_champion_id: feedback.champion_id,
+      p_displayed_rating: feedback.displayed_rating,
+      p_reason: feedback.reason,
+      p_note: feedback.note,
+    });
+  }
+
   private async request<T>(path: string, body: unknown): Promise<T> {
     const response = await fetch(`${this.url}${path}`, {
       method: 'POST',
@@ -373,6 +420,10 @@ class LocalDemoAnalyticsTransport implements AnalyticsTransport {
 
   async submitFeedback(): Promise<void> {
     // The local admin demonstration intentionally does not retain feedback.
+  }
+
+  async submitRatingFeedback(): Promise<void> {
+    // The local admin demonstration intentionally does not retain rating feedback.
   }
 }
 

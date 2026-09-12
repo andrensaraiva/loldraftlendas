@@ -329,6 +329,27 @@
   color: #5f695c;
   font-size: 9px;
 }
+.admin-rating-feedback-grid {
+  margin-top: 18px;
+}
+.admin-rating-feedback-grid .admin-ranking {
+  border-top: 0;
+  padding-top: 0;
+}
+.admin-notes-title {
+  font: 700 20px/1 var(--display);
+}
+.admin-rating-notes {
+  grid-template-columns: 1fr;
+  margin-top: 12px;
+}
+.admin-rating-notes article {
+  min-height: 0;
+}
+.admin-rating-notes article > b {
+  color: #354333;
+  font-size: 10px;
+}
 .admin-dashboard-timestamp {
   display: flex;
   align-items: center;

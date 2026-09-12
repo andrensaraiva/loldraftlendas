@@ -24,6 +24,7 @@ Create a Supabase project, then run these migrations in filename order in the pr
 - [20260909172000_public_config_and_analytics_validation.sql](../supabase/migrations/20260909172000_public_config_and_analytics_validation.sql)
 - [20260912110000_campaign_sharing_analytics.sql](../supabase/migrations/20260912110000_campaign_sharing_analytics.sql)
 - [20260912120000_deterministic_challenges.sql](../supabase/migrations/20260912120000_deterministic_challenges.sql)
+- [20260912130000_contextual_rating_feedback.sql](../supabase/migrations/20260912130000_contextual_rating_feedback.sql)
 
 The migrations create:
 
@@ -33,6 +34,7 @@ The migrations create:
 - RLS that allows only authorized users to read config.
 - `public.update_product_config(...)`, an authorized optimistic-locking update RPC.
 - Anonymous analytics and feedback ingest RPCs that cannot read stored data.
+- Contextual rating-review feedback with public historical IDs, categorized reasons, RLS and an admin-only aggregate/read model.
 - An admin-only aggregate dashboard RPC, incluindo intenção/conclusão de compartilhamento, downloads do card e abertura/início/conclusão dos desafios; ele não retorna eventos individuais de visitantes ao navegador.
 - A complete public configuration snapshot plus an allowlisted analytics-property schema.
 

@@ -1,4 +1,4 @@
-import { BarChart3, MessageSquareText, RefreshCw, Trophy } from 'lucide-react';
+import { BarChart3, Flag, MessageSquareText, RefreshCw, Trophy } from 'lucide-react';
 import playerIndex from '../data/player-index.json';
 import { analyticsPlayerId } from '../game/analytics';
 import type { DashboardMetrics, MetricCount } from './dashboard';
@@ -134,7 +134,7 @@ export function AdminDashboard({
     );
 
   if (!metrics) return null;
-  const { overview, feedback } = metrics;
+  const { overview, feedback, ratingFeedback } = metrics;
   return (
     <section className="admin-dashboard">
       <div className="admin-title-row">
@@ -188,6 +188,7 @@ export function AdminDashboard({
         />
         <MetricCard label="Links de desafio copiados" value={overview.challengeLinksCopied} />
         <MetricCard label="Feedback recebido" value={feedback.total} />
+        <MetricCard label="Ratings contestados" value={ratingFeedback.total} />
       </div>
 
       <OutcomeList items={metrics.outcomes} />
@@ -248,6 +249,38 @@ export function AdminDashboard({
         ) : (
           <p className="admin-empty">Sem comentários ainda.</p>
         )}
+      </section>
+      <section className="admin-feedback-summary">
+        <div className="admin-section-heading">
+          <div>
+            <span className="admin-kicker">REVISÃO DE RATINGS</span>
+            <h2>Contestações no contexto da evidência.</h2>
+          </div>
+          <Flag size={21} />
+        </div>
+        <div className="admin-dashboard-grid admin-rating-feedback-grid">
+          <RankedList title="Motivos informados" items={ratingFeedback.reasons} />
+          <div>
+            <h3 className="admin-notes-title">Observações recentes</h3>
+            {ratingFeedback.notes.length ? (
+              <div className="admin-feedback-notes admin-rating-notes">
+                {ratingFeedback.notes.map((note, index) => (
+                  <article key={`${note.createdAt}-${index}`}>
+                    <span className="feedback-rating ok">G{note.game}</span>
+                    <b>{playerLabels.get(note.playerId) ?? note.playerId}</b>
+                    <p>{note.note}</p>
+                    <small>
+                      {note.reason} · Worlds {note.worldsYear} ·{' '}
+                      {new Date(note.createdAt).toLocaleString('pt-BR')}
+                    </small>
+                  </article>
+                ))}
+              </div>
+            ) : (
+              <p className="admin-empty">Sem observações de rating ainda.</p>
+            )}
+          </div>
+        </div>
       </section>
       <p className="admin-dashboard-timestamp">
         <BarChart3 size={15} /> Atualizado em{' '}

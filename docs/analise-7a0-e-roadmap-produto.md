@@ -20,8 +20,9 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 - ✅ **1.1 Card compartilhável:** implementado com PNG 1080 × 1350, Web Share, download e fallback de cópia.
 - ✅ **1.2 Métricas sociais:** compartilhamento e o funil anônimo de abertura, início e conclusão do desafio chegam ao dashboard sem armazenar seed, URL ou destinatário.
 - ✅ **1.3 Explicação pré-jogo:** chance, forças, ratings médios, composição e bônus ativos estão visíveis antes do resultado.
+- ✅ **1.4 Feedback contextual:** cada rating G1–G5 pode ser contestado com motivo categorizado e nota curta; RLS/RPC e dashboard preservam somente o contexto histórico público.
 - ✅ **2.1 e 2.2 Seed e desafio:** seed persistida, save v2 com migração, reprodução por operação e link/código validado estão implementados.
-- ⏭️ **Próximo pacote de produto:** 1.4, feedback contextual para contestar um rating sem enviar dados pessoais.
+- ⏭️ **Próximo pacote de produto:** 2.3, modo Almanaque com ratings ocultos durante o draft e revelação ao final.
 - 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
 
 Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila atual precisa de duas trilhas: **confiabilidade/dados** e **produto/retenção**.
