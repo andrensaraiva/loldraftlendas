@@ -15,6 +15,35 @@ export const BALANCE = {
   synergy: 6,
   synergyThreshold: 3,
 };
+
+export interface CompositionBonus {
+  id:
+    | 'mixed_damage'
+    | 'frontline'
+    | 'engage'
+    | 'peel'
+    | 'teamfight'
+    | 'scaling'
+    | 'pick'
+    | 'poke'
+    | 'early_game';
+  label: string;
+  value: number;
+}
+
+export interface CompositionBreakdown {
+  base: number;
+  bonuses: CompositionBonus[];
+  total: number;
+}
+
+const synergyLabels = {
+  TEAMFIGHT: 'Teamfight',
+  SCALING: 'Escala',
+  PICK: 'Pick',
+  POKE: 'Poke',
+  EARLY_GAME: 'Início de jogo',
+} as const;
 const pick = <T>(items: T[], rng: Random): T =>
   items[Math.min(items.length - 1, Math.floor(rng() * items.length))];
 export { createDraft } from './draft';
@@ -36,16 +65,38 @@ export function compositionScore(
   game: number,
   champions: Record<string, Champion>,
 ): number {
+  return compositionBreakdown(team, game, champions).total;
+}
+
+export function compositionBreakdown(
+  team: Team,
+  game: number,
+  champions: Record<string, Champion>,
+): CompositionBreakdown {
   const tags = team.flatMap((p) => champions[p.championPool[game - 1].championId].tags);
   const count = (tag: string) => tags.filter((t) => t === tag).length;
-  let score = BALANCE.compositionBase;
-  if (count('AP_DAMAGE') && count('AD_DAMAGE')) score += BALANCE.mixedDamage;
-  if (count('FRONTLINE')) score += BALANCE.frontline;
-  if (count('ENGAGE')) score += BALANCE.engage;
-  if (count('PEEL')) score += BALANCE.peel;
-  for (const tag of ['TEAMFIGHT', 'SCALING', 'PICK', 'POKE', 'EARLY_GAME'])
-    if (count(tag) >= BALANCE.synergyThreshold) score += BALANCE.synergy;
-  return Math.min(100, score);
+  const bonuses: CompositionBonus[] = [];
+  if (count('AP_DAMAGE') && count('AD_DAMAGE'))
+    bonuses.push({ id: 'mixed_damage', label: 'Dano misto', value: BALANCE.mixedDamage });
+  if (count('FRONTLINE'))
+    bonuses.push({ id: 'frontline', label: 'Linha de frente', value: BALANCE.frontline });
+  if (count('ENGAGE')) bonuses.push({ id: 'engage', label: 'Engage', value: BALANCE.engage });
+  if (count('PEEL')) bonuses.push({ id: 'peel', label: 'Proteção', value: BALANCE.peel });
+  for (const tag of Object.keys(synergyLabels) as Array<keyof typeof synergyLabels>)
+    if (count(tag) >= BALANCE.synergyThreshold)
+      bonuses.push({
+        id: tag.toLowerCase() as CompositionBonus['id'],
+        label: synergyLabels[tag],
+        value: BALANCE.synergy,
+      });
+  return {
+    base: BALANCE.compositionBase,
+    bonuses,
+    total: Math.min(
+      100,
+      BALANCE.compositionBase + bonuses.reduce((sum, bonus) => sum + bonus.value, 0),
+    ),
+  };
 }
 export function teamStrength(team: Team, game: number, champions: Record<string, Champion>) {
   if (team.length !== 5 || new Set(team.map((p) => p.role)).size !== 5 || game < 1 || game > 5)

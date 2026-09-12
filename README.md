@@ -42,9 +42,11 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Dois modos: **Acompanhar partida**, com sete acontecimentos, placar de abates e KDA dos dez jogadores; e **Resultado rápido**, com resultados resumidos e avanço automático até o fim do torneio.
 - Velocidades 1×, 2× e 4×, pausa/continuação e troca de modo durante a partida. Abrir instruções ou um relatório suspende os temporizadores até fechar o diálogo.
 - Histórico de cada jogo, com relatório completo disponível em ambos os modos e após o fim da campanha.
+- Prévia de cada partida com probabilidade de vitória, força, rating médio, composição e bônus ativos antes de revelar o resultado.
 - Adversários com elencos históricos, sem repetição na mesma campanha enquanto houver opções.
+- Card final compartilhável em PNG com equipe, anos e campanha; usa o compartilhamento nativo do dispositivo quando disponível e oferece download/cópia como fallback, sem dados pessoais.
 - Save de campanha versionado no armazenamento local do navegador: seleções, trocas, draft, série, torneio, resultados e preferências de reprodução são retomados por **Continuar campanha**. Saves incompatíveis com uma nova versão de dados são descartados com segurança.
-- Painel privado em `/admin`: allowlist explícita de administradores, configuração versionada, funil de campanhas, resultados, duração, trocas, picks, rejeições, anos, regiões, dispositivos e feedback anônimo. O modo local de demonstração usa métricas ilustrativas e não envia dados.
+- Painel privado em `/admin`: allowlist explícita de administradores, configuração versionada, funil de campanhas, resultados, duração, trocas, compartilhamentos, picks, rejeições, anos, regiões, dispositivos e feedback anônimo. O modo local de demonstração usa métricas ilustrativas e não envia dados.
 - Configuração remota opcional para novos drafts: trocas iniciais, anos, grupos regionais, analytics e aviso de manutenção. Um snapshot das regras fica salvo na campanha ativa, evitando alterações retroativas.
 - Interface responsiva, navegação por teclado, diálogo nativo, feedback de simulação e proteção contra clique duplo.
 
@@ -82,9 +84,11 @@ src/
     campaign.ts    # Save versionado no armazenamento local
     engine.ts      # Ratings, composição, séries e torneio
     recap.ts       # Narrativa e snapshots cumulativos de KDA
+    share.ts       # Texto e card PNG da campanha
     engine.test.ts # Casos de domínio e transições
   components/
     AutoplayControls.tsx # Modos, velocidade e pausa
+    CampaignShare.tsx    # Web Share, download e fallback de cópia
     MatchReport.tsx      # Acontecimentos, KDA e linha do tempo
     ResearchDialog.tsx   # Evidência histórica e método de rating
   App.tsx          # Telas e interações

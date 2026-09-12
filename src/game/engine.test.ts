@@ -4,6 +4,7 @@ import { champions } from '../data/champions';
 import {
   advanceTournament,
   BALANCE,
+  compositionBreakdown,
   compositionScore,
   createDraft,
   createSeries,
@@ -40,7 +41,9 @@ describe('dataset and draft', () => {
             (p) =>
               p.role === r.role &&
               p.worldsYear === r.year &&
-              r.region.canonicalRegions.includes(p.canonicalRegion ?? p.historicalLeague ?? p.region),
+              r.region.canonicalRegions.includes(
+                p.canonicalRegion ?? p.historicalLeague ?? p.region,
+              ),
           ),
         ).toBe(true);
       });
@@ -70,6 +73,13 @@ describe('ratings and probability', () => {
       Object.entries(champions).map(([id, c]) => [id, { ...c, tags: ['AD_DAMAGE' as const] }]),
     );
     expect(compositionScore(team, 1, champions)).toBeGreaterThan(compositionScore(team, 1, onlyAd));
+    const breakdown = compositionBreakdown(team, 1, champions);
+    expect(breakdown.total).toBe(compositionScore(team, 1, champions));
+    expect(breakdown.bonuses).toContainEqual({
+      id: 'mixed_damage',
+      label: 'Dano misto',
+      value: BALANCE.mixedDamage,
+    });
   });
   it('gives stronger teams an advantage while allowing upsets', () => {
     expect(winProbability(90, 90)).toBe(0.5);

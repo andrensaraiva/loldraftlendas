@@ -12,8 +12,11 @@ The tracked event names are:
 - `roll_generated`, `exchange_used`, `player_selected`
 - `series_started`, `game_completed`, `playoffs_reached`, `worlds_won`
 - `how_to_play_opened`, `rating_details_opened`
+- `share_started`, `share_completed`, `card_downloaded`
 
 Roll, exchange, and selection events use normalized public historical player IDs, role, Worlds year, draft region group, exchange type, and candidate IDs. Completion events include integer draft or campaign duration. This supports aggregate draft completion, exchange use, pick/rejection frequency, outcome, year/group frequency, and mobile/desktop metrics without identifying a visitor.
+
+Sharing events contain only the campaign outcome and a categorized method (`file`, `link`, or `download`). The generated image, shared text, destination application, recipients, clipboard contents, and contacts are never collected. The browser's share sheet is controlled by the player and the operating system.
 
 ## Feedback
 
@@ -27,4 +30,4 @@ The development-only `VITE_ADMIN_DEMO_MODE=true` setting uses an in-memory trans
 
 ## Administrative Reporting
 
-Only users in `admin_users` can call `get_admin_dashboard_metrics()`. The RPC returns aggregate counts, rates, top-ten ranked public player IDs, device totals, and up to ten recent optional feedback notes. It does not return raw analytics-event rows to the browser.
+Only users in `admin_users` can call `get_admin_dashboard_metrics()`. The RPC returns aggregate counts, sharing intent/completion/download totals, rates, top-ten ranked public player IDs, device totals, and up to ten recent optional feedback notes. It does not return raw analytics-event rows to the browser.

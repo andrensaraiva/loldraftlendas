@@ -24,6 +24,9 @@ export interface DashboardMetrics {
     averageDraftSeconds: number | null;
     averageCampaignSeconds: number | null;
     exchangesUsed: number;
+    shareIntentRate: number;
+    sharesCompleted: number;
+    cardsDownloaded: number;
   };
   outcomes: MetricCount[];
   exchanges: MetricCount[];
@@ -47,6 +50,9 @@ interface DashboardResponse {
     average_draft_seconds: number | null;
     average_campaign_seconds: number | null;
     exchanges_used: number;
+    share_intent_rate: number;
+    shares_completed: number;
+    cards_downloaded: number;
   };
   outcomes: Array<{ key: string; label: string; count: number }>;
   exchanges: Array<{ key: string; label: string; count: number }>;
@@ -74,11 +80,9 @@ function counts(value: unknown): MetricCount[] | null {
   const parsed = value.map((entry) => {
     if (!entry || typeof entry !== 'object') return null;
     const candidate = entry as Partial<MetricCount>;
-    return (
-      typeof candidate.key === 'string' &&
+    return typeof candidate.key === 'string' &&
       typeof candidate.label === 'string' &&
       numberValue(candidate.count) !== null
-    )
       ? { key: candidate.key, label: candidate.label, count: candidate.count! }
       : null;
   });
@@ -111,9 +115,14 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     numberValue(overview.worlds_started) === null ||
     numberValue(overview.worlds_start_rate) === null ||
     numberValue(overview.play_again_rate) === null ||
-    numberValue(overview.average_draft_seconds, true) === null && overview.average_draft_seconds !== null ||
-    numberValue(overview.average_campaign_seconds, true) === null && overview.average_campaign_seconds !== null ||
+    (numberValue(overview.average_draft_seconds, true) === null &&
+      overview.average_draft_seconds !== null) ||
+    (numberValue(overview.average_campaign_seconds, true) === null &&
+      overview.average_campaign_seconds !== null) ||
     numberValue(overview.exchanges_used) === null ||
+    numberValue(overview.share_intent_rate) === null ||
+    numberValue(overview.shares_completed) === null ||
+    numberValue(overview.cards_downloaded) === null ||
     numberValue(feedback.total) === null ||
     numberValue(feedback.good) === null ||
     numberValue(feedback.ok) === null ||
@@ -142,6 +151,9 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
       averageDraftSeconds: overview.average_draft_seconds,
       averageCampaignSeconds: overview.average_campaign_seconds,
       exchangesUsed: overview.exchanges_used,
+      shareIntentRate: overview.share_intent_rate,
+      sharesCompleted: overview.shares_completed,
+      cardsDownloaded: overview.cards_downloaded,
     },
     outcomes: lists[0]!,
     exchanges: lists[1]!,
@@ -177,6 +189,9 @@ export function localDemoDashboard(): DashboardMetrics {
       averageDraftSeconds: 111,
       averageCampaignSeconds: 476,
       exchangesUsed: 284,
+      shareIntentRate: 18.8,
+      sharesCompleted: 24,
+      cardsDownloaded: 11,
     },
     outcomes: [
       { key: 'swiss_eliminated', label: 'Eliminado no Suíço', count: 76 },
@@ -229,9 +244,21 @@ export function localDemoDashboard(): DashboardMetrics {
       ok: 14,
       bad: 5,
       notes: [
-        { rating: 'good', note: 'Draft rápido e as trocas deixam cada equipe diferente.', createdAt: '2026-09-09T14:02:00.000Z' },
-        { rating: 'ok', note: 'Gostaria de mais edições históricas.', createdAt: '2026-09-09T12:40:00.000Z' },
-        { rating: 'good', note: 'Acompanhar a série ficou bem claro no celular.', createdAt: '2026-09-08T20:15:00.000Z' },
+        {
+          rating: 'good',
+          note: 'Draft rápido e as trocas deixam cada equipe diferente.',
+          createdAt: '2026-09-09T14:02:00.000Z',
+        },
+        {
+          rating: 'ok',
+          note: 'Gostaria de mais edições históricas.',
+          createdAt: '2026-09-09T12:40:00.000Z',
+        },
+        {
+          rating: 'good',
+          note: 'Acompanhar a série ficou bem claro no celular.',
+          createdAt: '2026-09-08T20:15:00.000Z',
+        },
       ],
     },
   };

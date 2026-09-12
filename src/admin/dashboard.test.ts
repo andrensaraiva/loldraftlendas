@@ -13,6 +13,9 @@ const response = {
     average_draft_seconds: 120,
     average_campaign_seconds: null,
     exchanges_used: 8,
+    share_intent_rate: 20,
+    shares_completed: 1,
+    cards_downloaded: 2,
   },
   outcomes: [],
   exchanges: [],
@@ -27,14 +30,30 @@ const response = {
 describe('admin dashboard metrics', () => {
   it('maps the aggregate database response to the view model', () => {
     expect(dashboardMetricsFromResponse(response)).toMatchObject({
-      overview: { draftsStarted: 10, averageCampaignSeconds: null },
+      overview: {
+        draftsStarted: 10,
+        averageCampaignSeconds: null,
+        shareIntentRate: 20,
+        sharesCompleted: 1,
+        cardsDownloaded: 2,
+      },
       feedback: { total: 1 },
     });
     expect(localDemoDashboard().playerPicks).toHaveLength(5);
   });
 
   it('rejects malformed metrics instead of rendering an untrusted response', () => {
-    expect(() => dashboardMetricsFromResponse({ ...response, overview: { ...response.overview, drafts_started: -1 } })).toThrow();
-    expect(() => dashboardMetricsFromResponse({ ...response, feedback: { ...response.feedback, notes: [{}] } })).toThrow();
+    expect(() =>
+      dashboardMetricsFromResponse({
+        ...response,
+        overview: { ...response.overview, drafts_started: -1 },
+      }),
+    ).toThrow();
+    expect(() =>
+      dashboardMetricsFromResponse({
+        ...response,
+        feedback: { ...response.feedback, notes: [{}] },
+      }),
+    ).toThrow();
   });
 });

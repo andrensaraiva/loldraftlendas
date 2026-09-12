@@ -177,6 +177,9 @@ export function AdminDashboard({
           value={duration(overview.averageCampaignSeconds)}
         />
         <MetricCard label="Trocas usadas" value={overview.exchangesUsed} />
+        <MetricCard label="Campanhas com share" value={percent(overview.shareIntentRate)} />
+        <MetricCard label="Shares concluídos" value={overview.sharesCompleted} />
+        <MetricCard label="Cards baixados" value={overview.cardsDownloaded} />
         <MetricCard label="Feedback recebido" value={feedback.total} />
       </div>
 

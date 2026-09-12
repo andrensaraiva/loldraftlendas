@@ -29,9 +29,9 @@ Arquivos centrais: [draft.ts](../src/game/draft.ts), [regions.ts](../src/game/re
 - Configurações públicas são aceitas pelo jogo apenas quando a versão do dataset coincide e todas as cinco posições ainda possuem pool válido.
 - Cada campanha salva o próprio snapshot de regras; alterações administrativas futuras não corrompem draft, trocas ou progresso existentes.
 - Analytics anônimo opcional com fila local de até 50 eventos, IDs aleatórios, propriedades allowlisted e falha silenciosa.
-- Eventos implementados: início/resumo de sessão e draft, rolls, trocas, seleção, início de Worlds/séries, jogos, playoffs, vitória mundial, fim de campanha, replay, retomada, ajuda e detalhes de rating.
+- Eventos implementados: início/resumo de sessão e draft, rolls, trocas, seleção, início de Worlds/séries, jogos, playoffs, vitória mundial, fim de campanha, replay, retomada, ajuda, detalhes de rating e compartilhamento.
 - Feedback opcional no fim da campanha: Bom/Ok/Ruim e nota curta, uma vez por campanha anônima.
-- Dashboard agregado: funil, resultados, duração média, trocas, picks/rejeições, anos, grupos, dispositivos e feedback. Visitantes não podem ler eventos ou feedback brutos.
+- Dashboard agregado: funil, resultados, duração média, trocas, intenção/conclusão de compartilhamento, downloads, picks/rejeições, anos, grupos, dispositivos e feedback. Visitantes não podem ler eventos ou feedback brutos.
 - Modo local de demonstração: `VITE_ADMIN_DEMO_MODE=true` abre `/admin` sem Supabase, usando métricas ilustrativas e descartando todas as mudanças/eventos ao recarregar.
 
 Migrations Supabase, em ordem:
@@ -40,6 +40,7 @@ Migrations Supabase, em ordem:
 2. [20260909160000_analytics_feedback.sql](../supabase/migrations/20260909160000_analytics_feedback.sql)
 3. [20260909170000_admin_dashboard.sql](../supabase/migrations/20260909170000_admin_dashboard.sql)
 4. [20260909172000_public_config_and_analytics_validation.sql](../supabase/migrations/20260909172000_public_config_and_analytics_validation.sql)
+5. [20260912110000_campaign_sharing_analytics.sql](../supabase/migrations/20260912110000_campaign_sharing_analytics.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -73,6 +74,14 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - Novos testes E2E cobrem teclado, metadados, redução de movimento, alvos de toque e carregamento progressivo dos dados.
 - Após as mudanças de SEO e resiliência, o bundle inicial ficou em 316,66 kB (88,15 kB gzip), ainda sem aviso de chunk acima de 500 kB.
 
+### Fase 3.4: Compartilhamento e Confiança no Motor
+
+- A tela final gera um card PNG 1080 × 1350 com resultado, campanha, equipe, anos e chamada para o jogo, sem dados pessoais ou dependência de backend.
+- O compartilhamento usa Web Share com arquivo quando suportado, texto/link como alternativa e download com cópia do texto como fallback.
+- Antes de cada partida, o jogador vê chance de vitória, força das equipes, rating médio, composição e os bônus ativos que formam o cálculo.
+- O painel administrativo agrega intenção e conclusão de compartilhamento e downloads do card; a ingestão aceita apenas resultado e método categorizado.
+- Testes unitários cobrem o cálculo da composição, o texto/arquivo compartilhável e a privacidade dos eventos; E2E cobre a prévia responsiva, os controles e o download real do PNG.
+
 ### Fase 4: Cobertura Histórica e Readiness
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
@@ -99,7 +108,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 59 testes unitários passaram; type check e build passaram; a validação histórica confirmou 535 jogadores, chunks anuais, índices compactos, 2.675 associações, 155 pools elegíveis, 1.192 assets históricos e 8 crosschecks de evento; 54 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 25 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop.
+Resultados registrados: 61 testes unitários passaram; type check e build passaram; a validação histórica confirmou 535 jogadores, chunks anuais, índices compactos, 2.675 associações, 155 pools elegíveis, 1.192 assets históricos e 8 crosschecks de evento; 54 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 25 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 343,98 kB (92,90 kB gzip), sem aviso de chunk acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -107,7 +116,7 @@ O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, con
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
 
-1. Crie um projeto Supabase e aplique as quatro migrations na ordem acima.
+1. Crie um projeto Supabase e aplique as cinco migrations na ordem acima.
 2. Crie a conta do mantenedor no Supabase Auth.
 3. Insira manualmente o UUID dela em `public.admin_users`.
 4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.

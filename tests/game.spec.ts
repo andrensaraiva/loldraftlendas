@@ -32,6 +32,12 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   await expect(page.getByRole('heading', { level: 1 })).toContainText('CAMPEÃO', {
     timeout: 25000,
   });
+  await expect(page.getByRole('button', { name: 'Compartilhar campanha' })).toBeVisible();
+  const downloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Baixar card' }).click();
+  const download = await downloadPromise;
+  expect(download.suggestedFilename()).toBe('draft-lendas-campeao-mundial.png');
+  await expect(page.locator('.share-status')).toContainText('Card baixado');
   await expect(page.locator('.campaign-series')).toHaveCount(6);
   await expect(page.locator('.history-games button')).toHaveCount(13);
   await expect(page.locator('.campaign-series small')).toHaveText([
@@ -71,6 +77,11 @@ test('detailed playback updates KDA, pauses, changes speed/mode and retains the 
 }) => {
   await draft(page);
   await page.getByRole('button', { name: 'Entrar no Worlds' }).click();
+  await expect(page.locator('.match-forecast')).toBeVisible({ timeout: 7000 });
+  await expect(page.locator('.match-forecast')).toContainText('chance para suas lendas');
+  await expect(
+    page.getByRole('progressbar', { name: 'Chance estimada de vitória' }),
+  ).toHaveAttribute('aria-valuenow', /^\d+$/);
   await expect(page.locator('.match-report')).toHaveAttribute('data-moment', '0', {
     timeout: 7000,
   });

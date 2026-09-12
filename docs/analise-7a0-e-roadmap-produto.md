@@ -15,6 +15,14 @@ A melhor próxima entrega de produto é um pacote chamado **Compartilhar e Desaf
 
 Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online** e pode ser produzido em paralelo ao backfill histórico de 2021. Ele captura o principal motor de divulgação observado no 7a0 — transformar uma campanha em conversa — enquanto explora uma vantagem própria do Draft Lendas: um motor documentado, probabilidades explícitas e pools de campeões baseados em evidência.
 
+### Estado de execução
+
+- ✅ **1.1 Card compartilhável:** implementado com PNG 1080 × 1350, Web Share, download e fallback de cópia.
+- 🟡 **1.2 Métricas sociais:** `share_started`, `share_completed` e `card_downloaded` já chegam ao contrato e ao dashboard; origem do convite entra junto com o link de desafio em 2.2.
+- ✅ **1.3 Explicação pré-jogo:** chance, forças, ratings médios, composição e bônus ativos estão visíveis antes do resultado.
+- ⏭️ **Próximo pacote técnico:** 2.1 e 2.2, com seed persistida, reprodução determinística e link/código de desafio.
+- 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
+
 Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila atual precisa de duas trilhas: **confiabilidade/dados** e **produto/retenção**.
 
 ## Escopo e método

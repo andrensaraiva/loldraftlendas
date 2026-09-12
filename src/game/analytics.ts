@@ -15,6 +15,9 @@ export const ANALYTICS_EVENTS = [
   'save_resumed',
   'how_to_play_opened',
   'rating_details_opened',
+  'share_started',
+  'share_completed',
+  'card_downloaded',
 ] as const;
 
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];
@@ -86,7 +89,8 @@ function browserStorage(kind: 'local' | 'session'): AnalyticsStorage | null {
 }
 
 function createId(): string {
-  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') return crypto.randomUUID();
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function')
+    return crypto.randomUUID();
   return '00000000-0000-4000-8000-000000000000';
 }
 
@@ -209,7 +213,11 @@ export class AnalyticsTracker {
     void this.flush();
   }
 
-  trackOnce(key: string, eventName: AnalyticsEventName, properties: AnalyticsProperties = {}): void {
+  trackOnce(
+    key: string,
+    eventName: AnalyticsEventName,
+    properties: AnalyticsProperties = {},
+  ): void {
     if (!this.enabled) return;
     const scope = `${this.campaignId}:${key}`;
     const recorded = new Set(parseStrings(this.sessionStorage?.getItem(ONCE_KEY) ?? null));
@@ -299,7 +307,10 @@ class SupabaseAnalyticsTransport implements AnalyticsTransport {
   ) {}
 
   async loadEnabled(): Promise<boolean> {
-    const config = await this.request<{ analytics_enabled: boolean }>('/rest/v1/rpc/get_public_product_config', {});
+    const config = await this.request<{ analytics_enabled: boolean }>(
+      '/rest/v1/rpc/get_public_product_config',
+      {},
+    );
     return config.analytics_enabled === true;
   }
 

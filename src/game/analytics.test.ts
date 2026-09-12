@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import { analyticsPlayerId, AnalyticsTracker } from './analytics';
-import type { AnalyticsEvent, AnalyticsFeedback, AnalyticsStorage, AnalyticsTransport } from './analytics';
+import type {
+  AnalyticsEvent,
+  AnalyticsFeedback,
+  AnalyticsStorage,
+  AnalyticsTransport,
+} from './analytics';
 
 function storage(): AnalyticsStorage & { values: Map<string, string> } {
   const values = new Map<string, string>();
@@ -12,7 +17,9 @@ function storage(): AnalyticsStorage & { values: Map<string, string> } {
   };
 }
 
-function transport(enabled = true): AnalyticsTransport & { events: AnalyticsEvent[]; feedback: AnalyticsFeedback[] } {
+function transport(
+  enabled = true,
+): AnalyticsTransport & { events: AnalyticsEvent[]; feedback: AnalyticsFeedback[] } {
   const events: AnalyticsEvent[] = [];
   const feedback: AnalyticsFeedback[] = [];
   return {
@@ -53,12 +60,18 @@ describe('anonymous analytics', () => {
       note: 'never-sent',
       invalid: Number.NaN,
     });
+    tracker.track('share_started', {
+      outcome: 'Campeão mundial',
+      share_method: 'file',
+      email: 'still-never-sent@example.test',
+    });
     await tracker.flush();
 
     expect(remote.events.map((event) => event.event_name)).toEqual([
       'session_started',
       'draft_started',
       'player_selected',
+      'share_started',
     ]);
     expect(remote.events[2]).toMatchObject({
       device_type: 'mobile',
@@ -69,6 +82,10 @@ describe('anonymous analytics', () => {
     });
     expect(remote.events[2].properties).not.toHaveProperty('email');
     expect(remote.events[2].properties).not.toHaveProperty('note');
+    expect(remote.events[3].properties).toEqual({
+      outcome: 'Campeão mundial',
+      share_method: 'file',
+    });
     expect(tracker.campaignElapsedMs()).toBe(0);
     expect(tracker.draftElapsedMs()).toBe(0);
   });
@@ -76,12 +93,18 @@ describe('anonymous analytics', () => {
   it('honors remote opt-out, deduplicates one-time events, and submits short anonymous feedback', async () => {
     const local = storage();
     const remote = transport();
-    const tracker = new AnalyticsTracker({ transport: remote, storage: local, randomId: () => crypto.randomUUID() });
+    const tracker = new AnalyticsTracker({
+      transport: remote,
+      storage: local,
+      randomId: () => crypto.randomUUID(),
+    });
     await tracker.initialize();
     tracker.trackOnce('campaign_finished', 'campaign_finished', { outcome: 'Campeão mundial' });
     tracker.trackOnce('campaign_finished', 'campaign_finished', { outcome: 'Campeão mundial' });
     await tracker.flush();
-    expect(remote.events.filter((event) => event.event_name === 'campaign_finished')).toHaveLength(1);
+    expect(remote.events.filter((event) => event.event_name === 'campaign_finished')).toHaveLength(
+      1,
+    );
     expect(await tracker.submitFeedback('good', ` ${'x'.repeat(600)} `)).toBe(true);
     expect(remote.feedback[0]).toMatchObject({ rating: 'good', note: 'x'.repeat(500) });
 

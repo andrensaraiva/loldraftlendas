@@ -50,8 +50,10 @@ import type {
 } from './game/types';
 import { AutoplayControls } from './components/AutoplayControls';
 import type { PlaybackSettings } from './components/AutoplayControls';
+import { CampaignShare } from './components/CampaignShare';
 import {
   advanceTournament,
+  compositionBreakdown,
   createSeries,
   formatFor,
   newTournament,
@@ -60,6 +62,7 @@ import {
   simulateGame,
   teamStrength,
   validateData,
+  winProbability,
 } from './game/engine';
 
 const roleLabel: Record<Role, string> = {
@@ -392,6 +395,75 @@ function Composition({ team, game, data }: { team: Team; game: number; data: Gam
         </span>
       </div>
     </div>
+  );
+}
+
+function MatchForecast({
+  team,
+  opponent,
+  opponentName,
+  game,
+  data,
+}: {
+  team: Team;
+  opponent: Team;
+  opponentName: string;
+  game: number;
+  data: GameData;
+}) {
+  const userStrength = teamStrength(team, game, data.champions);
+  const opponentStrength = teamStrength(opponent, game, data.champions);
+  const breakdown = compositionBreakdown(team, game, data.champions);
+  const probability = Math.round(winProbability(userStrength.total, opponentStrength.total) * 100);
+  const message =
+    probability >= 65
+      ? 'Sua equipe é favorita, mas a zebra continua possível.'
+      : probability <= 35
+        ? 'O adversário é favorito. Uma vitória seria uma zebra.'
+        : 'Confronto equilibrado: cada ponto de composição pode pesar.';
+  return (
+    <section className="match-forecast" aria-label={`Previsão para o jogo ${game}`}>
+      <div className="forecast-heading">
+        <div>
+          <span className="eyebrow green">PREVISÃO · ANTES DO RESULTADO</span>
+          <h2>{probability}% de chance para suas lendas</h2>
+        </div>
+        <span className="forecast-score">
+          <b>{userStrength.total.toFixed(1)}</b>
+          <i>×</i>
+          <b>{opponentStrength.total.toFixed(1)}</b>
+        </span>
+      </div>
+      <div
+        className="forecast-meter"
+        role="progressbar"
+        aria-label="Chance estimada de vitória"
+        aria-valuemin={0}
+        aria-valuemax={100}
+        aria-valuenow={probability}
+      >
+        <span style={{ width: `${probability}%` }} />
+      </div>
+      <div className="forecast-details">
+        <span>
+          Rating médio <b>{userStrength.average.toFixed(1)}</b>
+        </span>
+        <span>
+          Composição <b>{userStrength.composition}</b>
+        </span>
+        <span>
+          Adversário <b>{opponentName}</b>
+        </span>
+      </div>
+      <div className="forecast-bonuses">
+        {breakdown.bonuses.length ? (
+          breakdown.bonuses.map((bonus) => <span key={bonus.id}>{bonus.label}</span>)
+        ) : (
+          <span>Sem bônus de composição ativos</span>
+        )}
+      </div>
+      <p>{message} A chance é uma estimativa, não uma promessa de resultado.</p>
+    </section>
   );
 }
 function PlayerCard({
@@ -1417,6 +1489,15 @@ export default function App() {
                 );
               })}
             </div>
+            {!seriesDone(series) && (
+              <MatchForecast
+                team={team}
+                opponent={series.opponent}
+                opponentName={series.opponentName}
+                game={currentGame}
+                data={viewData}
+              />
+            )}
             {playResult && (
               <Suspense fallback={<p>Carregando relatório…</p>}>
                 <MatchReport
@@ -1555,6 +1636,26 @@ export default function App() {
               </div>
             </div>
             <TeamStrip team={team} />
+            <CampaignShare
+              summary={{
+                outcome: tournament.outcome ?? 'Campanha concluída',
+                wins: totalWins,
+                losses: totalLosses,
+                confrontations: tournament.history.length,
+                team: team.map((player) => ({
+                  role: player.role,
+                  playerName: player.playerName,
+                  team: player.team,
+                  worldsYear: player.worldsYear,
+                })),
+              }}
+              onTrack={(event, method) =>
+                analytics.track(event, {
+                  outcome: tournament.outcome ?? 'Campanha concluída',
+                  share_method: method,
+                })
+              }
+            />
             <button className="primary" onClick={start}>
               Jogar novamente <RotateCcw size={19} />
             </button>
