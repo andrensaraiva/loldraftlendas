@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-10. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3, com a fundação da Fase 4 e a edição de 2024 publicadas. O commit-base remoto é `1a557dc` (`feat: add Worlds 2024 historical data`); a edição de 2025 está integrada neste checkpoint.
+Atualizado em 2026-09-12. Este documento registra o ponto de parada após as Fases 1, 2, 3.1, 3.2 e 3.3, com a fundação da Fase 4 e a edição de 2024 publicadas. O commit-base remoto é `1a557dc` (`feat: add Worlds 2024 historical data`); a edição de 2025 está integrada neste checkpoint.
 
 ## Objetivo Preservado
 
@@ -117,6 +117,8 @@ O Supabase não foi configurado com credenciais reais durante o desenvolvimento.
 O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions após push, pois não há token/integração do GitHub disponível localmente.
 
 ## Como Retomar
+
+Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de execução](analise-7a0-e-roadmap-produto.md). A trilha **Compartilhar e Desafiar** deve avançar em paralelo ao backfill histórico, sem relaxar os gates de dados abaixo.
 
 ### Próxima Entrega: Fase 4, Backfill Histórico
 
