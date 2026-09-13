@@ -25,6 +25,7 @@ Create a Supabase project, then run these migrations in filename order in the pr
 - [20260912110000_campaign_sharing_analytics.sql](../supabase/migrations/20260912110000_campaign_sharing_analytics.sql)
 - [20260912120000_deterministic_challenges.sql](../supabase/migrations/20260912120000_deterministic_challenges.sql)
 - [20260912130000_contextual_rating_feedback.sql](../supabase/migrations/20260912130000_contextual_rating_feedback.sql)
+- [20260913120000_almanac_mode.sql](../supabase/migrations/20260913120000_almanac_mode.sql)
 
 The migrations create:
 
@@ -37,6 +38,7 @@ The migrations create:
 - Contextual rating-review feedback with public historical IDs, categorized reasons, RLS and an admin-only aggregate/read model.
 - An admin-only aggregate dashboard RPC, incluindo intenção/conclusão de compartilhamento, downloads do card e abertura/início/conclusão dos desafios; ele não retorna eventos individuais de visitantes ao navegador.
 - A complete public configuration snapshot plus an allowlisted analytics-property schema.
+- Aggregate completion and replay comparison between Classic and Almanac modes.
 
 Create the maintainer account in Supabase Auth, copy its UUID, and add it in the SQL Editor:
 

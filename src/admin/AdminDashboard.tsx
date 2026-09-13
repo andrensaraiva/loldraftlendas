@@ -193,6 +193,25 @@ export function AdminDashboard({
 
       <OutcomeList items={metrics.outcomes} />
 
+      <section className="admin-feedback-summary">
+        <div className="admin-section-heading">
+          <div>
+            <span className="admin-kicker">MODOS DE JOGO</span>
+            <h2>Conclusão e replay por experiência.</h2>
+          </div>
+        </div>
+        <div className="admin-metric-grid">
+          {metrics.gameModes.map((mode) => (
+            <MetricCard
+              key={mode.key}
+              label={`${mode.label} · ${mode.draftsStarted} drafts`}
+              value={percent(mode.completionRate)}
+              detail={`${percent(mode.playAgainRate)} jogaram novamente`}
+            />
+          ))}
+        </div>
+      </section>
+
       <div className="admin-dashboard-grid">
         <RankedList title="Trocas por tipo" items={metrics.exchanges} />
         <RankedList title="Anos sorteados" items={metrics.years} />

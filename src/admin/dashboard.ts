@@ -25,6 +25,14 @@ export interface RatingFeedbackMetrics {
   }>;
 }
 
+export interface GameModeMetrics {
+  key: 'classic' | 'almanac';
+  label: string;
+  draftsStarted: number;
+  completionRate: number;
+  playAgainRate: number;
+}
+
 export interface DashboardMetrics {
   generatedAt: string;
   overview: {
@@ -52,6 +60,7 @@ export interface DashboardMetrics {
   years: MetricCount[];
   regionGroups: MetricCount[];
   devices: MetricCount[];
+  gameModes: GameModeMetrics[];
   feedback: FeedbackMetrics;
   ratingFeedback: RatingFeedbackMetrics;
 }
@@ -83,6 +92,13 @@ interface DashboardResponse {
   years: Array<{ key: string; label: string; count: number }>;
   region_groups: Array<{ key: string; label: string; count: number }>;
   devices: Array<{ key: string; label: string; count: number }>;
+  game_modes: Array<{
+    key: 'classic' | 'almanac';
+    label: string;
+    drafts_started: number;
+    completion_rate: number;
+    play_again_rate: number;
+  }>;
   feedback: {
     total: number;
     good: number;
@@ -123,6 +139,28 @@ function counts(value: unknown): MetricCount[] | null {
   return parsed.every((entry) => entry !== null) ? (parsed as MetricCount[]) : null;
 }
 
+function gameModes(value: unknown): GameModeMetrics[] | null {
+  if (!Array.isArray(value)) return null;
+  const parsed = value.map((entry) => {
+    if (!entry || typeof entry !== 'object') return null;
+    const candidate = entry as Partial<DashboardResponse['game_modes'][number]>;
+    return ['classic', 'almanac'].includes(candidate.key ?? '') &&
+      typeof candidate.label === 'string' &&
+      numberValue(candidate.drafts_started) !== null &&
+      numberValue(candidate.completion_rate) !== null &&
+      numberValue(candidate.play_again_rate) !== null
+      ? {
+          key: candidate.key!,
+          label: candidate.label,
+          draftsStarted: candidate.drafts_started!,
+          completionRate: candidate.completion_rate!,
+          playAgainRate: candidate.play_again_rate!,
+        }
+      : null;
+  });
+  return parsed.every((entry) => entry !== null) ? (parsed as GameModeMetrics[]) : null;
+}
+
 export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
   if (!value || typeof value !== 'object') throw new Error('Métricas administrativas inválidas.');
   const response = value as Partial<DashboardResponse>;
@@ -139,6 +177,7 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
   const feedback = response.feedback;
   const ratingFeedback = response.rating_feedback;
   const ratingReasons = counts(ratingFeedback?.reasons);
+  const parsedGameModes = gameModes(response.game_modes);
   if (
     typeof response.generated_at !== 'string' ||
     Number.isNaN(Date.parse(response.generated_at)) ||
@@ -147,6 +186,7 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     !feedback ||
     !ratingFeedback ||
     !ratingReasons ||
+    !parsedGameModes ||
     numberValue(overview.drafts_started) === null ||
     numberValue(overview.drafts_completed) === null ||
     numberValue(overview.draft_completion_rate) === null ||
@@ -227,6 +267,7 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     years: lists[4]!,
     regionGroups: lists[5]!,
     devices: lists[6]!,
+    gameModes: parsedGameModes,
     feedback: {
       total: feedback.total,
       good: feedback.good,
@@ -318,6 +359,22 @@ export function localDemoDashboard(): DashboardMetrics {
     devices: [
       { key: 'desktop', label: 'Desktop', count: 152 },
       { key: 'mobile', label: 'Mobile', count: 96 },
+    ],
+    gameModes: [
+      {
+        key: 'classic',
+        label: 'Clássico',
+        draftsStarted: 176,
+        completionRate: 71.6,
+        playAgainRate: 28.4,
+      },
+      {
+        key: 'almanac',
+        label: 'Almanaque',
+        draftsStarted: 72,
+        completionRate: 77.8,
+        playAgainRate: 40.3,
+      },
     ],
     feedback: {
       total: 67,

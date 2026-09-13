@@ -28,6 +28,8 @@ import {
 import type { DraftAvailability } from './game/draft';
 import { canonicalRegionFor } from './game/regions';
 import { CAMPAIGN_RANDOM_VERSION, campaignRandom, createCampaignSeed } from './game/random';
+import { gameModeLabel } from './game/mode';
+import type { GameMode } from './game/mode';
 import { championArt } from './data/art';
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import {
@@ -127,11 +129,13 @@ function ReportDialog({
   team,
   data,
   close,
+  hideStrength = false,
 }: {
   report: ReportSelection;
   team: Team;
   data: GameData;
   close: () => void;
+  hideStrength?: boolean;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   useEffect(() => {
@@ -162,6 +166,7 @@ function ReportDialog({
           opponentName={report.series.opponentName}
           data={data}
           momentIndex={report.result.recap.moments.length - 1}
+          hideStrength={hideStrength}
         />
       </Suspense>
     </dialog>
@@ -287,6 +292,10 @@ function HowTo({
             Sorteie um ano e uma região. Use até três trocas ao longo do draft. Clique em um jogador
             para escalá-lo e avançar.
           </p>
+          <p>
+            No Clássico, ratings e força ficam visíveis. No Almanaque, essa orientação numérica só
+            aparece depois do resultado final; o cálculo da campanha não muda.
+          </p>
         </li>
         <li>
           <b>Pense além do primeiro jogo.</b>
@@ -377,7 +386,17 @@ function TeamStrip({ team, active = 5 }: { team: Team; active?: number }) {
     </div>
   );
 }
-function Composition({ team, game, data }: { team: Team; game: number; data: GameData }) {
+function Composition({
+  team,
+  game,
+  data,
+  showRatings = true,
+}: {
+  team: Team;
+  game: number;
+  data: GameData;
+  showRatings?: boolean;
+}) {
   const strength = teamStrength(team, game, data.champions);
   return (
     <div className="composition-panel">
@@ -390,7 +409,11 @@ function Composition({ team, game, data }: { team: Team; game: number; data: Gam
               <span className="eyebrow">{roleLabel[p.role]}</span>
               <div className="comp-art">
                 <Art src={championArt(c, p.worldsYear).splash} alt={c.name} />
-                <b>{slot.rating}</b>
+                <b
+                  aria-label={showRatings ? `Rating ${slot.rating}` : 'Rating oculto no Almanaque'}
+                >
+                  {showRatings ? slot.rating : '?'}
+                </b>
               </div>
               <strong>{c.name}</strong>
               <small>
@@ -400,17 +423,23 @@ function Composition({ team, game, data }: { team: Team; game: number; data: Gam
           );
         })}
       </div>
-      <div className="composition-scores">
-        <span>
-          Rating médio <b>{strength.average.toFixed(1)}</b>
-        </span>
-        <span>
-          Sinergia da comp <b>{strength.composition}</b>
-        </span>
-        <span className="strength-total">
-          Força da equipe <b>{strength.total.toFixed(1)}</b>
-        </span>
-      </div>
+      {showRatings ? (
+        <div className="composition-scores">
+          <span>
+            Rating médio <b>{strength.average.toFixed(1)}</b>
+          </span>
+          <span>
+            Sinergia da comp <b>{strength.composition}</b>
+          </span>
+          <span className="strength-total">
+            Força da equipe <b>{strength.total.toFixed(1)}</b>
+          </span>
+        </div>
+      ) : (
+        <div className="almanac-lock" role="note">
+          <Shield size={18} /> Ratings, sinergia e força serão revelados ao fim da campanha.
+        </div>
+      )}
     </div>
   );
 }
@@ -421,12 +450,14 @@ function MatchForecast({
   opponentName,
   game,
   data,
+  showRatings = true,
 }: {
   team: Team;
   opponent: Team;
   opponentName: string;
   game: number;
   data: GameData;
+  showRatings?: boolean;
 }) {
   const userStrength = teamStrength(team, game, data.champions);
   const opponentStrength = teamStrength(opponent, game, data.champions);
@@ -438,6 +469,20 @@ function MatchForecast({
       : probability <= 35
         ? 'O adversário é favorito. Uma vitória seria uma zebra.'
         : 'Confronto equilibrado: cada ponto de composição pode pesar.';
+  if (!showRatings)
+    return (
+      <section
+        className="match-forecast almanac-forecast"
+        aria-label={`Previsão para o jogo ${game}`}
+      >
+        <span className="eyebrow green">MODO ALMANAQUE · LEITURA OCULTA</span>
+        <h2>Confie no seu conhecimento.</h2>
+        <p>
+          Chance, força e bônus de composição contra {opponentName} serão revelados ao fim da
+          campanha. O cálculo do resultado continua exatamente o mesmo do modo Clássico.
+        </p>
+      </section>
+    );
   return (
     <section className="match-forecast" aria-label={`Previsão para o jogo ${game}`}>
       <div className="forecast-heading">
@@ -490,6 +535,7 @@ function PlayerCard({
   index,
   selected,
   disabled,
+  showRatings = true,
 }: {
   player: PlayerVersion;
   data: GameData;
@@ -497,6 +543,7 @@ function PlayerCard({
   index: number;
   selected: boolean;
   disabled: boolean;
+  showRatings?: boolean;
 }) {
   return (
     <button
@@ -542,7 +589,11 @@ function PlayerCard({
               <div key={slot.game} className="pool-slot">
                 <span>G{slot.game}</span>
                 <Art src={championArt(c, player.worldsYear).image} alt="" />
-                <b>{slot.rating}</b>
+                <b
+                  aria-label={showRatings ? `Rating ${slot.rating}` : 'Rating oculto no Almanaque'}
+                >
+                  {showRatings ? slot.rating : '?'}
+                </b>
                 <small>{c.name}</small>
               </div>
             );
@@ -574,6 +625,7 @@ export default function App() {
   const [campaignAvailability, setCampaignAvailability] = useState<DraftAvailability | null>(null);
   const [campaignSeed, setCampaignSeed] = useState<string | null>(null);
   const [campaignSource, setCampaignSource] = useState<'organic' | 'challenge'>('organic');
+  const [gameMode, setGameMode] = useState<GameMode>('classic');
   const [maintenanceBanner, setMaintenanceBanner] = useState<string | null>(null);
   const [help, setHelp] = useState(false);
   const [remaining, setRemaining] = useState<number>(DRAFT_CONFIG.exchanges);
@@ -623,6 +675,7 @@ export default function App() {
     analytics.trackOnce(`challenge_opened:${pendingChallenge.seed}`, 'challenge_opened', {
       campaign_source: 'challenge',
       challenge_version: pendingChallenge.version,
+      game_mode: pendingChallenge.gameMode,
     });
   }, [analyticsEnabled, pendingChallenge]);
   useEffect(() => {
@@ -644,6 +697,7 @@ export default function App() {
       seed: campaignSeed,
       randomVersion: CAMPAIGN_RANDOM_VERSION,
       campaignSource,
+      gameMode,
       screen,
       draftStep: team.length,
       ...(campaignAvailability ? { draftAvailability: campaignAvailability } : {}),
@@ -675,6 +729,7 @@ export default function App() {
     campaignAvailability,
     campaignSeed,
     campaignSource,
+    gameMode,
   ]);
   useEffect(() => {
     if (tournament.stage === 'quarters')
@@ -685,6 +740,7 @@ export default function App() {
     const properties = {
       outcome: tournament.outcome,
       campaign_duration_ms: analytics.campaignElapsedMs(),
+      game_mode: gameMode,
     };
     analytics.trackOnce('campaign_finished', 'campaign_finished', properties);
     if (campaignSource === 'challenge')
@@ -695,7 +751,7 @@ export default function App() {
       });
     if (tournament.outcome === 'Campeão mundial')
       analytics.trackOnce('worlds_won', 'worlds_won', properties);
-  }, [analyticsEnabled, campaignSource, screen, tournament.outcome]);
+  }, [analyticsEnabled, campaignSource, gameMode, screen, tournament.outcome]);
   useEffect(() => {
     if (screen === 'tournament' || screen === 'match' || screen === 'result')
       analytics.trackOnce('worlds_started', 'worlds_started');
@@ -816,6 +872,7 @@ export default function App() {
       challenge?.availability ?? nextDraftAvailability ?? defaultDraftAvailability(catalog);
     const seed = challenge?.seed ?? createCampaignSeed();
     const source = challenge ? 'challenge' : 'organic';
+    const selectedGameMode = challenge?.gameMode ?? gameMode;
     const plan = planDraft(
       catalog.draftRegionManifest,
       availability,
@@ -825,18 +882,20 @@ export default function App() {
     if (!snapshot) return;
     if (draftTimer.current) clearTimeout(draftTimer.current);
     const replay = screen === 'result';
-    if (replay) analytics.track('play_again');
+    if (replay) analytics.track('play_again', { game_mode: gameMode });
     clearCampaign();
     setHasSavedCampaign(false);
-    analytics.startCampaign();
+    analytics.startCampaign({ game_mode: selectedGameMode });
     if (challenge)
       analytics.track('challenge_started', {
         campaign_source: 'challenge',
         challenge_version: challenge.version,
+        game_mode: selectedGameMode,
       });
     setCampaignAvailability(availability);
     setCampaignSeed(seed);
     setCampaignSource(source);
+    setGameMode(selectedGameMode);
     draftLock.current = false;
     setPending(null);
     setRolling(false);
@@ -890,6 +949,7 @@ export default function App() {
     setCampaignAvailability(campaign.draftAvailability ?? defaultDraftAvailability(catalog));
     setCampaignSeed(campaign.seed);
     setCampaignSource(campaign.campaignSource);
+    setGameMode(campaign.gameMode);
     draftLock.current = false;
     setPending(null);
     setRolling(false);
@@ -1079,6 +1139,7 @@ export default function App() {
           version: CHALLENGE_VERSION,
           seed: campaignSeed,
           datasetVersion: catalog.draftRegionManifest.datasetVersion,
+          gameMode,
           availability: campaignAvailability,
         }
       : null;
@@ -1098,8 +1159,11 @@ export default function App() {
             activeDraftAvailability.activeRegionGroups.includes(group.id),
         ),
     );
+  const showRatings = gameMode === 'classic' || screen === 'result';
   return (
-    <div className={`app-shell ${screen === 'draft' ? 'draft-active' : ''}`}>
+    <div
+      className={`app-shell ${screen === 'draft' ? 'draft-active' : ''} ${gameMode === 'almanac' ? 'almanac-mode' : ''}`}
+    >
       <a className="skip-link" href="#main-content">
         Pular para o conteúdo
       </a>
@@ -1165,8 +1229,9 @@ export default function App() {
                   <span>DESAFIO ENTRE AMIGOS · {challengeCode(pendingChallenge)}</span>
                   <h2 id="challenge-invite-title">Mesmas condições. Sua própria campanha.</h2>
                   <p>
-                    Anos, regiões, trocas e sorteios serão os mesmos. Suas escolhas continuam livres
-                    e o resultado não vale como ranking verificado.
+                    Modo {gameModeLabel(pendingChallenge.gameMode)}, anos, regiões, trocas e
+                    sorteios serão os mesmos. Suas escolhas continuam livres e o resultado não vale
+                    como ranking verificado.
                   </p>
                   <button
                     className="primary"
@@ -1183,6 +1248,37 @@ export default function App() {
                   Este desafio é inválido ou pertence a outra versão dos dados. Você ainda pode
                   começar um draft normal.
                 </p>
+              )}
+              {!pendingChallenge && (
+                <fieldset className="game-mode-picker">
+                  <legend>Como você quer escolher?</legend>
+                  <label className={gameMode === 'classic' ? 'selected' : ''}>
+                    <input
+                      type="radio"
+                      name="game-mode"
+                      value="classic"
+                      checked={gameMode === 'classic'}
+                      onChange={() => setGameMode('classic')}
+                    />
+                    <span>
+                      <b>Clássico</b>
+                      <small>Ratings e força visíveis</small>
+                    </span>
+                  </label>
+                  <label className={gameMode === 'almanac' ? 'selected' : ''}>
+                    <input
+                      type="radio"
+                      name="game-mode"
+                      value="almanac"
+                      checked={gameMode === 'almanac'}
+                      onChange={() => setGameMode('almanac')}
+                    />
+                    <span>
+                      <b>Almanaque</b>
+                      <small>Escolha sem ver os números</small>
+                    </span>
+                  </label>
+                </fieldset>
               )}
               {hasSavedCampaign ? (
                 <div className="home-actions">
@@ -1207,7 +1303,10 @@ export default function App() {
                   {loadingGame ? 'Preparando draft…' : 'Começar draft'} <ArrowRight size={23} />
                 </button>
               )}
-              <span className="start-note">5 escolhas · Sem cadastro · Draft em 2 minutos</span>
+              <span className="start-note">
+                Modo {gameModeLabel(pendingChallenge?.gameMode ?? gameMode)} · 5 escolhas · Sem
+                cadastro
+              </span>
             </div>
             <div className="home-visual">
               <div className="hero-art">
@@ -1303,7 +1402,8 @@ export default function App() {
             <div className="section-heading">
               <div>
                 <span className="eyebrow green">
-                  {roleLabel[draft.role]} · ESCOLHA {team.length + 1} DE 5
+                  {roleLabel[draft.role]} · ESCOLHA {team.length + 1} DE 5 ·{' '}
+                  {gameModeLabel(gameMode).toUpperCase()}
                 </span>
                 <h1 ref={title} tabIndex={-1}>
                   Escolha sua lenda<span>.</span>
@@ -1381,6 +1481,7 @@ export default function App() {
                     index={i}
                     selected={pending === p.id}
                     disabled={!!pending || rolling}
+                    showRatings={showRatings}
                   />
                   <button
                     className="player-details text-button"
@@ -1440,7 +1541,7 @@ export default function App() {
                 </button>
               ))}
             </div>
-            <Composition team={team} game={preview} data={viewData} />
+            <Composition team={team} game={preview} data={viewData} showRatings={showRatings} />
             <AutoplayControls settings={settings} onChange={setSettings} />
             <div className="action-bar">
               <p>
@@ -1614,7 +1715,7 @@ export default function App() {
                           ? 'NÃO JOGADO'
                           : '—'}
                     </b>
-                    {g && (
+                    {g && showRatings && (
                       <small>
                         {g.strength.toFixed(1)} vs {g.opponentStrength.toFixed(1)}
                       </small>
@@ -1630,6 +1731,7 @@ export default function App() {
                 opponentName={series.opponentName}
                 game={currentGame}
                 data={viewData}
+                showRatings={showRatings}
               />
             )}
             {playResult && (
@@ -1642,6 +1744,7 @@ export default function App() {
                   data={viewData}
                   momentIndex={momentIndex}
                   compact={settings.mode === 'quick'}
+                  hideStrength={!showRatings}
                 />
               </Suspense>
             )}
@@ -1684,15 +1787,26 @@ export default function App() {
                           </span>
                         )}
                     </div>
-                    <Composition team={team} game={currentGame} data={viewData} />
+                    <Composition
+                      team={team}
+                      game={currentGame}
+                      data={viewData}
+                      showRatings={showRatings}
+                    />
                     <div className="opponent-line">
                       <span>
-                        Comp adversária · Força{' '}
-                        {teamStrength(
-                          series.opponent,
-                          currentGame,
-                          viewData.champions,
-                        ).total.toFixed(1)}
+                        Comp adversária
+                        {showRatings && (
+                          <>
+                            {' '}
+                            · Força{' '}
+                            {teamStrength(
+                              series.opponent,
+                              currentGame,
+                              viewData.champions,
+                            ).total.toFixed(1)}
+                          </>
+                        )}
                       </span>
                       <div>
                         {series.opponent.map((p) => {
@@ -1703,7 +1817,8 @@ export default function App() {
                               <span>
                                 <b>{p.playerName}</b>
                                 <small>
-                                  {c.name} · {p.championPool[currentGame - 1].rating}
+                                  {c.name}
+                                  {showRatings && ` · ${p.championPool[currentGame - 1].rating}`}
                                 </small>
                               </span>
                             </div>
@@ -1770,6 +1885,27 @@ export default function App() {
               </div>
             </div>
             <TeamStrip team={team} />
+            {gameMode === 'almanac' && (
+              <section className="almanac-reveal" aria-labelledby="almanac-reveal-title">
+                <span className="eyebrow green">REVELAÇÃO DO ALMANAQUE</span>
+                <h2 id="almanac-reveal-title">Agora os números entram em campo.</h2>
+                <p>Veja os ratings, a sinergia e a força que acompanharam cada jogo da campanha.</p>
+                <div className="game-tabs" role="tablist" aria-label="Ratings revelados">
+                  {[1, 2, 3, 4, 5].map((game) => (
+                    <button
+                      key={game}
+                      role="tab"
+                      aria-selected={preview === game}
+                      className={preview === game ? 'selected' : ''}
+                      onClick={() => setPreview(game)}
+                    >
+                      Jogo {game}
+                    </button>
+                  ))}
+                </div>
+                <Composition team={team} game={preview} data={viewData} />
+              </section>
+            )}
             <CampaignShare
               challengeUrl={activeChallengeUrl}
               summary={{
@@ -1778,6 +1914,7 @@ export default function App() {
                 losses: totalLosses,
                 confrontations: tournament.history.length,
                 challengeCode: activeChallenge ? challengeCode(activeChallenge) : undefined,
+                gameMode,
                 team: team.map((player) => ({
                   role: player.role,
                   playerName: player.playerName,
@@ -1836,12 +1973,19 @@ export default function App() {
             data={viewData}
             tracker={analytics}
             feedbackEnabled={analyticsEnabled}
+            hideNumbers={!showRatings}
             close={() => setResearch(null)}
           />
         </Suspense>
       )}
       {report && (
-        <ReportDialog report={report} team={team} data={viewData} close={() => setReport(null)} />
+        <ReportDialog
+          report={report}
+          team={team}
+          data={viewData}
+          hideStrength={!showRatings}
+          close={() => setReport(null)}
+        />
       )}
     </div>
   );

@@ -65,6 +65,7 @@ export function MatchReport({
   data,
   momentIndex,
   compact = false,
+  hideStrength = false,
 }: {
   result: GameResult;
   team: Team;
@@ -73,6 +74,7 @@ export function MatchReport({
   data: GameData;
   momentIndex: number;
   compact?: boolean;
+  hideStrength?: boolean;
 }) {
   const moment = result.recap.moments[momentIndex];
   const ended = momentIndex === result.recap.moments.length - 1;
@@ -109,8 +111,9 @@ export function MatchReport({
         <div className={`game-outcome ${result.won ? 'win' : 'loss'}`}>
           <b>{result.won ? 'VITÓRIA' : 'DERROTA'}</b>
           <span>
-            Força {result.strength.toFixed(1)} × {result.opponentStrength.toFixed(1)} ·{' '}
-            {Math.round(result.probability * 100)}% de chance para suas lendas
+            {hideStrength
+              ? 'Leitura de força guardada para a revelação final do Almanaque'
+              : `Força ${result.strength.toFixed(1)} × ${result.opponentStrength.toFixed(1)} · ${Math.round(result.probability * 100)}% de chance para suas lendas`}
           </span>
         </div>
       )}

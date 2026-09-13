@@ -2,6 +2,8 @@ import type { DraftAvailability } from './draft';
 import { DRAFT_REGION_GROUP_IDS } from './types';
 import type { DraftRegionGroupId, DraftRegionManifest } from './types';
 import { isCampaignSeed } from './random';
+import { isGameMode } from './mode';
+import type { GameMode } from './mode';
 
 export const CHALLENGE_VERSION = 1;
 export const CHALLENGE_QUERY_PARAM = 'challenge';
@@ -10,6 +12,7 @@ export interface CampaignChallenge {
   version: typeof CHALLENGE_VERSION;
   seed: string;
   datasetVersion: string;
+  gameMode: GameMode;
   availability: DraftAvailability;
 }
 
@@ -20,6 +23,7 @@ interface CompactChallenge {
   e: number;
   y: number[];
   g: string[];
+  m?: string;
 }
 
 function encodeBase64Url(value: string): string {
@@ -85,6 +89,7 @@ export function encodeChallenge(challenge: CampaignChallenge): string {
     e: availability.startingExchanges,
     y: availability.activeYears,
     g: availability.activeRegionGroups,
+    m: challenge.gameMode,
   };
   return encodeBase64Url(JSON.stringify(compact));
 }
@@ -112,10 +117,13 @@ export function decodeChallenge(
       activeRegionGroups: compact.g,
     });
     if (!isValidAvailability(availability, manifest)) return null;
+    const gameMode = compact.m === undefined ? 'classic' : compact.m;
+    if (!isGameMode(gameMode)) return null;
     return {
       version: CHALLENGE_VERSION,
       seed: compact.s,
       datasetVersion: compact.d,
+      gameMode,
       availability,
     };
   } catch {

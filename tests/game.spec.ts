@@ -1,12 +1,14 @@
 import { test, expect } from '@playwright/test';
 import type { Page } from '@playwright/test';
 import { CHALLENGE_VERSION, encodeChallenge } from '../src/game/challenge';
+import type { GameMode } from '../src/game/mode';
 
-function challengePath(seed: string): string {
+function challengePath(seed: string, gameMode: GameMode = 'classic'): string {
   const challenge = encodeChallenge({
     version: CHALLENGE_VERSION,
     seed,
     datasetVersion: 'multi-era-v1.3.0',
+    gameMode,
     availability: {
       startingExchanges: 3,
       activeYears: [2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
@@ -23,11 +25,13 @@ function challengePath(seed: string): string {
   return `/?challenge=${challenge}`;
 }
 
-async function draft(page: Page, challengeSeed?: string) {
+async function draft(page: Page, challengeSeed?: string, gameMode: GameMode = 'classic') {
   await page.addInitScript(() => {
     Math.random = () => 0;
   });
-  await page.goto(challengeSeed ? challengePath(challengeSeed) : '/');
+  await page.goto(challengeSeed ? challengePath(challengeSeed, gameMode) : '/');
+  if (!challengeSeed && gameMode === 'almanac')
+    await page.getByRole('radio', { name: /Almanaque/ }).check();
   await expect(page.locator('footer')).toContainText('RATINGS ESTIMADOS');
   await page
     .getByRole('button', { name: challengeSeed ? 'Aceitar desafio' : 'Começar draft' })
@@ -35,12 +39,44 @@ async function draft(page: Page, challengeSeed?: string) {
   for (let i = 0; i < 5; i++) {
     await expect(page.locator('.pick-counter')).toContainText(`0${i + 1}`);
     await expect(page.locator('.player-card')).toHaveCount(3);
+    if (gameMode === 'almanac')
+      await expect(page.locator('.player-card .pool-slot b')).toHaveText(Array(15).fill('?'));
+    if (gameMode === 'almanac' && i === 0) {
+      await page.getByRole('button', { name: /^Detalhes de/ }).first().click();
+      await expect(page.locator('.almanac-dialog-note')).toContainText('números serão revelados');
+      await expect(page.locator('.evidence-slots strong')).toHaveText(Array(5).fill('?'));
+      await expect(page.getByRole('button', { name: 'Discorda deste rating?' })).toHaveCount(0);
+      await page.getByRole('button', { name: 'Fechar detalhes' }).click();
+    }
     await expect(
       page.locator('.player-card').first().locator('.pool-slot img').first(),
     ).toHaveAttribute('src', /^\/assets\/20\d{2}\//);
     await page.locator('.player-card').first().click();
   }
 }
+
+test('Almanac hides numeric guidance and reveals it only after the campaign', async ({ page }) => {
+  await draft(page, '000000000000000x', 'almanac');
+  await expect(page.locator('.almanac-lock')).toContainText('serão revelados');
+  await expect(page.locator('.composition-panel .comp-art b')).toHaveText(Array(5).fill('?'));
+  await page.screenshot({
+    path: `test-results/almanac-hidden-${test.info().project.name}.png`,
+    fullPage: true,
+  });
+  await page.getByRole('button', { name: 'Resultado rápido' }).click();
+  await page.getByRole('button', { name: '4×', exact: true }).click();
+  await page.getByRole('button', { name: 'Entrar no Worlds' }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('CAMPEÃO', {
+    timeout: 25000,
+  });
+  await expect(page.locator('.almanac-reveal')).toBeVisible();
+  await expect(page.locator('.almanac-reveal .comp-art b')).not.toHaveText(Array(5).fill('?'));
+  await expect(page.locator('.almanac-reveal .composition-scores')).toBeVisible();
+  await page.screenshot({
+    path: `test-results/almanac-reveal-${test.info().project.name}.png`,
+    fullPage: true,
+  });
+});
 
 test('challenge link reproduces the same opening offer and rejects incompatible payloads', async ({
   page,

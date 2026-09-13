@@ -7,6 +7,7 @@ const summary: CampaignShareSummary = {
   wins: 13,
   losses: 2,
   confrontations: 6,
+  gameMode: 'almanac',
   challengeCode: 'DRAF-TLEN',
   team: [
     { role: 'TOP', playerName: 'Khan', team: 'LZ', worldsYear: 2017 },
@@ -20,6 +21,7 @@ const summary: CampaignShareSummary = {
 describe('campaign sharing', () => {
   it('builds a compact result story with every selected role', () => {
     const text = campaignShareText(summary);
+    expect(text).toContain('modo Almanaque');
     expect(text).toContain('Campeão mundial: 13V–2D');
     expect(text).toContain('TOP Khan (LZ 2017)');
     expect(text).toContain('SUP Keria (T1 2023)');

@@ -16,6 +16,7 @@ const campaign: CampaignState = {
   seed: 'draftlendas2026a',
   randomVersion: 1,
   campaignSource: 'organic',
+  gameMode: 'almanac',
   screen: 'draft',
   draftStep: 0,
   draftAvailability: {
@@ -67,6 +68,7 @@ describe('campaign persistence', () => {
       seed: _seed,
       randomVersion: _randomVersion,
       campaignSource: _source,
+      gameMode: _gameMode,
       ...legacy
     } = campaign;
     local.setItem(
@@ -82,8 +84,19 @@ describe('campaign persistence', () => {
     expect(migrated).toMatchObject({
       randomVersion: 1,
       campaignSource: 'organic',
+      gameMode: 'classic',
       screen: 'draft',
     });
     expect(migrated?.seed).toMatch(/^[a-z0-9]{16}$/);
+  });
+
+  it('migrates a compatible v2 save to classic mode', () => {
+    const local = storage();
+    const { gameMode: _gameMode, ...versionTwo } = campaign;
+    local.setItem(
+      CAMPAIGN_SAVE_KEY,
+      JSON.stringify({ version: 2, datasetVersion: 'dataset-v1', campaign: versionTwo }),
+    );
+    expect(loadCampaign('dataset-v1', local)).toMatchObject({ gameMode: 'classic' });
   });
 });

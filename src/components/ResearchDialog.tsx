@@ -17,12 +17,14 @@ export function ResearchDialog({
   data,
   tracker,
   feedbackEnabled = false,
+  hideNumbers = false,
   close,
 }: {
   player: PlayerVersion | null;
   data: GameData;
   tracker?: AnalyticsTracker;
   feedbackEnabled?: boolean;
+  hideNumbers?: boolean;
   close: () => void;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
@@ -82,16 +84,23 @@ export function ResearchDialog({
           {player.worldsStats?.games} jogos no Worlds
         </p>
       )}
-      {player?.worldsStats && (
+      {player?.worldsStats && !hideNumbers && (
         <p>
           Worlds: WR {Math.round(player.worldsStats.winRate * 100)}% · KDA{' '}
           {player.worldsStats.kda.toFixed(1)}
         </p>
       )}
-      <p>
-        O rating de 70 a 99 compara o desempenho histórico por posição. Amostras pequenas recebem
-        menos peso. Uma mesma transformação aproxima as escalas entre as nove edições.
-      </p>
+      {hideNumbers ? (
+        <p className="almanac-dialog-note" role="note">
+          Modo Almanaque: ratings, estatísticas e confiança ficam ocultos durante a campanha. Os
+          campeões e as fontes continuam visíveis; os números serão revelados no resultado final.
+        </p>
+      ) : (
+        <p>
+          O rating de 70 a 99 compara o desempenho histórico por posição. Amostras pequenas recebem
+          menos peso. Uma mesma transformação aproxima as escalas entre as nove edições.
+        </p>
+      )}
       <p>
         Os cinco campeões foram jogados pelo atleta: priorizamos os mais usados no Worlds, em ordem
         de estreia. Quando faltam opções, consultamos a temporada daquele ano.
@@ -101,20 +110,25 @@ export function ResearchDialog({
           {player.championPool.map((slot) => (
             <div key={slot.game}>
               <b>
-                G{slot.game} · {data.champions[slot.championId].name} <strong>{slot.rating}</strong>
+                G{slot.game} · {data.champions[slot.championId].name}{' '}
+                <strong aria-label={hideNumbers ? 'Rating oculto no Almanaque' : undefined}>
+                  {hideNumbers ? '?' : slot.rating}
+                </strong>
               </b>
-              <p>
-                {slot.stats?.games} jogos · WR {Math.round((slot.stats?.winRate ?? 0) * 100)}% · KDA{' '}
-                {slot.stats?.kda?.toFixed(1) ?? 'indisponível'} · confiança{' '}
-                {Math.round((slot.stats?.confidence ?? 0) * 100)}%
-              </p>
+              {!hideNumbers && (
+                <p>
+                  {slot.stats?.games} jogos · WR {Math.round((slot.stats?.winRate ?? 0) * 100)}% ·
+                  KDA {slot.stats?.kda?.toFixed(1) ?? 'indisponível'} · confiança{' '}
+                  {Math.round((slot.stats?.confidence ?? 0) * 100)}%
+                </p>
+              )}
               <small>
                 {slot.source === 'WORLDS_DATA'
                   ? 'Worlds · evento principal'
-                  : 'Temporada · evidência complementar'}{' '}
-                · histórico {slot.historicalScore?.toFixed(1)}
+                  : 'Temporada · evidência complementar'}
+                {!hideNumbers && ` · histórico ${slot.historicalScore?.toFixed(1)}`}
               </small>
-              {slot.stats?.confidence === 0 && (
+              {!hideNumbers && slot.stats?.confidence === 0 && (
                 <small>
                   Evidência parcial: comprova a escolha, sem estimar desempenho específico do
                   campeão.
@@ -125,7 +139,7 @@ export function ResearchDialog({
                   Consultar fonte ↗
                 </a>
               )}
-              {feedbackEnabled && tracker && feedbackGame !== slot.game && (
+              {!hideNumbers && feedbackEnabled && tracker && feedbackGame !== slot.game && (
                 <button
                   className="rating-feedback-trigger"
                   type="button"
@@ -134,61 +148,69 @@ export function ResearchDialog({
                   <Flag size={13} /> Discorda deste rating?
                 </button>
               )}
-              {feedbackEnabled && tracker && feedbackGame === slot.game && status === 'sent' && (
-                <p className="rating-feedback-sent" role="status">
-                  <Check size={14} /> Revisão registrada para o G{slot.game}. Obrigado.
-                </p>
-              )}
-              {feedbackEnabled && tracker && feedbackGame === slot.game && status !== 'sent' && (
-                <form className="rating-feedback-form" onSubmit={submitFeedback}>
-                  <fieldset>
-                    <legend>Por que este rating deveria ser revisado?</legend>
-                    {feedbackReasons.map((option) => (
-                      <label key={option.id}>
-                        <input
-                          type="radio"
-                          name={`rating-feedback-${slot.game}`}
-                          value={option.id}
-                          checked={reason === option.id}
-                          onChange={() => setReason(option.id)}
-                        />
-                        <span>{option.label}</span>
-                      </label>
-                    ))}
-                  </fieldset>
-                  <label className="rating-feedback-note">
-                    <span>Observação opcional</span>
-                    <textarea
-                      value={note}
-                      onChange={(event) => setNote(event.target.value)}
-                      maxLength={300}
-                      rows={2}
-                      placeholder="Não inclua nome, e-mail ou outro dado pessoal."
-                    />
-                  </label>
-                  {status === 'error' && (
-                    <p className="rating-feedback-error" role="alert">
-                      Não foi possível enviar agora. Tente novamente mais tarde.
-                    </p>
-                  )}
-                  <div>
-                    <button
-                      className="rating-feedback-cancel"
-                      type="button"
-                      onClick={() => setFeedbackGame(null)}
-                    >
-                      Cancelar
-                    </button>
-                    <button
-                      className="rating-feedback-submit"
-                      type="submit"
-                      disabled={!reason || status === 'sending'}
-                    >
-                      <Send size={13} /> {status === 'sending' ? 'Enviando' : 'Enviar revisão'}
-                    </button>
-                  </div>
-                </form>
-              )}
+              {!hideNumbers &&
+                feedbackEnabled &&
+                tracker &&
+                feedbackGame === slot.game &&
+                status === 'sent' && (
+                  <p className="rating-feedback-sent" role="status">
+                    <Check size={14} /> Revisão registrada para o G{slot.game}. Obrigado.
+                  </p>
+                )}
+              {!hideNumbers &&
+                feedbackEnabled &&
+                tracker &&
+                feedbackGame === slot.game &&
+                status !== 'sent' && (
+                  <form className="rating-feedback-form" onSubmit={submitFeedback}>
+                    <fieldset>
+                      <legend>Por que este rating deveria ser revisado?</legend>
+                      {feedbackReasons.map((option) => (
+                        <label key={option.id}>
+                          <input
+                            type="radio"
+                            name={`rating-feedback-${slot.game}`}
+                            value={option.id}
+                            checked={reason === option.id}
+                            onChange={() => setReason(option.id)}
+                          />
+                          <span>{option.label}</span>
+                        </label>
+                      ))}
+                    </fieldset>
+                    <label className="rating-feedback-note">
+                      <span>Observação opcional</span>
+                      <textarea
+                        value={note}
+                        onChange={(event) => setNote(event.target.value)}
+                        maxLength={300}
+                        rows={2}
+                        placeholder="Não inclua nome, e-mail ou outro dado pessoal."
+                      />
+                    </label>
+                    {status === 'error' && (
+                      <p className="rating-feedback-error" role="alert">
+                        Não foi possível enviar agora. Tente novamente mais tarde.
+                      </p>
+                    )}
+                    <div>
+                      <button
+                        className="rating-feedback-cancel"
+                        type="button"
+                        onClick={() => setFeedbackGame(null)}
+                      >
+                        Cancelar
+                      </button>
+                      <button
+                        className="rating-feedback-submit"
+                        type="submit"
+                        disabled={!reason || status === 'sending'}
+                      >
+                        <Send size={13} /> {status === 'sending' ? 'Enviando' : 'Enviar revisão'}
+                      </button>
+                    </div>
+                  </form>
+                )}
             </div>
           ))}
         </div>
@@ -197,8 +219,8 @@ export function ResearchDialog({
         <summary>Limites do modelo</summary>
         <p>
           Rating é uma estimativa para o jogo, não uma medida objetiva de quem venceria entre eras.
-          O histórico é real; resultados e KDA da simulação são fictícios. A força usa 80% de
-          ratings e 20% de composição.
+          O histórico é real; resultados e KDA da simulação são fictícios.
+          {!hideNumbers && ' A força usa 80% de ratings e 20% de composição.'}
         </p>
         <p>
           Fontes: Oracle’s Elixir e Games of Legends. Arte: Riot Games, por patch histórico. Sem
@@ -206,7 +228,7 @@ export function ResearchDialog({
         </p>
       </details>
       <button className="primary full" onClick={close}>
-        Voltar ao draft
+        Voltar
       </button>
     </dialog>
   );

@@ -16,6 +16,7 @@ const challenge: CampaignChallenge = {
   version: CHALLENGE_VERSION,
   seed: 'draftlendas2026a',
   datasetVersion: draftManifest.datasetVersion,
+  gameMode: 'almanac',
   availability: {
     startingExchanges: 3,
     activeYears: [2017, 2025],
@@ -34,6 +35,13 @@ describe('campaign challenges', () => {
     expect(challengeCode(challenge)).toBe('DRAF-TLEN');
   });
 
+  it('keeps older links compatible as classic campaigns', () => {
+    const compact = JSON.parse(Buffer.from(encodeChallenge(challenge), 'base64url').toString());
+    delete compact.m;
+    const legacy = Buffer.from(JSON.stringify(compact)).toString('base64url');
+    expect(decodeChallenge(legacy, draftManifest)).toMatchObject({ gameMode: 'classic' });
+  });
+
   it('rejects malformed, obsolete-dataset, and unsupported challenges', () => {
     expect(decodeChallenge('not-base64', draftManifest)).toBeNull();
     expect(
@@ -48,6 +56,12 @@ describe('campaign challenges', () => {
           ...challenge,
           availability: { ...challenge.availability, activeYears: [2011] },
         }),
+        draftManifest,
+      ),
+    ).toBeNull();
+    expect(
+      decodeChallenge(
+        encodeChallenge({ ...challenge, gameMode: 'invalid' as CampaignChallenge['gameMode'] }),
         draftManifest,
       ),
     ).toBeNull();

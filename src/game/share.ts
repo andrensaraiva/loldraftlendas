@@ -1,4 +1,6 @@
 import type { Role } from './types';
+import { gameModeLabel } from './mode';
+import type { GameMode } from './mode';
 
 export interface SharePlayer {
   role: Role;
@@ -12,6 +14,7 @@ export interface CampaignShareSummary {
   wins: number;
   losses: number;
   confrontations: number;
+  gameMode: GameMode;
   team: SharePlayer[];
   challengeCode?: string;
 }
@@ -53,7 +56,7 @@ export function campaignShareText(summary: CampaignShareSummary, challengeUrl?: 
   const challenge = challengeUrl
     ? ` Desafio ${summary.challengeCode ?? ''}: tente vencer meu draft nas mesmas condições: ${challengeUrl}`
     : '';
-  return `Meu Draft Lendas terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?${challenge}`;
+  return `Meu Draft Lendas no modo ${gameModeLabel(summary.gameMode)} terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?${challenge}`;
 }
 
 function roundedRect(
@@ -113,7 +116,11 @@ export async function createCampaignCard(summary: CampaignShareSummary): Promise
   context.fillText(' LENDAS.', 72 + draftWidth, 105);
   context.fillStyle = '#687064';
   context.font = '500 22px "DM Sans", Arial, sans-serif';
-  context.fillText('CINCO ESCOLHAS · DIFERENTES ERAS · UM SÓ TÍTULO', 72, 146);
+  context.fillText(
+    `MODO ${gameModeLabel(summary.gameMode).toUpperCase()} · DIFERENTES ERAS · UM SÓ TÍTULO`,
+    72,
+    146,
+  );
 
   roundedRect(context, 72, 202, 936, 210, 26);
   context.fillStyle = summary.outcome === 'Campeão mundial' ? '#173f2b' : '#e9eee3';

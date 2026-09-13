@@ -344,6 +344,62 @@ main > section {
   font-size: 11px;
   font-weight: 700;
 }
+.game-mode-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  max-width: 520px;
+  margin: 24px 0 0;
+  padding: 0;
+  border: 0;
+}
+.game-mode-picker legend {
+  grid-column: 1 / -1;
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.game-mode-picker label {
+  position: relative;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #ffffffa8;
+  padding: 11px 13px;
+  cursor: pointer;
+}
+.game-mode-picker label.selected {
+  border-color: #79ad58;
+  background: #edf8e3;
+  box-shadow: inset 0 0 0 1px #79ad58;
+}
+.game-mode-picker input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.game-mode-picker input:focus-visible + span {
+  outline: 3px solid #478920;
+  outline-offset: 5px;
+}
+.game-mode-picker span {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.game-mode-picker b {
+  font: 700 18px var(--display);
+}
+.game-mode-picker small {
+  color: var(--muted);
+  font-size: 9px;
+}
 .challenge-invite {
   max-width: 520px;
   margin-top: 24px;
@@ -1184,6 +1240,29 @@ main > section {
   padding-top: 18px;
   margin-top: 21px;
 }
+.almanac-lock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-top: 1px solid var(--line);
+  margin-top: 21px;
+  padding-top: 18px;
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+}
+.almanac-forecast {
+  border-style: dashed;
+  text-align: center;
+}
+.almanac-forecast h2 {
+  margin: 8px 0;
+}
+.almanac-mode .pool-slot b,
+.almanac-mode .comp-art b {
+  color: var(--green);
+}
 .composition-scores > span {
   font-size: 10px;
   color: var(--muted);
@@ -1705,6 +1784,30 @@ main > section {
 .final-screen > .team-strip {
   text-align: left;
   margin: 25px 0;
+}
+.almanac-reveal {
+  margin: 34px 0 8px;
+  border: 1px solid #a7cb91;
+  border-radius: 10px;
+  background: #f1f7e9;
+  padding: 24px;
+  text-align: left;
+}
+.almanac-reveal h2 {
+  margin: 8px 0 4px;
+  font: 800 34px/1 var(--display);
+}
+.almanac-reveal > p,
+.almanac-dialog-note {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.almanac-reveal .game-tabs {
+  margin-top: 18px;
+}
+.almanac-reveal .composition-panel {
+  background: #fff;
 }
 .final-screen > .primary {
   min-width: 245px;

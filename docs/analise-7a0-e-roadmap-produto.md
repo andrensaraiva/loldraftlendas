@@ -23,7 +23,8 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 - ✅ **1.4 Feedback contextual:** cada rating G1–G5 pode ser contestado com motivo categorizado e nota curta; RLS/RPC e dashboard preservam somente o contexto histórico público.
 - ✅ **2.1 e 2.2 Seed e desafio:** seed persistida, save v2 com migração, reprodução por operação e link/código validado estão implementados.
 - ✅ **D1 Worlds 2021:** matches, rosters, evidências, assets, recalibração e gates foram concluídos no dataset `multi-era-v1.3.0`.
-- ⏭️ **Próximo pacote de produto:** 2.3, modo Almanaque com ratings ocultos durante o draft e revelação ao final.
+- ✅ **2.3 Modo Almanaque:** ratings, força, probabilidade e detalhes numéricos ficam ocultos durante a campanha e são revelados ao final; save, desafio, compartilhamento e analytics preservam o modo.
+- ⏭️ **Próximo pacote de produto:** 2.4, plano de jogo com bônus explicado e recalibração em massa.
 - ⏭️ **Próximo pacote de dados:** D3, backfill de 2018.
 - 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
 
@@ -107,7 +108,7 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 | Acesso                 | Gratuito, navegador, celular e solo sem conta               | Frontend estático, responsivo e sem login de jogador                               | **Paridade.** Falta instalação como PWA.                                                                   |
 | Draft                  | Um elenco sorteado por turno, formação e rerolls            | Três candidatos por posição; ano, grupo regional e três trocas                     | **Vantagem de clareza e decisão imediata.**                                                                |
 | Cobertura histórica    | 1950–2026, catálogo amplo e navegável                       | 2015, 2017, 2019–2025; seis anos de 2011–2025 incompletos                          | **Lacuna de amplitude**, compensada por evidência e assets por patch.                                      |
-| Dificuldade            | Clássico e Almanaque                                        | Ratings sempre visíveis                                                            | **Lacuna pequena e barata de validar.**                                                                    |
+| Dificuldade            | Clássico e Almanaque                                        | Clássico e Almanaque com revelação final                                           | **Paridade implementada**, pendente de validação com usuários.                                             |
 | Agência tática         | Formação e estilo                                           | Composição automática por tags; sistema de estilo foi deliberadamente deixado fora | **Lacuna relevante.** A fundação já existe nas tags `EARLY_GAME`, `TEAMFIGHT`, `SCALING`, `PICK` e `POKE`. |
 | Torneio                | Sete jogos, placar e artilheiros                            | Suíço, BO1/BO3, playoffs BO5, modo detalhado/rápido, KDA e histórico               | **Vantagem de profundidade narrativa.**                                                                    |
 | Confiança no resultado | Ratings subjetivos; críticas públicas de aleatoriedade      | Fórmula documentada, chance de 8%–92%, força e probabilidade no relatório          | **Vantagem defensável**, ainda pouco exposta antes da partida.                                             |
@@ -185,7 +186,7 @@ Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários c
 | ----: | ----------------------------------------------------------- | ---------- | ------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
 |   2.1 | Gerador determinístico e seed persistida                    | P0 Produto | L       | Atualização do save                  | A mesma seed + versão do dataset + regras + decisões do jogador reproduz ofertas, adversários e resultados; retomar não altera a sequência. |
 |   2.2 | **Desafiar com esta seed**                                  | P0 Produto | M       | 2.1                                  | Link/código abre a mesma configuração; resultado de cada participante continua pessoal e é marcado como não verificado.                     |
-|   2.3 | Modo Almanaque                                              | P1         | S–M     | Snapshot de regras da campanha       | Ratings e detalhes numéricos ficam ocultos no draft e são revelados ao final; analytics compara conclusão e replay por modo.                |
+|   2.3 | Modo Almanaque — concluído                                  | P1         | S–M     | Snapshot de regras da campanha       | Ratings e detalhes numéricos ficam ocultos durante a campanha e são revelados ao final; analytics compara conclusão e replay por modo.      |
 |   2.4 | Plano de jogo: Agressão, Teamfight, Controle/Pick ou Escala | P1         | M–L     | Rebalanceamento e simulação em massa | Escolha tem bônus explicado quando combina com as tags e penalidade limitada quando não combina; 100 mil campanhas recalibradas.            |
 |   2.5 | Filtros de desafio por edição e grupo                       | P1         | M       | Manifesto de elegibilidade atual     | Nunca cria uma posição com menos de três candidatos; configuração fica no snapshot do save.                                                 |
 

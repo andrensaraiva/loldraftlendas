@@ -28,6 +28,22 @@ const response = {
   years: [],
   region_groups: [],
   devices: [],
+  game_modes: [
+    {
+      key: 'classic',
+      label: 'Clássico',
+      drafts_started: 7,
+      completion_rate: 71.4,
+      play_again_rate: 14.3,
+    },
+    {
+      key: 'almanac',
+      label: 'Almanaque',
+      drafts_started: 3,
+      completion_rate: 66.7,
+      play_again_rate: 0,
+    },
+  ],
   feedback: { total: 1, good: 1, ok: 0, bad: 0, notes: [] },
   rating_feedback: {
     total: 2,
@@ -61,6 +77,10 @@ describe('admin dashboard metrics', () => {
       },
       feedback: { total: 1 },
       ratingFeedback: { total: 2 },
+    });
+    expect(dashboardMetricsFromResponse(response).gameModes[0]).toMatchObject({
+      key: 'classic',
+      completionRate: 71.4,
     });
     expect(localDemoDashboard().playerPicks).toHaveLength(5);
   });
