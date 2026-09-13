@@ -44,6 +44,36 @@ const response = {
       play_again_rate: 0,
     },
   ],
+  game_plans: [
+    {
+      key: 'aggression',
+      label: 'Agressão',
+      campaigns_started: 2,
+      completion_rate: 50,
+      title_rate: 100,
+    },
+    {
+      key: 'teamfight',
+      label: 'Teamfight',
+      campaigns_started: 2,
+      completion_rate: 100,
+      title_rate: 50,
+    },
+    {
+      key: 'control_pick',
+      label: 'Controle/Pick',
+      campaigns_started: 1,
+      completion_rate: 100,
+      title_rate: 0,
+    },
+    {
+      key: 'scaling',
+      label: 'Escala',
+      campaigns_started: 1,
+      completion_rate: 100,
+      title_rate: 0,
+    },
+  ],
   feedback: { total: 1, good: 1, ok: 0, bad: 0, notes: [] },
   rating_feedback: {
     total: 2,
@@ -81,6 +111,10 @@ describe('admin dashboard metrics', () => {
     expect(dashboardMetricsFromResponse(response).gameModes[0]).toMatchObject({
       key: 'classic',
       completionRate: 71.4,
+    });
+    expect(dashboardMetricsFromResponse(response).gamePlans[1]).toMatchObject({
+      key: 'teamfight',
+      titleRate: 50,
     });
     expect(localDemoDashboard().playerPicks).toHaveLength(5);
   });

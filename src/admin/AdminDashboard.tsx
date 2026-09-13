@@ -212,6 +212,25 @@ export function AdminDashboard({
         </div>
       </section>
 
+      <section className="admin-feedback-summary">
+        <div className="admin-section-heading">
+          <div>
+            <span className="admin-kicker">PLANOS DE JOGO</span>
+            <h2>Conclusão e títulos por estratégia.</h2>
+          </div>
+        </div>
+        <div className="admin-metric-grid">
+          {metrics.gamePlans.map((plan) => (
+            <MetricCard
+              key={plan.key}
+              label={`${plan.label} · ${plan.campaignsStarted} campanhas`}
+              value={percent(plan.completionRate)}
+              detail={`${percent(plan.titleRate)} terminaram com o título`}
+            />
+          ))}
+        </div>
+      </section>
+
       <div className="admin-dashboard-grid">
         <RankedList title="Trocas por tipo" items={metrics.exchanges} />
         <RankedList title="Anos sorteados" items={metrics.years} />

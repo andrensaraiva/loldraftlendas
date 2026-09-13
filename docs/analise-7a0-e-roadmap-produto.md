@@ -24,7 +24,8 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 - ✅ **2.1 e 2.2 Seed e desafio:** seed persistida, save v2 com migração, reprodução por operação e link/código validado estão implementados.
 - ✅ **D1 Worlds 2021:** matches, rosters, evidências, assets, recalibração e gates foram concluídos no dataset `multi-era-v1.3.0`.
 - ✅ **2.3 Modo Almanaque:** ratings, força, probabilidade e detalhes numéricos ficam ocultos durante a campanha e são revelados ao final; save, desafio, compartilhamento e analytics preservam o modo.
-- ⏭️ **Próximo pacote de produto:** 2.4, plano de jogo com bônus explicado e recalibração em massa.
+- ✅ **2.4 Plano de jogo:** Agressão, Teamfight, Controle/Pick e Escala usam as tags existentes, efeito explicado e limitado, persistência completa e calibração reproduzível de 100 mil campanhas.
+- ⏭️ **Próximo pacote de produto:** 2.5, filtros de desafio por edição e grupo com validação de elegibilidade.
 - ⏭️ **Próximo pacote de dados:** D3, backfill de 2018.
 - 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
 
@@ -182,13 +183,13 @@ Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários c
 
 ### Próximo — transformar compartilhamento em competição justa
 
-| Ordem | Item                                                        | Prioridade | Tamanho | Dependências                         | Critério de saída                                                                                                                           |
-| ----: | ----------------------------------------------------------- | ---------- | ------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
-|   2.1 | Gerador determinístico e seed persistida                    | P0 Produto | L       | Atualização do save                  | A mesma seed + versão do dataset + regras + decisões do jogador reproduz ofertas, adversários e resultados; retomar não altera a sequência. |
-|   2.2 | **Desafiar com esta seed**                                  | P0 Produto | M       | 2.1                                  | Link/código abre a mesma configuração; resultado de cada participante continua pessoal e é marcado como não verificado.                     |
-|   2.3 | Modo Almanaque — concluído                                  | P1         | S–M     | Snapshot de regras da campanha       | Ratings e detalhes numéricos ficam ocultos durante a campanha e são revelados ao final; analytics compara conclusão e replay por modo.      |
-|   2.4 | Plano de jogo: Agressão, Teamfight, Controle/Pick ou Escala | P1         | M–L     | Rebalanceamento e simulação em massa | Escolha tem bônus explicado quando combina com as tags e penalidade limitada quando não combina; 100 mil campanhas recalibradas.            |
-|   2.5 | Filtros de desafio por edição e grupo                       | P1         | M       | Manifesto de elegibilidade atual     | Nunca cria uma posição com menos de três candidatos; configuração fica no snapshot do save.                                                 |
+| Ordem | Item                                     | Prioridade | Tamanho | Dependências                         | Critério de saída                                                                                                                           |
+| ----: | ---------------------------------------- | ---------- | ------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+|   2.1 | Gerador determinístico e seed persistida | P0 Produto | L       | Atualização do save                  | A mesma seed + versão do dataset + regras + decisões do jogador reproduz ofertas, adversários e resultados; retomar não altera a sequência. |
+|   2.2 | **Desafiar com esta seed**               | P0 Produto | M       | 2.1                                  | Link/código abre a mesma configuração; resultado de cada participante continua pessoal e é marcado como não verificado.                     |
+|   2.3 | Modo Almanaque — concluído               | P1         | S–M     | Snapshot de regras da campanha       | Ratings e detalhes numéricos ficam ocultos durante a campanha e são revelados ao final; analytics compara conclusão e replay por modo.      |
+|   2.4 | Plano de jogo — concluído                | P1         | M–L     | Rebalanceamento e simulação em massa | Escolha tem bônus explicado quando combina com as tags e penalidade limitada quando não combina; 100 mil campanhas recalibradas.            |
+|   2.5 | Filtros de desafio por edição e grupo    | P1         | M       | Manifesto de elegibilidade atual     | Nunca cria uma posição com menos de três candidatos; configuração fica no snapshot do save.                                                 |
 
 ### Depois — retenção recorrente sem assumir risco competitivo cedo demais
 

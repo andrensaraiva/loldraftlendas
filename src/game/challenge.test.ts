@@ -17,6 +17,7 @@ const challenge: CampaignChallenge = {
   seed: 'draftlendas2026a',
   datasetVersion: draftManifest.datasetVersion,
   gameMode: 'almanac',
+  gamePlan: 'control_pick',
   availability: {
     startingExchanges: 3,
     activeYears: [2017, 2025],
@@ -38,8 +39,12 @@ describe('campaign challenges', () => {
   it('keeps older links compatible as classic campaigns', () => {
     const compact = JSON.parse(Buffer.from(encodeChallenge(challenge), 'base64url').toString());
     delete compact.m;
+    delete compact.p;
     const legacy = Buffer.from(JSON.stringify(compact)).toString('base64url');
-    expect(decodeChallenge(legacy, draftManifest)).toMatchObject({ gameMode: 'classic' });
+    expect(decodeChallenge(legacy, draftManifest)).toMatchObject({
+      gameMode: 'classic',
+      gamePlan: null,
+    });
   });
 
   it('rejects malformed, obsolete-dataset, and unsupported challenges', () => {
@@ -62,6 +67,12 @@ describe('campaign challenges', () => {
     expect(
       decodeChallenge(
         encodeChallenge({ ...challenge, gameMode: 'invalid' as CampaignChallenge['gameMode'] }),
+        draftManifest,
+      ),
+    ).toBeNull();
+    expect(
+      decodeChallenge(
+        encodeChallenge({ ...challenge, gamePlan: 'invalid' as CampaignChallenge['gamePlan'] }),
         draftManifest,
       ),
     ).toBeNull();

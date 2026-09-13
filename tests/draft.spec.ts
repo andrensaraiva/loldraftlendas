@@ -41,7 +41,10 @@ test('exchanges preserve context, details do not select, and five single clicks 
     await page.locator('.player-card').first().click();
     await expect(page.locator('.team-slot.filled')).toHaveCount(i + 1);
   }
-  await expect(page.getByRole('button', { name: 'Entrar no Worlds' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Escolha um plano' })).toBeDisabled();
+  await page.getByRole('radio', { name: /Teamfight/ }).check();
+  await expect(page.getByRole('button', { name: 'Entrar no Worlds' })).toBeEnabled();
+  await expect(page.locator('.game-plan-grid > label.selected')).toContainText('Teamfight');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 

@@ -9,6 +9,7 @@ Each event contains a random campaign ID, a random browser-session ID, an event 
 The tracked event names are:
 
 - `session_started`, `draft_started`, `draft_completed`, `worlds_started`, `campaign_finished`, `play_again`, `save_resumed`
+- `game_plan_selected`
 - `roll_generated`, `exchange_used`, `player_selected`
 - `series_started`, `game_completed`, `playoffs_reached`, `worlds_won`
 - `how_to_play_opened`, `rating_details_opened`
@@ -18,6 +19,8 @@ The tracked event names are:
 Roll, exchange, and selection events use normalized public historical player IDs, role, Worlds year, draft region group, exchange type, and candidate IDs. Completion events include integer draft or campaign duration. This supports aggregate draft completion, exchange use, pick/rejection frequency, outcome, year/group frequency, and mobile/desktop metrics without identifying a visitor.
 
 Draft start, campaign completion, replay and challenge events may include only the categorized game mode (`classic` or `almanac`). This supports aggregate comparison of completion and replay by mode; hidden ratings, player decisions and challenge seeds are not added to that comparison.
+
+Plan selection, Worlds start, campaign completion and replay may include only one categorized game plan (`aggression`, `teamfight`, `control_pick` or `scaling`). This supports aggregate completion and title rates by plan. Champion tags and the calculated modifier stay in the local game state and are not sent.
 
 Sharing events contain only the campaign outcome and a categorized method (`file`, `link`, or `download`). The generated image, shared text, destination application, recipients, clipboard contents, and contacts are never collected. The browser's share sheet is controlled by the player and the operating system.
 
@@ -37,4 +40,4 @@ The development-only `VITE_ADMIN_DEMO_MODE=true` setting uses an in-memory trans
 
 ## Administrative Reporting
 
-Only users in `admin_users` can call `get_admin_dashboard_metrics()`. The RPC returns aggregate counts, sharing and challenge conversion totals, completion/replay rates by game mode, top-ten ranked public player IDs, device totals, categorized rating-review totals, and up to ten recent optional notes of each feedback type. It does not return raw analytics-event rows or anonymous campaign identifiers to the browser.
+Only users in `admin_users` can call `get_admin_dashboard_metrics()`. The RPC returns aggregate counts, sharing and challenge conversion totals, completion/replay rates by game mode, completion/title rates by game plan, top-ten ranked public player IDs, device totals, categorized rating-review totals, and up to ten recent optional notes of each feedback type. It does not return raw analytics-event rows or anonymous campaign identifiers to the browser.

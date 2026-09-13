@@ -1177,6 +1177,104 @@ main > section {
   background: #eaf8db;
   color: #336216;
 }
+.game-plan-picker {
+  margin: 30px 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #fff;
+}
+.game-plan-picker legend {
+  width: 100%;
+  padding: 0;
+}
+.game-plan-picker legend > * {
+  display: block;
+}
+.game-plan-picker legend strong {
+  margin-top: 7px;
+  font: 800 30px/1 var(--display);
+}
+.game-plan-picker legend small {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.game-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.game-plan-grid > label {
+  position: relative;
+  display: flex;
+  min-height: 180px;
+  flex-direction: column;
+  gap: 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition:
+    border-color 0.16s ease,
+    background 0.16s ease,
+    transform 0.16s ease;
+}
+.game-plan-grid > label:hover {
+  transform: translateY(-2px);
+  border-color: #91b77a;
+}
+.game-plan-grid > label.selected {
+  border-color: var(--green);
+  background: var(--green-soft);
+  box-shadow: inset 0 0 0 1px var(--green);
+}
+.game-plan-grid input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.game-plan-grid input:focus-visible + .game-plan-copy {
+  outline: 3px solid #478920;
+  outline-offset: 5px;
+}
+.game-plan-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.game-plan-copy b {
+  font: 800 22px var(--display);
+}
+.game-plan-copy small,
+.game-plan-fit {
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.45;
+}
+.game-plan-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.game-plan-tags i {
+  border: 1px solid #cfd8c7;
+  border-radius: 999px;
+  padding: 4px 7px;
+  color: var(--green);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.game-plan-fit {
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  font-weight: 700;
+}
 .composition-panel {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1233,6 +1331,7 @@ main > section {
 }
 .composition-scores {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   gap: 30px;
   align-items: center;
@@ -1656,6 +1755,30 @@ main > section {
   letter-spacing: 0.4px;
   text-transform: uppercase;
 }
+.plan-impact {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 5px 18px;
+  margin-top: 15px;
+  border-left: 3px solid #91b77a;
+  background: #f2f6ed;
+  padding: 12px 14px;
+  font-size: 10px;
+}
+.plan-impact.medium {
+  border-color: #c5a748;
+}
+.plan-impact.low {
+  border-color: #b76c61;
+}
+.plan-impact span {
+  color: var(--green);
+  font-weight: 800;
+}
+.plan-impact small {
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
 .match-forecast > p {
   margin-top: 13px;
   color: #6f796b;
@@ -1952,6 +2075,9 @@ main > section {
   }
 }
 @media (max-width: 1000px) {
+  .game-plan-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .app-shell {
     padding: 0 30px;
   }
@@ -2275,6 +2401,15 @@ main > section {
   }
 }
 @media (max-width: 540px) {
+  .game-plan-picker {
+    padding: 18px;
+  }
+  .game-plan-grid {
+    grid-template-columns: 1fr;
+  }
+  .game-plan-grid > label {
+    min-height: 0;
+  }
   .app-shell {
     padding: 0 17px;
   }

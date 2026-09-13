@@ -17,6 +17,7 @@ const campaign: CampaignState = {
   randomVersion: 1,
   campaignSource: 'organic',
   gameMode: 'almanac',
+  gamePlan: 'control_pick',
   screen: 'draft',
   draftStep: 0,
   draftAvailability: {
@@ -69,6 +70,7 @@ describe('campaign persistence', () => {
       randomVersion: _randomVersion,
       campaignSource: _source,
       gameMode: _gameMode,
+      gamePlan: _gamePlan,
       ...legacy
     } = campaign;
     local.setItem(
@@ -85,6 +87,7 @@ describe('campaign persistence', () => {
       randomVersion: 1,
       campaignSource: 'organic',
       gameMode: 'classic',
+      gamePlan: null,
       screen: 'draft',
     });
     expect(migrated?.seed).toMatch(/^[a-z0-9]{16}$/);
@@ -97,6 +100,22 @@ describe('campaign persistence', () => {
       CAMPAIGN_SAVE_KEY,
       JSON.stringify({ version: 2, datasetVersion: 'dataset-v1', campaign: versionTwo }),
     );
-    expect(loadCampaign('dataset-v1', local)).toMatchObject({ gameMode: 'classic' });
+    expect(loadCampaign('dataset-v1', local)).toMatchObject({
+      gameMode: 'classic',
+      gamePlan: null,
+    });
+  });
+
+  it('migrates a compatible v3 save without changing its previous rules', () => {
+    const local = storage();
+    const { gamePlan: _gamePlan, ...versionThree } = campaign;
+    local.setItem(
+      CAMPAIGN_SAVE_KEY,
+      JSON.stringify({ version: 3, datasetVersion: 'dataset-v1', campaign: versionThree }),
+    );
+    expect(loadCampaign('dataset-v1', local)).toMatchObject({
+      gameMode: 'almanac',
+      gamePlan: null,
+    });
   });
 });

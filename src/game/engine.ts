@@ -1,5 +1,7 @@
 import { createRecap } from './recap';
-import type { Champion, GameResult, PlayerVersion, Series, Team, Tournament } from './types';
+import { gamePlanDefinition, GAME_PLAN_TAG_LABELS } from './plan';
+import type { GamePlan } from './plan';
+import type { Champion, GameResult, PlayerVersion, Series, Tag, Team, Tournament } from './types';
 export type Random = () => number;
 export const BALANCE = {
   playerWeight: 0.8,
@@ -14,6 +16,9 @@ export const BALANCE = {
   peel: 4,
   synergy: 6,
   synergyThreshold: 3,
+  gamePlanHigh: 1.5,
+  gamePlanMedium: 0.5,
+  gamePlanLow: -1,
 };
 
 export interface CompositionBonus {
@@ -35,6 +40,16 @@ export interface CompositionBreakdown {
   base: number;
   bonuses: CompositionBonus[];
   total: number;
+}
+
+export type GamePlanCompatibility = 'low' | 'medium' | 'high';
+export interface GamePlanBreakdown {
+  plan: GamePlan;
+  label: string;
+  compatibility: GamePlanCompatibility;
+  modifier: number;
+  matchedTags: Array<{ tag: Tag; label: string }>;
+  missingTags: Array<{ tag: Tag; label: string }>;
 }
 
 const synergyLabels = {
@@ -98,17 +113,58 @@ export function compositionBreakdown(
     ),
   };
 }
-export function teamStrength(team: Team, game: number, champions: Record<string, Champion>) {
+
+export function gamePlanBreakdown(
+  team: Team,
+  game: number,
+  champions: Record<string, Champion>,
+  gamePlan: GamePlan,
+): GamePlanBreakdown {
+  const definition = gamePlanDefinition(gamePlan);
+  const activeTags = new Set(
+    team.flatMap((player) => champions[player.championPool[game - 1].championId].tags),
+  );
+  const describe = (tag: Tag) => ({ tag, label: GAME_PLAN_TAG_LABELS[tag] ?? tag });
+  const matchedTags = definition.tags.filter((tag) => activeTags.has(tag)).map(describe);
+  const missingTags = definition.tags.filter((tag) => !activeTags.has(tag)).map(describe);
+  const compatibility: GamePlanCompatibility =
+    matchedTags.length === definition.tags.length ? 'high' : matchedTags.length ? 'medium' : 'low';
+  const modifier =
+    compatibility === 'high'
+      ? BALANCE.gamePlanHigh
+      : compatibility === 'medium'
+        ? BALANCE.gamePlanMedium
+        : BALANCE.gamePlanLow;
+  return {
+    plan: gamePlan,
+    label: definition.label,
+    compatibility,
+    modifier,
+    matchedTags,
+    missingTags,
+  };
+}
+
+export function teamStrength(
+  team: Team,
+  game: number,
+  champions: Record<string, Champion>,
+  gamePlan: GamePlan | null = null,
+) {
   if (team.length !== 5 || new Set(team.map((p) => p.role)).size !== 5 || game < 1 || game > 5)
     throw new Error('Composição inválida');
   const average = team.reduce((s, p) => s + p.championPool[game - 1].rating, 0) / 5;
   const composition = compositionScore(team, game, champions);
+  const plan = gamePlan ? gamePlanBreakdown(team, game, champions, gamePlan) : null;
+  const baseTotal =
+    Math.round((average * BALANCE.playerWeight + composition * BALANCE.compositionWeight) * 10) /
+    10;
   return {
     average,
     composition,
-    total:
-      Math.round((average * BALANCE.playerWeight + composition * BALANCE.compositionWeight) * 10) /
-      10,
+    baseTotal,
+    plan,
+    total: Math.max(0, Math.min(100, Math.round((baseTotal + (plan?.modifier ?? 0)) * 10) / 10)),
   };
 }
 export function winProbability(strength: number, opponent: number) {
@@ -164,10 +220,11 @@ export function simulateGame(
   team: Team,
   champions: Record<string, Champion>,
   rng: Random = Math.random,
+  gamePlan: GamePlan | null = null,
 ): GameResult {
   if (seriesDone(series)) throw new Error('Série encerrada');
   const game = series.games.length + 1;
-  const strength = teamStrength(team, game, champions).total;
+  const strength = teamStrength(team, game, champions, gamePlan).total;
   const opponentStrength = teamStrength(series.opponent, game, champions).total;
   const probability = winProbability(strength, opponentStrength);
   const won = rng() < probability;

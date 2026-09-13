@@ -20,6 +20,7 @@
     "data:multi:simulate": "node scripts/data/simulate-multi-era.mjs",
     "data:multi:report": "python scripts/data/write_multi_report.py",
     "data:multi:reproduce": "python scripts/data/verify_multi_reproducibility.py",
+    "data:plans:simulate": "node scripts/data/simulate-game-plans.mjs",
     "data:readiness:build": "python scripts/data/build_readiness.py",
     "data:readiness:validate": "python scripts/data/build_readiness.py --check"
   },

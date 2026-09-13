@@ -9,6 +9,7 @@ import {
   createDraft,
   createSeries,
   formatFor,
+  gamePlanBreakdown,
   newTournament,
   seriesDone,
   seriesScore,
@@ -80,6 +81,37 @@ describe('ratings and probability', () => {
       label: 'Dano misto',
       value: BALANCE.mixedDamage,
     });
+  });
+  it('applies an explained and bounded game-plan modifier', () => {
+    const aggressionChampions = Object.fromEntries(
+      Object.entries(champions).map(([id, champion]) => [
+        id,
+        { ...champion, tags: ['EARLY_GAME' as const, 'ENGAGE' as const] },
+      ]),
+    );
+    const base = teamStrength(team, 1, aggressionChampions);
+    const high = teamStrength(team, 1, aggressionChampions, 'aggression');
+    const mediumChampions = Object.fromEntries(
+      Object.entries(champions).map(([id, champion]) => [
+        id,
+        { ...champion, tags: ['EARLY_GAME' as const] },
+      ]),
+    );
+    const medium = gamePlanBreakdown(team, 1, mediumChampions, 'aggression');
+    const low = teamStrength(team, 1, aggressionChampions, 'control_pick');
+
+    expect(high.plan).toMatchObject({
+      compatibility: 'high',
+      modifier: BALANCE.gamePlanHigh,
+    });
+    expect(high.total).toBeCloseTo(base.total + BALANCE.gamePlanHigh);
+    expect(medium).toMatchObject({
+      compatibility: 'medium',
+      modifier: BALANCE.gamePlanMedium,
+    });
+    expect(low.plan).toMatchObject({ compatibility: 'low', modifier: BALANCE.gamePlanLow });
+    expect(low.total).toBeCloseTo(base.total + BALANCE.gamePlanLow);
+    expect(low.plan?.matchedTags).toHaveLength(0);
   });
   it('gives stronger teams an advantage while allowing upsets', () => {
     expect(winProbability(90, 90)).toBe(0.5);

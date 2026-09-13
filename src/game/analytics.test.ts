@@ -60,7 +60,7 @@ describe('anonymous analytics', () => {
       now: () => 1500,
     });
     await tracker.initialize();
-    tracker.startCampaign({ game_mode: 'almanac' });
+    tracker.startCampaign({ game_mode: 'almanac', game_plan: 'teamfight' });
     tracker.track('player_selected', {
       player_id: 'faker-2017-skt',
       candidate_ids: ['faker-2017-skt', 'crown-2017-ssg'],
@@ -94,7 +94,10 @@ describe('anonymous analytics', () => {
         candidate_ids: ['faker-2017-skt', 'crown-2017-ssg'],
       },
     });
-    expect(remote.events[1].properties).toEqual({ game_mode: 'almanac' });
+    expect(remote.events[1].properties).toEqual({
+      game_mode: 'almanac',
+      game_plan: 'teamfight',
+    });
     expect(remote.events[2].properties).not.toHaveProperty('email');
     expect(remote.events[2].properties).not.toHaveProperty('note');
     expect(remote.events[3].properties).toEqual({

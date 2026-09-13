@@ -1,6 +1,6 @@
 {
   "verifiedAt": "2026-09-13",
-  "unitTests": { "passed": 70, "files": 16 },
+  "unitTests": { "passed": 74, "files": 17 },
   "browserTests": {
     "passed": 29,
     "skipped": 1,
@@ -10,8 +10,8 @@
   },
   "productionBuild": {
     "status": "passed",
-    "initialBundleKb": 362.46,
-    "initialBundleGzipKb": 96.94
+    "initialBundleKb": 367.06,
+    "initialBundleGzipKb": 98.58
   },
   "historicalAudit": {
     "players": 605,

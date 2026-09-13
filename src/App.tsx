@@ -30,6 +30,8 @@ import { canonicalRegionFor } from './game/regions';
 import { CAMPAIGN_RANDOM_VERSION, campaignRandom, createCampaignSeed } from './game/random';
 import { gameModeLabel } from './game/mode';
 import type { GameMode } from './game/mode';
+import { GAME_PLANS, GAME_PLAN_TAG_LABELS, gamePlanLabel } from './game/plan';
+import type { GamePlan } from './game/plan';
 import { championArt } from './data/art';
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import {
@@ -67,6 +69,7 @@ import {
   compositionBreakdown,
   createSeries,
   formatFor,
+  gamePlanBreakdown,
   newTournament,
   seriesDone,
   seriesScore,
@@ -303,6 +306,10 @@ function HowTo({
             Os campeões são fixos: G1 no jogo 1, G2 no jogo 2 e assim por diante. Cada série
             reinicia no G1.
           </p>
+          <p>
+            Depois das cinco escolhas, defina Agressão, Teamfight, Controle/Pick ou Escala. O plano
+            permanece por toda a campanha e combina com as tags mostradas na equipe.
+          </p>
         </li>
         <li>
           <b>Sobreviva ao Suíço.</b>
@@ -386,18 +393,87 @@ function TeamStrip({ team, active = 5 }: { team: Team; active?: number }) {
     </div>
   );
 }
+
+const compatibilityLabel = { high: 'Alta', medium: 'Média', low: 'Baixa' } as const;
+const signedModifier = (value: number) => `${value > 0 ? '+' : ''}${value.toFixed(1)}`;
+
+function GamePlanPicker({
+  team,
+  data,
+  value,
+  showNumbers,
+  onChange,
+}: {
+  team: Team;
+  data: GameData;
+  value: GamePlan | null;
+  showNumbers: boolean;
+  onChange: (plan: GamePlan) => void;
+}) {
+  return (
+    <fieldset className="game-plan-picker">
+      <legend>
+        <span className="eyebrow green">PLANO DE JOGO</span>
+        <strong>Como suas lendas querem vencer?</strong>
+        <small>
+          Uma escolha para toda a campanha: alta +1,5, média +0,5 e baixa −1,0 na força.
+        </small>
+      </legend>
+      <div className="game-plan-grid">
+        {GAME_PLANS.map((plan) => {
+          const breakdowns = [1, 2, 3, 4, 5].map((game) =>
+            gamePlanBreakdown(team, game, data.champions, plan.id),
+          );
+          const average =
+            breakdowns.reduce((sum, breakdown) => sum + breakdown.modifier, 0) / breakdowns.length;
+          const highGames = breakdowns.filter(
+            (breakdown) => breakdown.compatibility === 'high',
+          ).length;
+          return (
+            <label key={plan.id} className={value === plan.id ? 'selected' : ''}>
+              <input
+                type="radio"
+                name="game-plan"
+                value={plan.id}
+                checked={value === plan.id}
+                onChange={() => onChange(plan.id)}
+              />
+              <span className="game-plan-copy">
+                <b>{plan.label}</b>
+                <small>{plan.description}</small>
+              </span>
+              <span className="game-plan-tags" aria-label={`Tags do plano ${plan.label}`}>
+                {plan.tags.map((tag) => (
+                  <i key={tag}>{GAME_PLAN_TAG_LABELS[tag]}</i>
+                ))}
+              </span>
+              <span className="game-plan-fit">
+                {showNumbers
+                  ? `${highGames}/5 comps em alta · efeito médio ${signedModifier(average)}`
+                  : 'Compatibilidade e efeito revelados no resultado final'}
+              </span>
+            </label>
+          );
+        })}
+      </div>
+    </fieldset>
+  );
+}
+
 function Composition({
   team,
   game,
   data,
+  gamePlan = null,
   showRatings = true,
 }: {
   team: Team;
   game: number;
   data: GameData;
+  gamePlan?: GamePlan | null;
   showRatings?: boolean;
 }) {
-  const strength = teamStrength(team, game, data.champions);
+  const strength = teamStrength(team, game, data.champions, gamePlan);
   return (
     <div className="composition-panel">
       <div className="composition-five">
@@ -431,13 +507,22 @@ function Composition({
           <span>
             Sinergia da comp <b>{strength.composition}</b>
           </span>
+          {strength.plan && (
+            <span>
+              Plano {strength.plan.label}{' '}
+              <b>
+                {compatibilityLabel[strength.plan.compatibility]} ·{' '}
+                {signedModifier(strength.plan.modifier)}
+              </b>
+            </span>
+          )}
           <span className="strength-total">
             Força da equipe <b>{strength.total.toFixed(1)}</b>
           </span>
         </div>
       ) : (
         <div className="almanac-lock" role="note">
-          <Shield size={18} /> Ratings, sinergia e força serão revelados ao fim da campanha.
+          <Shield size={18} /> Ratings, sinergia, plano e força serão revelados ao fim da campanha.
         </div>
       )}
     </div>
@@ -450,6 +535,7 @@ function MatchForecast({
   opponentName,
   game,
   data,
+  gamePlan,
   showRatings = true,
 }: {
   team: Team;
@@ -457,9 +543,10 @@ function MatchForecast({
   opponentName: string;
   game: number;
   data: GameData;
+  gamePlan: GamePlan | null;
   showRatings?: boolean;
 }) {
-  const userStrength = teamStrength(team, game, data.champions);
+  const userStrength = teamStrength(team, game, data.champions, gamePlan);
   const opponentStrength = teamStrength(opponent, game, data.champions);
   const breakdown = compositionBreakdown(team, game, data.champions);
   const probability = Math.round(winProbability(userStrength.total, opponentStrength.total) * 100);
@@ -478,8 +565,8 @@ function MatchForecast({
         <span className="eyebrow green">MODO ALMANAQUE · LEITURA OCULTA</span>
         <h2>Confie no seu conhecimento.</h2>
         <p>
-          Chance, força e bônus de composição contra {opponentName} serão revelados ao fim da
-          campanha. O cálculo do resultado continua exatamente o mesmo do modo Clássico.
+          Chance, força e efeito do plano contra {opponentName} serão revelados ao fim da campanha.
+          O cálculo do resultado continua exatamente o mesmo do modo Clássico.
         </p>
       </section>
     );
@@ -524,6 +611,18 @@ function MatchForecast({
           <span>Sem bônus de composição ativos</span>
         )}
       </div>
+      {userStrength.plan && (
+        <div className={`plan-impact ${userStrength.plan.compatibility}`}>
+          <b>
+            Plano {userStrength.plan.label} · {compatibilityLabel[userStrength.plan.compatibility]}
+          </b>
+          <span>{signedModifier(userStrength.plan.modifier)} na força deste jogo</span>
+          <small>
+            Ativas:{' '}
+            {userStrength.plan.matchedTags.map((tag) => tag.label).join(', ') || 'nenhuma tag'}
+          </small>
+        </div>
+      )}
       <p>{message} A chance é uma estimativa, não uma promessa de resultado.</p>
     </section>
   );
@@ -626,6 +725,7 @@ export default function App() {
   const [campaignSeed, setCampaignSeed] = useState<string | null>(null);
   const [campaignSource, setCampaignSource] = useState<'organic' | 'challenge'>('organic');
   const [gameMode, setGameMode] = useState<GameMode>('classic');
+  const [gamePlan, setGamePlan] = useState<GamePlan | null>(null);
   const [maintenanceBanner, setMaintenanceBanner] = useState<string | null>(null);
   const [help, setHelp] = useState(false);
   const [remaining, setRemaining] = useState<number>(DRAFT_CONFIG.exchanges);
@@ -676,6 +776,7 @@ export default function App() {
       campaign_source: 'challenge',
       challenge_version: pendingChallenge.version,
       game_mode: pendingChallenge.gameMode,
+      ...(pendingChallenge.gamePlan ? { game_plan: pendingChallenge.gamePlan } : {}),
     });
   }, [analyticsEnabled, pendingChallenge]);
   useEffect(() => {
@@ -698,6 +799,7 @@ export default function App() {
       randomVersion: CAMPAIGN_RANDOM_VERSION,
       campaignSource,
       gameMode,
+      gamePlan,
       screen,
       draftStep: team.length,
       ...(campaignAvailability ? { draftAvailability: campaignAvailability } : {}),
@@ -730,6 +832,7 @@ export default function App() {
     campaignSeed,
     campaignSource,
     gameMode,
+    gamePlan,
   ]);
   useEffect(() => {
     if (tournament.stage === 'quarters')
@@ -741,6 +844,7 @@ export default function App() {
       outcome: tournament.outcome,
       campaign_duration_ms: analytics.campaignElapsedMs(),
       game_mode: gameMode,
+      ...(gamePlan ? { game_plan: gamePlan } : {}),
     };
     analytics.trackOnce('campaign_finished', 'campaign_finished', properties);
     if (campaignSource === 'challenge')
@@ -751,11 +855,13 @@ export default function App() {
       });
     if (tournament.outcome === 'Campeão mundial')
       analytics.trackOnce('worlds_won', 'worlds_won', properties);
-  }, [analyticsEnabled, campaignSource, gameMode, screen, tournament.outcome]);
+  }, [analyticsEnabled, campaignSource, gameMode, gamePlan, screen, tournament.outcome]);
   useEffect(() => {
     if (screen === 'tournament' || screen === 'match' || screen === 'result')
-      analytics.trackOnce('worlds_started', 'worlds_started');
-  }, [analyticsEnabled, screen]);
+      analytics.trackOnce('worlds_started', 'worlds_started', {
+        ...(gamePlan ? { game_plan: gamePlan } : {}),
+      });
+  }, [analyticsEnabled, gamePlan, screen]);
   useEffect(() => {
     if (screen !== 'team') return;
     const startPrefetch = () => {
@@ -796,6 +902,7 @@ export default function App() {
               campaignSeed,
               `series/${tournament.history.length}/${series.stage}/${series.opponentName}/game/${series.games.length + 1}`,
             ),
+            gamePlan,
           );
           setPlayResult(result);
           setMomentIndex(quick ? result.recap.moments.length - 1 : 0);
@@ -846,6 +953,7 @@ export default function App() {
     momentIndex,
     team,
     campaignSeed,
+    gamePlan,
   ]);
   async function loadYears(years: number[], visible = true): Promise<GameData | null> {
     if (visible) setLoadingGame(true);
@@ -873,35 +981,49 @@ export default function App() {
     const seed = challenge?.seed ?? createCampaignSeed();
     const source = challenge ? 'challenge' : 'organic';
     const selectedGameMode = challenge?.gameMode ?? gameMode;
-    const plan = planDraft(
+    const selectedGamePlan = challenge?.gamePlan ?? null;
+    const draftPlan = planDraft(
       catalog.draftRegionManifest,
       availability,
       campaignRandom(seed, 'draft/initial'),
     );
-    const snapshot = await loadYears(plan.map((round) => round.year));
+    const snapshot = await loadYears(draftPlan.map((round) => round.year));
     if (!snapshot) return;
     if (draftTimer.current) clearTimeout(draftTimer.current);
     const replay = screen === 'result';
-    if (replay) analytics.track('play_again', { game_mode: gameMode });
+    if (replay)
+      analytics.track('play_again', {
+        game_mode: gameMode,
+        ...(gamePlan ? { game_plan: gamePlan } : {}),
+      });
     clearCampaign();
     setHasSavedCampaign(false);
-    analytics.startCampaign({ game_mode: selectedGameMode });
+    analytics.startCampaign({
+      game_mode: selectedGameMode,
+      ...(selectedGamePlan ? { game_plan: selectedGamePlan } : {}),
+    });
     if (challenge)
       analytics.track('challenge_started', {
         campaign_source: 'challenge',
         challenge_version: challenge.version,
         game_mode: selectedGameMode,
+        ...(selectedGamePlan ? { game_plan: selectedGamePlan } : {}),
       });
     setCampaignAvailability(availability);
     setCampaignSeed(seed);
     setCampaignSource(source);
     setGameMode(selectedGameMode);
+    setGamePlan(selectedGamePlan);
     draftLock.current = false;
     setPending(null);
     setRolling(false);
     setRejected([]);
     setRemaining(availability.startingExchanges);
-    const nextRounds = createDraftFromPlan(snapshot.players, plan, snapshot.draftRegionManifest);
+    const nextRounds = createDraftFromPlan(
+      snapshot.players,
+      draftPlan,
+      snapshot.draftRegionManifest,
+    );
     nextRounds.forEach((round) =>
       analytics.track('roll_generated', { roll_source: 'initial', ...draftEventProperties(round) }),
     );
@@ -950,6 +1072,7 @@ export default function App() {
     setCampaignSeed(campaign.seed);
     setCampaignSource(campaign.campaignSource);
     setGameMode(campaign.gameMode);
+    setGamePlan(campaign.gamePlan);
     draftLock.current = false;
     setPending(null);
     setRolling(false);
@@ -1069,8 +1192,14 @@ export default function App() {
     seriesLock.current = false;
   }
   function enterMatch() {
-    analytics.trackOnce('worlds_started', 'worlds_started');
+    analytics.trackOnce('worlds_started', 'worlds_started', {
+      ...(gamePlan ? { game_plan: gamePlan } : {}),
+    });
     void beginSeries();
+  }
+  function selectGamePlan(nextPlan: GamePlan) {
+    setGamePlan(nextPlan);
+    analytics.track('game_plan_selected', { game_plan: nextPlan });
   }
   function finishSeries() {
     if (!series) return;
@@ -1140,6 +1269,7 @@ export default function App() {
           seed: campaignSeed,
           datasetVersion: catalog.draftRegionManifest.datasetVersion,
           gameMode,
+          gamePlan,
           availability: campaignAvailability,
         }
       : null;
@@ -1229,9 +1359,12 @@ export default function App() {
                   <span>DESAFIO ENTRE AMIGOS · {challengeCode(pendingChallenge)}</span>
                   <h2 id="challenge-invite-title">Mesmas condições. Sua própria campanha.</h2>
                   <p>
-                    Modo {gameModeLabel(pendingChallenge.gameMode)}, anos, regiões, trocas e
-                    sorteios serão os mesmos. Suas escolhas continuam livres e o resultado não vale
-                    como ranking verificado.
+                    Modo {gameModeLabel(pendingChallenge.gameMode)}
+                    {pendingChallenge.gamePlan
+                      ? `, plano ${gamePlanLabel(pendingChallenge.gamePlan)}`
+                      : ''}
+                    , anos, regiões, trocas e sorteios serão os mesmos. Suas escolhas continuam
+                    livres e o resultado não vale como ranking verificado.
                   </p>
                   <button
                     className="primary"
@@ -1523,8 +1656,15 @@ export default function App() {
               </span>
             </div>
             <TeamStrip team={team} />
+            <GamePlanPicker
+              team={team}
+              data={viewData}
+              value={gamePlan}
+              showNumbers={showRatings}
+              onChange={selectGamePlan}
+            />
             <div className="subheading">
-              <h2>Seu plano para cada jogo</h2>
+              <h2>Suas composições</h2>
               <span>CAMPEÕES EM ORDEM FIXA</span>
             </div>
             <div className="game-tabs" role="tablist" aria-label="Composições">
@@ -1541,14 +1681,24 @@ export default function App() {
                 </button>
               ))}
             </div>
-            <Composition team={team} game={preview} data={viewData} showRatings={showRatings} />
+            <Composition
+              team={team}
+              game={preview}
+              data={viewData}
+              gamePlan={gamePlan}
+              showRatings={showRatings}
+            />
             <AutoplayControls settings={settings} onChange={setSettings} />
             <div className="action-bar">
               <p>
                 <Shield size={20} /> A força ajuda. A vitória se conquista.
               </p>
-              <button className="primary" onClick={() => setScreen('tournament')}>
-                Entrar no Worlds <ArrowRight size={20} />
+              <button
+                className="primary"
+                onClick={() => gamePlan && setScreen('tournament')}
+                disabled={!gamePlan}
+              >
+                {gamePlan ? 'Entrar no Worlds' : 'Escolha um plano'} <ArrowRight size={20} />
               </button>
             </div>
           </section>
@@ -1731,6 +1881,7 @@ export default function App() {
                 opponentName={series.opponentName}
                 game={currentGame}
                 data={viewData}
+                gamePlan={gamePlan}
                 showRatings={showRatings}
               />
             )}
@@ -1791,6 +1942,7 @@ export default function App() {
                       team={team}
                       game={currentGame}
                       data={viewData}
+                      gamePlan={gamePlan}
                       showRatings={showRatings}
                     />
                     <div className="opponent-line">
@@ -1903,7 +2055,7 @@ export default function App() {
                     </button>
                   ))}
                 </div>
-                <Composition team={team} game={preview} data={viewData} />
+                <Composition team={team} game={preview} data={viewData} gamePlan={gamePlan} />
               </section>
             )}
             <CampaignShare
@@ -1915,6 +2067,7 @@ export default function App() {
                 confrontations: tournament.history.length,
                 challengeCode: activeChallenge ? challengeCode(activeChallenge) : undefined,
                 gameMode,
+                gamePlan,
                 team: team.map((player) => ({
                   role: player.role,
                   playerName: player.playerName,

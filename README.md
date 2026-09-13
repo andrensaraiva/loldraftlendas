@@ -4,6 +4,8 @@ Protótipo jogável em português inspirado na referência visual: fundo claro, 
 
 Pesquisa e implementação atual: **[Multi-era v1.3: dados, UX e 100.000 campanhas](docs/multi-era-balance-v1.md)**.
 
+Calibração dos quatro planos de jogo: **[Planos de Jogo — Calibração v1](docs/game-plan-balance-v1.md)**.
+
 Cobertura honesta de 2011–2025: **[inventário de readiness histórico](docs/historical-readiness-2011-2025.md)**. 2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024 e 2025 estão validados; os demais anos continuam explicitamente incompletos e nenhum ano é marcado como pronto para produção sem revisão externa registrada.
 
 Admin privado e configuração: [guia de setup do Supabase](docs/admin-setup.md).
@@ -32,6 +34,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Home e instruções.
 - Cinco escolhas imediatas: TOP → JUNGLE → MID → ADC → SUPPORT. Cada posição sorteia ano e grupo regional dentre grupos disponíveis.
 - Modos **Clássico** e **Almanaque**: o Clássico exibe ratings e força; o Almanaque oculta toda orientação numérica durante a campanha e revela os cinco jogos no resultado final. O modo integra save, desafio e card compartilhável.
+- Quatro planos persistentes escolhidos após o draft: **Agressão**, **Teamfight**, **Controle/Pick** e **Escala**. As tags ativas e o efeito limitado de `−1,0` a `+1,5` aparecem na composição e na prévia da partida.
 - 605 versões pesquisadas: Worlds 2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024 e 2025. Regiões canônicas e grupos de draft são separados: Coreia, China, Europa, América do Norte e Outras Regiões, com fusão determinística quando uma cobertura anual não tiver três candidatos por posição. Em 2024 e 2025, Europa e América do Norte formam um grupo conjunto; em 2025, LCP e LTA Sul formam Outras Regiões. Veja [a regra de agrupamento](docs/draft-region-grouping.md).
 - Cada posição mostra exatamente três candidatos válidos do ano/grupo sorteado e prioriza combinações de times distintos.
 - Três trocas compartilhadas por draft: ano, região ou jogadores. Ações impossíveis não gastam saldo. Configuração em `src/game/draft.ts`.
@@ -53,7 +56,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Feedback contextual opcional em cada rating G1–G5: motivo categorizado e observação curta, ligado somente aos IDs históricos públicos e disponível no dashboard agregado para revisão editorial.
 - Interface responsiva, navegação por teclado, diálogo nativo, feedback de simulação e proteção contra clique duplo.
 
-O Suíço é uma simulação da campanha do usuário: não existe uma tabela completa de 16 equipes, pareamento por campanha ou simulação paralela das outras chaves. O sistema de estilos de jogo, opcional no prompt, foi deixado fora para concentrar a validação na escolha dos pools.
+O Suíço é uma simulação da campanha do usuário: não existe uma tabela completa de 16 equipes, pareamento por campanha ou simulação paralela das outras chaves.
 
 ## Dados e imagens
 
@@ -86,7 +89,8 @@ src/
     regions.ts     # Região canônica, grupos e fallback determinístico
     campaign.ts    # Save versionado no armazenamento local
     challenge.ts   # Payload validado, código e URL de desafio
-    engine.ts      # Ratings, composição, séries e torneio
+    plan.ts        # Planos, tags-alvo e rótulos
+    engine.ts      # Ratings, composição, planos, séries e torneio
     random.ts      # Streams determinísticos separados por operação
     recap.ts       # Narrativa e snapshots cumulativos de KDA
     share.ts       # Texto e card PNG da campanha
@@ -102,7 +106,7 @@ src/
 
 As funções do motor são puras e recebem o snapshot de dados. `Random` é injetável para testes reprodutíveis. `BALANCE` centraliza os pesos de rating, bônus de composição e parâmetros da probabilidade.
 
-Força = 80% da média dos cinco ratings do jogo + 20% da composição. A composição recompensa dano misto, frontline, engage, peel e tags compartilhadas. A chance de vitória usa uma curva logística sobre a diferença de força, limitada a 8%–92%, permitindo zebras. Não há simulação de combate, ouro, itens ou rotas.
+Força-base = 80% da média dos cinco ratings do jogo + 20% da composição. A composição recompensa dano misto, frontline, engage, peel e tags compartilhadas. O plano soma `+1,5`, `+0,5` ou `−1,0` conforme a cobertura explícita das tags-alvo. A chance de vitória usa uma curva logística sobre a força final, limitada a 8%–92%, permitindo zebras. Não há simulação de combate, ouro, itens ou rotas.
 
 O relatório é uma apresentação fictícia gerada depois de sortear o resultado: não é uma reconstrução histórica nem um motor de combate. Abates, mortes e assistências são distribuídos por eventos; cada abate tem uma morte adversária correspondente, e o autor do abate não recebe assistência. Os snapshots são cumulativos, a última luta corresponde ao vencedor e a duração varia de 26 a 37 minutos fictícios. Dragão e Barão são contextos narrativos, sem sistema de objetivos ou economia.
 
@@ -133,6 +137,7 @@ Pipeline de pesquisa (Python 3, sem bibliotecas adicionais):
 npm run data:multi:build     # Recria a produção e os grupos de draft a partir de snapshots offline
 npm run data:multi:validate  # 3.025 associações, calibração e 1.342 assets
 npm run data:multi:simulate  # 100.000 campanhas + 10.000 drafts de diversidade
+npm run data:plans:simulate  # 100.000 campanhas pareadas entre quatro planos e baseline
 npm run data:multi:reproduce # Reconstrução byte a byte
 npm run data:multi:report    # Relatório multi-era a partir das medições
 npm run data:readiness:build # Regera o inventário de cobertura 2011–2025

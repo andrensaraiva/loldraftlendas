@@ -33,6 +33,14 @@ export interface GameModeMetrics {
   playAgainRate: number;
 }
 
+export interface GamePlanMetrics {
+  key: 'aggression' | 'teamfight' | 'control_pick' | 'scaling';
+  label: string;
+  campaignsStarted: number;
+  completionRate: number;
+  titleRate: number;
+}
+
 export interface DashboardMetrics {
   generatedAt: string;
   overview: {
@@ -61,6 +69,7 @@ export interface DashboardMetrics {
   regionGroups: MetricCount[];
   devices: MetricCount[];
   gameModes: GameModeMetrics[];
+  gamePlans: GamePlanMetrics[];
   feedback: FeedbackMetrics;
   ratingFeedback: RatingFeedbackMetrics;
 }
@@ -98,6 +107,13 @@ interface DashboardResponse {
     drafts_started: number;
     completion_rate: number;
     play_again_rate: number;
+  }>;
+  game_plans: Array<{
+    key: 'aggression' | 'teamfight' | 'control_pick' | 'scaling';
+    label: string;
+    campaigns_started: number;
+    completion_rate: number;
+    title_rate: number;
   }>;
   feedback: {
     total: number;
@@ -161,6 +177,28 @@ function gameModes(value: unknown): GameModeMetrics[] | null {
   return parsed.every((entry) => entry !== null) ? (parsed as GameModeMetrics[]) : null;
 }
 
+function gamePlans(value: unknown): GamePlanMetrics[] | null {
+  if (!Array.isArray(value)) return null;
+  const parsed = value.map((entry) => {
+    if (!entry || typeof entry !== 'object') return null;
+    const candidate = entry as Partial<DashboardResponse['game_plans'][number]>;
+    return ['aggression', 'teamfight', 'control_pick', 'scaling'].includes(candidate.key ?? '') &&
+      typeof candidate.label === 'string' &&
+      numberValue(candidate.campaigns_started) !== null &&
+      numberValue(candidate.completion_rate) !== null &&
+      numberValue(candidate.title_rate) !== null
+      ? {
+          key: candidate.key!,
+          label: candidate.label,
+          campaignsStarted: candidate.campaigns_started!,
+          completionRate: candidate.completion_rate!,
+          titleRate: candidate.title_rate!,
+        }
+      : null;
+  });
+  return parsed.every((entry) => entry !== null) ? (parsed as GamePlanMetrics[]) : null;
+}
+
 export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
   if (!value || typeof value !== 'object') throw new Error('Métricas administrativas inválidas.');
   const response = value as Partial<DashboardResponse>;
@@ -178,6 +216,7 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
   const ratingFeedback = response.rating_feedback;
   const ratingReasons = counts(ratingFeedback?.reasons);
   const parsedGameModes = gameModes(response.game_modes);
+  const parsedGamePlans = gamePlans(response.game_plans);
   if (
     typeof response.generated_at !== 'string' ||
     Number.isNaN(Date.parse(response.generated_at)) ||
@@ -187,6 +226,7 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     !ratingFeedback ||
     !ratingReasons ||
     !parsedGameModes ||
+    !parsedGamePlans ||
     numberValue(overview.drafts_started) === null ||
     numberValue(overview.drafts_completed) === null ||
     numberValue(overview.draft_completion_rate) === null ||
@@ -268,6 +308,7 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     regionGroups: lists[5]!,
     devices: lists[6]!,
     gameModes: parsedGameModes,
+    gamePlans: parsedGamePlans,
     feedback: {
       total: feedback.total,
       good: feedback.good,
@@ -374,6 +415,36 @@ export function localDemoDashboard(): DashboardMetrics {
         draftsStarted: 72,
         completionRate: 77.8,
         playAgainRate: 40.3,
+      },
+    ],
+    gamePlans: [
+      {
+        key: 'aggression',
+        label: 'Agressão',
+        campaignsStarted: 58,
+        completionRate: 75.9,
+        titleRate: 11.4,
+      },
+      {
+        key: 'teamfight',
+        label: 'Teamfight',
+        campaignsStarted: 79,
+        completionRate: 78.5,
+        titleRate: 12.9,
+      },
+      {
+        key: 'control_pick',
+        label: 'Controle/Pick',
+        campaignsStarted: 46,
+        completionRate: 73.9,
+        titleRate: 10.2,
+      },
+      {
+        key: 'scaling',
+        label: 'Escala',
+        campaignsStarted: 65,
+        completionRate: 80,
+        titleRate: 12.1,
       },
     ],
     feedback: {

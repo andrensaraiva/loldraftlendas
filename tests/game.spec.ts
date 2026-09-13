@@ -2,13 +2,19 @@ import { test, expect } from '@playwright/test';
 import type { Page } from '@playwright/test';
 import { CHALLENGE_VERSION, encodeChallenge } from '../src/game/challenge';
 import type { GameMode } from '../src/game/mode';
+import type { GamePlan } from '../src/game/plan';
 
-function challengePath(seed: string, gameMode: GameMode = 'classic'): string {
+function challengePath(
+  seed: string,
+  gameMode: GameMode = 'classic',
+  gamePlan: GamePlan = 'teamfight',
+): string {
   const challenge = encodeChallenge({
     version: CHALLENGE_VERSION,
     seed,
     datasetVersion: 'multi-era-v1.3.0',
     gameMode,
+    gamePlan,
     availability: {
       startingExchanges: 3,
       activeYears: [2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
@@ -25,11 +31,16 @@ function challengePath(seed: string, gameMode: GameMode = 'classic'): string {
   return `/?challenge=${challenge}`;
 }
 
-async function draft(page: Page, challengeSeed?: string, gameMode: GameMode = 'classic') {
+async function draft(
+  page: Page,
+  challengeSeed?: string,
+  gameMode: GameMode = 'classic',
+  gamePlan: GamePlan = 'teamfight',
+) {
   await page.addInitScript(() => {
     Math.random = () => 0;
   });
-  await page.goto(challengeSeed ? challengePath(challengeSeed, gameMode) : '/');
+  await page.goto(challengeSeed ? challengePath(challengeSeed, gameMode, gamePlan) : '/');
   if (!challengeSeed && gameMode === 'almanac')
     await page.getByRole('radio', { name: /Almanaque/ }).check();
   await expect(page.locator('footer')).toContainText('RATINGS ESTIMADOS');
@@ -42,7 +53,10 @@ async function draft(page: Page, challengeSeed?: string, gameMode: GameMode = 'c
     if (gameMode === 'almanac')
       await expect(page.locator('.player-card .pool-slot b')).toHaveText(Array(15).fill('?'));
     if (gameMode === 'almanac' && i === 0) {
-      await page.getByRole('button', { name: /^Detalhes de/ }).first().click();
+      await page
+        .getByRole('button', { name: /^Detalhes de/ })
+        .first()
+        .click();
       await expect(page.locator('.almanac-dialog-note')).toContainText('números serão revelados');
       await expect(page.locator('.evidence-slots strong')).toHaveText(Array(5).fill('?'));
       await expect(page.getByRole('button', { name: 'Discorda deste rating?' })).toHaveCount(0);
@@ -53,6 +67,7 @@ async function draft(page: Page, challengeSeed?: string, gameMode: GameMode = 'c
     ).toHaveAttribute('src', /^\/assets\/20\d{2}\//);
     await page.locator('.player-card').first().click();
   }
+  await page.getByRole('radio', { name: new RegExp(gamePlan, 'i') }).check();
 }
 
 test('Almanac hides numeric guidance and reveals it only after the campaign', async ({ page }) => {
@@ -72,6 +87,9 @@ test('Almanac hides numeric guidance and reveals it only after the campaign', as
   await expect(page.locator('.almanac-reveal')).toBeVisible();
   await expect(page.locator('.almanac-reveal .comp-art b')).not.toHaveText(Array(5).fill('?'));
   await expect(page.locator('.almanac-reveal .composition-scores')).toBeVisible();
+  await expect(page.locator('.almanac-reveal .composition-scores')).toContainText(
+    'Plano Teamfight',
+  );
   await page.screenshot({
     path: `test-results/almanac-reveal-${test.info().project.name}.png`,
     fullPage: true,
@@ -84,6 +102,7 @@ test('challenge link reproduces the same opening offer and rejects incompatible 
   const path = challengePath('draftlendas2026a');
   await page.goto(path);
   await expect(page.locator('.challenge-invite')).toContainText('DRAF-TLEN');
+  await expect(page.locator('.challenge-invite')).toContainText('plano Teamfight');
   await page.screenshot({
     path: `test-results/challenge-invite-${test.info().project.name}.png`,
     fullPage: true,
@@ -175,6 +194,8 @@ test('detailed playback updates KDA, pauses, changes speed/mode and retains the 
   await page.getByRole('button', { name: 'Entrar no Worlds' }).click();
   await expect(page.locator('.match-forecast')).toBeVisible({ timeout: 7000 });
   await expect(page.locator('.match-forecast')).toContainText('chance para suas lendas');
+  await expect(page.locator('.plan-impact')).toContainText('Plano Teamfight');
+  await expect(page.locator('.plan-impact')).toContainText(/na força deste jogo/);
   await expect(
     page.getByRole('progressbar', { name: 'Chance estimada de vitória' }),
   ).toHaveAttribute('aria-valuenow', /^\d+$/);

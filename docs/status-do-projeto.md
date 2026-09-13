@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.7 e a expansão da Fase 4. O commit-base remoto é `746388d` (`feat: add Worlds 2021 historical data`); o Modo Almanaque está integrado neste checkpoint.
+Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.8 e a expansão da Fase 4. O commit-base remoto é `8074b09` (`feat: add Almanac game mode`); os Planos de Jogo estão integrados neste checkpoint.
 
 ## Objetivo Preservado
 
@@ -44,6 +44,7 @@ Migrations Supabase, em ordem:
 6. [20260912120000_deterministic_challenges.sql](../supabase/migrations/20260912120000_deterministic_challenges.sql)
 7. [20260912130000_contextual_rating_feedback.sql](../supabase/migrations/20260912130000_contextual_rating_feedback.sql)
 8. [20260913120000_almanac_mode.sql](../supabase/migrations/20260913120000_almanac_mode.sql)
+9. [20260913130000_game_plans.sql](../supabase/migrations/20260913130000_game_plans.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -110,6 +111,14 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - A telemetria envia somente `classic` ou `almanac`; a migration agrega conclusão e replay por modo no dashboard sem expor campanhas individuais.
 - O motor, as probabilidades e a sequência determinística permanecem iguais: o Almanaque altera apenas a informação disponível ao jogador.
 
+### Fase 3.8: Planos de Jogo
+
+- Após fechar o draft, o jogador escolhe Agressão, Teamfight, Controle/Pick ou Escala para toda a campanha.
+- A compatibilidade usa somente tags históricas já existentes: todas as tags dão `+1,5`, ao menos uma dá `+0,5` e nenhuma dá a penalidade limitada de `−1,0` na força.
+- A interface explica tags, compatibilidade e efeito por composição; o Almanaque preserva a ocultação e inclui o plano na revelação final.
+- Save v4, desafio, compartilhamento e telemetria carregam o plano; saves e links anteriores migram sem alterar seus resultados já calculados.
+- [A calibração reproduzível](game-plan-balance-v1.md) executou 100 mil campanhas pareadas. As taxas de título por plano ficaram entre 10,35% e 12,53%, e todas as probabilidades respeitaram 8%–92%.
+
 ### Fase 4: Cobertura Histórica e Readiness
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
@@ -122,7 +131,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O aviso vigente da Riot foi conferido na General Policy oficial, registrado no inventário e exibido no rodapé público. Isso não representa aconselhamento jurídico nem aprovação da Riot.
 - As partes específicas de League of Legends e os limites reais de reutilização do motor estão em [game-domain-boundaries.md](game-domain-boundaries.md).
 - A CI passa a rejeitar inventário ou relatório de readiness desatualizados.
-- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.7, o bundle inicial ficou em 362,46 kB (96,94 kB gzip), sem aviso de chunk acima de 500 kB.
+- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.8, o bundle inicial ficou em 367,06 kB (98,58 kB gzip), sem aviso de chunk acima de 500 kB.
 
 ## Estado de Validação
 
@@ -137,7 +146,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 70 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; o inventário de readiness 2011–2025 está reproduzível; 29 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 362,46 kB (96,94 kB gzip), sem aviso de chunk acima de 500 kB.
+Resultados registrados: 74 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; a calibração de planos executou 100 mil campanhas; o inventário de readiness 2011–2025 está reproduzível; 29 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 367,06 kB (98,58 kB gzip), sem aviso de chunk acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -145,7 +154,7 @@ O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, con
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
 
-1. Crie um projeto Supabase e aplique as oito migrations na ordem acima.
+1. Crie um projeto Supabase e aplique as nove migrations na ordem acima.
 2. Crie a conta do mantenedor no Supabase Auth.
 3. Insira manualmente o UUID dela em `public.admin_users`.
 4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.
@@ -164,11 +173,11 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 - Recalibrar toda a população ao adicionar uma edição e versionar o dataset; não misturar ratings produzidos por populações diferentes.
 - Submeter os nove anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
 
-### Próxima Entrega de Produto: Plano de Jogo 2.4
+### Próxima Entrega de Produto: Filtros de Desafio 2.5
 
-- Implementar Agressão, Teamfight, Controle/Pick e Escala como escolha explícita e persistida na campanha/desafio.
-- Explicar bônus e penalidade limitada sem alterar silenciosamente as tags históricas.
-- Recalibrar o motor com 100 mil campanhas e registrar a distribuição por plano antes de habilitar a fase.
+- Permitir criar desafios filtrados por edição e grupo regional usando o manifesto atual.
+- Validar antes de gerar o link que cada posição conserva pelo menos três candidatos elegíveis.
+- Persistir o snapshot exato no save/desafio e cobrir combinações inválidas em testes de domínio e navegador.
 
 ## Comandos de Trabalho
 

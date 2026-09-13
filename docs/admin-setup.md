@@ -26,6 +26,7 @@ Create a Supabase project, then run these migrations in filename order in the pr
 - [20260912120000_deterministic_challenges.sql](../supabase/migrations/20260912120000_deterministic_challenges.sql)
 - [20260912130000_contextual_rating_feedback.sql](../supabase/migrations/20260912130000_contextual_rating_feedback.sql)
 - [20260913120000_almanac_mode.sql](../supabase/migrations/20260913120000_almanac_mode.sql)
+- [20260913130000_game_plans.sql](../supabase/migrations/20260913130000_game_plans.sql)
 
 The migrations create:
 
@@ -39,6 +40,7 @@ The migrations create:
 - An admin-only aggregate dashboard RPC, incluindo intenção/conclusão de compartilhamento, downloads do card e abertura/início/conclusão dos desafios; ele não retorna eventos individuais de visitantes ao navegador.
 - A complete public configuration snapshot plus an allowlisted analytics-property schema.
 - Aggregate completion and replay comparison between Classic and Almanac modes.
+- Aggregate campaign completion and title rates for the four game plans.
 
 Create the maintainer account in Supabase Auth, copy its UUID, and add it in the SQL Editor:
 
@@ -68,6 +70,6 @@ The admin form writes the next product configuration with a version check. Exist
 
 Anonymous analytics and optional feedback are collected when the public configuration enables analytics. The complete data contract is in [analytics-privacy.md](analytics-privacy.md).
 
-The dashboard now reports conversion, campaign outcomes, durations, exchanges, sharing, challenge conversion, historic player picks/rejections, years, draft regions, device type, and anonymous feedback. It uses `get_admin_dashboard_metrics()` and is separately failure-safe: an unavailable dashboard migration cannot block the configuration form.
+The dashboard now reports conversion, campaign outcomes, durations, exchanges, sharing, challenge conversion, game modes, game plans, historic player picks/rejections, years, draft regions, device type, and anonymous feedback. It uses `get_admin_dashboard_metrics()` and is separately failure-safe: an unavailable dashboard migration cannot block the configuration form.
 
 For the game, public configuration is applied only when a player starts a new draft, only if the configured dataset version matches and every role keeps an eligible pool. The active campaign saves this rules snapshot, so a later admin update cannot corrupt its draft or exchanges. The maintenance banner is displayed independently.

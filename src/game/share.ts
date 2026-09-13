@@ -1,6 +1,8 @@
 import type { Role } from './types';
 import { gameModeLabel } from './mode';
 import type { GameMode } from './mode';
+import { gamePlanLabel } from './plan';
+import type { GamePlan } from './plan';
 
 export interface SharePlayer {
   role: Role;
@@ -15,6 +17,7 @@ export interface CampaignShareSummary {
   losses: number;
   confrontations: number;
   gameMode: GameMode;
+  gamePlan: GamePlan | null;
   team: SharePlayer[];
   challengeCode?: string;
 }
@@ -56,7 +59,8 @@ export function campaignShareText(summary: CampaignShareSummary, challengeUrl?: 
   const challenge = challengeUrl
     ? ` Desafio ${summary.challengeCode ?? ''}: tente vencer meu draft nas mesmas condições: ${challengeUrl}`
     : '';
-  return `Meu Draft Lendas no modo ${gameModeLabel(summary.gameMode)} terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?${challenge}`;
+  const plan = summary.gamePlan ? `, plano ${gamePlanLabel(summary.gamePlan)}` : '';
+  return `Meu Draft Lendas no modo ${gameModeLabel(summary.gameMode)}${plan} terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?${challenge}`;
 }
 
 function roundedRect(
@@ -117,7 +121,9 @@ export async function createCampaignCard(summary: CampaignShareSummary): Promise
   context.fillStyle = '#687064';
   context.font = '500 22px "DM Sans", Arial, sans-serif';
   context.fillText(
-    `MODO ${gameModeLabel(summary.gameMode).toUpperCase()} · DIFERENTES ERAS · UM SÓ TÍTULO`,
+    summary.gamePlan
+      ? `MODO ${gameModeLabel(summary.gameMode).toUpperCase()} · PLANO ${gamePlanLabel(summary.gamePlan).toUpperCase()}`
+      : `MODO ${gameModeLabel(summary.gameMode).toUpperCase()} · DIFERENTES ERAS · UM SÓ TÍTULO`,
     72,
     146,
   );

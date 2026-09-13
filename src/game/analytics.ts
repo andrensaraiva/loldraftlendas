@@ -5,6 +5,7 @@ export const ANALYTICS_EVENTS = [
   'exchange_used',
   'player_selected',
   'draft_completed',
+  'game_plan_selected',
   'worlds_started',
   'series_started',
   'game_completed',
