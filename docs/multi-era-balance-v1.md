@@ -1,6 +1,6 @@
-# Draft Lendas — pesquisa, UX e balanceamento multi-era v1.2
+# Draft Lendas — pesquisa, UX e balanceamento multi-era v1.3
 
-A versão reúne 535 PlayerVersions reais, 2.675 associações jogador–campeão e 155 pools elegíveis. Foram executadas 100.000 campanhas em dez cenários e uma auditoria adicional de 10.000 drafts. A escolha estratégica e as trocas aumentam a chance de título; a LCK e a LPL continuam favorecidas. Este relatório não declara equilíbrio competitivo nem validação de diversão com pessoas reais.
+A versão reúne 605 PlayerVersions reais, 3.025 associações jogador–campeão e 175 pools elegíveis. Foram executadas 100.000 campanhas em dez cenários e uma auditoria adicional de 10.000 drafts. A escolha estratégica e as trocas aumentam a chance de título; a LCK e a LPL continuam favorecidas. Este relatório não declara equilíbrio competitivo nem validação de diversão com pessoas reais.
 
 ## Escopo e cobertura
 
@@ -10,12 +10,13 @@ A versão reúne 535 PlayerVersions reais, 2.675 associações jogador–campeã
 | [2017](https://gol.gg/tournament/tournament-stats/World%20Championship%202017/) | 7.18.1 | 80 | 60 | 300 | EU LCS, LCK, LPL, NA LCS |
 | [2019](https://gol.gg/tournament/tournament-stats/World%20Championship%202019/) | 9.19.1 | 77 | 60 | 300 | LCK, LCS, LEC, LPL |
 | [2020](https://gol.gg/tournament/tournament-stats/World%20Championship%202020/) | 10.19.1 | 76 | 65 | 325 | LCK, LCS, LEC, LPL |
+| [2021](https://gol.gg/tournament/tournament-stats/World%20Championship%202021/) | 11.19.1 | 83 | 70 | 350 | LCK, LCS, LEC, LPL |
 | [2022](https://gol.gg/tournament/tournament-stats/World%20Championship%202022/) | 12.18.1 | 80 | 70 | 350 | LCK, LCS, LEC, LPL |
 | [2023](https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202023/) | 13.19.1 | 79 | 75 | 375 | LCK, LCS, LEC, LPL |
 | [2024](https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202024/) | 14.18.1 | 82 | 65 | 325 | LCK, LCS, LEC, LPL |
 | [2025](https://gol.gg/tournament/tournament-stats/Worlds%20Main%20Event%202025/) | 15.20.1 | 80 | 80 | 400 | LCK, LCP, LEC, LPL, LTA N, LTA S |
 
-Slots: **2463 WORLDS_DATA** e **212 SEASON_DATA**. Nenhuma associação MOCK na produção. 2019 foi incluído porque a mesma importação cobriu o evento e a temporada sem um fluxo separado.
+Slots: **2794 WORLDS_DATA** e **231 SEASON_DATA**. Nenhuma associação MOCK na produção. 2019 foi incluído porque a mesma importação cobriu o evento e a temporada sem um fluxo separado.
 
 São apenas participantes do evento principal: grupos até 2022, Suíço a partir de 2023. Play-ins não entram nos pools nem nas estatísticas do Worlds. Cada time contribui com o jogador que disputou mais jogos em cada posição. Empates usam ordem alfabética documentada, sem preferência por fama. Isso seleciona Acorn sobre Flame (3–3) em 2015 e Blaber sobre Svenskeren (3–3) em 2019.
 
@@ -36,6 +37,7 @@ As chaves estáveis LEC/LCS representam Europa/NA em sorteios entre eras. A inte
 | 2019 | Leyan | Invictus Gaming | JUNGLE | 3 |
 | 2019 | Svenskeren | Cloud9 | JUNGLE | 3 |
 | 2019 | Deftly | Cloud9 | ADC | 1 |
+| 2021 | Burdol | Gen.G | TOP | 3 |
 | 2022 | Juhan | DRX | JUNGLE | 1 |
 | 2024 | Wei | Bilibili Gaming | JUNGLE | 3 |
 | 2025 | Beichuan | Bilibili Gaming | JUNGLE | 2 |
@@ -44,11 +46,11 @@ As chaves estáveis LEC/LCS representam Europa/NA em sorteios entre eras. A inte
 
 ### Fontes e rastreabilidade
 
-O produtor estatístico principal é [Oracle’s Elixir / Tim Sevenhuysen](https://lol.timsevenhuysen.com/matchdata/). Os arquivos e suas origens estão fixados por SHA-256 em [downloads.json](../data/research/multi-era/downloads.json). O CSV de 2024 veio da pasta pública do produtor; os demais anos não congelados usam espelhos públicos cuja atribuição não foi autenticada linha a linha. Em 2025, a cópia do Drive estava bloqueada por cota e anunciava 79.169.638 bytes, enquanto o espelho disponível tem 79.130.187 bytes; a diferença e os hashes permanecem explícitos, sem alegação de identidade com a revisão posterior.
+O produtor estatístico principal é [Oracle’s Elixir / Tim Sevenhuysen](https://lol.timsevenhuysen.com/matchdata/). Os arquivos e suas origens estão fixados por SHA-256 em [downloads.json](../data/research/multi-era/downloads.json). O CSV de 2024 veio da pasta pública do produtor; os demais anos não congelados usam espelhos públicos cuja atribuição não foi autenticada linha a linha. Em 2021 e 2025, as cópias do Drive estavam bloqueadas por cota: as revisões anunciavam respectivamente 109.765.213 e 79.169.638 bytes, enquanto os espelhos fixados têm 91.999.784 e 79.130.187 bytes. Diferenças, datas e hashes permanecem explícitos, sem alegação de identidade com revisões posteriores.
 
-Espelhos: [2015/2019 — competitive-league-analysis](https://github.com/victoraccete/competitive-league-analysis/tree/master/original_data), [2020 — League-of-Legends-Stats-Analyzer](https://github.com/AdamLewis73/League-of-Legends-Stats-Analyzer), [2022/2023 — finalLOL](https://github.com/twodotone/finalLOL/tree/main/data/csv) e [2025 — LoL-Esports-Regional-Analyses](https://github.com/cbplexiglass/LoL-Esports-Regional-Analyses). Para 2017, a fonte e o snapshot congelados continuam disponíveis em `data/research/worlds-2017/`.
+Espelhos: [2015/2019 — competitive-league-analysis](https://github.com/victoraccete/competitive-league-analysis/tree/master/original_data), [2020 — League-of-Legends-Stats-Analyzer](https://github.com/AdamLewis73/League-of-Legends-Stats-Analyzer), [2021 — snapshot Kaggle de 01/02/2022](https://www.kaggle.com/datasets/arthur1511/lol-esports-2021), [2022/2023 — finalLOL](https://github.com/twodotone/finalLOL/tree/main/data/csv) e [2025 — LoL-Esports-Regional-Analyses](https://github.com/cbplexiglass/LoL-Esports-Regional-Analyses). Para 2017, a fonte e o snapshot congelados continuam disponíveis em `data/research/worlds-2017/`.
 
-Cada slot aponta para uma evidência com jogo(s), linha(s) da fonte, evento, métricas, confiança e fórmula. `matches-{year}.json` contém o recorte normalizado necessário para reconstrução offline; `normalization-{year}.json` guarda baselines e ajustes por campeão. `rosters-{year}.json` documenta titulares, reservas e nomes de época. As contagens dos 8 eventos e um agregado por edição foram conferidos com Games of Legends, registrados em `crosschecks.json`; isso não equivale a uma segunda verificação independente de cada partida.
+Cada slot aponta para uma evidência com jogo(s), linha(s) da fonte, evento, métricas, confiança e fórmula. `matches-{year}.json` contém o recorte normalizado necessário para reconstrução offline; `normalization-{year}.json` guarda baselines e ajustes por campeão. `rosters-{year}.json` documenta titulares, reservas e nomes de época. As contagens dos 9 eventos e um agregado por edição foram conferidos com Games of Legends, registrados em `crosschecks.json`; isso não equivale a uma segunda verificação independente de cada partida.
 
 ### Cinco exceções de cobertura de 2015
 
@@ -62,6 +64,8 @@ O coeficiente de confiança de desempenho específico é **zero** nesses cinco s
 
 Selecionamos os cinco campeões mais usados pelo jogador no evento principal; empates de frequência usam a primeira aparição. Esses cinco são ordenados por estreia para definir G1–G5. Se houver menos de cinco, acrescentamos campeões distintos observados no Summer, depois qualificatórias, MSI, Spring e Winter, conforme disponibilidade; no fallback, frequência e aparição mais recente desempataram. Não há preenchimento aleatório. Os cinco casos complementares acima têm limitações próprias documentadas.
 
+Em 2021, Bean entrou no Worlds pela Fnatic como substituto emergencial e registrou apenas quatro campeões distintos no evento. O quinto slot usa seu Aphelios documentado em oito jogos pela Fnatic Rising no EU Masters Summer, com o time e o evento de origem explícitos na evidência; a normalização desse evento inclui toda a população disponível no CSV, não apenas Bean.
+
 `historicalScore` mantém o modelo de 2017: métricas normalizadas por evento e posição, ajuste empírico de dano/recursos por campeão, regressão à média para amostras pequenas. Eficiência (log de KDA por jogo), participação em abates, dano, parcela de dano, diferenças de ouro/CS/XP aos 15 minutos e visão entram com pesos por posição. Win rate é evidência, sem bônus adicional de sucesso do time.
 
 A = desempenho geral do jogador, reduzido pela amostra N/(N+5). B = A + confiança × (desempenho do campeão − A), com n/(n+5), cobertura de métricas e fator 0,65 para temporada. C = frequência relativa, com redução de 50% para temporada. `historicalScore = 0,35 A + 0,50 B + 0,15 C`. Métricas ausentes reduzem cobertura; não viram zeros fictícios. Pesos e parâmetros completos estão nos scripts e arquivos de normalização.
@@ -74,15 +78,15 @@ A versão `worlds-2017-v1.0.0`, seus 75 scores, pools e arquivos originais perma
 gameRating = round(clamp(84,5 + 5 × (historicalScore − médiaGlobalDaPosição) / desvioGlobalDaPosição, 70, 99))
 ```
 
-É a mesma transformação para todos os jogadores, anos e regiões. As médias e desvios são calculados sobre os 2.675 slots, separados apenas por posição para controlar inflação estrutural de roles. Centro 84,5 e dispersão 5 são parâmetros de design publicados, não ajustes por nome. Não se impõe uma quantidade de notas 99 nem se igualam as médias de cada ano/região. Novas edições exigirão uma nova versão de calibração, pois alteram essa população.
+É a mesma transformação para todos os jogadores, anos e regiões. As médias e desvios são calculados sobre os 3.025 slots, separados apenas por posição para controlar inflação estrutural de roles. Centro 84,5 e dispersão 5 são parâmetros de design publicados, não ajustes por nome. Não se impõe uma quantidade de notas 99 nem se igualam as médias de cada ano/região. Novas edições exigirão uma nova versão de calibração, pois alteram essa população.
 
 | Posição | Média de historicalScore | Desvio | Slots |
 |---|---:|---:|---:|
-| TOP | 53.6459 | 11.8777 | 535 |
-| JUNGLE | 52.9739 | 9.9822 | 535 |
-| MID | 54.2945 | 10.0124 | 535 |
-| ADC | 55.0747 | 10.6055 | 535 |
-| SUPPORT | 54.2874 | 10.3343 | 535 |
+| TOP | 53.7016 | 11.7736 | 605 |
+| JUNGLE | 52.9387 | 9.8751 | 605 |
+| MID | 54.1620 | 10.2136 | 605 |
+| ADC | 55.1444 | 10.6414 | 605 |
+| SUPPORT | 54.1555 | 10.4009 | 605 |
 
 O ranking é relativo aos participantes e às métricas disponíveis de cada evento. A transformação melhora a comparabilidade de escala, mas não prova equivalência causal entre eras, metas e adversários. A associação jogador–campeão e o score histórico são distintos da nota usada no jogo.
 
@@ -96,73 +100,74 @@ Cada posição sorteia o ano uniformemente entre os elegíveis, depois a região
 
 Foram executadas **100,000 campanhas**: 10.000 por cenário, com streams LCG32 determinísticos separados para sorteio, escolha, trocas e partidas. As mesmas sementes por índice facilitam a comparação entre políticas. A política BO5 e a heurística com orçamento zero são controles equivalentes. Seeds e resultados completos: [simulation.json](../data/research/multi-era/simulation.json).
 
-O estudo reutiliza `teamStrength`, `winProbability`, `formatFor`, `seriesDone` e `advanceTournament`. Adversários são os 107 elencos completos, uniformes e sem repetição até esgotamento, como no motor. Apenas a narrativa/KDA visual é omitida para acelerar; esses recursos são cobertos pelos testes do jogo. Não há antecipação do vencedor para escolher cartas.
+O estudo reutiliza `teamStrength`, `winProbability`, `formatFor`, `seriesDone` e `advanceTournament`. Adversários são os 121 elencos completos, uniformes e sem repetição até esgotamento, como no motor. Apenas a narrativa/KDA visual é omitida para acelerar; esses recursos são cobertos pelos testes do jogo. Não há antecipação do vencedor para escolher cartas.
 
 G1/BO3/BO5 maximizam a média dos slots correspondentes. Composição avalia cada candidato com o time parcial já escolhido, usando o score real de composição e rating esperado 84,5 para posições faltantes; é uma heurística marginal, não busca ótima nem amostragem das sinergias futuras. Reroll usa BO5 e troca apenas quando a melhora esperada do melhor candidato na oferta supera **1,5 ponto** (`EXCHANGE_GAIN_THRESHOLD`). Ela consulta a distribuição de ofertas possíveis, não a próxima realização do RNG. Sua expectativa não modela perfeitamente o histórico de rejeições.
 
 | Estratégia | Força G1 | Força BO3 | Força BO5 | Título | Eliminação no Suíço | Trocas usadas |
 |---|---:|---:|---:|---:|---:|---:|
-| random | 84.69 | 84.58 | 84.31 | 8.19% | 50.65% | 0.00 |
-| g1 | 87.76 | 87.33 | 86.92 | 22.87% | 28.36% | 0.00 |
-| bo3 | 87.46 | 87.53 | 87.15 | 24.24% | 28.44% | 0.00 |
-| bo5 | 87.46 | 87.48 | 87.17 | 24.27% | 28.44% | 0.00 |
-| composition | 87.33 | 87.45 | 87.14 | 24.19% | 29.38% | 0.00 |
-| reroll | 89.22 | 89.24 | 89.01 | 40.01% | 17.46% | 2.47 |
+| random | 84.63 | 84.50 | 84.25 | 7.60% | 50.75% | 0.00 |
+| g1 | 87.72 | 87.27 | 86.89 | 22.49% | 28.13% | 0.00 |
+| bo3 | 87.38 | 87.46 | 87.13 | 23.57% | 28.16% | 0.00 |
+| bo5 | 87.37 | 87.41 | 87.15 | 23.78% | 28.41% | 0.00 |
+| composition | 87.25 | 87.38 | 87.13 | 23.32% | 29.00% | 0.00 |
+| reroll | 88.97 | 89.08 | 88.87 | 39.37% | 17.65% | 2.44 |
 
-A escolha BO3/BO5 supera o aleatório. A heurística de composição não mostrou ganho robusto sobre BO5 nesta configuração; parte dos bônus satura e a avaliação parcial não antecipa todas as sinergias. Com 10.000 amostras por cenário, a taxa de título BO5 de 24.27% tem erro padrão aproximado de 0.43 ponto percentual; diferenças pequenas entre as heurísticas não sustentam uma superioridade robusta.
+A escolha BO3/BO5 supera o aleatório. A heurística de composição não mostrou ganho robusto sobre BO5 nesta configuração; parte dos bônus satura e a avaliação parcial não antecipa todas as sinergias. Com 10.000 amostras por cenário, a taxa de título BO5 de 23.78% tem erro padrão aproximado de 0.43 ponto percentual; diferenças pequenas entre as heurísticas não sustentam uma superioridade robusta.
 
 ### Valor das trocas
 
 | Limite | Título | Eliminação Suíço | Força BO5 | Uso médio |
 |---:|---:|---:|---:|---:|
-| 0 | 24.27% | 28.44% | 87.17 | 0.00 |
-| 1 | 30.41% | 23.99% | 87.90 | 0.96 |
-| 2 | 35.54% | 20.16% | 88.53 | 1.81 |
-| 3 | 40.01% | 17.46% | 89.01 | 2.47 |
-| 5 | 45.07% | 14.26% | 89.52 | 3.15 |
+| 0 | 23.78% | 28.41% | 87.15 | 0.00 |
+| 1 | 29.44% | 24.00% | 87.83 | 0.96 |
+| 2 | 35.02% | 20.31% | 88.41 | 1.80 |
+| 3 | 39.37% | 17.65% | 88.87 | 2.44 |
+| 5 | 44.37% | 14.70% | 89.36 | 3.12 |
 
-**Recomendação: manter três como padrão inicial de teste**, não como ótimo comprovado. O uso médio é 2.47; subir de três para cinco traz aproximadamente mais 5.06 pontos percentuais de títulos e reduz a dificuldade. Duas trocas são uma alternativa mais exigente (35.54%). Três preservam restrição real e oferecem agência, mas já elevam bastante o sucesso sobre a ausência de trocas.
+**Recomendação: manter três como padrão inicial de teste**, não como ótimo comprovado. O uso médio é 2.44; subir de três para cinco traz aproximadamente mais 5.00 pontos percentuais de títulos e reduz a dificuldade. Duas trocas são uma alternativa mais exigente (35.02%). Três preservam restrição real e oferecem agência, mas já elevam bastante o sucesso sobre a ausência de trocas.
 
 ## Dominância, distribuição e diversidade
 
 | Grupo | Média G1 | Média BO3 | Média BO5 |
 |---|---:|---:|---:|
-| year: 2015 | 84.78 | 84.57 | 84.04 |
-| year: 2017 | 85.83 | 85.63 | 85.29 |
-| year: 2019 | 85.25 | 85.40 | 85.02 |
-| year: 2020 | 85.72 | 85.50 | 85.20 |
-| year: 2022 | 84.44 | 84.55 | 84.19 |
-| year: 2023 | 84.80 | 84.56 | 84.25 |
-| year: 2024 | 85.46 | 84.96 | 84.59 |
-| year: 2025 | 83.79 | 83.79 | 83.71 |
-| region: LCK | 87.47 | 87.40 | 87.07 |
-| region: LPL | 86.49 | 86.19 | 85.83 |
-| region: LEC | 83.13 | 83.17 | 82.83 |
-| region: LCS | 82.34 | 82.14 | 81.86 |
-| region: LTA S | 80.40 | 80.67 | 80.56 |
-| region: LCP | 83.20 | 82.84 | 82.60 |
-| role: TOP | 84.86 | 84.77 | 84.48 |
-| role: JUNGLE | 85.04 | 84.84 | 84.50 |
-| role: MID | 85.01 | 84.83 | 84.52 |
-| role: ADC | 85.13 | 84.89 | 84.50 |
-| role: SUPPORT | 84.76 | 84.77 | 84.49 |
+| year: 2015 | 84.78 | 84.58 | 84.05 |
+| year: 2017 | 85.82 | 85.63 | 85.31 |
+| year: 2019 | 85.27 | 85.44 | 85.04 |
+| year: 2020 | 85.74 | 85.52 | 85.21 |
+| year: 2021 | 84.96 | 84.56 | 84.36 |
+| year: 2022 | 84.47 | 84.55 | 84.19 |
+| year: 2023 | 84.83 | 84.58 | 84.27 |
+| year: 2024 | 85.45 | 84.95 | 84.58 |
+| year: 2025 | 83.78 | 83.80 | 83.73 |
+| region: LCK | 87.50 | 87.36 | 87.04 |
+| region: LPL | 86.31 | 86.01 | 85.63 |
+| region: LEC | 83.16 | 83.13 | 82.85 |
+| region: LCS | 82.39 | 82.26 | 82.00 |
+| region: LTA S | 80.40 | 80.67 | 80.60 |
+| region: LCP | 83.33 | 82.89 | 82.65 |
+| role: TOP | 84.92 | 84.78 | 84.48 |
+| role: JUNGLE | 85.06 | 84.85 | 84.49 |
+| role: MID | 84.95 | 84.75 | 84.51 |
+| role: ADC | 85.19 | 84.90 | 84.50 |
+| role: SUPPORT | 84.70 | 84.73 | 84.49 |
 
-A diferença entre as médias anuais BO5 é de aproximadamente 1.59 ponto; entre LCK e LCS, 5.21. A média por posição fica perto de 84,5 como consequência da calibração. Isso controla inflação de role, mas **não elimina dominância regional**. Não foram adulterados dados para igualar regiões.
+A diferença entre as médias anuais BO5 é de aproximadamente 1.58 ponto; entre LCK e LCS, 5.04. A média por posição fica perto de 84,5 como consequência da calibração. Isso controla inflação de role, mas **não elimina dominância regional**. Não foram adulterados dados para igualar regiões.
 
 Dominância abaixo significa superar ou empatar G1, BO3 e BO5, sendo estritamente melhor em pelo menos um. Não inclui vantagem de composição contextual.
 
 | Jogador | Dominados no mesmo pool | Dominados de outras eras / mesma posição |
 |---|---:|---:|
-| uzi-2019-rng | 2 | 94 |
-| canyon-2020-dwg | 2 | 94 |
-| uzi-2017-rng | 2 | 93 |
-| rookie-2019-ig | 1 | 92 |
-| karsa-2020-tes | 3 | 92 |
-| 369-2022-jdg | 3 | 92 |
-| knight-2022-tes | 3 | 92 |
-| keria-2023-t1 | 3 | 92 |
-| tian-2019-fpx | 2 | 91 |
-| jackeylove-2020-tes | 3 | 91 |
+| uzi-2019-rng | 2 | 108 |
+| canyon-2020-dwg | 2 | 108 |
+| uzi-2017-rng | 2 | 107 |
+| karsa-2020-tes | 3 | 106 |
+| 369-2022-jdg | 3 | 106 |
+| keria-2023-t1 | 3 | 106 |
+| tian-2019-fpx | 2 | 105 |
+| rookie-2019-ig | 1 | 105 |
+| jackeylove-2020-tes | 3 | 105 |
+| knight-2022-tes | 3 | 105 |
 
 Casos como Uzi 2019 e Canyon 2020 tornam algumas ofertas fáceis de otimizar por rating. Os IDs dominados estão no JSON completo, assim como contagens de oferta/escolha por jogador, distribuições de força, composição e rating por role para cada política.
 
@@ -170,64 +175,66 @@ Casos como Uzi 2019 e Canyon 2020 tornam algumas ofertas fáceis de otimizar por
 
 | Região | Ofertas rejeitadas | Jogadores escolhidos |
 |---|---:|---:|
-| LCK | 0 | 18083 |
-| LCP | 0 | 785 |
-| LCS | 0 | 5369 |
-| LEC | 0 | 7237 |
-| LPL | 0 | 18510 |
-| LTA S | 0 | 16 |
-| [object Object] | 24659 | 0 |
+| LCK | 0 | 18494 |
+| LCP | 0 | 703 |
+| LCS | 0 | 5866 |
+| LEC | 0 | 7548 |
+| LPL | 0 | 17375 |
+| LTA S | 0 | 14 |
+| [object Object] | 24440 | 0 |
 
 | Ano | Ofertas rejeitadas | Jogadores escolhidos |
 |---|---:|---:|
-| 2015 | 2689 | 5470 |
-| 2017 | 2511 | 5403 |
-| 2019 | 3467 | 6470 |
-| 2020 | 2796 | 6853 |
-| 2022 | 3653 | 6856 |
-| 2023 | 4227 | 6620 |
-| 2024 | 2811 | 5702 |
-| 2025 | 2505 | 6626 |
+| 2015 | 2171 | 5343 |
+| 2017 | 2302 | 4697 |
+| 2019 | 2964 | 5747 |
+| 2020 | 2404 | 5721 |
+| 2021 | 2779 | 5857 |
+| 2022 | 3255 | 6047 |
+| 2023 | 3376 | 6167 |
+| 2024 | 2505 | 5140 |
+| 2025 | 2684 | 5281 |
 
-Trocas por tipo: {'region': 15011, 'players': 2692, 'year': 6956}. Os totais de rejeição de jogadores contam as três pessoas presentes em cada oferta rejeitada, não decisões explícitas sobre cada pessoa.
+Trocas por tipo: {'region': 15158, 'year': 6571, 'players': 2711}. Os totais de rejeição de jogadores contam as três pessoas presentes em cada oferta rejeitada, não decisões explícitas sobre cada pessoa.
 
-### Distribuição dos 2.675 ratings
+### Distribuição dos 3.025 ratings
 
 | Nota | Quantidade |
 |---:|---:|
 | 70 | 1 |
-| 72 | 5 |
-| 73 | 3 |
+| 71 | 1 |
+| 72 | 3 |
+| 73 | 4 |
 | 74 | 15 |
-| 75 | 33 |
-| 76 | 67 |
-| 77 | 109 |
-| 78 | 123 |
-| 79 | 120 |
-| 80 | 158 |
-| 81 | 174 |
-| 82 | 170 |
-| 83 | 198 |
-| 84 | 181 |
-| 85 | 178 |
-| 86 | 185 |
-| 87 | 185 |
-| 88 | 147 |
-| 89 | 143 |
-| 90 | 125 |
-| 91 | 114 |
-| 92 | 84 |
-| 93 | 73 |
-| 94 | 39 |
-| 95 | 19 |
-| 96 | 15 |
+| 75 | 41 |
+| 76 | 76 |
+| 77 | 131 |
+| 78 | 131 |
+| 79 | 147 |
+| 80 | 173 |
+| 81 | 194 |
+| 82 | 195 |
+| 83 | 216 |
+| 84 | 191 |
+| 85 | 209 |
+| 86 | 206 |
+| 87 | 216 |
+| 88 | 169 |
+| 89 | 165 |
+| 90 | 145 |
+| 91 | 129 |
+| 92 | 94 |
+| 93 | 80 |
+| 94 | 41 |
+| 95 | 24 |
+| 96 | 17 |
 | 97 | 7 |
 | 98 | 2 |
 | 99 | 2 |
 
-Em **10,000 drafts adicionais**: 6,594 sequências distintas de ano/região, 10,000 times finais únicos, 395 ofertas distintas. Foram 49,605 repetições de oferta em 50,000 posições: os pools pequenos tornam essa repetição inevitável, mesmo com grande variedade de equipes.
+Em **10,000 drafts adicionais**: 7,709 sequências distintas de ano/região, 10,000 times finais únicos, 445 ofertas distintas. Foram 49,555 repetições de oferta em 50,000 posições: os pools pequenos tornam essa repetição inevitável, mesmo com grande variedade de equipes.
 
-Média de **3.90 eras** e **3.15 regiões** por equipe. A frequência de cada PlayerVersion está no JSON; não há garantia artificial de cinco anos diferentes. A heurística com três trocas ficou em 3.90 eras e 2.86 regiões, indicando concentração regional ao otimizar.
+Média de **4.00 eras** e **3.14 regiões** por equipe. A frequência de cada PlayerVersion está no JSON; não há garantia artificial de cinco anos diferentes. A heurística com três trocas ficou em 4.01 eras e 2.88 regiões, indicando concentração regional ao otimizar.
 
 ## UX: inspeção, decisões e medidas
 
@@ -248,7 +255,7 @@ A escolha é um clique; a home explica SORTEIE / MONTE / DISPUTE. As transiçõe
 
 ## Arte e arquitetura
 
-596 pares campeão/ano usam ícones e splashes históricos extraídos de arquivos oficiais Riot/Data Dragon: **1192 arquivos**, com SHA-256, versão e origem no [manifesto](../data/research/multi-era/asset-manifest.json). Os retratos não validados não foram acrescentados; cada carta mostra o campeão G1. O arquivo e manifesto original de 2017 permanecem intactos. Os novos campeões receberam tags de arquétipo explícitas, que são hipóteses do motor e não estatísticas medidas. Essas tags amplas não modelam todos os reworks entre eras.
+671 pares campeão/ano usam ícones e splashes históricos extraídos de arquivos oficiais Riot/Data Dragon: **1342 arquivos**, com SHA-256, versão e origem no [manifesto](../data/research/multi-era/asset-manifest.json). Os retratos não validados não foram acrescentados; cada carta mostra o campeão G1. O arquivo e manifesto original de 2017 permanecem intactos. Os novos campeões receberam tags de arquétipo explícitas, que são hipóteses do motor e não estatísticas medidas. Essas tags amplas não modelam todos os reworks entre eras.
 
 O domínio de draft fica em `src/game/draft.ts`, separado do motor de partidas. `PlayerVersion` e `ChampionSlot` receberam dados opcionais de pesquisa para manter fixtures e adaptadores compatíveis. `DataRepository.load()` permanece a fronteira assíncrona para um futuro Supabase/Firestore. O site segue estático, pronto para build Vite em Vercel ou Firebase Hosting; nenhum backend, autenticação ou serviço externo foi criado.
 
@@ -268,7 +275,7 @@ npm run data:multi:report
 
 O build multi-era usa snapshots e JSONs do Data Dragon versionados, sem rede. Para pesquisa a partir do CSV: `npm run data:multi:download` e `python scripts/data/build_multi_era.py`. Inspeções por lote: `python scripts/data/build_multi_era.py --snapshot --year 2020 --region LPL`; geram `batch-preview.json` sem recalibrar a produção parcial. O rebuild global é deliberadamente feito sobre todas as edições.
 
-A auditoria valida cada associação, cinco campeões distintos, 155 pools, limites/calibração, hashes dos assets, evento principal e o congelamento de 2017. Os testes cobrem trocas impossíveis, saldo, contexto, reprodutibilidade do RNG, novas ofertas, escolha única, cinco posições, overflow mobile, BO1/BO3/BO5 e reprodução automática com pausa e KDA. `data:build`, `data:validate`, `data:simulate` e `data:report` continuam disponíveis para o estudo original de 2017.
+A auditoria valida cada associação, cinco campeões distintos, 175 pools, limites/calibração, hashes dos assets, evento principal e o congelamento de 2017. Os testes cobrem trocas impossíveis, saldo, contexto, reprodutibilidade do RNG, novas ofertas, escolha única, cinco posições, overflow mobile, BO1/BO3/BO5 e reprodução automática com pausa e KDA. `data:build`, `data:validate`, `data:simulate` e `data:report` continuam disponíveis para o estudo original de 2017.
 
 ## Riscos e próxima validação
 
@@ -276,7 +283,7 @@ A auditoria valida cada associação, cinco campeões distintos, 155 pools, limi
 2. As cinco evidências complementares chinesas de 2015 precisam de cobertura sazonal completa para aplicar a mesma seleção/normalização integral aos slots.
 3. Comparar estatísticas relativas de diferentes metas não prova capacidade absoluta entre eras. Mudanças de elenco e adversários afetam os scores.
 4. A estratégia de composição é simples e não demonstrou ganho mensurável; convém melhorar a busca antes de concluir que composição não importa.
-5. Há apenas 395 ofertas distintas: familiaridade pode tornar as escolhas repetitivas, apesar das equipes finais variadas.
+5. Há apenas 445 ofertas distintas: familiaridade pode tornar as escolhas repetitivas, apesar das equipes finais variadas.
 6. Não houve teste com usuários reais sobre compreensão, sensação de controle ou vontade de repetir. O próximo teste deve medir abandono, tempo de escolha, uso das trocas e repetição voluntária.
 7. O Suíço é a campanha individual do usuário, não uma tabela completa de todos os times. KDA/eventos são apresentação fictícia de um resultado probabilístico, sem combate, ouro ou itens.
 

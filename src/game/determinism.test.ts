@@ -46,14 +46,14 @@ describe('deterministic campaigns', () => {
   });
 
   it('keeps known end-to-end seeds for champion and Swiss elimination paths', () => {
-    const champion = runCampaign('00000000000000ly').tournament;
+    const champion = runCampaign('000000000000000x').tournament;
     expect(champion.outcome).toBe('Campeão mundial');
     expect(champion.history).toHaveLength(6);
-    expect(champion.history.flatMap((entry) => entry.games)).toHaveLength(13);
+    expect(champion.history.flatMap((entry) => entry.games)).toHaveLength(16);
 
-    const eliminated = runCampaign('0000000000000007').tournament;
+    const eliminated = runCampaign('0000000000000000').tournament;
     expect(eliminated.outcome).toBe('Eliminado no Suíço');
     expect(eliminated.history).toHaveLength(3);
-    expect(eliminated.history.flatMap((entry) => entry.games)).toHaveLength(4);
+    expect(eliminated.history.flatMap((entry) => entry.games)).toHaveLength(5);
   });
 });

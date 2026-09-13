@@ -22,7 +22,7 @@ assert player_index==[
     {key:p[key] for key in ['id','playerName','worldsYear','team']}
     for p in players
 ]
-crosschecks={2015:('Bang',83,12,107),2017:('Ruler',70,24,106),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71),2024:('Chovy',59,18,72),2025:('Viper',62,14,51)}
+crosschecks={2015:('Bang',83,12,107),2017:('Ruler',70,24,106),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2021:('ShowMaker',75,27,125),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71),2024:('Chovy',59,18,72),2025:('Viper',62,14,51)}
 checks=[]
 for year,(_,games,patch,_) in CONFIG.items():
     rows=json.loads((OUT/f'matches-{year}.json').read_text(encoding='utf-8'));coverage=json.loads((OUT/f'coverage-{year}.json').read_text(encoding='utf-8'))
@@ -32,6 +32,7 @@ for year,(_,games,patch,_) in CONFIG.items():
     assert len({r['gameid'] for r in worlds})==games
     assert all(n==10 for n in Counter(r['gameid'] for r in worlds).values())
     assert sum(r['result'] for r in worlds)==games*5
+    assert coverage.get('syntheticGameIds',0)==len({r['gameid'] for r in rows if r.get('gameidSynthetic')})
     data=json.loads((RAW/f'ddragon-{patch}.json').read_text(encoding='utf-8'))['data']
     evidence=json.loads((OUT/f'evidence-{year}.json').read_text(encoding='utf-8'))
     by_line={r['sourceLine']:r for r in rows}

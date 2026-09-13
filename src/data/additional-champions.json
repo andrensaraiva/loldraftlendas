@@ -438,6 +438,15 @@
       "FRONTLINE"
     ]
   },
+  "Tryndamere": {
+    "id": "Tryndamere",
+    "name": "Tryndamere",
+    "tags": [
+      "AD_DAMAGE",
+      "SPLIT_PUSH",
+      "SCALING"
+    ]
+  },
   "Quinn": {
     "id": "Quinn",
     "name": "Quinn",
@@ -486,6 +495,15 @@
   "Qiyana": {
     "id": "Qiyana",
     "name": "Qiyana",
+    "tags": [
+      "AD_DAMAGE",
+      "PICK",
+      "MOBILITY"
+    ]
+  },
+  "Talon": {
+    "id": "Talon",
+    "name": "Talon",
     "tags": [
       "AD_DAMAGE",
       "PICK",

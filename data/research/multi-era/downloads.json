@@ -26,6 +26,15 @@
     "accessedAt": "2026-09-07",
     "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
   },
+  "2021": {
+    "url": "https://www.kaggle.com/api/v1/datasets/download/arthur1511/lol-esports-2021?datasetVersionNumber=1",
+    "sha256": "ec725fd29ab869f70b92ecf193dbc04e5b90dfd2f88068613861fbf44cff01a2",
+    "bytes": 91999784,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-13",
+    "note": "The publisher's public Drive file (ID 1fzwTTz77hcnYjOnO9ONeoPrkWCoOSecA; advertised as 109,765,213 bytes) was quota-limited. This 91,999,784-byte Kaggle snapshot from 2022-02-01 is hash-pinned but not independently authenticated against that later Drive revision. Raw CSV ignored; normalized snapshots committed."
+  },
   "2022": {
     "url": "https://raw.githubusercontent.com/twodotone/finalLOL/main/data/csv/2022_LoL_esports_match_data_from_OraclesElixir.csv",
     "sha256": "cd14d6e3500c08e4a48d737144aa2d2dce72111f4dcf51028949a3b811832a93",

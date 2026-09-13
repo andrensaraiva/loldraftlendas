@@ -1470,6 +1470,426 @@
     "team": "FLY"
   },
   {
+    "id": "khan-2021-dk",
+    "playerName": "Khan",
+    "worldsYear": 2021,
+    "team": "DK"
+  },
+  {
+    "id": "canyon-2021-dk",
+    "playerName": "Canyon",
+    "worldsYear": 2021,
+    "team": "DK"
+  },
+  {
+    "id": "showmaker-2021-dk",
+    "playerName": "ShowMaker",
+    "worldsYear": 2021,
+    "team": "DK"
+  },
+  {
+    "id": "ghost-2021-dk",
+    "playerName": "Ghost",
+    "worldsYear": 2021,
+    "team": "DK"
+  },
+  {
+    "id": "beryl-2021-dk",
+    "playerName": "BeryL",
+    "worldsYear": 2021,
+    "team": "DK"
+  },
+  {
+    "id": "rascal-2021-gen",
+    "playerName": "Rascal",
+    "worldsYear": 2021,
+    "team": "GEN"
+  },
+  {
+    "id": "clid-2021-gen",
+    "playerName": "Clid",
+    "worldsYear": 2021,
+    "team": "GEN"
+  },
+  {
+    "id": "bdd-2021-gen",
+    "playerName": "Bdd",
+    "worldsYear": 2021,
+    "team": "GEN"
+  },
+  {
+    "id": "ruler-2021-gen",
+    "playerName": "Ruler",
+    "worldsYear": 2021,
+    "team": "GEN"
+  },
+  {
+    "id": "life-2021-gen",
+    "playerName": "Life",
+    "worldsYear": 2021,
+    "team": "GEN"
+  },
+  {
+    "id": "canna-2021-t1",
+    "playerName": "Canna",
+    "worldsYear": 2021,
+    "team": "T1"
+  },
+  {
+    "id": "oner-2021-t1",
+    "playerName": "Oner",
+    "worldsYear": 2021,
+    "team": "T1"
+  },
+  {
+    "id": "faker-2021-t1",
+    "playerName": "Faker",
+    "worldsYear": 2021,
+    "team": "T1"
+  },
+  {
+    "id": "gumayusi-2021-t1",
+    "playerName": "Gumayusi",
+    "worldsYear": 2021,
+    "team": "T1"
+  },
+  {
+    "id": "keria-2021-t1",
+    "playerName": "Keria",
+    "worldsYear": 2021,
+    "team": "T1"
+  },
+  {
+    "id": "morgan-2021-hle",
+    "playerName": "Morgan",
+    "worldsYear": 2021,
+    "team": "HLE"
+  },
+  {
+    "id": "willer-2021-hle",
+    "playerName": "Willer",
+    "worldsYear": 2021,
+    "team": "HLE"
+  },
+  {
+    "id": "chovy-2021-hle",
+    "playerName": "Chovy",
+    "worldsYear": 2021,
+    "team": "HLE"
+  },
+  {
+    "id": "deft-2021-hle",
+    "playerName": "Deft",
+    "worldsYear": 2021,
+    "team": "HLE"
+  },
+  {
+    "id": "vsta-2021-hle",
+    "playerName": "Vsta",
+    "worldsYear": 2021,
+    "team": "HLE"
+  },
+  {
+    "id": "flandre-2021-edg",
+    "playerName": "Flandre",
+    "worldsYear": 2021,
+    "team": "EDG"
+  },
+  {
+    "id": "jiejie-2021-edg",
+    "playerName": "Jiejie",
+    "worldsYear": 2021,
+    "team": "EDG"
+  },
+  {
+    "id": "scout-2021-edg",
+    "playerName": "Scout",
+    "worldsYear": 2021,
+    "team": "EDG"
+  },
+  {
+    "id": "viper-2021-edg",
+    "playerName": "Viper",
+    "worldsYear": 2021,
+    "team": "EDG"
+  },
+  {
+    "id": "meiko-2021-edg",
+    "playerName": "Meiko",
+    "worldsYear": 2021,
+    "team": "EDG"
+  },
+  {
+    "id": "nuguri-2021-fpx",
+    "playerName": "Nuguri",
+    "worldsYear": 2021,
+    "team": "FPX"
+  },
+  {
+    "id": "tian-2021-fpx",
+    "playerName": "Tian",
+    "worldsYear": 2021,
+    "team": "FPX"
+  },
+  {
+    "id": "doinb-2021-fpx",
+    "playerName": "Doinb",
+    "worldsYear": 2021,
+    "team": "FPX"
+  },
+  {
+    "id": "lwx-2021-fpx",
+    "playerName": "Lwx",
+    "worldsYear": 2021,
+    "team": "FPX"
+  },
+  {
+    "id": "crisp-2021-fpx",
+    "playerName": "Crisp",
+    "worldsYear": 2021,
+    "team": "FPX"
+  },
+  {
+    "id": "xiaohu-2021-rng",
+    "playerName": "Xiaohu",
+    "worldsYear": 2021,
+    "team": "RNG"
+  },
+  {
+    "id": "wei-2021-rng",
+    "playerName": "Wei",
+    "worldsYear": 2021,
+    "team": "RNG"
+  },
+  {
+    "id": "cryin-2021-rng",
+    "playerName": "Cryin",
+    "worldsYear": 2021,
+    "team": "RNG"
+  },
+  {
+    "id": "gala-2021-rng",
+    "playerName": "GALA",
+    "worldsYear": 2021,
+    "team": "RNG"
+  },
+  {
+    "id": "ming-2021-rng",
+    "playerName": "Ming",
+    "worldsYear": 2021,
+    "team": "RNG"
+  },
+  {
+    "id": "ale-2021-lng",
+    "playerName": "Ale",
+    "worldsYear": 2021,
+    "team": "LNG"
+  },
+  {
+    "id": "tarzan-2021-lng",
+    "playerName": "Tarzan",
+    "worldsYear": 2021,
+    "team": "LNG"
+  },
+  {
+    "id": "icon-2021-lng",
+    "playerName": "icon",
+    "worldsYear": 2021,
+    "team": "LNG"
+  },
+  {
+    "id": "light-2021-lng",
+    "playerName": "Light",
+    "worldsYear": 2021,
+    "team": "LNG"
+  },
+  {
+    "id": "iwandy-2021-lng",
+    "playerName": "Iwandy",
+    "worldsYear": 2021,
+    "team": "LNG"
+  },
+  {
+    "id": "armut-2021-mad",
+    "playerName": "Armut",
+    "worldsYear": 2021,
+    "team": "MAD"
+  },
+  {
+    "id": "elyoya-2021-mad",
+    "playerName": "Elyoya",
+    "worldsYear": 2021,
+    "team": "MAD"
+  },
+  {
+    "id": "humanoid-2021-mad",
+    "playerName": "Humanoid",
+    "worldsYear": 2021,
+    "team": "MAD"
+  },
+  {
+    "id": "carzzy-2021-mad",
+    "playerName": "Carzzy",
+    "worldsYear": 2021,
+    "team": "MAD"
+  },
+  {
+    "id": "kaiser-2021-mad",
+    "playerName": "Kaiser",
+    "worldsYear": 2021,
+    "team": "MAD"
+  },
+  {
+    "id": "adam-2021-fnc",
+    "playerName": "Adam",
+    "worldsYear": 2021,
+    "team": "FNC"
+  },
+  {
+    "id": "bwipo-2021-fnc",
+    "playerName": "Bwipo",
+    "worldsYear": 2021,
+    "team": "FNC"
+  },
+  {
+    "id": "nisqy-2021-fnc",
+    "playerName": "Nisqy",
+    "worldsYear": 2021,
+    "team": "FNC"
+  },
+  {
+    "id": "bean-2021-fnc",
+    "playerName": "BEAN",
+    "worldsYear": 2021,
+    "team": "FNC"
+  },
+  {
+    "id": "hylissang-2021-fnc",
+    "playerName": "Hylissang",
+    "worldsYear": 2021,
+    "team": "FNC"
+  },
+  {
+    "id": "odoamne-2021-rge",
+    "playerName": "Odoamne",
+    "worldsYear": 2021,
+    "team": "RGE"
+  },
+  {
+    "id": "inspired-2021-rge",
+    "playerName": "Inspired",
+    "worldsYear": 2021,
+    "team": "RGE"
+  },
+  {
+    "id": "larssen-2021-rge",
+    "playerName": "Larssen",
+    "worldsYear": 2021,
+    "team": "RGE"
+  },
+  {
+    "id": "hans sama-2021-rge",
+    "playerName": "Hans sama",
+    "worldsYear": 2021,
+    "team": "RGE"
+  },
+  {
+    "id": "trymbi-2021-rge",
+    "playerName": "Trymbi",
+    "worldsYear": 2021,
+    "team": "RGE"
+  },
+  {
+    "id": "ssumday-2021-100t",
+    "playerName": "Ssumday",
+    "worldsYear": 2021,
+    "team": "100T"
+  },
+  {
+    "id": "closer-2021-100t",
+    "playerName": "Closer",
+    "worldsYear": 2021,
+    "team": "100T"
+  },
+  {
+    "id": "abbedagge-2021-100t",
+    "playerName": "Abbedagge",
+    "worldsYear": 2021,
+    "team": "100T"
+  },
+  {
+    "id": "fbi-2021-100t",
+    "playerName": "FBI",
+    "worldsYear": 2021,
+    "team": "100T"
+  },
+  {
+    "id": "huhi-2021-100t",
+    "playerName": "huhi",
+    "worldsYear": 2021,
+    "team": "100T"
+  },
+  {
+    "id": "alphari-2021-tl",
+    "playerName": "Alphari",
+    "worldsYear": 2021,
+    "team": "TL"
+  },
+  {
+    "id": "santorin-2021-tl",
+    "playerName": "Santorin",
+    "worldsYear": 2021,
+    "team": "TL"
+  },
+  {
+    "id": "jensen-2021-tl",
+    "playerName": "Jensen",
+    "worldsYear": 2021,
+    "team": "TL"
+  },
+  {
+    "id": "tactical-2021-tl",
+    "playerName": "Tactical",
+    "worldsYear": 2021,
+    "team": "TL"
+  },
+  {
+    "id": "corejj-2021-tl",
+    "playerName": "CoreJJ",
+    "worldsYear": 2021,
+    "team": "TL"
+  },
+  {
+    "id": "fudge-2021-c9",
+    "playerName": "Fudge",
+    "worldsYear": 2021,
+    "team": "C9"
+  },
+  {
+    "id": "blaber-2021-c9",
+    "playerName": "Blaber",
+    "worldsYear": 2021,
+    "team": "C9"
+  },
+  {
+    "id": "perkz-2021-c9",
+    "playerName": "Perkz",
+    "worldsYear": 2021,
+    "team": "C9"
+  },
+  {
+    "id": "zven-2021-c9",
+    "playerName": "Zven",
+    "worldsYear": 2021,
+    "team": "C9"
+  },
+  {
+    "id": "vulcan-2021-c9",
+    "playerName": "Vulcan",
+    "worldsYear": 2021,
+    "team": "C9"
+  },
+  {
     "id": "doran-2022-gen",
     "playerName": "Doran",
     "worldsYear": 2022,

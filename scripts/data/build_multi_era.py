@@ -10,19 +10,20 @@ from build_worlds_2017 import ROOT, ROLES, NUMBERS, METRICS, WEIGHTS, aggregate,
 
 OUT = ROOT/'data/research/multi-era'
 RAW = OUT/'raw'
-VERSION = 'multi-era-v1.2.0'
-DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.2.0'
+VERSION = 'multi-era-v1.3.0'
+DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.3.0'
 CONFIG = {
  2015: ('10-01', 73, '5.18.1', {'LCK':['SK Telecom T1','ROX Tigers','KT Rolster'], 'LPL':['EDward Gaming','Invictus Gaming','LGD Gaming'], 'EU LCS':['Fnatic','Origen','H2k-Gaming'], 'NA LCS':['Cloud9','Counter Logic Gaming','Team SoloMid']}),
  2017: ('10-05', 80, '7.18.1', {'LCK':['SK Telecom T1','Samsung Galaxy','Longzhu Gaming'], 'LPL':['Royal Never Give Up','Team WE','EDward Gaming'], 'EU LCS':['Fnatic','G2 Esports','Misfits Gaming'], 'NA LCS':['Cloud9','Team SoloMid','Immortals']}),
  2019: ('10-12', 77, '9.19.1', {'LCK':['SK Telecom T1','Griffin','DAMWON Gaming'], 'LPL':['FunPlus Phoenix','Invictus Gaming','Royal Never Give Up'], 'LEC':['G2 Esports','Fnatic','Splyce'], 'LCS':['Team Liquid','Cloud9','Clutch Gaming']}),
  2020: ('10-03', 76, '10.19.1', {'LCK':['DAMWON Gaming','DRX','Gen.G'], 'LPL':['Top Esports','JD Gaming','Suning','LGD Gaming'], 'LEC':['G2 Esports','Fnatic','Rogue'], 'LCS':['Team SoloMid','Team Liquid','FlyQuest']}),
+ 2021: ('10-11', 83, '11.19.1', {'LCK':['DWG KIA','Gen.G','T1','Hanwha Life Esports'], 'LPL':['EDward Gaming','FunPlus Phoenix','Royal Never Give Up','LNG Esports'], 'LEC':['MAD Lions','Fnatic','Rogue'], 'LCS':['100 Thieves','Team Liquid','Cloud9']}),
  2022: ('10-07', 80, '12.18.1', {'LCK':['Gen.G','T1','Dplus Kia','DRX'], 'LPL':['JD Gaming','Top Esports','EDward Gaming','Royal Never Give Up'], 'LEC':['Rogue','G2 Esports','Fnatic'], 'LCS':['Cloud9','100 Thieves','Evil Geniuses']}),
  2023: ('10-19', 79, '13.19.1', {'LCK':['Gen.G','T1','KT Rolster','Dplus Kia'], 'LPL':['JD Gaming','Bilibili Gaming','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI','Team BDS'], 'LCS':['NRG','Cloud9','Team Liquid']}),
  2024: ('10-03', 82, '14.18.1', {'LCK':['Hanwha Life Esports','Gen.G','Dplus Kia','T1'], 'LPL':['Bilibili Gaming','Top Esports','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI'], 'LCS':['FlyQuest','Team Liquid']}),
  2025: ('10-15', 80, '15.20.1', {'LCK':['Gen.G','Hanwha Life Esports','KT Rolster','T1'], 'LPL':["Anyone's Legend",'Bilibili Gaming','Top Esports'], 'LEC':['G2 Esports','Movistar KOI','Fnatic'], 'LTA N':['FlyQuest','100 Thieves'], 'LTA S':['Vivo Keyd Stars'], 'LCP':['CTBC Flying Oyster','PSG Talon','Team Secret Whales']}),
 }
-SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE',"Anyone's Legend":'AL','Movistar KOI':'MKOI','Vivo Keyd Stars':'VKS','CTBC Flying Oyster':'CFO','PSG Talon':'PSG','Team Secret Whales':'TSW'}
+SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','DWG KIA':'DK','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions':'MAD','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE',"Anyone's Legend":'AL','Movistar KOI':'MKOI','Vivo Keyd Stars':'VKS','CTBC Flying Oyster':'CFO','PSG Talon':'PSG','Team Secret Whales':'TSW'}
 ALIASES = {(2015,'ROX Tigers'):'KOO Tigers', (2022,'Dplus Kia'):'DWG KIA', (2023,'MAD Lions KOI'):'MAD Lions'}
 
 def ingest(year, snapshot):
@@ -46,9 +47,13 @@ def ingest(year, snapshot):
             world=league in ('WCS','WLDs') and f'{year}-{start}'<=date<f'{year}-11-30'
             domestic=league in regions and date<f'{year}-{start}' and (year>=2025 or split in ('Summer','Spring','Winter',''))
             msi=league=='MSI' or league=='WCS' and f'{year}-05-01'<=date<f'{year}-06-01'
-            if not (world or domestic or msi):continue
+            academy=year==2021 and league in ('NLC','EM') and date<f'{year}-{start}'
+            if not (world or domestic or msi or academy):continue
             phase='WORLDS' if world else 'MSI' if msi else f'{league}_{split.upper() or "QUALIFIER"}'
-            row={k:r.get(k,'') for k in ['gameid','date','champion','side','patch','url']}
+            source_gameid=r.get('gameid','')
+            row={k:r.get(k,'') for k in ['date','champion','side','patch','url']}
+            row['gameid']=source_gameid or f'oe-{year}-{league}-{date}'
+            if not source_gameid:row['gameidSynthetic']=True
             row.update(playername=r.get('playername',r.get('player')),teamname=r.get('teamname',r.get('team')))
             if row['teamname']=='TSM':row['teamname']='Team SoloMid'
             row.update({k:float(r[k]) if r.get(k) not in ('',None) else None for k in NUMBERS})
@@ -115,10 +120,14 @@ def build_year(year, snapshot=False):
                 selected=sorted([k for k in by_champ if k[:4]==key],key=lambda k:(-champ_aggs[k]['games'],champ_aggs[k]['firstAppearance'],k[-1]))[:5]
                 selected.sort(key=lambda k:(champ_aggs[k]['firstAppearance'],k[-1]))
                 fallback_phases=[f'{league}_SUMMER',f'{league}_QUALIFIER','MSI',f'{league}_SPRING',f'{league}_WINTER']
+                fallback_teams={key[2]}
+                if year==2021 and player.casefold()=='bean':
+                    fallback_phases=['EM_SUMMER','NLC_SUMMER','EM_QUALIFIER','NLC_QUALIFIER','EM_SPRING','NLC_SPRING']+fallback_phases
+                    fallback_teams.add('Fnatic Rising')
                 if year>=2025:
                     fallback_phases=sorted({k[0].removesuffix(f'_{year}') for k in by_champ if k[1:4]==key[1:4] and k[0]!=f'WORLDS_{year}'},key=lambda phase:max(r['date'] for k,v in by_champ.items() if k[0]==f'{phase}_{year}' and k[1:4]==key[1:4] for r in v),reverse=True)
                 for phase in fallback_phases:
-                    fallback=[k for k in by_champ if k[0]==f'{phase}_{year}' and k[1:4]==key[1:4] and k[-1] not in {s[-1] for s in selected}]
+                    fallback=[k for k in by_champ if k[0]==f'{phase}_{year}' and k[1]==key[1] and k[2] in fallback_teams and k[3].casefold()==key[3].casefold() and k[-1] not in {s[-1] for s in selected}]
                     fallback.sort(key=lambda k:(-champ_aggs[k]['games'],-int(champ_aggs[k]['lastAppearance'][:10].replace('-','')),k[-1]))
                     selected+=fallback[:max(0,5-len(selected))]
                 supplements = json.loads((OUT/'season-supplement-2015.json').read_text(encoding='utf-8'))['players'].get(player,[]) if year==2015 and league=='LPL' else []
@@ -138,6 +147,7 @@ def build_year(year, snapshot=False):
                         fs=fp['championPool'][i-1];assert fs['championId']==cid,(pid,i,cid,fs)
                         hs=frozen_ev[fs['evidenceId']]['score']
                     evidence[eid]=dict(playerId=pid,championId=cid,historicalScore=hs,role=role,year=year,region=region,event=ck[0],stats=stats,confidenceScore=confidence,availableWeight=coverage,components=dict(A=A,B=B,C=C),firstAppearance=stats['firstAppearance'],sourceId=f'oe-{year}',sourceLines=[r['sourceLine'] for r in rs],methodVersion='worlds-2017-v1.0.0' if fp else VERSION)
+                    if ck[2]!=team:evidence[eid]['note']=f'Season fallback from {ck[2]} for the same player; Worlds team is {team}.'
                     season_name=ck[0].replace('_SUMMER_',' Summer ').replace('_SPRING_',' Spring ').replace('_QUALIFIER_',' Regional Qualifiers ').replace('_WINTER_',' Winter ').replace('MSI_','MSI ')
                     source_url='https://gol.gg/tournament/tournament-stats/'+urllib.parse.quote(season_name)+'/' if season else event_url(year)
                     slots.append(dict(game=i,championId=cid,rating=0,gameRating=0,historicalScore=hs,source='SEASON_DATA' if season else 'WORLDS_DATA',evidenceId=eid,stats=dict(games=stats['games'],winRate=stats['winRate'],kda=stats['kda'],confidence=confidence,event=ck[0],sourceUrl=source_url)))
@@ -151,7 +161,7 @@ def build_year(year, snapshot=False):
     write(OUT/f'evidence-{year}.json',evidence,True)
     write(OUT/f'rosters-{year}.json',rosters)
     write(OUT/f'normalization-{year}.json',dict(weights=WEIGHTS,baselines=[dict(event=k[0],role=k[1],metrics=v) for k,v in sorted(baselines.items())],offsets=[dict(event=k[0],role=k[1],champion=k[2],metric=k[3],offset=v) for k,v in sorted(offsets.items())]),True)
-    write(OUT/f'coverage-{year}.json',dict(players=len(players),slots=len(players)*5,missing=missing,worldsGames=CONFIG[year][1],matchesSha256=sha(OUT/f'matches-{year}.json'),missingMetrics={m:sum(r[m] is None for r in rows) for m in NUMBERS}))
+    write(OUT/f'coverage-{year}.json',dict(players=len(players),slots=len(players)*5,missing=missing,worldsGames=CONFIG[year][1],syntheticGameIds=len({r['gameid'] for r in rows if r.get('gameidSynthetic')}),matchesSha256=sha(OUT/f'matches-{year}.json'),missingMetrics={m:sum(r[m] is None for r in rows) for m in NUMBERS}))
     print(json.dumps({'year':year,'players':len(players),'missing':missing}),flush=True)
     return players
 

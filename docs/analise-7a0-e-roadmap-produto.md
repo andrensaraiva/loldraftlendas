@@ -22,7 +22,9 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 - ✅ **1.3 Explicação pré-jogo:** chance, forças, ratings médios, composição e bônus ativos estão visíveis antes do resultado.
 - ✅ **1.4 Feedback contextual:** cada rating G1–G5 pode ser contestado com motivo categorizado e nota curta; RLS/RPC e dashboard preservam somente o contexto histórico público.
 - ✅ **2.1 e 2.2 Seed e desafio:** seed persistida, save v2 com migração, reprodução por operação e link/código validado estão implementados.
+- ✅ **D1 Worlds 2021:** matches, rosters, evidências, assets, recalibração e gates foram concluídos no dataset `multi-era-v1.3.0`.
 - ⏭️ **Próximo pacote de produto:** 2.3, modo Almanaque com ratings ocultos durante o draft e revelação ao final.
+- ⏭️ **Próximo pacote de dados:** D3, backfill de 2018.
 - 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
 
 Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila atual precisa de duas trilhas: **confiabilidade/dados** e **produto/retenção**.
@@ -43,7 +45,7 @@ A listagem “7a0 - Futebol Draft de Lendas” no Google Play não foi tratada c
 
 O loop principal do 7a0 é curto: escolher formação, estilo e dificuldade, sortear seleção + edição de Copa, escolher um jogador elegível, completar onze posições e simular sete partidas. A meta memorável é o “7 a 0”: ser campeão vencendo os sete jogos sem sofrer gols.
 
-A página inicial anuncia atualmente **56 seleções, 302 elencos e 7.026 jogadores**. Algumas páginas institucionais ainda exibem contagens anteriores — 52 seleções e aproximadamente 5.700 jogadores —, sinal de deriva entre catálogo e conteúdo editorial. A comparação usa a contagem mais recente da home e não trata esses números como equivalentes às 535 versões de jogadores e aos 2.675 slots de campeão do Draft Lendas.
+A página inicial anuncia atualmente **56 seleções, 302 elencos e 7.026 jogadores**. Algumas páginas institucionais ainda exibem contagens anteriores — 52 seleções e aproximadamente 5.700 jogadores —, sinal de deriva entre catálogo e conteúdo editorial. A comparação usa a contagem mais recente da home e não trata esses números como equivalentes às 605 versões de jogadores e aos 3.025 slots de campeão do Draft Lendas.
 
 Além do modo solo, o site apresenta:
 
@@ -62,14 +64,14 @@ Essas funcionalidades não parecem ter sido todas necessárias para a viralizaç
 
 ## O que o público parece valorizar mais
 
-| Ordem | Sinal observado | Evidência pública | Confiança | Implicação para o Draft Lendas |
-|---:|---|---|---|---|
-| 1 | **Campanhas viram histórias para compartilhar** | Uma página de fórum contém repetidos links públicos `/r/...`, escalações, placares, provocações e relatos de vitórias/derrotas. No Reddit, a pergunta “como perdi com esse time?” sustenta boa parte da conversa. | Alta | O resultado precisa sair do navegador como card e convite, não terminar apenas no botão “Jogar novamente”. |
-| 2 | **Loop rápido e vontade de tentar de novo** | Cobertura relata várias tentativas na mesma viagem e mais partidas em casa; usuários dizem estar jogando havia uma hora ou há vários dias. | Alta | Preservar o modo rápido e reduzir atrito entre fim, compartilhamento, revanche e novo draft. |
-| 3 | **Nostalgia e combinações impossíveis entre eras** | Matérias e comentários citam Pelé, Messi, Maradona, Yashin e outros nomes como a fantasia central. O próprio posicionamento do produto começa por misturar gerações reais. | Alta | O Draft Lendas já entrega isso com jogadores de Worlds e deve destacar ainda mais ano, time, pool e confronto entre eras no card final. |
-| 4 | **Conhecimento e escolhas com consequência** | Jogadores discutem equilíbrio defensivo, utilidade em vez de maior overall, formação e dificuldade. O modo de força oculta é citado como mais interessante por quem já dominou o Clássico. | Média-alta | Criar modo Almanaque e uma decisão de plano de jogo, usando as tags de composição já existentes. |
-| 5 | **Acesso gratuito, imediato e móvel** | A cobertura destaca explicitamente jogar no navegador do celular ou computador, sem download. | Alta | Manter o início sem login; conta deve ser opcional e pedida somente quando oferecer histórico, ranking ou amigos. |
-| 6 | **Comparação em condições iguais** | O Desafio do Dia oficial usa a mesma mão e rankings; é uma proposta forte de retorno recorrente. Não foram encontrados dados públicos de uso que provem seu peso na viralização inicial. | Média | Primeiro validar desafios por seed entre amigos; só depois investir em calendário diário e ranking. |
+| Ordem | Sinal observado                                    | Evidência pública                                                                                                                                                                                                 | Confiança  | Implicação para o Draft Lendas                                                                                                          |
+| ----: | -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+|     1 | **Campanhas viram histórias para compartilhar**    | Uma página de fórum contém repetidos links públicos `/r/...`, escalações, placares, provocações e relatos de vitórias/derrotas. No Reddit, a pergunta “como perdi com esse time?” sustenta boa parte da conversa. | Alta       | O resultado precisa sair do navegador como card e convite, não terminar apenas no botão “Jogar novamente”.                              |
+|     2 | **Loop rápido e vontade de tentar de novo**        | Cobertura relata várias tentativas na mesma viagem e mais partidas em casa; usuários dizem estar jogando havia uma hora ou há vários dias.                                                                        | Alta       | Preservar o modo rápido e reduzir atrito entre fim, compartilhamento, revanche e novo draft.                                            |
+|     3 | **Nostalgia e combinações impossíveis entre eras** | Matérias e comentários citam Pelé, Messi, Maradona, Yashin e outros nomes como a fantasia central. O próprio posicionamento do produto começa por misturar gerações reais.                                        | Alta       | O Draft Lendas já entrega isso com jogadores de Worlds e deve destacar ainda mais ano, time, pool e confronto entre eras no card final. |
+|     4 | **Conhecimento e escolhas com consequência**       | Jogadores discutem equilíbrio defensivo, utilidade em vez de maior overall, formação e dificuldade. O modo de força oculta é citado como mais interessante por quem já dominou o Clássico.                        | Média-alta | Criar modo Almanaque e uma decisão de plano de jogo, usando as tags de composição já existentes.                                        |
+|     5 | **Acesso gratuito, imediato e móvel**              | A cobertura destaca explicitamente jogar no navegador do celular ou computador, sem download.                                                                                                                     | Alta       | Manter o início sem login; conta deve ser opcional e pedida somente quando oferecer histórico, ranking ou amigos.                       |
+|     6 | **Comparação em condições iguais**                 | O Desafio do Dia oficial usa a mesma mão e rankings; é uma proposta forte de retorno recorrente. Não foram encontrados dados públicos de uso que provem seu peso na viralização inicial.                          | Média      | Primeiro validar desafios por seed entre amigos; só depois investir em calendário diário e ranking.                                     |
 
 ### O ponto mais importante
 
@@ -99,24 +101,24 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 
 ## Comparação com o estado atual do Draft Lendas
 
-| Área | 7a0 | Draft Lendas hoje | Diagnóstico |
-|---|---|---|---|
-| Fantasia central | Misturar lendas de Copas e montar um XI | Misturar jogadores de oito Worlds e montar cinco posições com pools G1–G5 | **Paridade com identidade própria.** Os pools por jogo são uma diferenciação estratégica forte. |
-| Acesso | Gratuito, navegador, celular e solo sem conta | Frontend estático, responsivo e sem login de jogador | **Paridade.** Falta instalação como PWA. |
-| Draft | Um elenco sorteado por turno, formação e rerolls | Três candidatos por posição; ano, grupo regional e três trocas | **Vantagem de clareza e decisão imediata.** |
-| Cobertura histórica | 1950–2026, catálogo amplo e navegável | 2015, 2017, 2019, 2020 e 2022–2025; sete anos de 2011–2025 incompletos | **Lacuna de amplitude**, compensada por evidência e assets por patch. |
-| Dificuldade | Clássico e Almanaque | Ratings sempre visíveis | **Lacuna pequena e barata de validar.** |
-| Agência tática | Formação e estilo | Composição automática por tags; sistema de estilo foi deliberadamente deixado fora | **Lacuna relevante.** A fundação já existe nas tags `EARLY_GAME`, `TEAMFIGHT`, `SCALING`, `PICK` e `POKE`. |
-| Torneio | Sete jogos, placar e artilheiros | Suíço, BO1/BO3, playoffs BO5, modo detalhado/rápido, KDA e histórico | **Vantagem de profundidade narrativa.** |
-| Confiança no resultado | Ratings subjetivos; críticas públicas de aleatoriedade | Fórmula documentada, chance de 8%–92%, força e probabilidade no relatório | **Vantagem defensável**, ainda pouco exposta antes da partida. |
-| Compartilhamento | URLs de resultado usadas em fóruns e cartas compartilháveis | Open Graph genérico da home; nenhum card ou resultado compartilhável | **Maior lacuna imediata.** |
-| Desafio comum | Seed diária, arquivo e rankings | RNG injetável nos testes, mas campanha comum não possui seed pública | **Boa fundação técnica, produto ausente.** |
-| Retenção | Diário, histórico, artilharia e conquistas | Um save local da campanha atual e “Jogar novamente” | **Lacuna alta.** |
-| Social | Multiplayer local/online, amigos e salas | Nenhum modo social | **Lacuna alta, porém cara.** Não deve ser a primeira implementação. |
-| Conta | Opcional, magic link, perfil | Auth apenas para administradores; nenhum perfil de jogador | **Corretamente adiado** até existir valor persistente para o usuário. |
-| Exploração/SEO | Arquivo público por edição e seleção | Dados acessíveis dentro do draft e em diálogos; sem catálogo público | **Oportunidade média.** A pesquisa existente pode virar aquisição orgânica. |
-| Feedback de rating | Convite específico para contestar avaliação | Feedback geral Bom/Ok/Ruim ao fim e detalhes com fontes | **Quick win:** feedback contextual por jogador/campeão. |
-| Operação | Produto público com conteúdo atualizado continuamente | Supabase real e observação da CI ainda pendentes | **Bloqueador operacional para aprender com usuários reais.** |
+| Área                   | 7a0                                                         | Draft Lendas hoje                                                                  | Diagnóstico                                                                                                |
+| ---------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Fantasia central       | Misturar lendas de Copas e montar um XI                     | Misturar jogadores de nove Worlds e montar cinco posições com pools G1–G5          | **Paridade com identidade própria.** Os pools por jogo são uma diferenciação estratégica forte.            |
+| Acesso                 | Gratuito, navegador, celular e solo sem conta               | Frontend estático, responsivo e sem login de jogador                               | **Paridade.** Falta instalação como PWA.                                                                   |
+| Draft                  | Um elenco sorteado por turno, formação e rerolls            | Três candidatos por posição; ano, grupo regional e três trocas                     | **Vantagem de clareza e decisão imediata.**                                                                |
+| Cobertura histórica    | 1950–2026, catálogo amplo e navegável                       | 2015, 2017, 2019–2025; seis anos de 2011–2025 incompletos                          | **Lacuna de amplitude**, compensada por evidência e assets por patch.                                      |
+| Dificuldade            | Clássico e Almanaque                                        | Ratings sempre visíveis                                                            | **Lacuna pequena e barata de validar.**                                                                    |
+| Agência tática         | Formação e estilo                                           | Composição automática por tags; sistema de estilo foi deliberadamente deixado fora | **Lacuna relevante.** A fundação já existe nas tags `EARLY_GAME`, `TEAMFIGHT`, `SCALING`, `PICK` e `POKE`. |
+| Torneio                | Sete jogos, placar e artilheiros                            | Suíço, BO1/BO3, playoffs BO5, modo detalhado/rápido, KDA e histórico               | **Vantagem de profundidade narrativa.**                                                                    |
+| Confiança no resultado | Ratings subjetivos; críticas públicas de aleatoriedade      | Fórmula documentada, chance de 8%–92%, força e probabilidade no relatório          | **Vantagem defensável**, ainda pouco exposta antes da partida.                                             |
+| Compartilhamento       | URLs de resultado usadas em fóruns e cartas compartilháveis | Open Graph genérico da home; nenhum card ou resultado compartilhável               | **Maior lacuna imediata.**                                                                                 |
+| Desafio comum          | Seed diária, arquivo e rankings                             | RNG injetável nos testes, mas campanha comum não possui seed pública               | **Boa fundação técnica, produto ausente.**                                                                 |
+| Retenção               | Diário, histórico, artilharia e conquistas                  | Um save local da campanha atual e “Jogar novamente”                                | **Lacuna alta.**                                                                                           |
+| Social                 | Multiplayer local/online, amigos e salas                    | Nenhum modo social                                                                 | **Lacuna alta, porém cara.** Não deve ser a primeira implementação.                                        |
+| Conta                  | Opcional, magic link, perfil                                | Auth apenas para administradores; nenhum perfil de jogador                         | **Corretamente adiado** até existir valor persistente para o usuário.                                      |
+| Exploração/SEO         | Arquivo público por edição e seleção                        | Dados acessíveis dentro do draft e em diálogos; sem catálogo público               | **Oportunidade média.** A pesquisa existente pode virar aquisição orgânica.                                |
+| Feedback de rating     | Convite específico para contestar avaliação                 | Feedback geral Bom/Ok/Ruim ao fim e detalhes com fontes                            | **Quick win:** feedback contextual por jogador/campeão.                                                    |
+| Operação               | Produto público com conteúdo atualizado continuamente       | Supabase real e observação da CI ainda pendentes                                   | **Bloqueador operacional para aprender com usuários reais.**                                               |
 
 ## O que está faltando no projeto
 
@@ -124,7 +126,7 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 
 1. configurar um Supabase real, aplicar migrations, allowlist e variáveis de ambiente;
 2. observar a CI no GitHub após um push real;
-3. obter revisão externa independente para os oito anos validados;
+3. obter revisão externa independente para os nove anos validados;
 4. estabelecer baseline real do funil antes de avaliar novas funcionalidades.
 
 Sem o item 1, analytics e feedback ficam inativos fora do modo de demonstração. Sem baseline, é possível entregar uma função atraente sem saber se ela melhora conclusão, compartilhamento ou replay.
@@ -148,8 +150,8 @@ Sem o item 1, analytics e feedback ficam inativos fora do modo de demonstração
 
 ### Falta na cobertura histórica
 
-1. backfill de 2021, já definido como próximo pacote;
-2. 2011–2014, 2016 e 2018;
+1. backfill de 2018, definido como próximo pacote;
+2. 2011–2014 e 2016;
 3. recalibração global e versionamento a cada edição;
 4. revisão externa registrada antes de `PRODUCTION_READY`.
 
@@ -159,51 +161,51 @@ Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários c
 
 ### Agora — estabilizar e criar o ciclo de divulgação
 
-| Ordem | Item | Prioridade | Tamanho | Dependências | Critério de saída |
-|---:|---|---|---|---|---|
-| 0.1 | Ativar Supabase real e validar admin/analytics/feedback | P0 | M | Projeto Supabase e credenciais públicas | Funil e feedback aparecem no dashboard real; acesso não autorizado continua bloqueado. |
-| 0.2 | Executar e observar CI em push | P0 | S | Repositório remoto | Typecheck, unitários, dados, build e E2E verdes no GitHub Actions. |
-| 0.3 | Definir e registrar o primeiro processo de revisão externa | P0 | M | Revisor independente | Ao menos uma revisão reproduzível registrada; plano para os outros sete anos. |
-| 1.1 | **Card compartilhável da campanha** | P0 Produto | M | Nenhuma dependência de conta | Imagem/texto contém equipe, anos, resultado e recorde; Web Share quando disponível, download/copiar como fallback; sem PII. |
-| 1.2 | Instrumentar `share_started`, `share_completed`, `card_downloaded` e origem do convite | P0 Produto | S | 1.1 e analytics real | Dashboard separa exposição, tentativa e conclusão sem armazenar texto livre ou contato. |
-| 1.3 | Explicação pré-jogo de força e chance | P0 Produto | S–M | Motor atual | Jogador vê força média, composição, bônus ativos e probabilidade; E2E cobre mobile e teclado. |
-| 1.4 | Feedback contextual “Discorda deste rating?” | P1 | S–M | Endpoint/RLS novo | Feedback registra apenas IDs públicos, edição, slot e motivo categorizado; nota opcional limitada. |
+| Ordem | Item                                                                                   | Prioridade | Tamanho | Dependências                            | Critério de saída                                                                                                           |
+| ----: | -------------------------------------------------------------------------------------- | ---------- | ------- | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+|   0.1 | Ativar Supabase real e validar admin/analytics/feedback                                | P0         | M       | Projeto Supabase e credenciais públicas | Funil e feedback aparecem no dashboard real; acesso não autorizado continua bloqueado.                                      |
+|   0.2 | Executar e observar CI em push                                                         | P0         | S       | Repositório remoto                      | Typecheck, unitários, dados, build e E2E verdes no GitHub Actions.                                                          |
+|   0.3 | Definir e registrar o primeiro processo de revisão externa                             | P0         | M       | Revisor independente                    | Ao menos uma revisão reproduzível registrada; plano para os outros oito anos.                                               |
+|   1.1 | **Card compartilhável da campanha**                                                    | P0 Produto | M       | Nenhuma dependência de conta            | Imagem/texto contém equipe, anos, resultado e recorde; Web Share quando disponível, download/copiar como fallback; sem PII. |
+|   1.2 | Instrumentar `share_started`, `share_completed`, `card_downloaded` e origem do convite | P0 Produto | S       | 1.1 e analytics real                    | Dashboard separa exposição, tentativa e conclusão sem armazenar texto livre ou contato.                                     |
+|   1.3 | Explicação pré-jogo de força e chance                                                  | P0 Produto | S–M     | Motor atual                             | Jogador vê força média, composição, bônus ativos e probabilidade; E2E cobre mobile e teclado.                               |
+|   1.4 | Feedback contextual “Discorda deste rating?”                                           | P1         | S–M     | Endpoint/RLS novo                       | Feedback registra apenas IDs públicos, edição, slot e motivo categorizado; nota opcional limitada.                          |
 
 ### Em paralelo — continuar a trilha histórica
 
-| Ordem | Item | Prioridade | Tamanho | Observação |
-|---:|---|---|---|---|
-| D1 | Backfill completo de Worlds 2021 | P0 Dados | L | Não habilitar antes de matches, rosters, evidências, assets, recalibração, reprodução e gates passarem. |
-| D2 | Revisão externa dos oito anos validados | P0 Dados | L contínuo | Pode avançar independentemente da UI social. |
-| D3 | Backfill de 2018; depois 2016, 2014, 2013, 2012 e 2011 | P1 Dados | XL contínuo | Ordem posterior deve considerar disponibilidade/qualidade de fontes, não apenas cronologia. |
+| Ordem | Item                                                   | Prioridade | Tamanho     | Observação                                                                                  |
+| ----: | ------------------------------------------------------ | ---------- | ----------- | ------------------------------------------------------------------------------------------- |
+|    D1 | Backfill completo de Worlds 2021 — concluído           | P0 Dados   | L           | Matches, rosters, evidências, assets, recalibração, reprodução e gates passaram.            |
+|    D2 | Revisão externa dos nove anos validados                | P0 Dados   | L contínuo  | Pode avançar independentemente da UI social.                                                |
+|    D3 | Backfill de 2018; depois 2016, 2014, 2013, 2012 e 2011 | P1 Dados   | XL contínuo | Ordem posterior deve considerar disponibilidade/qualidade de fontes, não apenas cronologia. |
 
 ### Próximo — transformar compartilhamento em competição justa
 
-| Ordem | Item | Prioridade | Tamanho | Dependências | Critério de saída |
-|---:|---|---|---|---|---|
-| 2.1 | Gerador determinístico e seed persistida | P0 Produto | L | Atualização do save | A mesma seed + versão do dataset + regras + decisões do jogador reproduz ofertas, adversários e resultados; retomar não altera a sequência. |
-| 2.2 | **Desafiar com esta seed** | P0 Produto | M | 2.1 | Link/código abre a mesma configuração; resultado de cada participante continua pessoal e é marcado como não verificado. |
-| 2.3 | Modo Almanaque | P1 | S–M | Snapshot de regras da campanha | Ratings e detalhes numéricos ficam ocultos no draft e são revelados ao final; analytics compara conclusão e replay por modo. |
-| 2.4 | Plano de jogo: Agressão, Teamfight, Controle/Pick ou Escala | P1 | M–L | Rebalanceamento e simulação em massa | Escolha tem bônus explicado quando combina com as tags e penalidade limitada quando não combina; 100 mil campanhas recalibradas. |
-| 2.5 | Filtros de desafio por edição e grupo | P1 | M | Manifesto de elegibilidade atual | Nunca cria uma posição com menos de três candidatos; configuração fica no snapshot do save. |
+| Ordem | Item                                                        | Prioridade | Tamanho | Dependências                         | Critério de saída                                                                                                                           |
+| ----: | ----------------------------------------------------------- | ---------- | ------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- |
+|   2.1 | Gerador determinístico e seed persistida                    | P0 Produto | L       | Atualização do save                  | A mesma seed + versão do dataset + regras + decisões do jogador reproduz ofertas, adversários e resultados; retomar não altera a sequência. |
+|   2.2 | **Desafiar com esta seed**                                  | P0 Produto | M       | 2.1                                  | Link/código abre a mesma configuração; resultado de cada participante continua pessoal e é marcado como não verificado.                     |
+|   2.3 | Modo Almanaque                                              | P1         | S–M     | Snapshot de regras da campanha       | Ratings e detalhes numéricos ficam ocultos no draft e são revelados ao final; analytics compara conclusão e replay por modo.                |
+|   2.4 | Plano de jogo: Agressão, Teamfight, Controle/Pick ou Escala | P1         | M–L     | Rebalanceamento e simulação em massa | Escolha tem bônus explicado quando combina com as tags e penalidade limitada quando não combina; 100 mil campanhas recalibradas.            |
+|   2.5 | Filtros de desafio por edição e grupo                       | P1         | M       | Manifesto de elegibilidade atual     | Nunca cria uma posição com menos de três candidatos; configuração fica no snapshot do save.                                                 |
 
 ### Depois — retenção recorrente sem assumir risco competitivo cedo demais
 
-| Ordem | Item | Prioridade | Tamanho | Dependências | Critério de saída |
-|---:|---|---|---|---|---|
-| 3.1 | Desafio diário sem ranking | P1 | L | 2.1, configuração remota e relógio/ID de desafio | Mesma seed e regras para todos; arquivo recente; uma tentativa oficial local e tentativas amistosas separadas. |
-| 3.2 | PWA instalável e recuperação offline da campanha ativa | P1 | M | Política de cache e versionamento de assets | Manifesto, ícones, service worker, atualização segura e teste mobile. |
-| 3.3 | Arquivo público por edição, jogador e campeão | P2 | M–L | Estratégia de rotas/SEO | Páginas usam os chunks existentes, exibem fontes e entram no sitemap sem inflar o bundle inicial. |
-| 3.4 | Histórico local de campanhas e conquistas básicas | P2 | M | Modelo de armazenamento versionado | Guarda resumos limitados, oferece exportação/limpeza e não exige conta. |
+| Ordem | Item                                                   | Prioridade | Tamanho | Dependências                                     | Critério de saída                                                                                              |
+| ----: | ------------------------------------------------------ | ---------- | ------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+|   3.1 | Desafio diário sem ranking                             | P1         | L       | 2.1, configuração remota e relógio/ID de desafio | Mesma seed e regras para todos; arquivo recente; uma tentativa oficial local e tentativas amistosas separadas. |
+|   3.2 | PWA instalável e recuperação offline da campanha ativa | P1         | M       | Política de cache e versionamento de assets      | Manifesto, ícones, service worker, atualização segura e teste mobile.                                          |
+|   3.3 | Arquivo público por edição, jogador e campeão          | P2         | M–L     | Estratégia de rotas/SEO                          | Páginas usam os chunks existentes, exibem fontes e entram no sitemap sem inflar o bundle inicial.              |
+|   3.4 | Histórico local de campanhas e conquistas básicas      | P2         | M       | Modelo de armazenamento versionado               | Guarda resumos limitados, oferece exportação/limpeza e não exige conta.                                        |
 
 ### Mais tarde — somente após validar demanda e integridade
 
-| Ordem | Item | Prioridade | Tamanho | Por que esperar |
-|---:|---|---|---|---|
-| 4.1 | Perfil opcional por magic link e sincronização do histórico | P2 | XL | Exige Auth de jogadores, RLS, recuperação, exclusão de dados e política de privacidade ampliada. |
-| 4.2 | Ranking diário verificado | P2 | XL | O servidor precisa reproduzir ou validar escolhas/resultados; nunca confiar em um placar calculado apenas no navegador. |
-| 4.3 | Multiplayer assíncrono | P3 | XL | Salas, convites, reconexão, abandono, abuso e versionamento de estado aumentam muito o custo operacional. |
-| 4.4 | Multiplayer em tempo real | P3 | XL+ | Só faz sentido se desafios assíncronos provarem demanda social recorrente. |
+| Ordem | Item                                                        | Prioridade | Tamanho | Por que esperar                                                                                                         |
+| ----: | ----------------------------------------------------------- | ---------- | ------- | ----------------------------------------------------------------------------------------------------------------------- |
+|   4.1 | Perfil opcional por magic link e sincronização do histórico | P2         | XL      | Exige Auth de jogadores, RLS, recuperação, exclusão de dados e política de privacidade ampliada.                        |
+|   4.2 | Ranking diário verificado                                   | P2         | XL      | O servidor precisa reproduzir ou validar escolhas/resultados; nunca confiar em um placar calculado apenas no navegador. |
+|   4.3 | Multiplayer assíncrono                                      | P3         | XL      | Salas, convites, reconexão, abandono, abuso e versionamento de estado aumentam muito o custo operacional.               |
+|   4.4 | Multiplayer em tempo real                                   | P3         | XL+     | Só faz sentido se desafios assíncronos provarem demanda social recorrente.                                              |
 
 ## Como implementar o pacote recomendado
 
@@ -295,16 +297,16 @@ Metas numéricas devem ser definidas depois de uma semana de baseline real. Não
 
 ## Riscos a controlar
 
-| Risco | Controle proposto |
-|---|---|
-| Card bonito, mas sem conversão | Incluir convite/CTA, token de origem e medir campanha concluída pelo convidado. |
-| Seed quebrar após atualização de dados | Fixar versão do dataset e algoritmo; expirar desafios incompatíveis com mensagem clara. |
-| Save atual ser invalidado | Migrar quando possível; se não, avisar antes do deploy e preservar resumo exportável. |
-| Novo plano de jogo desbalancear o motor | Testes unitários, 100 mil campanhas, distribuição por plano e limites de probabilidade. |
-| Ranking receber resultados forjados | Recalcular no servidor a partir de escolhas e seed; RLS; idempotência por desafio/usuário. |
-| Analytics coletar informação indevida | Manter propriedades allowlisted, IDs aleatórios e nenhum e-mail/nome em eventos. |
-| Catálogo público inflar a home | Rotas e chunks sob demanda; gerar sitemap sem importar todos os anos no bundle inicial. |
-| Crescimento preceder revisão histórica | Manter rótulo “ratings estimados”, registrar revisão independente e não promover anos incompletos. |
+| Risco                                   | Controle proposto                                                                                  |
+| --------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Card bonito, mas sem conversão          | Incluir convite/CTA, token de origem e medir campanha concluída pelo convidado.                    |
+| Seed quebrar após atualização de dados  | Fixar versão do dataset e algoritmo; expirar desafios incompatíveis com mensagem clara.            |
+| Save atual ser invalidado               | Migrar quando possível; se não, avisar antes do deploy e preservar resumo exportável.              |
+| Novo plano de jogo desbalancear o motor | Testes unitários, 100 mil campanhas, distribuição por plano e limites de probabilidade.            |
+| Ranking receber resultados forjados     | Recalcular no servidor a partir de escolhas e seed; RLS; idempotência por desafio/usuário.         |
+| Analytics coletar informação indevida   | Manter propriedades allowlisted, IDs aleatórios e nenhum e-mail/nome em eventos.                   |
+| Catálogo público inflar a home          | Rotas e chunks sob demanda; gerar sitemap sem importar todos os anos no bundle inicial.            |
+| Crescimento preceder revisão histórica  | Manter rótulo “ratings estimados”, registrar revisão independente e não promover anos incompletos. |
 
 ## Fontes externas
 

@@ -64,6 +64,23 @@
     "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
   },
   {
+    "year": 2021,
+    "worldsGames": 83,
+    "player": "ShowMaker",
+    "observedKDA": [
+      75,
+      27,
+      125
+    ],
+    "independentKDA": [
+      75,
+      27,
+      125
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202021/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
     "year": 2022,
     "worldsGames": 80,
     "player": "Gumayusi",

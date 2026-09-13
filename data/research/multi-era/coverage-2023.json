@@ -3,6 +3,7 @@
   "slots": 375,
   "missing": [],
   "worldsGames": 79,
+  "syntheticGameIds": 0,
   "matchesSha256": "229618d54a08c389abb2b228eef706de783061d6e87cabbcb6988322998d3a1a",
   "missingMetrics": {
     "result": 0,
