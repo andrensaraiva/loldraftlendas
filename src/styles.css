@@ -75,6 +75,37 @@ button {
 .skip-link:focus {
   transform: translateY(0);
 }
+.pwa-status {
+  position: fixed;
+  z-index: 80;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  max-width: min(420px, calc(100vw - 36px));
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #41533a;
+  border-radius: 8px;
+  background: #121712;
+  padding: 8px;
+  box-shadow: 0 15px 40px #11181138;
+  color: white;
+}
+.pwa-status span,
+.pwa-status button {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  font-size: 10px;
+  font-weight: 700;
+}
+.pwa-status button {
+  border-radius: 5px;
+  background: var(--lime);
+  color: var(--ink);
+}
 .error-fallback {
   gap: 16px;
   padding: 24px;
@@ -2652,6 +2683,17 @@ main > section {
   }
 }
 @media (max-width: 540px) {
+  .pwa-status {
+    right: 12px;
+    bottom: 12px;
+    left: 12px;
+    max-width: none;
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .pwa-status button {
+    justify-content: center;
+  }
   .daily-challenge {
     margin-top: 20px;
   }

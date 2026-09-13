@@ -76,6 +76,7 @@ import type {
 import { AutoplayControls } from './components/AutoplayControls';
 import type { PlaybackSettings } from './components/AutoplayControls';
 import { CampaignShare } from './components/CampaignShare';
+import { PwaStatus } from './components/PwaStatus';
 import {
   advanceTournament,
   compositionBreakdown,
@@ -2428,6 +2429,7 @@ export default function App() {
           <a href="https://developer.riotgames.com/policies/general">Política oficial</a>.
         </p>
       </footer>
+      <PwaStatus />
       {help && (
         <HowTo
           close={() => setHelp(false)}

@@ -107,7 +107,7 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 | Área                   | 7a0                                                         | Draft Lendas hoje                                                                  | Diagnóstico                                                                                                |
 | ---------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | Fantasia central       | Misturar lendas de Copas e montar um XI                     | Misturar jogadores de nove Worlds e montar cinco posições com pools G1–G5          | **Paridade com identidade própria.** Os pools por jogo são uma diferenciação estratégica forte.            |
-| Acesso                 | Gratuito, navegador, celular e solo sem conta               | Frontend estático, responsivo e sem login de jogador                               | **Paridade.** Falta instalação como PWA.                                                                   |
+| Acesso                 | Gratuito, navegador, celular e solo sem conta               | Frontend estático, responsivo, instalável e sem login de jogador                   | **Paridade.** PWA e recuperação offline da campanha ativa concluídas.                                      |
 | Draft                  | Um elenco sorteado por turno, formação e rerolls            | Três candidatos por posição; ano, grupo regional e três trocas                     | **Vantagem de clareza e decisão imediata.**                                                                |
 | Cobertura histórica    | 1950–2026, catálogo amplo e navegável                       | 2015, 2017, 2019–2025; seis anos de 2011–2025 incompletos                          | **Lacuna de amplitude**, compensada por evidência e assets por patch.                                      |
 | Dificuldade            | Clássico e Almanaque                                        | Clássico e Almanaque com revelação final                                           | **Paridade implementada**, pendente de validação com usuários.                                             |
@@ -194,12 +194,12 @@ Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários c
 
 ### Depois — retenção recorrente sem assumir risco competitivo cedo demais
 
-| Ordem | Item                                                   | Prioridade | Tamanho | Dependências                                | Critério de saída                                                                                              |
-| ----: | ------------------------------------------------------ | ---------- | ------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-|   3.1 | Desafio diário sem ranking — concluído                 | P1         | L       | 2.1, configuração versionada e relógio/ID   | Mesma seed e regras para todos; arquivo recente; uma tentativa oficial local e tentativas amistosas separadas. |
-|   3.2 | PWA instalável e recuperação offline da campanha ativa | P1         | M       | Política de cache e versionamento de assets | Manifesto, ícones, service worker, atualização segura e teste mobile.                                          |
-|   3.3 | Arquivo público por edição, jogador e campeão          | P2         | M–L     | Estratégia de rotas/SEO                     | Páginas usam os chunks existentes, exibem fontes e entram no sitemap sem inflar o bundle inicial.              |
-|   3.4 | Histórico local de campanhas e conquistas básicas      | P2         | M       | Modelo de armazenamento versionado          | Guarda resumos limitados, oferece exportação/limpeza e não exige conta.                                        |
+| Ordem | Item                                              | Prioridade | Tamanho | Dependências                                | Critério de saída                                                                                              |
+| ----: | ------------------------------------------------- | ---------- | ------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+|   3.1 | Desafio diário sem ranking — concluído            | P1         | L       | 2.1, configuração versionada e relógio/ID   | Mesma seed e regras para todos; arquivo recente; uma tentativa oficial local e tentativas amistosas separadas. |
+|   3.2 | PWA instalável e recuperação offline — concluído  | P1         | M       | Política de cache e versionamento de assets | Manifesto, ícones, service worker, atualização segura e teste mobile.                                          |
+|   3.3 | Arquivo público por edição, jogador e campeão     | P2         | M–L     | Estratégia de rotas/SEO                     | Páginas usam os chunks existentes, exibem fontes e entram no sitemap sem inflar o bundle inicial.              |
+|   3.4 | Histórico local de campanhas e conquistas básicas | P2         | M       | Modelo de armazenamento versionado          | Guarda resumos limitados, oferece exportação/limpeza e não exige conta.                                        |
 
 ### Mais tarde — somente após validar demanda e integridade
 
@@ -286,7 +286,7 @@ Para o experimento social, acrescentar:
 - diferença de replay entre Clássico e Almanaque;
 - feedback negativo após zebras, separado por faixa de probabilidade.
 
-Metas numéricas devem ser definidas depois de uma semana de baseline real. Não há base local suficiente para inventar um benchmark confiável. A decisão de seguir para Desafio Diário deve depender de convites que geram partidas concluídas, não apenas de cliques no botão de compartilhar.
+Metas numéricas devem ser definidas depois de uma semana de baseline real. Não há base local suficiente para inventar um benchmark confiável. A decisão de evoluir o Desafio Diário para ranking verificado deve depender de partidas oficiais concluídas, não apenas de aberturas do card.
 
 ## O que não copiar agora
 

@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.10 e a expansão da Fase 4. A branch `main` remota contém os checkpoints separados de planos, filtros e Desafio Diário.
+Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.11 e a expansão da Fase 4. A branch `main` remota contém checkpoints separados de planos, filtros, Desafio Diário e PWA.
 
 ## Objetivo Preservado
 
@@ -135,6 +135,14 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - Eventos `daily_opened`, `daily_started` e `daily_completed` são anônimos e allowlisted. A migration preparada acrescenta os agregados de abertura, oficiais iniciadas/concluídas e amistosas ao dashboard.
 - Relógio, storage e gerador de ID são injetáveis nos testes. O E2E verifica a tentativa oficial, a reentrada e o arquivo em desktop e mobile.
 
+### Fase 3.11: PWA e Recuperação Offline
+
+- `manifest.webmanifest` define identidade estável, janela standalone e ícones PNG de 192/512 px rasterizados de forma reproduzível a partir do favicon vetorial aprovado.
+- O service worker usa navegação network-first e assets cache-first, limita o cache de runtime e remove versões antigas. A página mostra instalação, estado offline e atualização disponível.
+- Um worker novo permanece em espera até a confirmação **Atualizar com segurança**, evitando trocar código sob uma campanha aberta. Vercel e Firebase enviam `sw.js` com `no-cache`.
+- `/admin`, endpoints REST/Auth, origens externas e requests com `Authorization` ou `apikey` são network-only e nunca entram no Cache Storage.
+- O E2E inicia um draft, desliga a rede, recarrega e retoma as três ofertas salvas em desktop e mobile; também valida manifesto, ícones e exclusões privadas.
+
 ### Fase 4: Cobertura Histórica e Readiness
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
@@ -147,7 +155,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O aviso vigente da Riot foi conferido na General Policy oficial, registrado no inventário e exibido no rodapé público. Isso não representa aconselhamento jurídico nem aprovação da Riot.
 - As partes específicas de League of Legends e os limites reais de reutilização do motor estão em [game-domain-boundaries.md](game-domain-boundaries.md).
 - A CI passa a rejeitar inventário ou relatório de readiness desatualizados.
-- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.10, o bundle inicial permanece abaixo do limite de 500 kB, sem aviso de chunk excessivo.
+- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.11, o bundle inicial ficou em 379,17 kB (102,15 kB gzip), sem aviso de chunk acima de 500 kB.
 
 ## Estado de Validação
 
@@ -162,7 +170,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 80 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; a calibração de planos executou 100 mil campanhas; o inventário de readiness 2011–2025 está reproduzível; 33 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 376,61 kB (101,39 kB gzip), sem aviso de chunk acima de 500 kB.
+Resultados registrados: 80 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; a calibração de planos executou 100 mil campanhas; o inventário de readiness 2011–2025 está reproduzível; 37 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 379,17 kB (102,15 kB gzip), sem aviso de chunk acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -189,11 +197,11 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 - Recalibrar toda a população ao adicionar uma edição e versionar o dataset; não misturar ratings produzidos por populações diferentes.
 - Submeter os nove anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
 
-### Próxima Entrega de Produto: PWA 3.2
+### Próxima Entrega de Produto: Arquivo Público 3.3
 
-- Adicionar manifesto, ícones instaláveis e service worker com atualização segura.
-- Recuperar a campanha ativa offline sem cachear respostas privadas do admin ou Supabase.
-- Validar instalação, fallback offline e atualização em viewport mobile.
+- Criar rotas públicas por edição, jogador e campeão, usando os chunks anuais já existentes.
+- Exibir fontes e contexto editorial sem incluir o dataset completo no bundle inicial.
+- Gerar sitemap das rotas estáveis e validar metadados/links em desktop e mobile.
 
 ## Comandos de Trabalho
 

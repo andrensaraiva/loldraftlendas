@@ -37,6 +37,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Quatro planos persistentes escolhidos após o draft: **Agressão**, **Teamfight**, **Controle/Pick** e **Escala**. As tags ativas e o efeito limitado de `−1,0` a `+1,5` aparecem na composição e na prévia da partida.
 - Filtros opcionais na home restringem o draft e o futuro desafio por edição e grupo regional. Combinações vazias são bloqueadas e cada contexto do manifesto preserva três candidatos por posição.
 - Desafio Diário no modo Almanaque com seed e regras iguais para todos, calendário de Brasília e arquivo dos sete dias recentes. A primeira entrada do dia é marcada localmente como oficial; as demais e todo o arquivo são amistosos, sem ranking ou conta.
+- PWA instalável com ícones 192/512, manifesto e service worker. A campanha ativa pode ser retomada offline depois de carregada; navegação e assets usam caches separados, enquanto `/admin`, Supabase e requests com credenciais ficam sempre fora deles. Atualizações do worker só assumem o controle após confirmação.
 - 605 versões pesquisadas: Worlds 2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024 e 2025. Regiões canônicas e grupos de draft são separados: Coreia, China, Europa, América do Norte e Outras Regiões, com fusão determinística quando uma cobertura anual não tiver três candidatos por posição. Em 2024 e 2025, Europa e América do Norte formam um grupo conjunto; em 2025, LCP e LTA Sul formam Outras Regiões. Veja [a regra de agrupamento](docs/draft-region-grouping.md).
 - Cada posição mostra exatamente três candidatos válidos do ano/grupo sorteado e prioriza combinações de times distintos.
 - Três trocas compartilhadas por draft: ano, região ou jogadores. Ações impossíveis não gastam saldo. Configuração em `src/game/draft.ts`.
@@ -102,6 +103,7 @@ src/
     AutoplayControls.tsx # Modos, velocidade e pausa
     CampaignShare.tsx    # Web Share, download e fallback de cópia
     MatchReport.tsx      # Acontecimentos, KDA e linha do tempo
+    PwaStatus.tsx        # Instalação, estado offline e atualização segura
     ResearchDialog.tsx   # Evidência histórica e método de rating
   App.tsx          # Telas e interações
   styles.css       # Identidade visual e responsividade
@@ -145,6 +147,7 @@ npm run data:multi:reproduce # Reconstrução byte a byte
 npm run data:multi:report    # Relatório multi-era a partir das medições
 npm run data:readiness:build # Regera o inventário de cobertura 2011–2025
 npm run data:readiness:validate # Falha se inventário ou relatório estiverem desatualizados
+npm run pwa:icons          # Rasteriza o favicon aprovado nos tamanhos 192 e 512
 ```
 
 Para baixar os CSVs de pesquisa: `npm run data:multi:download`. Para inspecionar um lote: `python scripts/data/build_multi_era.py --snapshot --year 2020 --region LPL`. O preview não substitui a produção. O limite de trocas fica em `DRAFT_CONFIG.exchanges`; a simulação aceita `DRAFT_SAMPLES` e `EXCHANGE_GAIN_THRESHOLD`.

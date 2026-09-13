@@ -4,6 +4,7 @@ import App from './App';
 import { AppErrorBoundary } from './components/AppErrorBoundary';
 import { clearCampaign } from './game/campaign';
 import { applyRouteMetadata } from './seo';
+import { registerPwa } from './pwa';
 import '@fontsource/barlow-condensed/latin-600.css';
 import '@fontsource/barlow-condensed/latin-700.css';
 import '@fontsource/barlow-condensed/latin-800.css';
@@ -18,6 +19,7 @@ import './components/draft.css';
 const AdminApp = lazy(() => import('./admin/AdminApp'));
 const isAdmin = window.location.pathname.replace(/\/+$/, '') === '/admin';
 applyRouteMetadata(window.location.pathname);
+if (!isAdmin) registerPwa();
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <AppErrorBoundary clearSavedCampaign={isAdmin ? undefined : clearCampaign}>

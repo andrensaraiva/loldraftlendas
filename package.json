@@ -22,7 +22,8 @@
     "data:multi:reproduce": "python scripts/data/verify_multi_reproducibility.py",
     "data:plans:simulate": "node scripts/data/simulate-game-plans.mjs",
     "data:readiness:build": "python scripts/data/build_readiness.py",
-    "data:readiness:validate": "python scripts/data/build_readiness.py --check"
+    "data:readiness:validate": "python scripts/data/build_readiness.py --check",
+    "pwa:icons": "node scripts/generate-pwa-icons.mjs"
   },
   "keywords": [],
   "author": "",
