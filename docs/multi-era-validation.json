@@ -1,8 +1,8 @@
 {
   "verifiedAt": "2026-09-13",
-  "unitTests": { "passed": 82, "files": 19 },
+  "unitTests": { "passed": 87, "files": 20 },
   "browserTests": {
-    "passed": 43,
+    "passed": 45,
     "skipped": 1,
     "projects": ["desktop", "mobile"],
     "browser": "Playwright Chromium",
@@ -10,8 +10,8 @@
   },
   "productionBuild": {
     "status": "passed",
-    "initialBundleKb": 379.74,
-    "initialBundleGzipKb": 102.3
+    "initialBundleKb": 385.62,
+    "initialBundleGzipKb": 103.77
   },
   "historicalAudit": {
     "players": 605,

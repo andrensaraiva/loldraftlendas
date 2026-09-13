@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.12 e a expansão da Fase 4. A branch `main` remota contém checkpoints separados de planos, filtros, Desafio Diário, PWA e arquivo público.
+Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13 e a expansão da Fase 4. A branch `main` remota contém checkpoints separados de planos, filtros, Desafio Diário, PWA, arquivo público e histórico local.
 
 ## Objetivo Preservado
 
@@ -151,6 +151,14 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O sitemap passou a publicar 453 URLs estáveis. Título, descrição, canonical e Open Graph são atualizados por rota, mantendo `/admin` fora do índice.
 - A CI rejeita o índice desatualizado. Testes cobrem busca, rotas, metadados, fontes, overflow e requests anuais em desktop/mobile.
 
+### Fase 3.13: Histórico Local e Conquistas
+
+- Cada campanha concluída gera um resumo versionado no armazenamento local, separado do save ativo e limitado às 30 entradas mais recentes.
+- O resumo preserva resultado, placar, origem, modo, plano e as cinco escolhas, mas não armazena seed, e-mail, texto livre ou identificador remoto.
+- A home mostra as cinco campanhas mais recentes e seis conquistas reproduzíveis, sempre derivadas dos resumos em vez de flags mutáveis.
+- O jogador pode exportar um JSON versionado ou apagar todo o histórico após uma confirmação explícita. Falhas e formatos antigos de storage nunca bloqueiam o jogo.
+- Testes unitários cobrem deduplicação, limite, conquistas, privacidade, exportação e dados inválidos; E2E cobre visualização, download real e limpeza em desktop/mobile.
+
 ### Fase 4: Cobertura Histórica e Readiness
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
@@ -163,7 +171,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O aviso vigente da Riot foi conferido na General Policy oficial, registrado no inventário e exibido no rodapé público. Isso não representa aconselhamento jurídico nem aprovação da Riot.
 - As partes específicas de League of Legends e os limites reais de reutilização do motor estão em [game-domain-boundaries.md](game-domain-boundaries.md).
 - A CI passa a rejeitar inventário ou relatório de readiness desatualizados.
-- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.12, o bundle inicial ficou em 379,74 kB (102,30 kB gzip). O arquivo ficou isolado em 31,48 kB (7,94 kB gzip), sem aviso de chunk acima de 500 kB.
+- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.13, o bundle inicial ficou em 385,62 kB (103,77 kB gzip). O arquivo ficou isolado em 31,48 kB (7,94 kB gzip), sem aviso de chunk acima de 500 kB.
 
 ## Estado de Validação
 
@@ -178,7 +186,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 82 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; o índice público cobre 9 edições, 285 jogadores, 157 campeões e 453 URLs de sitemap; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; a calibração de planos executou 100 mil campanhas; o inventário de readiness 2011–2025 está reproduzível; 43 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 379,74 kB (102,30 kB gzip), sem aviso de chunk acima de 500 kB.
+Resultados registrados: 87 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; o índice público cobre 9 edições, 285 jogadores, 157 campeões e 453 URLs de sitemap; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; a calibração de planos executou 100 mil campanhas; o inventário de readiness 2011–2025 está reproduzível; 45 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 385,62 kB (103,77 kB gzip), sem aviso de chunk acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -205,11 +213,11 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 - Recalibrar toda a população ao adicionar uma edição e versionar o dataset; não misturar ratings produzidos por populações diferentes.
 - Submeter os nove anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
 
-### Próxima Entrega de Produto: Histórico Local 3.4
+### Próxima Entrega de Produto: Perfil Opcional 4.1 (aguardando Supabase)
 
-- Salvar resumos limitados de campanhas concluídas, sem dados pessoais ou conta.
-- Permitir exportação JSON e limpeza explícita do histórico local.
-- Criar conquistas básicas reproduzíveis a partir dos resumos e validar migração/limites do storage.
+- As entregas de produto previstas que funcionam integralmente sem backend, até o Histórico Local 3.4, estão concluídas.
+- A próxima fase cria perfil opcional por magic link e sincronização do histórico; ela exige Auth, RLS, recuperação e exclusão de dados no Supabase real.
+- Não iniciar ranking verificado ou multiplayer antes de validar a demanda pelos desafios e definir a validação autoritativa dos resultados no servidor.
 
 ## Comandos de Trabalho
 

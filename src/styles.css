@@ -515,6 +515,137 @@ main > section {
   color: var(--ink);
   font-size: 10px;
 }
+.local-history {
+  max-width: 520px;
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #ffffffa8;
+}
+.local-history summary {
+  display: flex;
+  min-height: 52px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 13px;
+  cursor: pointer;
+  list-style: none;
+}
+.local-history summary::-webkit-details-marker {
+  display: none;
+}
+.local-history summary > span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.local-history summary b {
+  font: 700 15px var(--display);
+}
+.local-history summary small {
+  color: var(--muted);
+  font-size: 8px;
+}
+.local-history-body {
+  border-top: 1px solid var(--line);
+  padding: 13px;
+}
+.local-history-body > p {
+  color: var(--muted);
+  font-size: 9px;
+}
+.history-campaigns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+.history-campaigns > div {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 8px;
+}
+.history-campaigns span,
+.history-campaigns small {
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 7px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.history-campaigns b {
+  margin: 2px 0;
+  font: 700 14px var(--display);
+}
+.history-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 9px;
+}
+.history-achievements span {
+  border-radius: 20px;
+  background: #edf8e3;
+  padding: 5px 8px;
+  color: var(--green);
+  font-size: 7px;
+  font-weight: 800;
+}
+.history-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+}
+.history-actions button {
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.result-achievements {
+  max-width: 720px;
+  margin: 24px auto 0;
+}
+.result-achievements > span {
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.result-achievements > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 8px;
+}
+.result-achievements article {
+  display: flex;
+  min-width: 150px;
+  flex: 1;
+  flex-direction: column;
+  border: 1px solid #b9d6a5;
+  border-radius: 6px;
+  background: #f3faed;
+  padding: 10px;
+  text-align: left;
+}
+.result-achievements b {
+  font: 700 15px var(--display);
+}
+.result-achievements small {
+  color: var(--muted);
+  font-size: 8px;
+}
 .game-mode-picker {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2711,6 +2842,12 @@ main > section {
   }
   .daily-archive > div {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .history-campaigns {
+    grid-template-columns: 1fr;
+  }
+  .history-actions button {
+    min-height: 44px;
   }
   .challenge-filter-options.years {
     grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -84,6 +84,15 @@ test('Almanac hides numeric guidance and reveals it only after the campaign', as
   await expect(page.getByRole('heading', { level: 1 })).toContainText('CAMPEÃO', {
     timeout: 25000,
   });
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const value = localStorage.getItem('draft-lendas.history');
+        return value ? JSON.parse(value).campaigns?.[0]?.outcome : null;
+      }),
+    )
+    .toBe('Campeão mundial');
+  await expect(page.locator('.result-achievements')).toContainText('Lendas mundiais');
   await expect(page.locator('.almanac-reveal')).toBeVisible();
   await expect(page.locator('.almanac-reveal .comp-art b')).not.toHaveText(Array(5).fill('?'));
   await expect(page.locator('.almanac-reveal .composition-scores')).toBeVisible();
@@ -185,6 +194,14 @@ test('quick mode eliminates after three Swiss losses and preserves every game', 
   await expect(page.locator('.campaign-series')).toHaveCount(3);
   await expect(page.locator('.history-games button')).toHaveCount(5);
   await expect(page.locator('.history-games button.loss')).toHaveCount(4);
+  await expect
+    .poll(() =>
+      page.evaluate(() => {
+        const value = localStorage.getItem('draft-lendas.history');
+        return value ? JSON.parse(value).campaigns?.[0]?.outcome : null;
+      }),
+    )
+    .toBe('Eliminado no Suíço');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 test('detailed playback updates KDA, pauses, changes speed/mode and retains the same result', async ({

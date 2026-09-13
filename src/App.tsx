@@ -30,13 +30,27 @@ import {
 } from './game/daily';
 import type { DailyAttemptKind, DailyChallenge } from './game/daily';
 import {
+  achievementsForCampaign,
+  campaignAchievements,
+  clearCampaignHistory,
+  exportCampaignHistory,
+  loadCampaignHistory,
+  recordCampaignSummary,
+} from './game/history';
+import type { CampaignSummary } from './game/history';
+import {
   defaultDraftAvailability,
   loadPublicProductConfig,
   safeDraftAvailability,
 } from './game/product-config';
 import type { DraftAvailability } from './game/draft';
 import { canonicalRegionFor } from './game/regions';
-import { CAMPAIGN_RANDOM_VERSION, campaignRandom, createCampaignSeed } from './game/random';
+import {
+  CAMPAIGN_RANDOM_VERSION,
+  campaignRandom,
+  campaignSeedFromText,
+  createCampaignSeed,
+} from './game/random';
 import { gameModeLabel } from './game/mode';
 import type { GameMode } from './game/mode';
 import { GAME_PLANS, GAME_PLAN_TAG_LABELS, gamePlanLabel } from './game/plan';
@@ -50,8 +64,10 @@ import {
   Check,
   CircleHelp,
   Flag,
+  History,
   Menu,
   RotateCcw,
+  Trash2,
   Shield,
   Sparkles,
   Swords,
@@ -215,6 +231,76 @@ function DailyChallengePanel({
         </div>
       </details>
     </section>
+  );
+}
+
+function LocalHistoryPanel({ revision, changed }: { revision: number; changed: () => void }) {
+  const history = loadCampaignHistory();
+  const achievements = campaignAchievements(history);
+  void revision;
+
+  function downloadHistory() {
+    const blob = new Blob([exportCampaignHistory(history)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = url;
+    anchor.download = `draft-lendas-historico-${new Date().toISOString().slice(0, 10)}.json`;
+    anchor.click();
+    URL.revokeObjectURL(url);
+  }
+
+  return (
+    <details className="local-history">
+      <summary>
+        <span>
+          <History size={18} />
+          <b>Seu histórico local</b>
+        </span>
+        <small>
+          {history.length} {history.length === 1 ? 'campanha' : 'campanhas'} · {achievements.length}{' '}
+          {achievements.length === 1 ? 'conquista' : 'conquistas'}
+        </small>
+      </summary>
+      <div className="local-history-body">
+        {!history.length ? (
+          <p>Conclua uma campanha para começar. Nada é enviado ou sincronizado.</p>
+        ) : (
+          <>
+            <div className="history-campaigns">
+              {history.slice(0, 5).map((campaign) => (
+                <div key={campaign.id}>
+                  <span>{new Date(campaign.completedAt).toLocaleDateString('pt-BR')}</span>
+                  <b>{campaign.outcome}</b>
+                  <small>
+                    {campaign.wins}V · {campaign.losses}D ·{' '}
+                    {campaign.team.map((p) => p.worldsYear).join(' / ')}
+                  </small>
+                </div>
+              ))}
+            </div>
+            <div className="history-achievements" aria-label="Conquistas desbloqueadas">
+              {achievements.map((achievement) => (
+                <span key={achievement.id} title={achievement.description}>
+                  {achievement.title}
+                </span>
+              ))}
+            </div>
+            <div className="history-actions">
+              <button onClick={downloadHistory}>Exportar JSON</button>
+              <button
+                onClick={() => {
+                  if (!window.confirm('Apagar todo o histórico local deste navegador?')) return;
+                  clearCampaignHistory();
+                  changed();
+                }}
+              >
+                <Trash2 size={13} /> Limpar histórico
+              </button>
+            </div>
+          </>
+        )}
+      </div>
+    </details>
   );
 }
 function ReportDialog({
@@ -929,6 +1015,7 @@ export default function App() {
   const [dailyAttemptId, setDailyAttemptId] = useState<string | null>(null);
   const [dailyAttemptKind, setDailyAttemptKind] = useState<DailyAttemptKind | null>(null);
   const [dailyRevision, setDailyRevision] = useState(0);
+  const [historyRevision, setHistoryRevision] = useState(0);
   const [dailyCatalog, setDailyCatalog] = useState(buildDailyCatalog);
   const [gameMode, setGameMode] = useState<GameMode>('classic');
   const [gamePlan, setGamePlan] = useState<GamePlan | null>(null);
@@ -1104,6 +1191,39 @@ export default function App() {
     gameMode,
     gamePlan,
     screen,
+    tournament.outcome,
+  ]);
+  useEffect(() => {
+    if (screen !== 'result' || !tournament.outcome || !campaignSeed || team.length !== 5) return;
+    const games = tournament.history.flatMap((entry) => entry.games);
+    const summary: CampaignSummary = {
+      id: campaignSeedFromText(`history:${campaignSeed}`),
+      completedAt: new Date().toISOString(),
+      outcome: tournament.outcome,
+      wins: games.filter((game) => game.won).length,
+      losses: games.filter((game) => !game.won).length,
+      confrontations: tournament.history.length,
+      source: campaignSource,
+      gameMode,
+      gamePlan,
+      dailyAttemptKind,
+      team: team.map((player) => ({
+        playerName: player.playerName,
+        team: player.team,
+        worldsYear: player.worldsYear,
+        role: player.role,
+      })),
+    };
+    if (recordCampaignSummary(summary)) setHistoryRevision((value) => value + 1);
+  }, [
+    campaignSeed,
+    campaignSource,
+    dailyAttemptKind,
+    gameMode,
+    gamePlan,
+    screen,
+    team,
+    tournament.history,
     tournament.outcome,
   ]);
   useEffect(() => {
@@ -1507,6 +1627,27 @@ export default function App() {
     playResult?.game ?? (series ? Math.min(series.games.length + 1, series.bestOf) : 1);
   const totalWins = tournament.history.flatMap((s) => s.games).filter((g) => g.won).length;
   const totalLosses = tournament.history.flatMap((s) => s.games).filter((g) => !g.won).length;
+  const currentAchievements =
+    screen === 'result' && tournament.outcome && campaignSeed && team.length === 5
+      ? achievementsForCampaign({
+          id: campaignSeedFromText(`history:${campaignSeed}`),
+          completedAt: new Date().toISOString(),
+          outcome: tournament.outcome,
+          wins: totalWins,
+          losses: totalLosses,
+          confrontations: tournament.history.length,
+          source: campaignSource,
+          gameMode,
+          gamePlan,
+          dailyAttemptKind,
+          team: team.map((player) => ({
+            playerName: player.playerName,
+            team: player.team,
+            worldsYear: player.worldsYear,
+            role: player.role,
+          })),
+        })
+      : [];
   if (error)
     return (
       <main className="loading" role="alert" aria-live="assertive">
@@ -1676,6 +1817,10 @@ export default function App() {
                     busy={loadingGame}
                     revision={dailyRevision}
                     start={(daily, officialAllowed) => void start(null, daily, officialAllowed)}
+                  />
+                  <LocalHistoryPanel
+                    revision={historyRevision}
+                    changed={() => setHistoryRevision((value) => value + 1)}
                   />
                   <fieldset className="game-mode-picker">
                     <legend>Como você quer escolher?</legend>
@@ -2338,6 +2483,19 @@ export default function App() {
                     : 'Esta partida não substitui sua tentativa oficial.'}
                 </span>
               </div>
+            )}
+            {!!currentAchievements.length && (
+              <section className="result-achievements" aria-labelledby="result-achievements-title">
+                <span id="result-achievements-title">CONQUISTAS DESTA CAMPANHA</span>
+                <div>
+                  {currentAchievements.map((achievement) => (
+                    <article key={achievement.id}>
+                      <b>{achievement.title}</b>
+                      <small>{achievement.description}</small>
+                    </article>
+                  ))}
+                </div>
+              </section>
             )}
             <div className="final-record">
               <div>
