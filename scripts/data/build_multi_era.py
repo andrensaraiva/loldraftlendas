@@ -10,11 +10,12 @@ from build_worlds_2017 import ROOT, ROLES, NUMBERS, METRICS, WEIGHTS, aggregate,
 
 OUT = ROOT/'data/research/multi-era'
 RAW = OUT/'raw'
-VERSION = 'multi-era-v1.3.0'
-DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.3.0'
+VERSION = 'multi-era-v1.4.0'
+DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.4.0'
 CONFIG = {
  2015: ('10-01', 73, '5.18.1', {'LCK':['SK Telecom T1','ROX Tigers','KT Rolster'], 'LPL':['EDward Gaming','Invictus Gaming','LGD Gaming'], 'EU LCS':['Fnatic','Origen','H2k-Gaming'], 'NA LCS':['Cloud9','Counter Logic Gaming','Team SoloMid']}),
  2017: ('10-05', 80, '7.18.1', {'LCK':['SK Telecom T1','Samsung Galaxy','Longzhu Gaming'], 'LPL':['Royal Never Give Up','Team WE','EDward Gaming'], 'EU LCS':['Fnatic','G2 Esports','Misfits Gaming'], 'NA LCS':['Cloud9','Team SoloMid','Immortals']}),
+ 2018: ('10-10', 77, '8.19.1', {'LCK':['KT Rolster','Afreeca Freecs','Gen.G'], 'LPL':['Royal Never Give Up','Invictus Gaming','EDward Gaming'], 'EU LCS':['Fnatic','G2 Esports','Team Vitality'], 'NA LCS':['Cloud9','Team Liquid','100 Thieves']}),
  2019: ('10-12', 77, '9.19.1', {'LCK':['SK Telecom T1','Griffin','DAMWON Gaming'], 'LPL':['FunPlus Phoenix','Invictus Gaming','Royal Never Give Up'], 'LEC':['G2 Esports','Fnatic','Splyce'], 'LCS':['Team Liquid','Cloud9','Clutch Gaming']}),
  2020: ('10-03', 76, '10.19.1', {'LCK':['DAMWON Gaming','DRX','Gen.G'], 'LPL':['Top Esports','JD Gaming','Suning','LGD Gaming'], 'LEC':['G2 Esports','Fnatic','Rogue'], 'LCS':['Team SoloMid','Team Liquid','FlyQuest']}),
  2021: ('10-11', 83, '11.19.1', {'LCK':['DWG KIA','Gen.G','T1','Hanwha Life Esports'], 'LPL':['EDward Gaming','FunPlus Phoenix','Royal Never Give Up','LNG Esports'], 'LEC':['MAD Lions','Fnatic','Rogue'], 'LCS':['100 Thieves','Team Liquid','Cloud9']}),
@@ -23,7 +24,7 @@ CONFIG = {
  2024: ('10-03', 82, '14.18.1', {'LCK':['Hanwha Life Esports','Gen.G','Dplus Kia','T1'], 'LPL':['Bilibili Gaming','Top Esports','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI'], 'LCS':['FlyQuest','Team Liquid']}),
  2025: ('10-15', 80, '15.20.1', {'LCK':['Gen.G','Hanwha Life Esports','KT Rolster','T1'], 'LPL':["Anyone's Legend",'Bilibili Gaming','Top Esports'], 'LEC':['G2 Esports','Movistar KOI','Fnatic'], 'LTA N':['FlyQuest','100 Thieves'], 'LTA S':['Vivo Keyd Stars'], 'LCP':['CTBC Flying Oyster','PSG Talon','Team Secret Whales']}),
 }
-SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','DWG KIA':'DK','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions':'MAD','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE',"Anyone's Legend":'AL','Movistar KOI':'MKOI','Vivo Keyd Stars':'VKS','CTBC Flying Oyster':'CFO','PSG Talon':'PSG','Team Secret Whales':'TSW'}
+SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','Afreeca Freecs':'AF','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Team Vitality':'VIT','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','DWG KIA':'DK','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions':'MAD','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE',"Anyone's Legend":'AL','Movistar KOI':'MKOI','Vivo Keyd Stars':'VKS','CTBC Flying Oyster':'CFO','PSG Talon':'PSG','Team Secret Whales':'TSW'}
 ALIASES = {(2015,'ROX Tigers'):'KOO Tigers', (2022,'Dplus Kia'):'DWG KIA', (2023,'MAD Lions KOI'):'MAD Lions'}
 
 def ingest(year, snapshot):

@@ -1,0 +1,6242 @@
+[
+  {
+    "id": "smeb-2018-kt",
+    "playerName": "Smeb",
+    "team": "KT",
+    "teamName": "KT Rolster",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.6363636363636364,
+      "kda": 3.5
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Aatrox",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.2279445432842,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2018-kt-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Irelia",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.66599977934028,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2018-kt-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 4.125,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Urgot",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.71451626273131,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2018-kt-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.25,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Sion",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 47.72171541926435,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2018-kt-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Swain",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.42954924010197,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2018-kt-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "score-2018-kt",
+    "playerName": "Score",
+    "team": "KT",
+    "teamName": "KT Rolster",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.6363636363636364,
+      "kda": 5.0
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kindred",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.92657806907829,
+        "source": "WORLDS_DATA",
+        "evidenceId": "score-2018-kt-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Taliyah",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.08742151901251,
+        "source": "WORLDS_DATA",
+        "evidenceId": "score-2018-kt-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "XinZhao",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 68.85331003809573,
+        "source": "WORLDS_DATA",
+        "evidenceId": "score-2018-kt-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 7.666666666666667,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nocturne",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 62.142953851401764,
+        "source": "WORLDS_DATA",
+        "evidenceId": "score-2018-kt-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Gragas",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.55217463455213,
+        "source": "WORLDS_DATA",
+        "evidenceId": "score-2018-kt-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 16.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ucal-2018-kt",
+    "playerName": "Ucal",
+    "team": "KT",
+    "teamName": "KT Rolster",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.6363636363636364,
+      "kda": 3.8095238095238093
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.12820616556278,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ucal-2018-kt-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 12.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Swain",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.81362217823279,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ucal-2018-kt-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.888888888888889,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Galio",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.43770993168994,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ucal-2018-kt-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.6,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lissandra",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.9184424560849,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ucal-2018-kt-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Urgot",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.97105033764618,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ucal-2018-kt-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.25,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deft-2018-kt",
+    "playerName": "Deft",
+    "team": "KT",
+    "teamName": "KT Rolster",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.6363636363636364,
+      "kda": 5.375
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Xayah",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 71.45636282051024,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2018-kt-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Varus",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 65.62381673627881,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2018-kt-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Kaisa",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 77.85754015974423,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2018-kt-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 6.0,
+          "confidence": 0.5,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Tristana",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.9801649099337,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2018-kt-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ezreal",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.34959824476032,
+        "source": "SEASON_DATA",
+        "evidenceId": "deft-2018-kt-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.42857142857142855,
+          "kda": 4.4,
+          "confidence": 0.3791666666666667,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mata-2018-kt",
+    "playerName": "Mata",
+    "team": "KT",
+    "teamName": "KT Rolster",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.6363636363636364,
+      "kda": 3.869565217391304
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Thresh",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 75.56972916575697,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2018-kt-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Leona",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 75.15728996799156,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2018-kt-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.4,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 71.09743929226072,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2018-kt-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Gragas",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 70.69481083106834,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2018-kt-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Shen",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 72.67619562987198,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2018-kt-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.8,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kiin-2018-af",
+    "playerName": "Kiin",
+    "team": "AF",
+    "teamName": "Afreeca Freecs",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.4444444444444444,
+      "kda": 2.789473684210526
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Sion",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.79105319145836,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kiin-2018-af-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Akali",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.15399159617295,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kiin-2018-af-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Irelia",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 63.10998373126465,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kiin-2018-af-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jax",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.205103273497386,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kiin-2018-af-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Viktor",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 67.81133343805918,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kiin-2018-af-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.5714285714285714,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "spirit-2018-af",
+    "playerName": "Spirit",
+    "team": "AF",
+    "teamName": "Afreeca Freecs",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "7 jogos no Worlds",
+    "worldsStats": {
+      "games": 7,
+      "winRate": 0.42857142857142855,
+      "kda": 2.923076923076923
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Taliyah",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.11141251938366,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2018-af-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Olaf",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.17375385122069,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2018-af-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nocturne",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.597444768116254,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2018-af-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 13.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Gragas",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.975463296686264,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2018-af-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.3,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Trundle",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.37344251455136,
+        "source": "SEASON_DATA",
+        "evidenceId": "spirit-2018-af-g5",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 4.0,
+          "confidence": 0.35454545454545455,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kuro-2018-af",
+    "playerName": "Kuro",
+    "team": "AF",
+    "teamName": "Afreeca Freecs",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.4444444444444444,
+      "kda": 3.923076923076923
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Zoe",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 39.763393446811584,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2018-af-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Velkoz",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.354130365639335,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2018-af-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Swain",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.73891616407836,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2018-af-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 17.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Galio",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.736751582276675,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2018-af-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 12.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Kassadin",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.13015946356449,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2018-af-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kramer-2018-af",
+    "playerName": "Kramer",
+    "team": "AF",
+    "teamName": "Afreeca Freecs",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.4444444444444444,
+      "kda": 4.142857142857143
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kaisa",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.16434352515538,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kramer-2018-af-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 6.666666666666667,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Xayah",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.927416604524865,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kramer-2018-af-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 1.75,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Varus",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.68478574496914,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kramer-2018-af-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 8.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Swain",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.07681747090171,
+        "source": "SEASON_DATA",
+        "evidenceId": "kramer-2018-af-g4",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 5.2727272727272725,
+          "confidence": 0.35454545454545455,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Vladimir",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.18821078790097,
+        "source": "SEASON_DATA",
+        "evidenceId": "kramer-2018-af-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.25,
+          "kda": 3.6,
+          "confidence": 0.28888888888888886,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tusin-2018-af",
+    "playerName": "TusiN",
+    "team": "AF",
+    "teamName": "Afreeca Freecs",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.4444444444444444,
+      "kda": 2.7
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.054808319027735,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tusin-2018-af-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.25,
+          "kda": 1.6666666666666667,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Gragas",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.28926026645899,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tusin-2018-af-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "TahmKench",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.56533662600293,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tusin-2018-af-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Thresh",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.089983007000356,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tusin-2018-af-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Shen",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.9980630775726,
+        "source": "SEASON_DATA",
+        "evidenceId": "tusin-2018-af-g5",
+        "stats": {
+          "games": 16,
+          "winRate": 0.625,
+          "kda": 4.481481481481482,
+          "confidence": 0.49523809523809526,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cuvee-2018-gen",
+    "playerName": "CuVee",
+    "team": "GEN",
+    "teamName": "Gen.G",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 1.7333333333333334
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Urgot",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 35.11493464175135,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2018-gen-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.8,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Camille",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 34.860634783789855,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2018-gen-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Poppy",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 35.9305876704708,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2018-gen-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Aatrox",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 37.17318015758909,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2018-gen-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Irelia",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 33.03659009966571,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2018-gen-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "haru-2018-gen",
+    "playerName": "Haru",
+    "team": "GEN",
+    "teamName": "Gen.G",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "5 jogos no Worlds",
+    "worldsStats": {
+      "games": 5,
+      "winRate": 0.2,
+      "kda": 2.727272727272727
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Gragas",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.32601711573683,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haru-2018-gen-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 11.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Olaf",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.486034911082,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haru-2018-gen-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Taliyah",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 61.544722238891936,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haru-2018-gen-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.6,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Skarner",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.241542378228075,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haru-2018-gen-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "XinZhao",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.23797867379231,
+        "source": "SEASON_DATA",
+        "evidenceId": "haru-2018-gen-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.625,
+          "confidence": 0.28888888888888886,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "crown-2018-gen",
+    "playerName": "Crown",
+    "team": "GEN",
+    "teamName": "Gen.G",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 1.9
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.38640365652176,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2018-gen-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.7,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lulu",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.84212608366455,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2018-gen-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Aatrox",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.19801091808631,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2018-gen-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Malzahar",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.66793661012643,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2018-gen-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Irelia",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.09011242677251,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2018-gen-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.8,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ruler-2018-gen",
+    "playerName": "Ruler",
+    "team": "GEN",
+    "teamName": "Gen.G",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 2.6
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ashe",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.95509147204626,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2018-gen-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Xayah",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.79838845155458,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2018-gen-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lucian",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.37785906221161,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2018-gen-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Kaisa",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.10710171409505,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2018-gen-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ezreal",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 48.220791881255536,
+        "source": "SEASON_DATA",
+        "evidenceId": "ruler-2018-gen-g5",
+        "stats": {
+          "games": 13,
+          "winRate": 0.6923076923076923,
+          "kda": 8.818181818181818,
+          "confidence": 0.46944444444444444,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "corejj-2018-gen",
+    "playerName": "CoreJJ",
+    "team": "GEN",
+    "teamName": "Gen.G",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 2.8333333333333335
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "TahmKench",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.633155492315495,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2018-gen-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Braum",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.61432536644789,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2018-gen-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rakan",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.748692842138034,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2018-gen-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nami",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.30402688473629,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2018-gen-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Alistar",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.46279941613775,
+        "source": "SEASON_DATA",
+        "evidenceId": "corejj-2018-gen-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 1.0,
+          "kda": 2.9,
+          "confidence": 0.325,
+          "event": "LCK_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "letme-2018-rng",
+    "playerName": "Letme",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5833333333333334,
+      "kda": 2.9130434782608696
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Shen",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 46.90928901655464,
+        "source": "WORLDS_DATA",
+        "evidenceId": "letme-2018-rng-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Sion",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.684398158820215,
+        "source": "WORLDS_DATA",
+        "evidenceId": "letme-2018-rng-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.25,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Urgot",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.38988879297363,
+        "source": "WORLDS_DATA",
+        "evidenceId": "letme-2018-rng-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 3.8333333333333335,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Aatrox",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.112332106825306,
+        "source": "WORLDS_DATA",
+        "evidenceId": "letme-2018-rng-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 5.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Poppy",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.27522612041399,
+        "source": "WORLDS_DATA",
+        "evidenceId": "letme-2018-rng-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "karsa-2018-rng",
+    "playerName": "Karsa",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.5555555555555556,
+      "kda": 3.0555555555555554
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Taliyah",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.21780737884868,
+        "source": "WORLDS_DATA",
+        "evidenceId": "karsa-2018-rng-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 3.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "LeeSin",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.27385090348326,
+        "source": "WORLDS_DATA",
+        "evidenceId": "karsa-2018-rng-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.5,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Gragas",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.69698268124072,
+        "source": "WORLDS_DATA",
+        "evidenceId": "karsa-2018-rng-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "XinZhao",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.6572839253577,
+        "source": "WORLDS_DATA",
+        "evidenceId": "karsa-2018-rng-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.2,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Trundle",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.83457572883663,
+        "source": "SEASON_DATA",
+        "evidenceId": "karsa-2018-rng-g5",
+        "stats": {
+          "games": 11,
+          "winRate": 0.8181818181818182,
+          "kda": 5.478260869565218,
+          "confidence": 0.446875,
+          "event": "LPL_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "xiaohu-2018-rng",
+    "playerName": "Xiaohu",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5833333333333334,
+      "kda": 3.739130434782609
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Galio",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.48741146818145,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2018-rng-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ryze",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.49040456548907,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2018-rng-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.25,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Irelia",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.71519570199978,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2018-rng-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lissandra",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.54070068741213,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2018-rng-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.625,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Sion",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.47498191575542,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2018-rng-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "uzi-2018-rng",
+    "playerName": "Uzi",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5833333333333334,
+      "kda": 4.823529411764706
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Xayah",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 63.01145754084212,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2018-rng-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Sivir",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 63.45141023021621,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2018-rng-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.8333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Tristana",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.34417970982187,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2018-rng-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Kaisa",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.168992359057874,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2018-rng-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.6666666666666665,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lucian",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 68.7043094717787,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2018-rng-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 4.142857142857143,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ming-2018-rng",
+    "playerName": "Ming",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5833333333333334,
+      "kda": 2.9310344827586206
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.60929766964401,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ming-2018-rng-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 13.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Rakan",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 68.7168274555739,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ming-2018-rng-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 4.333333333333333,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Gragas",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.85137725956868,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ming-2018-rng-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.0,
+          "kda": 0.8181818181818182,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Thresh",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.99338601376756,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ming-2018-rng-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Leona",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.72932238372497,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ming-2018-rng-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "theshy-2018-ig",
+    "playerName": "TheShy",
+    "team": "IG",
+    "teamName": "Invictus Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.8461538461538461,
+      "kda": 4.607142857142857
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Sion",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 68.85306186248809,
+        "source": "WORLDS_DATA",
+        "evidenceId": "theshy-2018-ig-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 4.1,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Gangplank",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.29445513455798,
+        "source": "WORLDS_DATA",
+        "evidenceId": "theshy-2018-ig-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Fiora",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.68280199605388,
+        "source": "WORLDS_DATA",
+        "evidenceId": "theshy-2018-ig-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Urgot",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.47551977985432,
+        "source": "WORLDS_DATA",
+        "evidenceId": "theshy-2018-ig-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 14.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Aatrox",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.72126152719363,
+        "source": "WORLDS_DATA",
+        "evidenceId": "theshy-2018-ig-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 2.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ning-2018-ig",
+    "playerName": "Ning",
+    "team": "IG",
+    "teamName": "Invictus Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "18 jogos no Worlds",
+    "worldsStats": {
+      "games": 18,
+      "winRate": 0.7777777777777778,
+      "kda": 5.2105263157894735
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Zac",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.7662333141841,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ning-2018-ig-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "XinZhao",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 66.06152835587605,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ning-2018-ig-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 7.2,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Camille",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 67.82833577936084,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ning-2018-ig-g3",
+        "stats": {
+          "games": 6,
+          "winRate": 0.8333333333333334,
+          "kda": 6.1,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Gragas",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 67.0949960775853,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ning-2018-ig-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.777777777777778,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "LeeSin",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.92822849518824,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ning-2018-ig-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.5555555555555556,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "rookie-2018-ig",
+    "playerName": "Rookie",
+    "team": "IG",
+    "teamName": "Invictus Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "18 jogos no Worlds",
+    "worldsStats": {
+      "games": 18,
+      "winRate": 0.7777777777777778,
+      "kda": 6.793103448275862
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 96,
+        "gameRating": 96,
+        "historicalScore": 79.31965417375581,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rookie-2018-ig-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.333333333333333,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lissandra",
+        "rating": 98,
+        "gameRating": 98,
+        "historicalScore": 81.4877835075746,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rookie-2018-ig-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 16.666666666666668,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Galio",
+        "rating": 97,
+        "gameRating": 97,
+        "historicalScore": 81.01822338000386,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rookie-2018-ig-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 13.333333333333334,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ryze",
+        "rating": 96,
+        "gameRating": 96,
+        "historicalScore": 77.70971923825245,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rookie-2018-ig-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.1666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Leblanc",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 74.71017172017768,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rookie-2018-ig-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 3.8,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jackeylove-2018-ig",
+    "playerName": "JackeyLove",
+    "team": "IG",
+    "teamName": "Invictus Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "18 jogos no Worlds",
+    "worldsStats": {
+      "games": 18,
+      "winRate": 0.7777777777777778,
+      "kda": 5.333333333333333
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kaisa",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.94697844466357,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jackeylove-2018-ig-g1",
+        "stats": {
+          "games": 10,
+          "winRate": 0.8,
+          "kda": 7.0625,
+          "confidence": 0.6666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Xayah",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.64228835800051,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jackeylove-2018-ig-g2",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 3.533333333333333,
+          "confidence": 0.5,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lucian",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 61.592890379969205,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jackeylove-2018-ig-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 22.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ezreal",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.57882612551566,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jackeylove-2018-ig-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Varus",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.68293828152816,
+        "source": "SEASON_DATA",
+        "evidenceId": "jackeylove-2018-ig-g5",
+        "stats": {
+          "games": 11,
+          "winRate": 0.7272727272727273,
+          "kda": 3.838709677419355,
+          "confidence": 0.446875,
+          "event": "LPL_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "baolan-2018-ig",
+    "playerName": "Baolan",
+    "team": "IG",
+    "teamName": "Invictus Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "18 jogos no Worlds",
+    "worldsStats": {
+      "games": 18,
+      "winRate": 0.7777777777777778,
+      "kda": 6.451612903225806
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Braum",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 62.91386690951782,
+        "source": "WORLDS_DATA",
+        "evidenceId": "baolan-2018-ig-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 15.333333333333334,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Leona",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.43037576933604,
+        "source": "WORLDS_DATA",
+        "evidenceId": "baolan-2018-ig-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 2.8181818181818183,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Thresh",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.5170663076056,
+        "source": "WORLDS_DATA",
+        "evidenceId": "baolan-2018-ig-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 14.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Alistar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.68640579803831,
+        "source": "WORLDS_DATA",
+        "evidenceId": "baolan-2018-ig-g4",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 4.545454545454546,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Rakan",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.677869029928004,
+        "source": "WORLDS_DATA",
+        "evidenceId": "baolan-2018-ig-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 10.8,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ray-2018-edg",
+    "playerName": "Ray",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 3.8260869565217392
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ornn",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.45217990129284,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ray-2018-edg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 7.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Akali",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.11958857003738,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ray-2018-edg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Shen",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.21711461802104,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ray-2018-edg-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Urgot",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.562916104643946,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ray-2018-edg-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.857142857142857,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Kled",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 47.68713784802539,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ray-2018-edg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "haro-2018-edg",
+    "playerName": "Haro",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "8 jogos no Worlds",
+    "worldsStats": {
+      "games": 8,
+      "winRate": 0.5,
+      "kda": 5.133333333333334
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Olaf",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.05983871123426,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haro-2018-edg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 9.666666666666666,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "XinZhao",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.71140331139142,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haro-2018-edg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 5.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Taliyah",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.97017666014143,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haro-2018-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "LeeSin",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.805191911994,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haro-2018-edg-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Camille",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.72189587446444,
+        "source": "WORLDS_DATA",
+        "evidenceId": "haro-2018-edg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "scout-2018-edg",
+    "playerName": "Scout",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 5.105263157894737
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 76.23208976567199,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2018-edg-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 5.166666666666667,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Azir",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 72.91984352412028,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2018-edg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 16.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Galio",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.80853772711745,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2018-edg-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.1666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Akali",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.49126741075268,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2018-edg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lissandra",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.46758890888535,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2018-edg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "iboy-2018-edg",
+    "playerName": "iBoy",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 6.625
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Xayah",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 72.24874685725683,
+        "source": "WORLDS_DATA",
+        "evidenceId": "iboy-2018-edg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 29.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lucian",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.60457778088944,
+        "source": "WORLDS_DATA",
+        "evidenceId": "iboy-2018-edg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Tristana",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 61.101658129020876,
+        "source": "WORLDS_DATA",
+        "evidenceId": "iboy-2018-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Kaisa",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 78.47977755192875,
+        "source": "WORLDS_DATA",
+        "evidenceId": "iboy-2018-edg-g4",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 5.8,
+          "confidence": 0.5,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Varus",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.82106019233532,
+        "source": "SEASON_DATA",
+        "evidenceId": "iboy-2018-edg-g5",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 3.6,
+          "confidence": 0.35454545454545455,
+          "event": "LPL_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "meiko-2018-edg",
+    "playerName": "Meiko",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 3.8461538461538463
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Leona",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.794880772116855,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2018-edg-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Alistar",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.083299374079026,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2018-edg-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.857142857142857,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rakan",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.89552386039787,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2018-edg-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 4.444444444444445,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Gragas",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.93492453034379,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2018-edg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "TahmKench",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.89843164364399,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2018-edg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bwipo-2018-fnc",
+    "playerName": "Bwipo",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.7692307692307693,
+      "kda": 2.7948717948717947
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ornn",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.90123755735596,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bwipo-2018-fnc-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 3.4444444444444446,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Swain",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.51911785894472,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bwipo-2018-fnc-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 2.2222222222222223,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Urgot",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.693106339130786,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bwipo-2018-fnc-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 1.1428571428571428,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Viktor",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.0896292886509,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bwipo-2018-fnc-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jayce",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.65139070381538,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bwipo-2018-fnc-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "broxah-2018-fnc",
+    "playerName": "Broxah",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7058823529411765,
+      "kda": 6.222222222222222
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Olaf",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 67.65531265079139,
+        "source": "WORLDS_DATA",
+        "evidenceId": "broxah-2018-fnc-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 8.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "LeeSin",
+        "rating": 96,
+        "gameRating": 96,
+        "historicalScore": 76.05357186698299,
+        "source": "WORLDS_DATA",
+        "evidenceId": "broxah-2018-fnc-g2",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 6.7,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "XinZhao",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 71.53105629158235,
+        "source": "WORLDS_DATA",
+        "evidenceId": "broxah-2018-fnc-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 1.0,
+          "kda": 9.6,
+          "confidence": 0.5,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Elise",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.64253768936396,
+        "source": "WORLDS_DATA",
+        "evidenceId": "broxah-2018-fnc-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Nocturne",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.58734280756211,
+        "source": "WORLDS_DATA",
+        "evidenceId": "broxah-2018-fnc-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "caps-2018-fnc",
+    "playerName": "Caps",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7058823529411765,
+      "kda": 3.297872340425532
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Irelia",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.79236355988628,
+        "source": "WORLDS_DATA",
+        "evidenceId": "caps-2018-fnc-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 3.2666666666666666,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Swain",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.35159847138817,
+        "source": "WORLDS_DATA",
+        "evidenceId": "caps-2018-fnc-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Aatrox",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.532104950628415,
+        "source": "WORLDS_DATA",
+        "evidenceId": "caps-2018-fnc-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 4.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Leblanc",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.454119424660455,
+        "source": "WORLDS_DATA",
+        "evidenceId": "caps-2018-fnc-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 4.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Azir",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.8096771111794,
+        "source": "WORLDS_DATA",
+        "evidenceId": "caps-2018-fnc-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "rekkles-2018-fnc",
+    "playerName": "Rekkles",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7058823529411765,
+      "kda": 8.947368421052632
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Xayah",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 65.57942605353819,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2018-fnc-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 5.75,
+          "confidence": 0.5,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Sivir",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.6896021762062,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2018-fnc-g2",
+        "stats": {
+          "games": 6,
+          "winRate": 1.0,
+          "kda": 70.0,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ezreal",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.63546695913304,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2018-fnc-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 5.0,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Tristana",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.3481908235188,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2018-fnc-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jhin",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.859882281212656,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2018-fnc-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hylissang-2018-fnc",
+    "playerName": "Hylissang",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7058823529411765,
+      "kda": 3.1346153846153846
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rakan",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.49216902840848,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hylissang-2018-fnc-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.8333333333333334,
+          "kda": 4.166666666666667,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Braum",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.78067335468501,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hylissang-2018-fnc-g2",
+        "stats": {
+          "games": 8,
+          "winRate": 0.75,
+          "kda": 3.8333333333333335,
+          "confidence": 0.6153846153846154,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.06528623189286,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hylissang-2018-fnc-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Thresh",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.39435674558421,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hylissang-2018-fnc-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.3333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Pyke",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.773005936532975,
+        "source": "SEASON_DATA",
+        "evidenceId": "hylissang-2018-fnc-g5",
+        "stats": {
+          "games": 9,
+          "winRate": 0.8888888888888888,
+          "kda": 4.7,
+          "confidence": 0.4178571428571429,
+          "event": "EU LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wunder-2018-g2",
+    "playerName": "Wunder",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "15 jogos no Worlds",
+    "worldsStats": {
+      "games": 15,
+      "winRate": 0.4666666666666667,
+      "kda": 2.5
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Camille",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.20111990792856,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2018-g2-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 3.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ryze",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.18433246300821,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2018-g2-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Aatrox",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.799198029642945,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2018-g2-g3",
+        "stats": {
+          "games": 7,
+          "winRate": 0.42857142857142855,
+          "kda": 2.4375,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Irelia",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.6400477524386,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2018-g2-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Akali",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.28749882849172,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2018-g2-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jankos-2018-g2",
+    "playerName": "Jankos",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "15 jogos no Worlds",
+    "worldsStats": {
+      "games": 15,
+      "winRate": 0.4666666666666667,
+      "kda": 2.891891891891892
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Gragas",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 59.93712382933388,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2018-g2-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 3.4166666666666665,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Olaf",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.01569720757721,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2018-g2-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.1666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nocturne",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.08856188603241,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2018-g2-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Skarner",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.88552707041974,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2018-g2-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Camille",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.336901702431284,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2018-g2-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.9090909090909091,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "perkz-2018-g2",
+    "playerName": "Perkz",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "15 jogos no Worlds",
+    "worldsStats": {
+      "games": 15,
+      "winRate": 0.4666666666666667,
+      "kda": 2.769230769230769
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Aatrox",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.78942716248086,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2018-g2-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.25,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Akali",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.24974006761155,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2018-g2-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lissandra",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.648731763119024,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2018-g2-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Cassiopeia",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.971198991229315,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2018-g2-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Irelia",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.49123474436284,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2018-g2-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 2.1,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hjarnan-2018-g2",
+    "playerName": "Hjarnan",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "15 jogos no Worlds",
+    "worldsStats": {
+      "games": 15,
+      "winRate": 0.4666666666666667,
+      "kda": 4.375
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Heimerdinger",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.41138631187538,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hjarnan-2018-g2-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 14.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Kaisa",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.10683304392115,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hjarnan-2018-g2-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Jhin",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 46.43479502905957,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hjarnan-2018-g2-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 3.857142857142857,
+          "confidence": 0.5,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Sivir",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.258361744710754,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hjarnan-2018-g2-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.6666666666666665,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Brand",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.96738212184448,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hjarnan-2018-g2-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wadid-2018-g2",
+    "playerName": "WADID",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "15 jogos no Worlds",
+    "worldsStats": {
+      "games": 15,
+      "winRate": 0.4666666666666667,
+      "kda": 3.088235294117647
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rakan",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.15714463525465,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wadid-2018-g2-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 5.666666666666667,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "TahmKench",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.0922030457312,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wadid-2018-g2-g2",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 2.5625,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.14676615980717,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wadid-2018-g2-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.0,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.87670534651267,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wadid-2018-g2-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.4,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Fiddlesticks",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.00826451706253,
+        "source": "SEASON_DATA",
+        "evidenceId": "wadid-2018-g2-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.333333333333333,
+          "confidence": 0.18571428571428572,
+          "event": "EU LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cabochard-2018-vit",
+    "playerName": "Cabochard",
+    "team": "VIT",
+    "teamName": "Team Vitality",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 5.125
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ornn",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.7004649246322,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cabochard-2018-vit-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Gragas",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.039751177790464,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cabochard-2018-vit-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Aatrox",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.32889322208402,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cabochard-2018-vit-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Sion",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.13320062855523,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cabochard-2018-vit-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Urgot",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.69662579357049,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cabochard-2018-vit-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kikis-2018-vit",
+    "playerName": "Kikis",
+    "team": "VIT",
+    "teamName": "Team Vitality",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 2.2
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nocturne",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.64752625817313,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kikis-2018-vit-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "JarvanIV",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.192763254433714,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kikis-2018-vit-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Kindred",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.7578948725794,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kikis-2018-vit-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "XinZhao",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.990981032712355,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kikis-2018-vit-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "LeeSin",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.875678244260044,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kikis-2018-vit-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jiizuke-2018-vit",
+    "playerName": "Jiizuke",
+    "team": "VIT",
+    "teamName": "Team Vitality",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.2
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ekko",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.47270625347337,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jiizuke-2018-vit-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.7142857142857144,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Leblanc",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.81017201712147,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jiizuke-2018-vit-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.8,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Azir",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.835544570946126,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jiizuke-2018-vit-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ryze",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.337085466631976,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jiizuke-2018-vit-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Galio",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.73714235261651,
+        "source": "SEASON_DATA",
+        "evidenceId": "jiizuke-2018-vit-g5",
+        "stats": {
+          "games": 8,
+          "winRate": 0.75,
+          "kda": 3.433333333333333,
+          "confidence": 0.4,
+          "event": "EU LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "attila-2018-vit",
+    "playerName": "Attila",
+    "team": "VIT",
+    "teamName": "Team Vitality",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 5.4
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kaisa",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 61.167105451528755,
+        "source": "WORLDS_DATA",
+        "evidenceId": "attila-2018-vit-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.3333333333333335,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Xayah",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 65.1700656323748,
+        "source": "WORLDS_DATA",
+        "evidenceId": "attila-2018-vit-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 11.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Varus",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.16558215319344,
+        "source": "WORLDS_DATA",
+        "evidenceId": "attila-2018-vit-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Draven",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 68.95328055944186,
+        "source": "WORLDS_DATA",
+        "evidenceId": "attila-2018-vit-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Tristana",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 63.48512180134945,
+        "source": "WORLDS_DATA",
+        "evidenceId": "attila-2018-vit-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jactroll-2018-vit",
+    "playerName": "Jactroll",
+    "team": "VIT",
+    "teamName": "Team Vitality",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 1.8518518518518519
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.81594364966038,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jactroll-2018-vit-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Thresh",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.0456219582953,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jactroll-2018-vit-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.25,
+          "kda": 1.55,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Leona",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.31888902031824,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jactroll-2018-vit-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.9315909336921,
+        "source": "SEASON_DATA",
+        "evidenceId": "jactroll-2018-vit-g4",
+        "stats": {
+          "games": 8,
+          "winRate": 0.75,
+          "kda": 4.888888888888889,
+          "confidence": 0.4,
+          "event": "EU LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Rakan",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.40726669054415,
+        "source": "SEASON_DATA",
+        "evidenceId": "jactroll-2018-vit-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 4.461538461538462,
+          "confidence": 0.28888888888888886,
+          "event": "EU LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "licorice-2018-c9",
+    "playerName": "Licorice",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.5384615384615384,
+      "kda": 2.6470588235294117
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Urgot",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 39.23160843051515,
+        "source": "WORLDS_DATA",
+        "evidenceId": "licorice-2018-c9-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ornn",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 41.29184524112533,
+        "source": "WORLDS_DATA",
+        "evidenceId": "licorice-2018-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 6.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Hecarim",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 39.30194240963438,
+        "source": "WORLDS_DATA",
+        "evidenceId": "licorice-2018-c9-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Aatrox",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 35.13796639398205,
+        "source": "WORLDS_DATA",
+        "evidenceId": "licorice-2018-c9-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 1.7777777777777777,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ekko",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 34.71507658076786,
+        "source": "WORLDS_DATA",
+        "evidenceId": "licorice-2018-c9-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.6363636363636364,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "svenskeren-2018-c9",
+    "playerName": "Svenskeren",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5833333333333334,
+      "kda": 3.088235294117647
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Evelynn",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.543514475101595,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2018-c9-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Taliyah",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.39979528613415,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2018-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 4.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nocturne",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.49631763070235,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2018-c9-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 6.4,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "XinZhao",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.3101731869648,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2018-c9-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.25,
+          "kda": 1.45,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Graves",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.507696384354816,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2018-c9-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jensen-2018-c9",
+    "playerName": "Jensen",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.5384615384615384,
+      "kda": 3.484848484848485
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ryze",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.0306750401898,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2018-c9-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Galio",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 71.93406669882259,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2018-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Leblanc",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 75.83301416095296,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2018-c9-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 20.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Zilean",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 76.09293054943902,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2018-c9-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lissandra",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 71.62503485996523,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2018-c9-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.25,
+          "kda": 1.75,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sneaky-2018-c9",
+    "playerName": "Sneaky",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.5384615384615384,
+      "kda": 3.7037037037037037
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kaisa",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.428466004402324,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2018-c9-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.8571428571428572,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Tristana",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.21992726094876,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2018-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Sivir",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 48.08914323403371,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2018-c9-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 18.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Xayah",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.56557170061278,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2018-c9-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lucian",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.76663782832574,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2018-c9-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 3.8,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "zeyzal-2018-c9",
+    "playerName": "Zeyzal",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.5384615384615384,
+      "kda": 3.1714285714285713
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rakan",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.80297750702956,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zeyzal-2018-c9-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Nautilus",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.58142104821368,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zeyzal-2018-c9-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.2,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.67435761801122,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zeyzal-2018-c9-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Shen",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.48043372066978,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zeyzal-2018-c9-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 3.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Braum",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.6094490854434,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zeyzal-2018-c9-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.5,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "impact-2018-tl",
+    "playerName": "Impact",
+    "team": "TL",
+    "teamName": "Team Liquid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.6666666666666665
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Urgot",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.09290136757983,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2018-tl-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Sion",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.57565570329531,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2018-tl-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Shen",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.321389683047826,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2018-tl-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Aatrox",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.388419930914324,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2018-tl-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ornn",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.48164349493615,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2018-tl-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "xmithie-2018-tl",
+    "playerName": "Xmithie",
+    "team": "TL",
+    "teamName": "Team Liquid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 2.6923076923076925
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Gragas",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.3773146076513,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2018-tl-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.8333333333333334,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Nocturne",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 62.74741080414326,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2018-tl-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 18.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Skarner",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.153055146729656,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2018-tl-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Olaf",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.37197987176509,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2018-tl-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Sejuani",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.843993782935954,
+        "source": "SEASON_DATA",
+        "evidenceId": "xmithie-2018-tl-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 4.5,
+          "confidence": 0.325,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pobelter-2018-tl",
+    "playerName": "Pobelter",
+    "team": "TL",
+    "teamName": "Team Liquid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 2.1333333333333333
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ryze",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 35.738252907033,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pobelter-2018-tl-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Galio",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 37.139132232225734,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pobelter-2018-tl-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Syndra",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.413391085092826,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pobelter-2018-tl-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 4.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Leblanc",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.5787279827401,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pobelter-2018-tl-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Irelia",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.39713840746313,
+        "source": "SEASON_DATA",
+        "evidenceId": "pobelter-2018-tl-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 6.444444444444445,
+          "confidence": 0.325,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "doublelift-2018-tl",
+    "playerName": "Doublelift",
+    "team": "TL",
+    "teamName": "Team Liquid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 7.0
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kaisa",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.572288603263885,
+        "source": "WORLDS_DATA",
+        "evidenceId": "doublelift-2018-tl-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.75,
+          "confidence": 0.375,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Xayah",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.16856862759991,
+        "source": "WORLDS_DATA",
+        "evidenceId": "doublelift-2018-tl-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 18.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Sivir",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.64733684808074,
+        "source": "WORLDS_DATA",
+        "evidenceId": "doublelift-2018-tl-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Varus",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.03316037352643,
+        "source": "SEASON_DATA",
+        "evidenceId": "doublelift-2018-tl-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 8.2,
+          "confidence": 0.28888888888888886,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.65188767829907,
+        "source": "SEASON_DATA",
+        "evidenceId": "doublelift-2018-tl-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 28.0,
+          "confidence": 0.24375000000000002,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "olleh-2018-tl",
+    "playerName": "Olleh",
+    "team": "TL",
+    "teamName": "Team Liquid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 2.6666666666666665
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rakan",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.94750573561116,
+        "source": "WORLDS_DATA",
+        "evidenceId": "olleh-2018-tl-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.8333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Leona",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.92348547105402,
+        "source": "WORLDS_DATA",
+        "evidenceId": "olleh-2018-tl-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.57539975307108,
+        "source": "WORLDS_DATA",
+        "evidenceId": "olleh-2018-tl-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.50483647679603,
+        "source": "WORLDS_DATA",
+        "evidenceId": "olleh-2018-tl-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Morgana",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.00584904121527,
+        "source": "SEASON_DATA",
+        "evidenceId": "olleh-2018-tl-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 4.8,
+          "confidence": 0.325,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ssumday-2018-100t",
+    "playerName": "Ssumday",
+    "team": "100T",
+    "teamName": "100 Thieves",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.6875
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ornn",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.39616282462043,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ssumday-2018-100t-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Urgot",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.62123991092578,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ssumday-2018-100t-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Irelia",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.71864319719822,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ssumday-2018-100t-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Sion",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.539605804483585,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ssumday-2018-100t-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Aatrox",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.94316837323882,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ssumday-2018-100t-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "anda-2018-100t",
+    "playerName": "AnDa",
+    "team": "100T",
+    "teamName": "100 Thieves",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 3.5294117647058822
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Graves",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.488111823163095,
+        "source": "WORLDS_DATA",
+        "evidenceId": "anda-2018-100t-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "XinZhao",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.32561132063526,
+        "source": "WORLDS_DATA",
+        "evidenceId": "anda-2018-100t-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Poppy",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.04240722264193,
+        "source": "WORLDS_DATA",
+        "evidenceId": "anda-2018-100t-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nocturne",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.98976802059509,
+        "source": "WORLDS_DATA",
+        "evidenceId": "anda-2018-100t-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Taliyah",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 57.72832708178069,
+        "source": "WORLDS_DATA",
+        "evidenceId": "anda-2018-100t-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 12.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ryu-2018-100t",
+    "playerName": "Ryu",
+    "team": "100T",
+    "teamName": "100 Thieves",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.1
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 33.967914460247925,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2018-100t-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Leblanc",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 36.68090610773051,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2018-100t-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ryze",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.109982907725175,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2018-100t-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lissandra",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.334622323508015,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2018-100t-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.2222222222222223,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Zoe",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.380853076495065,
+        "source": "SEASON_DATA",
+        "evidenceId": "ryu-2018-100t-g5",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 4.909090909090909,
+          "confidence": 0.35454545454545455,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "rikara-2018-100t",
+    "playerName": "Rikara",
+    "team": "100T",
+    "teamName": "100 Thieves",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.7777777777777777
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kaisa",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 37.643360221834804,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rikara-2018-100t-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.42857142857142855,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Xayah",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 44.33519537273517,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rikara-2018-100t-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Varus",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.49131274208245,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rikara-2018-100t-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.6666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jhin",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 37.322327198017945,
+        "source": "SEASON_DATA",
+        "evidenceId": "rikara-2018-100t-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 20.0,
+          "confidence": 0.18571428571428572,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "MissFortune",
+        "rating": 74,
+        "gameRating": 74,
+        "historicalScore": 33.17038507683814,
+        "source": "SEASON_DATA",
+        "evidenceId": "rikara-2018-100t-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.10833333333333334,
+          "event": "NA LCS_SUMMER_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202018/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "aphromoo-2018-100t",
+    "playerName": "aphromoo",
+    "team": "100T",
+    "teamName": "100 Thieves",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2018,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 3.9285714285714284
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.375247236411596,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2018-100t-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Thresh",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.56524873124434,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2018-100t-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Braum",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.7877758937275,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2018-100t-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Bard",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.735125838864434,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2018-100t-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Rakan",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.37429016054749,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2018-100t-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.6666666666666665,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2018",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/"
+        }
+      }
+    ]
+  }
+]

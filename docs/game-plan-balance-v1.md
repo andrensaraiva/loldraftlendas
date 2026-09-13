@@ -1,6 +1,6 @@
 # Planos de Jogo — Calibração v1
 
-Atualizado em 13 de setembro de 2026. Este relatório registra a calibração reproduzível da fase 2.4 sobre o dataset `multi-era-v1.3.0`.
+Atualizado em 13 de setembro de 2026. Este relatório registra a calibração reproduzível da fase 2.4 sobre o dataset `multi-era-v1.4.0`.
 
 ## Regra implementada
 
@@ -25,13 +25,13 @@ Isso isola o efeito de manter cada plano fixo sobre equipes variadas. A simulaç
 
 | Cenário       | Título | Eliminado no Suíço | Força média | Efeito médio | Baixa | Média |  Alta |
 | ------------- | -----: | -----------------: | ----------: | -----------: | ----: | ----: | ----: |
-| Sem plano     |  7,82% |             50,88% |       84,27 |         0,00 |     — |     — |     — |
-| Agressão      | 11,72% |             43,58% |       85,16 |        +0,89 |  5,3% | 47,6% | 47,1% |
-| Teamfight     | 12,53% |             42,65% |       85,31 |        +1,04 |  0,8% | 44,3% | 54,9% |
-| Controle/Pick | 10,35% |             46,20% |       84,87 |        +0,60 |  4,6% | 78,3% | 17,1% |
-| Escala        | 12,22% |             43,10% |       85,24 |        +0,96 |  2,8% | 46,5% | 50,7% |
+| Sem plano     |  8,06% |             51,16% |       84,28 |         0,00 |     — |     — |     — |
+| Agressão      | 12,48% |             43,56% |       85,17 |        +0,89 |  5,3% | 47,8% | 46,9% |
+| Teamfight     | 13,08% |             42,55% |       85,33 |        +1,05 |  0,7% | 43,1% | 56,2% |
+| Controle/Pick | 10,71% |             46,52% |       84,88 |        +0,60 |  4,9% | 78,1% | 16,9% |
+| Escala        | 12,75% |             42,75% |       85,26 |        +0,98 |  2,7% | 45,3% | 52,0% |
 
-Todas as probabilidades permaneceram entre 8% e 92%. A maior distância entre planos foi de 2,18 pontos percentuais na taxa de título. Teamfight e Escala encontram todas as suas tags com mais frequência; Controle/Pick é mais situacional. A interface mostra a compatibilidade por composição para que essa diferença seja uma decisão observável, não um multiplicador oculto.
+Todas as probabilidades permaneceram entre 8% e 92%. A maior distância entre planos foi de 2,37 pontos percentuais na taxa de título. Teamfight e Escala encontram todas as suas tags com mais frequência; Controle/Pick é mais situacional. A interface mostra a compatibilidade por composição para que essa diferença seja uma decisão observável, não um multiplicador oculto.
 
 ## Limites
 

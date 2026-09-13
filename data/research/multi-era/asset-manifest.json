@@ -15,6 +15,12 @@
       "bytes": 721652051
     },
     {
+      "year": 2018,
+      "url": "https://ddragon.leagueoflegends.com/cdn/dragontail-8.19.1.tgz",
+      "sha256": "c5a6e9d87a5fd63870b17a4414c67f5513ec4d8076d47acc446a81e28a7760d1",
+      "bytes": 735938868
+    },
+    {
       "year": 2019,
       "url": "https://ddragon.leagueoflegends.com/cdn/dragontail-9.19.1.tgz",
       "sha256": "6f7f54dff03a614c591129abb9e3994bc2d1488eba33bea0d845cb153b2ebe15",
@@ -72,6 +78,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Alistar.png",
       "localFile": "public/assets/2017/champions/Alistar.png",
+      "sha256": "0031284988b00f9cf830f9b0b530ee1d4615d717336bd9554e32b32f8eae8122"
+    },
+    {
+      "championId": "Alistar",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Alistar.png",
+      "localFile": "public/assets/2018/champions/Alistar.png",
       "sha256": "0031284988b00f9cf830f9b0b530ee1d4615d717336bd9554e32b32f8eae8122"
     },
     {
@@ -204,6 +218,14 @@
     },
     {
       "championId": "Ashe",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Ashe.png",
+      "localFile": "public/assets/2018/champions/Ashe.png",
+      "sha256": "4d85a00539749caad328e437d47a16e7ed2a2137e4a31313c546a2d167f99371"
+    },
+    {
+      "championId": "Ashe",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ashe.png",
@@ -268,6 +290,14 @@
     },
     {
       "championId": "Azir",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Azir.png",
+      "localFile": "public/assets/2018/champions/Azir.png",
+      "sha256": "9264bb82b1f6f9397d6b0fbc51a3be6592eaeabfa4f7768998fad3d70d986981"
+    },
+    {
+      "championId": "Azir",
       "year": 2020,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Azir.png",
@@ -313,6 +343,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/5.18.1/img/champion/Bard.png",
       "localFile": "public/assets/2015/champions/Bard.png",
       "sha256": "1866a0c49e4482c7362be93f313aac3786b01bcb4b026dc620c94eb8b407bd99"
+    },
+    {
+      "championId": "Bard",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Bard.png",
+      "localFile": "public/assets/2018/champions/Bard.png",
+      "sha256": "96df8ab9629152794ed9beb3b09a2e3d7aa3898ea6495b9bf71e354610e0dcfe"
     },
     {
       "championId": "Bard",
@@ -412,6 +450,14 @@
     },
     {
       "championId": "Brand",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Brand.png",
+      "localFile": "public/assets/2018/champions/Brand.png",
+      "sha256": "cc184bf9bbeacfd9a543cfb9fe573556b09dd0ca3fd92fe9a3ad887d56bef70f"
+    },
+    {
+      "championId": "Brand",
       "year": 2024,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Brand.png",
@@ -432,6 +478,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Braum.png",
       "localFile": "public/assets/2017/champions/Braum.png",
+      "sha256": "ace198b61fb25cef4004121c6887de44483b3dd34343573fd2cd6001f50e2fa0"
+    },
+    {
+      "championId": "Braum",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Braum.png",
+      "localFile": "public/assets/2018/champions/Braum.png",
       "sha256": "ace198b61fb25cef4004121c6887de44483b3dd34343573fd2cd6001f50e2fa0"
     },
     {
@@ -636,6 +690,14 @@
     },
     {
       "championId": "Ekko",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Ekko.png",
+      "localFile": "public/assets/2018/champions/Ekko.png",
+      "sha256": "4c7125546240c44f9412cd9350a659a53272f295e49bc169525c477aa715d4b6"
+    },
+    {
+      "championId": "Ekko",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ekko.png",
@@ -668,6 +730,14 @@
     },
     {
       "championId": "Elise",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Elise.png",
+      "localFile": "public/assets/2018/champions/Elise.png",
+      "sha256": "49981b4b57917d8f3a75ec7c106adcd7ed5fc0a79940ad4de44311f7845c3964"
+    },
+    {
+      "championId": "Elise",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Elise.png",
@@ -692,6 +762,14 @@
     },
     {
       "championId": "Evelynn",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Evelynn.png",
+      "localFile": "public/assets/2018/champions/Evelynn.png",
+      "sha256": "8f0c94196bf528d805d6164216f2e80af4d585c106feb09af64c8d1c5c404d38"
+    },
+    {
+      "championId": "Evelynn",
       "year": 2020,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Evelynn.png",
@@ -705,6 +783,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/5.18.1/img/champion/Fiora.png",
       "localFile": "public/assets/2015/champions/Fiora.png",
       "sha256": "e9d26721107ac82ddfd0b6b448cb0a5d02c737352b1a0886bb8f4bdacbcd728e"
+    },
+    {
+      "championId": "Fiora",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Fiora.png",
+      "localFile": "public/assets/2018/champions/Fiora.png",
+      "sha256": "88ccdebd8853b5e3cef8ae8b8f638bdfabd78fa38890f15cf08129372d3cd6bf"
     },
     {
       "championId": "Fiora",
@@ -737,6 +823,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/5.18.1/img/champion/Gangplank.png",
       "localFile": "public/assets/2015/champions/Gangplank.png",
       "sha256": "d13b0ee6991ef18ffb6a74cc7fb51def8c046b0a7ab249d355611294e7a7798e"
+    },
+    {
+      "championId": "Gangplank",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Gangplank.png",
+      "localFile": "public/assets/2018/champions/Gangplank.png",
+      "sha256": "ad32887ff5f6e8212dad310bd728747fd3f0ba1cf3bd027219364c8625e59e81"
     },
     {
       "championId": "Gangplank",
@@ -852,6 +946,14 @@
     },
     {
       "championId": "Gragas",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Gragas.png",
+      "localFile": "public/assets/2018/champions/Gragas.png",
+      "sha256": "55d4999721337dd49b968e07e026e7029629b7bffcc519929c8a38d83bdfca09"
+    },
+    {
+      "championId": "Gragas",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Gragas.png",
@@ -916,6 +1018,14 @@
     },
     {
       "championId": "Graves",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Graves.png",
+      "localFile": "public/assets/2018/champions/Graves.png",
+      "sha256": "c3d53f8f8f5945f1f1daf446c7d465f560ce80fc2215289a646cea7e5f1f08e5"
+    },
+    {
+      "championId": "Graves",
       "year": 2020,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Graves.png",
@@ -953,6 +1063,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/5.18.1/img/champion/Hecarim.png",
       "localFile": "public/assets/2015/champions/Hecarim.png",
       "sha256": "404abacb100979ec1443ae8df7cde3a4e4e4bf84ecc2b36bcc572d5452eb2fd2"
+    },
+    {
+      "championId": "Hecarim",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Hecarim.png",
+      "localFile": "public/assets/2018/champions/Hecarim.png",
+      "sha256": "dac443f32de73afda905a515a3feb6c40bd9f3f5a55c662c7344d6c9d7002b8e"
     },
     {
       "championId": "Hecarim",
@@ -1000,6 +1118,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/JarvanIV.png",
       "localFile": "public/assets/2017/champions/JarvanIV.png",
+      "sha256": "d06c0d9c574e42b580f16ee4218d1230d4e2b6caa0bf5024ff39f09dd13defd9"
+    },
+    {
+      "championId": "JarvanIV",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/JarvanIV.png",
+      "localFile": "public/assets/2018/champions/JarvanIV.png",
       "sha256": "d06c0d9c574e42b580f16ee4218d1230d4e2b6caa0bf5024ff39f09dd13defd9"
     },
     {
@@ -1072,6 +1198,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Jayce.png",
       "localFile": "public/assets/2017/champions/Jayce.png",
+      "sha256": "6ce19d3fb0dde75626da78e69667918cf3b25fdabf4697c31da9072702889cf1"
+    },
+    {
+      "championId": "Jayce",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Jayce.png",
+      "localFile": "public/assets/2018/champions/Jayce.png",
       "sha256": "6ce19d3fb0dde75626da78e69667918cf3b25fdabf4697c31da9072702889cf1"
     },
     {
@@ -1276,6 +1410,14 @@
     },
     {
       "championId": "Kassadin",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Kassadin.png",
+      "localFile": "public/assets/2018/champions/Kassadin.png",
+      "sha256": "717a1e54f2fb80368d31952fb9bab4c7cda82e2bb9e4949593e531e9b867e863"
+    },
+    {
+      "championId": "Kassadin",
       "year": 2021,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Kassadin.png",
@@ -1372,6 +1514,14 @@
     },
     {
       "championId": "Leblanc",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Leblanc.png",
+      "localFile": "public/assets/2018/champions/Leblanc.png",
+      "sha256": "116bb8a809cd4e8dc6d89fbdd26e315c73612c4f22274887e05cd2ac69f7b2e6"
+    },
+    {
+      "championId": "Leblanc",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Leblanc.png",
@@ -1444,6 +1594,14 @@
     },
     {
       "championId": "LeeSin",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/LeeSin.png",
+      "localFile": "public/assets/2018/champions/LeeSin.png",
+      "sha256": "d40a994ffd958e82b12c3f28c202170562bcca691b4677f4fca8523272cb9bbe"
+    },
+    {
+      "championId": "LeeSin",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/LeeSin.png",
@@ -1500,6 +1658,14 @@
     },
     {
       "championId": "Lissandra",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Lissandra.png",
+      "localFile": "public/assets/2018/champions/Lissandra.png",
+      "sha256": "fe6d7b6eca3957a25dbd20733663d7fd44111868d43369ec958793fff41e29ce"
+    },
+    {
+      "championId": "Lissandra",
       "year": 2021,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Lissandra.png",
@@ -1536,6 +1702,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Lucian.png",
       "localFile": "public/assets/2017/champions/Lucian.png",
+      "sha256": "37d082cbe58cea106d1caa8dfe34bbc3a89e52399388546b47dc9f129d495149"
+    },
+    {
+      "championId": "Lucian",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Lucian.png",
+      "localFile": "public/assets/2018/champions/Lucian.png",
       "sha256": "37d082cbe58cea106d1caa8dfe34bbc3a89e52399388546b47dc9f129d495149"
     },
     {
@@ -1608,6 +1782,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Lulu.png",
       "localFile": "public/assets/2017/champions/Lulu.png",
+      "sha256": "4bb17ed8113cb7c79a190c747a74f40003a9a2bb62d537922a7bb47b8d55f4c2"
+    },
+    {
+      "championId": "Lulu",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Lulu.png",
+      "localFile": "public/assets/2018/champions/Lulu.png",
       "sha256": "4bb17ed8113cb7c79a190c747a74f40003a9a2bb62d537922a7bb47b8d55f4c2"
     },
     {
@@ -1796,6 +1978,14 @@
     },
     {
       "championId": "Morgana",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Morgana.png",
+      "localFile": "public/assets/2018/champions/Morgana.png",
+      "sha256": "158c9a971d848263cf46f4e394255755a668e1313a857112143e4d44fbb5e126"
+    },
+    {
+      "championId": "Morgana",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Morgana.png",
@@ -1824,6 +2014,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Nautilus.png",
       "localFile": "public/assets/2017/champions/Nautilus.png",
+      "sha256": "243e0cef17fa93df07e2a1dc08abc3399833e3f8f223bd3c236be7778683c10a"
+    },
+    {
+      "championId": "Nautilus",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Nautilus.png",
+      "localFile": "public/assets/2018/champions/Nautilus.png",
       "sha256": "243e0cef17fa93df07e2a1dc08abc3399833e3f8f223bd3c236be7778683c10a"
     },
     {
@@ -1945,6 +2143,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/5.18.1/img/champion/Olaf.png",
       "localFile": "public/assets/2015/champions/Olaf.png",
       "sha256": "21f12f0f8d35d632437d68a2e131ec35f3754e758dcb60483d0f39fd434e5143"
+    },
+    {
+      "championId": "Olaf",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Olaf.png",
+      "localFile": "public/assets/2018/champions/Olaf.png",
+      "sha256": "926ac451f390ca0d5b17bc63160e2604de2b3d0bcd48d6f19d134be322357708"
     },
     {
       "championId": "Olaf",
@@ -2236,6 +2442,14 @@
     },
     {
       "championId": "Ryze",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Ryze.png",
+      "localFile": "public/assets/2018/champions/Ryze.png",
+      "sha256": "fb3de9269d4eb3784fd33a6dffa2d748f74b59a6993ebbe73a586dac9985a283"
+    },
+    {
+      "championId": "Ryze",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ryze.png",
@@ -2296,6 +2510,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Sejuani.png",
       "localFile": "public/assets/2017/champions/Sejuani.png",
+      "sha256": "2fe33b705836902ffd9e936fdcaa588673d7c881f8750004de7c2e90b37292de"
+    },
+    {
+      "championId": "Sejuani",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Sejuani.png",
+      "localFile": "public/assets/2018/champions/Sejuani.png",
       "sha256": "2fe33b705836902ffd9e936fdcaa588673d7c881f8750004de7c2e90b37292de"
     },
     {
@@ -2364,6 +2586,14 @@
     },
     {
       "championId": "Shen",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Shen.png",
+      "localFile": "public/assets/2018/champions/Shen.png",
+      "sha256": "b3436d97483701e6a39619d05a875474dee5fc0867e042482747bb0345b9089d"
+    },
+    {
+      "championId": "Shen",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Shen.png",
@@ -2420,6 +2650,14 @@
     },
     {
       "championId": "Sivir",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Sivir.png",
+      "localFile": "public/assets/2018/champions/Sivir.png",
+      "sha256": "0e121ec56e201512b6c2fa0e12235bbca84d2914e29740a0e910007a3e2b538a"
+    },
+    {
+      "championId": "Sivir",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sivir.png",
@@ -2460,6 +2698,14 @@
     },
     {
       "championId": "Skarner",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Skarner.png",
+      "localFile": "public/assets/2018/champions/Skarner.png",
+      "sha256": "849093b949e453807d5d8d384688e774a6bcc6b7ca82be80d00dc5229c4d1218"
+    },
+    {
+      "championId": "Skarner",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Skarner.png",
@@ -2496,6 +2742,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Syndra.png",
       "localFile": "public/assets/2017/champions/Syndra.png",
+      "sha256": "e8305aefb17acf51f155c401542acdea829c1b0a7ae50145aa60da42e50e8f92"
+    },
+    {
+      "championId": "Syndra",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Syndra.png",
+      "localFile": "public/assets/2018/champions/Syndra.png",
       "sha256": "e8305aefb17acf51f155c401542acdea829c1b0a7ae50145aa60da42e50e8f92"
     },
     {
@@ -2556,6 +2810,14 @@
     },
     {
       "championId": "TahmKench",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/TahmKench.png",
+      "localFile": "public/assets/2018/champions/TahmKench.png",
+      "sha256": "9b58fda1a20dbd97740c4e5307c3f867de6c7b4814cd9466a65e9989b1ec06d3"
+    },
+    {
+      "championId": "TahmKench",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/TahmKench.png",
@@ -2608,6 +2870,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Thresh.png",
       "localFile": "public/assets/2017/champions/Thresh.png",
+      "sha256": "732019bf3204d8fe677f5a3c91d2bd6e7ba709f30e0394513b5dc4eba2bbd721"
+    },
+    {
+      "championId": "Thresh",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Thresh.png",
+      "localFile": "public/assets/2018/champions/Thresh.png",
       "sha256": "732019bf3204d8fe677f5a3c91d2bd6e7ba709f30e0394513b5dc4eba2bbd721"
     },
     {
@@ -2672,6 +2942,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Tristana.png",
       "localFile": "public/assets/2017/champions/Tristana.png",
+      "sha256": "dea8f08acec184ab98e86a1cedebc67e5edf3b177513b27efb3c8fdf6a8ae750"
+    },
+    {
+      "championId": "Tristana",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Tristana.png",
+      "localFile": "public/assets/2018/champions/Tristana.png",
       "sha256": "dea8f08acec184ab98e86a1cedebc67e5edf3b177513b27efb3c8fdf6a8ae750"
     },
     {
@@ -2793,6 +3071,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Varus.png",
       "localFile": "public/assets/2017/champions/Varus.png",
       "sha256": "ef7e0a5868e6151de26a01dd01aeba665c25ffc78af9d37fd8e3d5f5aaff95f0"
+    },
+    {
+      "championId": "Varus",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Varus.png",
+      "localFile": "public/assets/2018/champions/Varus.png",
+      "sha256": "06b1620b6e31f957e62acdd93f28964e0e96bc1808b702323d83a21b6bf47ee0"
     },
     {
       "championId": "Varus",
@@ -2948,6 +3234,14 @@
     },
     {
       "championId": "Viktor",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Viktor.png",
+      "localFile": "public/assets/2018/champions/Viktor.png",
+      "sha256": "031e85f85f98ca3c9c9bc6c32fe8539ed5283911340cabf7867bcafb3913009a"
+    },
+    {
+      "championId": "Viktor",
       "year": 2021,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Viktor.png",
@@ -2977,6 +3271,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/5.18.1/img/champion/Vladimir.png",
       "localFile": "public/assets/2015/champions/Vladimir.png",
       "sha256": "11e347285c847cfc38a4c8d79ae848c7c5901917468390b1d78a86a40b4fd765"
+    },
+    {
+      "championId": "Vladimir",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Vladimir.png",
+      "localFile": "public/assets/2018/champions/Vladimir.png",
+      "sha256": "b562af5f6f8b5fe962a840df66e70e6980bdb3f9b2e3e0581dfe8665ac412ccd"
     },
     {
       "championId": "Vladimir",
@@ -3052,6 +3354,14 @@
     },
     {
       "championId": "Zac",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Zac.png",
+      "localFile": "public/assets/2018/champions/Zac.png",
+      "sha256": "cb39d5f64b022d30f38c5619db06d0014e71711608a62f7ff07c47c8017ea4d3"
+    },
+    {
+      "championId": "Zac",
       "year": 2023,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Zac.png",
@@ -3072,6 +3382,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Camille.png",
       "localFile": "public/assets/2017/champions/Camille.png",
+      "sha256": "8d5f3292eb0413ba40e1740bbac69aade753fa8c93f8ed674edbed6560f6b4e3"
+    },
+    {
+      "championId": "Camille",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Camille.png",
+      "localFile": "public/assets/2018/champions/Camille.png",
       "sha256": "8d5f3292eb0413ba40e1740bbac69aade753fa8c93f8ed674edbed6560f6b4e3"
     },
     {
@@ -3132,6 +3450,14 @@
     },
     {
       "championId": "Cassiopeia",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Cassiopeia.png",
+      "localFile": "public/assets/2018/champions/Cassiopeia.png",
+      "sha256": "5d89848a82051edc5ba0df7ce12dc15f2db95f09d9455b8b862362ca2574f31b"
+    },
+    {
+      "championId": "Cassiopeia",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Cassiopeia.png",
@@ -3184,6 +3510,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Ezreal.png",
       "localFile": "public/assets/2017/champions/Ezreal.png",
+      "sha256": "41cef3cf95d70f607aff7e589c59344da61d46717c2220785d5e208fd66fac13"
+    },
+    {
+      "championId": "Ezreal",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Ezreal.png",
+      "localFile": "public/assets/2018/champions/Ezreal.png",
       "sha256": "41cef3cf95d70f607aff7e589c59344da61d46717c2220785d5e208fd66fac13"
     },
     {
@@ -3256,6 +3590,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Galio.png",
       "localFile": "public/assets/2017/champions/Galio.png",
+      "sha256": "2d4c98d574ae866bd0e327d8a6f6d2ccf0cc8ca07fa67b61dc8bd49518dea45b"
+    },
+    {
+      "championId": "Galio",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Galio.png",
+      "localFile": "public/assets/2018/champions/Galio.png",
       "sha256": "2d4c98d574ae866bd0e327d8a6f6d2ccf0cc8ca07fa67b61dc8bd49518dea45b"
     },
     {
@@ -3340,6 +3682,14 @@
     },
     {
       "championId": "Jax",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Jax.png",
+      "localFile": "public/assets/2018/champions/Jax.png",
+      "sha256": "10260d8b1b447c1d5047735969658184c4873af8953072bdea182673452b32e7"
+    },
+    {
+      "championId": "Jax",
       "year": 2020,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Jax.png",
@@ -3420,6 +3770,14 @@
     },
     {
       "championId": "Leona",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Leona.png",
+      "localFile": "public/assets/2018/champions/Leona.png",
+      "sha256": "709602b8151cddd5410b14ebd93b99a07811ca647847a528c635c7f1ef8d5d0d"
+    },
+    {
+      "championId": "Leona",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Leona.png",
@@ -3484,6 +3842,14 @@
     },
     {
       "championId": "Malzahar",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Malzahar.png",
+      "localFile": "public/assets/2018/champions/Malzahar.png",
+      "sha256": "4f163e803466eeb100d66967bdaaec95e2fdce30b4c3300abaca7c7029206edd"
+    },
+    {
+      "championId": "Malzahar",
       "year": 2021,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Malzahar.png",
@@ -3496,6 +3862,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Nami.png",
       "localFile": "public/assets/2017/champions/Nami.png",
+      "sha256": "20dd568760bd8eb635146009197d6a147a2e31b3f26b718b23d841e48e798a90"
+    },
+    {
+      "championId": "Nami",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Nami.png",
+      "localFile": "public/assets/2018/champions/Nami.png",
       "sha256": "20dd568760bd8eb635146009197d6a147a2e31b3f26b718b23d841e48e798a90"
     },
     {
@@ -3556,6 +3930,14 @@
     },
     {
       "championId": "Nocturne",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Nocturne.png",
+      "localFile": "public/assets/2018/champions/Nocturne.png",
+      "sha256": "f2e0d4243ae4c130c2692f9758af86398e6d7e14f566b535e10c1107922128dc"
+    },
+    {
+      "championId": "Nocturne",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Nocturne.png",
@@ -3600,6 +3982,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Rakan.png",
       "localFile": "public/assets/2017/champions/Rakan.png",
+      "sha256": "bad9550da91fb32433cbd05a788d6491e67355d8b04f162e6b04a76467c1017f"
+    },
+    {
+      "championId": "Rakan",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Rakan.png",
+      "localFile": "public/assets/2018/champions/Rakan.png",
       "sha256": "bad9550da91fb32433cbd05a788d6491e67355d8b04f162e6b04a76467c1017f"
     },
     {
@@ -3732,6 +4122,14 @@
     },
     {
       "championId": "Taliyah",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Taliyah.png",
+      "localFile": "public/assets/2018/champions/Taliyah.png",
+      "sha256": "4bff59c4d95836b048c00bd36fff8053bd325fac6599eb48fb78bde45c78cadd"
+    },
+    {
+      "championId": "Taliyah",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Taliyah.png",
@@ -3812,6 +4210,14 @@
     },
     {
       "championId": "Trundle",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Trundle.png",
+      "localFile": "public/assets/2018/champions/Trundle.png",
+      "sha256": "d03b780e2b6d5281c9e00fe9fc28ad96e3eaca3a07b5e5b9b2d7318d244c69db"
+    },
+    {
+      "championId": "Trundle",
       "year": 2020,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Trundle.png",
@@ -3848,6 +4254,14 @@
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/7.18.1/img/champion/Xayah.png",
       "localFile": "public/assets/2017/champions/Xayah.png",
+      "sha256": "cf9013719e268024d16f766dacb79baa6cc4341daad1b93b76f8adcd48d036f8"
+    },
+    {
+      "championId": "Xayah",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Xayah.png",
+      "localFile": "public/assets/2018/champions/Xayah.png",
       "sha256": "cf9013719e268024d16f766dacb79baa6cc4341daad1b93b76f8adcd48d036f8"
     },
     {
@@ -3892,6 +4306,14 @@
     },
     {
       "championId": "Aatrox",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Aatrox.png",
+      "localFile": "public/assets/2018/champions/Aatrox.png",
+      "sha256": "c0097cae1b3611568d04adf9ad25959300daf45f28c8b1dd999d04df43108f06"
+    },
+    {
+      "championId": "Aatrox",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Aatrox.png",
@@ -3929,6 +4351,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Aatrox.png",
       "localFile": "public/assets/2025/champions/Aatrox.png",
       "sha256": "852d739fb696684549064266851df91ecd03729e06b1a192dc14af01549b7f3f"
+    },
+    {
+      "championId": "Akali",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Akali.png",
+      "localFile": "public/assets/2018/champions/Akali.png",
+      "sha256": "d4ca58e67fa4124e2fa0f40690c3e13db6f4c4ef91d381019f12194b6ef488da"
     },
     {
       "championId": "Akali",
@@ -3977,6 +4407,14 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Akali.png",
       "localFile": "public/assets/2025/champions/Akali.png",
       "sha256": "a62acc32c454b5cc39cebd0769f940b34f3d39ddaf157b95acb176027f81e17a"
+    },
+    {
+      "championId": "Draven",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Draven.png",
+      "localFile": "public/assets/2018/champions/Draven.png",
+      "sha256": "4eb78bac4cc5777bb490d6e3b5c0a963952faf74c34cf62686ba0b2edea41539"
     },
     {
       "championId": "Draven",
@@ -4036,6 +4474,14 @@
     },
     {
       "championId": "Fiddlesticks",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Fiddlesticks.png",
+      "localFile": "public/assets/2018/champions/Fiddlesticks.png",
+      "sha256": "b2a8b61747a8e0993de1e84810582f717f17629f6ca6fcba73e83568fc9fe28a"
+    },
+    {
+      "championId": "Fiddlesticks",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Fiddlesticks.png",
@@ -4059,20 +4505,12 @@
       "sha256": "70c4ba84df693e5c3f8edb299823afa231adf2b81b58fb54117a534dc77910ff"
     },
     {
-      "championId": "Garen",
-      "year": 2019,
+      "championId": "Heimerdinger",
+      "year": 2018,
       "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Garen.png",
-      "localFile": "public/assets/2019/champions/Garen.png",
-      "sha256": "dc4606954c97b04dbb31441559c00e2ed181cf6ba120f5326a50385d06e1b38d"
-    },
-    {
-      "championId": "Garen",
-      "year": 2023,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Garen.png",
-      "localFile": "public/assets/2023/champions/Garen.png",
-      "sha256": "dc4606954c97b04dbb31441559c00e2ed181cf6ba120f5326a50385d06e1b38d"
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Heimerdinger.png",
+      "localFile": "public/assets/2018/champions/Heimerdinger.png",
+      "sha256": "796ea4652f59b556cfb94dbedb54ced1ac7bf8e8bc4562985d1e52c2477b7f99"
     },
     {
       "championId": "Heimerdinger",
@@ -4100,6 +4538,14 @@
     },
     {
       "championId": "Irelia",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Irelia.png",
+      "localFile": "public/assets/2018/champions/Irelia.png",
+      "sha256": "df8c011d7ed017bfafec2e2443b04921b9e76acd80189b6f49469b82d6f53e56"
+    },
+    {
+      "championId": "Irelia",
       "year": 2019,
       "kind": "square",
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Irelia.png",
@@ -4121,6 +4567,62 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Irelia.png",
       "localFile": "public/assets/2021/champions/Irelia.png",
       "sha256": "df8c011d7ed017bfafec2e2443b04921b9e76acd80189b6f49469b82d6f53e56"
+    },
+    {
+      "championId": "Jhin",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Jhin.png",
+      "localFile": "public/assets/2018/champions/Jhin.png",
+      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
+    },
+    {
+      "championId": "Jhin",
+      "year": 2020,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Jhin.png",
+      "localFile": "public/assets/2020/champions/Jhin.png",
+      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
+    },
+    {
+      "championId": "Jhin",
+      "year": 2021,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Jhin.png",
+      "localFile": "public/assets/2021/champions/Jhin.png",
+      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
+    },
+    {
+      "championId": "Jhin",
+      "year": 2022,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Jhin.png",
+      "localFile": "public/assets/2022/champions/Jhin.png",
+      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
+    },
+    {
+      "championId": "Jhin",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Jhin.png",
+      "localFile": "public/assets/2024/champions/Jhin.png",
+      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
+    },
+    {
+      "championId": "Jhin",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Jhin.png",
+      "localFile": "public/assets/2025/champions/Jhin.png",
+      "sha256": "dd24ce955ba61995956f1a48cb9b90b9b52936bb23bf05e0cb74cfc9c74a4b0c"
+    },
+    {
+      "championId": "Kaisa",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Kaisa.png",
+      "localFile": "public/assets/2018/champions/Kaisa.png",
+      "sha256": "5aee5332e0f50db5d5278865c4addc231ff3a338248acc3b8b1ec78e2aabd75c"
     },
     {
       "championId": "Kaisa",
@@ -4179,6 +4681,470 @@
       "sha256": "e0e86ccb7143d20bcbd83f192530f9712bf4b1d6306ec07a06992d4b72676443"
     },
     {
+      "championId": "Kindred",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Kindred.png",
+      "localFile": "public/assets/2018/champions/Kindred.png",
+      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
+    },
+    {
+      "championId": "Kindred",
+      "year": 2020,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Kindred.png",
+      "localFile": "public/assets/2020/champions/Kindred.png",
+      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
+    },
+    {
+      "championId": "Kindred",
+      "year": 2022,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Kindred.png",
+      "localFile": "public/assets/2022/champions/Kindred.png",
+      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
+    },
+    {
+      "championId": "Kindred",
+      "year": 2023,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Kindred.png",
+      "localFile": "public/assets/2023/champions/Kindred.png",
+      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
+    },
+    {
+      "championId": "Kindred",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Kindred.png",
+      "localFile": "public/assets/2024/champions/Kindred.png",
+      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
+    },
+    {
+      "championId": "Kled",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Kled.png",
+      "localFile": "public/assets/2018/champions/Kled.png",
+      "sha256": "e8a5084f2689f09f8341e2e3ca136040aa0a5de73163869f93cdc9c9977102ca"
+    },
+    {
+      "championId": "Kled",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Kled.png",
+      "localFile": "public/assets/2024/champions/Kled.png",
+      "sha256": "e8a5084f2689f09f8341e2e3ca136040aa0a5de73163869f93cdc9c9977102ca"
+    },
+    {
+      "championId": "Kled",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Kled.png",
+      "localFile": "public/assets/2025/champions/Kled.png",
+      "sha256": "4d71421e5e0a4fd8092fc9b6d91cc10fb36a067fc8a74b5e2fce2e718d3f2566"
+    },
+    {
+      "championId": "MissFortune",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/MissFortune.png",
+      "localFile": "public/assets/2018/champions/MissFortune.png",
+      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
+    },
+    {
+      "championId": "MissFortune",
+      "year": 2020,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/MissFortune.png",
+      "localFile": "public/assets/2020/champions/MissFortune.png",
+      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
+    },
+    {
+      "championId": "MissFortune",
+      "year": 2021,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/MissFortune.png",
+      "localFile": "public/assets/2021/champions/MissFortune.png",
+      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
+    },
+    {
+      "championId": "MissFortune",
+      "year": 2022,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/MissFortune.png",
+      "localFile": "public/assets/2022/champions/MissFortune.png",
+      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
+    },
+    {
+      "championId": "MissFortune",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/MissFortune.png",
+      "localFile": "public/assets/2024/champions/MissFortune.png",
+      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
+    },
+    {
+      "championId": "MissFortune",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/MissFortune.png",
+      "localFile": "public/assets/2025/champions/MissFortune.png",
+      "sha256": "a8c3048bfb76b4e8b34e00193ed2febe69669918055ffda835ddb24905588733"
+    },
+    {
+      "championId": "Ornn",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Ornn.png",
+      "localFile": "public/assets/2018/champions/Ornn.png",
+      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
+    },
+    {
+      "championId": "Ornn",
+      "year": 2019,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ornn.png",
+      "localFile": "public/assets/2019/champions/Ornn.png",
+      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
+    },
+    {
+      "championId": "Ornn",
+      "year": 2020,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Ornn.png",
+      "localFile": "public/assets/2020/champions/Ornn.png",
+      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
+    },
+    {
+      "championId": "Ornn",
+      "year": 2022,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Ornn.png",
+      "localFile": "public/assets/2022/champions/Ornn.png",
+      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
+    },
+    {
+      "championId": "Ornn",
+      "year": 2023,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Ornn.png",
+      "localFile": "public/assets/2023/champions/Ornn.png",
+      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
+    },
+    {
+      "championId": "Ornn",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Ornn.png",
+      "localFile": "public/assets/2025/champions/Ornn.png",
+      "sha256": "91374f0919871a6490ac7b8ff9b073efb8b6a797f28302cc3751294c47c58d6e"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Poppy.png",
+      "localFile": "public/assets/2018/champions/Poppy.png",
+      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2019,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Poppy.png",
+      "localFile": "public/assets/2019/champions/Poppy.png",
+      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2021,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Poppy.png",
+      "localFile": "public/assets/2021/champions/Poppy.png",
+      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2022,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Poppy.png",
+      "localFile": "public/assets/2022/champions/Poppy.png",
+      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2023,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Poppy.png",
+      "localFile": "public/assets/2023/champions/Poppy.png",
+      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Poppy.png",
+      "localFile": "public/assets/2024/champions/Poppy.png",
+      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Poppy.png",
+      "localFile": "public/assets/2025/champions/Poppy.png",
+      "sha256": "c2cdd3a868b4b9ac5f1f3fef5ca77e930f32b0c98a5c3b83bcb099f75a4b6b7c"
+    },
+    {
+      "championId": "Pyke",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Pyke.png",
+      "localFile": "public/assets/2018/champions/Pyke.png",
+      "sha256": "01ee32663d5ac7ba1c174fdd2c6628057ee5c309a3c8df9cfd0dc40fa263c10b"
+    },
+    {
+      "championId": "Pyke",
+      "year": 2019,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pyke.png",
+      "localFile": "public/assets/2019/champions/Pyke.png",
+      "sha256": "01ee32663d5ac7ba1c174fdd2c6628057ee5c309a3c8df9cfd0dc40fa263c10b"
+    },
+    {
+      "championId": "Pyke",
+      "year": 2021,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Pyke.png",
+      "localFile": "public/assets/2021/champions/Pyke.png",
+      "sha256": "01ee32663d5ac7ba1c174fdd2c6628057ee5c309a3c8df9cfd0dc40fa263c10b"
+    },
+    {
+      "championId": "Pyke",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Pyke.png",
+      "localFile": "public/assets/2024/champions/Pyke.png",
+      "sha256": "01ee32663d5ac7ba1c174fdd2c6628057ee5c309a3c8df9cfd0dc40fa263c10b"
+    },
+    {
+      "championId": "Sion",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Sion.png",
+      "localFile": "public/assets/2018/champions/Sion.png",
+      "sha256": "a107e685d4af90c99535cb1c6ff96fbc980c754a97b2d753ab0b6e4c699e5977"
+    },
+    {
+      "championId": "Sion",
+      "year": 2019,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sion.png",
+      "localFile": "public/assets/2019/champions/Sion.png",
+      "sha256": "a107e685d4af90c99535cb1c6ff96fbc980c754a97b2d753ab0b6e4c699e5977"
+    },
+    {
+      "championId": "Sion",
+      "year": 2020,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Sion.png",
+      "localFile": "public/assets/2020/champions/Sion.png",
+      "sha256": "a107e685d4af90c99535cb1c6ff96fbc980c754a97b2d753ab0b6e4c699e5977"
+    },
+    {
+      "championId": "Sion",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Sion.png",
+      "localFile": "public/assets/2024/champions/Sion.png",
+      "sha256": "a107e685d4af90c99535cb1c6ff96fbc980c754a97b2d753ab0b6e4c699e5977"
+    },
+    {
+      "championId": "Sion",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Sion.png",
+      "localFile": "public/assets/2025/champions/Sion.png",
+      "sha256": "4908e30a48ec3cbdb080de1667833e2d018ea03fb296e9760066a46793adb528"
+    },
+    {
+      "championId": "Swain",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Swain.png",
+      "localFile": "public/assets/2018/champions/Swain.png",
+      "sha256": "72bdef542eafdad67ea55f43766b242e08ae89b4c7bebfbb2d975bd7a1d0b76b"
+    },
+    {
+      "championId": "Swain",
+      "year": 2022,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Swain.png",
+      "localFile": "public/assets/2022/champions/Swain.png",
+      "sha256": "72bdef542eafdad67ea55f43766b242e08ae89b4c7bebfbb2d975bd7a1d0b76b"
+    },
+    {
+      "championId": "Swain",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Swain.png",
+      "localFile": "public/assets/2024/champions/Swain.png",
+      "sha256": "72bdef542eafdad67ea55f43766b242e08ae89b4c7bebfbb2d975bd7a1d0b76b"
+    },
+    {
+      "championId": "Swain",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Swain.png",
+      "localFile": "public/assets/2025/champions/Swain.png",
+      "sha256": "9f4550dd903cf19ee587bd0870f630ce90d6f62fac2a2d07fe46bda153db8f9b"
+    },
+    {
+      "championId": "Urgot",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Urgot.png",
+      "localFile": "public/assets/2018/champions/Urgot.png",
+      "sha256": "3b77b52d7ec5278298b6ee6301656fa21ab8b86edbca17a4ccd649adc5621a7d"
+    },
+    {
+      "championId": "Urgot",
+      "year": 2019,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Urgot.png",
+      "localFile": "public/assets/2019/champions/Urgot.png",
+      "sha256": "3b77b52d7ec5278298b6ee6301656fa21ab8b86edbca17a4ccd649adc5621a7d"
+    },
+    {
+      "championId": "Urgot",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Urgot.png",
+      "localFile": "public/assets/2024/champions/Urgot.png",
+      "sha256": "3b77b52d7ec5278298b6ee6301656fa21ab8b86edbca17a4ccd649adc5621a7d"
+    },
+    {
+      "championId": "Velkoz",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Velkoz.png",
+      "localFile": "public/assets/2018/champions/Velkoz.png",
+      "sha256": "1a1fb4389b625a67b620fc5167fbf9fafff5ca62cbfe426b459565449aa56692"
+    },
+    {
+      "championId": "XinZhao",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/XinZhao.png",
+      "localFile": "public/assets/2018/champions/XinZhao.png",
+      "sha256": "f8ee14b785ebcdd46e677b742e03160fd88be3b15bd779eb9836c86e0f22d81e"
+    },
+    {
+      "championId": "XinZhao",
+      "year": 2021,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/XinZhao.png",
+      "localFile": "public/assets/2021/champions/XinZhao.png",
+      "sha256": "f8ee14b785ebcdd46e677b742e03160fd88be3b15bd779eb9836c86e0f22d81e"
+    },
+    {
+      "championId": "XinZhao",
+      "year": 2022,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/XinZhao.png",
+      "localFile": "public/assets/2022/champions/XinZhao.png",
+      "sha256": "f8ee14b785ebcdd46e677b742e03160fd88be3b15bd779eb9836c86e0f22d81e"
+    },
+    {
+      "championId": "XinZhao",
+      "year": 2024,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/XinZhao.png",
+      "localFile": "public/assets/2024/champions/XinZhao.png",
+      "sha256": "f8ee14b785ebcdd46e677b742e03160fd88be3b15bd779eb9836c86e0f22d81e"
+    },
+    {
+      "championId": "XinZhao",
+      "year": 2025,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/XinZhao.png",
+      "localFile": "public/assets/2025/champions/XinZhao.png",
+      "sha256": "f70e9570c60a33328b4e0c0437bcb33cc2320056ba0724e0279e553436da5667"
+    },
+    {
+      "championId": "Zilean",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Zilean.png",
+      "localFile": "public/assets/2018/champions/Zilean.png",
+      "sha256": "a1f0a7dc9f7b5493dedc52709f6a8590f97df9e24c2473053698ca865f336261"
+    },
+    {
+      "championId": "Zilean",
+      "year": 2020,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Zilean.png",
+      "localFile": "public/assets/2020/champions/Zilean.png",
+      "sha256": "a1f0a7dc9f7b5493dedc52709f6a8590f97df9e24c2473053698ca865f336261"
+    },
+    {
+      "championId": "Zilean",
+      "year": 2021,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Zilean.png",
+      "localFile": "public/assets/2021/champions/Zilean.png",
+      "sha256": "a1f0a7dc9f7b5493dedc52709f6a8590f97df9e24c2473053698ca865f336261"
+    },
+    {
+      "championId": "Zoe",
+      "year": 2018,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/8.19.1/img/champion/Zoe.png",
+      "localFile": "public/assets/2018/champions/Zoe.png",
+      "sha256": "912550e09384b53aec12460e08b205e0744a13f5bd729548986dce00eca5c67d"
+    },
+    {
+      "championId": "Zoe",
+      "year": 2019,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zoe.png",
+      "localFile": "public/assets/2019/champions/Zoe.png",
+      "sha256": "912550e09384b53aec12460e08b205e0744a13f5bd729548986dce00eca5c67d"
+    },
+    {
+      "championId": "Zoe",
+      "year": 2020,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Zoe.png",
+      "localFile": "public/assets/2020/champions/Zoe.png",
+      "sha256": "912550e09384b53aec12460e08b205e0744a13f5bd729548986dce00eca5c67d"
+    },
+    {
+      "championId": "Zoe",
+      "year": 2021,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Zoe.png",
+      "localFile": "public/assets/2021/champions/Zoe.png",
+      "sha256": "912550e09384b53aec12460e08b205e0744a13f5bd729548986dce00eca5c67d"
+    },
+    {
+      "championId": "Garen",
+      "year": 2019,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Garen.png",
+      "localFile": "public/assets/2019/champions/Garen.png",
+      "sha256": "dc4606954c97b04dbb31441559c00e2ed181cf6ba120f5326a50385d06e1b38d"
+    },
+    {
+      "championId": "Garen",
+      "year": 2023,
+      "kind": "square",
+      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Garen.png",
+      "localFile": "public/assets/2023/champions/Garen.png",
+      "sha256": "dc4606954c97b04dbb31441559c00e2ed181cf6ba120f5326a50385d06e1b38d"
+    },
+    {
       "championId": "Karthus",
       "year": 2019,
       "kind": "square",
@@ -4235,118 +5201,6 @@
       "sha256": "91838c48b4a71f69caaed6b26e36173d956d7426542ae66a7e4dfc36ad5c642e"
     },
     {
-      "championId": "Ornn",
-      "year": 2019,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Ornn.png",
-      "localFile": "public/assets/2019/champions/Ornn.png",
-      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
-    },
-    {
-      "championId": "Ornn",
-      "year": 2020,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Ornn.png",
-      "localFile": "public/assets/2020/champions/Ornn.png",
-      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
-    },
-    {
-      "championId": "Ornn",
-      "year": 2022,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Ornn.png",
-      "localFile": "public/assets/2022/champions/Ornn.png",
-      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
-    },
-    {
-      "championId": "Ornn",
-      "year": 2023,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Ornn.png",
-      "localFile": "public/assets/2023/champions/Ornn.png",
-      "sha256": "f79eca1257b99f54300004e1a7fe8e16ac8e5aa5cc1b1f65c46529ae0f1864e2"
-    },
-    {
-      "championId": "Ornn",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Ornn.png",
-      "localFile": "public/assets/2025/champions/Ornn.png",
-      "sha256": "91374f0919871a6490ac7b8ff9b073efb8b6a797f28302cc3751294c47c58d6e"
-    },
-    {
-      "championId": "Poppy",
-      "year": 2019,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Poppy.png",
-      "localFile": "public/assets/2019/champions/Poppy.png",
-      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
-    },
-    {
-      "championId": "Poppy",
-      "year": 2021,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Poppy.png",
-      "localFile": "public/assets/2021/champions/Poppy.png",
-      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
-    },
-    {
-      "championId": "Poppy",
-      "year": 2022,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Poppy.png",
-      "localFile": "public/assets/2022/champions/Poppy.png",
-      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
-    },
-    {
-      "championId": "Poppy",
-      "year": 2023,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Poppy.png",
-      "localFile": "public/assets/2023/champions/Poppy.png",
-      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
-    },
-    {
-      "championId": "Poppy",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Poppy.png",
-      "localFile": "public/assets/2024/champions/Poppy.png",
-      "sha256": "523b79403443b9c98d0229e713290b2e04bfd44b3ca4eda052afee56d6306e4b"
-    },
-    {
-      "championId": "Poppy",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Poppy.png",
-      "localFile": "public/assets/2025/champions/Poppy.png",
-      "sha256": "c2cdd3a868b4b9ac5f1f3fef5ca77e930f32b0c98a5c3b83bcb099f75a4b6b7c"
-    },
-    {
-      "championId": "Pyke",
-      "year": 2019,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Pyke.png",
-      "localFile": "public/assets/2019/champions/Pyke.png",
-      "sha256": "01ee32663d5ac7ba1c174fdd2c6628057ee5c309a3c8df9cfd0dc40fa263c10b"
-    },
-    {
-      "championId": "Pyke",
-      "year": 2021,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Pyke.png",
-      "localFile": "public/assets/2021/champions/Pyke.png",
-      "sha256": "01ee32663d5ac7ba1c174fdd2c6628057ee5c309a3c8df9cfd0dc40fa263c10b"
-    },
-    {
-      "championId": "Pyke",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Pyke.png",
-      "localFile": "public/assets/2024/champions/Pyke.png",
-      "sha256": "01ee32663d5ac7ba1c174fdd2c6628057ee5c309a3c8df9cfd0dc40fa263c10b"
-    },
-    {
       "championId": "Qiyana",
       "year": 2019,
       "kind": "square",
@@ -4377,38 +5231,6 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Rengar.png",
       "localFile": "public/assets/2019/champions/Rengar.png",
       "sha256": "e7d789cb0c5aa0725617cb18917c7c3c8b38b3ee94ff3cd578ea5ac2589fc997"
-    },
-    {
-      "championId": "Sion",
-      "year": 2019,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Sion.png",
-      "localFile": "public/assets/2019/champions/Sion.png",
-      "sha256": "a107e685d4af90c99535cb1c6ff96fbc980c754a97b2d753ab0b6e4c699e5977"
-    },
-    {
-      "championId": "Sion",
-      "year": 2020,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Sion.png",
-      "localFile": "public/assets/2020/champions/Sion.png",
-      "sha256": "a107e685d4af90c99535cb1c6ff96fbc980c754a97b2d753ab0b6e4c699e5977"
-    },
-    {
-      "championId": "Sion",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Sion.png",
-      "localFile": "public/assets/2024/champions/Sion.png",
-      "sha256": "a107e685d4af90c99535cb1c6ff96fbc980c754a97b2d753ab0b6e4c699e5977"
-    },
-    {
-      "championId": "Sion",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Sion.png",
-      "localFile": "public/assets/2025/champions/Sion.png",
-      "sha256": "4908e30a48ec3cbdb080de1667833e2d018ea03fb296e9760066a46793adb528"
     },
     {
       "championId": "Sylas",
@@ -4467,22 +5289,6 @@
       "sha256": "3e724fcd4fffd0b36ea3dd2a60d7d3ed9aeb20ebc5e2dec2e8019b31c3097647"
     },
     {
-      "championId": "Urgot",
-      "year": 2019,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Urgot.png",
-      "localFile": "public/assets/2019/champions/Urgot.png",
-      "sha256": "3b77b52d7ec5278298b6ee6301656fa21ab8b86edbca17a4ccd649adc5621a7d"
-    },
-    {
-      "championId": "Urgot",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Urgot.png",
-      "localFile": "public/assets/2024/champions/Urgot.png",
-      "sha256": "3b77b52d7ec5278298b6ee6301656fa21ab8b86edbca17a4ccd649adc5621a7d"
-    },
-    {
       "championId": "Yuumi",
       "year": 2019,
       "kind": "square",
@@ -4513,30 +5319,6 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Yuumi.png",
       "localFile": "public/assets/2022/champions/Yuumi.png",
       "sha256": "56ff49a7b46917ec2e25e59fed4fae802452522b7b35028b993e6458c768b9d4"
-    },
-    {
-      "championId": "Zoe",
-      "year": 2019,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/9.19.1/img/champion/Zoe.png",
-      "localFile": "public/assets/2019/champions/Zoe.png",
-      "sha256": "912550e09384b53aec12460e08b205e0744a13f5bd729548986dce00eca5c67d"
-    },
-    {
-      "championId": "Zoe",
-      "year": 2020,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Zoe.png",
-      "localFile": "public/assets/2020/champions/Zoe.png",
-      "sha256": "912550e09384b53aec12460e08b205e0744a13f5bd729548986dce00eca5c67d"
-    },
-    {
-      "championId": "Zoe",
-      "year": 2021,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Zoe.png",
-      "localFile": "public/assets/2021/champions/Zoe.png",
-      "sha256": "912550e09384b53aec12460e08b205e0744a13f5bd729548986dce00eca5c67d"
     },
     {
       "championId": "Aphelios",
@@ -4571,78 +5353,6 @@
       "sha256": "36f54b18fed5449205d71730665de5796df1791f868ffd02f641eaef0c0ffda3"
     },
     {
-      "championId": "Jhin",
-      "year": 2020,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Jhin.png",
-      "localFile": "public/assets/2020/champions/Jhin.png",
-      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
-    },
-    {
-      "championId": "Jhin",
-      "year": 2021,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Jhin.png",
-      "localFile": "public/assets/2021/champions/Jhin.png",
-      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
-    },
-    {
-      "championId": "Jhin",
-      "year": 2022,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Jhin.png",
-      "localFile": "public/assets/2022/champions/Jhin.png",
-      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
-    },
-    {
-      "championId": "Jhin",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Jhin.png",
-      "localFile": "public/assets/2024/champions/Jhin.png",
-      "sha256": "5084d5c5dd19420c38f2c7a30828ec6dcf0163e313d732774b48e80b2caa4bab"
-    },
-    {
-      "championId": "Jhin",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Jhin.png",
-      "localFile": "public/assets/2025/champions/Jhin.png",
-      "sha256": "dd24ce955ba61995956f1a48cb9b90b9b52936bb23bf05e0cb74cfc9c74a4b0c"
-    },
-    {
-      "championId": "Kindred",
-      "year": 2020,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Kindred.png",
-      "localFile": "public/assets/2020/champions/Kindred.png",
-      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
-    },
-    {
-      "championId": "Kindred",
-      "year": 2022,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Kindred.png",
-      "localFile": "public/assets/2022/champions/Kindred.png",
-      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
-    },
-    {
-      "championId": "Kindred",
-      "year": 2023,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/13.19.1/img/champion/Kindred.png",
-      "localFile": "public/assets/2023/champions/Kindred.png",
-      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
-    },
-    {
-      "championId": "Kindred",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Kindred.png",
-      "localFile": "public/assets/2024/champions/Kindred.png",
-      "sha256": "da60f7308c5f30260bc7b42b556aa12e607204e09ad44b31edd70a8aadf532b4"
-    },
-    {
       "championId": "Lillia",
       "year": 2020,
       "kind": "square",
@@ -4665,46 +5375,6 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Lillia.png",
       "localFile": "public/assets/2024/champions/Lillia.png",
       "sha256": "983ef5206154b6588f59979f42dbc3d4b98cac68bd66793155c81bb16c86f541"
-    },
-    {
-      "championId": "MissFortune",
-      "year": 2020,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/MissFortune.png",
-      "localFile": "public/assets/2020/champions/MissFortune.png",
-      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
-    },
-    {
-      "championId": "MissFortune",
-      "year": 2021,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/MissFortune.png",
-      "localFile": "public/assets/2021/champions/MissFortune.png",
-      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
-    },
-    {
-      "championId": "MissFortune",
-      "year": 2022,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/MissFortune.png",
-      "localFile": "public/assets/2022/champions/MissFortune.png",
-      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
-    },
-    {
-      "championId": "MissFortune",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/MissFortune.png",
-      "localFile": "public/assets/2024/champions/MissFortune.png",
-      "sha256": "2911c9e1f0b43e6566e0238c6b8969ac1b260d69c01db1dfb691b5a225285415"
-    },
-    {
-      "championId": "MissFortune",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/MissFortune.png",
-      "localFile": "public/assets/2025/champions/MissFortune.png",
-      "sha256": "a8c3048bfb76b4e8b34e00193ed2febe69669918055ffda835ddb24905588733"
     },
     {
       "championId": "MonkeyKing",
@@ -4851,22 +5521,6 @@
       "sha256": "0753957b15b2bdd895a681966e82f9621e2562967e6beaec14904c3a39ba37db"
     },
     {
-      "championId": "Zilean",
-      "year": 2020,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/Zilean.png",
-      "localFile": "public/assets/2020/champions/Zilean.png",
-      "sha256": "a1f0a7dc9f7b5493dedc52709f6a8590f97df9e24c2473053698ca865f336261"
-    },
-    {
-      "championId": "Zilean",
-      "year": 2021,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/Zilean.png",
-      "localFile": "public/assets/2021/champions/Zilean.png",
-      "sha256": "a1f0a7dc9f7b5493dedc52709f6a8590f97df9e24c2473053698ca865f336261"
-    },
-    {
       "championId": "Gwen",
       "year": 2021,
       "kind": "square",
@@ -4985,38 +5639,6 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Viego.png",
       "localFile": "public/assets/2024/champions/Viego.png",
       "sha256": "57c97f041165f4c6969025aa069ef0ca3b7a2cb5c3080fe83b993387067a5612"
-    },
-    {
-      "championId": "XinZhao",
-      "year": 2021,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/11.19.1/img/champion/XinZhao.png",
-      "localFile": "public/assets/2021/champions/XinZhao.png",
-      "sha256": "f8ee14b785ebcdd46e677b742e03160fd88be3b15bd779eb9836c86e0f22d81e"
-    },
-    {
-      "championId": "XinZhao",
-      "year": 2022,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/XinZhao.png",
-      "localFile": "public/assets/2022/champions/XinZhao.png",
-      "sha256": "f8ee14b785ebcdd46e677b742e03160fd88be3b15bd779eb9836c86e0f22d81e"
-    },
-    {
-      "championId": "XinZhao",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/XinZhao.png",
-      "localFile": "public/assets/2024/champions/XinZhao.png",
-      "sha256": "f8ee14b785ebcdd46e677b742e03160fd88be3b15bd779eb9836c86e0f22d81e"
-    },
-    {
-      "championId": "XinZhao",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/XinZhao.png",
-      "localFile": "public/assets/2025/champions/XinZhao.png",
-      "sha256": "f70e9570c60a33328b4e0c0437bcb33cc2320056ba0724e0279e553436da5667"
     },
     {
       "championId": "Yone",
@@ -5195,30 +5817,6 @@
       "sha256": "9a1ba57be14393d5a809d4bc71015b29fcf99e26539140814f4e132cfdb91a08"
     },
     {
-      "championId": "Swain",
-      "year": 2022,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/12.18.1/img/champion/Swain.png",
-      "localFile": "public/assets/2022/champions/Swain.png",
-      "sha256": "72bdef542eafdad67ea55f43766b242e08ae89b4c7bebfbb2d975bd7a1d0b76b"
-    },
-    {
-      "championId": "Swain",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Swain.png",
-      "localFile": "public/assets/2024/champions/Swain.png",
-      "sha256": "72bdef542eafdad67ea55f43766b242e08ae89b4c7bebfbb2d975bd7a1d0b76b"
-    },
-    {
-      "championId": "Swain",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Swain.png",
-      "localFile": "public/assets/2025/champions/Swain.png",
-      "sha256": "9f4550dd903cf19ee587bd0870f630ce90d6f62fac2a2d07fe46bda153db8f9b"
-    },
-    {
       "championId": "Zeri",
       "year": 2022,
       "kind": "square",
@@ -5345,22 +5943,6 @@
       "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Hwei.png",
       "localFile": "public/assets/2024/champions/Hwei.png",
       "sha256": "f1c808125bd280176948ae9c678646f4b895e93678bd7dfc6a8a4dd2be905906"
-    },
-    {
-      "championId": "Kled",
-      "year": 2024,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/14.18.1/img/champion/Kled.png",
-      "localFile": "public/assets/2024/champions/Kled.png",
-      "sha256": "e8a5084f2689f09f8341e2e3ca136040aa0a5de73163869f93cdc9c9977102ca"
-    },
-    {
-      "championId": "Kled",
-      "year": 2025,
-      "kind": "square",
-      "url": "https://ddragon.leagueoflegends.com/cdn/15.20.1/img/champion/Kled.png",
-      "localFile": "public/assets/2025/champions/Kled.png",
-      "sha256": "4d71421e5e0a4fd8092fc9b6d91cc10fb36a067fc8a74b5e2fce2e718d3f2566"
     },
     {
       "championId": "Smolder",
@@ -6489,6 +7071,582 @@
       "archivePath": "img/champion/splash/Zac_0.jpg",
       "localFile": "public/assets/2017/splash/Zac.jpg",
       "sha256": "ff50f4989cabc081e65947e5b584b2c6574e8d2014fb61f1198c23d7e7de6207"
+    },
+    {
+      "championId": "Aatrox",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Aatrox_0.jpg",
+      "localFile": "public/assets/2018/splash/Aatrox.jpg",
+      "sha256": "069063d4b8c378dd7fdb44a1a83e21a6c5c84e4ad45e47ee08e8cfd438a1c3c5"
+    },
+    {
+      "championId": "Akali",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Akali_0.jpg",
+      "localFile": "public/assets/2018/splash/Akali.jpg",
+      "sha256": "b527633cee673efb2c873511f3621f4e6049668556bcc8430585827c3feb775e"
+    },
+    {
+      "championId": "Alistar",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Alistar_0.jpg",
+      "localFile": "public/assets/2018/splash/Alistar.jpg",
+      "sha256": "e745a226b2cb0dd71355ff11b1b131261a5e0d55d6ea5728f9259891f5551dad"
+    },
+    {
+      "championId": "Ashe",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Ashe_0.jpg",
+      "localFile": "public/assets/2018/splash/Ashe.jpg",
+      "sha256": "2c8ca3fcf121d7c8fe88bfe88f07062ee3a7bbc44674e95e0105d9bacdc09035"
+    },
+    {
+      "championId": "Azir",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Azir_0.jpg",
+      "localFile": "public/assets/2018/splash/Azir.jpg",
+      "sha256": "a8ef52d149b22eeeb0286da547de643387b724c8d5564b9d7c816cda1dc8500a"
+    },
+    {
+      "championId": "Bard",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Bard_0.jpg",
+      "localFile": "public/assets/2018/splash/Bard.jpg",
+      "sha256": "22fd6d421531c4180c2aab0461fea7d0857feadc211f87e06db1a952c27ebdcd"
+    },
+    {
+      "championId": "Brand",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Brand_0.jpg",
+      "localFile": "public/assets/2018/splash/Brand.jpg",
+      "sha256": "da94361eab440d569f2f4eb53a7b49ee8475cd7c30f0c2685295365e6d5b82bf"
+    },
+    {
+      "championId": "Braum",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Braum_0.jpg",
+      "localFile": "public/assets/2018/splash/Braum.jpg",
+      "sha256": "4c95367a56935afcc355fa89aca3c1d081765e098625b898091e683dc9429bd8"
+    },
+    {
+      "championId": "Camille",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Camille_0.jpg",
+      "localFile": "public/assets/2018/splash/Camille.jpg",
+      "sha256": "f6e1f6bb9698066bcafa532632f0a1a77cbf86ee6c1dc0bb9fa027514cda424c"
+    },
+    {
+      "championId": "Cassiopeia",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Cassiopeia_0.jpg",
+      "localFile": "public/assets/2018/splash/Cassiopeia.jpg",
+      "sha256": "3ecd23a8db20e87bcdfe3faf4e9b6baedd1663073a1121bb34d2ca799060daef"
+    },
+    {
+      "championId": "Draven",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Draven_0.jpg",
+      "localFile": "public/assets/2018/splash/Draven.jpg",
+      "sha256": "ec23393b57a27244cad8d2aafe210d04d32e3174bea3932526a2962da81c2446"
+    },
+    {
+      "championId": "Ekko",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Ekko_0.jpg",
+      "localFile": "public/assets/2018/splash/Ekko.jpg",
+      "sha256": "9616673dc514f56126bf6fc6ad96f5a74791bbd9e131b014750bb81e3a531378"
+    },
+    {
+      "championId": "Elise",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Elise_0.jpg",
+      "localFile": "public/assets/2018/splash/Elise.jpg",
+      "sha256": "54302dfdd11794d2977eca04dd7fa58a2ff4b0fd0e22bb70d7b5d52584e52b84"
+    },
+    {
+      "championId": "Evelynn",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Evelynn_0.jpg",
+      "localFile": "public/assets/2018/splash/Evelynn.jpg",
+      "sha256": "bbcfea1c083aaa97870f25b9288bcc090ad11fc2b60a091e5a8d9817100f230e"
+    },
+    {
+      "championId": "Ezreal",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Ezreal_0.jpg",
+      "localFile": "public/assets/2018/splash/Ezreal.jpg",
+      "sha256": "88c3ba1148778bc6977618a9e48f4ab14de13eaa06fc09705ba3193989ca5f7f"
+    },
+    {
+      "championId": "Fiddlesticks",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/FiddleSticks_0.jpg",
+      "localFile": "public/assets/2018/splash/Fiddlesticks.jpg",
+      "sha256": "3e610951057333c3bd9fcf6c88d9bbb4764c27667b4ffd705eafda13194b4597"
+    },
+    {
+      "championId": "Fiora",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Fiora_0.jpg",
+      "localFile": "public/assets/2018/splash/Fiora.jpg",
+      "sha256": "f467848704476308035a224c9b3765ada22ea89f301b2509eb317721d708240c"
+    },
+    {
+      "championId": "Galio",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Galio_0.jpg",
+      "localFile": "public/assets/2018/splash/Galio.jpg",
+      "sha256": "3c1e6e34de3789c5757c2f2e4b9d7a4b6685cfbb5e9c85aebcf9f7d77bb8c940"
+    },
+    {
+      "championId": "Gangplank",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Gangplank_0.jpg",
+      "localFile": "public/assets/2018/splash/Gangplank.jpg",
+      "sha256": "91f16753b7821f7ae36d1f428bffcf1ce0ffd6bf80c92f034a3410e70fee9d35"
+    },
+    {
+      "championId": "Gragas",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Gragas_0.jpg",
+      "localFile": "public/assets/2018/splash/Gragas.jpg",
+      "sha256": "0c35caed01c2b995656c4db5bffa34aeca9b8f304b48819a6d4808967587e043"
+    },
+    {
+      "championId": "Graves",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Graves_0.jpg",
+      "localFile": "public/assets/2018/splash/Graves.jpg",
+      "sha256": "5378da561dc5b054deaeba75054fcc225dfb3c588f221be5b2d671a1edcde2ac"
+    },
+    {
+      "championId": "Hecarim",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Hecarim_0.jpg",
+      "localFile": "public/assets/2018/splash/Hecarim.jpg",
+      "sha256": "fbfa5c2b30f33e66796444d2a6dc42cc79d55e115269dc2bdb3389796853da6f"
+    },
+    {
+      "championId": "Heimerdinger",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Heimerdinger_0.jpg",
+      "localFile": "public/assets/2018/splash/Heimerdinger.jpg",
+      "sha256": "392e0c0d3e8bfa9d6a525fb8e7810dff634688c73140d2e0999960030b3faa4c"
+    },
+    {
+      "championId": "Irelia",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Irelia_0.jpg",
+      "localFile": "public/assets/2018/splash/Irelia.jpg",
+      "sha256": "65a750a4372f2998a8d95887b5ae5ccdca1fd0fe7cd39c50861200f490f5102d"
+    },
+    {
+      "championId": "JarvanIV",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/JarvanIV_0.jpg",
+      "localFile": "public/assets/2018/splash/JarvanIV.jpg",
+      "sha256": "cf490471a52a53a78e8dc9ff438cdcd24ce418a7c30d58c785a908de8b49ce3e"
+    },
+    {
+      "championId": "Jax",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Jax_0.jpg",
+      "localFile": "public/assets/2018/splash/Jax.jpg",
+      "sha256": "2ccc67ee4d600ae53db3b4db257c0280589f0a9d54571330d03a67cb9a7320f1"
+    },
+    {
+      "championId": "Jayce",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Jayce_0.jpg",
+      "localFile": "public/assets/2018/splash/Jayce.jpg",
+      "sha256": "8eba72eb9c471313d083c129fc23748e304227261f9671346aeb486f46c6b262"
+    },
+    {
+      "championId": "Jhin",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Jhin_0.jpg",
+      "localFile": "public/assets/2018/splash/Jhin.jpg",
+      "sha256": "42e6bf54555b2981c12142d1640cd33d7fb16ef90b7c3bebbb7a949c97b48188"
+    },
+    {
+      "championId": "Kaisa",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Kaisa_0.jpg",
+      "localFile": "public/assets/2018/splash/Kaisa.jpg",
+      "sha256": "05bc2fe17c4d512b55737ac96c4d7945ea171dd58604ae1af74f989efed8fd45"
+    },
+    {
+      "championId": "Kassadin",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Kassadin_0.jpg",
+      "localFile": "public/assets/2018/splash/Kassadin.jpg",
+      "sha256": "3bfea4058f2e5f16073ba2965ab8fc8c5b828a6415aaa6995fa4b915d4b654a0"
+    },
+    {
+      "championId": "Kindred",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Kindred_0.jpg",
+      "localFile": "public/assets/2018/splash/Kindred.jpg",
+      "sha256": "cb0b36fdf6cb60d20502cf749dfcf0352c3e4c6d2be92ae47235a07b07d148f0"
+    },
+    {
+      "championId": "Kled",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Kled_0.jpg",
+      "localFile": "public/assets/2018/splash/Kled.jpg",
+      "sha256": "2f72d09fda3f78332cf4d6c0e551091e43402427134eb5d27594f856a643ba2b"
+    },
+    {
+      "championId": "Leblanc",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Leblanc_0.jpg",
+      "localFile": "public/assets/2018/splash/Leblanc.jpg",
+      "sha256": "8d7b715407f523d52340e91748ca8461b681bc9a111956dd587f2d6b7f283fb5"
+    },
+    {
+      "championId": "LeeSin",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/LeeSin_0.jpg",
+      "localFile": "public/assets/2018/splash/LeeSin.jpg",
+      "sha256": "5a97dac3c89db8e5b7c2146c8011aadf5c368968995605356497565a9f6b121c"
+    },
+    {
+      "championId": "Leona",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Leona_0.jpg",
+      "localFile": "public/assets/2018/splash/Leona.jpg",
+      "sha256": "ea02ae22bdcd1bd5ea8e8b968117e9c897a4bdc9a9992f971d42a7cccb3a5b63"
+    },
+    {
+      "championId": "Lissandra",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Lissandra_0.jpg",
+      "localFile": "public/assets/2018/splash/Lissandra.jpg",
+      "sha256": "68d8f0ba2523c8283a1ef1829545ebc704382d12e0660e05010678e7cb6eb831"
+    },
+    {
+      "championId": "Lucian",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Lucian_0.jpg",
+      "localFile": "public/assets/2018/splash/Lucian.jpg",
+      "sha256": "30da4f47729e3d2405d05e2527fe69d896092b664645614af653da462ff389f3"
+    },
+    {
+      "championId": "Lulu",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Lulu_0.jpg",
+      "localFile": "public/assets/2018/splash/Lulu.jpg",
+      "sha256": "0fa34d37da9d6a97a2f9c095716dfa1b4c8b98ecdb9369c3bebe1e1847000a1d"
+    },
+    {
+      "championId": "Malzahar",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Malzahar_0.jpg",
+      "localFile": "public/assets/2018/splash/Malzahar.jpg",
+      "sha256": "c7f5e9bbb73740bd6953d8052cbd8116e1dfd9a33a900e135a52d31470b6a01b"
+    },
+    {
+      "championId": "MissFortune",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/MissFortune_0.jpg",
+      "localFile": "public/assets/2018/splash/MissFortune.jpg",
+      "sha256": "eeca480ba75f5a6821c416ece01223721e9c27db5492b47ff3cdcfb19a0e2824"
+    },
+    {
+      "championId": "Morgana",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Morgana_0.jpg",
+      "localFile": "public/assets/2018/splash/Morgana.jpg",
+      "sha256": "4151b7e7e7fe86a211f351f9ddba29d8cf5c6cbd6cd2e431701758e5259da110"
+    },
+    {
+      "championId": "Nami",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Nami_0.jpg",
+      "localFile": "public/assets/2018/splash/Nami.jpg",
+      "sha256": "b4226eb7ff4886274e9bf85d9528675ad5c548cf4b968958d716d553e160af2e"
+    },
+    {
+      "championId": "Nautilus",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Nautilus_0.jpg",
+      "localFile": "public/assets/2018/splash/Nautilus.jpg",
+      "sha256": "c8389da01975174a6fc486d6930ef7291a16942d6bae55ad24f9bb185d78db9b"
+    },
+    {
+      "championId": "Nocturne",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Nocturne_0.jpg",
+      "localFile": "public/assets/2018/splash/Nocturne.jpg",
+      "sha256": "d29144f1e79208ee44d43e7a7e8c60356f454f6cce8241ea7acf00e9f96f9167"
+    },
+    {
+      "championId": "Olaf",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Olaf_0.jpg",
+      "localFile": "public/assets/2018/splash/Olaf.jpg",
+      "sha256": "cfa0ab7498d12855cb9472c3aa345ee517ea4fe34b7ced54520b0f139d30aa8c"
+    },
+    {
+      "championId": "Ornn",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Ornn_0.jpg",
+      "localFile": "public/assets/2018/splash/Ornn.jpg",
+      "sha256": "2334b3ac4f3e464dd32ed98de265ac3bd568a8628af484832689c0d07852b1c7"
+    },
+    {
+      "championId": "Poppy",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Poppy_0.jpg",
+      "localFile": "public/assets/2018/splash/Poppy.jpg",
+      "sha256": "e8ca3e0093cbd07d2f1461ed9b453b8352e33cdd2ce8b4fa11569bb44dc4300e"
+    },
+    {
+      "championId": "Pyke",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Pyke_0.jpg",
+      "localFile": "public/assets/2018/splash/Pyke.jpg",
+      "sha256": "9bdf1e03a9bf37cc12cb748a2062a33b27a259d65d104231b5ea83bc3520b1c1"
+    },
+    {
+      "championId": "Rakan",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Rakan_0.jpg",
+      "localFile": "public/assets/2018/splash/Rakan.jpg",
+      "sha256": "b0e7ea0bb02dc9605d04301c1d737a63d2797e9f74cfff45cb4661c914eea3ee"
+    },
+    {
+      "championId": "Ryze",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Ryze_0.jpg",
+      "localFile": "public/assets/2018/splash/Ryze.jpg",
+      "sha256": "b21432f41a8f642269295fe90d34b036acbd6c063f3a5d9b4a95cebe40799dc7"
+    },
+    {
+      "championId": "Sejuani",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Sejuani_0.jpg",
+      "localFile": "public/assets/2018/splash/Sejuani.jpg",
+      "sha256": "dd657f38314f6e6004cd0ece26f9961faf0c73d7a2790f84bb007fd4c3adaaac"
+    },
+    {
+      "championId": "Shen",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Shen_0.jpg",
+      "localFile": "public/assets/2018/splash/Shen.jpg",
+      "sha256": "b44e003444afbf8164f8c0497d650cf67bd12bca4e365ea233c0a71582bd013e"
+    },
+    {
+      "championId": "Sion",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Sion_0.jpg",
+      "localFile": "public/assets/2018/splash/Sion.jpg",
+      "sha256": "a776ccf331f6d2071dc58e1415c387f57f41a08a5ed554b8535ffbd07fc662f1"
+    },
+    {
+      "championId": "Sivir",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Sivir_0.jpg",
+      "localFile": "public/assets/2018/splash/Sivir.jpg",
+      "sha256": "72e43b1a551a5b069e7320299f3999c047aedffe5901b6f8da9881f9240ee796"
+    },
+    {
+      "championId": "Skarner",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Skarner_0.jpg",
+      "localFile": "public/assets/2018/splash/Skarner.jpg",
+      "sha256": "88f4edd6f730817d1977d8873ccec8c82b85c3bec326a447951793aa91e0f31a"
+    },
+    {
+      "championId": "Swain",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Swain_0.jpg",
+      "localFile": "public/assets/2018/splash/Swain.jpg",
+      "sha256": "7621c65d738075ba06af87ef3b7f080b6d1ecfe1976503ff10d3d18ba65efe66"
+    },
+    {
+      "championId": "Syndra",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Syndra_0.jpg",
+      "localFile": "public/assets/2018/splash/Syndra.jpg",
+      "sha256": "4606f6a877829519fecff56f18a4f46d48774a26e121f28d8fe68489cc6af85a"
+    },
+    {
+      "championId": "TahmKench",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/TahmKench_0.jpg",
+      "localFile": "public/assets/2018/splash/TahmKench.jpg",
+      "sha256": "a0f08c48e4bea96188a70a2638b19690fadd9b1245610ad98d88cda773239d85"
+    },
+    {
+      "championId": "Taliyah",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Taliyah_0.jpg",
+      "localFile": "public/assets/2018/splash/Taliyah.jpg",
+      "sha256": "463641a0e9ce32b0363d80345a18e950c93493af63cb9c2a070e60cc74d9f0e8"
+    },
+    {
+      "championId": "Thresh",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Thresh_0.jpg",
+      "localFile": "public/assets/2018/splash/Thresh.jpg",
+      "sha256": "5dfe7df611da30e4ce758715d09393c1c460b775ea49efe9e8156ed3d635d679"
+    },
+    {
+      "championId": "Tristana",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Tristana_0.jpg",
+      "localFile": "public/assets/2018/splash/Tristana.jpg",
+      "sha256": "0e351504c40c03baafc2e7bd84f7a295a1259bec1ec0fb4142bf4c34c6c2be02"
+    },
+    {
+      "championId": "Trundle",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Trundle_0.jpg",
+      "localFile": "public/assets/2018/splash/Trundle.jpg",
+      "sha256": "6b637904cb6f2565f2502c2d8de1ab689ed993f6879faab7d9174cf5c1fe0b7b"
+    },
+    {
+      "championId": "Urgot",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Urgot_0.jpg",
+      "localFile": "public/assets/2018/splash/Urgot.jpg",
+      "sha256": "8ffbd0b3bbfac4ab94bb36139a900e3c1f2994fa1169b613a8592b5f7e1b0a78"
+    },
+    {
+      "championId": "Varus",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Varus_0.jpg",
+      "localFile": "public/assets/2018/splash/Varus.jpg",
+      "sha256": "0a4198985bfa7b68c88a74fa4b59723ce84c700026b75b0556d5f937617fe67a"
+    },
+    {
+      "championId": "Velkoz",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Velkoz_0.jpg",
+      "localFile": "public/assets/2018/splash/Velkoz.jpg",
+      "sha256": "9df27202fa3618f1e3a69b0613a696558c73792e85c7fb135bda6278684c6bf0"
+    },
+    {
+      "championId": "Viktor",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Viktor_0.jpg",
+      "localFile": "public/assets/2018/splash/Viktor.jpg",
+      "sha256": "efbcbe8c148ceb6047a2ac3ca975f09c36f5f7d10692423f2c8f41eb4934a904"
+    },
+    {
+      "championId": "Vladimir",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Vladimir_0.jpg",
+      "localFile": "public/assets/2018/splash/Vladimir.jpg",
+      "sha256": "170be067b108e75211ca45fa776291d3c2c3739d568f347151d00e5cbd4a6640"
+    },
+    {
+      "championId": "Xayah",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Xayah_0.jpg",
+      "localFile": "public/assets/2018/splash/Xayah.jpg",
+      "sha256": "905f6332a9d430c93e2f795a1a836b442d6db79c0b5b4d382d9fb4ecb3b226d1"
+    },
+    {
+      "championId": "XinZhao",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/XinZhao_0.jpg",
+      "localFile": "public/assets/2018/splash/XinZhao.jpg",
+      "sha256": "22b74a3802f2bb207fd9c537f8ac6cceb5c359ba5e1d36130429a7e08df812af"
+    },
+    {
+      "championId": "Zac",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Zac_0.jpg",
+      "localFile": "public/assets/2018/splash/Zac.jpg",
+      "sha256": "c3c7d4e23ee382c1b88d0f5865cfdc252b6c7d15834823eaa977cd27086cbeed"
+    },
+    {
+      "championId": "Zilean",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Zilean_0.jpg",
+      "localFile": "public/assets/2018/splash/Zilean.jpg",
+      "sha256": "af1032a3460263d46c4221086b363506addf4392d04e5cd2a3169a321f6212c7"
+    },
+    {
+      "championId": "Zoe",
+      "year": 2018,
+      "kind": "splash",
+      "archivePath": "img/champion/splash/Zoe_0.jpg",
+      "localFile": "public/assets/2018/splash/Zoe.jpg",
+      "sha256": "b26d8a2c4e8ac84efb8752f8b372bd7575f3116db7de9f361ce21f3e378d7497"
     },
     {
       "championId": "Aatrox",

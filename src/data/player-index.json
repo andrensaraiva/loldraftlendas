@@ -720,6 +720,366 @@
     "team": "IMT"
   },
   {
+    "id": "smeb-2018-kt",
+    "playerName": "Smeb",
+    "worldsYear": 2018,
+    "team": "KT"
+  },
+  {
+    "id": "score-2018-kt",
+    "playerName": "Score",
+    "worldsYear": 2018,
+    "team": "KT"
+  },
+  {
+    "id": "ucal-2018-kt",
+    "playerName": "Ucal",
+    "worldsYear": 2018,
+    "team": "KT"
+  },
+  {
+    "id": "deft-2018-kt",
+    "playerName": "Deft",
+    "worldsYear": 2018,
+    "team": "KT"
+  },
+  {
+    "id": "mata-2018-kt",
+    "playerName": "Mata",
+    "worldsYear": 2018,
+    "team": "KT"
+  },
+  {
+    "id": "kiin-2018-af",
+    "playerName": "Kiin",
+    "worldsYear": 2018,
+    "team": "AF"
+  },
+  {
+    "id": "spirit-2018-af",
+    "playerName": "Spirit",
+    "worldsYear": 2018,
+    "team": "AF"
+  },
+  {
+    "id": "kuro-2018-af",
+    "playerName": "Kuro",
+    "worldsYear": 2018,
+    "team": "AF"
+  },
+  {
+    "id": "kramer-2018-af",
+    "playerName": "Kramer",
+    "worldsYear": 2018,
+    "team": "AF"
+  },
+  {
+    "id": "tusin-2018-af",
+    "playerName": "TusiN",
+    "worldsYear": 2018,
+    "team": "AF"
+  },
+  {
+    "id": "cuvee-2018-gen",
+    "playerName": "CuVee",
+    "worldsYear": 2018,
+    "team": "GEN"
+  },
+  {
+    "id": "haru-2018-gen",
+    "playerName": "Haru",
+    "worldsYear": 2018,
+    "team": "GEN"
+  },
+  {
+    "id": "crown-2018-gen",
+    "playerName": "Crown",
+    "worldsYear": 2018,
+    "team": "GEN"
+  },
+  {
+    "id": "ruler-2018-gen",
+    "playerName": "Ruler",
+    "worldsYear": 2018,
+    "team": "GEN"
+  },
+  {
+    "id": "corejj-2018-gen",
+    "playerName": "CoreJJ",
+    "worldsYear": 2018,
+    "team": "GEN"
+  },
+  {
+    "id": "letme-2018-rng",
+    "playerName": "Letme",
+    "worldsYear": 2018,
+    "team": "RNG"
+  },
+  {
+    "id": "karsa-2018-rng",
+    "playerName": "Karsa",
+    "worldsYear": 2018,
+    "team": "RNG"
+  },
+  {
+    "id": "xiaohu-2018-rng",
+    "playerName": "Xiaohu",
+    "worldsYear": 2018,
+    "team": "RNG"
+  },
+  {
+    "id": "uzi-2018-rng",
+    "playerName": "Uzi",
+    "worldsYear": 2018,
+    "team": "RNG"
+  },
+  {
+    "id": "ming-2018-rng",
+    "playerName": "Ming",
+    "worldsYear": 2018,
+    "team": "RNG"
+  },
+  {
+    "id": "theshy-2018-ig",
+    "playerName": "TheShy",
+    "worldsYear": 2018,
+    "team": "IG"
+  },
+  {
+    "id": "ning-2018-ig",
+    "playerName": "Ning",
+    "worldsYear": 2018,
+    "team": "IG"
+  },
+  {
+    "id": "rookie-2018-ig",
+    "playerName": "Rookie",
+    "worldsYear": 2018,
+    "team": "IG"
+  },
+  {
+    "id": "jackeylove-2018-ig",
+    "playerName": "JackeyLove",
+    "worldsYear": 2018,
+    "team": "IG"
+  },
+  {
+    "id": "baolan-2018-ig",
+    "playerName": "Baolan",
+    "worldsYear": 2018,
+    "team": "IG"
+  },
+  {
+    "id": "ray-2018-edg",
+    "playerName": "Ray",
+    "worldsYear": 2018,
+    "team": "EDG"
+  },
+  {
+    "id": "haro-2018-edg",
+    "playerName": "Haro",
+    "worldsYear": 2018,
+    "team": "EDG"
+  },
+  {
+    "id": "scout-2018-edg",
+    "playerName": "Scout",
+    "worldsYear": 2018,
+    "team": "EDG"
+  },
+  {
+    "id": "iboy-2018-edg",
+    "playerName": "iBoy",
+    "worldsYear": 2018,
+    "team": "EDG"
+  },
+  {
+    "id": "meiko-2018-edg",
+    "playerName": "Meiko",
+    "worldsYear": 2018,
+    "team": "EDG"
+  },
+  {
+    "id": "bwipo-2018-fnc",
+    "playerName": "Bwipo",
+    "worldsYear": 2018,
+    "team": "FNC"
+  },
+  {
+    "id": "broxah-2018-fnc",
+    "playerName": "Broxah",
+    "worldsYear": 2018,
+    "team": "FNC"
+  },
+  {
+    "id": "caps-2018-fnc",
+    "playerName": "Caps",
+    "worldsYear": 2018,
+    "team": "FNC"
+  },
+  {
+    "id": "rekkles-2018-fnc",
+    "playerName": "Rekkles",
+    "worldsYear": 2018,
+    "team": "FNC"
+  },
+  {
+    "id": "hylissang-2018-fnc",
+    "playerName": "Hylissang",
+    "worldsYear": 2018,
+    "team": "FNC"
+  },
+  {
+    "id": "wunder-2018-g2",
+    "playerName": "Wunder",
+    "worldsYear": 2018,
+    "team": "G2"
+  },
+  {
+    "id": "jankos-2018-g2",
+    "playerName": "Jankos",
+    "worldsYear": 2018,
+    "team": "G2"
+  },
+  {
+    "id": "perkz-2018-g2",
+    "playerName": "Perkz",
+    "worldsYear": 2018,
+    "team": "G2"
+  },
+  {
+    "id": "hjarnan-2018-g2",
+    "playerName": "Hjarnan",
+    "worldsYear": 2018,
+    "team": "G2"
+  },
+  {
+    "id": "wadid-2018-g2",
+    "playerName": "WADID",
+    "worldsYear": 2018,
+    "team": "G2"
+  },
+  {
+    "id": "cabochard-2018-vit",
+    "playerName": "Cabochard",
+    "worldsYear": 2018,
+    "team": "VIT"
+  },
+  {
+    "id": "kikis-2018-vit",
+    "playerName": "Kikis",
+    "worldsYear": 2018,
+    "team": "VIT"
+  },
+  {
+    "id": "jiizuke-2018-vit",
+    "playerName": "Jiizuke",
+    "worldsYear": 2018,
+    "team": "VIT"
+  },
+  {
+    "id": "attila-2018-vit",
+    "playerName": "Attila",
+    "worldsYear": 2018,
+    "team": "VIT"
+  },
+  {
+    "id": "jactroll-2018-vit",
+    "playerName": "Jactroll",
+    "worldsYear": 2018,
+    "team": "VIT"
+  },
+  {
+    "id": "licorice-2018-c9",
+    "playerName": "Licorice",
+    "worldsYear": 2018,
+    "team": "C9"
+  },
+  {
+    "id": "svenskeren-2018-c9",
+    "playerName": "Svenskeren",
+    "worldsYear": 2018,
+    "team": "C9"
+  },
+  {
+    "id": "jensen-2018-c9",
+    "playerName": "Jensen",
+    "worldsYear": 2018,
+    "team": "C9"
+  },
+  {
+    "id": "sneaky-2018-c9",
+    "playerName": "Sneaky",
+    "worldsYear": 2018,
+    "team": "C9"
+  },
+  {
+    "id": "zeyzal-2018-c9",
+    "playerName": "Zeyzal",
+    "worldsYear": 2018,
+    "team": "C9"
+  },
+  {
+    "id": "impact-2018-tl",
+    "playerName": "Impact",
+    "worldsYear": 2018,
+    "team": "TL"
+  },
+  {
+    "id": "xmithie-2018-tl",
+    "playerName": "Xmithie",
+    "worldsYear": 2018,
+    "team": "TL"
+  },
+  {
+    "id": "pobelter-2018-tl",
+    "playerName": "Pobelter",
+    "worldsYear": 2018,
+    "team": "TL"
+  },
+  {
+    "id": "doublelift-2018-tl",
+    "playerName": "Doublelift",
+    "worldsYear": 2018,
+    "team": "TL"
+  },
+  {
+    "id": "olleh-2018-tl",
+    "playerName": "Olleh",
+    "worldsYear": 2018,
+    "team": "TL"
+  },
+  {
+    "id": "ssumday-2018-100t",
+    "playerName": "Ssumday",
+    "worldsYear": 2018,
+    "team": "100T"
+  },
+  {
+    "id": "anda-2018-100t",
+    "playerName": "AnDa",
+    "worldsYear": 2018,
+    "team": "100T"
+  },
+  {
+    "id": "ryu-2018-100t",
+    "playerName": "Ryu",
+    "worldsYear": 2018,
+    "team": "100T"
+  },
+  {
+    "id": "rikara-2018-100t",
+    "playerName": "Rikara",
+    "worldsYear": 2018,
+    "team": "100T"
+  },
+  {
+    "id": "aphromoo-2018-100t",
+    "playerName": "aphromoo",
+    "worldsYear": 2018,
+    "team": "100T"
+  },
+  {
     "id": "khan-2019-skt",
     "playerName": "Khan",
     "worldsYear": 2019,

@@ -98,7 +98,7 @@ export function ResearchDialog({
       ) : (
         <p>
           O rating de 70 a 99 compara o desempenho histórico por posição. Amostras pequenas recebem
-          menos peso. Uma mesma transformação aproxima as escalas entre as nove edições.
+          menos peso. Uma mesma transformação aproxima as escalas entre as dez edições.
         </p>
       )}
       <p>

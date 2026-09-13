@@ -143,6 +143,15 @@
       "CONTROL"
     ]
   },
+  "Velkoz": {
+    "id": "Velkoz",
+    "name": "Vel'Koz",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL"
+    ]
+  },
   "Zoe": {
     "id": "Zoe",
     "name": "Zoe",

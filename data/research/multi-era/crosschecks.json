@@ -30,6 +30,23 @@
     "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
   },
   {
+    "year": 2018,
+    "worldsGames": 77,
+    "player": "Rookie",
+    "observedKDA": [
+      70,
+      29,
+      127
+    ],
+    "independentKDA": [
+      70,
+      29,
+      127
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202018/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
     "year": 2019,
     "worldsGames": 77,
     "player": "Viper",

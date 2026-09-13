@@ -22,8 +22,8 @@ const seeded = (seed: number) => () => {
 };
 const pools = eligiblePools(players);
 describe('multi-era draft and exchanges', () => {
-  it('has all 175 year/region/role pools and offers exactly three unique candidates', () => {
-    expect(pools).toHaveLength(175);
+  it('has all 195 year/region/role pools and offers exactly three unique candidates', () => {
+    expect(pools).toHaveLength(195);
     for (let seed = 1; seed <= 200; seed++) {
       const rounds = createDraft(players, seeded(seed));
       expect(rounds).toHaveLength(5);

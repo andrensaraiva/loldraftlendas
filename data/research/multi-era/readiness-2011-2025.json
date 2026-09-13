@@ -355,7 +355,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2015.json",
-          "sha256": "45bd4979487e33296ba67f544734ed562821e13f7988146940211450756bbdd3"
+          "sha256": "de370c8b63f551a546e591c876f790c22d4c9c7fa45db5436190559ed9ad82fa"
         },
         "rosters": {
           "present": true,
@@ -535,7 +535,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2017.json",
-          "sha256": "9ab48eed5f3818aaf8a435eb82e91a1f16a0f5ea74ca61c3781123818f18dc4c"
+          "sha256": "711a10bb311c0baa30b4440aa5c19afcd55e8ae7c16d648a86801b9b02ae99e7"
         },
         "rosters": {
           "present": true,
@@ -575,54 +575,108 @@
     },
     {
       "year": 2018,
-      "status": "INCOMPLETE",
-      "players": 0,
-      "slots": 0,
-      "regions": {},
-      "roles": {},
-      "regionRoleMatrix": {},
-      "confidence": null,
-      "assets": {
-        "requiredPairs": 0,
-        "completePairs": 0,
-        "complete": false
+      "status": "VALIDATED",
+      "players": 60,
+      "slots": 300,
+      "regions": {
+        "LCK": 15,
+        "LCS": 15,
+        "LEC": 15,
+        "LPL": 15
       },
-      "eligiblePools": 0,
-      "missingMetrics": {},
+      "roles": {
+        "TOP": 12,
+        "JUNGLE": 12,
+        "MID": 12,
+        "ADC": 12,
+        "SUPPORT": 12
+      },
+      "regionRoleMatrix": {
+        "LCK": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LCS": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LEC": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        },
+        "LPL": {
+          "TOP": 3,
+          "JUNGLE": 3,
+          "MID": 3,
+          "ADC": 3,
+          "SUPPORT": 3
+        }
+      },
+      "confidence": {
+        "minimum": 0.108333,
+        "median": 0.285714,
+        "mean": 0.28,
+        "maximum": 0.666667,
+        "zeroConfidenceSlots": 0
+      },
+      "assets": {
+        "requiredPairs": 72,
+        "completePairs": 72,
+        "complete": true
+      },
+      "eligiblePools": 20,
+      "missingMetrics": {
+        "dpm": 10,
+        "damageshare": 10,
+        "golddiffat15": 130,
+        "csdiffat15": 130,
+        "xpdiffat15": 130,
+        "wpm": 10,
+        "wcpm": 10
+      },
       "researchArtifacts": {
         "matches": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/matches-2018.json",
-          "sha256": null
+          "sha256": "c619ac20b5d526d8a32baec9a3b00f0f05c8a94dcfff0a5fcd7f795ccf4acef3"
         },
         "evidence": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/evidence-2018.json",
-          "sha256": null
+          "sha256": "ed7fe337f0ac1ff04ffe056578c5846c2090e1ae8296e07397939bd85bc65b43"
         },
         "rosters": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/rosters-2018.json",
-          "sha256": null
+          "sha256": "d71bed8d30114fcbce3502344ac00d17c23a7090c6024d52c1e5998fec61d2b9"
         },
         "normalization": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/normalization-2018.json",
-          "sha256": null
+          "sha256": "618ea40aaa63111d0159b4846f4f061cd0eb456b9e24d202f979856fb7f844ed"
         },
         "coverage": {
-          "present": false,
+          "present": true,
           "path": "data/research/multi-era/coverage-2018.json",
-          "sha256": null
+          "sha256": "f86233f28c80326b557754e06aa6199198d36cc10a0cbc16463de3c3a2aa6dc3"
         }
       },
       "validationGates": {
-        "researchArtifactsComplete": false,
-        "productionSnapshotMatchesCoverage": false,
-        "fiveDistinctSlotsPerPlayer": false,
-        "evidenceLinked": false,
-        "assetsComplete": false,
-        "draftPoolsEligible": false
+        "researchArtifactsComplete": true,
+        "productionSnapshotMatchesCoverage": true,
+        "fiveDistinctSlotsPerPlayer": true,
+        "evidenceLinked": true,
+        "assetsComplete": true,
+        "draftPoolsEligible": true
       },
       "productionGates": {
         "legalNoticeVisible": true,
@@ -634,7 +688,7 @@
         "reviewedOn": null,
         "evidence": null
       },
-      "nextAction": "Pesquisar e normalizar esta edição do Worlds antes de habilitá-la."
+      "nextAction": "Obter e registrar uma revisão externa independente antes de declarar readiness de produção."
     },
     {
       "year": 2019,
@@ -711,7 +765,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2019.json",
-          "sha256": "f8cc50df6759954ab71afd34a2fcaa3d661b25c849e15d5d70caec64e00a0e67"
+          "sha256": "56ce8e4dd1ec9c893e4acf726a4beb33cca1e0ba3ac86611c282927c3df5dfa4"
         },
         "rosters": {
           "present": true,
@@ -824,7 +878,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2020.json",
-          "sha256": "e183b1d50820b3d998bad6ffe34370e1eb85bd7776281ad7677e74696f630656"
+          "sha256": "9c465e09131ddfcadc73865b262f85189d3ef6787a6aa7ebd063106095d1ad43"
         },
         "rosters": {
           "present": true,
@@ -941,7 +995,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2021.json",
-          "sha256": "9f58a1e8ba71636adbb929aab55468d9d04a1fa56b2818c8192b3fc8a83e85fd"
+          "sha256": "7a3e44d30c0d6a4df6d04857b2d04c6dd1b8bd91cdf180ebd41e3b9bb3a0e2c6"
         },
         "rosters": {
           "present": true,
@@ -1054,7 +1108,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2022.json",
-          "sha256": "8ba50070c6a3690a7489e4f663cd10ad5ad0a0dd02077126b099c5c6b97af100"
+          "sha256": "f30d10679a1081b152f7a93f393dc09e25f137bd5d6acccb1a2d98866ea371dd"
         },
         "rosters": {
           "present": true,
@@ -1167,7 +1221,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2023.json",
-          "sha256": "46bb59ef1251675828287d4cce95e07d5e22202bbda214e3f5145d54683f96a9"
+          "sha256": "67b9138379f2648b938f324c90ae7fb00d689da0418e62c4a2aa3ebdf3b56b39"
         },
         "rosters": {
           "present": true,
@@ -1280,7 +1334,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2024.json",
-          "sha256": "ed4ddc3b0ac2384198952fb73b893a19298368333c67dd13215666aa785dfe16"
+          "sha256": "899043a5dac49c9df2266e414fe79cffdf884e25bf3703b5e03da6b4d3199dfc"
         },
         "rosters": {
           "present": true,
@@ -1409,7 +1463,7 @@
         "evidence": {
           "present": true,
           "path": "data/research/multi-era/evidence-2025.json",
-          "sha256": "78b3ad3f9bb0457e0927ed8e4ecaf90c4a2e93b494ad466a6cee82b7b0d69a05"
+          "sha256": "8e8d2cd90b56d9ec5cc774a46ced3a3a99c706da491aeeb5050ab76155c382a4"
         },
         "rosters": {
           "present": true,

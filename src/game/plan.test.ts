@@ -28,7 +28,7 @@ describe('game plans', () => {
   it('keeps the checked 100k-campaign calibration within product limits', () => {
     expect(simulation).toMatchObject({
       version: 'game-plans-v1',
-      datasetVersion: 'multi-era-v1.3.0',
+      datasetVersion: 'multi-era-v1.4.0',
       totalCampaigns: 100000,
       samplesPerScenario: 20000,
       balance: {

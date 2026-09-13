@@ -23,11 +23,12 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 - ✅ **1.4 Feedback contextual:** cada rating G1–G5 pode ser contestado com motivo categorizado e nota curta; RLS/RPC e dashboard preservam somente o contexto histórico público.
 - ✅ **2.1 e 2.2 Seed e desafio:** seed persistida, save v2 com migração, reprodução por operação e link/código validado estão implementados.
 - ✅ **D1 Worlds 2021:** matches, rosters, evidências, assets, recalibração e gates foram concluídos no dataset `multi-era-v1.3.0`.
+- ✅ **D3 Worlds 2018:** 60 jogadores, 300 slots, 72 pares de assets e todos os gates foram concluídos no dataset recalibrado `multi-era-v1.4.0`.
 - ✅ **2.3 Modo Almanaque:** ratings, força, probabilidade e detalhes numéricos ficam ocultos durante a campanha e são revelados ao final; save, desafio, compartilhamento e analytics preservam o modo.
 - ✅ **2.4 Plano de jogo:** Agressão, Teamfight, Controle/Pick e Escala usam as tags existentes, efeito explicado e limitado, persistência completa e calibração reproduzível de 100 mil campanhas.
 - ✅ **2.5 Filtros de desafio:** edição e grupo podem ser combinados na home; recortes vazios são bloqueados e o snapshot exato segue no save/link.
-- ⏭️ **Próximo pacote de produto:** 3.1, desafio diário sem ranking.
-- ⏭️ **Próximo pacote de dados:** D3, backfill de 2018.
+- ✅ **Pacotes locais de produto 3.1–3.4:** desafio diário, PWA, arquivo público e histórico local estão concluídos.
+- ⏭️ **Próximo pacote de dados:** D4, backfill de 2016.
 - 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
 
 Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila atual precisa de duas trilhas: **confiabilidade/dados** e **produto/retenção**.
@@ -48,7 +49,7 @@ A listagem “7a0 - Futebol Draft de Lendas” no Google Play não foi tratada c
 
 O loop principal do 7a0 é curto: escolher formação, estilo e dificuldade, sortear seleção + edição de Copa, escolher um jogador elegível, completar onze posições e simular sete partidas. A meta memorável é o “7 a 0”: ser campeão vencendo os sete jogos sem sofrer gols.
 
-A página inicial anuncia atualmente **56 seleções, 302 elencos e 7.026 jogadores**. Algumas páginas institucionais ainda exibem contagens anteriores — 52 seleções e aproximadamente 5.700 jogadores —, sinal de deriva entre catálogo e conteúdo editorial. A comparação usa a contagem mais recente da home e não trata esses números como equivalentes às 605 versões de jogadores e aos 3.025 slots de campeão do Draft Lendas.
+A página inicial anuncia atualmente **56 seleções, 302 elencos e 7.026 jogadores**. Algumas páginas institucionais ainda exibem contagens anteriores — 52 seleções e aproximadamente 5.700 jogadores —, sinal de deriva entre catálogo e conteúdo editorial. A comparação usa a contagem mais recente da home e não trata esses números como equivalentes às 665 versões de jogadores e aos 3.325 slots de campeão do Draft Lendas.
 
 Além do modo solo, o site apresenta:
 
@@ -106,10 +107,10 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 
 | Área                   | 7a0                                                         | Draft Lendas hoje                                                                  | Diagnóstico                                                                                                |
 | ---------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Fantasia central       | Misturar lendas de Copas e montar um XI                     | Misturar jogadores de nove Worlds e montar cinco posições com pools G1–G5          | **Paridade com identidade própria.** Os pools por jogo são uma diferenciação estratégica forte.            |
+| Fantasia central       | Misturar lendas de Copas e montar um XI                     | Misturar jogadores de dez Worlds e montar cinco posições com pools G1–G5           | **Paridade com identidade própria.** Os pools por jogo são uma diferenciação estratégica forte.            |
 | Acesso                 | Gratuito, navegador, celular e solo sem conta               | Frontend estático, responsivo, instalável e sem login de jogador                   | **Paridade.** PWA e recuperação offline da campanha ativa concluídas.                                      |
 | Draft                  | Um elenco sorteado por turno, formação e rerolls            | Três candidatos por posição; ano, grupo regional e três trocas                     | **Vantagem de clareza e decisão imediata.**                                                                |
-| Cobertura histórica    | 1950–2026, catálogo amplo e navegável                       | 2015, 2017, 2019–2025; seis anos de 2011–2025 incompletos                          | **Lacuna de amplitude**, compensada por evidência e assets por patch.                                      |
+| Cobertura histórica    | 1950–2026, catálogo amplo e navegável                       | 2015 e 2017–2025; cinco anos de 2011–2025 incompletos                              | **Lacuna de amplitude**, compensada por evidência e assets por patch.                                      |
 | Dificuldade            | Clássico e Almanaque                                        | Clássico e Almanaque com revelação final                                           | **Paridade implementada**, pendente de validação com usuários.                                             |
 | Agência tática         | Formação e estilo                                           | Composição automática por tags; sistema de estilo foi deliberadamente deixado fora | **Lacuna relevante.** A fundação já existe nas tags `EARLY_GAME`, `TEAMFIGHT`, `SCALING`, `PICK` e `POKE`. |
 | Torneio                | Sete jogos, placar e artilheiros                            | Suíço, BO1/BO3, playoffs BO5, modo detalhado/rápido, KDA e histórico               | **Vantagem de profundidade narrativa.**                                                                    |
@@ -129,7 +130,7 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 
 1. configurar um Supabase real, aplicar migrations, allowlist e variáveis de ambiente;
 2. observar a CI no GitHub após um push real;
-3. obter revisão externa independente para os nove anos validados;
+3. obter revisão externa independente para os dez anos validados;
 4. estabelecer baseline real do funil antes de avaliar novas funcionalidades.
 
 Sem o item 1, analytics e feedback ficam inativos fora do modo de demonstração. Sem baseline, é possível entregar uma função atraente sem saber se ela melhora conclusão, compartilhamento ou replay.
@@ -153,8 +154,8 @@ Sem o item 1, analytics e feedback ficam inativos fora do modo de demonstração
 
 ### Falta na cobertura histórica
 
-1. backfill de 2018, definido como próximo pacote;
-2. 2011–2014 e 2016;
+1. backfill de 2018 concluído no dataset `multi-era-v1.4.0`;
+2. 2016, depois 2014 e 2011–2013 conforme a qualidade das fontes;
 3. recalibração global e versionamento a cada edição;
 4. revisão externa registrada antes de `PRODUCTION_READY`.
 
@@ -176,11 +177,12 @@ Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários c
 
 ### Em paralelo — continuar a trilha histórica
 
-| Ordem | Item                                                   | Prioridade | Tamanho     | Observação                                                                                  |
-| ----: | ------------------------------------------------------ | ---------- | ----------- | ------------------------------------------------------------------------------------------- |
-|    D1 | Backfill completo de Worlds 2021 — concluído           | P0 Dados   | L           | Matches, rosters, evidências, assets, recalibração, reprodução e gates passaram.            |
-|    D2 | Revisão externa dos nove anos validados                | P0 Dados   | L contínuo  | Pode avançar independentemente da UI social.                                                |
-|    D3 | Backfill de 2018; depois 2016, 2014, 2013, 2012 e 2011 | P1 Dados   | XL contínuo | Ordem posterior deve considerar disponibilidade/qualidade de fontes, não apenas cronologia. |
+| Ordem | Item                                             | Prioridade | Tamanho     | Observação                                                                                  |
+| ----: | ------------------------------------------------ | ---------- | ----------- | ------------------------------------------------------------------------------------------- |
+|    D1 | Backfill completo de Worlds 2021 — concluído     | P0 Dados   | L           | Matches, rosters, evidências, assets, recalibração, reprodução e gates passaram.            |
+|    D2 | Revisão externa dos dez anos validados           | P0 Dados   | L contínuo  | Pode avançar independentemente da UI social.                                                |
+|    D3 | Backfill de 2018 — concluído                     | P1 Dados   | L           | Matches, rosters, evidências, assets, recalibração, reprodução e gates passaram.            |
+|    D4 | Backfill de 2016; depois 2014, 2013, 2012 e 2011 | P1 Dados   | XL contínuo | Ordem posterior deve considerar disponibilidade/qualidade de fontes, não apenas cronologia. |
 
 ### Próximo — transformar compartilhamento em competição justa
 

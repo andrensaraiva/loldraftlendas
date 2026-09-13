@@ -14,6 +14,12 @@
       "champions": 64
     },
     {
+      "year": 2018,
+      "players": 60,
+      "teams": 12,
+      "champions": 72
+    },
+    {
       "year": 2019,
       "players": 60,
       "teams": 12,
@@ -151,6 +157,13 @@
       ]
     },
     {
+      "slug": "anda",
+      "name": "AnDa",
+      "years": [
+        2018
+      ]
+    },
+    {
       "slug": "angel",
       "name": "Angel",
       "years": [
@@ -169,7 +182,8 @@
       "slug": "aphromoo",
       "name": "aphromoo",
       "years": [
-        2015
+        2015,
+        2018
       ]
     },
     {
@@ -184,6 +198,13 @@
       "name": "Arrow",
       "years": [
         2015
+      ]
+    },
+    {
+      "slug": "attila",
+      "name": "Attila",
+      "years": [
+        2018
       ]
     },
     {
@@ -212,6 +233,7 @@
       "slug": "baolan",
       "name": "Baolan",
       "years": [
+        2018,
         2019
       ]
     },
@@ -346,6 +368,7 @@
       "name": "Broxah",
       "years": [
         2017,
+        2018,
         2019,
         2020
       ]
@@ -362,11 +385,19 @@
       "slug": "bwipo",
       "name": "Bwipo",
       "years": [
+        2018,
         2019,
         2020,
         2021,
         2024,
         2025
+      ]
+    },
+    {
+      "slug": "cabochard",
+      "name": "Cabochard",
+      "years": [
+        2018
       ]
     },
     {
@@ -395,6 +426,7 @@
       "name": "Caps",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2022,
@@ -491,6 +523,7 @@
       "name": "CoreJJ",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -520,7 +553,8 @@
       "slug": "crown",
       "name": "Crown",
       "years": [
-        2017
+        2017,
+        2018
       ]
     },
     {
@@ -541,7 +575,8 @@
       "slug": "cuvee",
       "name": "CuVee",
       "years": [
-        2017
+        2017,
+        2018
       ]
     },
     {
@@ -565,6 +600,7 @@
       "name": "Deft",
       "years": [
         2015,
+        2018,
         2020,
         2021,
         2022,
@@ -642,6 +678,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020
       ]
@@ -871,6 +908,20 @@
       ]
     },
     {
+      "slug": "haro",
+      "name": "Haro",
+      "years": [
+        2018
+      ]
+    },
+    {
+      "slug": "haru",
+      "name": "Haru",
+      "years": [
+        2018
+      ]
+    },
+    {
       "slug": "hauntzer",
       "name": "Hauntzer",
       "years": [
@@ -895,7 +946,8 @@
       "slug": "hjarnan",
       "name": "Hjarnan",
       "years": [
-        2015
+        2015,
+        2018
       ]
     },
     {
@@ -959,6 +1011,7 @@
       "slug": "hylissang",
       "name": "Hylissang",
       "years": [
+        2018,
         2019,
         2020,
         2021,
@@ -970,7 +1023,8 @@
       "slug": "iboy",
       "name": "iBoy",
       "years": [
-        2017
+        2017,
+        2018
       ]
     },
     {
@@ -1001,6 +1055,7 @@
       "name": "Impact",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2022,
@@ -1029,6 +1084,7 @@
       "slug": "jackeylove",
       "name": "JackeyLove",
       "years": [
+        2018,
         2019,
         2020,
         2022,
@@ -1037,9 +1093,17 @@
       ]
     },
     {
+      "slug": "jactroll",
+      "name": "Jactroll",
+      "years": [
+        2018
+      ]
+    },
+    {
       "slug": "jankos",
       "name": "Jankos",
       "years": [
+        2018,
         2019,
         2020,
         2022
@@ -1051,6 +1115,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -1070,6 +1135,13 @@
       "years": [
         2021,
         2022
+      ]
+    },
+    {
+      "slug": "jiizuke",
+      "name": "Jiizuke",
+      "years": [
+        2018
       ]
     },
     {
@@ -1143,6 +1215,7 @@
       "slug": "karsa",
       "name": "Karsa",
       "years": [
+        2018,
         2019,
         2020,
         2025
@@ -1195,9 +1268,17 @@
       "slug": "kiin",
       "name": "Kiin",
       "years": [
+        2018,
         2023,
         2024,
         2025
+      ]
+    },
+    {
+      "slug": "kikis",
+      "name": "Kikis",
+      "years": [
+        2018
       ]
     },
     {
@@ -1237,6 +1318,7 @@
       "slug": "kramer",
       "name": "Kramer",
       "years": [
+        2018,
         2020
       ]
     },
@@ -1244,7 +1326,8 @@
       "slug": "kuro",
       "name": "Kuro",
       "years": [
-        2015
+        2015,
+        2018
       ]
     },
     {
@@ -1293,13 +1376,15 @@
       "slug": "letme",
       "name": "Letme",
       "years": [
-        2017
+        2017,
+        2018
       ]
     },
     {
       "slug": "licorice",
       "name": "Licorice",
       "years": [
+        2018,
         2019
       ]
     },
@@ -1408,6 +1493,13 @@
       ]
     },
     {
+      "slug": "mata",
+      "name": "Mata",
+      "years": [
+        2018
+      ]
+    },
+    {
       "slug": "maxlore",
       "name": "Maxlore",
       "years": [
@@ -1420,6 +1512,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2021,
         2022,
         2024
@@ -1441,6 +1534,7 @@
       "name": "Ming",
       "years": [
         2017,
+        2018,
         2019,
         2021,
         2022
@@ -1538,6 +1632,7 @@
       "slug": "ning",
       "name": "Ning",
       "years": [
+        2018,
         2019
       ]
     },
@@ -1595,7 +1690,8 @@
       "slug": "olleh",
       "name": "Olleh",
       "years": [
-        2017
+        2017,
+        2018
       ]
     },
     {
@@ -1665,6 +1761,7 @@
       "name": "Perkz",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2021
@@ -1697,7 +1794,8 @@
       "name": "Pobelter",
       "years": [
         2015,
-        2017
+        2017,
+        2018
       ]
     },
     {
@@ -1763,6 +1861,13 @@
       ]
     },
     {
+      "slug": "ray",
+      "name": "Ray",
+      "years": [
+        2018
+      ]
+    },
+    {
       "slug": "razork",
       "name": "Razork",
       "years": [
@@ -1785,6 +1890,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020
       ]
@@ -1794,6 +1900,13 @@
       "name": "Rest",
       "years": [
         2025
+      ]
+    },
+    {
+      "slug": "rikara",
+      "name": "Rikara",
+      "years": [
+        2018
       ]
     },
     {
@@ -1808,6 +1921,7 @@
       "name": "Rookie",
       "years": [
         2015,
+        2018,
         2019
       ]
     },
@@ -1816,6 +1930,7 @@
       "name": "Ruler",
       "years": [
         2017,
+        2018,
         2020,
         2021,
         2022,
@@ -1827,7 +1942,8 @@
       "slug": "ryu",
       "name": "Ryu",
       "years": [
-        2015
+        2015,
+        2018
       ]
     },
     {
@@ -1843,7 +1959,8 @@
       "slug": "score",
       "name": "Score",
       "years": [
-        2015
+        2015,
+        2018
       ]
     },
     {
@@ -1851,6 +1968,7 @@
       "name": "Scout",
       "years": [
         2017,
+        2018,
         2021,
         2022,
         2023,
@@ -1908,7 +2026,8 @@
       "slug": "smeb",
       "name": "Smeb",
       "years": [
-        2015
+        2015,
+        2018
       ]
     },
     {
@@ -1924,6 +2043,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019
       ]
     },
@@ -1957,10 +2077,18 @@
       ]
     },
     {
+      "slug": "spirit",
+      "name": "Spirit",
+      "years": [
+        2018
+      ]
+    },
+    {
       "slug": "ssumday",
       "name": "Ssumday",
       "years": [
         2015,
+        2018,
         2021,
         2022
       ]
@@ -1984,7 +2112,8 @@
       "slug": "svenskeren",
       "name": "Svenskeren",
       "years": [
-        2017
+        2017,
+        2018
       ]
     },
     {
@@ -2052,6 +2181,7 @@
       "slug": "theshy",
       "name": "TheShy",
       "years": [
+        2018,
         2019,
         2023
       ]
@@ -2091,6 +2221,20 @@
       ]
     },
     {
+      "slug": "tusin",
+      "name": "TusiN",
+      "years": [
+        2018
+      ]
+    },
+    {
+      "slug": "ucal",
+      "name": "Ucal",
+      "years": [
+        2018
+      ]
+    },
+    {
       "slug": "umti",
       "name": "UmTi",
       "years": [
@@ -2110,6 +2254,7 @@
       "name": "Uzi",
       "years": [
         2017,
+        2018,
         2019
       ]
     },
@@ -2152,6 +2297,13 @@
         2019,
         2021,
         2022
+      ]
+    },
+    {
+      "slug": "wadid",
+      "name": "WADID",
+      "years": [
+        2018
       ]
     },
     {
@@ -2211,6 +2363,7 @@
       "slug": "wunder",
       "name": "Wunder",
       "years": [
+        2018,
         2019,
         2020,
         2022
@@ -2228,6 +2381,7 @@
       "name": "Xiaohu",
       "years": [
         2017,
+        2018,
         2019,
         2021,
         2022,
@@ -2249,6 +2403,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019
       ]
     },
@@ -2329,6 +2484,7 @@
       "slug": "zeyzal",
       "name": "Zeyzal",
       "years": [
+        2018,
         2019
       ]
     },
@@ -2377,13 +2533,14 @@
     {
       "id": "Aatrox",
       "years": [
+        2018,
         2019,
         2021,
         2022,
         2023,
         2025
       ],
-      "appearances": 21
+      "appearances": 33
     },
     {
       "id": "Ahri",
@@ -2397,6 +2554,7 @@
     {
       "id": "Akali",
       "years": [
+        2018,
         2019,
         2020,
         2022,
@@ -2404,13 +2562,14 @@
         2024,
         2025
       ],
-      "appearances": 29
+      "appearances": 34
     },
     {
       "id": "Alistar",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2419,7 +2578,7 @@
         2024,
         2025
       ],
-      "appearances": 53
+      "appearances": 65
     },
     {
       "id": "Ambessa",
@@ -2470,6 +2629,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2478,7 +2638,7 @@
         2024,
         2025
       ],
-      "appearances": 40
+      "appearances": 42
     },
     {
       "id": "AurelionSol",
@@ -2499,25 +2659,27 @@
       "id": "Azir",
       "years": [
         2015,
+        2018,
         2020,
         2021,
         2022,
         2023,
         2025
       ],
-      "appearances": 41
+      "appearances": 44
     },
     {
       "id": "Bard",
       "years": [
         2015,
+        2018,
         2019,
         2020,
         2022,
         2023,
         2025
       ],
-      "appearances": 19
+      "appearances": 20
     },
     {
       "id": "Belveth",
@@ -2543,15 +2705,17 @@
       "id": "Brand",
       "years": [
         2015,
+        2018,
         2024
       ],
-      "appearances": 3
+      "appearances": 4
     },
     {
       "id": "Braum",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2560,7 +2724,7 @@
         2024,
         2025
       ],
-      "appearances": 40
+      "appearances": 48
     },
     {
       "id": "Caitlyn",
@@ -2580,6 +2744,7 @@
       "id": "Camille",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2587,18 +2752,19 @@
         2023,
         2024
       ],
-      "appearances": 21
+      "appearances": 26
     },
     {
       "id": "Cassiopeia",
       "years": [
         2017,
+        2018,
         2019,
         2023,
         2024,
         2025
       ],
-      "appearances": 16
+      "appearances": 17
     },
     {
       "id": "Chogath",
@@ -2638,6 +2804,7 @@
     {
       "id": "Draven",
       "years": [
+        2018,
         2019,
         2020,
         2021,
@@ -2646,7 +2813,7 @@
         2024,
         2025
       ],
-      "appearances": 12
+      "appearances": 13
     },
     {
       "id": "DrMundo",
@@ -2659,33 +2826,37 @@
       "id": "Ekko",
       "years": [
         2015,
+        2018,
         2019,
         2020
       ],
-      "appearances": 14
+      "appearances": 16
     },
     {
       "id": "Elise",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2025
       ],
-      "appearances": 23
+      "appearances": 24
     },
     {
       "id": "Evelynn",
       "years": [
         2015,
+        2018,
         2020
       ],
-      "appearances": 8
+      "appearances": 9
     },
     {
       "id": "Ezreal",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2694,26 +2865,28 @@
         2024,
         2025
       ],
-      "appearances": 49
+      "appearances": 53
     },
     {
       "id": "Fiddlesticks",
       "years": [
+        2018,
         2019,
         2021,
         2022
       ],
-      "appearances": 3
+      "appearances": 4
     },
     {
       "id": "Fiora",
       "years": [
         2015,
+        2018,
         2019,
         2021,
         2022
       ],
-      "appearances": 15
+      "appearances": 16
     },
     {
       "id": "Fizz",
@@ -2726,6 +2899,7 @@
       "id": "Galio",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2733,18 +2907,19 @@
         2024,
         2025
       ],
-      "appearances": 34
+      "appearances": 42
     },
     {
       "id": "Gangplank",
       "years": [
         2015,
+        2018,
         2019,
         2020,
         2021,
         2022
       ],
-      "appearances": 17
+      "appearances": 18
     },
     {
       "id": "Garen",
@@ -2773,6 +2948,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2780,19 +2956,20 @@
         2023,
         2024
       ],
-      "appearances": 44
+      "appearances": 56
     },
     {
       "id": "Graves",
       "years": [
         2015,
         2017,
+        2018,
         2020,
         2021,
         2022,
         2023
       ],
-      "appearances": 38
+      "appearances": 40
     },
     {
       "id": "Gwen",
@@ -2808,19 +2985,21 @@
       "id": "Hecarim",
       "years": [
         2015,
+        2018,
         2020,
         2022
       ],
-      "appearances": 8
+      "appearances": 9
     },
     {
       "id": "Heimerdinger",
       "years": [
+        2018,
         2019,
         2022,
         2023
       ],
-      "appearances": 4
+      "appearances": 5
     },
     {
       "id": "Hwei",
@@ -2832,11 +3011,12 @@
     {
       "id": "Irelia",
       "years": [
+        2018,
         2019,
         2020,
         2021
       ],
-      "appearances": 8
+      "appearances": 18
     },
     {
       "id": "Ivern",
@@ -2860,6 +3040,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2868,12 +3049,13 @@
         2024,
         2025
       ],
-      "appearances": 60
+      "appearances": 61
     },
     {
       "id": "Jax",
       "years": [
         2017,
+        2018,
         2020,
         2021,
         2022,
@@ -2881,13 +3063,14 @@
         2024,
         2025
       ],
-      "appearances": 36
+      "appearances": 37
     },
     {
       "id": "Jayce",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -2895,18 +3078,19 @@
         2023,
         2025
       ],
-      "appearances": 36
+      "appearances": 37
     },
     {
       "id": "Jhin",
       "years": [
+        2018,
         2020,
         2021,
         2022,
         2024,
         2025
       ],
-      "appearances": 33
+      "appearances": 36
     },
     {
       "id": "Jinx",
@@ -2921,6 +3105,7 @@
     {
       "id": "Kaisa",
       "years": [
+        2018,
         2019,
         2020,
         2021,
@@ -2929,7 +3114,7 @@
         2024,
         2025
       ],
-      "appearances": 53
+      "appearances": 64
     },
     {
       "id": "Kalista",
@@ -2968,9 +3153,10 @@
       "id": "Kassadin",
       "years": [
         2015,
+        2018,
         2021
       ],
-      "appearances": 4
+      "appearances": 5
     },
     {
       "id": "Kayle",
@@ -3012,20 +3198,22 @@
     {
       "id": "Kindred",
       "years": [
+        2018,
         2020,
         2022,
         2023,
         2024
       ],
-      "appearances": 11
+      "appearances": 13
     },
     {
       "id": "Kled",
       "years": [
+        2018,
         2024,
         2025
       ],
-      "appearances": 2
+      "appearances": 3
     },
     {
       "id": "KogMaw",
@@ -3049,6 +3237,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3057,13 +3246,14 @@
         2024,
         2025
       ],
-      "appearances": 34
+      "appearances": 40
     },
     {
       "id": "LeeSin",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3071,12 +3261,13 @@
         2023,
         2024
       ],
-      "appearances": 56
+      "appearances": 61
     },
     {
       "id": "Leona",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3085,7 +3276,7 @@
         2024,
         2025
       ],
-      "appearances": 49
+      "appearances": 55
     },
     {
       "id": "Lillia",
@@ -3100,17 +3291,19 @@
       "id": "Lissandra",
       "years": [
         2015,
+        2018,
         2021,
         2022,
         2023
       ],
-      "appearances": 10
+      "appearances": 17
     },
     {
       "id": "Lucian",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3119,13 +3312,14 @@
         2024,
         2025
       ],
-      "appearances": 37
+      "appearances": 42
     },
     {
       "id": "Lulu",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3133,7 +3327,7 @@
         2023,
         2025
       ],
-      "appearances": 47
+      "appearances": 48
     },
     {
       "id": "Lux",
@@ -3158,9 +3352,10 @@
       "id": "Malzahar",
       "years": [
         2017,
+        2018,
         2021
       ],
-      "appearances": 4
+      "appearances": 5
     },
     {
       "id": "Maokai",
@@ -3186,13 +3381,14 @@
     {
       "id": "MissFortune",
       "years": [
+        2018,
         2020,
         2021,
         2022,
         2024,
         2025
       ],
-      "appearances": 25
+      "appearances": 26
     },
     {
       "id": "MonkeyKing",
@@ -3221,10 +3417,11 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2025
       ],
-      "appearances": 13
+      "appearances": 14
     },
     {
       "id": "Naafiri",
@@ -3237,12 +3434,13 @@
       "id": "Nami",
       "years": [
         2017,
+        2018,
         2021,
         2022,
         2024,
         2025
       ],
-      "appearances": 17
+      "appearances": 18
     },
     {
       "id": "Nasus",
@@ -3257,6 +3455,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3265,7 +3464,7 @@
         2024,
         2025
       ],
-      "appearances": 49
+      "appearances": 50
     },
     {
       "id": "Neeko",
@@ -3298,13 +3497,14 @@
       "id": "Nocturne",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2023,
         2024,
         2025
       ],
-      "appearances": 9
+      "appearances": 17
     },
     {
       "id": "Nunu",
@@ -3318,12 +3518,13 @@
       "id": "Olaf",
       "years": [
         2015,
+        2018,
         2019,
         2021,
         2023,
         2024
       ],
-      "appearances": 20
+      "appearances": 26
     },
     {
       "id": "Orianna",
@@ -3343,13 +3544,14 @@
     {
       "id": "Ornn",
       "years": [
+        2018,
         2019,
         2020,
         2022,
         2023,
         2025
       ],
-      "appearances": 28
+      "appearances": 34
     },
     {
       "id": "Pantheon",
@@ -3362,6 +3564,7 @@
     {
       "id": "Poppy",
       "years": [
+        2018,
         2019,
         2021,
         2022,
@@ -3369,16 +3572,17 @@
         2024,
         2025
       ],
-      "appearances": 30
+      "appearances": 33
     },
     {
       "id": "Pyke",
       "years": [
+        2018,
         2019,
         2021,
         2024
       ],
-      "appearances": 5
+      "appearances": 6
     },
     {
       "id": "Qiyana",
@@ -3400,6 +3604,7 @@
       "id": "Rakan",
       "years": [
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3408,7 +3613,7 @@
         2024,
         2025
       ],
-      "appearances": 64
+      "appearances": 74
     },
     {
       "id": "RekSai",
@@ -3488,6 +3693,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3495,13 +3701,14 @@
         2024,
         2025
       ],
-      "appearances": 45
+      "appearances": 52
     },
     {
       "id": "Sejuani",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2021,
         2022,
@@ -3509,7 +3716,7 @@
         2024,
         2025
       ],
-      "appearances": 52
+      "appearances": 53
     },
     {
       "id": "Senna",
@@ -3542,12 +3749,13 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
         2022
       ],
-      "appearances": 25
+      "appearances": 31
     },
     {
       "id": "Shyvana",
@@ -3567,34 +3775,37 @@
     {
       "id": "Sion",
       "years": [
+        2018,
         2019,
         2020,
         2024,
         2025
       ],
-      "appearances": 18
+      "appearances": 26
     },
     {
       "id": "Sivir",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2022,
         2023,
         2025
       ],
-      "appearances": 27
+      "appearances": 32
     },
     {
       "id": "Skarner",
       "years": [
         2015,
+        2018,
         2019,
         2024,
         2025
       ],
-      "appearances": 18
+      "appearances": 21
     },
     {
       "id": "Smolder",
@@ -3624,11 +3835,12 @@
     {
       "id": "Swain",
       "years": [
+        2018,
         2022,
         2024,
         2025
       ],
-      "appearances": 3
+      "appearances": 9
     },
     {
       "id": "Sylas",
@@ -3648,31 +3860,34 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
         2023,
         2024
       ],
-      "appearances": 38
+      "appearances": 44
     },
     {
       "id": "TahmKench",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2022,
         2023,
         2024
       ],
-      "appearances": 21
+      "appearances": 25
     },
     {
       "id": "Taliyah",
       "years": [
         2017,
+        2018,
         2019,
         2021,
         2022,
@@ -3680,7 +3895,7 @@
         2024,
         2025
       ],
-      "appearances": 36
+      "appearances": 43
     },
     {
       "id": "Talon",
@@ -3703,6 +3918,7 @@
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2020,
         2021,
@@ -3710,31 +3926,33 @@
         2023,
         2025
       ],
-      "appearances": 32
+      "appearances": 39
     },
     {
       "id": "Tristana",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2021,
         2022,
         2023,
         2024
       ],
-      "appearances": 37
+      "appearances": 43
     },
     {
       "id": "Trundle",
       "years": [
         2017,
+        2018,
         2020,
         2021,
         2022,
         2025
       ],
-      "appearances": 25
+      "appearances": 27
     },
     {
       "id": "Tryndamere",
@@ -3766,16 +3984,18 @@
     {
       "id": "Urgot",
       "years": [
+        2018,
         2019,
         2024
       ],
-      "appearances": 2
+      "appearances": 13
     },
     {
       "id": "Varus",
       "years": [
         2015,
         2017,
+        2018,
         2019,
         2021,
         2022,
@@ -3783,7 +4003,7 @@
         2024,
         2025
       ],
-      "appearances": 38
+      "appearances": 45
     },
     {
       "id": "Vayne",
@@ -3803,6 +4023,13 @@
         2019
       ],
       "appearances": 7
+    },
+    {
+      "id": "Velkoz",
+      "years": [
+        2018
+      ],
+      "appearances": 1
     },
     {
       "id": "Vex",
@@ -3836,20 +4063,22 @@
       "id": "Viktor",
       "years": [
         2015,
+        2018,
         2021,
         2022,
         2025
       ],
-      "appearances": 18
+      "appearances": 20
     },
     {
       "id": "Vladimir",
       "years": [
         2015,
+        2018,
         2019,
         2020
       ],
-      "appearances": 8
+      "appearances": 9
     },
     {
       "id": "Volibear",
@@ -3863,23 +4092,25 @@
       "id": "Xayah",
       "years": [
         2017,
+        2018,
         2019,
         2021,
         2023,
         2024,
         2025
       ],
-      "appearances": 43
+      "appearances": 54
     },
     {
       "id": "XinZhao",
       "years": [
+        2018,
         2021,
         2022,
         2024,
         2025
       ],
-      "appearances": 29
+      "appearances": 38
     },
     {
       "id": "Yasuo",
@@ -3932,9 +4163,10 @@
       "years": [
         2015,
         2017,
+        2018,
         2023
       ],
-      "appearances": 3
+      "appearances": 4
     },
     {
       "id": "Zed",
@@ -3966,19 +4198,21 @@
     {
       "id": "Zilean",
       "years": [
+        2018,
         2020,
         2021
       ],
-      "appearances": 2
+      "appearances": 3
     },
     {
       "id": "Zoe",
       "years": [
+        2018,
         2019,
         2020,
         2021
       ],
-      "appearances": 12
+      "appearances": 14
     },
     {
       "id": "Zyra",

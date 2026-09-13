@@ -22,7 +22,7 @@ assert player_index==[
     {key:p[key] for key in ['id','playerName','worldsYear','team']}
     for p in players
 ]
-crosschecks={2015:('Bang',83,12,107),2017:('Ruler',70,24,106),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2021:('ShowMaker',75,27,125),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71),2024:('Chovy',59,18,72),2025:('Viper',62,14,51)}
+crosschecks={2015:('Bang',83,12,107),2017:('Ruler',70,24,106),2018:('Rookie',70,29,127),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2021:('ShowMaker',75,27,125),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71),2024:('Chovy',59,18,72),2025:('Viper',62,14,51)}
 checks=[]
 for year,(_,games,patch,_) in CONFIG.items():
     rows=json.loads((OUT/f'matches-{year}.json').read_text(encoding='utf-8'));coverage=json.loads((OUT/f'coverage-{year}.json').read_text(encoding='utf-8'))

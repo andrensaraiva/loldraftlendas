@@ -6,6 +6,7 @@ RAW=BASE/'raw'
 RAW.mkdir(parents=True,exist_ok=True)
 URLS={
 2015:'https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2015_LoL_esports_match_data_from_OraclesElixir_20201011.csv',
+2018:'https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2018_LoL_esports_match_data_from_OraclesElixir_20201011.csv',
 2019:'https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2019_LoL_esports_match_data_from_OraclesElixir_20201011.csv',
 2020:'https://raw.githubusercontent.com/AdamLewis73/League-of-Legends-Stats-Analyzer/main/2020_LoL_esports_match_data_from_OraclesElixir_20210710.csv',
 2021:'https://www.kaggle.com/api/v1/datasets/download/arthur1511/lol-esports-2021?datasetVersionNumber=1',
@@ -36,7 +37,7 @@ def get(item):
         if pinned: assert pinned['sha256']==digest,f'{year}: source hash changed; review before updating.'
     print(year,path.stat().st_size,digest,flush=True)
     direct=year==2024
-    accessed='2026-09-13' if year==2021 else '2026-09-10' if year==2025 else '2026-09-09' if year==2024 else '2026-09-07'
+    accessed='2026-09-13' if year in (2018,2021) else '2026-09-10' if year==2025 else '2026-09-09' if year==2024 else '2026-09-07'
     note="The publisher's public Drive file (ID 1v6LRphp2kYciU4SXp0PCjEMuev1bDejc; advertised as 79,169,638 bytes) was quota-limited. This 79,130,187-byte mirror is hash-pinned but not independently authenticated against that later Drive revision. Raw CSV ignored; normalized snapshots committed." if year==2025 else "The publisher's public Drive file (ID 1fzwTTz77hcnYjOnO9ONeoPrkWCoOSecA; advertised as 109,765,213 bytes) was quota-limited. This 91,999,784-byte Kaggle snapshot from 2022-02-01 is hash-pinned but not independently authenticated against that later Drive revision. Raw CSV ignored; normalized snapshots committed." if year==2021 else 'Public source is hash-pinned; normalized snapshots are committed and raw CSVs are ignored.' if direct else 'Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed.'
     return str(year),dict(url=url,sha256=digest,bytes=path.stat().st_size,publisher="Oracle's Elixir public Google Drive" if direct else "Oracle's Elixir; third-party public mirror",originalPublisher='https://lol.timsevenhuysen.com/matchdata/',accessedAt=accessed,note=note)
 with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:result=dict(pool.map(get,URLS.items()))

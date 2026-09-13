@@ -89,7 +89,7 @@ test('home filters persist an eligible edition and region in every draft round',
 }) => {
   await page.goto('/');
   await page.getByText('Personalizar draft e desafio').click();
-  for (const year of [2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024])
+  for (const year of [2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024])
     await page.getByRole('checkbox', { name: String(year), exact: true }).uncheck();
   for (const group of ['KOREA', 'CHINA', 'EUROPA', 'AMÉRICA DO NORTE', 'EUROPA + AMÉRICA DO NORTE'])
     await page.getByRole('checkbox', { name: group, exact: true }).uncheck();
