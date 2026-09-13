@@ -2414,6 +2414,9 @@ export default function App() {
       <footer className="site-footer">
         <span>
           DRAFT LENDAS<span className="footer-dot"> / </span> UM NOVO JEITO DE VIVER O WORLDS.
+          <a className="archive-footer-link" href="/arquivo">
+            Arquivo histórico
+          </a>
         </span>
         <span>
           {availableYears} {availableYears === 1 ? 'EDIÇÃO' : 'EDIÇÕES'} · RATINGS ESTIMADOS

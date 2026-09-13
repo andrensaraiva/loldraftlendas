@@ -194,12 +194,12 @@ Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários c
 
 ### Depois — retenção recorrente sem assumir risco competitivo cedo demais
 
-| Ordem | Item                                              | Prioridade | Tamanho | Dependências                                | Critério de saída                                                                                              |
-| ----: | ------------------------------------------------- | ---------- | ------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-|   3.1 | Desafio diário sem ranking — concluído            | P1         | L       | 2.1, configuração versionada e relógio/ID   | Mesma seed e regras para todos; arquivo recente; uma tentativa oficial local e tentativas amistosas separadas. |
-|   3.2 | PWA instalável e recuperação offline — concluído  | P1         | M       | Política de cache e versionamento de assets | Manifesto, ícones, service worker, atualização segura e teste mobile.                                          |
-|   3.3 | Arquivo público por edição, jogador e campeão     | P2         | M–L     | Estratégia de rotas/SEO                     | Páginas usam os chunks existentes, exibem fontes e entram no sitemap sem inflar o bundle inicial.              |
-|   3.4 | Histórico local de campanhas e conquistas básicas | P2         | M       | Modelo de armazenamento versionado          | Guarda resumos limitados, oferece exportação/limpeza e não exige conta.                                        |
+| Ordem | Item                                                      | Prioridade | Tamanho | Dependências                                | Critério de saída                                                                                              |
+| ----: | --------------------------------------------------------- | ---------- | ------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+|   3.1 | Desafio diário sem ranking — concluído                    | P1         | L       | 2.1, configuração versionada e relógio/ID   | Mesma seed e regras para todos; arquivo recente; uma tentativa oficial local e tentativas amistosas separadas. |
+|   3.2 | PWA instalável e recuperação offline — concluído          | P1         | M       | Política de cache e versionamento de assets | Manifesto, ícones, service worker, atualização segura e teste mobile.                                          |
+|   3.3 | Arquivo público por edição, jogador e campeão — concluído | P2         | M–L     | Estratégia de rotas/SEO                     | Páginas usam os chunks existentes, exibem fontes e entram no sitemap sem inflar o bundle inicial.              |
+|   3.4 | Histórico local de campanhas e conquistas básicas         | P2         | M       | Modelo de armazenamento versionado          | Guarda resumos limitados, oferece exportação/limpeza e não exige conta.                                        |
 
 ### Mais tarde — somente após validar demanda e integridade
 

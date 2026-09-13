@@ -1,0 +1,3991 @@
+{
+  "version": 1,
+  "years": [
+    {
+      "year": 2015,
+      "players": 60,
+      "teams": 12,
+      "champions": 69
+    },
+    {
+      "year": 2017,
+      "players": 60,
+      "teams": 12,
+      "champions": 64
+    },
+    {
+      "year": 2019,
+      "players": 60,
+      "teams": 12,
+      "champions": 75
+    },
+    {
+      "year": 2020,
+      "players": 65,
+      "teams": 13,
+      "champions": 73
+    },
+    {
+      "year": 2021,
+      "players": 70,
+      "teams": 14,
+      "champions": 75
+    },
+    {
+      "year": 2022,
+      "players": 70,
+      "teams": 14,
+      "champions": 83
+    },
+    {
+      "year": 2023,
+      "players": 75,
+      "teams": 15,
+      "champions": 78
+    },
+    {
+      "year": 2024,
+      "players": 65,
+      "teams": 13,
+      "champions": 76
+    },
+    {
+      "year": 2025,
+      "players": 80,
+      "teams": 16,
+      "champions": 78
+    }
+  ],
+  "players": [
+    {
+      "slug": "369",
+      "name": "369",
+      "years": [
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "957",
+      "name": "957",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "abbedagge",
+      "name": "Abbedagge",
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "acorn",
+      "name": "Acorn",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "adam",
+      "name": "Adam",
+      "years": [
+        2021,
+        2023
+      ]
+    },
+    {
+      "slug": "aiming",
+      "name": "Aiming",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "ale",
+      "name": "Ale",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "alphari",
+      "name": "Alphari",
+      "years": [
+        2017,
+        2021
+      ]
+    },
+    {
+      "slug": "alvaro",
+      "name": "Alvaro",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "amazing",
+      "name": "Amazing",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "amazingj",
+      "name": "AmazingJ",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "ambition",
+      "name": "Ambition",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "angel",
+      "name": "Angel",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "apa",
+      "name": "APA",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "aphromoo",
+      "name": "aphromoo",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "armut",
+      "name": "Armut",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "arrow",
+      "name": "Arrow",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "azhi",
+      "name": "Azhi",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "balis",
+      "name": "BalIs",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "bang",
+      "name": "Bang",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "baolan",
+      "name": "Baolan",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "bdd",
+      "name": "Bdd",
+      "years": [
+        2017,
+        2020,
+        2021,
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "bean",
+      "name": "BEAN",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "ben",
+      "name": "Ben",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "bengi",
+      "name": "Bengi",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "berserker",
+      "name": "Berserker",
+      "years": [
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "beryl",
+      "name": "BeryL",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "betty",
+      "name": "Betty",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "bin",
+      "name": "Bin",
+      "years": [
+        2020,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "biofrost",
+      "name": "Biofrost",
+      "years": [
+        2017,
+        2020
+      ]
+    },
+    {
+      "slug": "bjergsen",
+      "name": "Bjergsen",
+      "years": [
+        2015,
+        2017,
+        2020
+      ]
+    },
+    {
+      "slug": "blaber",
+      "name": "Blaber",
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "boal",
+      "name": "Boal",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "breathe",
+      "name": "Breathe",
+      "years": [
+        2022,
+        2024
+      ]
+    },
+    {
+      "slug": "broken-blade",
+      "name": "Broken Blade",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "brokenblade",
+      "name": "BrokenBlade",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "broxah",
+      "name": "Broxah",
+      "years": [
+        2017,
+        2019,
+        2020
+      ]
+    },
+    {
+      "slug": "busio",
+      "name": "Busio",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "bwipo",
+      "name": "Bwipo",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "canna",
+      "name": "Canna",
+      "years": [
+        2021,
+        2023
+      ]
+    },
+    {
+      "slug": "canyon",
+      "name": "Canyon",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "caps",
+      "name": "Caps",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "carzzy",
+      "name": "Carzzy",
+      "years": [
+        2021,
+        2023
+      ]
+    },
+    {
+      "slug": "chasy",
+      "name": "Chasy",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "slug": "chovy",
+      "name": "Chovy",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "clearlove",
+      "name": "Clearlove",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "clid",
+      "name": "Clid",
+      "years": [
+        2019,
+        2020,
+        2021
+      ]
+    },
+    {
+      "slug": "closer",
+      "name": "Closer",
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "cody-sun",
+      "name": "Cody Sun",
+      "years": [
+        2017,
+        2019
+      ]
+    },
+    {
+      "slug": "comp",
+      "name": "Comp",
+      "years": [
+        2022
+      ]
+    },
+    {
+      "slug": "condi",
+      "name": "Condi",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "contractz",
+      "name": "Contractz",
+      "years": [
+        2017,
+        2023
+      ]
+    },
+    {
+      "slug": "corejj",
+      "name": "CoreJJ",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "creme",
+      "name": "Creme",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "crisp",
+      "name": "Crisp",
+      "years": [
+        2019,
+        2021,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "crown",
+      "name": "Crown",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "crownie",
+      "name": "Crownie",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "slug": "cryin",
+      "name": "Cryin",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "cuvee",
+      "name": "CuVee",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "cuzz",
+      "name": "Cuzz",
+      "years": [
+        2017,
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "damonte",
+      "name": "Damonte",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "deft",
+      "name": "Deft",
+      "years": [
+        2015,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "delight",
+      "name": "Delight",
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "deokdam",
+      "name": "deokdam",
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "slug": "dhokla",
+      "name": "Dhokla",
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "dire",
+      "name": "Dire",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "disamis",
+      "name": "Disamis",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "doggo",
+      "name": "Doggo",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "doinb",
+      "name": "Doinb",
+      "years": [
+        2019,
+        2021
+      ]
+    },
+    {
+      "slug": "doran",
+      "name": "Doran",
+      "years": [
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "doublelift",
+      "name": "Doublelift",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020
+      ]
+    },
+    {
+      "slug": "duro",
+      "name": "Duro",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "dyrus",
+      "name": "Dyrus",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "eddie",
+      "name": "Eddie",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "effort",
+      "name": "Effort",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "elk",
+      "name": "Elk",
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "elyoya",
+      "name": "Elyoya",
+      "years": [
+        2021,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "emenes",
+      "name": "EMENES",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "slug": "expect",
+      "name": "Expect",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "eyla",
+      "name": "Eyla",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "faker",
+      "name": "Faker",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "fbi",
+      "name": "FBI",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "febiven",
+      "name": "FEBIVEN",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "finn",
+      "name": "Finn",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "flakked",
+      "name": "Flakked",
+      "years": [
+        2022
+      ]
+    },
+    {
+      "slug": "flame",
+      "name": "Flame",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "flandre",
+      "name": "Flandre",
+      "years": [
+        2021,
+        2022,
+        2025
+      ]
+    },
+    {
+      "slug": "fresskowy",
+      "name": "Fresskowy",
+      "years": [
+        2024
+      ]
+    },
+    {
+      "slug": "fudge",
+      "name": "Fudge",
+      "years": [
+        2021,
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "gala",
+      "name": "GALA",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "ghost",
+      "name": "Ghost",
+      "years": [
+        2020,
+        2021
+      ]
+    },
+    {
+      "slug": "gimgoon",
+      "name": "GimGoon",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "godv",
+      "name": "GodV",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "gorilla",
+      "name": "GorillA",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "gumayusi",
+      "name": "Gumayusi",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "hai",
+      "name": "Hai",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "hang",
+      "name": "Hang",
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "hans-sama",
+      "name": "Hans Sama",
+      "years": [
+        2017,
+        2020,
+        2021,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "hauntzer",
+      "name": "Hauntzer",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "hiro02",
+      "name": "Hiro02",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "hizto",
+      "name": "Hizto",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "hjarnan",
+      "name": "Hjarnan",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "hojin",
+      "name": "Hojin",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "hongq",
+      "name": "HongQ",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "hope",
+      "name": "Hope",
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "slug": "huanfeng",
+      "name": "huanfeng",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "huhi",
+      "name": "huhi",
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "humanoid",
+      "name": "Humanoid",
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "huni",
+      "name": "Huni",
+      "years": [
+        2015,
+        2017,
+        2019
+      ]
+    },
+    {
+      "slug": "hylissang",
+      "name": "Hylissang",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "iboy",
+      "name": "iBoy",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "icon",
+      "name": "icon",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "ignar",
+      "name": "Ignar",
+      "years": [
+        2017,
+        2020,
+        2023
+      ]
+    },
+    {
+      "slug": "imp",
+      "name": "imp",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "impact",
+      "name": "Impact",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2022,
+        2024
+      ]
+    },
+    {
+      "slug": "inspired",
+      "name": "Inspired",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "iwandy",
+      "name": "Iwandy",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "jackeylove",
+      "name": "JackeyLove",
+      "years": [
+        2019,
+        2020,
+        2022,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "jankos",
+      "name": "Jankos",
+      "years": [
+        2019,
+        2020,
+        2022
+      ]
+    },
+    {
+      "slug": "jensen",
+      "name": "Jensen",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "jesiz",
+      "name": "Jesiz",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "jiejie",
+      "name": "Jiejie",
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "jojopyun",
+      "name": "Jojopyun",
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "slug": "jun",
+      "name": "Jun",
+      "years": [
+        2024
+      ]
+    },
+    {
+      "slug": "junjia",
+      "name": "JunJia",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "kael",
+      "name": "Kael",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "kaiser",
+      "name": "Kaiser",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "kaiwing",
+      "name": "Kaiwing",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "kakao",
+      "name": "KaKAO",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "kanavi",
+      "name": "Kanavi",
+      "years": [
+        2020,
+        2022,
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "kaori",
+      "name": "Kaori",
+      "years": [
+        2022
+      ]
+    },
+    {
+      "slug": "karsa",
+      "name": "Karsa",
+      "years": [
+        2019,
+        2020,
+        2025
+      ]
+    },
+    {
+      "slug": "kasing",
+      "name": "kaSing",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "kellin",
+      "name": "Kellin",
+      "years": [
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "keria",
+      "name": "Keria",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "khan",
+      "name": "Khan",
+      "years": [
+        2017,
+        2019,
+        2021
+      ]
+    },
+    {
+      "slug": "kid",
+      "name": "Kid",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "kiin",
+      "name": "Kiin",
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "kingen",
+      "name": "Kingen",
+      "years": [
+        2022,
+        2024
+      ]
+    },
+    {
+      "slug": "kitties",
+      "name": "Kitties",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "knight",
+      "name": "knight",
+      "years": [
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "kobbe",
+      "name": "Kobbe",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "kramer",
+      "name": "Kramer",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "kuro",
+      "name": "Kuro",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "labrov",
+      "name": "Labrov",
+      "years": [
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "langx",
+      "name": "Langx",
+      "years": [
+        2019,
+        2020
+      ]
+    },
+    {
+      "slug": "larssen",
+      "name": "Larssen",
+      "years": [
+        2020,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "lehends",
+      "name": "Lehends",
+      "years": [
+        2019,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "lemonnation",
+      "name": "LemonNation",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "letme",
+      "name": "Letme",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "licorice",
+      "name": "Licorice",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "life",
+      "name": "Life",
+      "years": [
+        2020,
+        2021
+      ]
+    },
+    {
+      "slug": "light",
+      "name": "Light",
+      "years": [
+        2021,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "lira",
+      "name": "Lira",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "loken",
+      "name": "LokeN",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "loulex",
+      "name": "loulex",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "lucid",
+      "name": "Lucid",
+      "years": [
+        2024
+      ]
+    },
+    {
+      "slug": "lustboy",
+      "name": "Lustboy",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "lvmao",
+      "name": "LvMao",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "lwx",
+      "name": "Lwx",
+      "years": [
+        2019,
+        2021
+      ]
+    },
+    {
+      "slug": "malrang",
+      "name": "Malrang",
+      "years": [
+        2022
+      ]
+    },
+    {
+      "slug": "maple",
+      "name": "Maple",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "marin",
+      "name": "MaRin",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "mark",
+      "name": "Mark",
+      "years": [
+        2020,
+        2022
+      ]
+    },
+    {
+      "slug": "massu",
+      "name": "Massu",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "maxlore",
+      "name": "Maxlore",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "meiko",
+      "name": "Meiko",
+      "years": [
+        2015,
+        2017,
+        2021,
+        2022,
+        2024
+      ]
+    },
+    {
+      "slug": "mikyx",
+      "name": "Mikyx",
+      "years": [
+        2019,
+        2020,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "ming",
+      "name": "Ming",
+      "years": [
+        2017,
+        2019,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "mireu",
+      "name": "Mireu",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "missing",
+      "name": "MISSING",
+      "years": [
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "mithy",
+      "name": "Mithy",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "mlxg",
+      "name": "Mlxg",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "moham",
+      "name": "Moham",
+      "years": [
+        2024
+      ]
+    },
+    {
+      "slug": "morgan",
+      "name": "Morgan",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "morttheus",
+      "name": "Morttheus",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "mouse",
+      "name": "Mouse",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "myrwn",
+      "name": "Myrwn",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "mystic",
+      "name": "Mystic",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "nagne",
+      "name": "Nagne",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "nemesis",
+      "name": "Nemesis",
+      "years": [
+        2019,
+        2020
+      ]
+    },
+    {
+      "slug": "ning",
+      "name": "Ning",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "nisqy",
+      "name": "Nisqy",
+      "years": [
+        2019,
+        2021,
+        2023
+      ]
+    },
+    {
+      "slug": "noah",
+      "name": "Noah",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "nuc",
+      "name": "nuc",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "slug": "nuclear",
+      "name": "Nuclear",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "nuguri",
+      "name": "Nuguri",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "odoamne",
+      "name": "Odoamne",
+      "years": [
+        2015,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "olleh",
+      "name": "Olleh",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "on",
+      "name": "ON",
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "oner",
+      "name": "Oner",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "oscarinin",
+      "name": "Oscarinin",
+      "years": [
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "palafox",
+      "name": "Palafox",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "slug": "pawn",
+      "name": "PawN",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "peanut",
+      "name": "Peanut",
+      "years": [
+        2017,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "perfect",
+      "name": "PerfecT",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "perkz",
+      "name": "Perkz",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021
+      ]
+    },
+    {
+      "slug": "peter",
+      "name": "Peter",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "peyz",
+      "name": "Peyz",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "piccaboo",
+      "name": "Piccaboo",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "pobelter",
+      "name": "Pobelter",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "poby",
+      "name": "Poby",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "powerofevil",
+      "name": "PowerOfEvil",
+      "years": [
+        2017,
+        2020
+      ]
+    },
+    {
+      "slug": "pray",
+      "name": "PraY",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "pyl",
+      "name": "Pyl",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "pyosik",
+      "name": "Pyosik",
+      "years": [
+        2020,
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "quad",
+      "name": "Quad",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "quid",
+      "name": "Quid",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "rascal",
+      "name": "Rascal",
+      "years": [
+        2020,
+        2021
+      ]
+    },
+    {
+      "slug": "razork",
+      "name": "Razork",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "reignover",
+      "name": "Reignover",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "rekkles",
+      "name": "Rekkles",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020
+      ]
+    },
+    {
+      "slug": "rest",
+      "name": "Rest",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "river",
+      "name": "River",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "rookie",
+      "name": "Rookie",
+      "years": [
+        2015,
+        2019
+      ]
+    },
+    {
+      "slug": "ruler",
+      "name": "Ruler",
+      "years": [
+        2017,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "ryu",
+      "name": "Ryu",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "santorin",
+      "name": "Santorin",
+      "years": [
+        2015,
+        2020,
+        2021
+      ]
+    },
+    {
+      "slug": "score",
+      "name": "Score",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "scout",
+      "name": "Scout",
+      "years": [
+        2017,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "selfmade",
+      "name": "Selfmade",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "shad0w",
+      "name": "Shad0w",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "shanks",
+      "name": "Shanks",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "sheo",
+      "name": "Sheo",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "slug": "showmaker",
+      "name": "ShowMaker",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "skewmond",
+      "name": "SkewMond",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "smeb",
+      "name": "Smeb",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "smoothie",
+      "name": "Smoothie",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "sneaky",
+      "name": "Sneaky",
+      "years": [
+        2015,
+        2017,
+        2019
+      ]
+    },
+    {
+      "slug": "soaz",
+      "name": "sOAZ",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "sofm",
+      "name": "SofM",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "solo",
+      "name": "Solo",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "spica",
+      "name": "Spica",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "ssumday",
+      "name": "Ssumday",
+      "years": [
+        2015,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "summit",
+      "name": "Summit",
+      "years": [
+        2023
+      ]
+    },
+    {
+      "slug": "supa",
+      "name": "Supa",
+      "years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "svenskeren",
+      "name": "Svenskeren",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "sword",
+      "name": "Sword",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "swordart",
+      "name": "SwordArt",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "tactical",
+      "name": "Tactical",
+      "years": [
+        2020,
+        2021
+      ]
+    },
+    {
+      "slug": "taki",
+      "name": "Taki",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "targamas",
+      "name": "Targamas",
+      "years": [
+        2022
+      ]
+    },
+    {
+      "slug": "tarzan",
+      "name": "Tarzan",
+      "years": [
+        2019,
+        2021,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "tbq",
+      "name": "tbq",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "teddy",
+      "name": "Teddy",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "theshy",
+      "name": "TheShy",
+      "years": [
+        2019,
+        2023
+      ]
+    },
+    {
+      "slug": "tian",
+      "name": "Tian",
+      "years": [
+        2019,
+        2021,
+        2022,
+        2024
+      ]
+    },
+    {
+      "slug": "tore",
+      "name": "Tore",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "trick",
+      "name": "Trick",
+      "years": [
+        2017
+      ]
+    },
+    {
+      "slug": "trymbi",
+      "name": "Trymbi",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2025
+      ]
+    },
+    {
+      "slug": "umti",
+      "name": "UmTi",
+      "years": [
+        2024
+      ]
+    },
+    {
+      "slug": "upset",
+      "name": "Upset",
+      "years": [
+        2022,
+        2025
+      ]
+    },
+    {
+      "slug": "uzi",
+      "name": "Uzi",
+      "years": [
+        2017,
+        2019
+      ]
+    },
+    {
+      "slug": "vander",
+      "name": "Vander",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "viper",
+      "name": "Viper",
+      "years": [
+        2019,
+        2021,
+        2022,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "vizicsacsi",
+      "name": "Vizicsacsi",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "vsta",
+      "name": "Vsta",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "vulcan",
+      "name": "Vulcan",
+      "years": [
+        2019,
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "wayward",
+      "name": "Wayward",
+      "years": [
+        2022
+      ]
+    },
+    {
+      "slug": "wei",
+      "name": "Wei",
+      "years": [
+        2021,
+        2022
+      ]
+    },
+    {
+      "slug": "weiwei",
+      "name": "Weiwei",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "wildturtle",
+      "name": "WildTurtle",
+      "years": [
+        2015,
+        2020
+      ]
+    },
+    {
+      "slug": "willer",
+      "name": "Willer",
+      "years": [
+        2021
+      ]
+    },
+    {
+      "slug": "wolf",
+      "name": "Wolf",
+      "years": [
+        2015,
+        2017
+      ]
+    },
+    {
+      "slug": "woody",
+      "name": "Woody",
+      "years": [
+        2025
+      ]
+    },
+    {
+      "slug": "wunder",
+      "name": "Wunder",
+      "years": [
+        2019,
+        2020,
+        2022
+      ]
+    },
+    {
+      "slug": "xerxe",
+      "name": "Xerxe",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "xiaohu",
+      "name": "Xiaohu",
+      "years": [
+        2017,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "xiye",
+      "name": "xiye",
+      "years": [
+        2017,
+        2020
+      ]
+    },
+    {
+      "slug": "xmithie",
+      "name": "Xmithie",
+      "years": [
+        2015,
+        2017,
+        2019
+      ]
+    },
+    {
+      "slug": "xpeke",
+      "name": "xPeke",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "xun",
+      "name": "Xun",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "yagao",
+      "name": "Yagao",
+      "years": [
+        2020,
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "yellowstar",
+      "name": "YellOwStaR",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "yeon",
+      "name": "Yeon",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "yike",
+      "name": "Yike",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "yuyanjia",
+      "name": "yuyanjia",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "zeka",
+      "name": "Zeka",
+      "years": [
+        2022,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "zeus",
+      "name": "Zeus",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ]
+    },
+    {
+      "slug": "zeyzal",
+      "name": "Zeyzal",
+      "years": [
+        2019
+      ]
+    },
+    {
+      "slug": "zika",
+      "name": "Zika",
+      "years": [
+        2023,
+        2024
+      ]
+    },
+    {
+      "slug": "zionspartan",
+      "name": "ZionSpartan",
+      "years": [
+        2015
+      ]
+    },
+    {
+      "slug": "zoom",
+      "name": "Zoom",
+      "years": [
+        2020
+      ]
+    },
+    {
+      "slug": "zven",
+      "name": "Zven",
+      "years": [
+        2015,
+        2017,
+        2021,
+        2022,
+        2023
+      ]
+    },
+    {
+      "slug": "zz1tai",
+      "name": "Zz1tai",
+      "years": [
+        2015
+      ]
+    }
+  ],
+  "champions": [
+    {
+      "id": "Aatrox",
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 21
+    },
+    {
+      "id": "Ahri",
+      "years": [
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 25
+    },
+    {
+      "id": "Akali",
+      "years": [
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 29
+    },
+    {
+      "id": "Alistar",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 53
+    },
+    {
+      "id": "Ambessa",
+      "years": [
+        2025
+      ],
+      "appearances": 10
+    },
+    {
+      "id": "Amumu",
+      "years": [
+        2022,
+        2024
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Anivia",
+      "years": [
+        2015,
+        2019,
+        2025
+      ],
+      "appearances": 5
+    },
+    {
+      "id": "Annie",
+      "years": [
+        2015,
+        2021,
+        2023,
+        2025
+      ],
+      "appearances": 11
+    },
+    {
+      "id": "Aphelios",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "appearances": 34
+    },
+    {
+      "id": "Ashe",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 40
+    },
+    {
+      "id": "AurelionSol",
+      "years": [
+        2017
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Aurora",
+      "years": [
+        2024,
+        2025
+      ],
+      "appearances": 13
+    },
+    {
+      "id": "Azir",
+      "years": [
+        2015,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 41
+    },
+    {
+      "id": "Bard",
+      "years": [
+        2015,
+        2019,
+        2020,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 19
+    },
+    {
+      "id": "Belveth",
+      "years": [
+        2022,
+        2023
+      ],
+      "appearances": 9
+    },
+    {
+      "id": "Blitzcrank",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2022,
+        2023
+      ],
+      "appearances": 11
+    },
+    {
+      "id": "Brand",
+      "years": [
+        2015,
+        2024
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Braum",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 40
+    },
+    {
+      "id": "Caitlyn",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 32
+    },
+    {
+      "id": "Camille",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 21
+    },
+    {
+      "id": "Cassiopeia",
+      "years": [
+        2017,
+        2019,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 16
+    },
+    {
+      "id": "Chogath",
+      "years": [
+        2017,
+        2019
+      ],
+      "appearances": 13
+    },
+    {
+      "id": "Corki",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2024,
+        2025
+      ],
+      "appearances": 21
+    },
+    {
+      "id": "Darius",
+      "years": [
+        2015,
+        2022
+      ],
+      "appearances": 11
+    },
+    {
+      "id": "Diana",
+      "years": [
+        2015,
+        2021
+      ],
+      "appearances": 5
+    },
+    {
+      "id": "Draven",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 12
+    },
+    {
+      "id": "DrMundo",
+      "years": [
+        2025
+      ],
+      "appearances": 2
+    },
+    {
+      "id": "Ekko",
+      "years": [
+        2015,
+        2019,
+        2020
+      ],
+      "appearances": 14
+    },
+    {
+      "id": "Elise",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2025
+      ],
+      "appearances": 23
+    },
+    {
+      "id": "Evelynn",
+      "years": [
+        2015,
+        2020
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Ezreal",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 49
+    },
+    {
+      "id": "Fiddlesticks",
+      "years": [
+        2019,
+        2021,
+        2022
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Fiora",
+      "years": [
+        2015,
+        2019,
+        2021,
+        2022
+      ],
+      "appearances": 15
+    },
+    {
+      "id": "Fizz",
+      "years": [
+        2017
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Galio",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "appearances": 34
+    },
+    {
+      "id": "Gangplank",
+      "years": [
+        2015,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "appearances": 17
+    },
+    {
+      "id": "Garen",
+      "years": [
+        2019,
+        2023
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Gnar",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 42
+    },
+    {
+      "id": "Gragas",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 44
+    },
+    {
+      "id": "Graves",
+      "years": [
+        2015,
+        2017,
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "appearances": 38
+    },
+    {
+      "id": "Gwen",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 14
+    },
+    {
+      "id": "Hecarim",
+      "years": [
+        2015,
+        2020,
+        2022
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Heimerdinger",
+      "years": [
+        2019,
+        2022,
+        2023
+      ],
+      "appearances": 4
+    },
+    {
+      "id": "Hwei",
+      "years": [
+        2024
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Irelia",
+      "years": [
+        2019,
+        2020,
+        2021
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Ivern",
+      "years": [
+        2017,
+        2024,
+        2025
+      ],
+      "appearances": 6
+    },
+    {
+      "id": "Janna",
+      "years": [
+        2015,
+        2017
+      ],
+      "appearances": 15
+    },
+    {
+      "id": "JarvanIV",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 60
+    },
+    {
+      "id": "Jax",
+      "years": [
+        2017,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 36
+    },
+    {
+      "id": "Jayce",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 36
+    },
+    {
+      "id": "Jhin",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "appearances": 33
+    },
+    {
+      "id": "Jinx",
+      "years": [
+        2015,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 15
+    },
+    {
+      "id": "Kaisa",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 53
+    },
+    {
+      "id": "Kalista",
+      "years": [
+        2015,
+        2017,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 39
+    },
+    {
+      "id": "Karma",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 16
+    },
+    {
+      "id": "Karthus",
+      "years": [
+        2019
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Kassadin",
+      "years": [
+        2015,
+        2021
+      ],
+      "appearances": 4
+    },
+    {
+      "id": "Kayle",
+      "years": [
+        2019,
+        2020
+      ],
+      "appearances": 11
+    },
+    {
+      "id": "Kayn",
+      "years": [
+        2022
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Kennen",
+      "years": [
+        2015,
+        2017,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 20
+    },
+    {
+      "id": "Khazix",
+      "years": [
+        2017,
+        2020,
+        2023
+      ],
+      "appearances": 4
+    },
+    {
+      "id": "Kindred",
+      "years": [
+        2020,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 11
+    },
+    {
+      "id": "Kled",
+      "years": [
+        2024,
+        2025
+      ],
+      "appearances": 2
+    },
+    {
+      "id": "KogMaw",
+      "years": [
+        2015,
+        2017
+      ],
+      "appearances": 14
+    },
+    {
+      "id": "KSante",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 38
+    },
+    {
+      "id": "Leblanc",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 34
+    },
+    {
+      "id": "LeeSin",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 56
+    },
+    {
+      "id": "Leona",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 49
+    },
+    {
+      "id": "Lillia",
+      "years": [
+        2020,
+        2021,
+        2024
+      ],
+      "appearances": 12
+    },
+    {
+      "id": "Lissandra",
+      "years": [
+        2015,
+        2021,
+        2022,
+        2023
+      ],
+      "appearances": 10
+    },
+    {
+      "id": "Lucian",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 37
+    },
+    {
+      "id": "Lulu",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 47
+    },
+    {
+      "id": "Lux",
+      "years": [
+        2019,
+        2020,
+        2022,
+        2023
+      ],
+      "appearances": 9
+    },
+    {
+      "id": "Malphite",
+      "years": [
+        2015,
+        2020,
+        2021
+      ],
+      "appearances": 9
+    },
+    {
+      "id": "Malzahar",
+      "years": [
+        2017,
+        2021
+      ],
+      "appearances": 4
+    },
+    {
+      "id": "Maokai",
+      "years": [
+        2015,
+        2017,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 44
+    },
+    {
+      "id": "Milio",
+      "years": [
+        2023
+      ],
+      "appearances": 7
+    },
+    {
+      "id": "MissFortune",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "appearances": 25
+    },
+    {
+      "id": "MonkeyKing",
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 20
+    },
+    {
+      "id": "Mordekaiser",
+      "years": [
+        2015,
+        2019,
+        2020,
+        2025
+      ],
+      "appearances": 10
+    },
+    {
+      "id": "Morgana",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2025
+      ],
+      "appearances": 13
+    },
+    {
+      "id": "Naafiri",
+      "years": [
+        2025
+      ],
+      "appearances": 2
+    },
+    {
+      "id": "Nami",
+      "years": [
+        2017,
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "appearances": 17
+    },
+    {
+      "id": "Nasus",
+      "years": [
+        2017,
+        2022
+      ],
+      "appearances": 2
+    },
+    {
+      "id": "Nautilus",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 49
+    },
+    {
+      "id": "Neeko",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 18
+    },
+    {
+      "id": "Nidalee",
+      "years": [
+        2015,
+        2020,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 15
+    },
+    {
+      "id": "Nilah",
+      "years": [
+        2023
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Nocturne",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 9
+    },
+    {
+      "id": "Nunu",
+      "years": [
+        2015,
+        2024
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Olaf",
+      "years": [
+        2015,
+        2019,
+        2021,
+        2023,
+        2024
+      ],
+      "appearances": 20
+    },
+    {
+      "id": "Orianna",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 55
+    },
+    {
+      "id": "Ornn",
+      "years": [
+        2019,
+        2020,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 28
+    },
+    {
+      "id": "Pantheon",
+      "years": [
+        2020,
+        2025
+      ],
+      "appearances": 16
+    },
+    {
+      "id": "Poppy",
+      "years": [
+        2019,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 30
+    },
+    {
+      "id": "Pyke",
+      "years": [
+        2019,
+        2021,
+        2024
+      ],
+      "appearances": 5
+    },
+    {
+      "id": "Qiyana",
+      "years": [
+        2019,
+        2021,
+        2025
+      ],
+      "appearances": 19
+    },
+    {
+      "id": "Quinn",
+      "years": [
+        2020
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Rakan",
+      "years": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 64
+    },
+    {
+      "id": "RekSai",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2025
+      ],
+      "appearances": 35
+    },
+    {
+      "id": "Rell",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 40
+    },
+    {
+      "id": "Renata",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 20
+    },
+    {
+      "id": "Renekton",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 56
+    },
+    {
+      "id": "Rengar",
+      "years": [
+        2019
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Riven",
+      "years": [
+        2015
+      ],
+      "appearances": 5
+    },
+    {
+      "id": "Rumble",
+      "years": [
+        2015,
+        2017,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 38
+    },
+    {
+      "id": "Ryze",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "appearances": 45
+    },
+    {
+      "id": "Sejuani",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 52
+    },
+    {
+      "id": "Senna",
+      "years": [
+        2020,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 17
+    },
+    {
+      "id": "Seraphine",
+      "years": [
+        2022
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Sett",
+      "years": [
+        2020,
+        2021,
+        2022
+      ],
+      "appearances": 18
+    },
+    {
+      "id": "Shen",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "appearances": 25
+    },
+    {
+      "id": "Shyvana",
+      "years": [
+        2015
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Singed",
+      "years": [
+        2017,
+        2020
+      ],
+      "appearances": 2
+    },
+    {
+      "id": "Sion",
+      "years": [
+        2019,
+        2020,
+        2024,
+        2025
+      ],
+      "appearances": 18
+    },
+    {
+      "id": "Sivir",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 27
+    },
+    {
+      "id": "Skarner",
+      "years": [
+        2015,
+        2019,
+        2024,
+        2025
+      ],
+      "appearances": 18
+    },
+    {
+      "id": "Smolder",
+      "years": [
+        2024
+      ],
+      "appearances": 7
+    },
+    {
+      "id": "Sona",
+      "years": [
+        2017,
+        2019
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Soraka",
+      "years": [
+        2017,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Swain",
+      "years": [
+        2022,
+        2024,
+        2025
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Sylas",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 42
+    },
+    {
+      "id": "Syndra",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ],
+      "appearances": 38
+    },
+    {
+      "id": "TahmKench",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 21
+    },
+    {
+      "id": "Taliyah",
+      "years": [
+        2017,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 36
+    },
+    {
+      "id": "Talon",
+      "years": [
+        2021
+      ],
+      "appearances": 4
+    },
+    {
+      "id": "Taric",
+      "years": [
+        2017,
+        2020,
+        2024
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Thresh",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2025
+      ],
+      "appearances": 32
+    },
+    {
+      "id": "Tristana",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 37
+    },
+    {
+      "id": "Trundle",
+      "years": [
+        2017,
+        2020,
+        2021,
+        2022,
+        2025
+      ],
+      "appearances": 25
+    },
+    {
+      "id": "Tryndamere",
+      "years": [
+        2021
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "TwistedFate",
+      "years": [
+        2015,
+        2019,
+        2020,
+        2021,
+        2024
+      ],
+      "appearances": 24
+    },
+    {
+      "id": "Twitch",
+      "years": [
+        2015,
+        2017,
+        2020
+      ],
+      "appearances": 10
+    },
+    {
+      "id": "Urgot",
+      "years": [
+        2019,
+        2024
+      ],
+      "appearances": 2
+    },
+    {
+      "id": "Varus",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 38
+    },
+    {
+      "id": "Vayne",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2020,
+        2025
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Veigar",
+      "years": [
+        2015,
+        2019
+      ],
+      "appearances": 7
+    },
+    {
+      "id": "Vex",
+      "years": [
+        2023
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Vi",
+      "years": [
+        2015,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 34
+    },
+    {
+      "id": "Viego",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024
+      ],
+      "appearances": 17
+    },
+    {
+      "id": "Viktor",
+      "years": [
+        2015,
+        2021,
+        2022,
+        2025
+      ],
+      "appearances": 18
+    },
+    {
+      "id": "Vladimir",
+      "years": [
+        2015,
+        2019,
+        2020
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Volibear",
+      "years": [
+        2020,
+        2023
+      ],
+      "appearances": 12
+    },
+    {
+      "id": "Xayah",
+      "years": [
+        2017,
+        2019,
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 43
+    },
+    {
+      "id": "XinZhao",
+      "years": [
+        2021,
+        2022,
+        2024,
+        2025
+      ],
+      "appearances": 29
+    },
+    {
+      "id": "Yasuo",
+      "years": [
+        2015,
+        2017,
+        2019,
+        2021,
+        2024
+      ],
+      "appearances": 12
+    },
+    {
+      "id": "Yone",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 20
+    },
+    {
+      "id": "Yorick",
+      "years": [
+        2025
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Yunara",
+      "years": [
+        2025
+      ],
+      "appearances": 8
+    },
+    {
+      "id": "Yuumi",
+      "years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "appearances": 19
+    },
+    {
+      "id": "Zac",
+      "years": [
+        2015,
+        2017,
+        2023
+      ],
+      "appearances": 3
+    },
+    {
+      "id": "Zed",
+      "years": [
+        2025
+      ],
+      "appearances": 1
+    },
+    {
+      "id": "Zeri",
+      "years": [
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 11
+    },
+    {
+      "id": "Ziggs",
+      "years": [
+        2021,
+        2023,
+        2024,
+        2025
+      ],
+      "appearances": 15
+    },
+    {
+      "id": "Zilean",
+      "years": [
+        2020,
+        2021
+      ],
+      "appearances": 2
+    },
+    {
+      "id": "Zoe",
+      "years": [
+        2019,
+        2020,
+        2021
+      ],
+      "appearances": 12
+    },
+    {
+      "id": "Zyra",
+      "years": [
+        2024
+      ],
+      "appearances": 2
+    }
+  ]
+}

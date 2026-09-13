@@ -17,7 +17,10 @@ import './styles.css';
 import './components/autoplay.css';
 import './components/draft.css';
 const AdminApp = lazy(() => import('./admin/AdminApp'));
+const ArchiveApp = lazy(() => import('./archive/ArchiveApp'));
 const isAdmin = window.location.pathname.replace(/\/+$/, '') === '/admin';
+const isArchive =
+  window.location.pathname === '/arquivo' || window.location.pathname.startsWith('/arquivo/');
 applyRouteMetadata(window.location.pathname);
 if (!isAdmin) registerPwa();
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -32,6 +35,16 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           }
         >
           <AdminApp />
+        </Suspense>
+      ) : isArchive ? (
+        <Suspense
+          fallback={
+            <main className="loading" role="status" aria-live="polite">
+              Carregando arquivo histórico…
+            </main>
+          }
+        >
+          <ArchiveApp />
         </Suspense>
       ) : (
         <App />

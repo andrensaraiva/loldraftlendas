@@ -48,6 +48,9 @@ jobs:
       - name: Validate historical readiness inventory
         run: npm run data:readiness:validate
 
+      - name: Validate public archive index
+        run: npm run data:archive:validate
+
       - name: Production build
         run: npm run build
 
