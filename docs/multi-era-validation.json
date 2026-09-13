@@ -10,19 +10,19 @@
   },
   "productionBuild": {
     "status": "passed",
-    "initialBundleKb": 393.61,
-    "initialBundleGzipKb": 104.42
+    "initialBundleKb": 399.40,
+    "initialBundleGzipKb": 104.87
   },
   "historicalAudit": {
-    "players": 665,
-    "slots": 3325,
-    "eligiblePools": 195,
-    "periodAssets": 1486,
-    "eventCrosschecks": 10,
+    "players": 725,
+    "slots": 3625,
+    "eligiblePools": 215,
+    "periodAssets": 1590,
+    "eventCrosschecks": 11,
     "status": "passed"
   },
   "multiEraSimulation": { "campaigns": 100000, "scenarios": 10, "extraVarietyDrafts": 10000 },
-  "offlineReproduction": { "multiEraFiles": 66, "frozen2017Files": 9, "status": "byte-identical" },
+  "offlineReproduction": { "multiEraFiles": 72, "frozen2017Files": 9, "status": "byte-identical" },
   "frozen2017Pipeline": "build, validate, simulate and report passed; original draft RNG consumption preserved",
   "note": "The first full browser run with eight workers alongside CPU-heavy data work had timeouts. The complete suite passed with two workers, now the default. These are automated tests and visual inspection, not user research."
 }

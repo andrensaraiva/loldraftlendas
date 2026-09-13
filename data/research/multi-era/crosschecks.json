@@ -17,6 +17,23 @@
     "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
   },
   {
+    "year": 2016,
+    "worldsGames": 77,
+    "player": "Faker",
+    "observedKDA": [
+      82,
+      51,
+      104
+    ],
+    "independentKDA": [
+      82,
+      51,
+      104
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
     "year": 2017,
     "worldsGames": 80,
     "player": "Ruler",

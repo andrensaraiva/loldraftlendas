@@ -5,6 +5,11 @@
       "splash": "/assets/2015/splash/Alistar.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Alistar.png",
+      "splash": "/assets/2016/splash/Alistar.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Alistar.png",
       "splash": "/assets/2017/splash/Alistar.jpg",
@@ -96,6 +101,11 @@
       "splash": "/assets/2015/splash/Ashe.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Ashe.png",
+      "splash": "/assets/2016/splash/Ashe.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Ashe.png",
       "splash": "/assets/2017/splash/Ashe.jpg",
@@ -148,6 +158,11 @@
       "splash": "/assets/2015/splash/Azir.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Azir.png",
+      "splash": "/assets/2016/splash/Azir.jpg",
+      "patch": "6.18.1"
+    },
     "2018": {
       "square": "/assets/2018/champions/Azir.png",
       "splash": "/assets/2018/splash/Azir.jpg",
@@ -184,6 +199,11 @@
       "square": "/assets/2015/champions/Bard.png",
       "splash": "/assets/2015/splash/Bard.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Bard.png",
+      "splash": "/assets/2016/splash/Bard.jpg",
+      "patch": "6.18.1"
     },
     "2018": {
       "square": "/assets/2018/champions/Bard.png",
@@ -271,6 +291,11 @@
       "splash": "/assets/2015/splash/Braum.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Braum.png",
+      "splash": "/assets/2016/splash/Braum.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Braum.png",
       "splash": "/assets/2017/splash/Braum.jpg",
@@ -322,6 +347,11 @@
       "square": "/assets/2015/champions/Caitlyn.png",
       "splash": "/assets/2015/splash/Caitlyn.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Caitlyn.png",
+      "splash": "/assets/2016/splash/Caitlyn.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Caitlyn.png",
@@ -416,6 +446,11 @@
       "splash": "/assets/2015/splash/Ekko.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Ekko.png",
+      "splash": "/assets/2016/splash/Ekko.jpg",
+      "patch": "6.18.1"
+    },
     "2018": {
       "square": "/assets/2018/champions/Ekko.png",
       "splash": "/assets/2018/splash/Ekko.jpg",
@@ -437,6 +472,11 @@
       "square": "/assets/2015/champions/Elise.png",
       "splash": "/assets/2015/splash/Elise.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Elise.png",
+      "splash": "/assets/2016/splash/Elise.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Elise.png",
@@ -541,6 +581,11 @@
       "splash": "/assets/2015/splash/Gnar.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Gnar.png",
+      "splash": "/assets/2016/splash/Gnar.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Gnar.png",
       "splash": "/assets/2017/splash/Gnar.jpg",
@@ -582,6 +627,11 @@
       "square": "/assets/2015/champions/Gragas.png",
       "splash": "/assets/2015/splash/Gragas.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Gragas.png",
+      "splash": "/assets/2016/splash/Gragas.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Gragas.png",
@@ -630,6 +680,11 @@
       "splash": "/assets/2015/splash/Graves.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Graves.png",
+      "splash": "/assets/2016/splash/Graves.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Graves.png",
       "splash": "/assets/2017/splash/Graves.jpg",
@@ -666,6 +721,11 @@
       "square": "/assets/2015/champions/Hecarim.png",
       "splash": "/assets/2015/splash/Hecarim.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Hecarim.png",
+      "splash": "/assets/2016/splash/Hecarim.jpg",
+      "patch": "6.18.1"
     },
     "2018": {
       "square": "/assets/2018/champions/Hecarim.png",
@@ -753,6 +813,11 @@
       "splash": "/assets/2015/splash/Jayce.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Jayce.png",
+      "splash": "/assets/2016/splash/Jayce.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Jayce.png",
       "splash": "/assets/2017/splash/Jayce.jpg",
@@ -799,6 +864,11 @@
       "square": "/assets/2015/champions/Jinx.png",
       "splash": "/assets/2015/splash/Jinx.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Jinx.png",
+      "splash": "/assets/2016/splash/Jinx.jpg",
+      "patch": "6.18.1"
     },
     "2022": {
       "square": "/assets/2022/champions/Jinx.png",
@@ -859,6 +929,11 @@
       "splash": "/assets/2015/splash/Karma.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Karma.png",
+      "splash": "/assets/2016/splash/Karma.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Karma.png",
       "splash": "/assets/2017/splash/Karma.jpg",
@@ -912,6 +987,11 @@
       "square": "/assets/2015/champions/Kennen.png",
       "splash": "/assets/2015/splash/Kennen.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Kennen.png",
+      "splash": "/assets/2016/splash/Kennen.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Kennen.png",
@@ -1014,6 +1094,11 @@
       "splash": "/assets/2015/splash/LeeSin.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/LeeSin.png",
+      "splash": "/assets/2016/splash/LeeSin.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/LeeSin.png",
       "splash": "/assets/2017/splash/LeeSin.jpg",
@@ -1087,6 +1172,11 @@
       "square": "/assets/2015/champions/Lucian.png",
       "splash": "/assets/2015/splash/Lucian.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Lucian.png",
+      "splash": "/assets/2016/splash/Lucian.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Lucian.png",
@@ -1204,6 +1294,11 @@
       "splash": "/assets/2015/splash/Maokai.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Maokai.png",
+      "splash": "/assets/2016/splash/Maokai.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Maokai.png",
       "splash": "/assets/2017/splash/Maokai.jpg",
@@ -1295,6 +1390,11 @@
       "splash": "/assets/2015/splash/Nautilus.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Nautilus.png",
+      "splash": "/assets/2016/splash/Nautilus.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Nautilus.png",
       "splash": "/assets/2017/splash/Nautilus.jpg",
@@ -1347,6 +1447,11 @@
       "splash": "/assets/2015/splash/Nidalee.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Nidalee.png",
+      "splash": "/assets/2016/splash/Nidalee.jpg",
+      "patch": "6.18.1"
+    },
     "2020": {
       "square": "/assets/2020/champions/Nidalee.png",
       "splash": "/assets/2020/splash/Nidalee.jpg",
@@ -1386,6 +1491,11 @@
       "splash": "/assets/2015/splash/Olaf.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Olaf.png",
+      "splash": "/assets/2016/splash/Olaf.jpg",
+      "patch": "6.18.1"
+    },
     "2018": {
       "square": "/assets/2018/champions/Olaf.png",
       "splash": "/assets/2018/splash/Olaf.jpg",
@@ -1417,6 +1527,11 @@
       "square": "/assets/2015/champions/Orianna.png",
       "splash": "/assets/2015/splash/Orianna.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Orianna.png",
+      "splash": "/assets/2016/splash/Orianna.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Orianna.png",
@@ -1464,6 +1579,11 @@
       "square": "/assets/2015/champions/RekSai.png",
       "splash": "/assets/2015/splash/RekSai.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/RekSai.png",
+      "splash": "/assets/2016/splash/RekSai.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/RekSai.png",
@@ -1541,6 +1661,11 @@
       "splash": "/assets/2015/splash/Rumble.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Rumble.png",
+      "splash": "/assets/2016/splash/Rumble.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Rumble.png",
       "splash": "/assets/2017/splash/Rumble.jpg",
@@ -1577,6 +1702,11 @@
       "square": "/assets/2015/champions/Ryze.png",
       "splash": "/assets/2015/splash/Ryze.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Ryze.png",
+      "splash": "/assets/2016/splash/Ryze.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Ryze.png",
@@ -1672,6 +1802,11 @@
       "splash": "/assets/2015/splash/Shen.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Shen.png",
+      "splash": "/assets/2016/splash/Shen.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Shen.png",
       "splash": "/assets/2017/splash/Shen.jpg",
@@ -1716,6 +1851,11 @@
       "splash": "/assets/2015/splash/Sivir.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Sivir.png",
+      "splash": "/assets/2016/splash/Sivir.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Sivir.png",
       "splash": "/assets/2017/splash/Sivir.jpg",
@@ -1753,6 +1893,11 @@
       "splash": "/assets/2015/splash/Skarner.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Skarner.png",
+      "splash": "/assets/2016/splash/Skarner.jpg",
+      "patch": "6.18.1"
+    },
     "2018": {
       "square": "/assets/2018/champions/Skarner.png",
       "splash": "/assets/2018/splash/Skarner.jpg",
@@ -1779,6 +1924,11 @@
       "square": "/assets/2015/champions/Syndra.png",
       "splash": "/assets/2015/splash/Syndra.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Syndra.png",
+      "splash": "/assets/2016/splash/Syndra.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Syndra.png",
@@ -1821,6 +1971,11 @@
       "square": "/assets/2015/champions/TahmKench.png",
       "splash": "/assets/2015/splash/TahmKench.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/TahmKench.png",
+      "splash": "/assets/2016/splash/TahmKench.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/TahmKench.png",
@@ -1911,6 +2066,11 @@
       "splash": "/assets/2015/splash/Tristana.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Tristana.png",
+      "splash": "/assets/2016/splash/Tristana.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Tristana.png",
       "splash": "/assets/2017/splash/Tristana.jpg",
@@ -1996,6 +2156,11 @@
       "square": "/assets/2015/champions/Varus.png",
       "splash": "/assets/2015/splash/Varus.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Varus.png",
+      "splash": "/assets/2016/splash/Varus.jpg",
+      "patch": "6.18.1"
     },
     "2017": {
       "square": "/assets/2017/champions/Varus.png",
@@ -2110,6 +2275,11 @@
       "splash": "/assets/2015/splash/Viktor.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Viktor.png",
+      "splash": "/assets/2016/splash/Viktor.jpg",
+      "patch": "6.18.1"
+    },
     "2018": {
       "square": "/assets/2018/champions/Viktor.png",
       "splash": "/assets/2018/splash/Viktor.jpg",
@@ -2136,6 +2306,11 @@
       "square": "/assets/2015/champions/Vladimir.png",
       "splash": "/assets/2015/splash/Vladimir.jpg",
       "patch": "5.18.1"
+    },
+    "2016": {
+      "square": "/assets/2016/champions/Vladimir.png",
+      "splash": "/assets/2016/splash/Vladimir.jpg",
+      "patch": "6.18.1"
     },
     "2018": {
       "square": "/assets/2018/champions/Vladimir.png",
@@ -2186,6 +2361,11 @@
       "splash": "/assets/2015/splash/Zac.jpg",
       "patch": "5.18.1"
     },
+    "2016": {
+      "square": "/assets/2016/champions/Zac.png",
+      "splash": "/assets/2016/splash/Zac.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Zac.png",
       "splash": "/assets/2017/splash/Zac.jpg",
@@ -2203,55 +2383,23 @@
     }
   },
   "AurelionSol": {
+    "2016": {
+      "square": "/assets/2016/champions/AurelionSol.png",
+      "splash": "/assets/2016/splash/AurelionSol.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/AurelionSol.png",
       "splash": "/assets/2017/splash/AurelionSol.jpg",
       "patch": "7.18.1"
     }
   },
-  "Camille": {
-    "2017": {
-      "square": "/assets/2017/champions/Camille.png",
-      "splash": "/assets/2017/splash/Camille.jpg",
-      "patch": "7.18.1"
-    },
-    "2018": {
-      "square": "/assets/2018/champions/Camille.png",
-      "splash": "/assets/2018/splash/Camille.jpg",
-      "patch": "8.19.1"
-    },
-    "2019": {
-      "square": "/assets/2019/champions/Camille.png",
-      "splash": "/assets/2019/splash/Camille.jpg",
-      "patch": "9.19.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Camille.png",
-      "splash": "/assets/2020/splash/Camille.jpg",
-      "patch": "10.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Camille.png",
-      "splash": "/assets/2021/splash/Camille.jpg",
-      "patch": "11.19.1"
-    },
-    "2022": {
-      "square": "/assets/2022/champions/Camille.png",
-      "splash": "/assets/2022/splash/Camille.jpg",
-      "patch": "12.18.1"
-    },
-    "2023": {
-      "square": "/assets/2023/champions/Camille.png",
-      "splash": "/assets/2023/splash/Camille.jpg",
-      "patch": "13.19.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/Camille.png",
-      "splash": "/assets/2024/splash/Camille.jpg",
-      "patch": "14.18.1"
-    }
-  },
   "Cassiopeia": {
+    "2016": {
+      "square": "/assets/2016/champions/Cassiopeia.png",
+      "splash": "/assets/2016/splash/Cassiopeia.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Cassiopeia.png",
       "splash": "/assets/2017/splash/Cassiopeia.jpg",
@@ -2283,19 +2431,12 @@
       "patch": "15.20.1"
     }
   },
-  "Chogath": {
-    "2017": {
-      "square": "/assets/2017/champions/Chogath.png",
-      "splash": "/assets/2017/splash/Chogath.jpg",
-      "patch": "7.18.1"
-    },
-    "2019": {
-      "square": "/assets/2019/champions/Chogath.png",
-      "splash": "/assets/2019/splash/Chogath.jpg",
-      "patch": "9.19.1"
-    }
-  },
   "Ezreal": {
+    "2016": {
+      "square": "/assets/2016/champions/Ezreal.png",
+      "splash": "/assets/2016/splash/Ezreal.jpg",
+      "patch": "6.18.1"
+    },
     "2017": {
       "square": "/assets/2017/champions/Ezreal.png",
       "splash": "/assets/2017/splash/Ezreal.jpg",
@@ -2340,6 +2481,441 @@
       "square": "/assets/2025/champions/Ezreal.png",
       "splash": "/assets/2025/splash/Ezreal.jpg",
       "patch": "15.20.1"
+    }
+  },
+  "Irelia": {
+    "2016": {
+      "square": "/assets/2016/champions/Irelia.png",
+      "splash": "/assets/2016/splash/Irelia.jpg",
+      "patch": "6.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Irelia.png",
+      "splash": "/assets/2018/splash/Irelia.jpg",
+      "patch": "8.19.1"
+    },
+    "2019": {
+      "square": "/assets/2019/champions/Irelia.png",
+      "splash": "/assets/2019/splash/Irelia.jpg",
+      "patch": "9.19.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Irelia.png",
+      "splash": "/assets/2020/splash/Irelia.jpg",
+      "patch": "10.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Irelia.png",
+      "splash": "/assets/2021/splash/Irelia.jpg",
+      "patch": "11.19.1"
+    }
+  },
+  "Jhin": {
+    "2016": {
+      "square": "/assets/2016/champions/Jhin.png",
+      "splash": "/assets/2016/splash/Jhin.jpg",
+      "patch": "6.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Jhin.png",
+      "splash": "/assets/2018/splash/Jhin.jpg",
+      "patch": "8.19.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Jhin.png",
+      "splash": "/assets/2020/splash/Jhin.jpg",
+      "patch": "10.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Jhin.png",
+      "splash": "/assets/2021/splash/Jhin.jpg",
+      "patch": "11.19.1"
+    },
+    "2022": {
+      "square": "/assets/2022/champions/Jhin.png",
+      "splash": "/assets/2022/splash/Jhin.jpg",
+      "patch": "12.18.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Jhin.png",
+      "splash": "/assets/2024/splash/Jhin.jpg",
+      "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Jhin.png",
+      "splash": "/assets/2025/splash/Jhin.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Khazix": {
+    "2016": {
+      "square": "/assets/2016/champions/Khazix.png",
+      "splash": "/assets/2016/splash/Khazix.jpg",
+      "patch": "6.18.1"
+    },
+    "2017": {
+      "square": "/assets/2017/champions/Khazix.png",
+      "splash": "/assets/2017/splash/Khazix.jpg",
+      "patch": "7.18.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Khazix.png",
+      "splash": "/assets/2020/splash/Khazix.jpg",
+      "patch": "10.19.1"
+    },
+    "2023": {
+      "square": "/assets/2023/champions/Khazix.png",
+      "splash": "/assets/2023/splash/Khazix.jpg",
+      "patch": "13.19.1"
+    }
+  },
+  "Kled": {
+    "2016": {
+      "square": "/assets/2016/champions/Kled.png",
+      "splash": "/assets/2016/splash/Kled.jpg",
+      "patch": "6.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Kled.png",
+      "splash": "/assets/2018/splash/Kled.jpg",
+      "patch": "8.19.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Kled.png",
+      "splash": "/assets/2024/splash/Kled.jpg",
+      "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Kled.png",
+      "splash": "/assets/2025/splash/Kled.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Malzahar": {
+    "2016": {
+      "square": "/assets/2016/champions/Malzahar.png",
+      "splash": "/assets/2016/splash/Malzahar.jpg",
+      "patch": "6.18.1"
+    },
+    "2017": {
+      "square": "/assets/2017/champions/Malzahar.png",
+      "splash": "/assets/2017/splash/Malzahar.jpg",
+      "patch": "7.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Malzahar.png",
+      "splash": "/assets/2018/splash/Malzahar.jpg",
+      "patch": "8.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Malzahar.png",
+      "splash": "/assets/2021/splash/Malzahar.jpg",
+      "patch": "11.19.1"
+    }
+  },
+  "MissFortune": {
+    "2016": {
+      "square": "/assets/2016/champions/MissFortune.png",
+      "splash": "/assets/2016/splash/MissFortune.jpg",
+      "patch": "6.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/MissFortune.png",
+      "splash": "/assets/2018/splash/MissFortune.jpg",
+      "patch": "8.19.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/MissFortune.png",
+      "splash": "/assets/2020/splash/MissFortune.jpg",
+      "patch": "10.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/MissFortune.png",
+      "splash": "/assets/2021/splash/MissFortune.jpg",
+      "patch": "11.19.1"
+    },
+    "2022": {
+      "square": "/assets/2022/champions/MissFortune.png",
+      "splash": "/assets/2022/splash/MissFortune.jpg",
+      "patch": "12.18.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/MissFortune.png",
+      "splash": "/assets/2024/splash/MissFortune.jpg",
+      "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/MissFortune.png",
+      "splash": "/assets/2025/splash/MissFortune.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Nami": {
+    "2016": {
+      "square": "/assets/2016/champions/Nami.png",
+      "splash": "/assets/2016/splash/Nami.jpg",
+      "patch": "6.18.1"
+    },
+    "2017": {
+      "square": "/assets/2017/champions/Nami.png",
+      "splash": "/assets/2017/splash/Nami.jpg",
+      "patch": "7.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Nami.png",
+      "splash": "/assets/2018/splash/Nami.jpg",
+      "patch": "8.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Nami.png",
+      "splash": "/assets/2021/splash/Nami.jpg",
+      "patch": "11.19.1"
+    },
+    "2022": {
+      "square": "/assets/2022/champions/Nami.png",
+      "splash": "/assets/2022/splash/Nami.jpg",
+      "patch": "12.18.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Nami.png",
+      "splash": "/assets/2024/splash/Nami.jpg",
+      "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Nami.png",
+      "splash": "/assets/2025/splash/Nami.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Nocturne": {
+    "2016": {
+      "square": "/assets/2016/champions/Nocturne.png",
+      "splash": "/assets/2016/splash/Nocturne.jpg",
+      "patch": "6.18.1"
+    },
+    "2017": {
+      "square": "/assets/2017/champions/Nocturne.png",
+      "splash": "/assets/2017/splash/Nocturne.jpg",
+      "patch": "7.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Nocturne.png",
+      "splash": "/assets/2018/splash/Nocturne.jpg",
+      "patch": "8.19.1"
+    },
+    "2019": {
+      "square": "/assets/2019/champions/Nocturne.png",
+      "splash": "/assets/2019/splash/Nocturne.jpg",
+      "patch": "9.19.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Nocturne.png",
+      "splash": "/assets/2020/splash/Nocturne.jpg",
+      "patch": "10.19.1"
+    },
+    "2023": {
+      "square": "/assets/2023/champions/Nocturne.png",
+      "splash": "/assets/2023/splash/Nocturne.jpg",
+      "patch": "13.19.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Nocturne.png",
+      "splash": "/assets/2024/splash/Nocturne.jpg",
+      "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Nocturne.png",
+      "splash": "/assets/2025/splash/Nocturne.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Poppy": {
+    "2016": {
+      "square": "/assets/2016/champions/Poppy.png",
+      "splash": "/assets/2016/splash/Poppy.jpg",
+      "patch": "6.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Poppy.png",
+      "splash": "/assets/2018/splash/Poppy.jpg",
+      "patch": "8.19.1"
+    },
+    "2019": {
+      "square": "/assets/2019/champions/Poppy.png",
+      "splash": "/assets/2019/splash/Poppy.jpg",
+      "patch": "9.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Poppy.png",
+      "splash": "/assets/2021/splash/Poppy.jpg",
+      "patch": "11.19.1"
+    },
+    "2022": {
+      "square": "/assets/2022/champions/Poppy.png",
+      "splash": "/assets/2022/splash/Poppy.jpg",
+      "patch": "12.18.1"
+    },
+    "2023": {
+      "square": "/assets/2023/champions/Poppy.png",
+      "splash": "/assets/2023/splash/Poppy.jpg",
+      "patch": "13.19.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Poppy.png",
+      "splash": "/assets/2024/splash/Poppy.jpg",
+      "patch": "14.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Poppy.png",
+      "splash": "/assets/2025/splash/Poppy.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Taric": {
+    "2016": {
+      "square": "/assets/2016/champions/Taric.png",
+      "splash": "/assets/2016/splash/Taric.jpg",
+      "patch": "6.18.1"
+    },
+    "2017": {
+      "square": "/assets/2017/champions/Taric.png",
+      "splash": "/assets/2017/splash/Taric.jpg",
+      "patch": "7.18.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Taric.png",
+      "splash": "/assets/2020/splash/Taric.jpg",
+      "patch": "10.19.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Taric.png",
+      "splash": "/assets/2024/splash/Taric.jpg",
+      "patch": "14.18.1"
+    }
+  },
+  "Trundle": {
+    "2016": {
+      "square": "/assets/2016/champions/Trundle.png",
+      "splash": "/assets/2016/splash/Trundle.jpg",
+      "patch": "6.18.1"
+    },
+    "2017": {
+      "square": "/assets/2017/champions/Trundle.png",
+      "splash": "/assets/2017/splash/Trundle.jpg",
+      "patch": "7.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Trundle.png",
+      "splash": "/assets/2018/splash/Trundle.jpg",
+      "patch": "8.19.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Trundle.png",
+      "splash": "/assets/2020/splash/Trundle.jpg",
+      "patch": "10.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Trundle.png",
+      "splash": "/assets/2021/splash/Trundle.jpg",
+      "patch": "11.19.1"
+    },
+    "2022": {
+      "square": "/assets/2022/champions/Trundle.png",
+      "splash": "/assets/2022/splash/Trundle.jpg",
+      "patch": "12.18.1"
+    },
+    "2025": {
+      "square": "/assets/2025/champions/Trundle.png",
+      "splash": "/assets/2025/splash/Trundle.jpg",
+      "patch": "15.20.1"
+    }
+  },
+  "Zilean": {
+    "2016": {
+      "square": "/assets/2016/champions/Zilean.png",
+      "splash": "/assets/2016/splash/Zilean.jpg",
+      "patch": "6.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Zilean.png",
+      "splash": "/assets/2018/splash/Zilean.jpg",
+      "patch": "8.19.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Zilean.png",
+      "splash": "/assets/2020/splash/Zilean.jpg",
+      "patch": "10.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Zilean.png",
+      "splash": "/assets/2021/splash/Zilean.jpg",
+      "patch": "11.19.1"
+    }
+  },
+  "Zyra": {
+    "2016": {
+      "square": "/assets/2016/champions/Zyra.png",
+      "splash": "/assets/2016/splash/Zyra.jpg",
+      "patch": "6.18.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Zyra.png",
+      "splash": "/assets/2024/splash/Zyra.jpg",
+      "patch": "14.18.1"
+    }
+  },
+  "Camille": {
+    "2017": {
+      "square": "/assets/2017/champions/Camille.png",
+      "splash": "/assets/2017/splash/Camille.jpg",
+      "patch": "7.18.1"
+    },
+    "2018": {
+      "square": "/assets/2018/champions/Camille.png",
+      "splash": "/assets/2018/splash/Camille.jpg",
+      "patch": "8.19.1"
+    },
+    "2019": {
+      "square": "/assets/2019/champions/Camille.png",
+      "splash": "/assets/2019/splash/Camille.jpg",
+      "patch": "9.19.1"
+    },
+    "2020": {
+      "square": "/assets/2020/champions/Camille.png",
+      "splash": "/assets/2020/splash/Camille.jpg",
+      "patch": "10.19.1"
+    },
+    "2021": {
+      "square": "/assets/2021/champions/Camille.png",
+      "splash": "/assets/2021/splash/Camille.jpg",
+      "patch": "11.19.1"
+    },
+    "2022": {
+      "square": "/assets/2022/champions/Camille.png",
+      "splash": "/assets/2022/splash/Camille.jpg",
+      "patch": "12.18.1"
+    },
+    "2023": {
+      "square": "/assets/2023/champions/Camille.png",
+      "splash": "/assets/2023/splash/Camille.jpg",
+      "patch": "13.19.1"
+    },
+    "2024": {
+      "square": "/assets/2024/champions/Camille.png",
+      "splash": "/assets/2024/splash/Camille.jpg",
+      "patch": "14.18.1"
+    }
+  },
+  "Chogath": {
+    "2017": {
+      "square": "/assets/2017/champions/Chogath.png",
+      "splash": "/assets/2017/splash/Chogath.jpg",
+      "patch": "7.18.1"
+    },
+    "2019": {
+      "square": "/assets/2019/champions/Chogath.png",
+      "splash": "/assets/2019/splash/Chogath.jpg",
+      "patch": "9.19.1"
     }
   },
   "Fizz": {
@@ -2450,23 +3026,6 @@
       "patch": "15.20.1"
     }
   },
-  "Khazix": {
-    "2017": {
-      "square": "/assets/2017/champions/Khazix.png",
-      "splash": "/assets/2017/splash/Khazix.jpg",
-      "patch": "7.18.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Khazix.png",
-      "splash": "/assets/2020/splash/Khazix.jpg",
-      "patch": "10.19.1"
-    },
-    "2023": {
-      "square": "/assets/2023/champions/Khazix.png",
-      "splash": "/assets/2023/splash/Khazix.jpg",
-      "patch": "13.19.1"
-    }
-  },
   "Leona": {
     "2017": {
       "square": "/assets/2017/champions/Leona.png",
@@ -2514,55 +3073,6 @@
       "patch": "15.20.1"
     }
   },
-  "Malzahar": {
-    "2017": {
-      "square": "/assets/2017/champions/Malzahar.png",
-      "splash": "/assets/2017/splash/Malzahar.jpg",
-      "patch": "7.18.1"
-    },
-    "2018": {
-      "square": "/assets/2018/champions/Malzahar.png",
-      "splash": "/assets/2018/splash/Malzahar.jpg",
-      "patch": "8.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Malzahar.png",
-      "splash": "/assets/2021/splash/Malzahar.jpg",
-      "patch": "11.19.1"
-    }
-  },
-  "Nami": {
-    "2017": {
-      "square": "/assets/2017/champions/Nami.png",
-      "splash": "/assets/2017/splash/Nami.jpg",
-      "patch": "7.18.1"
-    },
-    "2018": {
-      "square": "/assets/2018/champions/Nami.png",
-      "splash": "/assets/2018/splash/Nami.jpg",
-      "patch": "8.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Nami.png",
-      "splash": "/assets/2021/splash/Nami.jpg",
-      "patch": "11.19.1"
-    },
-    "2022": {
-      "square": "/assets/2022/champions/Nami.png",
-      "splash": "/assets/2022/splash/Nami.jpg",
-      "patch": "12.18.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/Nami.png",
-      "splash": "/assets/2024/splash/Nami.jpg",
-      "patch": "14.18.1"
-    },
-    "2025": {
-      "square": "/assets/2025/champions/Nami.png",
-      "splash": "/assets/2025/splash/Nami.jpg",
-      "patch": "15.20.1"
-    }
-  },
   "Nasus": {
     "2017": {
       "square": "/assets/2017/champions/Nasus.png",
@@ -2573,43 +3083,6 @@
       "square": "/assets/2022/champions/Nasus.png",
       "splash": "/assets/2022/splash/Nasus.jpg",
       "patch": "12.18.1"
-    }
-  },
-  "Nocturne": {
-    "2017": {
-      "square": "/assets/2017/champions/Nocturne.png",
-      "splash": "/assets/2017/splash/Nocturne.jpg",
-      "patch": "7.18.1"
-    },
-    "2018": {
-      "square": "/assets/2018/champions/Nocturne.png",
-      "splash": "/assets/2018/splash/Nocturne.jpg",
-      "patch": "8.19.1"
-    },
-    "2019": {
-      "square": "/assets/2019/champions/Nocturne.png",
-      "splash": "/assets/2019/splash/Nocturne.jpg",
-      "patch": "9.19.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Nocturne.png",
-      "splash": "/assets/2020/splash/Nocturne.jpg",
-      "patch": "10.19.1"
-    },
-    "2023": {
-      "square": "/assets/2023/champions/Nocturne.png",
-      "splash": "/assets/2023/splash/Nocturne.jpg",
-      "patch": "13.19.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/Nocturne.png",
-      "splash": "/assets/2024/splash/Nocturne.jpg",
-      "patch": "14.18.1"
-    },
-    "2025": {
-      "square": "/assets/2025/champions/Nocturne.png",
-      "splash": "/assets/2025/splash/Nocturne.jpg",
-      "patch": "15.20.1"
     }
   },
   "Rakan": {
@@ -2744,55 +3217,6 @@
     "2025": {
       "square": "/assets/2025/champions/Taliyah.png",
       "splash": "/assets/2025/splash/Taliyah.jpg",
-      "patch": "15.20.1"
-    }
-  },
-  "Taric": {
-    "2017": {
-      "square": "/assets/2017/champions/Taric.png",
-      "splash": "/assets/2017/splash/Taric.jpg",
-      "patch": "7.18.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Taric.png",
-      "splash": "/assets/2020/splash/Taric.jpg",
-      "patch": "10.19.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/Taric.png",
-      "splash": "/assets/2024/splash/Taric.jpg",
-      "patch": "14.18.1"
-    }
-  },
-  "Trundle": {
-    "2017": {
-      "square": "/assets/2017/champions/Trundle.png",
-      "splash": "/assets/2017/splash/Trundle.jpg",
-      "patch": "7.18.1"
-    },
-    "2018": {
-      "square": "/assets/2018/champions/Trundle.png",
-      "splash": "/assets/2018/splash/Trundle.jpg",
-      "patch": "8.19.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Trundle.png",
-      "splash": "/assets/2020/splash/Trundle.jpg",
-      "patch": "10.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Trundle.png",
-      "splash": "/assets/2021/splash/Trundle.jpg",
-      "patch": "11.19.1"
-    },
-    "2022": {
-      "square": "/assets/2022/champions/Trundle.png",
-      "splash": "/assets/2022/splash/Trundle.jpg",
-      "patch": "12.18.1"
-    },
-    "2025": {
-      "square": "/assets/2025/champions/Trundle.png",
-      "splash": "/assets/2025/splash/Trundle.jpg",
       "patch": "15.20.1"
     }
   },
@@ -2988,60 +3412,6 @@
       "patch": "13.19.1"
     }
   },
-  "Irelia": {
-    "2018": {
-      "square": "/assets/2018/champions/Irelia.png",
-      "splash": "/assets/2018/splash/Irelia.jpg",
-      "patch": "8.19.1"
-    },
-    "2019": {
-      "square": "/assets/2019/champions/Irelia.png",
-      "splash": "/assets/2019/splash/Irelia.jpg",
-      "patch": "9.19.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Irelia.png",
-      "splash": "/assets/2020/splash/Irelia.jpg",
-      "patch": "10.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Irelia.png",
-      "splash": "/assets/2021/splash/Irelia.jpg",
-      "patch": "11.19.1"
-    }
-  },
-  "Jhin": {
-    "2018": {
-      "square": "/assets/2018/champions/Jhin.png",
-      "splash": "/assets/2018/splash/Jhin.jpg",
-      "patch": "8.19.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Jhin.png",
-      "splash": "/assets/2020/splash/Jhin.jpg",
-      "patch": "10.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Jhin.png",
-      "splash": "/assets/2021/splash/Jhin.jpg",
-      "patch": "11.19.1"
-    },
-    "2022": {
-      "square": "/assets/2022/champions/Jhin.png",
-      "splash": "/assets/2022/splash/Jhin.jpg",
-      "patch": "12.18.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/Jhin.png",
-      "splash": "/assets/2024/splash/Jhin.jpg",
-      "patch": "14.18.1"
-    },
-    "2025": {
-      "square": "/assets/2025/champions/Jhin.png",
-      "splash": "/assets/2025/splash/Jhin.jpg",
-      "patch": "15.20.1"
-    }
-  },
   "Kaisa": {
     "2018": {
       "square": "/assets/2018/champions/Kaisa.png",
@@ -3111,55 +3481,6 @@
       "patch": "14.18.1"
     }
   },
-  "Kled": {
-    "2018": {
-      "square": "/assets/2018/champions/Kled.png",
-      "splash": "/assets/2018/splash/Kled.jpg",
-      "patch": "8.19.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/Kled.png",
-      "splash": "/assets/2024/splash/Kled.jpg",
-      "patch": "14.18.1"
-    },
-    "2025": {
-      "square": "/assets/2025/champions/Kled.png",
-      "splash": "/assets/2025/splash/Kled.jpg",
-      "patch": "15.20.1"
-    }
-  },
-  "MissFortune": {
-    "2018": {
-      "square": "/assets/2018/champions/MissFortune.png",
-      "splash": "/assets/2018/splash/MissFortune.jpg",
-      "patch": "8.19.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/MissFortune.png",
-      "splash": "/assets/2020/splash/MissFortune.jpg",
-      "patch": "10.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/MissFortune.png",
-      "splash": "/assets/2021/splash/MissFortune.jpg",
-      "patch": "11.19.1"
-    },
-    "2022": {
-      "square": "/assets/2022/champions/MissFortune.png",
-      "splash": "/assets/2022/splash/MissFortune.jpg",
-      "patch": "12.18.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/MissFortune.png",
-      "splash": "/assets/2024/splash/MissFortune.jpg",
-      "patch": "14.18.1"
-    },
-    "2025": {
-      "square": "/assets/2025/champions/MissFortune.png",
-      "splash": "/assets/2025/splash/MissFortune.jpg",
-      "patch": "15.20.1"
-    }
-  },
   "Ornn": {
     "2018": {
       "square": "/assets/2018/champions/Ornn.png",
@@ -3189,43 +3510,6 @@
     "2025": {
       "square": "/assets/2025/champions/Ornn.png",
       "splash": "/assets/2025/splash/Ornn.jpg",
-      "patch": "15.20.1"
-    }
-  },
-  "Poppy": {
-    "2018": {
-      "square": "/assets/2018/champions/Poppy.png",
-      "splash": "/assets/2018/splash/Poppy.jpg",
-      "patch": "8.19.1"
-    },
-    "2019": {
-      "square": "/assets/2019/champions/Poppy.png",
-      "splash": "/assets/2019/splash/Poppy.jpg",
-      "patch": "9.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Poppy.png",
-      "splash": "/assets/2021/splash/Poppy.jpg",
-      "patch": "11.19.1"
-    },
-    "2022": {
-      "square": "/assets/2022/champions/Poppy.png",
-      "splash": "/assets/2022/splash/Poppy.jpg",
-      "patch": "12.18.1"
-    },
-    "2023": {
-      "square": "/assets/2023/champions/Poppy.png",
-      "splash": "/assets/2023/splash/Poppy.jpg",
-      "patch": "13.19.1"
-    },
-    "2024": {
-      "square": "/assets/2024/champions/Poppy.png",
-      "splash": "/assets/2024/splash/Poppy.jpg",
-      "patch": "14.18.1"
-    },
-    "2025": {
-      "square": "/assets/2025/champions/Poppy.png",
-      "splash": "/assets/2025/splash/Poppy.jpg",
       "patch": "15.20.1"
     }
   },
@@ -3349,23 +3633,6 @@
       "square": "/assets/2025/champions/XinZhao.png",
       "splash": "/assets/2025/splash/XinZhao.jpg",
       "patch": "15.20.1"
-    }
-  },
-  "Zilean": {
-    "2018": {
-      "square": "/assets/2018/champions/Zilean.png",
-      "splash": "/assets/2018/splash/Zilean.jpg",
-      "patch": "8.19.1"
-    },
-    "2020": {
-      "square": "/assets/2020/champions/Zilean.png",
-      "splash": "/assets/2020/splash/Zilean.jpg",
-      "patch": "10.19.1"
-    },
-    "2021": {
-      "square": "/assets/2021/champions/Zilean.png",
-      "splash": "/assets/2021/splash/Zilean.jpg",
-      "patch": "11.19.1"
     }
   },
   "Zoe": {
@@ -3978,13 +4245,6 @@
     "2024": {
       "square": "/assets/2024/champions/Smolder.png",
       "splash": "/assets/2024/splash/Smolder.jpg",
-      "patch": "14.18.1"
-    }
-  },
-  "Zyra": {
-    "2024": {
-      "square": "/assets/2024/champions/Zyra.png",
-      "splash": "/assets/2024/splash/Zyra.jpg",
       "patch": "14.18.1"
     }
   },

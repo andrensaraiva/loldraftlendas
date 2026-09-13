@@ -12,12 +12,12 @@ function challengePath(
   const challenge = encodeChallenge({
     version: CHALLENGE_VERSION,
     seed,
-    datasetVersion: 'multi-era-v1.4.0',
+    datasetVersion: 'multi-era-v1.5.0',
     gameMode,
     gamePlan,
     availability: {
       startingExchanges: 3,
-      activeYears: [2015, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      activeYears: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
       activeRegionGroups: [
         'KOREA',
         'CHINA',
@@ -71,7 +71,7 @@ async function draft(
 }
 
 test('Almanac hides numeric guidance and reveals it only after the campaign', async ({ page }) => {
-  await draft(page, '0000000000000001', 'almanac');
+  await draft(page, '000000000000000a', 'almanac');
   await expect(page.locator('.almanac-lock')).toContainText('serão revelados');
   await expect(page.locator('.composition-panel .comp-art b')).toHaveText(Array(5).fill('?'));
   await page.screenshot({
@@ -143,7 +143,7 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
 }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
-  await draft(page, '0000000000000001');
+  await draft(page, '000000000000000a');
   for (let i = 1; i <= 5; i++) {
     await page.getByRole('tab', { name: `Jogo ${i}` }).click();
     await expect(page.locator('.comp-champion')).toHaveCount(5);
@@ -161,11 +161,13 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   const download = await downloadPromise;
   expect(download.suggestedFilename()).toBe('draft-lendas-campeao-mundial.png');
   await expect(page.locator('.share-status')).toContainText('Card baixado');
-  await expect(page.locator('.campaign-series')).toHaveCount(6);
-  await expect(page.locator('.history-games button')).toHaveCount(16);
+  await expect(page.locator('.campaign-series')).toHaveCount(8);
+  await expect(page.locator('.history-games button')).toHaveCount(24);
   await expect(page.locator('.campaign-series small')).toHaveText([
     'BO1',
     'BO1',
+    'BO3',
+    'BO3',
     'BO3',
     'BO5',
     'BO5',
@@ -191,8 +193,8 @@ test('quick mode eliminates after three Swiss losses and preserves every game', 
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Eliminado no Suíço', {
     timeout: 15000,
   });
-  await expect(page.locator('.campaign-series')).toHaveCount(4);
-  await expect(page.locator('.history-games button')).toHaveCount(5);
+  await expect(page.locator('.campaign-series')).toHaveCount(3);
+  await expect(page.locator('.history-games button')).toHaveCount(4);
   await expect(page.locator('.history-games button.loss')).toHaveCount(4);
   await expect
     .poll(() =>
@@ -246,10 +248,10 @@ test('detailed playback updates KDA, pauses, changes speed/mode and retains the 
   await expect(page.locator('.match-report')).toHaveAttribute('data-moment', '2');
   await page.getByRole('button', { name: 'Continuar', exact: true }).click();
   await page.clock.runFor(120);
-  await expect(page.locator('.game-result.win')).toHaveCount(1);
+  await expect(page.locator('.game-result.loss')).toHaveCount(1);
   await page.getByRole('button', { name: 'Ver relatório G1', exact: true }).click();
   await page.clock.runFor(10000);
-  await expect(page.locator('.series-score')).toHaveText('1:0');
+  await expect(page.locator('.series-score')).toHaveText('0:1');
   await expect(page.getByRole('dialog').locator('.match-report')).toHaveAttribute(
     'data-moment',
     '6',

@@ -8,6 +8,15 @@
     "accessedAt": "2026-09-07",
     "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
   },
+  "2016": {
+    "url": "https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2016_LoL_esports_match_data_from_OraclesElixir_20201011.csv",
+    "sha256": "65b7213f316ff0fb8b56125f31bc90152c51d1d29ac57fc0c3611b15cf0b2198",
+    "bytes": 25282898,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-13",
+    "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  },
   "2018": {
     "url": "https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2018_LoL_esports_match_data_from_OraclesElixir_20201011.csv",
     "sha256": "bbdc5bbfb8b84278a462cee367c06a4d72de99c7fe7c2a0fe3f48ee83b2f8aa2",

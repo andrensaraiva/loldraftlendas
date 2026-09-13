@@ -9,7 +9,7 @@ test('archive index stays lightweight and searches public player/champion routes
   });
   await page.goto('/arquivo');
   await expect(page.getByRole('heading', { name: 'O Worlds, lenda por lenda.' })).toBeVisible();
-  await expect(page.locator('.archive-editions a')).toHaveCount(10);
+  await expect(page.locator('.archive-editions a')).toHaveCount(11);
   await expect(page).toHaveTitle('Arquivo histórico — Draft Lendas');
   expect(annualRequests).toEqual([]);
 
@@ -56,9 +56,10 @@ test('player and champion routes load only indexed years', async ({ page }) => {
   });
   await page.goto('/arquivo/jogador/faker');
   await expect(page.getByRole('heading', { level: 1, name: 'Faker' })).toBeVisible();
-  await expect(page.locator('.archive-player-card')).toHaveCount(8);
+  await expect(page.locator('.archive-player-card')).toHaveCount(9);
   expect([...requestedYears].sort()).toEqual([
     '2015',
+    '2016',
     '2017',
     '2019',
     '2021',

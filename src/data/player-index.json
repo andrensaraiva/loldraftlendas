@@ -360,6 +360,366 @@
     "team": "TSM"
   },
   {
+    "id": "duke-2016-skt",
+    "playerName": "Duke",
+    "worldsYear": 2016,
+    "team": "SKT"
+  },
+  {
+    "id": "bengi-2016-skt",
+    "playerName": "Bengi",
+    "worldsYear": 2016,
+    "team": "SKT"
+  },
+  {
+    "id": "faker-2016-skt",
+    "playerName": "Faker",
+    "worldsYear": 2016,
+    "team": "SKT"
+  },
+  {
+    "id": "bang-2016-skt",
+    "playerName": "Bang",
+    "worldsYear": 2016,
+    "team": "SKT"
+  },
+  {
+    "id": "wolf-2016-skt",
+    "playerName": "Wolf",
+    "worldsYear": 2016,
+    "team": "SKT"
+  },
+  {
+    "id": "smeb-2016-rox",
+    "playerName": "Smeb",
+    "worldsYear": 2016,
+    "team": "ROX"
+  },
+  {
+    "id": "peanut-2016-rox",
+    "playerName": "Peanut",
+    "worldsYear": 2016,
+    "team": "ROX"
+  },
+  {
+    "id": "kuro-2016-rox",
+    "playerName": "Kuro",
+    "worldsYear": 2016,
+    "team": "ROX"
+  },
+  {
+    "id": "pray-2016-rox",
+    "playerName": "PraY",
+    "worldsYear": 2016,
+    "team": "ROX"
+  },
+  {
+    "id": "gorilla-2016-rox",
+    "playerName": "GorillA",
+    "worldsYear": 2016,
+    "team": "ROX"
+  },
+  {
+    "id": "cuvee-2016-ssg",
+    "playerName": "CuVee",
+    "worldsYear": 2016,
+    "team": "SSG"
+  },
+  {
+    "id": "ambition-2016-ssg",
+    "playerName": "Ambition",
+    "worldsYear": 2016,
+    "team": "SSG"
+  },
+  {
+    "id": "crown-2016-ssg",
+    "playerName": "Crown",
+    "worldsYear": 2016,
+    "team": "SSG"
+  },
+  {
+    "id": "ruler-2016-ssg",
+    "playerName": "Ruler",
+    "worldsYear": 2016,
+    "team": "SSG"
+  },
+  {
+    "id": "corejj-2016-ssg",
+    "playerName": "CoreJJ",
+    "worldsYear": 2016,
+    "team": "SSG"
+  },
+  {
+    "id": "mouse-2016-edg",
+    "playerName": "Mouse",
+    "worldsYear": 2016,
+    "team": "EDG"
+  },
+  {
+    "id": "clearlove-2016-edg",
+    "playerName": "Clearlove",
+    "worldsYear": 2016,
+    "team": "EDG"
+  },
+  {
+    "id": "scout-2016-edg",
+    "playerName": "Scout",
+    "worldsYear": 2016,
+    "team": "EDG"
+  },
+  {
+    "id": "deft-2016-edg",
+    "playerName": "Deft",
+    "worldsYear": 2016,
+    "team": "EDG"
+  },
+  {
+    "id": "meiko-2016-edg",
+    "playerName": "Meiko",
+    "worldsYear": 2016,
+    "team": "EDG"
+  },
+  {
+    "id": "looper-2016-rng",
+    "playerName": "Looper",
+    "worldsYear": 2016,
+    "team": "RNG"
+  },
+  {
+    "id": "mlxg-2016-rng",
+    "playerName": "Mlxg",
+    "worldsYear": 2016,
+    "team": "RNG"
+  },
+  {
+    "id": "xiaohu-2016-rng",
+    "playerName": "Xiaohu",
+    "worldsYear": 2016,
+    "team": "RNG"
+  },
+  {
+    "id": "uzi-2016-rng",
+    "playerName": "Uzi",
+    "worldsYear": 2016,
+    "team": "RNG"
+  },
+  {
+    "id": "mata-2016-rng",
+    "playerName": "Mata",
+    "worldsYear": 2016,
+    "team": "RNG"
+  },
+  {
+    "id": "amazingj-2016-imay",
+    "playerName": "AmazingJ",
+    "worldsYear": 2016,
+    "team": "IMAY"
+  },
+  {
+    "id": "avoidless-2016-imay",
+    "playerName": "Avoidless",
+    "worldsYear": 2016,
+    "team": "IMAY"
+  },
+  {
+    "id": "athena-2016-imay",
+    "playerName": "Athena",
+    "worldsYear": 2016,
+    "team": "IMAY"
+  },
+  {
+    "id": "jinjiao-2016-imay",
+    "playerName": "Jinjiao",
+    "worldsYear": 2016,
+    "team": "IMAY"
+  },
+  {
+    "id": "road-2016-imay",
+    "playerName": "Road",
+    "worldsYear": 2016,
+    "team": "IMAY"
+  },
+  {
+    "id": "expect-2016-g2",
+    "playerName": "Expect",
+    "worldsYear": 2016,
+    "team": "G2"
+  },
+  {
+    "id": "trick-2016-g2",
+    "playerName": "Trick",
+    "worldsYear": 2016,
+    "team": "G2"
+  },
+  {
+    "id": "perkz-2016-g2",
+    "playerName": "Perkz",
+    "worldsYear": 2016,
+    "team": "G2"
+  },
+  {
+    "id": "zven-2016-g2",
+    "playerName": "Zven",
+    "worldsYear": 2016,
+    "team": "G2"
+  },
+  {
+    "id": "mithy-2016-g2",
+    "playerName": "Mithy",
+    "worldsYear": 2016,
+    "team": "G2"
+  },
+  {
+    "id": "odoamne-2016-h2k",
+    "playerName": "Odoamne",
+    "worldsYear": 2016,
+    "team": "H2K"
+  },
+  {
+    "id": "jankos-2016-h2k",
+    "playerName": "Jankos",
+    "worldsYear": 2016,
+    "team": "H2K"
+  },
+  {
+    "id": "ryu-2016-h2k",
+    "playerName": "Ryu",
+    "worldsYear": 2016,
+    "team": "H2K"
+  },
+  {
+    "id": "forg1ven-2016-h2k",
+    "playerName": "FORG1VEN",
+    "worldsYear": 2016,
+    "team": "H2K"
+  },
+  {
+    "id": "vander-2016-h2k",
+    "playerName": "Vander",
+    "worldsYear": 2016,
+    "team": "H2K"
+  },
+  {
+    "id": "wunder-2016-spy",
+    "playerName": "Wunder",
+    "worldsYear": 2016,
+    "team": "SPY"
+  },
+  {
+    "id": "kold-2016-spy",
+    "playerName": "Kold",
+    "worldsYear": 2016,
+    "team": "SPY"
+  },
+  {
+    "id": "sencux-2016-spy",
+    "playerName": "Sencux",
+    "worldsYear": 2016,
+    "team": "SPY"
+  },
+  {
+    "id": "kobbe-2016-spy",
+    "playerName": "Kobbe",
+    "worldsYear": 2016,
+    "team": "SPY"
+  },
+  {
+    "id": "mikyx-2016-spy",
+    "playerName": "Mikyx",
+    "worldsYear": 2016,
+    "team": "SPY"
+  },
+  {
+    "id": "hauntzer-2016-tsm",
+    "playerName": "Hauntzer",
+    "worldsYear": 2016,
+    "team": "TSM"
+  },
+  {
+    "id": "svenskeren-2016-tsm",
+    "playerName": "Svenskeren",
+    "worldsYear": 2016,
+    "team": "TSM"
+  },
+  {
+    "id": "bjergsen-2016-tsm",
+    "playerName": "Bjergsen",
+    "worldsYear": 2016,
+    "team": "TSM"
+  },
+  {
+    "id": "doublelift-2016-tsm",
+    "playerName": "Doublelift",
+    "worldsYear": 2016,
+    "team": "TSM"
+  },
+  {
+    "id": "biofrost-2016-tsm",
+    "playerName": "Biofrost",
+    "worldsYear": 2016,
+    "team": "TSM"
+  },
+  {
+    "id": "zionspartan-2016-clg",
+    "playerName": "ZionSpartan",
+    "worldsYear": 2016,
+    "team": "CLG"
+  },
+  {
+    "id": "xmithie-2016-clg",
+    "playerName": "Xmithie",
+    "worldsYear": 2016,
+    "team": "CLG"
+  },
+  {
+    "id": "huhi-2016-clg",
+    "playerName": "huhi",
+    "worldsYear": 2016,
+    "team": "CLG"
+  },
+  {
+    "id": "stixxay-2016-clg",
+    "playerName": "Stixxay",
+    "worldsYear": 2016,
+    "team": "CLG"
+  },
+  {
+    "id": "aphromoo-2016-clg",
+    "playerName": "aphromoo",
+    "worldsYear": 2016,
+    "team": "CLG"
+  },
+  {
+    "id": "impact-2016-c9",
+    "playerName": "Impact",
+    "worldsYear": 2016,
+    "team": "C9"
+  },
+  {
+    "id": "meteos-2016-c9",
+    "playerName": "Meteos",
+    "worldsYear": 2016,
+    "team": "C9"
+  },
+  {
+    "id": "jensen-2016-c9",
+    "playerName": "Jensen",
+    "worldsYear": 2016,
+    "team": "C9"
+  },
+  {
+    "id": "sneaky-2016-c9",
+    "playerName": "Sneaky",
+    "worldsYear": 2016,
+    "team": "C9"
+  },
+  {
+    "id": "smoothie-2016-c9",
+    "playerName": "Smoothie",
+    "worldsYear": 2016,
+    "team": "C9"
+  },
+  {
     "id": "huni-2017-skt",
     "playerName": "Huni",
     "worldsYear": 2017,

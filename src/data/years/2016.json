@@ -1,0 +1,6242 @@
+[
+  {
+    "id": "duke-2016-skt",
+    "playerName": "Duke",
+    "team": "SKT",
+    "teamName": "SK Telecom T1",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.7,
+      "kda": 3.511627906976744
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Jayce",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.00767060129926,
+        "source": "WORLDS_DATA",
+        "evidenceId": "duke-2016-skt-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 2.8181818181818183,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Trundle",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.75463499097531,
+        "source": "WORLDS_DATA",
+        "evidenceId": "duke-2016-skt-g2",
+        "stats": {
+          "games": 6,
+          "winRate": 0.8333333333333334,
+          "kda": 6.125,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Poppy",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.66972915778793,
+        "source": "WORLDS_DATA",
+        "evidenceId": "duke-2016-skt-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.4,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Gnar",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.1029882208683,
+        "source": "WORLDS_DATA",
+        "evidenceId": "duke-2016-skt-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 6.75,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ekko",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.003106729196375,
+        "source": "WORLDS_DATA",
+        "evidenceId": "duke-2016-skt-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.875,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bengi-2016-skt",
+    "playerName": "Bengi",
+    "team": "SKT",
+    "teamName": "SK Telecom T1",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.8,
+      "kda": 5.764705882352941
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Elise",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 59.11580332774106,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bengi-2016-skt-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Olaf",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.38103300319853,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bengi-2016-skt-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "LeeSin",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.72624574383163,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bengi-2016-skt-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 4.5,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nidalee",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.45324916323577,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bengi-2016-skt-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "RekSai",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.51226064423712,
+        "source": "SEASON_DATA",
+        "evidenceId": "bengi-2016-skt-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 6.25,
+          "confidence": 0.325,
+          "event": "LCK_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "faker-2016-skt",
+    "playerName": "Faker",
+    "team": "SKT",
+    "teamName": "SK Telecom T1",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.7,
+      "kda": 3.6470588235294117
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 63.391731753639206,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2016-skt-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 4.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Cassiopeia",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.271350617290366,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2016-skt-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.6666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Viktor",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.50579528099304,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2016-skt-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.272727272727273,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Varus",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.93459644259485,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2016-skt-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 19.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Orianna",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 66.89134181116441,
+        "source": "WORLDS_DATA",
+        "evidenceId": "faker-2016-skt-g5",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 2.6315789473684212,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bang-2016-skt",
+    "playerName": "Bang",
+    "team": "SKT",
+    "teamName": "SK Telecom T1",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.7,
+      "kda": 6.32258064516129
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ezreal",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 79.13414906455529,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2016-skt-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 6.5,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Sivir",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 74.13729143358273,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2016-skt-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 10.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Jhin",
+        "rating": 97,
+        "gameRating": 97,
+        "historicalScore": 83.00066700383267,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2016-skt-g3",
+        "stats": {
+          "games": 7,
+          "winRate": 0.8571428571428571,
+          "kda": 9.222222222222221,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Caitlyn",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.61308395696847,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2016-skt-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.1666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 77.98453866029693,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bang-2016-skt-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 5.428571428571429,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wolf-2016-skt",
+    "playerName": "Wolf",
+    "team": "SKT",
+    "teamName": "SK Telecom T1",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.7,
+      "kda": 5.175
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.71436017848869,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2016-skt-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Karma",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 76.43497428657878,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2016-skt-g2",
+        "stats": {
+          "games": 7,
+          "winRate": 0.7142857142857143,
+          "kda": 5.2727272727272725,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Zyra",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 71.52659062081774,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2016-skt-g3",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 2.85,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nami",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 76.66063199815838,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2016-skt-g4",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 8.875,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Braum",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 69.31924787666992,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wolf-2016-skt-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "smeb-2016-rox",
+    "playerName": "Smeb",
+    "team": "ROX",
+    "teamName": "ROX Tigers",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "16 jogos no Worlds",
+    "worldsStats": {
+      "games": 16,
+      "winRate": 0.625,
+      "kda": 3.604651162790698
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.77611819702926,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2016-rox-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.8333333333333334,
+          "kda": 4.071428571428571,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Kennen",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.60906301641951,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2016-rox-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 4.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Poppy",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.12835859313374,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2016-rox-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Trundle",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.58384845935334,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2016-rox-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 7.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jayce",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.62949716708808,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smeb-2016-rox-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "peanut-2016-rox",
+    "playerName": "Peanut",
+    "team": "ROX",
+    "teamName": "ROX Tigers",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "16 jogos no Worlds",
+    "worldsStats": {
+      "games": 16,
+      "winRate": 0.625,
+      "kda": 5.827586206896552
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Elise",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 66.45566506155319,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2016-rox-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 7.571428571428571,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Nocturne",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 59.7887512241419,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2016-rox-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "RekSai",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 57.65899859816176,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2016-rox-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "LeeSin",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 67.63883882851033,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2016-rox-g4",
+        "stats": {
+          "games": 7,
+          "winRate": 0.7142857142857143,
+          "kda": 4.8125,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Olaf",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 65.96151054659173,
+        "source": "WORLDS_DATA",
+        "evidenceId": "peanut-2016-rox-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 19.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kuro-2016-rox",
+    "playerName": "Kuro",
+    "team": "ROX",
+    "teamName": "ROX Tigers",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "16 jogos no Worlds",
+    "worldsStats": {
+      "games": 16,
+      "winRate": 0.625,
+      "kda": 4.342105263157895
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Malzahar",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.19728079139206,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2016-rox-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Viktor",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.621558061734035,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2016-rox-g2",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 3.5,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ryze",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.25156330746552,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2016-rox-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 3.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "AurelionSol",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.50646837825796,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2016-rox-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 29.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Karma",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.204382031473436,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kuro-2016-rox-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pray-2016-rox",
+    "playerName": "PraY",
+    "team": "ROX",
+    "teamName": "ROX Tigers",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "16 jogos no Worlds",
+    "worldsStats": {
+      "games": 16,
+      "winRate": 0.625,
+      "kda": 4.9714285714285715
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Lucian",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.38072074161765,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2016-rox-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 20.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ezreal",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.3122093435524,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2016-rox-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.375,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Caitlyn",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.72739176025274,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2016-rox-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 5.75,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jhin",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.38846805129381,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2016-rox-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.5454545454545454,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.55574060579875,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pray-2016-rox-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.857142857142857,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "gorilla-2016-rox",
+    "playerName": "GorillA",
+    "team": "ROX",
+    "teamName": "ROX Tigers",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "16 jogos no Worlds",
+    "worldsStats": {
+      "games": 16,
+      "winRate": 0.625,
+      "kda": 3.5714285714285716
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.07383196654675,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2016-rox-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.333333333333334,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Karma",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.42033403194407,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2016-rox-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.909090909090909,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.89807390948279,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2016-rox-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.625,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Zyra",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.591051962569324,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2016-rox-g4",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 1.7222222222222223,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "MissFortune",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 63.79115159432694,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2016-rox-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 5.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cuvee-2016-ssg",
+    "playerName": "CuVee",
+    "team": "SSG",
+    "teamName": "Samsung Galaxy",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7647058823529411,
+      "kda": 2.847826086956522
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.80629280851131,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2016-ssg-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 2.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Kennen",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.590016174809506,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2016-ssg-g2",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 2.411764705882353,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ekko",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.86266863363205,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2016-ssg-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 5.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Poppy",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.65917603346278,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2016-ssg-g4",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 3.888888888888889,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jayce",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.13750443005065,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cuvee-2016-ssg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.6,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ambition-2016-ssg",
+    "playerName": "Ambition",
+    "team": "SSG",
+    "teamName": "Samsung Galaxy",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7647058823529411,
+      "kda": 3.65
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "RekSai",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 61.32236725938464,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2016-ssg-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 6.666666666666667,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Elise",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.338006720457855,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2016-ssg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Skarner",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.97448865670386,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2016-ssg-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Olaf",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 61.74183176243946,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2016-ssg-g4",
+        "stats": {
+          "games": 6,
+          "winRate": 0.8333333333333334,
+          "kda": 4.363636363636363,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "LeeSin",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.8065639193031,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ambition-2016-ssg-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 3.3333333333333335,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "crown-2016-ssg",
+    "playerName": "Crown",
+    "team": "SSG",
+    "teamName": "Samsung Galaxy",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7647058823529411,
+      "kda": 4.138888888888889
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Viktor",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 66.88384481735267,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2016-ssg-g1",
+        "stats": {
+          "games": 7,
+          "winRate": 0.8571428571428571,
+          "kda": 5.5,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Varus",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.84779069142415,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2016-ssg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ryze",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.84585136436187,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2016-ssg-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 20.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Cassiopeia",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.62630160354183,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2016-ssg-g4",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 3.909090909090909,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Orianna",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.46468377515532,
+        "source": "WORLDS_DATA",
+        "evidenceId": "crown-2016-ssg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ruler-2016-ssg",
+    "playerName": "Ruler",
+    "team": "SSG",
+    "teamName": "Samsung Galaxy",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.7647058823529411,
+      "kda": 4.9393939393939394
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ezreal",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.765250662562295,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2016-ssg-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 2.6923076923076925,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Jhin",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 71.07189237709976,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2016-ssg-g2",
+        "stats": {
+          "games": 7,
+          "winRate": 0.8571428571428571,
+          "kda": 8.3,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Caitlyn",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.31193791691332,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2016-ssg-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 5.8,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Sivir",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.07868929945225,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2016-ssg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.30318592808949,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ruler-2016-ssg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "corejj-2016-ssg",
+    "playerName": "CoreJJ",
+    "team": "SSG",
+    "teamName": "Samsung Galaxy",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "15 jogos no Worlds",
+    "worldsStats": {
+      "games": 15,
+      "winRate": 0.8,
+      "kda": 4.580645161290323
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Karma",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 74.84364510291182,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2016-ssg-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 8.5,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "TahmKench",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.86158835313178,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2016-ssg-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 4.4,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Zyra",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.78268975161114,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2016-ssg-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 3.9,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "MissFortune",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.43861094443271,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corejj-2016-ssg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 1.6,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Bard",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.34385283053035,
+        "source": "SEASON_DATA",
+        "evidenceId": "corejj-2016-ssg-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.16666666666666666,
+          "confidence": 0.18571428571428572,
+          "event": "LCK_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LCK%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mouse-2016-edg",
+    "playerName": "Mouse",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "7 jogos no Worlds",
+    "worldsStats": {
+      "games": 7,
+      "winRate": 0.5714285714285714,
+      "kda": 2.6842105263157894
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Irelia",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 36.41676894097353,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mouse-2016-edg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Poppy",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.255642924974,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mouse-2016-edg-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 3.6666666666666665,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rumble",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 36.54207653608361,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mouse-2016-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ekko",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 37.194676244345004,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mouse-2016-edg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Maokai",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 37.21213944280904,
+        "source": "SEASON_DATA",
+        "evidenceId": "mouse-2016-edg-g5",
+        "stats": {
+          "games": 11,
+          "winRate": 0.8181818181818182,
+          "kda": 5.863636363636363,
+          "confidence": 0.29046875,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "clearlove-2016-edg",
+    "playerName": "Clearlove",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 4.428571428571429
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Graves",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.57287332243091,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2016-edg-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.6666666666666665,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Hecarim",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.14714822010908,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2016-edg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nidalee",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.03538439556752,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2016-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Olaf",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.043755510898336,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2016-edg-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 6.2,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "LeeSin",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.508772814464216,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2016-edg-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "scout-2016-edg",
+    "playerName": "Scout",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "7 jogos no Worlds",
+    "worldsStats": {
+      "games": 7,
+      "winRate": 0.42857142857142855,
+      "kda": 3.2222222222222223
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.608313132590055,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2016-edg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 26.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Malzahar",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.20608710574268,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2016-edg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.3333333333333335,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ryze",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.89093839459081,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2016-edg-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.8333333333333334,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "AurelionSol",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.383500168306824,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2016-edg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.8,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jayce",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.0320873605537,
+        "source": "WORLDS_DATA",
+        "evidenceId": "scout-2016-edg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deft-2016-edg",
+    "playerName": "Deft",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 4.2272727272727275
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ezreal",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 68.38589573296542,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2016-edg-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.0,
+          "kda": 2.6666666666666665,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lucian",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 66.04611700569112,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2016-edg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Jhin",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.50321932156876,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2016-edg-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 4.571428571428571,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Sivir",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 66.25383866502708,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2016-edg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Caitlyn",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.79151529384488,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2016-edg-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "meiko-2016-edg",
+    "playerName": "Meiko",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 3.75
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 95,
+        "gameRating": 95,
+        "historicalScore": 76.22948378250878,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2016-edg-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.3333333333333333,
+          "kda": 3.1176470588235294,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Alistar",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.06172655978826,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2016-edg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "TahmKench",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 67.22687008014603,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2016-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 20.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Karma",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 68.94977102123481,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meiko-2016-edg-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Braum",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 66.86181997662808,
+        "source": "SEASON_DATA",
+        "evidenceId": "meiko-2016-edg-g5",
+        "stats": {
+          "games": 13,
+          "winRate": 0.8461538461538461,
+          "kda": 5.666666666666667,
+          "confidence": 0.46944444444444444,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "looper-2016-rng",
+    "playerName": "Looper",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.4,
+      "kda": 2.413793103448276
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 47.873368598565364,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2016-rng-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.111111111111111,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Kennen",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.98365796735612,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2016-rng-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Jayce",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.68653644496895,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2016-rng-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Poppy",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.863230265174195,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2016-rng-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.1,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Trundle",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.58873908656345,
+        "source": "SEASON_DATA",
+        "evidenceId": "looper-2016-rng-g5",
+        "stats": {
+          "games": 9,
+          "winRate": 0.8888888888888888,
+          "kda": 4.647058823529412,
+          "confidence": 0.27160714285714294,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mlxg-2016-rng",
+    "playerName": "Mlxg",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.4,
+      "kda": 2.413793103448276
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Hecarim",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.580548320962166,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mlxg-2016-rng-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 12.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "LeeSin",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.282782687854315,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mlxg-2016-rng-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.272727272727273,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nidalee",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.327569009701534,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mlxg-2016-rng-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Olaf",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.087498283446536,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mlxg-2016-rng-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.7142857142857143,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "RekSai",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.91377333885216,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mlxg-2016-rng-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.6,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "xiaohu-2016-rng",
+    "playerName": "Xiaohu",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.4,
+      "kda": 2.5833333333333335
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Cassiopeia",
+        "rating": 74,
+        "gameRating": 74,
+        "historicalScore": 31.97151105842128,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2016-rng-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Viktor",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 34.423184559463536,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2016-rng-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ryze",
+        "rating": 74,
+        "gameRating": 74,
+        "historicalScore": 31.087508919634228,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2016-rng-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "AurelionSol",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.49428266737138,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2016-rng-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Vladimir",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 36.28684936391414,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaohu-2016-rng-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "uzi-2016-rng",
+    "playerName": "Uzi",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.4,
+      "kda": 4.277777777777778
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Sivir",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.72637850592041,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2016-rng-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 16.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ezreal",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.38714284275119,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2016-rng-g2",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 4.444444444444445,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Caitlyn",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.620319637452766,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2016-rng-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jhin",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.784056971825166,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2016-rng-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 59.65674896449168,
+        "source": "SEASON_DATA",
+        "evidenceId": "uzi-2016-rng-g5",
+        "stats": {
+          "games": 8,
+          "winRate": 0.75,
+          "kda": 8.75,
+          "confidence": 0.30000000000000004,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mata-2016-rng",
+    "playerName": "Mata",
+    "team": "RNG",
+    "teamName": "Royal Never Give Up",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.4,
+      "kda": 2.8214285714285716
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.5277684636266,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2016-rng-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Nami",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.18139933094892,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2016-rng-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 8.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Karma",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.550658544347264,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2016-rng-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.0,
+          "kda": 0.5384615384615384,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.29313413882524,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2016-rng-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Zyra",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.006571563540476,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2016-rng-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.1666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "amazingj-2016-imay",
+    "playerName": "AmazingJ",
+    "team": "IMAY",
+    "teamName": "I May",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 3.0625
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ekko",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.115474303566714,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazingj-2016-imay-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 6.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Poppy",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.450471555369106,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazingj-2016-imay-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nautilus",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.13824828118253,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazingj-2016-imay-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Maokai",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.770476603804894,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazingj-2016-imay-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Shen",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.008889255946514,
+        "source": "SEASON_DATA",
+        "evidenceId": "amazingj-2016-imay-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.5714285714285714,
+          "kda": 4.875,
+          "confidence": 0.24645833333333336,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "avoidless-2016-imay",
+    "playerName": "Avoidless",
+    "team": "IMAY",
+    "teamName": "I May",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.7222222222222223
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Zac",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.52301277860228,
+        "source": "WORLDS_DATA",
+        "evidenceId": "avoidless-2016-imay-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.6666666666666665,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Elise",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.31419210010539,
+        "source": "WORLDS_DATA",
+        "evidenceId": "avoidless-2016-imay-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "RekSai",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.165648353064924,
+        "source": "WORLDS_DATA",
+        "evidenceId": "avoidless-2016-imay-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Alistar",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.898495068850494,
+        "source": "WORLDS_DATA",
+        "evidenceId": "avoidless-2016-imay-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Khazix",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.55478703747593,
+        "source": "WORLDS_DATA",
+        "evidenceId": "avoidless-2016-imay-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "athena-2016-imay",
+    "playerName": "Athena",
+    "team": "IMAY",
+    "teamName": "I May",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "4 jogos no Worlds",
+    "worldsStats": {
+      "games": 4,
+      "winRate": 0.25,
+      "kda": 2.5
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Varus",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.58159846544574,
+        "source": "WORLDS_DATA",
+        "evidenceId": "athena-2016-imay-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Vladimir",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.32238738024466,
+        "source": "WORLDS_DATA",
+        "evidenceId": "athena-2016-imay-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Cassiopeia",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.85951254585183,
+        "source": "WORLDS_DATA",
+        "evidenceId": "athena-2016-imay-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Viktor",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 45.967010782996525,
+        "source": "WORLDS_DATA",
+        "evidenceId": "athena-2016-imay-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.1666666666666665,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Malzahar",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.115172995957145,
+        "source": "SEASON_DATA",
+        "evidenceId": "athena-2016-imay-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 6.75,
+          "confidence": 0.18777777777777777,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jinjiao-2016-imay",
+    "playerName": "Jinjiao",
+    "team": "IMAY",
+    "teamName": "I May",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 5.333333333333333
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Jhin",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.7677948479719,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jinjiao-2016-imay-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 5.25,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Jinx",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.34319478072902,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jinjiao-2016-imay-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Sivir",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.29897689940633,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jinjiao-2016-imay-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ashe",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.07380179758485,
+        "source": "SEASON_DATA",
+        "evidenceId": "jinjiao-2016-imay-g4",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 2.533333333333333,
+          "confidence": 0.24375000000000002,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lucian",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.01418623997741,
+        "source": "SEASON_DATA",
+        "evidenceId": "jinjiao-2016-imay-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 2.8181818181818183,
+          "confidence": 0.21666666666666667,
+          "event": "LPL_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/LPL%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "road-2016-imay",
+    "playerName": "Road",
+    "team": "IMAY",
+    "teamName": "I May",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "5 jogos no Worlds",
+    "worldsStats": {
+      "games": 5,
+      "winRate": 0.2,
+      "kda": 2.0588235294117645
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.58095499444511,
+        "source": "WORLDS_DATA",
+        "evidenceId": "road-2016-imay-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Braum",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.44789292253313,
+        "source": "WORLDS_DATA",
+        "evidenceId": "road-2016-imay-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "TahmKench",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 46.20307029284709,
+        "source": "WORLDS_DATA",
+        "evidenceId": "road-2016-imay-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Bard",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.97734765341586,
+        "source": "WORLDS_DATA",
+        "evidenceId": "road-2016-imay-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Kennen",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.40530699584076,
+        "source": "WORLDS_DATA",
+        "evidenceId": "road-2016-imay-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "expect-2016-g2",
+    "playerName": "Expect",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 1.75
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Jayce",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.83166092056821,
+        "source": "WORLDS_DATA",
+        "evidenceId": "expect-2016-g2-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Gnar",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.83682337835738,
+        "source": "WORLDS_DATA",
+        "evidenceId": "expect-2016-g2-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Trundle",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.57289427155497,
+        "source": "WORLDS_DATA",
+        "evidenceId": "expect-2016-g2-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Poppy",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.989454154814055,
+        "source": "WORLDS_DATA",
+        "evidenceId": "expect-2016-g2-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Rumble",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.63239874080651,
+        "source": "WORLDS_DATA",
+        "evidenceId": "expect-2016-g2-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "trick-2016-g2",
+    "playerName": "Trick",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 2.0555555555555554
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Elise",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.29993941427085,
+        "source": "WORLDS_DATA",
+        "evidenceId": "trick-2016-g2-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Olaf",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.3346241530256,
+        "source": "WORLDS_DATA",
+        "evidenceId": "trick-2016-g2-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.875,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "LeeSin",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.583735500347544,
+        "source": "WORLDS_DATA",
+        "evidenceId": "trick-2016-g2-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nidalee",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.41602571565052,
+        "source": "WORLDS_DATA",
+        "evidenceId": "trick-2016-g2-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Graves",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.01765696452786,
+        "source": "WORLDS_DATA",
+        "evidenceId": "trick-2016-g2-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "perkz-2016-g2",
+    "playerName": "Perkz",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 1.45
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.51791391135442,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2016-g2-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.4444444444444444,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Karma",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.62188294101024,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2016-g2-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Orianna",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.770301522008054,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2016-g2-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Cassiopeia",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.98783646130721,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2016-g2-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ryze",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.79247245961386,
+        "source": "WORLDS_DATA",
+        "evidenceId": "perkz-2016-g2-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "zven-2016-g2",
+    "playerName": "Zven",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 2.0833333333333335
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Jhin",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.66096377275265,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zven-2016-g2-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ezreal",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 50.42040174960598,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zven-2016-g2-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Sivir",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 48.44889737537994,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zven-2016-g2-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lucian",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.343657602752984,
+        "source": "SEASON_DATA",
+        "evidenceId": "zven-2016-g2-g4",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 2.75,
+          "confidence": 0.35454545454545455,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Caitlyn",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.997865611399256,
+        "source": "SEASON_DATA",
+        "evidenceId": "zven-2016-g2-g5",
+        "stats": {
+          "games": 6,
+          "winRate": 0.8333333333333334,
+          "kda": 4.5,
+          "confidence": 0.35454545454545455,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mithy-2016-g2",
+    "playerName": "Mithy",
+    "team": "G2",
+    "teamName": "G2 Esports",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 2.6153846153846154
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Braum",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.810680529534935,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mithy-2016-g2-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.7142857142857143,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Nami",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.910227152972,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mithy-2016-g2-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Karma",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.67597896260001,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mithy-2016-g2-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Trundle",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.800434508555384,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mithy-2016-g2-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Alistar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.00163382578704,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mithy-2016-g2-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "odoamne-2016-h2k",
+    "playerName": "Odoamne",
+    "team": "H2K",
+    "teamName": "H2k-Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 2.942857142857143
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Gnar",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.29215646631659,
+        "source": "WORLDS_DATA",
+        "evidenceId": "odoamne-2016-h2k-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Kennen",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.35405360060926,
+        "source": "WORLDS_DATA",
+        "evidenceId": "odoamne-2016-h2k-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.75,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rumble",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 68.08732882192889,
+        "source": "WORLDS_DATA",
+        "evidenceId": "odoamne-2016-h2k-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 1.75,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jayce",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 74.32354150115901,
+        "source": "WORLDS_DATA",
+        "evidenceId": "odoamne-2016-h2k-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 4.8,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Trundle",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.83131523891733,
+        "source": "WORLDS_DATA",
+        "evidenceId": "odoamne-2016-h2k-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jankos-2016-h2k",
+    "playerName": "Jankos",
+    "team": "H2K",
+    "teamName": "H2k-Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 5.04
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Elise",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.51986665996282,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2016-h2k-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.375,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Skarner",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.01684556781543,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2016-h2k-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "LeeSin",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 68.39623412394634,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2016-h2k-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 4.545454545454546,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "RekSai",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.101683033000164,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2016-h2k-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Olaf",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.72267406039573,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jankos-2016-h2k-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 9.25,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ryu-2016-h2k",
+    "playerName": "Ryu",
+    "team": "H2K",
+    "teamName": "H2k-Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 4.037037037037037
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Cassiopeia",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.90858966283835,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2016-h2k-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 4.857142857142857,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Vladimir",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.85565626351009,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2016-h2k-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 9.666666666666666,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ryze",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.53582823031638,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2016-h2k-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 2.8181818181818183,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Syndra",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.323885676988574,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ryu-2016-h2k-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 2.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Viktor",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.538244849559995,
+        "source": "SEASON_DATA",
+        "evidenceId": "ryu-2016-h2k-g5",
+        "stats": {
+          "games": 14,
+          "winRate": 0.5714285714285714,
+          "kda": 4.416666666666667,
+          "confidence": 0.4789473684210526,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "forg1ven-2016-h2k",
+    "playerName": "FORG1VEN",
+    "team": "H2K",
+    "teamName": "H2k-Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 7.923076923076923
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Caitlyn",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.85100154322481,
+        "source": "WORLDS_DATA",
+        "evidenceId": "forg1ven-2016-h2k-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 11.333333333333334,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ezreal",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.601297827558035,
+        "source": "WORLDS_DATA",
+        "evidenceId": "forg1ven-2016-h2k-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Sivir",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 65.16230130334333,
+        "source": "WORLDS_DATA",
+        "evidenceId": "forg1ven-2016-h2k-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 7.285714285714286,
+          "confidence": 0.5,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lucian",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.54504535450055,
+        "source": "WORLDS_DATA",
+        "evidenceId": "forg1ven-2016-h2k-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 16.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Tristana",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 59.00700884213409,
+        "source": "SEASON_DATA",
+        "evidenceId": "forg1ven-2016-h2k-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 1.0,
+          "kda": 27.5,
+          "confidence": 0.325,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vander-2016-h2k",
+    "playerName": "Vander",
+    "team": "H2K",
+    "teamName": "H2k-Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 5.35
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Braum",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 52.244210246344245,
+        "source": "WORLDS_DATA",
+        "evidenceId": "vander-2016-h2k-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Karma",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.70258878748486,
+        "source": "WORLDS_DATA",
+        "evidenceId": "vander-2016-h2k-g2",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 4.444444444444445,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.98242327393738,
+        "source": "WORLDS_DATA",
+        "evidenceId": "vander-2016-h2k-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 23.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Zyra",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.749949967949746,
+        "source": "WORLDS_DATA",
+        "evidenceId": "vander-2016-h2k-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 5.714285714285714,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Taric",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.335856217091795,
+        "source": "SEASON_DATA",
+        "evidenceId": "vander-2016-h2k-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.8571428571428571,
+          "kda": 11.0,
+          "confidence": 0.3791666666666667,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wunder-2016-spy",
+    "playerName": "Wunder",
+    "team": "SPY",
+    "teamName": "Splyce",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 1.0
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kled",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.02708213138314,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2016-spy-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.1666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Gnar",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.75486036976706,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2016-spy-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Kennen",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 45.679643065265424,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2016-spy-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.8571428571428571,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jayce",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.31386806740392,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2016-spy-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.3333333333333335,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Irelia",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 45.06729728202339,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wunder-2016-spy-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kold-2016-spy",
+    "playerName": "Kold",
+    "team": "SPY",
+    "teamName": "Splyce",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 1.7272727272727273
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Graves",
+        "rating": 74,
+        "gameRating": 74,
+        "historicalScore": 33.2513209138607,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kold-2016-spy-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Olaf",
+        "rating": 74,
+        "gameRating": 74,
+        "historicalScore": 33.1637213533956,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kold-2016-spy-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.2,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "RekSai",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 36.91353780681278,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kold-2016-spy-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Elise",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.80911143025808,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kold-2016-spy-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 1.7272727272727273,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Gragas",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 39.88233652710426,
+        "source": "SEASON_DATA",
+        "evidenceId": "kold-2016-spy-g5",
+        "stats": {
+          "games": 14,
+          "winRate": 0.7142857142857143,
+          "kda": 5.84,
+          "confidence": 0.4789473684210526,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sencux-2016-spy",
+    "playerName": "Sencux",
+    "team": "SPY",
+    "teamName": "Splyce",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 2.5
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Cassiopeia",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.37368395426993,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sencux-2016-spy-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Malzahar",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.2963149035636,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sencux-2016-spy-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Vladimir",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 37.998540097000216,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sencux-2016-spy-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "AurelionSol",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.540514832213645,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sencux-2016-spy-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Azir",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 39.896580037299486,
+        "source": "SEASON_DATA",
+        "evidenceId": "sencux-2016-spy-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.8571428571428571,
+          "kda": 6.1,
+          "confidence": 0.3791666666666667,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kobbe-2016-spy",
+    "playerName": "Kobbe",
+    "team": "SPY",
+    "teamName": "Splyce",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 3.25
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Jinx",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 35.67805811567818,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kobbe-2016-spy-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Sivir",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 35.073676470118556,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kobbe-2016-spy-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ezreal",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.838547480585206,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kobbe-2016-spy-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jhin",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.628436393264536,
+        "source": "WORLDS_DATA",
+        "evidenceId": "kobbe-2016-spy-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 13.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Caitlyn",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 34.57675244222276,
+        "source": "SEASON_DATA",
+        "evidenceId": "kobbe-2016-spy-g5",
+        "stats": {
+          "games": 13,
+          "winRate": 0.6923076923076923,
+          "kda": 4.1923076923076925,
+          "confidence": 0.46944444444444444,
+          "event": "EU LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mikyx-2016-spy",
+    "playerName": "Mikyx",
+    "team": "SPY",
+    "teamName": "Splyce",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.16666666666666666,
+      "kda": 1.2666666666666666
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "TahmKench",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 35.312642202821564,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mikyx-2016-spy-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Karma",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 37.364543232076535,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mikyx-2016-spy-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.3333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nami",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.10912407789855,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mikyx-2016-spy-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.6,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.31863282542581,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mikyx-2016-spy-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 13.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Alistar",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.16088418743736,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mikyx-2016-spy-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5714285714285714,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hauntzer-2016-tsm",
+    "playerName": "Hauntzer",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 2.888888888888889
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kennen",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 71.40982217589126,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hauntzer-2016-tsm-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.875,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Rumble",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.0855992396646,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hauntzer-2016-tsm-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Gnar",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.61576415266914,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hauntzer-2016-tsm-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jayce",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.5402258436159,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hauntzer-2016-tsm-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Irelia",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.45656219358328,
+        "source": "SEASON_DATA",
+        "evidenceId": "hauntzer-2016-tsm-g5",
+        "stats": {
+          "games": 12,
+          "winRate": 0.8333333333333334,
+          "kda": 2.774193548387097,
+          "confidence": 0.45882352941176474,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "svenskeren-2016-tsm",
+    "playerName": "Svenskeren",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.05
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "LeeSin",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.38699942120891,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2016-tsm-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Skarner",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.476154851015195,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2016-tsm-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Olaf",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.17397601001231,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2016-tsm-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "RekSai",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 62.57842711565559,
+        "source": "WORLDS_DATA",
+        "evidenceId": "svenskeren-2016-tsm-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.888888888888889,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Gragas",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.610525969945016,
+        "source": "SEASON_DATA",
+        "evidenceId": "svenskeren-2016-tsm-g5",
+        "stats": {
+          "games": 13,
+          "winRate": 0.7692307692307693,
+          "kda": 3.2285714285714286,
+          "confidence": 0.46944444444444444,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bjergsen-2016-tsm",
+    "playerName": "Bjergsen",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 6.083333333333333
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Orianna",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 67.51762837148323,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2016-tsm-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Syndra",
+        "rating": 96,
+        "gameRating": 96,
+        "historicalScore": 77.39965895000356,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2016-tsm-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 35.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Cassiopeia",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 71.44489310408538,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2016-tsm-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Zilean",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.20921864599056,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2016-tsm-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ryze",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 70.85088362884142,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2016-tsm-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "doublelift-2016-tsm",
+    "playerName": "Doublelift",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 2.9444444444444446
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Jhin",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.908231715813656,
+        "source": "WORLDS_DATA",
+        "evidenceId": "doublelift-2016-tsm-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 3.4,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lucian",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.50583017798468,
+        "source": "WORLDS_DATA",
+        "evidenceId": "doublelift-2016-tsm-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.375,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Sivir",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 55.20381893978401,
+        "source": "SEASON_DATA",
+        "evidenceId": "doublelift-2016-tsm-g3",
+        "stats": {
+          "games": 14,
+          "winRate": 0.9285714285714286,
+          "kda": 10.066666666666666,
+          "confidence": 0.4789473684210526,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ashe",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 44.23250433295772,
+        "source": "SEASON_DATA",
+        "evidenceId": "doublelift-2016-tsm-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 2.9166666666666665,
+          "confidence": 0.28888888888888886,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Caitlyn",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.801371615542884,
+        "source": "SEASON_DATA",
+        "evidenceId": "doublelift-2016-tsm-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 6.285714285714286,
+          "confidence": 0.28888888888888886,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "biofrost-2016-tsm",
+    "playerName": "Biofrost",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 4.2
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.23560145372285,
+        "source": "WORLDS_DATA",
+        "evidenceId": "biofrost-2016-tsm-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Braum",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.23694734970171,
+        "source": "WORLDS_DATA",
+        "evidenceId": "biofrost-2016-tsm-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 6.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Karma",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.40468413943583,
+        "source": "WORLDS_DATA",
+        "evidenceId": "biofrost-2016-tsm-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Bard",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.957421201871895,
+        "source": "SEASON_DATA",
+        "evidenceId": "biofrost-2016-tsm-g4",
+        "stats": {
+          "games": 9,
+          "winRate": 1.0,
+          "kda": 9.818181818181818,
+          "confidence": 0.4178571428571429,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Trundle",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 50.14724718689144,
+        "source": "SEASON_DATA",
+        "evidenceId": "biofrost-2016-tsm-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.18571428571428572,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "zionspartan-2016-clg",
+    "playerName": "ZionSpartan",
+    "team": "CLG",
+    "teamName": "Counter Logic Gaming",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.9166666666666665
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Poppy",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.81716989761552,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zionspartan-2016-clg-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.6666666666666665,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Gnar",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.724959860925566,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zionspartan-2016-clg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Jayce",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.56129476337021,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zionspartan-2016-clg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Shen",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.32659793866772,
+        "source": "SEASON_DATA",
+        "evidenceId": "zionspartan-2016-clg-g4",
+        "stats": {
+          "games": 8,
+          "winRate": 0.5,
+          "kda": 3.8260869565217392,
+          "confidence": 0.4,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Trundle",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.307968161047086,
+        "source": "SEASON_DATA",
+        "evidenceId": "zionspartan-2016-clg-g5",
+        "stats": {
+          "games": 8,
+          "winRate": 0.5,
+          "kda": 2.5238095238095237,
+          "confidence": 0.4,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "xmithie-2016-clg",
+    "playerName": "Xmithie",
+    "team": "CLG",
+    "teamName": "Counter Logic Gaming",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 4.5
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Olaf",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 61.2041336453603,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2016-clg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Elise",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.024379037546666,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2016-clg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.6,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nidalee",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.32156881463045,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2016-clg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Graves",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.34588638820044,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xmithie-2016-clg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "RekSai",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.417909522617485,
+        "source": "SEASON_DATA",
+        "evidenceId": "xmithie-2016-clg-g5",
+        "stats": {
+          "games": 19,
+          "winRate": 0.5263157894736842,
+          "kda": 4.3061224489795915,
+          "confidence": 0.5145833333333333,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "huhi-2016-clg",
+    "playerName": "huhi",
+    "team": "CLG",
+    "teamName": "Counter Logic Gaming",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.8
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Vladimir",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.79008336484186,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huhi-2016-clg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 21.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Syndra",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.680508453595095,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huhi-2016-clg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "AurelionSol",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 62.7750114280049,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huhi-2016-clg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 17.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Karma",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.873923676519695,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huhi-2016-clg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Malzahar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.332684560726406,
+        "source": "WORLDS_DATA",
+        "evidenceId": "huhi-2016-clg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "stixxay-2016-clg",
+    "playerName": "Stixxay",
+    "team": "CLG",
+    "teamName": "Counter Logic Gaming",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 4.846153846153846
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Caitlyn",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 71.2311559583111,
+        "source": "WORLDS_DATA",
+        "evidenceId": "stixxay-2016-clg-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 6.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ezreal",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.56535082759488,
+        "source": "WORLDS_DATA",
+        "evidenceId": "stixxay-2016-clg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lucian",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 59.024922674699,
+        "source": "WORLDS_DATA",
+        "evidenceId": "stixxay-2016-clg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jhin",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.11041454290569,
+        "source": "WORLDS_DATA",
+        "evidenceId": "stixxay-2016-clg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 14.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.24751838551538,
+        "source": "SEASON_DATA",
+        "evidenceId": "stixxay-2016-clg-g5",
+        "stats": {
+          "games": 10,
+          "winRate": 0.7,
+          "kda": 3.161290322580645,
+          "confidence": 0.43333333333333335,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "aphromoo-2016-clg",
+    "playerName": "aphromoo",
+    "team": "CLG",
+    "teamName": "Counter Logic Gaming",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.8823529411764706
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.28166908432529,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2016-clg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Bard",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.67243202402655,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2016-clg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.9,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.49835161805724,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2016-clg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 18.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.56265581874388,
+        "source": "WORLDS_DATA",
+        "evidenceId": "aphromoo-2016-clg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Karma",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.36167528487945,
+        "source": "SEASON_DATA",
+        "evidenceId": "aphromoo-2016-clg-g5",
+        "stats": {
+          "games": 11,
+          "winRate": 0.45454545454545453,
+          "kda": 3.9,
+          "confidence": 0.446875,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "impact-2016-c9",
+    "playerName": "Impact",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "TOP",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.3333333333333333,
+      "kda": 1.7878787878787878
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.30609941063368,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2016-c9-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 1.8333333333333333,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Kennen",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.540981072260315,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2016-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.8333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Gnar",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.64919213446056,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2016-c9-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jayce",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.08021620001587,
+        "source": "WORLDS_DATA",
+        "evidenceId": "impact-2016-c9-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.1666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Trundle",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.908424775854385,
+        "source": "SEASON_DATA",
+        "evidenceId": "impact-2016-c9-g5",
+        "stats": {
+          "games": 12,
+          "winRate": 0.5833333333333334,
+          "kda": 2.6551724137931036,
+          "confidence": 0.45882352941176474,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "meteos-2016-c9",
+    "playerName": "Meteos",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "JUNGLE",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.3333333333333333,
+      "kda": 2.4545454545454546
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "LeeSin",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.0904742969877,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2016-c9-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.8333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Olaf",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.74790736060969,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2016-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nidalee",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.52886896569105,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2016-c9-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "RekSai",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.9416940095224,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2016-c9-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.857142857142857,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Zac",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.94870285252501,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2016-c9-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jensen-2016-c9",
+    "playerName": "Jensen",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "MID",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.3333333333333333,
+      "kda": 3.3157894736842106
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Cassiopeia",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.94960327918619,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2016-c9-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.25,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Orianna",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.692885689304845,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2016-c9-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 4.75,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Syndra",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.03510301947058,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2016-c9-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ryze",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.96899836257822,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2016-c9-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Viktor",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.200966577317345,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jensen-2016-c9-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sneaky-2016-c9",
+    "playerName": "Sneaky",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "ADC",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.3333333333333333,
+      "kda": 1.878787878787879
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Sivir",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 50.42760546097179,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2016-c9-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Caitlyn",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.491545824586325,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2016-c9-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 0.875,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ezreal",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.47157320239553,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2016-c9-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 1.7777777777777777,
+          "confidence": 0.375,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jhin",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.53990302429089,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2016-c9-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.4,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ashe",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 57.142848019156325,
+        "source": "SEASON_DATA",
+        "evidenceId": "sneaky-2016-c9-g5",
+        "stats": {
+          "games": 21,
+          "winRate": 0.7142857142857143,
+          "kda": 6.628571428571429,
+          "confidence": 0.525,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "smoothie-2016-c9",
+    "playerName": "Smoothie",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2016,
+    "role": "SUPPORT",
+    "profile": "9 jogos no Worlds",
+    "worldsStats": {
+      "games": 9,
+      "winRate": 0.3333333333333333,
+      "kda": 1.8484848484848484
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Braum",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 38.96546045795293,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smoothie-2016-c9-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Karma",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.37331789535339,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smoothie-2016-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.758087647701736,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smoothie-2016-c9-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 1.95,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nami",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 42.02258897854604,
+        "source": "WORLDS_DATA",
+        "evidenceId": "smoothie-2016-c9-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202016/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Bard",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.28437276262478,
+        "source": "SEASON_DATA",
+        "evidenceId": "smoothie-2016-c9-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.8571428571428571,
+          "kda": 6.25,
+          "confidence": 0.3791666666666667,
+          "event": "NA LCS_SUMMER_2016",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202016/"
+        }
+      }
+    ]
+  }
+]

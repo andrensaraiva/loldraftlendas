@@ -18,7 +18,7 @@ Este inventário é derivado apenas dos artefatos locais. Um ano não é promovi
 | 2013 | INCOMPLETE | — | — | — | — | — | — | PENDING |
 | 2014 | INCOMPLETE | — | — | — | — | — | — | PENDING |
 | 2015 | VALIDATED | 60 | 300 | 4 | 20 | 69/69 | 0.2663 | PENDING |
-| 2016 | INCOMPLETE | — | — | — | — | — | — | PENDING |
+| 2016 | VALIDATED | 60 | 300 | 4 | 20 | 52/52 | 0.2890 | PENDING |
 | 2017 | VALIDATED | 60 | 300 | 4 | 20 | 64/64 | 0.3016 | PENDING |
 | 2018 | VALIDATED | 60 | 300 | 4 | 20 | 72/72 | 0.2800 | PENDING |
 | 2019 | VALIDATED | 60 | 300 | 4 | 20 | 75/75 | 0.2767 | PENDING |
@@ -43,6 +43,20 @@ Este inventário é derivado apenas dos artefatos locais. Um ano não é promovi
 - Confiança dos slots: mínima 0.0000, mediana 0.2857, média 0.2663, máxima 0.5833; slots com confiança zero: 5.
 - Assets completos: 69/69 pares campeão/ano.
 - Métricas ausentes no snapshot normalizado: nenhuma. Ausência registrada reduz a cobertura do cálculo; não vira zero fictício.
+- Próximo gate: Obter e registrar uma revisão externa independente antes de declarar readiness de produção.
+
+### 2016 — VALIDATED
+
+| Região | TOP | JUNGLE | MID | ADC | SUPPORT | Total |
+|---|---:|---:|---:|---:|---:|---:|
+| LCK | 3 | 3 | 3 | 3 | 3 | 15 |
+| LCS | 3 | 3 | 3 | 3 | 3 | 15 |
+| LEC | 3 | 3 | 3 | 3 | 3 | 15 |
+| LPL | 3 | 3 | 3 | 3 | 3 | 15 |
+
+- Confiança dos slots: mínima 0.1667, mediana 0.2857, média 0.2890, máxima 0.5833; slots com confiança zero: 0.
+- Assets completos: 52/52 pares campeão/ano.
+- Métricas ausentes no snapshot normalizado: dpm: 50, damageshare: 60, golddiffat15: 3860, csdiffat15: 3860, xpdiffat15: 3860, wpm: 50, wcpm: 50. Ausência registrada reduz a cobertura do cálculo; não vira zero fictício.
 - Próximo gate: Obter e registrar uma revisão externa independente antes de declarar readiness de produção.
 
 ### 2017 — VALIDATED
