@@ -1,10 +1,12 @@
 import { describe, expect, it } from 'vitest';
 import { players } from '../data/players';
 import {
+  availableDraftContexts,
   createDraft,
   createDraftFromPlan,
   eligiblePools,
   exchangeRound,
+  isDraftAvailabilityEligible,
   offerKey,
   planDraft,
   rollRound,
@@ -60,6 +62,29 @@ describe('multi-era draft and exchanges', () => {
       plan.map(({ optionRoll: _optionRoll, ...round }) => round),
     );
     expect(hydrated.every((round) => round.options.length === 3)).toBe(true);
+  });
+  it('accepts only filters backed by a complete manifest context', () => {
+    const draftManifest = manifest as DraftRegionManifest;
+    const eligible: DraftAvailability = {
+      startingExchanges: 3,
+      activeYears: [2025],
+      activeRegionGroups: ['OTHER_REGIONS'],
+    };
+    expect(isDraftAvailabilityEligible(draftManifest, eligible)).toBe(true);
+    expect(availableDraftContexts(draftManifest, eligible)).toHaveLength(1);
+    expect(eligiblePools(players, draftManifest, eligible)).toHaveLength(5);
+    expect(
+      isDraftAvailabilityEligible(draftManifest, {
+        ...eligible,
+        activeYears: [2015],
+      }),
+    ).toBe(false);
+    expect(
+      isDraftAvailabilityEligible(draftManifest, {
+        ...eligible,
+        activeYears: [],
+      }),
+    ).toBe(false);
   });
   it('keeps the same seeded result when planning and hydration are split', () => {
     const draftManifest = manifest as DraftRegionManifest;

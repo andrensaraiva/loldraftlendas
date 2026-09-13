@@ -1,4 +1,4 @@
-import { DRAFT_CONFIG } from './draft';
+import { DRAFT_CONFIG, isDraftAvailabilityEligible } from './draft';
 import { DRAFT_REGION_GROUP_IDS } from './types';
 import type { DraftAvailability } from './draft';
 import type { DraftRegionGroupId, DraftRegionManifest } from './types';
@@ -77,12 +77,9 @@ export function safeDraftAvailability(
     activeYears: configuration.activeYears,
     activeRegionGroups: configuration.activeRegionGroups,
   };
-  const hasEligibleGroup = data.draftRegionManifest.groups.some(
-    (entry) =>
-      availability.activeYears.includes(entry.year) &&
-      entry.groups.some((group) => availability.activeRegionGroups.includes(group.id)),
-  );
-  return hasEligibleGroup ? availability : fallback;
+  return isDraftAvailabilityEligible(data.draftRegionManifest, availability)
+    ? availability
+    : fallback;
 }
 
 export async function loadPublicProductConfig(): Promise<PublicProductConfig | null> {

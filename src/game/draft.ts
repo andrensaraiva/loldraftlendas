@@ -1,4 +1,4 @@
-import { ROLES } from './types';
+import { DRAFT_REGION_GROUP_IDS, ROLES } from './types';
 import { draftRegionGroups, playerIsInDraftRegion } from './regions';
 import type {
   DraftRegionGroupId,
@@ -15,6 +15,10 @@ export interface DraftAvailability {
   activeYears: number[];
   activeRegionGroups: DraftRegionGroupId[];
 }
+export interface DraftContext {
+  year: number;
+  region: DraftRegionManifest['groups'][number]['groups'][number];
+}
 type Random = () => number;
 export type DraftPool = Omit<DraftRound, 'options'> & { players: PlayerVersion[] };
 export type DraftPlanEntry = Omit<DraftRound, 'options'> & { optionRoll: number };
@@ -22,6 +26,39 @@ const choose = <T>(xs: T[], rng: Random): T =>
   xs[Math.min(xs.length - 1, Math.floor(rng() * xs.length))];
 const chooseByRoll = <T>(xs: T[], roll: number): T =>
   xs[Math.min(xs.length - 1, Math.floor(roll * xs.length))];
+
+export function availableDraftContexts(
+  manifest: DraftRegionManifest,
+  availability: DraftAvailability,
+): DraftContext[] {
+  return manifest.groups.flatMap((entry) =>
+    availability.activeYears.includes(entry.year)
+      ? entry.groups
+          .filter((group) => availability.activeRegionGroups.includes(group.id))
+          .map((region) => ({ year: entry.year, region }))
+      : [],
+  );
+}
+
+export function isDraftAvailabilityEligible(
+  manifest: DraftRegionManifest,
+  availability: DraftAvailability,
+): boolean {
+  return (
+    Number.isInteger(availability.startingExchanges) &&
+    availability.startingExchanges >= 0 &&
+    availability.startingExchanges <= 9 &&
+    availability.activeYears.length > 0 &&
+    availability.activeRegionGroups.length > 0 &&
+    availability.activeYears.every((year) =>
+      manifest.groups.some((entry) => entry.year === year),
+    ) &&
+    availability.activeRegionGroups.every((group) =>
+      (DRAFT_REGION_GROUP_IDS as readonly string[]).includes(group),
+    ) &&
+    availableDraftContexts(manifest, availability).length > 0
+  );
+}
 export function eligiblePools(
   players: PlayerVersion[],
   manifest?: DraftRegionManifest,
@@ -106,10 +143,9 @@ export function planDraft(
   availability: DraftAvailability,
   rng: Random = Math.random,
 ): DraftPlanEntry[] {
-  const years = manifest.groups.filter(
-    (entry) =>
-      availability.activeYears.includes(entry.year) &&
-      entry.groups.some((group) => availability.activeRegionGroups.includes(group.id)),
+  const contexts = availableDraftContexts(manifest, availability);
+  const years = manifest.groups.filter((entry) =>
+    contexts.some((context) => context.year === entry.year),
   );
   if (!years.length) throw new Error('Sem anos e grupos válidos para o draft');
   return ROLES.map((role) => {

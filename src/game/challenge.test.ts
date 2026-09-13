@@ -66,6 +66,19 @@ describe('campaign challenges', () => {
     ).toBeNull();
     expect(
       decodeChallenge(
+        encodeChallenge({
+          ...challenge,
+          availability: {
+            ...challenge.availability,
+            activeYears: [2015],
+            activeRegionGroups: ['OTHER_REGIONS'],
+          },
+        }),
+        draftManifest,
+      ),
+    ).toBeNull();
+    expect(
+      decodeChallenge(
         encodeChallenge({ ...challenge, gameMode: 'invalid' as CampaignChallenge['gameMode'] }),
         draftManifest,
       ),

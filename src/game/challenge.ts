@@ -1,3 +1,4 @@
+import { isDraftAvailabilityEligible } from './draft';
 import type { DraftAvailability } from './draft';
 import { DRAFT_REGION_GROUP_IDS } from './types';
 import type { DraftRegionGroupId, DraftRegionManifest } from './types';
@@ -60,30 +61,6 @@ function sortedAvailability(availability: DraftAvailability): DraftAvailability 
   };
 }
 
-function isValidAvailability(
-  availability: DraftAvailability,
-  manifest: DraftRegionManifest,
-): boolean {
-  const years = new Set(manifest.groups.map((entry) => entry.year));
-  if (
-    !Number.isInteger(availability.startingExchanges) ||
-    availability.startingExchanges < 0 ||
-    availability.startingExchanges > 9 ||
-    availability.activeYears.length === 0 ||
-    availability.activeRegionGroups.length === 0 ||
-    availability.activeYears.some((year) => !Number.isInteger(year) || !years.has(year)) ||
-    availability.activeRegionGroups.some(
-      (group) => !(DRAFT_REGION_GROUP_IDS as readonly string[]).includes(group),
-    )
-  )
-    return false;
-  return manifest.groups.some(
-    (entry) =>
-      availability.activeYears.includes(entry.year) &&
-      entry.groups.some((group) => availability.activeRegionGroups.includes(group.id)),
-  );
-}
-
 export function encodeChallenge(challenge: CampaignChallenge): string {
   const availability = sortedAvailability(challenge.availability);
   const compact: CompactChallenge = {
@@ -121,7 +98,7 @@ export function decodeChallenge(
       activeYears: compact.y,
       activeRegionGroups: compact.g,
     });
-    if (!isValidAvailability(availability, manifest)) return null;
+    if (!isDraftAvailabilityEligible(manifest, availability)) return null;
     const gameMode = compact.m === undefined ? 'classic' : compact.m;
     if (!isGameMode(gameMode)) return null;
     const gamePlan = compact.p === undefined ? null : compact.p;

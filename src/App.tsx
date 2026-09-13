@@ -1,9 +1,11 @@
 import {
   DRAFT_CONFIG,
+  availableDraftContexts,
   createDraftFromPlan,
   eligiblePools,
   exchangeAlternatives,
   exchangeRound,
+  isDraftAvailabilityEligible,
   offerKey,
   planDraft,
 } from './game/draft';
@@ -51,8 +53,10 @@ import {
 } from 'lucide-react';
 import { LocalDataRepository } from './data/repository';
 import type { GameData } from './data/repository';
-import { ROLES } from './game/types';
+import { DRAFT_REGION_GROUP_IDS, ROLES } from './game/types';
 import type {
+  DraftRegionGroupId,
+  DraftRegionManifest,
   DraftRound,
   GameResult,
   PlayerVersion,
@@ -86,6 +90,9 @@ const roleLabel: Record<Role, string> = {
   ADC: 'ADC',
   SUPPORT: 'SUP',
 };
+const draftRegionLabel = (manifest: DraftRegionManifest, group: DraftRegionGroupId) =>
+  manifest.groups.flatMap((entry) => entry.groups).find((candidate) => candidate.id === group)
+    ?.label ?? group;
 const stageLabel = {
   swiss: 'Etapa Suíça',
   quarters: 'Quartas de final',
@@ -332,9 +339,10 @@ function HowTo({
         </li>
       </ol>
       <div className="data-note">
-        {years} edições do Worlds · {regionGroups} grupos de draft. Pools comprovados; ratings
-        estimados a partir das estatísticas globais por posição. A simulação e o KDA das partidas do
-        jogo são fictícios. As cartas usam avatares originais e neutros para os jogadores.
+        {years} {years === 1 ? 'edição' : 'edições'} do Worlds · {regionGroups}{' '}
+        {regionGroups === 1 ? 'grupo' : 'grupos'} de draft. Pools comprovados; ratings estimados a
+        partir das estatísticas globais por posição. A simulação e o KDA das partidas do jogo são
+        fictícios. As cartas usam avatares originais e neutros para os jogadores.
       </div>
       <details className="image-credits">
         <summary>Créditos das imagens</summary>
@@ -391,6 +399,111 @@ function TeamStrip({ team, active = 5 }: { team: Team; active?: number }) {
         })}
       </div>
     </div>
+  );
+}
+
+function ChallengeFilters({
+  value,
+  limits,
+  manifest,
+  onChange,
+}: {
+  value: DraftAvailability;
+  limits: DraftAvailability;
+  manifest: DraftRegionManifest;
+  onChange: (availability: DraftAvailability) => void;
+}) {
+  const [message, setMessage] = useState('');
+  const groups = DRAFT_REGION_GROUP_IDS.filter((group) =>
+    limits.activeRegionGroups.includes(group),
+  );
+  const update = (candidate: DraftAvailability) => {
+    if (!isDraftAvailabilityEligible(manifest, candidate)) {
+      setMessage('Mantenha ao menos uma combinação de edição e grupo elegível.');
+      return;
+    }
+    setMessage('Filtros atualizados. O desafio usará exatamente este recorte.');
+    onChange(candidate);
+  };
+  const toggleYear = (year: number) =>
+    update({
+      ...value,
+      activeYears: value.activeYears.includes(year)
+        ? value.activeYears.filter((candidate) => candidate !== year)
+        : [...value.activeYears, year].sort((left, right) => left - right),
+    });
+  const toggleGroup = (group: DraftRegionGroupId) =>
+    update({
+      ...value,
+      activeRegionGroups: value.activeRegionGroups.includes(group)
+        ? value.activeRegionGroups.filter((candidate) => candidate !== group)
+        : DRAFT_REGION_GROUP_IDS.filter((candidate) =>
+            [...value.activeRegionGroups, group].includes(candidate),
+          ),
+    });
+  const contexts = availableDraftContexts(manifest, value);
+  return (
+    <details className="challenge-filters">
+      <summary>
+        <span>
+          <b>Personalizar draft e desafio</b>
+          <small>
+            {value.activeYears.length} {value.activeYears.length === 1 ? 'edição' : 'edições'} ·{' '}
+            {value.activeRegionGroups.length}{' '}
+            {value.activeRegionGroups.length === 1 ? 'grupo' : 'grupos'}
+          </small>
+        </span>
+        <strong>FILTRAR</strong>
+      </summary>
+      <div className="challenge-filter-body">
+        <fieldset>
+          <legend>Edições permitidas</legend>
+          <div className="challenge-filter-options years">
+            {limits.activeYears.map((year) => (
+              <label key={year}>
+                <input
+                  type="checkbox"
+                  checked={value.activeYears.includes(year)}
+                  onChange={() => toggleYear(year)}
+                />
+                <span>{year}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Grupos permitidos</legend>
+          <div className="challenge-filter-options">
+            {groups.map((group) => (
+              <label key={group}>
+                <input
+                  type="checkbox"
+                  checked={value.activeRegionGroups.includes(group)}
+                  onChange={() => toggleGroup(group)}
+                />
+                <span>{draftRegionLabel(manifest, group)}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
+        <div className="challenge-filter-status">
+          <span role="status">
+            {message ||
+              `${contexts.length} combinações elegíveis. Cada posição mantém três candidatos.`}
+          </span>
+          <button
+            type="button"
+            className="text-button"
+            onClick={() => {
+              setMessage('Todos os filtros disponíveis foram restaurados.');
+              onChange(limits);
+            }}
+          >
+            Restaurar tudo
+          </button>
+        </div>
+      </div>
+    </details>
   );
 }
 
@@ -721,6 +834,9 @@ export default function App() {
   const [nextDraftAvailability, setNextDraftAvailability] = useState<DraftAvailability | null>(
     null,
   );
+  const [draftAvailabilityLimits, setDraftAvailabilityLimits] = useState<DraftAvailability | null>(
+    null,
+  );
   const [campaignAvailability, setCampaignAvailability] = useState<DraftAvailability | null>(null);
   const [campaignSeed, setCampaignSeed] = useState<string | null>(null);
   const [campaignSource, setCampaignSource] = useState<'organic' | 'challenge'>('organic');
@@ -759,11 +875,15 @@ export default function App() {
   useEffect(() => {
     let active = true;
     const saved = loadCampaign(catalog.draftRegionManifest.datasetVersion);
-    setNextDraftAvailability(defaultDraftAvailability(catalog));
+    const defaultAvailability = defaultDraftAvailability(catalog);
+    setDraftAvailabilityLimits(defaultAvailability);
+    setNextDraftAvailability(defaultAvailability);
     setHasSavedCampaign(!!saved);
     void loadPublicProductConfig().then((configuration) => {
       if (!active) return;
-      setNextDraftAvailability(safeDraftAvailability(catalog, configuration));
+      const configuredAvailability = safeDraftAvailability(catalog, configuration);
+      setDraftAvailabilityLimits(configuredAvailability);
+      setNextDraftAvailability(configuredAvailability);
       setMaintenanceBanner(configuration?.maintenanceBanner ?? null);
     });
     return () => {
@@ -978,6 +1098,11 @@ export default function App() {
     if (loadingGame) return;
     const availability =
       challenge?.availability ?? nextDraftAvailability ?? defaultDraftAvailability(catalog);
+    if (!isDraftAvailabilityEligible(catalog.draftRegionManifest, availability)) {
+      setError('Escolha ao menos uma combinação válida de edição e grupo regional.');
+      return;
+    }
+    setError('');
     const seed = challenge?.seed ?? createCampaignSeed();
     const source = challenge ? 'challenge' : 'organic';
     const selectedGameMode = challenge?.gameMode ?? gameMode;
@@ -1366,6 +1491,14 @@ export default function App() {
                     , anos, regiões, trocas e sorteios serão os mesmos. Suas escolhas continuam
                     livres e o resultado não vale como ranking verificado.
                   </p>
+                  <p className="challenge-rules">
+                    <b>Edições:</b> {pendingChallenge.availability.activeYears.join(', ')}
+                    <br />
+                    <b>Grupos:</b>{' '}
+                    {pendingChallenge.availability.activeRegionGroups
+                      .map((group) => draftRegionLabel(catalog.draftRegionManifest, group))
+                      .join(', ')}
+                  </p>
                   <button
                     className="primary"
                     onClick={() => void start(pendingChallenge)}
@@ -1383,35 +1516,45 @@ export default function App() {
                 </p>
               )}
               {!pendingChallenge && (
-                <fieldset className="game-mode-picker">
-                  <legend>Como você quer escolher?</legend>
-                  <label className={gameMode === 'classic' ? 'selected' : ''}>
-                    <input
-                      type="radio"
-                      name="game-mode"
-                      value="classic"
-                      checked={gameMode === 'classic'}
-                      onChange={() => setGameMode('classic')}
+                <>
+                  <fieldset className="game-mode-picker">
+                    <legend>Como você quer escolher?</legend>
+                    <label className={gameMode === 'classic' ? 'selected' : ''}>
+                      <input
+                        type="radio"
+                        name="game-mode"
+                        value="classic"
+                        checked={gameMode === 'classic'}
+                        onChange={() => setGameMode('classic')}
+                      />
+                      <span>
+                        <b>Clássico</b>
+                        <small>Ratings e força visíveis</small>
+                      </span>
+                    </label>
+                    <label className={gameMode === 'almanac' ? 'selected' : ''}>
+                      <input
+                        type="radio"
+                        name="game-mode"
+                        value="almanac"
+                        checked={gameMode === 'almanac'}
+                        onChange={() => setGameMode('almanac')}
+                      />
+                      <span>
+                        <b>Almanaque</b>
+                        <small>Escolha sem ver os números</small>
+                      </span>
+                    </label>
+                  </fieldset>
+                  {nextDraftAvailability && draftAvailabilityLimits && (
+                    <ChallengeFilters
+                      value={nextDraftAvailability}
+                      limits={draftAvailabilityLimits}
+                      manifest={catalog.draftRegionManifest}
+                      onChange={setNextDraftAvailability}
                     />
-                    <span>
-                      <b>Clássico</b>
-                      <small>Ratings e força visíveis</small>
-                    </span>
-                  </label>
-                  <label className={gameMode === 'almanac' ? 'selected' : ''}>
-                    <input
-                      type="radio"
-                      name="game-mode"
-                      value="almanac"
-                      checked={gameMode === 'almanac'}
-                      onChange={() => setGameMode('almanac')}
-                    />
-                    <span>
-                      <b>Almanaque</b>
-                      <small>Escolha sem ver os números</small>
-                    </span>
-                  </label>
-                </fieldset>
+                  )}
+                </>
               )}
               {hasSavedCampaign ? (
                 <div className="home-actions">
@@ -1485,7 +1628,7 @@ export default function App() {
               <div className="hero-sticker">
                 <Swords size={22} />
                 <span>
-                  {availableYears} EDIÇÕES DO WORLDS.
+                  {availableYears} {availableYears === 1 ? 'EDIÇÃO' : 'EDIÇÕES'} DO WORLDS.
                   <br />
                   <b>UMA SÓ EQUIPE.</b>
                 </span>
@@ -2099,7 +2242,7 @@ export default function App() {
           DRAFT LENDAS<span className="footer-dot"> / </span> UM NOVO JEITO DE VIVER O WORLDS.
         </span>
         <span>
-          {availableYears} EDIÇÕES · RATINGS ESTIMADOS
+          {availableYears} {availableYears === 1 ? 'EDIÇÃO' : 'EDIÇÕES'} · RATINGS ESTIMADOS
           <button onClick={openHelp} aria-label="Sobre os dados">
             <CircleHelp size={14} />
           </button>

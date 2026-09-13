@@ -84,6 +84,33 @@ test('player exchange introduces a new candidate and exhausted exchanges are dis
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
+test('home filters persist an eligible edition and region in every draft round', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.getByText('Personalizar draft e desafio').click();
+  for (const year of [2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024])
+    await page.getByRole('checkbox', { name: String(year), exact: true }).uncheck();
+  for (const group of ['KOREA', 'CHINA', 'EUROPA', 'AMÉRICA DO NORTE', 'EUROPA + AMÉRICA DO NORTE'])
+    await page.getByRole('checkbox', { name: group, exact: true }).uncheck();
+
+  await expect(page.getByRole('status')).toContainText('exatamente este recorte');
+  await page.screenshot({
+    path: `test-results/challenge-filters-${test.info().project.name}.png`,
+    fullPage: true,
+  });
+  await page.getByRole('button', { name: 'Começar draft' }).click();
+  for (let round = 0; round < 5; round++) {
+    await expect(page.getByRole('button', { name: 'Trocar ano' })).toContainText('2025');
+    await expect(page.getByRole('button', { name: 'Trocar região' })).toContainText(
+      'OUTRAS REGIÕES',
+    );
+    await page.locator('.player-card').first().click();
+  }
+  await expect(page.locator('.team-slot.filled')).toHaveCount(5);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
 test('a browser-local campaign can be resumed or replaced from the home screen', async ({
   page,
 }) => {
