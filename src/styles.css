@@ -344,6 +344,141 @@ main > section {
   font-size: 11px;
   font-weight: 700;
 }
+.daily-challenge {
+  max-width: 520px;
+  margin-top: 24px;
+  border: 1px solid #b8cfaa;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #f1f8e9, #ffffff);
+  padding: 16px;
+  box-shadow: 0 10px 30px #29431a0b;
+}
+.daily-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.daily-icon {
+  display: grid;
+  width: 39px;
+  height: 39px;
+  flex: none;
+  place-items: center;
+  border-radius: 7px;
+  background: var(--ink);
+  color: var(--lime);
+}
+.daily-heading > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.daily-heading span:not(.daily-icon) {
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.daily-heading h2 {
+  font: 800 21px/1 var(--display);
+}
+.daily-challenge > p {
+  margin: 11px 0 13px;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.5;
+}
+.daily-actions {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.daily-start {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-radius: 5px;
+  background: var(--ink);
+  padding: 8px 12px;
+  color: white;
+  font-size: 9px;
+  font-weight: 800;
+}
+.daily-status {
+  color: var(--green);
+  font-size: 8px;
+  font-weight: 700;
+}
+.daily-status.used {
+  color: var(--muted);
+}
+.daily-archive {
+  margin-top: 11px;
+  border-top: 1px solid #d9e6d0;
+  padding-top: 9px;
+}
+.daily-archive summary {
+  width: fit-content;
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.daily-archive > div {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin-top: 9px;
+}
+.daily-archive button {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: white;
+  padding: 7px;
+  color: var(--muted);
+  font-size: 7px;
+  text-align: left;
+}
+.daily-archive button span {
+  color: var(--ink);
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.daily-result-badge {
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 22px auto 0;
+  border: 1px solid #8dbb70;
+  border-radius: 7px;
+  background: #edf8e3;
+  padding: 11px 15px;
+  color: var(--green);
+}
+.daily-result-badge.friendly {
+  border-color: var(--line);
+  background: white;
+  color: var(--muted);
+}
+.daily-result-badge span {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 9px;
+}
+.daily-result-badge b {
+  color: var(--ink);
+  font-size: 10px;
+}
 .game-mode-picker {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2517,6 +2652,19 @@ main > section {
   }
 }
 @media (max-width: 540px) {
+  .daily-challenge {
+    margin-top: 20px;
+  }
+  .daily-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .daily-start {
+    width: 100%;
+  }
+  .daily-archive > div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .challenge-filter-options.years {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }

@@ -23,6 +23,13 @@ import type { CampaignChallenge } from './game/challenge';
 import { analyticsPlayerId, createAnalyticsTracker } from './game/analytics';
 import type { AnalyticsProperties } from './game/analytics';
 import {
+  beginDailyAttempt,
+  completeDailyAttempt,
+  officialDailyAttempt,
+  recentDailyChallenges,
+} from './game/daily';
+import type { DailyAttemptKind, DailyChallenge } from './game/daily';
+import {
   defaultDraftAvailability,
   loadPublicProductConfig,
   safeDraftAvailability,
@@ -39,6 +46,7 @@ import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import {
   ArrowRight,
   ArrowUpRight,
+  CalendarDays,
   Check,
   CircleHelp,
   Flag,
@@ -108,6 +116,13 @@ const homeData: GameData = {
   draftRegionManifest: catalog.draftRegionManifest,
 };
 const analytics = createAnalyticsTracker();
+const buildDailyCatalog = () =>
+  recentDailyChallenges(
+    new Date(),
+    7,
+    catalog.draftRegionManifest.datasetVersion,
+    defaultDraftAvailability(catalog),
+  );
 const ResearchDialog = lazy(() =>
   import('./components/ResearchDialog').then((module) => ({ default: module.ResearchDialog })),
 );
@@ -133,6 +148,73 @@ function challengeFromBrowser(): { challenge: CampaignChallenge | null; invalid:
   if (!value) return { challenge: null, invalid: false };
   const challenge = decodeChallenge(value, catalog.draftRegionManifest);
   return { challenge, invalid: !challenge };
+}
+
+function dailyDateLabel(date: string): string {
+  return new Intl.DateTimeFormat('pt-BR', {
+    day: '2-digit',
+    month: 'short',
+    timeZone: 'UTC',
+  })
+    .format(new Date(`${date}T12:00:00.000Z`))
+    .replace('.', '');
+}
+
+function DailyChallengePanel({
+  challenges,
+  busy,
+  revision,
+  start,
+}: {
+  challenges: DailyChallenge[];
+  busy: boolean;
+  revision: number;
+  start: (challenge: DailyChallenge, officialAllowed: boolean) => void;
+}) {
+  const today = challenges[0];
+  const official = officialDailyAttempt(today.id);
+  void revision;
+  return (
+    <section className="daily-challenge" aria-labelledby="daily-challenge-title">
+      <div className="daily-heading">
+        <span className="daily-icon" aria-hidden="true">
+          <CalendarDays size={21} />
+        </span>
+        <div>
+          <span>DESAFIO DIÁRIO · {dailyDateLabel(today.date)}</span>
+          <h2 id="daily-challenge-title">Um draft igual para todo mundo.</h2>
+        </div>
+      </div>
+      <p>
+        Seed, edições e sorteios fixos no modo Almanaque. Sua primeira entrada de hoje é a tentativa
+        oficial deste dispositivo.
+      </p>
+      <div className="daily-actions">
+        <button className="daily-start" onClick={() => start(today, true)} disabled={busy}>
+          {busy ? 'Preparando…' : official ? 'Jogar amistosamente' : 'Jogar tentativa oficial'}
+          <ArrowRight size={17} />
+        </button>
+        <span className={`daily-status ${official ? 'used' : ''}`}>
+          {official?.completedAt
+            ? `Oficial concluída · ${official.outcome}`
+            : official
+              ? 'Tentativa oficial iniciada'
+              : 'Oficial disponível'}
+        </span>
+      </div>
+      <details className="daily-archive">
+        <summary>Arquivo dos últimos 7 dias</summary>
+        <div>
+          {challenges.slice(1).map((challenge) => (
+            <button key={challenge.id} onClick={() => start(challenge, false)} disabled={busy}>
+              <span>{dailyDateLabel(challenge.date)}</span>
+              Jogar amistoso
+            </button>
+          ))}
+        </div>
+      </details>
+    </section>
+  );
 }
 function ReportDialog({
   report,
@@ -839,7 +921,14 @@ export default function App() {
   );
   const [campaignAvailability, setCampaignAvailability] = useState<DraftAvailability | null>(null);
   const [campaignSeed, setCampaignSeed] = useState<string | null>(null);
-  const [campaignSource, setCampaignSource] = useState<'organic' | 'challenge'>('organic');
+  const [campaignSource, setCampaignSource] = useState<'organic' | 'challenge' | 'daily'>(
+    'organic',
+  );
+  const [dailyChallengeId, setDailyChallengeId] = useState<string | null>(null);
+  const [dailyAttemptId, setDailyAttemptId] = useState<string | null>(null);
+  const [dailyAttemptKind, setDailyAttemptKind] = useState<DailyAttemptKind | null>(null);
+  const [dailyRevision, setDailyRevision] = useState(0);
+  const [dailyCatalog, setDailyCatalog] = useState(buildDailyCatalog);
   const [gameMode, setGameMode] = useState<GameMode>('classic');
   const [gamePlan, setGamePlan] = useState<GamePlan | null>(null);
   const [maintenanceBanner, setMaintenanceBanner] = useState<string | null>(null);
@@ -891,6 +980,13 @@ export default function App() {
     };
   }, []);
   useEffect(() => {
+    const interval = window.setInterval(() => {
+      const current = buildDailyCatalog();
+      setDailyCatalog((previous) => (previous[0].id === current[0].id ? previous : current));
+    }, 60_000);
+    return () => window.clearInterval(interval);
+  }, []);
+  useEffect(() => {
     if (!analyticsEnabled || !pendingChallenge) return;
     analytics.trackOnce(`challenge_opened:${pendingChallenge.seed}`, 'challenge_opened', {
       campaign_source: 'challenge',
@@ -899,6 +995,13 @@ export default function App() {
       ...(pendingChallenge.gamePlan ? { game_plan: pendingChallenge.gamePlan } : {}),
     });
   }, [analyticsEnabled, pendingChallenge]);
+  useEffect(() => {
+    if (!analyticsEnabled) return;
+    analytics.trackOnce(`daily_opened:${dailyCatalog[0].id}`, 'daily_opened', {
+      campaign_source: 'daily',
+      daily_id: dailyCatalog[0].id,
+    });
+  }, [analyticsEnabled, dailyCatalog]);
   useEffect(() => {
     let active = true;
     void analytics.initialize().then((enabled) => {
@@ -918,6 +1021,9 @@ export default function App() {
       seed: campaignSeed,
       randomVersion: CAMPAIGN_RANDOM_VERSION,
       campaignSource,
+      dailyChallengeId,
+      dailyAttemptId,
+      dailyAttemptKind,
       gameMode,
       gamePlan,
       screen,
@@ -951,6 +1057,9 @@ export default function App() {
     campaignAvailability,
     campaignSeed,
     campaignSource,
+    dailyChallengeId,
+    dailyAttemptId,
+    dailyAttemptKind,
     gameMode,
     gamePlan,
   ]);
@@ -973,9 +1082,29 @@ export default function App() {
         campaign_source: 'challenge',
         challenge_version: CHALLENGE_VERSION,
       });
+    if (campaignSource === 'daily' && dailyChallengeId && dailyAttemptId && dailyAttemptKind) {
+      if (completeDailyAttempt(dailyAttemptId, tournament.outcome))
+        setDailyRevision((value) => value + 1);
+      analytics.trackOnce('daily_completed', 'daily_completed', {
+        campaign_source: 'daily',
+        daily_id: dailyChallengeId,
+        attempt_kind: dailyAttemptKind,
+        ...properties,
+      });
+    }
     if (tournament.outcome === 'Campeão mundial')
       analytics.trackOnce('worlds_won', 'worlds_won', properties);
-  }, [analyticsEnabled, campaignSource, gameMode, gamePlan, screen, tournament.outcome]);
+  }, [
+    analyticsEnabled,
+    campaignSource,
+    dailyAttemptId,
+    dailyAttemptKind,
+    dailyChallengeId,
+    gameMode,
+    gamePlan,
+    screen,
+    tournament.outcome,
+  ]);
   useEffect(() => {
     if (screen === 'tournament' || screen === 'match' || screen === 'result')
       analytics.trackOnce('worlds_started', 'worlds_started', {
@@ -1094,18 +1223,25 @@ export default function App() {
       if (visible) setLoadingGame(false);
     }
   }
-  async function start(challenge: CampaignChallenge | null = null) {
+  async function start(
+    challenge: CampaignChallenge | null = null,
+    daily: DailyChallenge | null = null,
+    dailyOfficialAllowed = true,
+  ) {
     if (loadingGame) return;
     const availability =
-      challenge?.availability ?? nextDraftAvailability ?? defaultDraftAvailability(catalog);
+      daily?.availability ??
+      challenge?.availability ??
+      nextDraftAvailability ??
+      defaultDraftAvailability(catalog);
     if (!isDraftAvailabilityEligible(catalog.draftRegionManifest, availability)) {
       setError('Escolha ao menos uma combinação válida de edição e grupo regional.');
       return;
     }
     setError('');
-    const seed = challenge?.seed ?? createCampaignSeed();
-    const source = challenge ? 'challenge' : 'organic';
-    const selectedGameMode = challenge?.gameMode ?? gameMode;
+    const seed = daily?.seed ?? challenge?.seed ?? createCampaignSeed();
+    const source = daily ? 'daily' : challenge ? 'challenge' : 'organic';
+    const selectedGameMode = daily?.gameMode ?? challenge?.gameMode ?? gameMode;
     const selectedGamePlan = challenge?.gamePlan ?? null;
     const draftPlan = planDraft(
       catalog.draftRegionManifest,
@@ -1114,6 +1250,9 @@ export default function App() {
     );
     const snapshot = await loadYears(draftPlan.map((round) => round.year));
     if (!snapshot) return;
+    const dailyAttempt = daily
+      ? beginDailyAttempt(daily.id, undefined, undefined, undefined, dailyOfficialAllowed)
+      : null;
     if (draftTimer.current) clearTimeout(draftTimer.current);
     const replay = screen === 'result';
     if (replay)
@@ -1134,9 +1273,20 @@ export default function App() {
         game_mode: selectedGameMode,
         ...(selectedGamePlan ? { game_plan: selectedGamePlan } : {}),
       });
+    if (daily && dailyAttempt)
+      analytics.track('daily_started', {
+        campaign_source: 'daily',
+        daily_id: daily.id,
+        attempt_kind: dailyAttempt.kind,
+        game_mode: selectedGameMode,
+      });
     setCampaignAvailability(availability);
     setCampaignSeed(seed);
     setCampaignSource(source);
+    setDailyChallengeId(daily?.id ?? null);
+    setDailyAttemptId(dailyAttempt?.id ?? null);
+    setDailyAttemptKind(dailyAttempt?.kind ?? null);
+    if (dailyAttempt) setDailyRevision((value) => value + 1);
     setGameMode(selectedGameMode);
     setGamePlan(selectedGamePlan);
     draftLock.current = false;
@@ -1196,6 +1346,9 @@ export default function App() {
     setCampaignAvailability(campaign.draftAvailability ?? defaultDraftAvailability(catalog));
     setCampaignSeed(campaign.seed);
     setCampaignSource(campaign.campaignSource);
+    setDailyChallengeId(campaign.dailyChallengeId);
+    setDailyAttemptId(campaign.dailyAttemptId);
+    setDailyAttemptKind(campaign.dailyAttemptKind);
     setGameMode(campaign.gameMode);
     setGamePlan(campaign.gamePlan);
     draftLock.current = false;
@@ -1517,6 +1670,12 @@ export default function App() {
               )}
               {!pendingChallenge && (
                 <>
+                  <DailyChallengePanel
+                    challenges={dailyCatalog}
+                    busy={loadingGame}
+                    revision={dailyRevision}
+                    start={(daily, officialAllowed) => void start(null, daily, officialAllowed)}
+                  />
                   <fieldset className="game-mode-picker">
                     <legend>Como você quer escolher?</legend>
                     <label className={gameMode === 'classic' ? 'selected' : ''}>
@@ -2165,6 +2324,20 @@ export default function App() {
                 ? 'Cinco escolhas. Diferentes eras. O mundo é seu.'
                 : 'O próximo draft pode ser lendário. Novas composições, novas possibilidades.'}
             </p>
+            {campaignSource === 'daily' && dailyAttemptKind && (
+              <div className={`daily-result-badge ${dailyAttemptKind}`}>
+                <CalendarDays size={18} />
+                <span>
+                  <b>
+                    Desafio diário ·{' '}
+                    {dailyAttemptKind === 'official' ? 'tentativa oficial' : 'amistosa'}
+                  </b>
+                  {dailyAttemptKind === 'official'
+                    ? 'Resultado salvo neste dispositivo.'
+                    : 'Esta partida não substitui sua tentativa oficial.'}
+                </span>
+              </div>
+            )}
             <div className="final-record">
               <div>
                 <b>{totalWins}</b>

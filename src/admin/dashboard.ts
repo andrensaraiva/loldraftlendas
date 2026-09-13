@@ -70,6 +70,12 @@ export interface DashboardMetrics {
   devices: MetricCount[];
   gameModes: GameModeMetrics[];
   gamePlans: GamePlanMetrics[];
+  dailyChallenges: {
+    opened: number;
+    officialStarted: number;
+    friendlyStarted: number;
+    officialCompleted: number;
+  };
   feedback: FeedbackMetrics;
   ratingFeedback: RatingFeedbackMetrics;
 }
@@ -115,6 +121,12 @@ interface DashboardResponse {
     completion_rate: number;
     title_rate: number;
   }>;
+  daily_challenges?: {
+    opened: number;
+    official_started: number;
+    friendly_started: number;
+    official_completed: number;
+  };
   feedback: {
     total: number;
     good: number;
@@ -217,6 +229,12 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
   const ratingReasons = counts(ratingFeedback?.reasons);
   const parsedGameModes = gameModes(response.game_modes);
   const parsedGamePlans = gamePlans(response.game_plans);
+  const daily = response.daily_challenges ?? {
+    opened: 0,
+    official_started: 0,
+    friendly_started: 0,
+    official_completed: 0,
+  };
   if (
     typeof response.generated_at !== 'string' ||
     Number.isNaN(Date.parse(response.generated_at)) ||
@@ -227,6 +245,10 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     !ratingReasons ||
     !parsedGameModes ||
     !parsedGamePlans ||
+    numberValue(daily.opened) === null ||
+    numberValue(daily.official_started) === null ||
+    numberValue(daily.friendly_started) === null ||
+    numberValue(daily.official_completed) === null ||
     numberValue(overview.drafts_started) === null ||
     numberValue(overview.drafts_completed) === null ||
     numberValue(overview.draft_completion_rate) === null ||
@@ -309,6 +331,12 @@ export function dashboardMetricsFromResponse(value: unknown): DashboardMetrics {
     devices: lists[6]!,
     gameModes: parsedGameModes,
     gamePlans: parsedGamePlans,
+    dailyChallenges: {
+      opened: daily.opened,
+      officialStarted: daily.official_started,
+      friendlyStarted: daily.friendly_started,
+      officialCompleted: daily.official_completed,
+    },
     feedback: {
       total: feedback.total,
       good: feedback.good,
@@ -417,6 +445,12 @@ export function localDemoDashboard(): DashboardMetrics {
         playAgainRate: 40.3,
       },
     ],
+    dailyChallenges: {
+      opened: 47,
+      officialStarted: 34,
+      friendlyStarted: 12,
+      officialCompleted: 21,
+    },
     gamePlans: [
       {
         key: 'aggression',

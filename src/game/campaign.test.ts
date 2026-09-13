@@ -16,6 +16,9 @@ const campaign: CampaignState = {
   seed: 'draftlendas2026a',
   randomVersion: 1,
   campaignSource: 'organic',
+  dailyChallengeId: null,
+  dailyAttemptId: null,
+  dailyAttemptKind: null,
   gameMode: 'almanac',
   gamePlan: 'control_pick',
   screen: 'draft',
@@ -69,6 +72,9 @@ describe('campaign persistence', () => {
       seed: _seed,
       randomVersion: _randomVersion,
       campaignSource: _source,
+      dailyChallengeId: _dailyChallengeId,
+      dailyAttemptId: _dailyAttemptId,
+      dailyAttemptKind: _dailyAttemptKind,
       gameMode: _gameMode,
       gamePlan: _gamePlan,
       ...legacy
@@ -116,6 +122,27 @@ describe('campaign persistence', () => {
     expect(loadCampaign('dataset-v1', local)).toMatchObject({
       gameMode: 'almanac',
       gamePlan: null,
+    });
+  });
+
+  it('migrates a compatible v4 save without daily-attempt metadata', () => {
+    const local = storage();
+    const {
+      dailyChallengeId: _dailyChallengeId,
+      dailyAttemptId: _dailyAttemptId,
+      dailyAttemptKind: _dailyAttemptKind,
+      ...versionFour
+    } = campaign;
+    local.setItem(
+      CAMPAIGN_SAVE_KEY,
+      JSON.stringify({ version: 4, datasetVersion: 'dataset-v1', campaign: versionFour }),
+    );
+    expect(loadCampaign('dataset-v1', local)).toMatchObject({
+      campaignSource: 'organic',
+      gamePlan: 'control_pick',
+      dailyChallengeId: null,
+      dailyAttemptId: null,
+      dailyAttemptKind: null,
     });
   });
 });

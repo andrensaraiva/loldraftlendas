@@ -15,6 +15,7 @@ The tracked event names are:
 - `how_to_play_opened`, `rating_details_opened`
 - `share_started`, `share_completed`, `card_downloaded`
 - `challenge_opened`, `challenge_started`, `challenge_completed`, `challenge_link_copied`
+- `daily_opened`, `daily_started`, `daily_completed`
 
 Roll, exchange, and selection events use normalized public historical player IDs, role, Worlds year, draft region group, exchange type, and candidate IDs. Completion events include integer draft or campaign duration. This supports aggregate draft completion, exchange use, pick/rejection frequency, outcome, year/group frequency, and mobile/desktop metrics without identifying a visitor.
 

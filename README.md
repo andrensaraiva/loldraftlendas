@@ -36,6 +36,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Modos **Clássico** e **Almanaque**: o Clássico exibe ratings e força; o Almanaque oculta toda orientação numérica durante a campanha e revela os cinco jogos no resultado final. O modo integra save, desafio e card compartilhável.
 - Quatro planos persistentes escolhidos após o draft: **Agressão**, **Teamfight**, **Controle/Pick** e **Escala**. As tags ativas e o efeito limitado de `−1,0` a `+1,5` aparecem na composição e na prévia da partida.
 - Filtros opcionais na home restringem o draft e o futuro desafio por edição e grupo regional. Combinações vazias são bloqueadas e cada contexto do manifesto preserva três candidatos por posição.
+- Desafio Diário no modo Almanaque com seed e regras iguais para todos, calendário de Brasília e arquivo dos sete dias recentes. A primeira entrada do dia é marcada localmente como oficial; as demais e todo o arquivo são amistosos, sem ranking ou conta.
 - 605 versões pesquisadas: Worlds 2015, 2017, 2019, 2020, 2021, 2022, 2023, 2024 e 2025. Regiões canônicas e grupos de draft são separados: Coreia, China, Europa, América do Norte e Outras Regiões, com fusão determinística quando uma cobertura anual não tiver três candidatos por posição. Em 2024 e 2025, Europa e América do Norte formam um grupo conjunto; em 2025, LCP e LTA Sul formam Outras Regiões. Veja [a regra de agrupamento](docs/draft-region-grouping.md).
 - Cada posição mostra exatamente três candidatos válidos do ano/grupo sorteado e prioriza combinações de times distintos.
 - Três trocas compartilhadas por draft: ano, região ou jogadores. Ações impossíveis não gastam saldo. Configuração em `src/game/draft.ts`.
@@ -90,6 +91,7 @@ src/
     regions.ts     # Região canônica, grupos e fallback determinístico
     campaign.ts    # Save versionado no armazenamento local
     challenge.ts   # Payload validado, código e URL de desafio
+    daily.ts       # Calendário, seed, arquivo e tentativas diárias locais
     plan.ts        # Planos, tags-alvo e rótulos
     engine.ts      # Ratings, composição, planos, séries e torneio
     random.ts      # Streams determinísticos separados por operação

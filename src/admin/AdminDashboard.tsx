@@ -196,6 +196,24 @@ export function AdminDashboard({
       <section className="admin-feedback-summary">
         <div className="admin-section-heading">
           <div>
+            <span className="admin-kicker">DESAFIO DIÁRIO</span>
+            <h2>Entrada, conclusão oficial e partidas amistosas.</h2>
+          </div>
+        </div>
+        <div className="admin-metric-grid">
+          <MetricCard label="Desafios vistos" value={metrics.dailyChallenges.opened} />
+          <MetricCard label="Tentativas oficiais" value={metrics.dailyChallenges.officialStarted} />
+          <MetricCard
+            label="Oficiais concluídas"
+            value={metrics.dailyChallenges.officialCompleted}
+          />
+          <MetricCard label="Partidas amistosas" value={metrics.dailyChallenges.friendlyStarted} />
+        </div>
+      </section>
+
+      <section className="admin-feedback-summary">
+        <div className="admin-section-heading">
+          <div>
             <span className="admin-kicker">MODOS DE JOGO</span>
             <h2>Conclusão e replay por experiência.</h2>
           </div>

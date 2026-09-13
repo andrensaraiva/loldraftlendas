@@ -23,6 +23,9 @@ export const ANALYTICS_EVENTS = [
   'challenge_started',
   'challenge_completed',
   'challenge_link_copied',
+  'daily_opened',
+  'daily_started',
+  'daily_completed',
 ] as const;
 
 export type AnalyticsEventName = (typeof ANALYTICS_EVENTS)[number];

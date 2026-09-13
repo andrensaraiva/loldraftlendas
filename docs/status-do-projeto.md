@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.9 e a expansão da Fase 4. O commit-base remoto é `6d3ac16` (`feat: add persistent game plans`); os filtros de desafio estão integrados neste checkpoint.
+Atualizado em 2026-09-13. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.10 e a expansão da Fase 4. A branch `main` remota contém os checkpoints separados de planos, filtros e Desafio Diário.
 
 ## Objetivo Preservado
 
@@ -45,6 +45,7 @@ Migrations Supabase, em ordem:
 7. [20260912130000_contextual_rating_feedback.sql](../supabase/migrations/20260912130000_contextual_rating_feedback.sql)
 8. [20260913120000_almanac_mode.sql](../supabase/migrations/20260913120000_almanac_mode.sql)
 9. [20260913130000_game_plans.sql](../supabase/migrations/20260913130000_game_plans.sql)
+10. [20260913140000_daily_challenges.sql](../supabase/migrations/20260913140000_daily_challenges.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -126,6 +127,14 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - A disponibilidade filtrada já é o snapshot persistido no save e no link de desafio; o convite lista explicitamente as edições e os grupos recebidos.
 - Testes de domínio cobrem 2025 + Outras Regiões e rejeitam 2015 + Outras Regiões; o E2E percorre as cinco posições do recorte válido em desktop e mobile.
 
+### Fase 3.10: Desafio Diário sem Ranking
+
+- A home oferece um desafio diário no modo Almanaque com seed, dataset e regras canônicos; o calendário vira à meia-noite de `America/Sao_Paulo` e se atualiza mesmo com a aba aberta.
+- O arquivo expõe os seis dias anteriores como partidas amistosas. A primeira entrada do dia é oficial no armazenamento local; reentradas são amistosas e não substituem o resultado oficial.
+- Save v5 preserva identificadores e tipo da tentativa ativa, migrando saves v1–v4. O resultado final identifica claramente uma campanha oficial ou amistosa.
+- Eventos `daily_opened`, `daily_started` e `daily_completed` são anônimos e allowlisted. A migration preparada acrescenta os agregados de abertura, oficiais iniciadas/concluídas e amistosas ao dashboard.
+- Relógio, storage e gerador de ID são injetáveis nos testes. O E2E verifica a tentativa oficial, a reentrada e o arquivo em desktop e mobile.
+
 ### Fase 4: Cobertura Histórica e Readiness
 
 - Inventário determinístico de 2011–2025 em [readiness-2011-2025.json](../data/research/multi-era/readiness-2011-2025.json), com estados `INCOMPLETE`, `RESEARCHED`, `VALIDATED` e `PRODUCTION_READY`.
@@ -138,7 +147,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O aviso vigente da Riot foi conferido na General Policy oficial, registrado no inventário e exibido no rodapé público. Isso não representa aconselhamento jurídico nem aprovação da Riot.
 - As partes específicas de League of Legends e os limites reais de reutilização do motor estão em [game-domain-boundaries.md](game-domain-boundaries.md).
 - A CI passa a rejeitar inventário ou relatório de readiness desatualizados.
-- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.9, o bundle inicial ficou em 369,82 kB (99,35 kB gzip), sem aviso de chunk acima de 500 kB.
+- Após a integração de 2021 e das entregas de produto da Fase 3.4–3.10, o bundle inicial permanece abaixo do limite de 500 kB, sem aviso de chunk excessivo.
 
 ## Estado de Validação
 
@@ -153,7 +162,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 75 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; a calibração de planos executou 100 mil campanhas; o inventário de readiness 2011–2025 está reproduzível; 31 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 369,82 kB (99,35 kB gzip), sem aviso de chunk acima de 500 kB.
+Resultados registrados: 80 testes unitários passaram; type check e build passaram; a validação histórica confirmou 605 jogadores, chunks anuais, índices compactos, 3.025 associações, 175 pools elegíveis, 1.342 assets históricos e 9 crosschecks de evento; 60 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; a calibração de planos executou 100 mil campanhas; o inventário de readiness 2011–2025 está reproduzível; 33 execuções E2E passaram no Chromium, cobrindo desktop e mobile, e 1 teste exclusivamente mobile foi corretamente ignorado no projeto desktop. O bundle inicial deste pacote ficou em 376,61 kB (101,39 kB gzip), sem aviso de chunk acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -161,7 +170,7 @@ O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, con
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
 
-1. Crie um projeto Supabase e aplique as nove migrations na ordem acima.
+1. Crie um projeto Supabase e aplique as dez migrations na ordem acima.
 2. Crie a conta do mantenedor no Supabase Auth.
 3. Insira manualmente o UUID dela em `public.admin_users`.
 4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.
@@ -180,11 +189,11 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 - Recalibrar toda a população ao adicionar uma edição e versionar o dataset; não misturar ratings produzidos por populações diferentes.
 - Submeter os nove anos atualmente `VALIDATED` a uma revisão externa independente e registrar as evidências sem autoaprovação.
 
-### Próxima Entrega de Produto: Desafio Diário 3.1
+### Próxima Entrega de Produto: PWA 3.2
 
-- Derivar uma seed e um identificador estáveis por dia e versão de regras, iguais para todos.
-- Separar a primeira tentativa oficial local das tentativas amistosas seguintes, sem ranking ou conta.
-- Manter configuração remota opcional e testar a virada de data com relógio injetável.
+- Adicionar manifesto, ícones instaláveis e service worker com atualização segura.
+- Recuperar a campanha ativa offline sem cachear respostas privadas do admin ou Supabase.
+- Validar instalação, fallback offline e atualização em viewport mobile.
 
 ## Comandos de Trabalho
 

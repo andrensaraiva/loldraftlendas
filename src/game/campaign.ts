@@ -6,8 +6,9 @@ import { isGameMode } from './mode';
 import type { GameMode } from './mode';
 import { isGamePlan } from './plan';
 import type { GamePlan } from './plan';
+import type { DailyAttemptKind } from './daily';
 
-export const CAMPAIGN_SAVE_VERSION = 4;
+export const CAMPAIGN_SAVE_VERSION = 5;
 export const CAMPAIGN_SAVE_KEY = 'draft-lendas.campaign';
 export type CampaignScreen = 'draft' | 'team' | 'tournament' | 'match' | 'result';
 export interface CampaignSettings {
@@ -18,7 +19,10 @@ export interface CampaignSettings {
 export interface CampaignState {
   seed: string;
   randomVersion: typeof CAMPAIGN_RANDOM_VERSION;
-  campaignSource: 'organic' | 'challenge';
+  campaignSource: 'organic' | 'challenge' | 'daily';
+  dailyChallengeId: string | null;
+  dailyAttemptId: string | null;
+  dailyAttemptKind: DailyAttemptKind | null;
   gameMode: GameMode;
   gamePlan: GamePlan | null;
   screen: CampaignScreen;
@@ -57,7 +61,14 @@ function browserStorage(): CampaignStorage | null {
 
 type LegacyCampaignState = Omit<
   CampaignState,
-  'seed' | 'randomVersion' | 'campaignSource' | 'gameMode' | 'gamePlan'
+  | 'seed'
+  | 'randomVersion'
+  | 'campaignSource'
+  | 'dailyChallengeId'
+  | 'dailyAttemptId'
+  | 'dailyAttemptKind'
+  | 'gameMode'
+  | 'gamePlan'
 >;
 
 function isCampaignCore(value: unknown): value is LegacyCampaignState {
@@ -105,7 +116,16 @@ function isCampaignState(value: unknown): value is CampaignState {
   return (
     isCampaignSeed(candidate.seed) &&
     candidate.randomVersion === CAMPAIGN_RANDOM_VERSION &&
-    ['organic', 'challenge'].includes(candidate.campaignSource ?? '') &&
+    ['organic', 'challenge', 'daily'].includes(candidate.campaignSource ?? '') &&
+    (candidate.dailyChallengeId === null || typeof candidate.dailyChallengeId === 'string') &&
+    (candidate.dailyAttemptId === null || typeof candidate.dailyAttemptId === 'string') &&
+    (candidate.dailyAttemptKind === null ||
+      ['official', 'friendly'].includes(candidate.dailyAttemptKind ?? '')) &&
+    (candidate.campaignSource === 'daily'
+      ? !!candidate.dailyChallengeId && !!candidate.dailyAttemptId && !!candidate.dailyAttemptKind
+      : candidate.dailyChallengeId === null &&
+        candidate.dailyAttemptId === null &&
+        candidate.dailyAttemptKind === null) &&
     isGameMode(candidate.gameMode) &&
     (candidate.gamePlan === null || isGamePlan(candidate.gamePlan))
   );
@@ -117,6 +137,26 @@ function migrate(save: unknown, datasetVersion: string): CampaignState | null {
   if (candidate.datasetVersion !== datasetVersion) return null;
   if (candidate.version === CAMPAIGN_SAVE_VERSION && isCampaignState(candidate.campaign))
     return candidate.campaign;
+  if (candidate.version === 4 && candidate.campaign && isCampaignCore(candidate.campaign)) {
+    const versionFour = candidate.campaign as Omit<
+      CampaignState,
+      'dailyChallengeId' | 'dailyAttemptId' | 'dailyAttemptKind'
+    >;
+    if (
+      !isCampaignSeed(versionFour.seed) ||
+      versionFour.randomVersion !== CAMPAIGN_RANDOM_VERSION ||
+      !['organic', 'challenge'].includes(versionFour.campaignSource) ||
+      !isGameMode(versionFour.gameMode) ||
+      (versionFour.gamePlan !== null && !isGamePlan(versionFour.gamePlan))
+    )
+      return null;
+    return {
+      ...versionFour,
+      dailyChallengeId: null,
+      dailyAttemptId: null,
+      dailyAttemptKind: null,
+    };
+  }
   if (candidate.version === 3 && candidate.campaign && isCampaignCore(candidate.campaign)) {
     const versionThree = candidate.campaign as Omit<CampaignState, 'gamePlan'>;
     if (
@@ -126,7 +166,13 @@ function migrate(save: unknown, datasetVersion: string): CampaignState | null {
       !isGameMode(versionThree.gameMode)
     )
       return null;
-    return { ...versionThree, gamePlan: null };
+    return {
+      ...versionThree,
+      gamePlan: null,
+      dailyChallengeId: null,
+      dailyAttemptId: null,
+      dailyAttemptKind: null,
+    };
   }
   if (candidate.version === 2 && candidate.campaign && isCampaignCore(candidate.campaign)) {
     const versionTwo = candidate.campaign as Omit<CampaignState, 'gameMode' | 'gamePlan'>;
@@ -136,7 +182,14 @@ function migrate(save: unknown, datasetVersion: string): CampaignState | null {
       !['organic', 'challenge'].includes(versionTwo.campaignSource)
     )
       return null;
-    return { ...versionTwo, gameMode: 'classic', gamePlan: null };
+    return {
+      ...versionTwo,
+      gameMode: 'classic',
+      gamePlan: null,
+      dailyChallengeId: null,
+      dailyAttemptId: null,
+      dailyAttemptKind: null,
+    };
   }
   if (candidate.version === 1 && isCampaignCore(candidate.campaign)) {
     return {
@@ -146,6 +199,9 @@ function migrate(save: unknown, datasetVersion: string): CampaignState | null {
       ),
       randomVersion: CAMPAIGN_RANDOM_VERSION,
       campaignSource: 'organic',
+      dailyChallengeId: null,
+      dailyAttemptId: null,
+      dailyAttemptKind: null,
       gameMode: 'classic',
       gamePlan: null,
     };

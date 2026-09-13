@@ -74,6 +74,12 @@ const response = {
       title_rate: 0,
     },
   ],
+  daily_challenges: {
+    opened: 8,
+    official_started: 6,
+    friendly_started: 3,
+    official_completed: 4,
+  },
   feedback: { total: 1, good: 1, ok: 0, bad: 0, notes: [] },
   rating_feedback: {
     total: 2,
@@ -111,6 +117,12 @@ describe('admin dashboard metrics', () => {
     expect(dashboardMetricsFromResponse(response).gameModes[0]).toMatchObject({
       key: 'classic',
       completionRate: 71.4,
+    });
+    expect(dashboardMetricsFromResponse(response).dailyChallenges).toEqual({
+      opened: 8,
+      officialStarted: 6,
+      friendlyStarted: 3,
+      officialCompleted: 4,
     });
     expect(dashboardMetricsFromResponse(response).gamePlans[1]).toMatchObject({
       key: 'teamfight',
