@@ -1,4 +1,13 @@
 {
+  "2014": {
+    "url": "https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2014_LoL_esports_match_data_from_OraclesElixir_20201011.csv",
+    "sha256": "e88d97fc848371ab4b3fb3e13538dd412e41b4c7f7256900241566946a30c510",
+    "bytes": 5843847,
+    "publisher": "Oracle's Elixir; third-party public mirror",
+    "originalPublisher": "https://lol.timsevenhuysen.com/matchdata/",
+    "accessedAt": "2026-09-13",
+    "note": "Mirrors preserve attributed data but are not independently authenticated by the publisher. Raw CSVs ignored; normalized snapshots committed."
+  },
   "2015": {
     "url": "https://raw.githubusercontent.com/victoraccete/competitive-league-analysis/master/original_data/2015_LoL_esports_match_data_from_OraclesElixir_20201011.csv",
     "sha256": "70369d7e31d3f751d96087bcd3713dad204d50fbf1c0b2faaec17e5ae4b6c5c6",

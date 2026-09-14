@@ -888,6 +888,26 @@
       "FRONTLINE"
     ]
   },
+  "Rammus": {
+    "id": "Rammus",
+    "name": "Rammus",
+    "tags": [
+      "FRONTLINE",
+      "ENGAGE",
+      "CONTROL",
+      "MOBILITY"
+    ]
+  },
+  "Xerath": {
+    "id": "Xerath",
+    "name": "Xerath",
+    "tags": [
+      "AP_DAMAGE",
+      "POKE",
+      "CONTROL",
+      "SCALING"
+    ]
+  },
   "Zed": {
     "id": "Zed",
     "name": "Zed",

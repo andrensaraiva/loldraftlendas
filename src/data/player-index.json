@@ -1,5 +1,365 @@
 [
   {
+    "id": "looper-2014-ssw",
+    "playerName": "Looper",
+    "worldsYear": 2014,
+    "team": "SSW"
+  },
+  {
+    "id": "dandy-2014-ssw",
+    "playerName": "DanDy",
+    "worldsYear": 2014,
+    "team": "SSW"
+  },
+  {
+    "id": "pawn-2014-ssw",
+    "playerName": "PawN",
+    "worldsYear": 2014,
+    "team": "SSW"
+  },
+  {
+    "id": "imp-2014-ssw",
+    "playerName": "imp",
+    "worldsYear": 2014,
+    "team": "SSW"
+  },
+  {
+    "id": "mata-2014-ssw",
+    "playerName": "Mata",
+    "worldsYear": 2014,
+    "team": "SSW"
+  },
+  {
+    "id": "acorn-2014-ssb",
+    "playerName": "Acorn",
+    "worldsYear": 2014,
+    "team": "SSB"
+  },
+  {
+    "id": "spirit-2014-ssb",
+    "playerName": "Spirit",
+    "worldsYear": 2014,
+    "team": "SSB"
+  },
+  {
+    "id": "dade-2014-ssb",
+    "playerName": "dade",
+    "worldsYear": 2014,
+    "team": "SSB"
+  },
+  {
+    "id": "deft-2014-ssb",
+    "playerName": "Deft",
+    "worldsYear": 2014,
+    "team": "SSB"
+  },
+  {
+    "id": "heart-2014-ssb",
+    "playerName": "Heart",
+    "worldsYear": 2014,
+    "team": "SSB"
+  },
+  {
+    "id": "save-2014-njws",
+    "playerName": "Save",
+    "worldsYear": 2014,
+    "team": "NJWS"
+  },
+  {
+    "id": "watch-2014-njws",
+    "playerName": "Watch",
+    "worldsYear": 2014,
+    "team": "NJWS"
+  },
+  {
+    "id": "ggoong-2014-njws",
+    "playerName": "Ggoong",
+    "worldsYear": 2014,
+    "team": "NJWS"
+  },
+  {
+    "id": "zefa-2014-njws",
+    "playerName": "Zefa",
+    "worldsYear": 2014,
+    "team": "NJWS"
+  },
+  {
+    "id": "gorilla-2014-njws",
+    "playerName": "GorillA",
+    "worldsYear": 2014,
+    "team": "NJWS"
+  },
+  {
+    "id": "korol-2014-edg",
+    "playerName": "Korol",
+    "worldsYear": 2014,
+    "team": "EDG"
+  },
+  {
+    "id": "clearlove-2014-edg",
+    "playerName": "Clearlove",
+    "worldsYear": 2014,
+    "team": "EDG"
+  },
+  {
+    "id": "u-2014-edg",
+    "playerName": "U",
+    "worldsYear": 2014,
+    "team": "EDG"
+  },
+  {
+    "id": "namei-2014-edg",
+    "playerName": "NaMei",
+    "worldsYear": 2014,
+    "team": "EDG"
+  },
+  {
+    "id": "fzzf-2014-edg",
+    "playerName": "FZZF",
+    "worldsYear": 2014,
+    "team": "EDG"
+  },
+  {
+    "id": "cola-2014-shrc",
+    "playerName": "Cola",
+    "worldsYear": 2014,
+    "team": "SHRC"
+  },
+  {
+    "id": "insec-2014-shrc",
+    "playerName": "inSec",
+    "worldsYear": 2014,
+    "team": "SHRC"
+  },
+  {
+    "id": "corn-2014-shrc",
+    "playerName": "Corn",
+    "worldsYear": 2014,
+    "team": "SHRC"
+  },
+  {
+    "id": "uzi-2014-shrc",
+    "playerName": "Uzi",
+    "worldsYear": 2014,
+    "team": "SHRC"
+  },
+  {
+    "id": "zero-2014-shrc",
+    "playerName": "Zero",
+    "worldsYear": 2014,
+    "team": "SHRC"
+  },
+  {
+    "id": "gogoing-2014-omg",
+    "playerName": "Gogoing",
+    "worldsYear": 2014,
+    "team": "OMG"
+  },
+  {
+    "id": "loveling-2014-omg",
+    "playerName": "LoveLing",
+    "worldsYear": 2014,
+    "team": "OMG"
+  },
+  {
+    "id": "cool-2014-omg",
+    "playerName": "Cool",
+    "worldsYear": 2014,
+    "team": "OMG"
+  },
+  {
+    "id": "san-2014-omg",
+    "playerName": "san",
+    "worldsYear": 2014,
+    "team": "OMG"
+  },
+  {
+    "id": "cloud-2014-omg",
+    "playerName": "Cloud",
+    "worldsYear": 2014,
+    "team": "OMG"
+  },
+  {
+    "id": "wickd-2014-all",
+    "playerName": "Wickd",
+    "worldsYear": 2014,
+    "team": "ALL"
+  },
+  {
+    "id": "shook-2014-all",
+    "playerName": "Shook",
+    "worldsYear": 2014,
+    "team": "ALL"
+  },
+  {
+    "id": "froggen-2014-all",
+    "playerName": "Froggen",
+    "worldsYear": 2014,
+    "team": "ALL"
+  },
+  {
+    "id": "tabzz-2014-all",
+    "playerName": "Tabzz",
+    "worldsYear": 2014,
+    "team": "ALL"
+  },
+  {
+    "id": "nyph-2014-all",
+    "playerName": "Nyph",
+    "worldsYear": 2014,
+    "team": "ALL"
+  },
+  {
+    "id": "soaz-2014-fnc",
+    "playerName": "sOAZ",
+    "worldsYear": 2014,
+    "team": "FNC"
+  },
+  {
+    "id": "cyanide-2014-fnc",
+    "playerName": "Cyanide",
+    "worldsYear": 2014,
+    "team": "FNC"
+  },
+  {
+    "id": "xpeke-2014-fnc",
+    "playerName": "xPeke",
+    "worldsYear": 2014,
+    "team": "FNC"
+  },
+  {
+    "id": "rekkles-2014-fnc",
+    "playerName": "Rekkles",
+    "worldsYear": 2014,
+    "team": "FNC"
+  },
+  {
+    "id": "yellowstar-2014-fnc",
+    "playerName": "YellOwStaR",
+    "worldsYear": 2014,
+    "team": "FNC"
+  },
+  {
+    "id": "fredy122-2014-sk",
+    "playerName": "fredy122",
+    "worldsYear": 2014,
+    "team": "SK"
+  },
+  {
+    "id": "gilius-2014-sk",
+    "playerName": "Gilius",
+    "worldsYear": 2014,
+    "team": "SK"
+  },
+  {
+    "id": "jesiz-2014-sk",
+    "playerName": "Jesiz",
+    "worldsYear": 2014,
+    "team": "SK"
+  },
+  {
+    "id": "candypanda-2014-sk",
+    "playerName": "CandyPanda",
+    "worldsYear": 2014,
+    "team": "SK"
+  },
+  {
+    "id": "nrated-2014-sk",
+    "playerName": "nRated",
+    "worldsYear": 2014,
+    "team": "SK"
+  },
+  {
+    "id": "dyrus-2014-tsm",
+    "playerName": "Dyrus",
+    "worldsYear": 2014,
+    "team": "TSM"
+  },
+  {
+    "id": "amazing-2014-tsm",
+    "playerName": "Amazing",
+    "worldsYear": 2014,
+    "team": "TSM"
+  },
+  {
+    "id": "bjergsen-2014-tsm",
+    "playerName": "Bjergsen",
+    "worldsYear": 2014,
+    "team": "TSM"
+  },
+  {
+    "id": "wildturtle-2014-tsm",
+    "playerName": "WildTurtle",
+    "worldsYear": 2014,
+    "team": "TSM"
+  },
+  {
+    "id": "lustboy-2014-tsm",
+    "playerName": "Lustboy",
+    "worldsYear": 2014,
+    "team": "TSM"
+  },
+  {
+    "id": "balis-2014-c9",
+    "playerName": "BalIs",
+    "worldsYear": 2014,
+    "team": "C9"
+  },
+  {
+    "id": "meteos-2014-c9",
+    "playerName": "Meteos",
+    "worldsYear": 2014,
+    "team": "C9"
+  },
+  {
+    "id": "hai-2014-c9",
+    "playerName": "Hai",
+    "worldsYear": 2014,
+    "team": "C9"
+  },
+  {
+    "id": "sneaky-2014-c9",
+    "playerName": "Sneaky",
+    "worldsYear": 2014,
+    "team": "C9"
+  },
+  {
+    "id": "lemonnation-2014-c9",
+    "playerName": "LemonNation",
+    "worldsYear": 2014,
+    "team": "C9"
+  },
+  {
+    "id": "godlike-2014-lmq",
+    "playerName": "GodLike",
+    "worldsYear": 2014,
+    "team": "LMQ"
+  },
+  {
+    "id": "noname-2014-lmq",
+    "playerName": "NoName",
+    "worldsYear": 2014,
+    "team": "LMQ"
+  },
+  {
+    "id": "xiaoweixiao-2014-lmq",
+    "playerName": "XiaoWeiXiao",
+    "worldsYear": 2014,
+    "team": "LMQ"
+  },
+  {
+    "id": "vasilii-2014-lmq",
+    "playerName": "Vasilii",
+    "worldsYear": 2014,
+    "team": "LMQ"
+  },
+  {
+    "id": "mor-2014-lmq",
+    "playerName": "Mor",
+    "worldsYear": 2014,
+    "team": "LMQ"
+  },
+  {
     "id": "marin-2015-skt",
     "playerName": "MaRin",
     "worldsYear": 2015,

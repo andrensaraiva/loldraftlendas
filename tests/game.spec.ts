@@ -12,12 +12,12 @@ function challengePath(
   const challenge = encodeChallenge({
     version: CHALLENGE_VERSION,
     seed,
-    datasetVersion: 'multi-era-v1.5.0',
+    datasetVersion: 'multi-era-v1.6.0',
     gameMode,
     gamePlan,
     availability: {
       startingExchanges: 3,
-      activeYears: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
+      activeYears: [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
       activeRegionGroups: [
         'KOREA',
         'CHINA',
@@ -71,7 +71,7 @@ async function draft(
 }
 
 test('Almanac hides numeric guidance and reveals it only after the campaign', async ({ page }) => {
-  await draft(page, '000000000000000a', 'almanac');
+  await draft(page, '0000000000000003', 'almanac');
   await expect(page.locator('.almanac-lock')).toContainText('serão revelados');
   await expect(page.locator('.composition-panel .comp-art b')).toHaveText(Array(5).fill('?'));
   await page.screenshot({
@@ -143,7 +143,7 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
 }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
-  await draft(page, '000000000000000a');
+  await draft(page, '0000000000000003');
   for (let i = 1; i <= 5; i++) {
     await page.getByRole('tab', { name: `Jogo ${i}` }).click();
     await expect(page.locator('.comp-champion')).toHaveCount(5);
@@ -162,7 +162,7 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   expect(download.suggestedFilename()).toBe('draft-lendas-campeao-mundial.png');
   await expect(page.locator('.share-status')).toContainText('Card baixado');
   await expect(page.locator('.campaign-series')).toHaveCount(8);
-  await expect(page.locator('.history-games button')).toHaveCount(24);
+  await expect(page.locator('.history-games button')).toHaveCount(20);
   await expect(page.locator('.campaign-series small')).toHaveText([
     'BO1',
     'BO1',
@@ -186,7 +186,7 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
 test('quick mode eliminates after three Swiss losses and preserves every game', async ({
   page,
 }) => {
-  await draft(page, '0000000000000000');
+  await draft(page, '0000000000000009');
   await page.getByRole('button', { name: 'Resultado rápido' }).click();
   await page.getByRole('button', { name: '4×', exact: true }).click();
   await page.getByRole('button', { name: 'Entrar no Worlds' }).click();
@@ -209,7 +209,7 @@ test('quick mode eliminates after three Swiss losses and preserves every game', 
 test('detailed playback updates KDA, pauses, changes speed/mode and retains the same result', async ({
   page,
 }) => {
-  await draft(page);
+  await draft(page, '0000000000000009');
   await page.getByRole('button', { name: 'Entrar no Worlds' }).click();
   await expect(page.locator('.match-forecast')).toBeVisible({ timeout: 7000 });
   await expect(page.locator('.match-forecast')).toContainText('chance para suas lendas');

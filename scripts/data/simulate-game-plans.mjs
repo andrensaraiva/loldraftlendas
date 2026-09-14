@@ -162,7 +162,7 @@ try {
     `${JSON.stringify(
       {
         version: 'game-plans-v1',
-        datasetVersion: 'multi-era-v1.5.0',
+        datasetVersion: 'multi-era-v1.6.0',
         generatedAt: '2026-09-13',
         seedScheme: 'LCG32 with independent draft, pick, opponent and match streams',
         totalCampaigns: samplesPerScenario * scenarios.length,

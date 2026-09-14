@@ -10,9 +10,10 @@ from build_worlds_2017 import ROOT, ROLES, NUMBERS, METRICS, WEIGHTS, aggregate,
 
 OUT = ROOT/'data/research/multi-era'
 RAW = OUT/'raw'
-VERSION = 'multi-era-v1.5.0'
-DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.5.0'
+VERSION = 'multi-era-v1.6.0'
+DRAFT_REGION_GROUP_VERSION = 'draft-region-groups-v1.6.0'
 CONFIG = {
+ 2014: ('09-18', 78, '4.14.2', {'LCK':['Samsung White','Samsung Blue','NaJin White Shield'], 'LPL':['EDward Gaming','Royal Club','Oh My God'], 'EU LCS':['Alliance','Fnatic','SK Gaming'], 'NA LCS':['Team SoloMid','Cloud9','LMQ']}),
  2015: ('10-01', 73, '5.18.1', {'LCK':['SK Telecom T1','ROX Tigers','KT Rolster'], 'LPL':['EDward Gaming','Invictus Gaming','LGD Gaming'], 'EU LCS':['Fnatic','Origen','H2k-Gaming'], 'NA LCS':['Cloud9','Counter Logic Gaming','Team SoloMid']}),
  2016: ('09-29', 77, '6.18.1', {'LCK':['SK Telecom T1','ROX Tigers','Samsung Galaxy'], 'LPL':['EDward Gaming','Royal Never Give Up','I May'], 'EU LCS':['G2 Esports','H2k-Gaming','Splyce'], 'NA LCS':['Team SoloMid','Counter Logic Gaming','Cloud9']}),
  2017: ('10-05', 80, '7.18.1', {'LCK':['SK Telecom T1','Samsung Galaxy','Longzhu Gaming'], 'LPL':['Royal Never Give Up','Team WE','EDward Gaming'], 'EU LCS':['Fnatic','G2 Esports','Misfits Gaming'], 'NA LCS':['Cloud9','Team SoloMid','Immortals']}),
@@ -25,9 +26,9 @@ CONFIG = {
  2024: ('10-03', 82, '14.18.1', {'LCK':['Hanwha Life Esports','Gen.G','Dplus Kia','T1'], 'LPL':['Bilibili Gaming','Top Esports','LNG Esports','Weibo Gaming'], 'LEC':['G2 Esports','Fnatic','MAD Lions KOI'], 'LCS':['FlyQuest','Team Liquid']}),
  2025: ('10-15', 80, '15.20.1', {'LCK':['Gen.G','Hanwha Life Esports','KT Rolster','T1'], 'LPL':["Anyone's Legend",'Bilibili Gaming','Top Esports'], 'LEC':['G2 Esports','Movistar KOI','Fnatic'], 'LTA N':['FlyQuest','100 Thieves'], 'LTA S':['Vivo Keyd Stars'], 'LCP':['CTBC Flying Oyster','PSG Talon','Team Secret Whales']}),
 }
-SHORT = {'SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','Afreeca Freecs':'AF','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','I May':'IMAY','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Team Vitality':'VIT','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','DWG KIA':'DK','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions':'MAD','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE',"Anyone's Legend":'AL','Movistar KOI':'MKOI','Vivo Keyd Stars':'VKS','CTBC Flying Oyster':'CFO','PSG Talon':'PSG','Team Secret Whales':'TSW'}
+SHORT = {'Samsung White':'SSW','Samsung Blue':'SSB','NaJin White Shield':'NJWS','Royal Club':'SHRC','Oh My God':'OMG','Alliance':'ALL','SK Gaming':'SK','LMQ':'LMQ','SK Telecom T1':'SKT','Samsung Galaxy':'SSG','Longzhu Gaming':'LZ','ROX Tigers':'KOO','KT Rolster':'KT','Afreeca Freecs':'AF','EDward Gaming':'EDG','Invictus Gaming':'IG','LGD Gaming':'LGD','I May':'IMAY','Fnatic':'FNC','Origen':'OG','H2k-Gaming':'H2K','Team Vitality':'VIT','Cloud9':'C9','Counter Logic Gaming':'CLG','Team SoloMid':'TSM','Royal Never Give Up':'RNG','Team WE':'WE','G2 Esports':'G2','Misfits Gaming':'MSF','Immortals':'IMT','Griffin':'GRF','DAMWON Gaming':'DWG','DWG KIA':'DK','FunPlus Phoenix':'FPX','Splyce':'SPY','Team Liquid':'TL','Clutch Gaming':'CG','Top Esports':'TES','JD Gaming':'JDG','Suning':'SN','FlyQuest':'FLY','Rogue':'RGE','Dplus Kia':'DK','Gen.G':'GEN','100 Thieves':'100T','Evil Geniuses':'EG','Bilibili Gaming':'BLG','LNG Esports':'LNG','Weibo Gaming':'WBG','MAD Lions':'MAD','MAD Lions KOI':'MAD','Team BDS':'BDS','Hanwha Life Esports':'HLE',"Anyone's Legend":'AL','Movistar KOI':'MKOI','Vivo Keyd Stars':'VKS','CTBC Flying Oyster':'CFO','PSG Talon':'PSG','Team Secret Whales':'TSW'}
 SHORT_YEAR = {(2016,'ROX Tigers'):'ROX'}
-ALIASES = {(2015,'ROX Tigers'):'KOO Tigers', (2022,'Dplus Kia'):'DWG KIA', (2023,'MAD Lions KOI'):'MAD Lions'}
+ALIASES = {(2014,'Royal Club'):'Star Horn Royal Club', (2014,'Oh My God'):'OMG', (2015,'ROX Tigers'):'KOO Tigers', (2022,'Dplus Kia'):'DWG KIA', (2023,'MAD Lions KOI'):'MAD Lions'}
 
 def ingest(year, snapshot):
     target = OUT/f'matches-{year}.json'
@@ -50,8 +51,8 @@ def ingest(year, snapshot):
             world=league in ('WCS','WLDs') and f'{year}-{start}'<=date<f'{year}-11-30'
             domestic=league in regions and date<f'{year}-{start}' and (year>=2025 or split in ('Summer','Spring','Winter',''))
             msi=league=='MSI' or league=='WCS' and f'{year}-05-01'<=date<f'{year}-06-01'
-            academy=year==2021 and league in ('NLC','EM') and date<f'{year}-{start}'
-            if not (world or domestic or msi or academy):continue
+            feeder=year==2021 and league in ('NLC','EM') and date<f'{year}-{start}' or year==2014 and league=='EU CS' and date<f'{year}-{start}'
+            if not (world or domestic or msi or feeder):continue
             phase='WORLDS' if world else 'MSI' if msi else f'{league}_{split.upper() or "QUALIFIER"}'
             source_gameid=r.get('gameid','')
             row={k:r.get(k,'') for k in ['date','champion','side','patch','url']}
@@ -124,6 +125,9 @@ def build_year(year, snapshot=False):
                 selected.sort(key=lambda k:(champ_aggs[k]['firstAppearance'],k[-1]))
                 fallback_phases=[f'{league}_SUMMER',f'{league}_QUALIFIER','MSI',f'{league}_SPRING',f'{league}_WINTER']
                 fallback_teams={key[2]}
+                if year==2014 and player.casefold()=='gilius':
+                    fallback_phases=['EU CS_SUMMER']+fallback_phases
+                    fallback_teams.update({'SK Gaming Prime','Unicorns Of Love'})
                 if year==2021 and player.casefold()=='bean':
                     fallback_phases=['EM_SUMMER','NLC_SUMMER','EM_QUALIFIER','NLC_QUALIFIER','EM_SPRING','NLC_SPRING']+fallback_phases
                     fallback_teams.add('Fnatic Rising')
@@ -133,7 +137,10 @@ def build_year(year, snapshot=False):
                     fallback=[k for k in by_champ if k[0]==f'{phase}_{year}' and k[1]==key[1] and k[2] in fallback_teams and k[3].casefold()==key[3].casefold() and k[-1] not in {s[-1] for s in selected}]
                     fallback.sort(key=lambda k:(-champ_aggs[k]['games'],-int(champ_aggs[k]['lastAppearance'][:10].replace('-','')),k[-1]))
                     selected+=fallback[:max(0,5-len(selected))]
-                supplements = json.loads((OUT/'season-supplement-2015.json').read_text(encoding='utf-8'))['players'].get(player,[]) if year==2015 and league=='LPL' else []
+                supplement_file=OUT/f'season-supplement-{year}.json'
+                supplement_data=json.loads(supplement_file.read_text(encoding='utf-8')) if supplement_file.exists() else {}
+                supplement_players={name.casefold():values for name,values in supplement_data.get('players',{}).items()}
+                supplements=supplement_players.get(player.casefold(),[])
                 if len(selected)+len(supplements)<5:
                     missing.append(dict(playerId=pid,region=region,role=role,observed=len(selected),reason='Fewer than five documented unique champions in available Worlds/season records.'))
                     continue
@@ -157,8 +164,10 @@ def build_year(year, snapshot=False):
                 for extra in supplements[:5-len(slots)]:
                     i=len(slots)+1;eid=f'{pid}-g{i}';cid=extra['championId'];share=extra['games']/extra['seasonGames'] if extra['seasonGames'] else 0
                     C=50*min(1,math.sqrt(share/.5));hs=.85*A+.15*C
-                    stats=dict(games=extra['games'],winRate=extra['wins']/extra['games'],kda=extra['kda'],confidence=0,event='LPL_SEASON_2015',sourceUrl=extra['sourceUrl'])
-                    evidence[eid]=dict(playerId=pid,championId=cid,historicalScore=hs,role=role,year=year,region=region,event='LPL_SEASON_2015',stats=stats,confidenceScore=0,availableWeight=0,components=dict(A=A,B=A,C=C),sourceId='golgg-supplement-2015',methodVersion=VERSION,observation=extra,firstAppearance=extra['firstAppearance'],note='Aggregate-only or partial season evidence: no inferred match metrics; B=A. Selection among documented available champions.')
+                    supplement_event=extra.get('event',f'SEASON_SUPPLEMENT_{year}')
+                    supplement_source=supplement_data.get('sourceId','golgg-supplement-2015' if year==2015 else f'season-supplement-{year}')
+                    stats=dict(games=extra['games'],winRate=extra['wins']/extra['games'],kda=extra['kda'],confidence=0,event=supplement_event,sourceUrl=extra['sourceUrl'])
+                    evidence[eid]=dict(playerId=pid,championId=cid,historicalScore=hs,role=role,year=year,region=region,event=supplement_event,stats=stats,confidenceScore=0,availableWeight=0,components=dict(A=A,B=A,C=C),sourceId=supplement_source,methodVersion=VERSION,observation=extra,firstAppearance=extra['firstAppearance'],note='Aggregate-only or partial season evidence: no inferred match metrics; B=A. Selection among documented available champions.')
                     slots.append(dict(game=i,championId=cid,rating=0,gameRating=0,historicalScore=hs,source='SEASON_DATA',evidenceId=eid,stats=stats))
                 players.append(dict(id=pid,playerName=player,team=short,teamName=ALIASES.get((year,team),team),region=region,canonicalRegion=league,historicalLeague=league,worldsYear=year,role=role,profile=f"{overall['games']} jogos no Worlds",worldsStats=dict(games=overall['games'],winRate=overall['winRate'],kda=overall['kda']),championPool=slots))
     write(OUT/f'evidence-{year}.json',evidence,True)

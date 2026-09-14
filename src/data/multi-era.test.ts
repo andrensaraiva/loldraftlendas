@@ -12,11 +12,11 @@ import frozenEvidence from '../../data/research/worlds-2017/evidence.json';
 import draftRegionManifest from './draft-region-groups.json';
 
 describe('production evidence and global calibration', () => {
-  it('has 725 real player versions and five documented period-valid champions each', () => {
+  it('has 785 real player versions and five documented period-valid champions each', () => {
     validateData(players, champions);
-    expect(players).toHaveLength(725);
+    expect(players).toHaveLength(785);
     const years = [...new Set(players.map((p) => p.worldsYear))];
-    expect(years).toEqual([2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]);
+    expect(years).toEqual([2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]);
     for (const year of years) {
       const evidence = JSON.parse(
         readFileSync(`data/research/multi-era/evidence-${year}.json`, 'utf8'),
@@ -78,7 +78,7 @@ describe('production evidence and global calibration', () => {
             ).length,
           ).toBeGreaterThanOrEqual(3);
     }
-    expect(eligiblePools(players, draftRegionManifest as DraftRegionManifest)).toHaveLength(215);
+    expect(eligiblePools(players, draftRegionManifest as DraftRegionManifest)).toHaveLength(235);
     const groups2021 = draftRegionManifest.groups.find((entry) => entry.year === 2021)!.groups;
     expect(groups2021.map((group) => group.id)).toEqual([
       'KOREA',

@@ -25,11 +25,12 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 - ✅ **D1 Worlds 2021:** matches, rosters, evidências, assets, recalibração e gates foram concluídos no dataset `multi-era-v1.3.0`.
 - ✅ **D3 Worlds 2018:** 60 jogadores, 300 slots, 72 pares de assets e todos os gates foram concluídos no dataset recalibrado `multi-era-v1.4.0`.
 - ✅ **D4 Worlds 2016:** 60 jogadores, 300 slots, 52 pares de assets e todos os gates foram concluídos no dataset recalibrado `multi-era-v1.5.0`.
+- ✅ **D5 Worlds 2014:** 60 jogadores, 300 slots, 78 partidas e todos os gates foram concluídos no dataset recalibrado `multi-era-v1.6.0`.
 - ✅ **2.3 Modo Almanaque:** ratings, força, probabilidade e detalhes numéricos ficam ocultos durante a campanha e são revelados ao final; save, desafio, compartilhamento e analytics preservam o modo.
 - ✅ **2.4 Plano de jogo:** Agressão, Teamfight, Controle/Pick e Escala usam as tags existentes, efeito explicado e limitado, persistência completa e calibração reproduzível de 100 mil campanhas.
 - ✅ **2.5 Filtros de desafio:** edição e grupo podem ser combinados na home; recortes vazios são bloqueados e o snapshot exato segue no save/link.
 - ✅ **Pacotes locais de produto 3.1–3.4:** desafio diário, PWA, arquivo público e histórico local estão concluídos.
-- ⏭️ **Próximo pacote de dados:** D5, backfill de 2014.
+- ⏭️ **Próximo pacote de dados:** D6, pesquisa de viabilidade e backfill de 2013.
 - 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
 
 Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila atual precisa de duas trilhas: **confiabilidade/dados** e **produto/retenção**.
@@ -50,7 +51,7 @@ A listagem “7a0 - Futebol Draft de Lendas” no Google Play não foi tratada c
 
 O loop principal do 7a0 é curto: escolher formação, estilo e dificuldade, sortear seleção + edição de Copa, escolher um jogador elegível, completar onze posições e simular sete partidas. A meta memorável é o “7 a 0”: ser campeão vencendo os sete jogos sem sofrer gols.
 
-A página inicial anuncia atualmente **56 seleções, 302 elencos e 7.026 jogadores**. Algumas páginas institucionais ainda exibem contagens anteriores — 52 seleções e aproximadamente 5.700 jogadores —, sinal de deriva entre catálogo e conteúdo editorial. A comparação usa a contagem mais recente da home e não trata esses números como equivalentes às 725 versões de jogadores e aos 3.625 slots de campeão do Draft Lendas.
+A página inicial anuncia atualmente **56 seleções, 302 elencos e 7.026 jogadores**. Algumas páginas institucionais ainda exibem contagens anteriores — 52 seleções e aproximadamente 5.700 jogadores —, sinal de deriva entre catálogo e conteúdo editorial. A comparação usa a contagem mais recente da home e não trata esses números como equivalentes às 785 versões de jogadores e aos 3.925 slots de campeão do Draft Lendas.
 
 Além do modo solo, o site apresenta:
 
@@ -111,7 +112,7 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 | Fantasia central       | Misturar lendas de Copas e montar um XI                     | Misturar jogadores de dez Worlds e montar cinco posições com pools G1–G5           | **Paridade com identidade própria.** Os pools por jogo são uma diferenciação estratégica forte.            |
 | Acesso                 | Gratuito, navegador, celular e solo sem conta               | Frontend estático, responsivo, instalável e sem login de jogador                   | **Paridade.** PWA e recuperação offline da campanha ativa concluídas.                                      |
 | Draft                  | Um elenco sorteado por turno, formação e rerolls            | Três candidatos por posição; ano, grupo regional e três trocas                     | **Vantagem de clareza e decisão imediata.**                                                                |
-| Cobertura histórica    | 1950–2026, catálogo amplo e navegável                       | 2015–2025; quatro anos de 2011–2025 incompletos                                    | **Lacuna de amplitude**, compensada por evidência e assets por patch.                                      |
+| Cobertura histórica    | 1950–2026, catálogo amplo e navegável                       | 2014–2025; três anos de 2011–2025 incompletos                                      | **Lacuna de amplitude**, compensada por evidência e assets por patch.                                      |
 | Dificuldade            | Clássico e Almanaque                                        | Clássico e Almanaque com revelação final                                           | **Paridade implementada**, pendente de validação com usuários.                                             |
 | Agência tática         | Formação e estilo                                           | Composição automática por tags; sistema de estilo foi deliberadamente deixado fora | **Lacuna relevante.** A fundação já existe nas tags `EARLY_GAME`, `TEAMFIGHT`, `SCALING`, `PICK` e `POKE`. |
 | Torneio                | Sete jogos, placar e artilheiros                            | Suíço, BO1/BO3, playoffs BO5, modo detalhado/rápido, KDA e histórico               | **Vantagem de profundidade narrativa.**                                                                    |
@@ -184,7 +185,8 @@ Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários c
 |    D2 | Revisão externa dos dez anos validados           | P0 Dados   | L contínuo  | Pode avançar independentemente da UI social.                                                |
 |    D3 | Backfill de 2018 — concluído                     | P1 Dados   | L           | Matches, rosters, evidências, assets, recalibração, reprodução e gates passaram.            |
 |    D4 | Backfill de 2016 — concluído                     | P1 Dados   | L           | 60 jogadores, 300 slots, 52 pares de assets e todos os gates passaram.                       |
-|    D5 | Backfill de 2014; depois 2013, 2012 e 2011       | P1 Dados   | XL contínuo | Ordem posterior deve considerar disponibilidade/qualidade de fontes, não apenas cronologia. |
+|    D5 | Backfill de 2014 — concluído                     | P1 Dados   | XL          | 60 jogadores, 300 slots, 78 partidas e todos os gates passaram.                             |
+|    D6 | Pesquisar 2013; depois 2012 e 2011               | P1 Dados   | XL contínuo | A continuidade depende de fontes verificáveis anteriores ao início da cobertura OE em 2014. |
 
 ### Próximo — transformar compartilhamento em competição justa
 

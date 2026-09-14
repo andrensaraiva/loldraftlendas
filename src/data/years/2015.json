@@ -70,8 +70,8 @@
       {
         "game": 4,
         "championId": "Darius",
-        "rating": 92,
-        "gameRating": 92,
+        "rating": 91,
+        "gameRating": 91,
         "historicalScore": 69.87549559423385,
         "source": "WORLDS_DATA",
         "evidenceId": "marin-2015-skt-g4",
@@ -486,8 +486,8 @@
       {
         "game": 4,
         "championId": "TahmKench",
-        "rating": 86,
-        "gameRating": 86,
+        "rating": 85,
+        "gameRating": 85,
         "historicalScore": 56.564585761525294,
         "source": "WORLDS_DATA",
         "evidenceId": "wolf-2015-skt-g4",
@@ -503,8 +503,8 @@
       {
         "game": 5,
         "championId": "Shen",
-        "rating": 88,
-        "gameRating": 88,
+        "rating": 87,
+        "gameRating": 87,
         "historicalScore": 60.94654207381192,
         "source": "WORLDS_DATA",
         "evidenceId": "wolf-2015-skt-g5",
@@ -955,8 +955,8 @@
       {
         "game": 1,
         "championId": "Thresh",
-        "rating": 83,
-        "gameRating": 83,
+        "rating": 82,
+        "gameRating": 82,
         "historicalScore": 50.40981910246199,
         "source": "WORLDS_DATA",
         "evidenceId": "gorilla-2015-koo-g1",
@@ -989,8 +989,8 @@
       {
         "game": 3,
         "championId": "Morgana",
-        "rating": 82,
-        "gameRating": 82,
+        "rating": 81,
+        "gameRating": 81,
         "historicalScore": 48.484830956504055,
         "source": "WORLDS_DATA",
         "evidenceId": "gorilla-2015-koo-g3",
@@ -1543,8 +1543,8 @@
       {
         "game": 5,
         "championId": "Shen",
-        "rating": 89,
-        "gameRating": 89,
+        "rating": 88,
+        "gameRating": 88,
         "historicalScore": 62.708918015468214,
         "source": "WORLDS_DATA",
         "evidenceId": "piccaboo-2015-kt-g5",
@@ -1657,7 +1657,7 @@
           "winRate": 1.0,
           "kda": 20,
           "confidence": 0,
-          "event": "LPL_SEASON_2015",
+          "event": "SEASON_SUPPLEMENT_2015",
           "sourceUrl": "https://gol.gg/champion/champion-matchlist/79/season-S5/split-Summer/tournament-/"
         }
       }
@@ -1751,8 +1751,8 @@
       {
         "game": 5,
         "championId": "Sejuani",
-        "rating": 90,
-        "gameRating": 90,
+        "rating": 89,
+        "gameRating": 89,
         "historicalScore": 63.117018305080755,
         "source": "SEASON_DATA",
         "evidenceId": "clearlove-2015-edg-g5",
@@ -1995,8 +1995,8 @@
       {
         "game": 1,
         "championId": "Thresh",
-        "rating": 91,
-        "gameRating": 91,
+        "rating": 90,
+        "gameRating": 90,
         "historicalScore": 66.83608519128715,
         "source": "WORLDS_DATA",
         "evidenceId": "meiko-2015-edg-g1",
@@ -2063,8 +2063,8 @@
       {
         "game": 5,
         "championId": "Morgana",
-        "rating": 87,
-        "gameRating": 87,
+        "rating": 86,
+        "gameRating": 86,
         "historicalScore": 58.74454126803727,
         "source": "WORLDS_DATA",
         "evidenceId": "meiko-2015-edg-g5",
@@ -2167,8 +2167,8 @@
       {
         "game": 5,
         "championId": "Maokai",
-        "rating": 84,
-        "gameRating": 84,
+        "rating": 83,
+        "gameRating": 83,
         "historicalScore": 51.656591752555784,
         "source": "SEASON_DATA",
         "evidenceId": "zz1tai-2015-ig-g5",
@@ -2177,7 +2177,7 @@
           "winRate": 0.625,
           "kda": 4.9,
           "confidence": 0,
-          "event": "LPL_SEASON_2015",
+          "event": "SEASON_SUPPLEMENT_2015",
           "sourceUrl": "https://gol.gg/players/player-stats/160/season-S5/split-Summer/tournament-ALL/champion-ALL/"
         }
       }
@@ -2341,8 +2341,8 @@
       {
         "game": 3,
         "championId": "Lulu",
-        "rating": 83,
-        "gameRating": 83,
+        "rating": 82,
+        "gameRating": 82,
         "historicalScore": 49.93902911830702,
         "source": "WORLDS_DATA",
         "evidenceId": "rookie-2015-ig-g3",
@@ -2489,7 +2489,7 @@
           "winRate": 0.8571428571428571,
           "kda": 8.3,
           "confidence": 0,
-          "event": "LPL_SEASON_2015",
+          "event": "SEASON_SUPPLEMENT_2015",
           "sourceUrl": "https://gol.gg/players/player-stats/161/season-ALL/split-ALL/tournament-LPL%20Summer%202015/champion-ALL/"
         }
       }
@@ -2619,8 +2619,8 @@
       {
         "game": 1,
         "championId": "Malphite",
-        "rating": 83,
-        "gameRating": 83,
+        "rating": 82,
+        "gameRating": 82,
         "historicalScore": 49.34716818508337,
         "source": "WORLDS_DATA",
         "evidenceId": "acorn-2015-lgd-g1",
@@ -2680,7 +2680,7 @@
           "winRate": 0.5,
           "kda": 5.5,
           "confidence": 0,
-          "event": "LPL_SEASON_2015",
+          "event": "SEASON_SUPPLEMENT_2015",
           "sourceUrl": "https://gol.gg/players/player-stats/41/season-ALL/split-ALL/tournament-LPL%20Summer%202015/"
         }
       },
@@ -2697,7 +2697,7 @@
           "winRate": 0.6666666666666666,
           "kda": 4.6,
           "confidence": 0,
-          "event": "LPL_SEASON_2015",
+          "event": "SEASON_SUPPLEMENT_2015",
           "sourceUrl": "https://gol.gg/players/player-stats/41/season-ALL/split-ALL/tournament-LPL%20Summer%202015/"
         }
       }
@@ -3190,8 +3190,8 @@
       {
         "game": 4,
         "championId": "Gnar",
-        "rating": 91,
-        "gameRating": 91,
+        "rating": 90,
+        "gameRating": 90,
         "historicalScore": 67.51637926985397,
         "source": "WORLDS_DATA",
         "evidenceId": "huni-2015-fnc-g4",
@@ -3381,8 +3381,8 @@
       {
         "game": 3,
         "championId": "Viktor",
-        "rating": 90,
-        "gameRating": 90,
+        "rating": 89,
+        "gameRating": 89,
         "historicalScore": 64.66853856915469,
         "source": "WORLDS_DATA",
         "evidenceId": "febiven-2015-fnc-g3",
@@ -3572,8 +3572,8 @@
       {
         "game": 2,
         "championId": "Annie",
-        "rating": 83,
-        "gameRating": 83,
+        "rating": 82,
+        "gameRating": 82,
         "historicalScore": 50.55244087364442,
         "source": "WORLDS_DATA",
         "evidenceId": "yellowstar-2015-fnc-g2",
@@ -4300,8 +4300,8 @@
       {
         "game": 2,
         "championId": "Elise",
-        "rating": 84,
-        "gameRating": 84,
+        "rating": 83,
+        "gameRating": 83,
         "historicalScore": 51.52308589188099,
         "source": "WORLDS_DATA",
         "evidenceId": "loulex-2015-h2k-g2",
@@ -4317,8 +4317,8 @@
       {
         "game": 3,
         "championId": "LeeSin",
-        "rating": 84,
-        "gameRating": 84,
+        "rating": 83,
+        "gameRating": 83,
         "historicalScore": 51.53349719142521,
         "source": "WORLDS_DATA",
         "evidenceId": "loulex-2015-h2k-g3",
@@ -4334,8 +4334,8 @@
       {
         "game": 4,
         "championId": "RekSai",
-        "rating": 80,
-        "gameRating": 80,
+        "rating": 79,
+        "gameRating": 79,
         "historicalScore": 43.68485131435531,
         "source": "SEASON_DATA",
         "evidenceId": "loulex-2015-h2k-g4",
@@ -4612,8 +4612,8 @@
       {
         "game": 2,
         "championId": "Alistar",
-        "rating": 85,
-        "gameRating": 85,
+        "rating": 84,
+        "gameRating": 84,
         "historicalScore": 54.47304744409776,
         "source": "WORLDS_DATA",
         "evidenceId": "kasing-2015-h2k-g2",
@@ -4750,8 +4750,8 @@
       {
         "game": 4,
         "championId": "Maokai",
-        "rating": 79,
-        "gameRating": 79,
+        "rating": 78,
+        "gameRating": 78,
         "historicalScore": 40.10940537477154,
         "source": "SEASON_DATA",
         "evidenceId": "balis-2015-c9-g4",
@@ -4803,8 +4803,8 @@
       {
         "game": 1,
         "championId": "LeeSin",
-        "rating": 84,
-        "gameRating": 84,
+        "rating": 83,
+        "gameRating": 83,
         "historicalScore": 51.50181230489245,
         "source": "WORLDS_DATA",
         "evidenceId": "hai-2015-c9-g1",
@@ -5011,8 +5011,8 @@
       {
         "game": 1,
         "championId": "Tristana",
-        "rating": 82,
-        "gameRating": 82,
+        "rating": 81,
+        "gameRating": 81,
         "historicalScore": 49.0257674260534,
         "source": "WORLDS_DATA",
         "evidenceId": "sneaky-2015-c9-g1",
@@ -5115,8 +5115,8 @@
       {
         "game": 1,
         "championId": "Morgana",
-        "rating": 80,
-        "gameRating": 80,
+        "rating": 79,
+        "gameRating": 79,
         "historicalScore": 44.24811565638343,
         "source": "WORLDS_DATA",
         "evidenceId": "lemonnation-2015-c9-g1",
@@ -5270,8 +5270,8 @@
       {
         "game": 4,
         "championId": "Ekko",
-        "rating": 80,
-        "gameRating": 80,
+        "rating": 79,
+        "gameRating": 79,
         "historicalScore": 42.37799174884702,
         "source": "WORLDS_DATA",
         "evidenceId": "zionspartan-2015-clg-g4",

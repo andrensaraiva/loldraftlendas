@@ -38,9 +38,13 @@ def main():
                 cid=targets[name.casefold()];path=ROOT/f'public/assets/{year}/splash/{cid}.jpg';path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(tar.extractfile(member).read())
                 mapping[cid][str(year)]['splash']=f'/assets/{year}/splash/{cid}.jpg'
                 found.append(dict(championId=cid,year=year,kind='splash',archivePath=name,localFile=path.relative_to(ROOT).as_posix(),sha256=sha(path)))
-        assert len(found)==len(ids),(year,len(found),len(ids))
-        print(f'{year}: {len(found)} archived splashes extracted.',flush=True)
-        return dict(year=year,url=url,sha256=sha(archive),bytes=archive.stat().st_size),found
+        archived_ids={asset['championId'] for asset in found}
+        missing=sorted(ids-archived_ids)
+        for cid in missing:
+            square=ROOT/f"public{mapping[cid][str(year)]['square']}"
+            found.append(dict(championId=cid,year=year,kind='splash',fallback='square',localFile=square.relative_to(ROOT).as_posix(),sha256=sha(square)))
+        print(f'{year}: {len(archived_ids)} archived splashes, {len(missing)} period-square fallbacks.',flush=True)
+        return dict(year=year,url=url,sha256=sha(archive),bytes=archive.stat().st_size,archivedSplashes=len(archived_ids),squareFallbacks=len(missing)),found
     archives=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
         for metadata,found in pool.map(archive_job,CONFIG):archives.append(metadata);assets+=found

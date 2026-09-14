@@ -1,0 +1,6242 @@
+[
+  {
+    "id": "looper-2014-ssw",
+    "playerName": "Looper",
+    "team": "SSW",
+    "teamName": "Samsung White",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.8823529411764706,
+      "kda": 12.142857142857142
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 75.75872177491291,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2014-ssw-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Maokai",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 76.54075860353171,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2014-ssw-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 17.0,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Ryze",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 76.27918481885891,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2014-ssw-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 18.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Kayle",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 75.23588964654691,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2014-ssw-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 12.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Singed",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.86219819962307,
+        "source": "WORLDS_DATA",
+        "evidenceId": "looper-2014-ssw-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.6,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dandy-2014-ssw",
+    "playerName": "DanDy",
+    "team": "SSW",
+    "teamName": "Samsung White",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.8823529411764706,
+      "kda": 8.5
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Khazix",
+        "rating": 99,
+        "gameRating": 99,
+        "historicalScore": 81.76464964623526,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dandy-2014-ssw-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 5.5,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "LeeSin",
+        "rating": 99,
+        "gameRating": 99,
+        "historicalScore": 82.78526670095013,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dandy-2014-ssw-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 15.2,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "JarvanIV",
+        "rating": 98,
+        "gameRating": 98,
+        "historicalScore": 79.8577582430612,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dandy-2014-ssw-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 7.333333333333333,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Elise",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 71.89628289241227,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dandy-2014-ssw-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Rengar",
+        "rating": 99,
+        "gameRating": 99,
+        "historicalScore": 81.56647487892005,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dandy-2014-ssw-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 13.6,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "pawn-2014-ssw",
+    "playerName": "PawN",
+    "team": "SSW",
+    "teamName": "Samsung White",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.8823529411764706,
+      "kda": 9.88
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Zilean",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 67.37309492016165,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pawn-2014-ssw-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Yasuo",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 74.09864576160201,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pawn-2014-ssw-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 35.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Talon",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.19606394404171,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pawn-2014-ssw-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 9.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Fizz",
+        "rating": 96,
+        "gameRating": 96,
+        "historicalScore": 77.76780778093799,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pawn-2014-ssw-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 6.666666666666667,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jayce",
+        "rating": 97,
+        "gameRating": 97,
+        "historicalScore": 80.47398723320258,
+        "source": "WORLDS_DATA",
+        "evidenceId": "pawn-2014-ssw-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 21.333333333333332,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "imp-2014-ssw",
+    "playerName": "imp",
+    "team": "SSW",
+    "teamName": "Samsung White",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.8823529411764706,
+      "kda": 7.896551724137931
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Tristana",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.89637719890924,
+        "source": "WORLDS_DATA",
+        "evidenceId": "imp-2014-ssw-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Twitch",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.15076362732378,
+        "source": "WORLDS_DATA",
+        "evidenceId": "imp-2014-ssw-g2",
+        "stats": {
+          "games": 10,
+          "winRate": 0.9,
+          "kda": 7.368421052631579,
+          "confidence": 0.6666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Vayne",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 65.783367465415,
+        "source": "WORLDS_DATA",
+        "evidenceId": "imp-2014-ssw-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Corki",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.4930038213385,
+        "source": "WORLDS_DATA",
+        "evidenceId": "imp-2014-ssw-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 7.4,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lucian",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.6777282351619,
+        "source": "WORLDS_DATA",
+        "evidenceId": "imp-2014-ssw-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mata-2014-ssw",
+    "playerName": "Mata",
+    "team": "SSW",
+    "teamName": "Samsung White",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "17 jogos no Worlds",
+    "worldsStats": {
+      "games": 17,
+      "winRate": 0.8823529411764706,
+      "kda": 10.037037037037036
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.30012227062961,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2014-ssw-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 17.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Thresh",
+        "rating": 96,
+        "gameRating": 96,
+        "historicalScore": 79.55682746541028,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2014-ssw-g2",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 7.090909090909091,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Janna",
+        "rating": 98,
+        "gameRating": 98,
+        "historicalScore": 83.00044001401642,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2014-ssw-g3",
+        "stats": {
+          "games": 8,
+          "winRate": 1.0,
+          "kda": 20.285714285714285,
+          "confidence": 0.6153846153846154,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Morgana",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.00526063469526,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2014-ssw-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Braum",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.20174807123988,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mata-2014-ssw-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 3.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "acorn-2014-ssb",
+    "playerName": "Acorn",
+    "team": "SSB",
+    "teamName": "Samsung Blue",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 3.25
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.00267467438165,
+        "source": "WORLDS_DATA",
+        "evidenceId": "acorn-2014-ssb-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lulu",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 40.31971149841228,
+        "source": "WORLDS_DATA",
+        "evidenceId": "acorn-2014-ssb-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Maokai",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.456241947876464,
+        "source": "WORLDS_DATA",
+        "evidenceId": "acorn-2014-ssb-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 1.0,
+          "kda": 7.090909090909091,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Kayle",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.24604330479177,
+        "source": "WORLDS_DATA",
+        "evidenceId": "acorn-2014-ssb-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.4,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Nidalee",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.349871315376205,
+        "source": "WORLDS_DATA",
+        "evidenceId": "acorn-2014-ssb-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "spirit-2014-ssb",
+    "playerName": "Spirit",
+    "team": "SSB",
+    "teamName": "Samsung Blue",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 4.354838709677419
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "LeeSin",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 67.05534900418438,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2014-ssb-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 7.4,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "JarvanIV",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.29891310779084,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2014-ssb-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 11.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Khazix",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 62.599035436274924,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2014-ssb-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.833333333333333,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Rengar",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 60.51434724236058,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2014-ssb-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 2.6923076923076925,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Elise",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.452961914938165,
+        "source": "WORLDS_DATA",
+        "evidenceId": "spirit-2014-ssb-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dade-2014-ssb",
+    "playerName": "dade",
+    "team": "SSB",
+    "teamName": "Samsung Blue",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 2.9130434782608696
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Yasuo",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.013585077533676,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dade-2014-ssb-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 3.3333333333333335,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Zed",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 39.81187514236468,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dade-2014-ssb-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Orianna",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.668585820968644,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dade-2014-ssb-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jayce",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.72373667860982,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dade-2014-ssb-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "TwistedFate",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.75743166668487,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dade-2014-ssb-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.5555555555555554,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "deft-2014-ssb",
+    "playerName": "Deft",
+    "team": "SSB",
+    "teamName": "Samsung Blue",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 4.257142857142857
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "KogMaw",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 64.02769910289865,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2014-ssb-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Corki",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.47891439323381,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2014-ssb-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Twitch",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.02250727937215,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2014-ssb-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 6.7,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Tristana",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.61986868984896,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2014-ssb-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lucian",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.73340813445415,
+        "source": "WORLDS_DATA",
+        "evidenceId": "deft-2014-ssb-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.375,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "heart-2014-ssb",
+    "playerName": "Heart",
+    "team": "SSB",
+    "teamName": "Samsung Blue",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "13 jogos no Worlds",
+    "worldsStats": {
+      "games": 13,
+      "winRate": 0.6153846153846154,
+      "kda": 3.3877551020408165
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 69.91343220171012,
+        "source": "WORLDS_DATA",
+        "evidenceId": "heart-2014-ssb-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.7,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Thresh",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 72.78232509268929,
+        "source": "WORLDS_DATA",
+        "evidenceId": "heart-2014-ssb-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 3.8,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Janna",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 71.76199704228578,
+        "source": "WORLDS_DATA",
+        "evidenceId": "heart-2014-ssb-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.777777777777778,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.58195158840199,
+        "source": "WORLDS_DATA",
+        "evidenceId": "heart-2014-ssb-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Zilean",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.46901546995165,
+        "source": "WORLDS_DATA",
+        "evidenceId": "heart-2014-ssb-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "save-2014-njws",
+    "playerName": "Save",
+    "team": "NJWS",
+    "teamName": "NaJin White Shield",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 2.0606060606060606
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ryze",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.743498973820515,
+        "source": "WORLDS_DATA",
+        "evidenceId": "save-2014-njws-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 2.5555555555555554,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Riven",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.19305431164938,
+        "source": "WORLDS_DATA",
+        "evidenceId": "save-2014-njws-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Kayle",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 45.85869385296091,
+        "source": "WORLDS_DATA",
+        "evidenceId": "save-2014-njws-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Kassadin",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.59749094469794,
+        "source": "WORLDS_DATA",
+        "evidenceId": "save-2014-njws-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Nidalee",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.69932327864289,
+        "source": "WORLDS_DATA",
+        "evidenceId": "save-2014-njws-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "watch-2014-njws",
+    "playerName": "Watch",
+    "team": "NJWS",
+    "teamName": "NaJin White Shield",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 2.9130434782608696
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Khazix",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.772280495117954,
+        "source": "WORLDS_DATA",
+        "evidenceId": "watch-2014-njws-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 2.111111111111111,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "LeeSin",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.733467580917385,
+        "source": "WORLDS_DATA",
+        "evidenceId": "watch-2014-njws-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 2.888888888888889,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Elise",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.39791002483878,
+        "source": "WORLDS_DATA",
+        "evidenceId": "watch-2014-njws-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.4,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Evelynn",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.26810024047893,
+        "source": "SEASON_DATA",
+        "evidenceId": "watch-2014-njws-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 33,
+          "confidence": 0,
+          "event": "CHAMPIONS_SUMMER_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/Watch/Statistics/2014"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Nocturne",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.26810024047893,
+        "source": "SEASON_DATA",
+        "evidenceId": "watch-2014-njws-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.6,
+          "confidence": 0,
+          "event": "CHAMPIONS_SUMMER_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/Watch/Statistics/2014"
+        }
+      }
+    ]
+  },
+  {
+    "id": "ggoong-2014-njws",
+    "playerName": "Ggoong",
+    "team": "NJWS",
+    "teamName": "NaJin White Shield",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 3.727272727272727
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Zed",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 71.50728360854264,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ggoong-2014-njws-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 3.75,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lulu",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.15639190843007,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ggoong-2014-njws-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 16.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Orianna",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.785628757905,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ggoong-2014-njws-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.875,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ahri",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.54161748897894,
+        "source": "WORLDS_DATA",
+        "evidenceId": "ggoong-2014-njws-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 14.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "TwistedFate",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.94229096113831,
+        "source": "SEASON_DATA",
+        "evidenceId": "ggoong-2014-njws-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 5.17,
+          "confidence": 0,
+          "event": "SEASON_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/Twisted_Fate/Statistics/2014"
+        }
+      }
+    ]
+  },
+  {
+    "id": "zefa-2014-njws",
+    "playerName": "Zefa",
+    "team": "NJWS",
+    "teamName": "NaJin White Shield",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 3.8333333333333335
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Corki",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.740042438406846,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zefa-2014-njws-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 4.428571428571429,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Tristana",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.52671868176856,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zefa-2014-njws-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.6666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Twitch",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.53025855300601,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zefa-2014-njws-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.3333333333333335,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lucian",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.454764792096185,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zefa-2014-njws-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "KogMaw",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 48.63033213101669,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zefa-2014-njws-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "gorilla-2014-njws",
+    "playerName": "GorillA",
+    "team": "NJWS",
+    "teamName": "NaJin White Shield",
+    "region": "LCK",
+    "canonicalRegion": "LCK",
+    "historicalLeague": "LCK",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 3.0
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Thresh",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 68.61647520458847,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2014-njws-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Nami",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 68.21070337691125,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2014-njws-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Janna",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.69680506374404,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2014-njws-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Zilean",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.50349888171367,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2014-njws-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Morgana",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.86845193321682,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gorilla-2014-njws-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "korol-2014-edg",
+    "playerName": "Korol",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5,
+      "kda": 3.4324324324324325
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Maokai",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 71.70947339833505,
+        "source": "WORLDS_DATA",
+        "evidenceId": "korol-2014-edg-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 3.923076923076923,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Irelia",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.49710459897301,
+        "source": "WORLDS_DATA",
+        "evidenceId": "korol-2014-edg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 16.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lulu",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 65.20358847098292,
+        "source": "WORLDS_DATA",
+        "evidenceId": "korol-2014-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ryze",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 76.35127779733797,
+        "source": "WORLDS_DATA",
+        "evidenceId": "korol-2014-edg-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.2857142857142856,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Kayle",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.1517802455569,
+        "source": "WORLDS_DATA",
+        "evidenceId": "korol-2014-edg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "clearlove-2014-edg",
+    "playerName": "Clearlove",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5,
+      "kda": 3.6470588235294117
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "JarvanIV",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.125550698199,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2014-edg-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Rengar",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 62.66728578256244,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2014-edg-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 6.571428571428571,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Khazix",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.23620933923558,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2014-edg-g3",
+        "stats": {
+          "games": 6,
+          "winRate": 0.3333333333333333,
+          "kda": 2.526315789473684,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "LeeSin",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.74318158984933,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2014-edg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Evelynn",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.15120393429037,
+        "source": "WORLDS_DATA",
+        "evidenceId": "clearlove-2014-edg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "u-2014-edg",
+    "playerName": "U",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5,
+      "kda": 4.7407407407407405
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Orianna",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.0788191726704,
+        "source": "WORLDS_DATA",
+        "evidenceId": "u-2014-edg-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 5.285714285714286,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Zed",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.61752902386033,
+        "source": "WORLDS_DATA",
+        "evidenceId": "u-2014-edg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.6666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Zilean",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.57344882649618,
+        "source": "WORLDS_DATA",
+        "evidenceId": "u-2014-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 21.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Jayce",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.71572803073576,
+        "source": "WORLDS_DATA",
+        "evidenceId": "u-2014-edg-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Syndra",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.10645240958539,
+        "source": "WORLDS_DATA",
+        "evidenceId": "u-2014-edg-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.833333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "namei-2014-edg",
+    "playerName": "NaMei",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5,
+      "kda": 3.764705882352941
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Lucian",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 63.7163051952828,
+        "source": "WORLDS_DATA",
+        "evidenceId": "namei-2014-edg-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 3.5,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "KogMaw",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.19873226583856,
+        "source": "WORLDS_DATA",
+        "evidenceId": "namei-2014-edg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.4285714285714284,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Twitch",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.70444786471219,
+        "source": "WORLDS_DATA",
+        "evidenceId": "namei-2014-edg-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.25,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Tristana",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.989443215659094,
+        "source": "WORLDS_DATA",
+        "evidenceId": "namei-2014-edg-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 6.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Caitlyn",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 52.37890238293479,
+        "source": "SEASON_DATA",
+        "evidenceId": "namei-2014-edg-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.8571428571428571,
+          "kda": 6.7,
+          "confidence": 0,
+          "event": "LPL_SPRING_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/NaMei/Statistics/2014"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fzzf-2014-edg",
+    "playerName": "FZZF",
+    "team": "EDG",
+    "teamName": "EDward Gaming",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "12 jogos no Worlds",
+    "worldsStats": {
+      "games": 12,
+      "winRate": 0.5,
+      "kda": 3.324324324324324
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Thresh",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 52.17571562590013,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fzzf-2014-edg-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 2.9565217391304346,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Janna",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.27728957497381,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fzzf-2014-edg-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nami",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.445370362671,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fzzf-2014-edg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 52.57784044791674,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fzzf-2014-edg-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 7.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Morgana",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.277887006858485,
+        "source": "SEASON_DATA",
+        "evidenceId": "fzzf-2014-edg-g5",
+        "stats": {
+          "games": 11,
+          "winRate": 0.8181818181818182,
+          "kda": 4.83,
+          "confidence": 0,
+          "event": "SEASON_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/Fzzf/Statistics/2014"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cola-2014-shrc",
+    "playerName": "Cola",
+    "team": "SHRC",
+    "teamName": "Star Horn Royal Club",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.6,
+      "kda": 3.2666666666666666
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Ryze",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.647732545272724,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cola-2014-shrc-g1",
+        "stats": {
+          "games": 8,
+          "winRate": 0.625,
+          "kda": 2.652173913043478,
+          "confidence": 0.6153846153846154,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Irelia",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.04375501309265,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cola-2014-shrc-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.9,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rumble",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 37.02688448654145,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cola-2014-shrc-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.6666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "DrMundo",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 40.94369412559975,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cola-2014-shrc-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.625,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Maokai",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.095920936636176,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cola-2014-shrc-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 7.857142857142857,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "insec-2014-shrc",
+    "playerName": "inSec",
+    "team": "SHRC",
+    "teamName": "Star Horn Royal Club",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.6,
+      "kda": 2.7183098591549295
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Khazix",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.206386864352595,
+        "source": "WORLDS_DATA",
+        "evidenceId": "insec-2014-shrc-g1",
+        "stats": {
+          "games": 7,
+          "winRate": 0.42857142857142855,
+          "kda": 2.1739130434782608,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Rengar",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.1576794547953,
+        "source": "WORLDS_DATA",
+        "evidenceId": "insec-2014-shrc-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 6.25,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "LeeSin",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.85760553850747,
+        "source": "WORLDS_DATA",
+        "evidenceId": "insec-2014-shrc-g3",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 2.5789473684210527,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "JarvanIV",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.4929796081349,
+        "source": "WORLDS_DATA",
+        "evidenceId": "insec-2014-shrc-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.6666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Pantheon",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.731212988420864,
+        "source": "WORLDS_DATA",
+        "evidenceId": "insec-2014-shrc-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.6666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "corn-2014-shrc",
+    "playerName": "Corn",
+    "team": "SHRC",
+    "teamName": "Star Horn Royal Club",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.6,
+      "kda": 3.7796610169491527
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Orianna",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.38202288757419,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corn-2014-shrc-g1",
+        "stats": {
+          "games": 9,
+          "winRate": 0.6666666666666666,
+          "kda": 4.083333333333333,
+          "confidence": 0.6428571428571429,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Zilean",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.051091891429564,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corn-2014-shrc-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.857142857142857,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Fizz",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.610100710541516,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corn-2014-shrc-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lulu",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 45.886375883347974,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corn-2014-shrc-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.666666666666667,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Ryze",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.79719759971897,
+        "source": "WORLDS_DATA",
+        "evidenceId": "corn-2014-shrc-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 6.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "uzi-2014-shrc",
+    "playerName": "Uzi",
+    "team": "SHRC",
+    "teamName": "Star Horn Royal Club",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.6,
+      "kda": 4.428571428571429
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Caitlyn",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.83623088536157,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2014-shrc-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Tristana",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 75.36833130779924,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2014-shrc-g2",
+        "stats": {
+          "games": 7,
+          "winRate": 0.5714285714285714,
+          "kda": 3.8333333333333335,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Vayne",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.68397791220369,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2014-shrc-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lucian",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 76.91871591888638,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2014-shrc-g4",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 6.0,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Twitch",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 70.57748490680832,
+        "source": "WORLDS_DATA",
+        "evidenceId": "uzi-2014-shrc-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 5.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "zero-2014-shrc",
+    "playerName": "Zero",
+    "team": "SHRC",
+    "teamName": "Star Horn Royal Club",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "20 jogos no Worlds",
+    "worldsStats": {
+      "games": 20,
+      "winRate": 0.6,
+      "kda": 3.9166666666666665
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.46981405392141,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zero-2014-shrc-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 3.25,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Janna",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 74.28214796869665,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zero-2014-shrc-g2",
+        "stats": {
+          "games": 8,
+          "winRate": 0.75,
+          "kda": 6.333333333333333,
+          "confidence": 0.6153846153846154,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Thresh",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.3960747155036,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zero-2014-shrc-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.6923076923076925,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Zilean",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.995503574114046,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zero-2014-shrc-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.1666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Braum",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.631914744965144,
+        "source": "WORLDS_DATA",
+        "evidenceId": "zero-2014-shrc-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "gogoing-2014-omg",
+    "playerName": "Gogoing",
+    "team": "OMG",
+    "teamName": "OMG",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "14 jogos no Worlds",
+    "worldsStats": {
+      "games": 14,
+      "winRate": 0.5714285714285714,
+      "kda": 4.083333333333333
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Maokai",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 71.50269991395267,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gogoing-2014-omg-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 6.2,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Kayle",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 63.227211596523745,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gogoing-2014-omg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Irelia",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.69109881127885,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gogoing-2014-omg-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 5.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ryze",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 74.48061771496926,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gogoing-2014-omg-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 11.4,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Rumble",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 72.09571304208245,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gogoing-2014-omg-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 2.230769230769231,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "loveling-2014-omg",
+    "playerName": "LoveLing",
+    "team": "OMG",
+    "teamName": "OMG",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "14 jogos no Worlds",
+    "worldsStats": {
+      "games": 14,
+      "winRate": 0.5714285714285714,
+      "kda": 4.205882352941177
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Elise",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.274845817824364,
+        "source": "WORLDS_DATA",
+        "evidenceId": "loveling-2014-omg-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.42857142857142855,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Khazix",
+        "rating": 94,
+        "gameRating": 94,
+        "historicalScore": 72.72237607867486,
+        "source": "WORLDS_DATA",
+        "evidenceId": "loveling-2014-omg-g2",
+        "stats": {
+          "games": 7,
+          "winRate": 0.5714285714285714,
+          "kda": 5.333333333333333,
+          "confidence": 0.5833333333333334,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Evelynn",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.2335392148127,
+        "source": "WORLDS_DATA",
+        "evidenceId": "loveling-2014-omg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "LeeSin",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.5065339883043,
+        "source": "WORLDS_DATA",
+        "evidenceId": "loveling-2014-omg-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.0,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Rengar",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.13095993698395,
+        "source": "WORLDS_DATA",
+        "evidenceId": "loveling-2014-omg-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 17.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cool-2014-omg",
+    "playerName": "Cool",
+    "team": "OMG",
+    "teamName": "OMG",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "14 jogos no Worlds",
+    "worldsStats": {
+      "games": 14,
+      "winRate": 0.5714285714285714,
+      "kda": 3.3181818181818183
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Yasuo",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.10844795043697,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cool-2014-omg-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.7,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ahri",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.78469460176347,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cool-2014-omg-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.7142857142857142,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Zed",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.41987991093534,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cool-2014-omg-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 3.625,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Orianna",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.94081686316875,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cool-2014-omg-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.8888888888888888,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jayce",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.67318398161537,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cool-2014-omg-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 8.4,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "san-2014-omg",
+    "playerName": "san",
+    "team": "OMG",
+    "teamName": "OMG",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "14 jogos no Worlds",
+    "worldsStats": {
+      "games": 14,
+      "winRate": 0.5714285714285714,
+      "kda": 5.62962962962963
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Tristana",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.2427192149179,
+        "source": "WORLDS_DATA",
+        "evidenceId": "san-2014-omg-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.0,
+          "kda": 1.7777777777777777,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "KogMaw",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.82424835516742,
+        "source": "WORLDS_DATA",
+        "evidenceId": "san-2014-omg-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 7.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lucian",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 70.60747821053049,
+        "source": "WORLDS_DATA",
+        "evidenceId": "san-2014-omg-g3",
+        "stats": {
+          "games": 6,
+          "winRate": 0.8333333333333334,
+          "kda": 7.545454545454546,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Corki",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 63.347682730371574,
+        "source": "WORLDS_DATA",
+        "evidenceId": "san-2014-omg-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 6.571428571428571,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Jinx",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 52.63301878741943,
+        "source": "SEASON_DATA",
+        "evidenceId": "san-2014-omg-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 7.38,
+          "confidence": 0,
+          "event": "SEASON_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/San_%28Guo_Jun-Liang%29/Statistics"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cloud-2014-omg",
+    "playerName": "Cloud",
+    "team": "OMG",
+    "teamName": "OMG",
+    "region": "LPL",
+    "canonicalRegion": "LPL",
+    "historicalLeague": "LPL",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "8 jogos no Worlds",
+    "worldsStats": {
+      "games": 8,
+      "winRate": 0.625,
+      "kda": 4.28
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Janna",
+        "rating": 93,
+        "gameRating": 93,
+        "historicalScore": 73.30856783003803,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cloud-2014-omg-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 6.0,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Thresh",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.83044395910969,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cloud-2014-omg-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 3.909090909090909,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Morgana",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.3727729020022,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cloud-2014-omg-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Nami",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.312667893648715,
+        "source": "SEASON_DATA",
+        "evidenceId": "cloud-2014-omg-g4",
+        "stats": {
+          "games": 9,
+          "winRate": 0.7777777777777778,
+          "kda": 9,
+          "confidence": 0,
+          "event": "LPL_SUMMER_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/Nami/Statistics/2014"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Leona",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.312667893648715,
+        "source": "SEASON_DATA",
+        "evidenceId": "cloud-2014-omg-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 2.6,
+          "confidence": 0,
+          "event": "LPL_SUMMER_2014",
+          "sourceUrl": "https://lol.fandom.com/wiki/Leona/Statistics/2014"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wickd-2014-all",
+    "playerName": "Wickd",
+    "team": "ALL",
+    "teamName": "Alliance",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 5.333333333333333
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Kayle",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.07481128768121,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wickd-2014-all-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.4,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Irelia",
+        "rating": 92,
+        "gameRating": 92,
+        "historicalScore": 70.9640505946006,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wickd-2014-all-g2",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 9.0,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Shyvana",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.059705422681546,
+        "source": "SEASON_DATA",
+        "evidenceId": "wickd-2014-all-g3",
+        "stats": {
+          "games": 9,
+          "winRate": 0.6666666666666666,
+          "kda": 4.117647058823529,
+          "confidence": 0.4178571428571429,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Alistar",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.33906208451518,
+        "source": "SEASON_DATA",
+        "evidenceId": "wickd-2014-all-g4",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 3.3076923076923075,
+          "confidence": 0.28888888888888886,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Gragas",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.65848467723233,
+        "source": "SEASON_DATA",
+        "evidenceId": "wickd-2014-all-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 2.875,
+          "confidence": 0.28888888888888886,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "shook-2014-all",
+    "playerName": "Shook",
+    "team": "ALL",
+    "teamName": "Alliance",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.923076923076923
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Elise",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.594203583239405,
+        "source": "WORLDS_DATA",
+        "evidenceId": "shook-2014-all-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Khazix",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.41796894035237,
+        "source": "WORLDS_DATA",
+        "evidenceId": "shook-2014-all-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 3.6,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "LeeSin",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 65.29639913656794,
+        "source": "WORLDS_DATA",
+        "evidenceId": "shook-2014-all-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 6.666666666666667,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Rammus",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 57.74342132004091,
+        "source": "WORLDS_DATA",
+        "evidenceId": "shook-2014-all-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Riven",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.64847111003952,
+        "source": "SEASON_DATA",
+        "evidenceId": "shook-2014-all-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 6.0,
+          "confidence": 0.325,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "froggen-2014-all",
+    "playerName": "Froggen",
+    "team": "ALL",
+    "teamName": "Alliance",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 5.1
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Xerath",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.1195235230588,
+        "source": "WORLDS_DATA",
+        "evidenceId": "froggen-2014-all-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "TwistedFate",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.38869599981308,
+        "source": "WORLDS_DATA",
+        "evidenceId": "froggen-2014-all-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Fizz",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 66.83996787527178,
+        "source": "WORLDS_DATA",
+        "evidenceId": "froggen-2014-all-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ahri",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 68.18903292965717,
+        "source": "WORLDS_DATA",
+        "evidenceId": "froggen-2014-all-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 11.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Orianna",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.310660000957384,
+        "source": "SEASON_DATA",
+        "evidenceId": "froggen-2014-all-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 5.4,
+          "confidence": 0.28888888888888886,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "tabzz-2014-all",
+    "playerName": "Tabzz",
+    "team": "ALL",
+    "teamName": "Alliance",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 5.222222222222222
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "KogMaw",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.939392396767076,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tabzz-2014-all-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 6.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lucian",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 42.00567983620755,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tabzz-2014-all-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Tristana",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.730009589051534,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tabzz-2014-all-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 6.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Twitch",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 44.200475084265236,
+        "source": "WORLDS_DATA",
+        "evidenceId": "tabzz-2014-all-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Corki",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.96009209012084,
+        "source": "SEASON_DATA",
+        "evidenceId": "tabzz-2014-all-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 45.0,
+          "confidence": 0.28888888888888886,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "nyph-2014-all",
+    "playerName": "Nyph",
+    "team": "ALL",
+    "teamName": "Alliance",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.5,
+      "kda": 3.6153846153846154
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.36325441867187,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nyph-2014-all-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Zilean",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.585498693711926,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nyph-2014-all-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 7.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Janna",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.38810840927613,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nyph-2014-all-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 5.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Alistar",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.43124245698954,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nyph-2014-all-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Thresh",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.17727174837533,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nyph-2014-all-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "soaz-2014-fnc",
+    "playerName": "sOAZ",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.35
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Lulu",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.091472567745285,
+        "source": "WORLDS_DATA",
+        "evidenceId": "soaz-2014-fnc-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.42857142857142855,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Irelia",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.819642508978745,
+        "source": "WORLDS_DATA",
+        "evidenceId": "soaz-2014-fnc-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 4.333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rumble",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.03270655206019,
+        "source": "WORLDS_DATA",
+        "evidenceId": "soaz-2014-fnc-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.1,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Shyvana",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 43.73047797115557,
+        "source": "SEASON_DATA",
+        "evidenceId": "soaz-2014-fnc-g4",
+        "stats": {
+          "games": 7,
+          "winRate": 0.5714285714285714,
+          "kda": 5.6,
+          "confidence": 0.3791666666666667,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Gragas",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.3395114901809,
+        "source": "SEASON_DATA",
+        "evidenceId": "soaz-2014-fnc-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 4.75,
+          "confidence": 0.24375000000000002,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "cyanide-2014-fnc",
+    "playerName": "Cyanide",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.611111111111111
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "JarvanIV",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.397903712841114,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cyanide-2014-fnc-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.8333333333333334,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Elise",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 45.1151312643705,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cyanide-2014-fnc-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Khazix",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.205353469569545,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cyanide-2014-fnc-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "LeeSin",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 45.79866657901116,
+        "source": "WORLDS_DATA",
+        "evidenceId": "cyanide-2014-fnc-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Evelynn",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.71313198793409,
+        "source": "SEASON_DATA",
+        "evidenceId": "cyanide-2014-fnc-g5",
+        "stats": {
+          "games": 13,
+          "winRate": 0.7692307692307693,
+          "kda": 7.333333333333333,
+          "confidence": 0.46944444444444444,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "xpeke-2014-fnc",
+    "playerName": "xPeke",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.45
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Xerath",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.09123492839275,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xpeke-2014-fnc-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ahri",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 56.400180478287595,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xpeke-2014-fnc-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 12.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Kassadin",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.139441288537924,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xpeke-2014-fnc-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Syndra",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.76169273032768,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xpeke-2014-fnc-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.8,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lissandra",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.28190225973479,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xpeke-2014-fnc-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 7.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "rekkles-2014-fnc",
+    "playerName": "Rekkles",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 5.6
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Tristana",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.77299872289355,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2014-fnc-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.6666666666666665,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Lucian",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 69.9110937210618,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2014-fnc-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 36.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "KogMaw",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.412216002396804,
+        "source": "WORLDS_DATA",
+        "evidenceId": "rekkles-2014-fnc-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Twitch",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 53.375095698041186,
+        "source": "SEASON_DATA",
+        "evidenceId": "rekkles-2014-fnc-g4",
+        "stats": {
+          "games": 7,
+          "winRate": 0.5714285714285714,
+          "kda": 6.0,
+          "confidence": 0.3791666666666667,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Vayne",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 57.46129152588592,
+        "source": "SEASON_DATA",
+        "evidenceId": "rekkles-2014-fnc-g5",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 16.2,
+          "confidence": 0.35454545454545455,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "yellowstar-2014-fnc",
+    "playerName": "YellOwStaR",
+    "team": "FNC",
+    "teamName": "Fnatic",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 3.2666666666666666
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.94866034182091,
+        "source": "WORLDS_DATA",
+        "evidenceId": "yellowstar-2014-fnc-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Thresh",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 63.492942900207105,
+        "source": "WORLDS_DATA",
+        "evidenceId": "yellowstar-2014-fnc-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.75,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Janna",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.70588206147326,
+        "source": "WORLDS_DATA",
+        "evidenceId": "yellowstar-2014-fnc-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Morgana",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.12787083015651,
+        "source": "SEASON_DATA",
+        "evidenceId": "yellowstar-2014-fnc-g4",
+        "stats": {
+          "games": 13,
+          "winRate": 0.6923076923076923,
+          "kda": 6.0,
+          "confidence": 0.46944444444444444,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Zilean",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.36317826268596,
+        "source": "SEASON_DATA",
+        "evidenceId": "yellowstar-2014-fnc-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.10833333333333334,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fredy122-2014-sk",
+    "playerName": "fredy122",
+    "team": "SK",
+    "teamName": "SK Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 1.4482758620689655
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "DrMundo",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.52428357850948,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fredy122-2014-sk-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.0,
+          "kda": 1.6666666666666667,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Maokai",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.74003587579024,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fredy122-2014-sk-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Alistar",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.90970401284737,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fredy122-2014-sk-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 1.7142857142857142,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Swain",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.452516608346485,
+        "source": "WORLDS_DATA",
+        "evidenceId": "fredy122-2014-sk-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 1.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Aatrox",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 53.98193336875155,
+        "source": "SEASON_DATA",
+        "evidenceId": "fredy122-2014-sk-g5",
+        "stats": {
+          "games": 12,
+          "winRate": 0.6666666666666666,
+          "kda": 3.6785714285714284,
+          "confidence": 0.45882352941176474,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "gilius-2014-sk",
+    "playerName": "Gilius",
+    "team": "SK",
+    "teamName": "SK Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "3 jogos no Worlds",
+    "worldsStats": {
+      "games": 3,
+      "winRate": 0.0,
+      "kda": 1.25
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Khazix",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.31065184382314,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gilius-2014-sk-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.7272727272727273,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "JarvanIV",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.917447390232226,
+        "source": "WORLDS_DATA",
+        "evidenceId": "gilius-2014-sk-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rengar",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.44364341716843,
+        "source": "SEASON_DATA",
+        "evidenceId": "gilius-2014-sk-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 1.0,
+          "kda": 4.888888888888889,
+          "confidence": 0.28888888888888886,
+          "event": "EU CS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20CS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "LeeSin",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.705321906012394,
+        "source": "SEASON_DATA",
+        "evidenceId": "gilius-2014-sk-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.8333333333333333,
+          "confidence": 0.10833333333333334,
+          "event": "EU CS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20CS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Elise",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.10520021951899,
+        "source": "SEASON_DATA",
+        "evidenceId": "gilius-2014-sk-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.5,
+          "confidence": 0.10833333333333334,
+          "event": "EU CS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20CS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "jesiz-2014-sk",
+    "playerName": "Jesiz",
+    "team": "SK",
+    "teamName": "SK Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 1.7727272727272727
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Orianna",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 34.33897189584613,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jesiz-2014-sk-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ahri",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 36.83191699536468,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jesiz-2014-sk-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.8571428571428572,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Syndra",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 35.47587047342047,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jesiz-2014-sk-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Ziggs",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 36.739973092162046,
+        "source": "WORLDS_DATA",
+        "evidenceId": "jesiz-2014-sk-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 9.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Kayle",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 36.58486715818098,
+        "source": "SEASON_DATA",
+        "evidenceId": "jesiz-2014-sk-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 6.25,
+          "confidence": 0.325,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "candypanda-2014-sk",
+    "playerName": "CandyPanda",
+    "team": "SK",
+    "teamName": "SK Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.75
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Lucian",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 42.22527025302688,
+        "source": "WORLDS_DATA",
+        "evidenceId": "candypanda-2014-sk-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.25,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Tristana",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 40.09055807306311,
+        "source": "WORLDS_DATA",
+        "evidenceId": "candypanda-2014-sk-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Twitch",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 37.802512622417595,
+        "source": "WORLDS_DATA",
+        "evidenceId": "candypanda-2014-sk-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.4,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "KogMaw",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.77446638205936,
+        "source": "WORLDS_DATA",
+        "evidenceId": "candypanda-2014-sk-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Vayne",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.22172039176725,
+        "source": "WORLDS_DATA",
+        "evidenceId": "candypanda-2014-sk-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 16.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "nrated-2014-sk",
+    "playerName": "nRated",
+    "team": "SK",
+    "teamName": "SK Gaming",
+    "region": "LEC",
+    "canonicalRegion": "EU LCS",
+    "historicalLeague": "EU LCS",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 1.8181818181818181
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Sona",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 40.77633724923445,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nrated-2014-sk-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.8333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Zilean",
+        "rating": 75,
+        "gameRating": 75,
+        "historicalScore": 34.67230681664583,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nrated-2014-sk-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.3333333333333335,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Kayle",
+        "rating": 74,
+        "gameRating": 74,
+        "historicalScore": 33.76367073430144,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nrated-2014-sk-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Morgana",
+        "rating": 77,
+        "gameRating": 77,
+        "historicalScore": 39.82608765786087,
+        "source": "WORLDS_DATA",
+        "evidenceId": "nrated-2014-sk-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Braum",
+        "rating": 76,
+        "gameRating": 76,
+        "historicalScore": 36.9779863419721,
+        "source": "SEASON_DATA",
+        "evidenceId": "nrated-2014-sk-g5",
+        "stats": {
+          "games": 5,
+          "winRate": 0.4,
+          "kda": 2.8,
+          "confidence": 0.325,
+          "event": "EU LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/EU%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "dyrus-2014-tsm",
+    "playerName": "Dyrus",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 2.515151515151515
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Alistar",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.21837588384335,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dyrus-2014-tsm-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ryze",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.623778419664674,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dyrus-2014-tsm-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.5555555555555556,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Rumble",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 61.703817503362245,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dyrus-2014-tsm-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 4.8,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lulu",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.86434523700281,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dyrus-2014-tsm-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 5.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Maokai",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.43592543129853,
+        "source": "WORLDS_DATA",
+        "evidenceId": "dyrus-2014-tsm-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.7272727272727273,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "amazing-2014-tsm",
+    "playerName": "Amazing",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 2.58974358974359
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "LeeSin",
+        "rating": 91,
+        "gameRating": 91,
+        "historicalScore": 65.63048385196089,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazing-2014-tsm-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.8,
+          "kda": 4.0625,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Elise",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 51.62544469196705,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazing-2014-tsm-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Khazix",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 55.94316052972074,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazing-2014-tsm-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.5714285714285714,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "JarvanIV",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 57.968297146498955,
+        "source": "WORLDS_DATA",
+        "evidenceId": "amazing-2014-tsm-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Nunu",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 54.59116819742494,
+        "source": "SEASON_DATA",
+        "evidenceId": "amazing-2014-tsm-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 12.5,
+          "confidence": 0.28888888888888886,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "bjergsen-2014-tsm",
+    "playerName": "Bjergsen",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 3.9545454545454546
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Yasuo",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 64.69577155591006,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2014-tsm-g1",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 19.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Zed",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.105336523480986,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2014-tsm-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.0,
+          "kda": 0.9230769230769231,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Xerath",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.35896288611316,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2014-tsm-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 10.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Orianna",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.9053750438029,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2014-tsm-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 1.0,
+          "kda": 14.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Syndra",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 59.38149171499492,
+        "source": "WORLDS_DATA",
+        "evidenceId": "bjergsen-2014-tsm-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 3.6666666666666665,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "wildturtle-2014-tsm",
+    "playerName": "WildTurtle",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 4.333333333333333
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Tristana",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 65.90373785446205,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wildturtle-2014-tsm-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 37.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Corki",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 52.21543640532971,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wildturtle-2014-tsm-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.9090909090909091,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "KogMaw",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 63.272687950059094,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wildturtle-2014-tsm-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 11.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lucian",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 57.01258696473564,
+        "source": "WORLDS_DATA",
+        "evidenceId": "wildturtle-2014-tsm-g4",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Caitlyn",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.96664410274819,
+        "source": "SEASON_DATA",
+        "evidenceId": "wildturtle-2014-tsm-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 1.0,
+          "kda": 20.0,
+          "confidence": 0.24375000000000002,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lustboy-2014-tsm",
+    "playerName": "Lustboy",
+    "team": "TSM",
+    "teamName": "Team SoloMid",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "10 jogos no Worlds",
+    "worldsStats": {
+      "games": 10,
+      "winRate": 0.5,
+      "kda": 3.225806451612903
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Nami",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.17177781347353,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lustboy-2014-tsm-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 2.7857142857142856,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Janna",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.7588337334976,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lustboy-2014-tsm-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.25,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Braum",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.364941982863854,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lustboy-2014-tsm-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 14.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Thresh",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 65.7665099247751,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lustboy-2014-tsm-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 2.625,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Zilean",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 55.99527887704245,
+        "source": "SEASON_DATA",
+        "evidenceId": "lustboy-2014-tsm-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.10833333333333334,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "balis-2014-c9",
+    "playerName": "BalIs",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 2.125
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.61954555854207,
+        "source": "WORLDS_DATA",
+        "evidenceId": "balis-2014-c9-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.0,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Ryze",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.90743243304621,
+        "source": "WORLDS_DATA",
+        "evidenceId": "balis-2014-c9-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 3.5714285714285716,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lulu",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 47.21897061729191,
+        "source": "WORLDS_DATA",
+        "evidenceId": "balis-2014-c9-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Kayle",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 47.105179751564556,
+        "source": "WORLDS_DATA",
+        "evidenceId": "balis-2014-c9-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Nidalee",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.738629360987595,
+        "source": "WORLDS_DATA",
+        "evidenceId": "balis-2014-c9-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.42857142857142855,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "meteos-2014-c9",
+    "playerName": "Meteos",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 3.08
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Khazix",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 53.33859055200796,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2014-c9-g1",
+        "stats": {
+          "games": 6,
+          "winRate": 0.6666666666666666,
+          "kda": 7.166666666666667,
+          "confidence": 0.5454545454545454,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "LeeSin",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.57763030346911,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2014-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.3333333333333335,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "JarvanIV",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.86673135869393,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2014-c9-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.25,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Elise",
+        "rating": 78,
+        "gameRating": 78,
+        "historicalScore": 41.65084508771339,
+        "source": "WORLDS_DATA",
+        "evidenceId": "meteos-2014-c9-g4",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.5555555555555556,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Evelynn",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.33639784917547,
+        "source": "SEASON_DATA",
+        "evidenceId": "meteos-2014-c9-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.7142857142857143,
+          "kda": 6.111111111111111,
+          "confidence": 0.3791666666666667,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "hai-2014-c9",
+    "playerName": "Hai",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 1.690909090909091
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.22322923281109,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hai-2014-c9-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 2.5,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Yasuo",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 41.76365753729572,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hai-2014-c9-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Talon",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 42.21594254185406,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hai-2014-c9-g3",
+        "stats": {
+          "games": 3,
+          "winRate": 0.0,
+          "kda": 0.8260869565217391,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Zilean",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 44.87805386644563,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hai-2014-c9-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 4.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Zed",
+        "rating": 79,
+        "gameRating": 79,
+        "historicalScore": 43.14251109996393,
+        "source": "WORLDS_DATA",
+        "evidenceId": "hai-2014-c9-g5",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 1.2,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "sneaky-2014-c9",
+    "playerName": "Sneaky",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 3.96
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Lucian",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.8006999490625,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2014-c9-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.75,
+          "kda": 10.75,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Tristana",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.461163994073594,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2014-c9-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 3.5,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Corki",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 66.9878689668741,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2014-c9-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.25,
+          "kda": 2.6923076923076925,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Graves",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 57.427013903540775,
+        "source": "WORLDS_DATA",
+        "evidenceId": "sneaky-2014-c9-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "KogMaw",
+        "rating": 89,
+        "gameRating": 89,
+        "historicalScore": 64.53671510723629,
+        "source": "SEASON_DATA",
+        "evidenceId": "sneaky-2014-c9-g5",
+        "stats": {
+          "games": 12,
+          "winRate": 0.5833333333333334,
+          "kda": 5.65,
+          "confidence": 0.45882352941176474,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lemonnation-2014-c9",
+    "playerName": "LemonNation",
+    "team": "C9",
+    "teamName": "Cloud9",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "11 jogos no Worlds",
+    "worldsStats": {
+      "games": 11,
+      "winRate": 0.45454545454545453,
+      "kda": 3.4
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Janna",
+        "rating": 88,
+        "gameRating": 88,
+        "historicalScore": 62.32037655875625,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lemonnation-2014-c9-g1",
+        "stats": {
+          "games": 5,
+          "winRate": 0.6,
+          "kda": 4.666666666666667,
+          "confidence": 0.5,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Nami",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.48894263320309,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lemonnation-2014-c9-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.75,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Morgana",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 60.80000867439989,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lemonnation-2014-c9-g3",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.5833333333333335,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Braum",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.87833913349286,
+        "source": "WORLDS_DATA",
+        "evidenceId": "lemonnation-2014-c9-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.8,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Thresh",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.32565872652948,
+        "source": "SEASON_DATA",
+        "evidenceId": "lemonnation-2014-c9-g5",
+        "stats": {
+          "games": 7,
+          "winRate": 0.7142857142857143,
+          "kda": 3.6842105263157894,
+          "confidence": 0.3791666666666667,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "godlike-2014-lmq",
+    "playerName": "GodLike",
+    "team": "LMQ",
+    "teamName": "LMQ",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "TOP",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 1.4838709677419355
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Rumble",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 57.765503377274726,
+        "source": "WORLDS_DATA",
+        "evidenceId": "godlike-2014-lmq-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 2.25,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Maokai",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.36085990251851,
+        "source": "WORLDS_DATA",
+        "evidenceId": "godlike-2014-lmq-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Lulu",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.61305450366632,
+        "source": "WORLDS_DATA",
+        "evidenceId": "godlike-2014-lmq-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.6666666666666666,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Gragas",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 46.81664251982927,
+        "source": "SEASON_DATA",
+        "evidenceId": "godlike-2014-lmq-g4",
+        "stats": {
+          "games": 8,
+          "winRate": 0.75,
+          "kda": 4.2,
+          "confidence": 0.4,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Shyvana",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 50.574031810735924,
+        "source": "SEASON_DATA",
+        "evidenceId": "godlike-2014-lmq-g5",
+        "stats": {
+          "games": 8,
+          "winRate": 0.875,
+          "kda": 3.5714285714285716,
+          "confidence": 0.4,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "noname-2014-lmq",
+    "playerName": "NoName",
+    "team": "LMQ",
+    "teamName": "LMQ",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "JUNGLE",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.5454545454545454
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "JarvanIV",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 63.68930404245192,
+        "source": "WORLDS_DATA",
+        "evidenceId": "noname-2014-lmq-g1",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.3333333333333335,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "LeeSin",
+        "rating": 87,
+        "gameRating": 87,
+        "historicalScore": 58.47646523424871,
+        "source": "WORLDS_DATA",
+        "evidenceId": "noname-2014-lmq-g2",
+        "stats": {
+          "games": 2,
+          "winRate": 0.5,
+          "kda": 4.0,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Khazix",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 49.51159491663607,
+        "source": "WORLDS_DATA",
+        "evidenceId": "noname-2014-lmq-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Elise",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 48.77284299759496,
+        "source": "SEASON_DATA",
+        "evidenceId": "noname-2014-lmq-g4",
+        "stats": {
+          "games": 7,
+          "winRate": 0.7142857142857143,
+          "kda": 4.4375,
+          "confidence": 0.3791666666666667,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Nunu",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 49.79096944194605,
+        "source": "SEASON_DATA",
+        "evidenceId": "noname-2014-lmq-g5",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 6.5,
+          "confidence": 0.28888888888888886,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "xiaoweixiao-2014-lmq",
+    "playerName": "XiaoWeiXiao",
+    "team": "LMQ",
+    "teamName": "LMQ",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "MID",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.5789473684210527
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Syndra",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.833045034959724,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaoweixiao-2014-lmq-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 8.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Yasuo",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.95479598921051,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaoweixiao-2014-lmq-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 12.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Fizz",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.75425041225903,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaoweixiao-2014-lmq-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 0.4444444444444444,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Orianna",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 52.45026657612391,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaoweixiao-2014-lmq-g4",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Xerath",
+        "rating": 81,
+        "gameRating": 81,
+        "historicalScore": 47.425582373980404,
+        "source": "WORLDS_DATA",
+        "evidenceId": "xiaoweixiao-2014-lmq-g5",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 1.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "vasilii-2014-lmq",
+    "playerName": "Vasilii",
+    "team": "LMQ",
+    "teamName": "LMQ",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "ADC",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 3.6
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Twitch",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 53.288075919449525,
+        "source": "WORLDS_DATA",
+        "evidenceId": "vasilii-2014-lmq-g1",
+        "stats": {
+          "games": 1,
+          "winRate": 1.0,
+          "kda": 19.0,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "KogMaw",
+        "rating": 85,
+        "gameRating": 85,
+        "historicalScore": 56.66210327798995,
+        "source": "WORLDS_DATA",
+        "evidenceId": "vasilii-2014-lmq-g2",
+        "stats": {
+          "games": 3,
+          "winRate": 0.3333333333333333,
+          "kda": 3.0,
+          "confidence": 0.375,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Tristana",
+        "rating": 82,
+        "gameRating": 82,
+        "historicalScore": 50.35507394805005,
+        "source": "WORLDS_DATA",
+        "evidenceId": "vasilii-2014-lmq-g3",
+        "stats": {
+          "games": 2,
+          "winRate": 0.0,
+          "kda": 1.3333333333333333,
+          "confidence": 0.2857142857142857,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Lucian",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.344543913638496,
+        "source": "SEASON_DATA",
+        "evidenceId": "vasilii-2014-lmq-g4",
+        "stats": {
+          "games": 10,
+          "winRate": 0.6,
+          "kda": 5.875,
+          "confidence": 0.43333333333333335,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Corki",
+        "rating": 80,
+        "gameRating": 80,
+        "historicalScore": 46.500846928029794,
+        "source": "SEASON_DATA",
+        "evidenceId": "vasilii-2014-lmq-g5",
+        "stats": {
+          "games": 6,
+          "winRate": 0.16666666666666666,
+          "kda": 2.6,
+          "confidence": 0.35454545454545455,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  },
+  {
+    "id": "mor-2014-lmq",
+    "playerName": "Mor",
+    "team": "LMQ",
+    "teamName": "LMQ",
+    "region": "LCS",
+    "canonicalRegion": "NA LCS",
+    "historicalLeague": "NA LCS",
+    "worldsYear": 2014,
+    "role": "SUPPORT",
+    "profile": "6 jogos no Worlds",
+    "worldsStats": {
+      "games": 6,
+      "winRate": 0.3333333333333333,
+      "kda": 2.230769230769231
+    },
+    "championPool": [
+      {
+        "game": 1,
+        "championId": "Thresh",
+        "rating": 90,
+        "gameRating": 90,
+        "historicalScore": 67.19003638646932,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mor-2014-lmq-g1",
+        "stats": {
+          "games": 4,
+          "winRate": 0.5,
+          "kda": 3.230769230769231,
+          "confidence": 0.4444444444444444,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 2,
+        "championId": "Braum",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.57562845790669,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mor-2014-lmq-g2",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 0.14285714285714285,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 3,
+        "championId": "Nami",
+        "rating": 86,
+        "gameRating": 86,
+        "historicalScore": 58.32197119344528,
+        "source": "WORLDS_DATA",
+        "evidenceId": "mor-2014-lmq-g3",
+        "stats": {
+          "games": 1,
+          "winRate": 0.0,
+          "kda": 2.5,
+          "confidence": 0.16666666666666666,
+          "event": "WORLDS_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/"
+        }
+      },
+      {
+        "game": 4,
+        "championId": "Morgana",
+        "rating": 83,
+        "gameRating": 83,
+        "historicalScore": 51.9656877874722,
+        "source": "SEASON_DATA",
+        "evidenceId": "mor-2014-lmq-g4",
+        "stats": {
+          "games": 6,
+          "winRate": 0.5,
+          "kda": 2.0476190476190474,
+          "confidence": 0.35454545454545455,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      },
+      {
+        "game": 5,
+        "championId": "Lulu",
+        "rating": 84,
+        "gameRating": 84,
+        "historicalScore": 54.417766087483095,
+        "source": "SEASON_DATA",
+        "evidenceId": "mor-2014-lmq-g5",
+        "stats": {
+          "games": 3,
+          "winRate": 0.6666666666666666,
+          "kda": 17.0,
+          "confidence": 0.24375000000000002,
+          "event": "NA LCS_SUMMER_2014",
+          "sourceUrl": "https://gol.gg/tournament/tournament-stats/NA%20LCS%20Summer%202014/"
+        }
+      }
+    ]
+  }
+]

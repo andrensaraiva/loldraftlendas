@@ -1,0 +1,27 @@
+{
+  "note": "Eight slots absent from the Oracle's Elixir 2014 domestic coverage. Leaguepedia observations are limited to tournaments completed before Worlds, except that annual champion pages may also include Worlds games; every selected champion has zero Worlds occurrences for that player in OE. No per-match performance metrics are inferred, so aggregate-only observations receive B=A.",
+  "accessedAt": "2026-09-13",
+  "sourceId": "leaguepedia-supplement-2014",
+  "players": {
+    "Watch": [
+      {"championId":"Evelynn","games":2,"wins":2,"kda":33,"seasonGames":11,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/Watch/Statistics/2014","event":"CHAMPIONS_SUMMER_2014","scope":"Champions 2014 Summer"},
+      {"championId":"Nocturne","games":2,"wins":1,"kda":1.6,"seasonGames":11,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/Watch/Statistics/2014","event":"CHAMPIONS_SUMMER_2014","scope":"Champions 2014 Summer"}
+    ],
+    "Ggoong": [
+      {"championId":"TwistedFate","games":5,"wins":3,"kda":5.17,"seasonGames":null,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/Twisted_Fate/Statistics/2014","event":"SEASON_2014","scope":"Documented 2014 aggregate before Worlds; zero Worlds occurrences in OE"}
+    ],
+    "Namei": [
+      {"championId":"Caitlyn","games":7,"wins":6,"kda":6.7,"seasonGames":28,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/NaMei/Statistics/2014","event":"LPL_SPRING_2014","scope":"LPL 2014 Spring regular season"}
+    ],
+    "Fzzf": [
+      {"championId":"Morgana","games":11,"wins":9,"kda":4.83,"seasonGames":null,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/Fzzf/Statistics/2014","event":"SEASON_2014","scope":"Documented 2014 aggregate; zero Worlds occurrences in OE"}
+    ],
+    "San": [
+      {"championId":"Jinx","games":4,"wins":3,"kda":7.38,"seasonGames":null,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/San_%28Guo_Jun-Liang%29/Statistics","event":"SEASON_2014","scope":"Documented 2014 aggregate; zero Worlds occurrences in OE"}
+    ],
+    "Cloud": [
+      {"championId":"Nami","games":9,"wins":7,"kda":9,"seasonGames":null,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/Nami/Statistics/2014","event":"LPL_SUMMER_2014","scope":"Documented 2014 aggregate; zero Worlds occurrences in OE"},
+      {"championId":"Leona","games":4,"wins":3,"kda":2.6,"seasonGames":null,"firstAppearance":null,"sourceUrl":"https://lol.fandom.com/wiki/Leona/Statistics/2014","event":"LPL_SUMMER_2014","scope":"Documented 2014 aggregate; zero Worlds occurrences in OE"}
+    ]
+  }
+}

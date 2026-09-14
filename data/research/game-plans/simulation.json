@@ -1,11 +1,11 @@
 {
   "version": "game-plans-v1",
-  "datasetVersion": "multi-era-v1.5.0",
+  "datasetVersion": "multi-era-v1.6.0",
   "generatedAt": "2026-09-13",
   "seedScheme": "LCG32 with independent draft, pick, opponent and match streams",
   "totalCampaigns": 100000,
   "samplesPerScenario": 20000,
-  "historicalOpponentTeams": 145,
+  "historicalOpponentTeams": 157,
   "balance": {
     "gamePlanHigh": 1.5,
     "gamePlanMedium": 0.5,
@@ -19,17 +19,17 @@
       "id": "none",
       "label": "Sem plano (linha de base)",
       "samples": 20000,
-      "titleRate": 0.07985,
-      "swissEliminationRate": 0.5098,
-      "averageGames": 10.04745,
+      "titleRate": 0.081,
+      "swissEliminationRate": 0.50275,
+      "averageGames": 10.0994,
       "strength": {
-        "mean": 84.26474300000153,
-        "sd": 2.045162498177812,
-        "min": 75.6,
+        "mean": 84.23530399999997,
+        "sd": 2.048713700735899,
+        "min": 76,
         "p10": 81.6,
         "median": 84.2,
         "p90": 86.9,
-        "max": 92.6
+        "max": 92.1
       },
       "planModifier": {
         "mean": 0,
@@ -41,13 +41,13 @@
         "max": 0
       },
       "probability": {
-        "mean": 0.5051958587715311,
-        "sd": 0.13162510078094758,
-        "min": 0.10125717724657157,
+        "mean": 0.5062017244276947,
+        "sd": 0.13138391398102114,
+        "min": 0.10909682119561302,
         "p10": 0.3318122278318338,
-        "median": 0.5041665702187282,
+        "median": 0.5041665702187289,
         "p90": 0.6827993860934123,
-        "max": 0.9088770389851439
+        "max": 0.8987428227534285
       },
       "compatibility": {
         "high": 0,
@@ -59,21 +59,21 @@
       "id": "aggression",
       "label": "Agressão",
       "samples": 20000,
-      "titleRate": 0.12245,
-      "swissEliminationRate": 0.43605,
-      "averageGames": 10.8257,
+      "titleRate": 0.1205,
+      "swissEliminationRate": 0.42965,
+      "averageGames": 10.86165,
       "strength": {
-        "mean": 85.1691180000016,
-        "sd": 2.188081146135965,
-        "min": 75.6,
+        "mean": 85.1158889999999,
+        "sd": 2.201971398469804,
+        "min": 75.4,
         "p10": 82.3,
-        "median": 85.2,
+        "median": 85.1,
         "p90": 87.9,
-        "max": 93.4
+        "max": 93.6
       },
       "planModifier": {
-        "mean": 0.904375,
-        "sd": 0.6601085966527968,
+        "mean": 0.880585,
+        "sd": 0.6776448610998593,
         "min": -1,
         "p10": 0.5,
         "median": 0.5,
@@ -81,39 +81,39 @@
         "max": 1.5
       },
       "probability": {
-        "mean": 0.5396776477694206,
-        "sd": 0.13299645283553213,
-        "min": 0.08706577244027114,
+        "mean": 0.5396233063319273,
+        "sd": 0.13333283614607475,
+        "min": 0.09826376903346341,
         "p10": 0.362006329339016,
         "median": 0.5415704832167999,
         "p90": 0.7143624294910559,
-        "max": 0.915547525707414
+        "max": 0.9193340750100811
       },
       "compatibility": {
-        "high": 48233,
-        "medium": 46570,
-        "low": 5197
+        "high": 46997,
+        "medium": 47044,
+        "low": 5959
       }
     },
     {
       "id": "teamfight",
       "label": "Teamfight",
       "samples": 20000,
-      "titleRate": 0.12795,
-      "swissEliminationRate": 0.4263,
-      "averageGames": 10.93205,
+      "titleRate": 0.1285,
+      "swissEliminationRate": 0.41895,
+      "averageGames": 10.97685,
       "strength": {
-        "mean": 85.30991300000156,
-        "sd": 2.204981503874868,
+        "mean": 85.27708399999999,
+        "sd": 2.211566019123654,
         "min": 75.4,
         "p10": 82.5,
         "median": 85.3,
         "p90": 88.1,
-        "max": 94.1
+        "max": 93.6
       },
       "planModifier": {
-        "mean": 1.04517,
-        "sd": 0.5268630477647999,
+        "mean": 1.04178,
+        "sd": 0.5255753338957939,
         "min": -1,
         "p10": 0.5,
         "median": 1.5,
@@ -121,39 +121,39 @@
         "max": 1.5
       },
       "probability": {
-        "mean": 0.5443140391579423,
-        "sd": 0.13340902384497041,
-        "min": 0.09392149601927124,
+        "mean": 0.5454323629038532,
+        "sd": 0.13354384341418893,
+        "min": 0.11072731797236822,
         "p10": 0.3658644089891995,
-        "median": 0.5457053875844062,
-        "p90": 0.7211151780228627,
-        "max": 0.92
+        "median": 0.5498339973124774,
+        "p90": 0.7211151780228632,
+        "max": 0.9193340750100811
       },
       "compatibility": {
-        "high": 55702,
-        "medium": 43508,
-        "low": 790
+        "high": 55297,
+        "medium": 43957,
+        "low": 746
       }
     },
     {
       "id": "control_pick",
       "label": "Controle/Pick",
       "samples": 20000,
-      "titleRate": 0.10615,
-      "swissEliminationRate": 0.4649,
-      "averageGames": 10.53715,
+      "titleRate": 0.1071,
+      "swissEliminationRate": 0.45505,
+      "averageGames": 10.61545,
       "strength": {
-        "mean": 84.8826730000016,
-        "sd": 2.0699366838313833,
-        "min": 76,
+        "mean": 84.86664399999988,
+        "sd": 2.071365003388826,
+        "min": 75.6,
         "p10": 82.2,
         "median": 84.9,
-        "p90": 87.6,
-        "max": 93.4
+        "p90": 87.5,
+        "max": 93.6
       },
       "planModifier": {
-        "mean": 0.61793,
-        "sd": 0.5197571693585784,
+        "mean": 0.63134,
+        "sd": 0.5118493962097495,
         "min": -1,
         "p10": 0.5,
         "median": 0.5,
@@ -161,39 +161,39 @@
         "max": 1.5
       },
       "probability": {
-        "mean": 0.5277039213277159,
-        "sd": 0.13165595265237673,
-        "min": 0.10909682119561279,
-        "p10": 0.3505399451488328,
+        "mean": 0.5290095977403322,
+        "sd": 0.13160758207535214,
+        "min": 0.10748743195928405,
+        "p10": 0.3543436937742042,
         "median": 0.529133629072047,
         "p90": 0.7040516276171621,
-        "max": 0.915547525707414
+        "max": 0.9060785039807289
       },
       "compatibility": {
-        "high": 18438,
-        "medium": 77132,
-        "low": 4430
+        "high": 19050,
+        "medium": 77006,
+        "low": 3944
       }
     },
     {
       "id": "scaling",
       "label": "Escala",
       "samples": 20000,
-      "titleRate": 0.1244,
-      "swissEliminationRate": 0.42555,
-      "averageGames": 10.9161,
+      "titleRate": 0.12585,
+      "swissEliminationRate": 0.41725,
+      "averageGames": 10.97025,
       "strength": {
-        "mean": 85.24557300000157,
-        "sd": 2.188674576466734,
-        "min": 76.1,
+        "mean": 85.24183399999987,
+        "sd": 2.1858149776329925,
+        "min": 76.5,
         "p10": 82.5,
         "median": 85.2,
         "p90": 88.1,
-        "max": 94.1
+        "max": 93.6
       },
       "planModifier": {
-        "mean": 0.98083,
-        "sd": 0.592163415874946,
+        "mean": 1.00653,
+        "sd": 0.5787982023988646,
         "min": -1,
         "p10": 0.5,
         "median": 1.5,
@@ -201,18 +201,18 @@
         "max": 1.5
       },
       "probability": {
-        "mean": 0.5432669688847502,
-        "sd": 0.13311011626345226,
-        "min": 0.09679682505395229,
+        "mean": 0.5453215084204486,
+        "sd": 0.13303094266423476,
+        "min": 0.11072731797236822,
         "p10": 0.3658644089891995,
-        "median": 0.5457053875844056,
-        "p90": 0.7177510569577402,
-        "max": 0.92
+        "median": 0.5457053875844062,
+        "p90": 0.7211151780228632,
+        "max": 0.9193340750100811
       },
       "compatibility": {
-        "high": 52124,
-        "medium": 45182,
-        "low": 2694
+        "high": 54055,
+        "medium": 43677,
+        "low": 2268
       }
     }
   ]

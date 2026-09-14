@@ -22,7 +22,7 @@ assert player_index==[
     {key:p[key] for key in ['id','playerName','worldsYear','team']}
     for p in players
 ]
-crosschecks={2015:('Bang',83,12,107),2016:('Faker',82,51,104),2017:('Ruler',70,24,106),2018:('Rookie',70,29,127),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2021:('ShowMaker',75,27,125),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71),2024:('Chovy',59,18,72),2025:('Viper',62,14,51)}
+crosschecks={2014:('Mata',18,27,253),2015:('Bang',83,12,107),2016:('Faker',82,51,104),2017:('Ruler',70,24,106),2018:('Rookie',70,29,127),2019:('Viper',54,14,63),2020:('Canyon',87,27,108),2021:('ShowMaker',75,27,125),2022:('Gumayusi',90,26,107),2023:('Gumayusi',56,12,71),2024:('Chovy',59,18,72),2025:('Viper',62,14,51)}
 checks=[]
 for year,(_,games,patch,_) in CONFIG.items():
     rows=json.loads((OUT/f'matches-{year}.json').read_text(encoding='utf-8'));coverage=json.loads((OUT/f'coverage-{year}.json').read_text(encoding='utf-8'))
@@ -50,7 +50,8 @@ for year,(_,games,patch,_) in CONFIG.items():
                 assert len({r['champion'] for r in matched})==1
                 assert matched[0]['date']==e['firstAppearance']
             else:
-                assert e['sourceId']=='golgg-supplement-2015' and e['observation']['sourceUrl'].startswith('https://gol.gg/')
+                assert e['sourceId'] in ('golgg-supplement-2015','leaguepedia-supplement-2014')
+                assert e['observation']['sourceUrl'].startswith('https://')
                 assert e['confidenceScore']==0 and e['components']['A']==e['components']['B']
             b=cal['parameters'][p['role']];expected=max(70,min(99,math.floor(84.5+5*(s['historicalScore']-b['mean'])/b['sd']+.5)))
             assert s['rating']==s['gameRating']==expected

@@ -1,5 +1,22 @@
 [
   {
+    "year": 2014,
+    "worldsGames": 78,
+    "player": "Mata",
+    "observedKDA": [
+      18,
+      27,
+      253
+    ],
+    "independentKDA": [
+      18,
+      27,
+      253
+    ],
+    "sourceUrl": "https://gol.gg/tournament/tournament-stats/World%20Championship%202014/",
+    "note": "Event game count and one aggregate independently cross-checked. Not a claim that every row was independently verified. 2017 uses its separate frozen audit."
+  },
+  {
     "year": 2015,
     "worldsGames": 73,
     "player": "Bang",
