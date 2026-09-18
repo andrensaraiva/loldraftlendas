@@ -38,6 +38,7 @@ import {
   recordCampaignSummary,
 } from './game/history';
 import type { CampaignSummary } from './game/history';
+import { buildCampaignReport } from './game/report';
 import {
   defaultDraftAvailability,
   loadPublicProductConfig,
@@ -1194,8 +1195,21 @@ export default function App() {
     tournament.outcome,
   ]);
   useEffect(() => {
-    if (screen !== 'result' || !tournament.outcome || !campaignSeed || team.length !== 5) return;
+    if (
+      screen !== 'result' ||
+      !tournament.outcome ||
+      !campaignSeed ||
+      team.length !== 5 ||
+      !data
+    )
+      return;
     const games = tournament.history.flatMap((entry) => entry.games);
+    const campaignReport = buildCampaignReport({
+      tournament,
+      team,
+      champions: data.champions,
+      gamePlan,
+    });
     const summary: CampaignSummary = {
       id: campaignSeedFromText(`history:${campaignSeed}`),
       completedAt: new Date().toISOString(),
@@ -1207,6 +1221,7 @@ export default function App() {
       gameMode,
       gamePlan,
       dailyAttemptKind,
+      report: campaignReport.highlights,
       team: team.map((player) => ({
         playerName: player.playerName,
         team: player.team,
@@ -1219,6 +1234,7 @@ export default function App() {
     campaignSeed,
     campaignSource,
     dailyAttemptKind,
+    data,
     gameMode,
     gamePlan,
     screen,
@@ -1640,6 +1656,7 @@ export default function App() {
           gameMode,
           gamePlan,
           dailyAttemptKind,
+          report: null,
           team: team.map((player) => ({
             playerName: player.playerName,
             team: player.team,

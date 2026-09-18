@@ -33,6 +33,14 @@ const summary: CampaignSummary = {
   gameMode: 'almanac',
   gamePlan: 'teamfight',
   dailyAttemptKind: 'official',
+  report: {
+    strongestCompositionGame: 3,
+    weakestCompositionGame: 1,
+    totalPlanEffect: 4.5,
+    biggestUpset: 'T1 2017 · G2',
+    decisiveGame: 'GEN 2022 · G5',
+    standoutPlayer: 'Mid',
+  },
   team: [
     { playerName: 'Top', team: 'A', worldsYear: 2015, role: 'TOP' },
     { playerName: 'Jungle', team: 'B', worldsYear: 2017, role: 'JUNGLE' },
@@ -80,7 +88,7 @@ describe('local campaign history', () => {
   it('exports a portable versioned document without seeds or personal identifiers', () => {
     const exported = exportCampaignHistory([summary], new Date('2026-09-13T13:00:00.000Z'));
     expect(JSON.parse(exported)).toMatchObject({
-      version: 1,
+      version: 2,
       exportedAt: '2026-09-13T13:00:00.000Z',
       campaigns: [{ id: 'campaign-1' }],
     });
@@ -94,5 +102,12 @@ describe('local campaign history', () => {
     expect(loadCampaignHistory(local)).toEqual([]);
     local.setItem(CAMPAIGN_HISTORY_KEY, JSON.stringify({ version: 0, campaigns: [summary] }));
     expect(loadCampaignHistory(local)).toEqual([]);
+  });
+
+  it('migrates valid version 1 summaries without inventing report highlights', () => {
+    const local = storage();
+    const { report: _report, ...legacy } = summary;
+    local.setItem(CAMPAIGN_HISTORY_KEY, JSON.stringify({ version: 1, campaigns: [legacy] }));
+    expect(loadCampaignHistory(local)).toEqual([{ ...legacy, report: null }]);
   });
 });

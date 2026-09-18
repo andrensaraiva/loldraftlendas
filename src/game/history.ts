@@ -3,8 +3,9 @@ import type { GameMode } from './mode';
 import type { GamePlan } from './plan';
 import type { DailyAttemptKind } from './daily';
 import type { Role } from './types';
+import type { CampaignReportHighlights } from './report';
 
-export const CAMPAIGN_HISTORY_VERSION = 1;
+export const CAMPAIGN_HISTORY_VERSION = 2;
 export const CAMPAIGN_HISTORY_KEY = 'draft-lendas.history';
 export const MAX_CAMPAIGN_HISTORY = 30;
 
@@ -26,6 +27,7 @@ export interface CampaignSummary {
   gameMode: GameMode;
   gamePlan: GamePlan | null;
   dailyAttemptKind: DailyAttemptKind | null;
+  report: CampaignReportHighlights | null;
   team: CampaignHistoryPlayer[];
 }
 
@@ -88,7 +90,24 @@ function browserStorage(): CampaignStorage | null {
   }
 }
 
-function isSummary(value: unknown): value is CampaignSummary {
+function isReportHighlights(value: unknown): value is CampaignReportHighlights {
+  if (!value || typeof value !== 'object') return false;
+  const report = value as Partial<CampaignReportHighlights>;
+  return (
+    Number.isInteger(report.strongestCompositionGame) &&
+    report.strongestCompositionGame! >= 1 &&
+    report.strongestCompositionGame! <= 5 &&
+    Number.isInteger(report.weakestCompositionGame) &&
+    report.weakestCompositionGame! >= 1 &&
+    report.weakestCompositionGame! <= 5 &&
+    typeof report.totalPlanEffect === 'number' &&
+    (report.biggestUpset === null || typeof report.biggestUpset === 'string') &&
+    (report.decisiveGame === null || typeof report.decisiveGame === 'string') &&
+    (report.standoutPlayer === null || typeof report.standoutPlayer === 'string')
+  );
+}
+
+function isSummary(value: unknown, legacy = false): value is CampaignSummary {
   if (!value || typeof value !== 'object') return false;
   const summary = value as Partial<CampaignSummary>;
   return (
@@ -108,6 +127,9 @@ function isSummary(value: unknown): value is CampaignSummary {
       ['aggression', 'teamfight', 'control_pick', 'scaling'].includes(summary.gamePlan ?? '')) &&
     (summary.dailyAttemptKind === null ||
       ['official', 'friendly'].includes(summary.dailyAttemptKind ?? '')) &&
+    (legacy
+      ? summary.report === undefined
+      : summary.report === null || isReportHighlights(summary.report)) &&
     Array.isArray(summary.team) &&
     summary.team.length === 5 &&
     summary.team.every(
@@ -131,8 +153,15 @@ export function loadCampaignHistory(
       version?: unknown;
       campaigns?: unknown;
     };
-    if (parsed.version !== CAMPAIGN_HISTORY_VERSION || !Array.isArray(parsed.campaigns)) return [];
-    return parsed.campaigns.filter(isSummary).slice(0, MAX_CAMPAIGN_HISTORY);
+    if (!Array.isArray(parsed.campaigns)) return [];
+    if (parsed.version === CAMPAIGN_HISTORY_VERSION)
+      return parsed.campaigns.filter((summary) => isSummary(summary)).slice(0, MAX_CAMPAIGN_HISTORY);
+    if (parsed.version === 1)
+      return parsed.campaigns
+        .filter((summary) => isSummary(summary, true))
+        .map((summary) => ({ ...summary, report: null }))
+        .slice(0, MAX_CAMPAIGN_HISTORY);
+    return [];
   } catch {
     return [];
   }
