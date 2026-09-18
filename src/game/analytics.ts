@@ -13,6 +13,8 @@ export const ANALYTICS_EVENTS = [
   'worlds_won',
   'campaign_finished',
   'campaign_report_opened',
+  'journey_node_opened',
+  'journey_downloaded',
   'play_again',
   'save_resumed',
   'campaign_paused',

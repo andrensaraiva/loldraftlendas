@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { campaignCardFileName, campaignShareText } from './share';
+import { campaignCardFileName, campaignShareText, journeyCardFileName } from './share';
 import type { CampaignShareSummary } from './share';
 
 const summary: CampaignShareSummary = {
@@ -37,6 +37,9 @@ describe('campaign sharing', () => {
     expect(campaignCardFileName(summary)).toBe('draft-lendas-campeao-mundial.png');
     expect(campaignCardFileName({ ...summary, outcome: '  ???  ' })).toBe(
       'draft-lendas-campanha.png',
+    );
+    expect(journeyCardFileName({ outcome: 'Campeão mundial' })).toBe(
+      'draft-lendas-jornada-campeao-mundial.png',
     );
   });
 });

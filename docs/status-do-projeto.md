@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-18. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4 e os Pacotes 0–2 do plano de finalização. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
+Atualizado em 2026-09-18. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4 e os Pacotes 0–3 do plano de finalização. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
 
 ## Objetivo Preservado
 
@@ -48,6 +48,7 @@ Migrations Supabase, em ordem:
 10. [20260913140000_daily_challenges.sql](../supabase/migrations/20260913140000_daily_challenges.sql)
 11. [20260918100000_campaign_navigation_analytics.sql](../supabase/migrations/20260918100000_campaign_navigation_analytics.sql)
 12. [20260918110000_campaign_report_analytics.sql](../supabase/migrations/20260918110000_campaign_report_analytics.sql)
+13. [20260918120000_campaign_journey_analytics.sql](../supabase/migrations/20260918120000_campaign_journey_analytics.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -161,7 +162,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O jogador pode exportar um JSON versionado ou apagar todo o histórico após uma confirmação explícita. Falhas e formatos antigos de storage nunca bloqueiam o jogo.
 - Testes unitários cobrem deduplicação, limite, conquistas, privacidade, exportação e dados inválidos; E2E cobre visualização, download real e limpeza em desktop/mobile.
 
-### Plano de Finalização: Pacotes 0–2
+### Plano de Finalização: Pacotes 0–3
 
 - Baseline visual registrada em seis viewports obrigatórios, com contratos de dados, eventos, URLs públicas futuras e orçamento dos retratos documentados.
 - `CampaignReport` puro deriva placares, fases, força, impacto do plano, compatibilidade, zebras, composições, KDA narrativo, campeões e recortes históricos sem consumir RNG.
@@ -173,6 +174,9 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - A previsão clássica explicita força base, modificador, força final e tags presentes/ausentes; o pós-jogo classifica vitória/derrota esperada ou zebra sem prometer causalidade.
 - O relatório final reúne retrospecto por fase, composições, efeito total/médio do plano, compatibilidades, zebras, confronto mais difícil, jogo decisivo, destaque narrativo, campeões e desempenho como favorito/azarão.
 - O Almanaque continua ocultando a leitura durante a campanha e revela o relatório apenas no resultado. No Clássico, cada série encerrada recebe um resumo dos jogos.
+- O encerramento ganhou uma jornada visual derivada somente dos confrontos reais, com marcos de fase, título ou eliminação, zebra e jogo decisivo.
+- Cada nó abre o relatório da partida decisiva daquela série; a comparação usa apenas o histórico deste dispositivo e a jornada pode ser exportada como PNG.
+- Eventos de abertura de nó e download, com validação estrita, estão preparados para o Supabase real.
 
 ### Fase 4: Cobertura Histórica e Readiness
 
@@ -204,7 +208,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 91 testes unitários passaram; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões e 520 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 49 execuções E2E passaram no Chromium, cobrindo desktop, mobile e os seis viewports obrigatórios, com 7 skips condicionais esperados. O bundle inicial ficou em 417,91 kB (108,47 kB gzip); o relatório final está isolado em um chunk lazy de 7,52 kB (2,26 kB gzip), sem aviso acima de 500 kB.
+Resultados registrados: 93 testes unitários passaram; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões e 520 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 49 execuções E2E passaram no Chromium, cobrindo desktop, mobile e os seis viewports obrigatórios, com 7 skips condicionais esperados. O bundle inicial ficou em 421,34 kB (109,27 kB gzip); o relatório final está isolado em um chunk lazy de 7,53 kB (2,26 kB gzip) e a jornada em 2,58 kB (1,23 kB gzip), sem aviso acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -212,7 +216,7 @@ O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, con
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
 
-1. Crie um projeto Supabase e aplique as dez migrations na ordem acima.
+1. Crie um projeto Supabase e aplique as treze migrations na ordem acima.
 2. Crie a conta do mantenedor no Supabase Auth.
 3. Insira manualmente o UUID dela em `public.admin_users`.
 4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.
@@ -225,11 +229,11 @@ O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions a
 
 Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de execução](analise-7a0-e-roadmap-produto.md). A trilha **Compartilhar e Desafiar** deve avançar em paralelo ao backfill histórico, sem relaxar os gates de dados abaixo.
 
-### Próxima Entrega: Pacote 3, Jornada Final
+### Próxima Entrega: Pacote 4, Onboarding
 
-- Criar a linha visual da campanha, com nós por confronto e marcos de fase.
-- Abrir relatórios pelos nós e destacar zebra, jogo decisivo e desfecho.
-- Exportar a jornada como imagem e comparar com o histórico local.
+- Apresentar as cinco regras essenciais em um fluxo curto na primeira visita.
+- Permitir pular, avançar por teclado ou gesto e reabrir o conteúdo por **Como jogar**.
+- Versionar a conclusão localmente e medir início, conclusão e abandono sem dados pessoais.
 
 ### Trilha Paralela: Fase 4, Pesquisa Histórica de 2013
 

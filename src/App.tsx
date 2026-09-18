@@ -162,6 +162,7 @@ const SeriesReportSummary = lazy(() =>
     default: module.SeriesReportSummary,
   })),
 );
+const CampaignJourney = lazy(() => import('./components/CampaignJourney'));
 type ReportSelection = { result: GameResult; series: Series };
 function draftEventProperties(round: DraftRound): AnalyticsProperties {
   return {
@@ -2607,6 +2608,24 @@ export default function App() {
                 </div>
                 <Composition team={team} game={preview} data={viewData} gamePlan={gamePlan} />
               </section>
+            )}
+            {activeCampaignReport && campaignSeed && (
+              <Suspense fallback={<p>Preparando sua jornada…</p>}>
+                <CampaignJourney
+                  report={activeCampaignReport}
+                  tournament={tournament}
+                  previousCampaigns={loadCampaignHistory()}
+                  currentCampaignId={campaignSeedFromText(`history:${campaignSeed}`)}
+                  onOpenGame={(result, journeySeries) => {
+                    analytics.track('journey_node_opened', {
+                      stage: journeySeries.stage,
+                      series_index: tournament.history.indexOf(journeySeries),
+                    });
+                    setReport({ result, series: journeySeries });
+                  }}
+                  onDownload={() => analytics.track('journey_downloaded')}
+                />
+              </Suspense>
             )}
             {activeCampaignReport && (
               <Suspense fallback={<p>Preparando relatório da campanha…</p>}>

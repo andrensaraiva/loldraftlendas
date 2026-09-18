@@ -164,6 +164,19 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   await expect(page.locator('.campaign-report')).toContainText('RELATÓRIO DA CAMPANHA');
   await expect(page.locator('.campaign-report')).toContainText('DESTAQUE DA SIMULAÇÃO');
   await expect(page.locator('.campaign-report')).toContainText('PLANO · TEAMFIGHT');
+  await expect(page.locator('.campaign-journey')).toBeVisible();
+  await expect(page.locator('.journey-node')).toHaveCount(8);
+  await expect(page.locator('.journey-node.title')).toContainText('Título mundial');
+  await page.locator('.journey-node').first().click();
+  await expect(page.getByRole('dialog', { name: 'Relatório da partida' })).toBeVisible();
+  await page.getByRole('button', { name: 'Fechar relatório' }).click();
+  const journeyDownloadPromise = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Baixar jornada' }).click();
+  const journeyDownload = await journeyDownloadPromise;
+  expect(journeyDownload.suggestedFilename()).toBe(
+    'draft-lendas-jornada-campeao-mundial.png',
+  );
+  await expect(page.locator('.journey-status')).toContainText('Imagem da jornada baixada');
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Baixar card' }).click();
   const download = await downloadPromise;
