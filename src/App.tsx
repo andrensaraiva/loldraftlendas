@@ -156,6 +156,12 @@ const CampaignFeedback = lazy(() =>
 const MatchReport = lazy(() =>
   import('./components/MatchReport').then((module) => ({ default: module.MatchReport })),
 );
+const CampaignReport = lazy(() => import('./components/CampaignReport'));
+const SeriesReportSummary = lazy(() =>
+  import('./components/CampaignReport').then((module) => ({
+    default: module.SeriesReportSummary,
+  })),
+);
 type ReportSelection = { result: GameResult; series: Series };
 function draftEventProperties(round: DraftRound): AnalyticsProperties {
   return {
@@ -282,6 +288,13 @@ function LocalHistoryPanel({ revision, changed }: { revision: number; changed: (
                     {campaign.wins}V · {campaign.losses}D ·{' '}
                     {campaign.team.map((p) => p.worldsYear).join(' / ')}
                   </small>
+                  {campaign.report && (
+                    <em>
+                      Destaque: {campaign.report.standoutPlayer ?? '—'} · melhor comp G
+                      {campaign.report.strongestCompositionGame} · plano{' '}
+                      {signedModifier(campaign.report.totalPlanEffect)}
+                    </em>
+                  )}
                 </div>
               ))}
             </div>
@@ -316,12 +329,14 @@ function ReportDialog({
   data,
   close,
   hideStrength = false,
+  gamePlan,
 }: {
   report: ReportSelection;
   team: Team;
   data: GameData;
   close: () => void;
   hideStrength?: boolean;
+  gamePlan: GamePlan | null;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   useEffect(() => {
@@ -353,6 +368,7 @@ function ReportDialog({
           data={data}
           momentIndex={report.result.recap.moments.length - 1}
           hideStrength={hideStrength}
+          gamePlan={gamePlan}
         />
       </Suspense>
     </dialog>
@@ -889,10 +905,17 @@ function MatchForecast({
           <b>
             Plano {userStrength.plan.label} · {compatibilityLabel[userStrength.plan.compatibility]}
           </b>
-          <span>{signedModifier(userStrength.plan.modifier)} na força deste jogo</span>
+          <span>
+            Força base {userStrength.baseTotal.toFixed(1)} · plano{' '}
+            {signedModifier(userStrength.plan.modifier)} · final {userStrength.total.toFixed(1)}
+          </span>
           <small>
-            Ativas:{' '}
+            Tags encontradas:{' '}
             {userStrength.plan.matchedTags.map((tag) => tag.label).join(', ') || 'nenhuma tag'}
+          </small>
+          <small>
+            Tags ausentes:{' '}
+            {userStrength.plan.missingTags.map((tag) => tag.label).join(', ') || 'nenhuma'}
           </small>
         </div>
       )}
@@ -1093,6 +1116,10 @@ export default function App() {
       ...(gamePlan ? { game_plan: gamePlan } : {}),
     };
     analytics.trackOnce('campaign_finished', 'campaign_finished', properties);
+    analytics.trackOnce('campaign_report_opened', 'campaign_report_opened', {
+      game_mode: gameMode,
+      ...(gamePlan ? { game_plan: gamePlan } : {}),
+    });
     if (campaignSource === 'challenge')
       analytics.trackOnce('challenge_completed', 'challenge_completed', {
         ...properties,
@@ -1728,6 +1755,19 @@ export default function App() {
             activeDraftAvailability.activeRegionGroups.includes(group.id),
         ),
     );
+  const reportTournament =
+    series && seriesDone(series)
+      ? { ...tournament, history: [...tournament.history, series] }
+      : tournament;
+  const activeCampaignReport =
+    team.length === 5
+      ? buildCampaignReport({
+          tournament: reportTournament,
+          team,
+          champions: viewData.champions,
+          gamePlan,
+        })
+      : null;
   const showRatings = gameMode === 'classic' || screen === 'result';
   return (
     <div
@@ -2370,6 +2410,7 @@ export default function App() {
                   momentIndex={momentIndex}
                   compact={settings.mode === 'quick'}
                   hideStrength={!showRatings}
+                  gamePlan={gamePlan}
                 />
               </Suspense>
             )}
@@ -2388,6 +2429,14 @@ export default function App() {
                     ? 'Sua equipe escreveu mais um capítulo.'
                     : 'Até as lendas encontram adversários à altura.'}
                 </p>
+                {gameMode === 'classic' && activeCampaignReport && (
+                  <Suspense fallback={<p>Preparando leitura da série…</p>}>
+                    <SeriesReportSummary
+                      report={activeCampaignReport}
+                      seriesIndex={activeCampaignReport.totals.series - 1}
+                    />
+                  </Suspense>
+                )}
                 <button className="primary" onClick={finishSeries}>
                   Antecipar próximo confronto <ArrowRight size={20} />
                 </button>
@@ -2559,6 +2608,11 @@ export default function App() {
                 <Composition team={team} game={preview} data={viewData} gamePlan={gamePlan} />
               </section>
             )}
+            {activeCampaignReport && (
+              <Suspense fallback={<p>Preparando relatório da campanha…</p>}>
+                <CampaignReport report={activeCampaignReport} />
+              </Suspense>
+            )}
             <CampaignShare
               challengeUrl={activeChallengeUrl}
               summary={{
@@ -2650,6 +2704,7 @@ export default function App() {
           team={team}
           data={viewData}
           hideStrength={!showRatings}
+          gamePlan={gamePlan}
           close={() => setReport(null)}
         />
       )}

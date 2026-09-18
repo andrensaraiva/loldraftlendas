@@ -53,6 +53,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Velocidades 1×, 2× e 4×, pausa/continuação e troca de modo durante a partida. Abrir instruções ou um relatório suspende os temporizadores até fechar o diálogo.
 - Histórico de cada jogo, com relatório completo disponível em ambos os modos e após o fim da campanha.
 - Prévia de cada partida com probabilidade de vitória, força, rating médio, composição e bônus ativos antes de revelar o resultado.
+- Relatório agregado da campanha com fases, plano, compatibilidade, zebras, composições, destaque narrativo, campeões e retrospecto como favorito ou azarão. O KDA é identificado como apresentação da simulação, não como causa do sorteio.
 - Adversários com elencos históricos, sem repetição na mesma campanha enquanto houver opções.
 - Card final compartilhável em PNG com equipe, anos e campanha; usa o compartilhamento nativo do dispositivo quando disponível e oferece download/cópia como fallback, sem dados pessoais.
 - Seed versionada em toda campanha: ofertas, trocas, adversários, resultados e relatos são reproduzíveis pelas mesmas regras e decisões. O card final inclui um link/código para desafiar amigos nas mesmas condições, sem conta ou ranking não verificável.

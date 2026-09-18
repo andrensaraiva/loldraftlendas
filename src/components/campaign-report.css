@@ -1,0 +1,191 @@
+.campaign-report,
+.series-report-summary {
+  margin: 30px 0;
+  border: 1px solid #cedac7;
+  border-radius: 14px;
+  background: #f5f8f0;
+  padding: 28px;
+  text-align: left;
+}
+.result-explanation {
+  margin: 9px 0 0;
+  border-left: 3px solid #78b952;
+  background: #f0f6e9;
+  padding: 11px 13px;
+  color: #52604e;
+  font-size: 10px;
+  line-height: 1.55;
+}
+.campaign-report > header {
+  max-width: 720px;
+}
+.campaign-report > header h2,
+.series-report-summary h2 {
+  margin: 7px 0;
+  font: 800 clamp(30px, 4vw, 48px)/1 var(--display);
+}
+.campaign-report > header p,
+.series-report-summary > div > p {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.campaign-report-totals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin: 24px 0 12px;
+}
+.campaign-report-totals article {
+  display: grid;
+  gap: 4px;
+  border-radius: 8px;
+  background: #17261d;
+  padding: 17px;
+  color: white;
+}
+.campaign-report-totals b {
+  font: 800 34px/1 var(--display);
+  color: var(--lime);
+}
+.campaign-report-totals span,
+.campaign-report-grid article > span {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+.campaign-report-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 9px;
+}
+.campaign-report-grid article {
+  min-width: 0;
+  border: 1px solid #dce5d6;
+  border-radius: 8px;
+  background: white;
+  padding: 17px;
+}
+.campaign-report-grid h3 {
+  overflow-wrap: anywhere;
+  margin: 7px 0 4px;
+  font: 800 24px/1 var(--display);
+}
+.campaign-report-grid p {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.compatibility-bar {
+  display: flex;
+  height: 7px;
+  overflow: hidden;
+  margin-top: 13px;
+  border-radius: 99px;
+  background: #e4e9df;
+}
+.compatibility-bar .high { background: #56b52d; }
+.compatibility-bar .medium { background: #d2a92e; }
+.compatibility-bar .low { background: #b65b4e; }
+.stage-report {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 20px;
+}
+.stage-report article {
+  display: grid;
+  gap: 4px;
+  border-left: 3px solid #6eb447;
+  background: #eaf1e4;
+  padding: 11px;
+}
+.stage-report span,
+.stage-report small {
+  color: var(--muted);
+  font-size: 8px;
+}
+.stage-report b { font-size: 10px; }
+.composition-report {
+  margin-top: 22px;
+  border-top: 1px solid #d7e0d1;
+  padding-top: 18px;
+}
+.composition-report > div:not(.subheading) {
+  display: grid;
+  grid-template-columns: 30px 48px 48px 48px minmax(100px, 1fr);
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+  font-size: 10px;
+}
+.composition-report i {
+  color: #47703c;
+  font-style: normal;
+}
+.composition-report > div > div {
+  height: 6px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #dfe7da;
+}
+.composition-report > div > div span {
+  display: block;
+  height: 100%;
+  background: var(--lime);
+}
+.report-records {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+.report-records span {
+  border-radius: 99px;
+  background: #e7eee1;
+  padding: 8px 11px;
+  font-size: 9px;
+}
+.series-report-summary {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) 1.3fr;
+  gap: 22px;
+}
+.series-report-games {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 8px;
+}
+.series-report-games article {
+  display: grid;
+  gap: 5px;
+  border-left: 3px solid #9aac91;
+  border-radius: 5px;
+  background: white;
+  padding: 12px;
+}
+.series-report-games article.win { border-color: #50a82e; }
+.series-report-games article.loss { border-color: #b35449; }
+.series-report-games span,
+.series-report-games small {
+  color: var(--muted);
+  font-size: 8px;
+}
+.series-report-games b { font-size: 10px; }
+@media (max-width: 760px) {
+  .campaign-report,
+  .series-report-summary { padding: 20px 15px; }
+  .campaign-report-totals { grid-template-columns: 1fr 1fr; }
+  .campaign-report-grid { grid-template-columns: 1fr; }
+  .series-report-summary { grid-template-columns: 1fr; }
+  .stage-report { grid-template-columns: 1fr 1fr; }
+  .composition-report > div:not(.subheading) {
+    grid-template-columns: 26px 40px 38px 42px minmax(60px, 1fr);
+    gap: 5px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .compatibility-bar span,
+  .composition-report span { transition: none !important; }
+}

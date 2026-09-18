@@ -94,6 +94,9 @@ test('Almanac hides numeric guidance and reveals it only after the campaign', as
     .toBe('Campeão mundial');
   await expect(page.locator('.result-achievements')).toContainText('Lendas mundiais');
   await expect(page.locator('.almanac-reveal')).toBeVisible();
+  await expect(page.locator('.campaign-report')).toBeVisible();
+  await expect(page.locator('.campaign-report')).toContainText('A história por trás do resultado');
+  await expect(page.locator('.campaign-report')).toContainText('não causas do resultado');
   await expect(page.locator('.almanac-reveal .comp-art b')).not.toHaveText(Array(5).fill('?'));
   await expect(page.locator('.almanac-reveal .composition-scores')).toBeVisible();
   await expect(page.locator('.almanac-reveal .composition-scores')).toContainText(
@@ -158,6 +161,9 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   });
   await expect(page.getByRole('button', { name: 'Compartilhar campanha' })).toBeVisible();
   await expect(page.getByRole('button', { name: /Copiar desafio 0000-0000/ })).toBeVisible();
+  await expect(page.locator('.campaign-report')).toContainText('RELATÓRIO DA CAMPANHA');
+  await expect(page.locator('.campaign-report')).toContainText('DESTAQUE DA SIMULAÇÃO');
+  await expect(page.locator('.campaign-report')).toContainText('PLANO · TEAMFIGHT');
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Baixar card' }).click();
   const download = await downloadPromise;
@@ -178,6 +184,7 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   await page.locator('.history-games button').last().click();
   await expect(page.getByRole('dialog')).toBeVisible();
   await expect(page.locator('.kda-table tbody tr')).toHaveCount(10);
+  await expect(page.locator('.result-explanation')).toContainText(/Vitória|Derrota/);
   await page.getByText('Linha do tempo').click();
   await expect(page.locator('.moment-history li')).toHaveCount(7);
   await page.getByRole('button', { name: 'Fechar relatório' }).click();
@@ -218,7 +225,9 @@ test('detailed playback updates KDA, pauses, changes speed/mode and retains the 
   await expect(page.locator('.match-forecast')).toBeVisible({ timeout: 7000 });
   await expect(page.locator('.match-forecast')).toContainText('chance para suas lendas');
   await expect(page.locator('.plan-impact')).toContainText('Plano Teamfight');
-  await expect(page.locator('.plan-impact')).toContainText(/na força deste jogo/);
+  await expect(page.locator('.plan-impact')).toContainText('Força base');
+  await expect(page.locator('.plan-impact')).toContainText('Tags encontradas');
+  await expect(page.locator('.plan-impact')).toContainText('Tags ausentes');
   await expect(
     page.getByRole('progressbar', { name: 'Chance estimada de vitória' }),
   ).toHaveAttribute('aria-valuenow', /^\d+$/);

@@ -12,6 +12,7 @@ export const ANALYTICS_EVENTS = [
   'playoffs_reached',
   'worlds_won',
   'campaign_finished',
+  'campaign_report_opened',
   'play_again',
   'save_resumed',
   'campaign_paused',

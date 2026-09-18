@@ -1,6 +1,9 @@
 import { championArt } from '../data/art';
 import type { GameData } from '../data/repository';
 import type { GameResult, PlayerKda, Team } from '../game/types';
+import { gamePlanBreakdown } from '../game/engine';
+import type { GamePlan } from '../game/plan';
+import { classifyResult, resultExpectationLabel } from '../game/report';
 import { Activity, Clock3, Swords } from 'lucide-react';
 const kills = (stats: PlayerKda[]) => stats.reduce((sum, p) => sum + p.kills, 0);
 function KdaTable({
@@ -66,6 +69,7 @@ export function MatchReport({
   momentIndex,
   compact = false,
   hideStrength = false,
+  gamePlan,
 }: {
   result: GameResult;
   team: Team;
@@ -75,9 +79,13 @@ export function MatchReport({
   momentIndex: number;
   compact?: boolean;
   hideStrength?: boolean;
+  gamePlan: GamePlan | null;
 }) {
   const moment = result.recap.moments[momentIndex];
   const ended = momentIndex === result.recap.moments.length - 1;
+  const plan = gamePlan
+    ? gamePlanBreakdown(team, result.game, data.champions, gamePlan)
+    : null;
   return (
     <div className="match-report" data-moment={momentIndex}>
       <div className="report-heading">
@@ -108,14 +116,25 @@ export function MatchReport({
         <span style={{ width: `${(moment.minute / result.recap.duration) * 100}%` }} />
       </div>
       {ended && (
-        <div className={`game-outcome ${result.won ? 'win' : 'loss'}`}>
-          <b>{result.won ? 'VITÓRIA' : 'DERROTA'}</b>
-          <span>
-            {hideStrength
-              ? 'Leitura de força guardada para a revelação final do Almanaque'
-              : `Força ${result.strength.toFixed(1)} × ${result.opponentStrength.toFixed(1)} · ${Math.round(result.probability * 100)}% de chance para suas lendas`}
-          </span>
-        </div>
+        <>
+          <div className={`game-outcome ${result.won ? 'win' : 'loss'}`}>
+            <b>{result.won ? 'VITÓRIA' : 'DERROTA'}</b>
+            <span>
+              {hideStrength
+                ? 'Leitura de força guardada para a revelação final do Almanaque'
+                : `Força ${result.strength.toFixed(1)} × ${result.opponentStrength.toFixed(1)} · ${Math.round(result.probability * 100)}% de chance para suas lendas`}
+            </span>
+          </div>
+          {!hideStrength && (
+            <p className="result-explanation">
+              <b>{resultExpectationLabel(classifyResult(result))}.</b>{' '}
+              {plan
+                ? `O plano ${plan.label} teve compatibilidade ${plan.compatibility === 'high' ? 'alta' : plan.compatibility === 'medium' ? 'média' : 'baixa'} e aplicou ${plan.modifier > 0 ? '+' : ''}${plan.modifier.toFixed(1)} à força.`
+                : 'Nenhum modificador de plano foi aplicado.'}{' '}
+              A probabilidade descrevia o favoritismo antes do sorteio; ela não garantia o resultado.
+            </p>
+          )}
+        </>
       )}
       {!compact && (
         <>

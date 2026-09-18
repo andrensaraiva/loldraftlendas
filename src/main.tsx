@@ -16,6 +16,7 @@ import '@fontsource/dm-sans/latin-800.css';
 import './styles.css';
 import './components/autoplay.css';
 import './components/draft.css';
+import './components/campaign-report.css';
 const AdminApp = lazy(() => import('./admin/AdminApp'));
 const ArchiveApp = lazy(() => import('./archive/ArchiveApp'));
 const isAdmin = window.location.pathname.replace(/\/+$/, '') === '/admin';

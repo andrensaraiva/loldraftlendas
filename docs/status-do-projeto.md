@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-18. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4 e os Pacotes 0–1 do plano de finalização. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
+Atualizado em 2026-09-18. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4 e os Pacotes 0–2 do plano de finalização. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
 
 ## Objetivo Preservado
 
@@ -47,6 +47,7 @@ Migrations Supabase, em ordem:
 9. [20260913130000_game_plans.sql](../supabase/migrations/20260913130000_game_plans.sql)
 10. [20260913140000_daily_challenges.sql](../supabase/migrations/20260913140000_daily_challenges.sql)
 11. [20260918100000_campaign_navigation_analytics.sql](../supabase/migrations/20260918100000_campaign_navigation_analytics.sql)
+12. [20260918110000_campaign_report_analytics.sql](../supabase/migrations/20260918110000_campaign_report_analytics.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -160,7 +161,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O jogador pode exportar um JSON versionado ou apagar todo o histórico após uma confirmação explícita. Falhas e formatos antigos de storage nunca bloqueiam o jogo.
 - Testes unitários cobrem deduplicação, limite, conquistas, privacidade, exportação e dados inválidos; E2E cobre visualização, download real e limpeza em desktop/mobile.
 
-### Plano de Finalização: Pacotes 0–1
+### Plano de Finalização: Pacotes 0–2
 
 - Baseline visual registrada em seis viewports obrigatórios, com contratos de dados, eventos, URLs públicas futuras e orçamento dos retratos documentados.
 - `CampaignReport` puro deriva placares, fases, força, impacto do plano, compatibilidade, zebras, composições, KDA narrativo, campeões e recortes históricos sem consumir RNG.
@@ -169,6 +170,9 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - `PlayerCard`, `PlayerChoiceCarousel` e `PlayerAvatar` foram extraídos do `App.tsx`.
 - A marca volta ao início sem apagar o save. **Continuar depois** persiste a campanha pausada; substituir ou abandonar exige confirmação, e o botão Voltar do navegador preserva o progresso.
 - A tela final ganhou ações explícitas para histórico, replay e início. Eventos de pausa/abandono e migration allowlisted estão preparados para o Supabase real.
+- A previsão clássica explicita força base, modificador, força final e tags presentes/ausentes; o pós-jogo classifica vitória/derrota esperada ou zebra sem prometer causalidade.
+- O relatório final reúne retrospecto por fase, composições, efeito total/médio do plano, compatibilidades, zebras, confronto mais difícil, jogo decisivo, destaque narrativo, campeões e desempenho como favorito/azarão.
+- O Almanaque continua ocultando a leitura durante a campanha e revela o relatório apenas no resultado. No Clássico, cada série encerrada recebe um resumo dos jogos.
 
 ### Fase 4: Cobertura Histórica e Readiness
 
@@ -200,7 +204,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 91 testes unitários passaram; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões e 520 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 49 execuções E2E passaram no Chromium, cobrindo desktop, mobile e os seis viewports obrigatórios, com 7 skips condicionais esperados. O bundle inicial ficou em 416,58 kB (108,14 kB gzip), sem aviso de chunk acima de 500 kB.
+Resultados registrados: 91 testes unitários passaram; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões e 520 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 49 execuções E2E passaram no Chromium, cobrindo desktop, mobile e os seis viewports obrigatórios, com 7 skips condicionais esperados. O bundle inicial ficou em 417,91 kB (108,47 kB gzip); o relatório final está isolado em um chunk lazy de 7,52 kB (2,26 kB gzip), sem aviso acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -221,11 +225,11 @@ O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions a
 
 Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de execução](analise-7a0-e-roadmap-produto.md). A trilha **Compartilhar e Desafiar** deve avançar em paralelo ao backfill histórico, sem relaxar os gates de dados abaixo.
 
-### Próxima Entrega: Pacote 2, Explicação e Relatórios
+### Próxima Entrega: Pacote 3, Jornada Final
 
-- Apresentar o `CampaignReport` na interface, com classificação de resultado, tags presentes/ausentes e efeito do plano.
-- Adicionar cards após séries no Clássico e manter a revelação completa somente no fim do Almanaque.
-- Instrumentar abertura dos relatórios e cobrir o fluxo com testes unitários e E2E.
+- Criar a linha visual da campanha, com nós por confronto e marcos de fase.
+- Abrir relatórios pelos nós e destacar zebra, jogo decisivo e desfecho.
+- Exportar a jornada como imagem e comparar com o histórico local.
 
 ### Trilha Paralela: Fase 4, Pesquisa Histórica de 2013
 

@@ -619,6 +619,15 @@ main > section {
   margin: 2px 0;
   font: 700 14px var(--display);
 }
+.history-campaigns em {
+  margin-top: 6px;
+  border-top: 1px solid #e1e7dc;
+  padding-top: 5px;
+  color: #4d6746;
+  font-size: 7px;
+  font-style: normal;
+  line-height: 1.45;
+}
 .history-achievements {
   display: flex;
   flex-wrap: wrap;
