@@ -33,6 +33,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 
 - Home e instruções.
 - Cinco escolhas imediatas: TOP → JUNGLE → MID → ADC → SUPPORT. Cada posição sorteia ano e grupo regional dentre grupos disponíveis.
+- No mobile, as três opções usam carrossel com swipe, teclado, setas, indicador e uma prévia da próxima carta. A escolha acontece somente pelo CTA explícito **Escalar esta lenda**.
 - Modos **Clássico** e **Almanaque**: o Clássico exibe ratings e força; o Almanaque oculta toda orientação numérica durante a campanha e revela os cinco jogos no resultado final. O modo integra save, desafio e card compartilhável.
 - Quatro planos persistentes escolhidos após o draft: **Agressão**, **Teamfight**, **Controle/Pick** e **Escala**. As tags ativas e o efeito limitado de `−1,0` a `+1,5` aparecem na composição e na prévia da partida.
 - Filtros opcionais na home restringem o draft e o futuro desafio por edição e grupo regional. Combinações vazias são bloqueadas e cada contexto do manifesto preserva três candidatos por posição.
@@ -56,6 +57,8 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Card final compartilhável em PNG com equipe, anos e campanha; usa o compartilhamento nativo do dispositivo quando disponível e oferece download/cópia como fallback, sem dados pessoais.
 - Seed versionada em toda campanha: ofertas, trocas, adversários, resultados e relatos são reproduzíveis pelas mesmas regras e decisões. O card final inclui um link/código para desafiar amigos nas mesmas condições, sem conta ou ranking não verificável.
 - Save de campanha versionado no armazenamento local do navegador: seleções, trocas, draft, série, torneio, resultados e preferências de reprodução são retomados por **Continuar campanha**. Saves incompatíveis com uma nova versão de dados são descartados com segurança.
+- A marca e **Continuar depois** voltam ao início preservando um save pausado; abandonar ou substituir uma campanha exige confirmação. O botão Voltar do navegador mantém o progresso.
+- Um contrato puro `CampaignReport` deriva os agregados finais sem executar novo sorteio; o histórico local v2 preserva somente destaques categorizados.
 - Painel privado em `/admin`: allowlist explícita de administradores, configuração versionada, funil de campanhas, resultados, duração, trocas, compartilhamentos, picks, rejeições, anos, regiões, dispositivos e feedback anônimo. O modo local de demonstração usa métricas ilustrativas e não envia dados.
 - Configuração remota opcional para novos drafts: trocas iniciais, anos, grupos regionais, analytics e aviso de manutenção. Um snapshot das regras fica salvo na campanha ativa, evitando alterações retroativas.
 - Feedback contextual opcional em cada rating G1–G5: motivo categorizado e observação curta, ligado somente aos IDs históricos públicos e disponível no dashboard agregado para revisão editorial.

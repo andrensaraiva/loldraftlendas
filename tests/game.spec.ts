@@ -65,7 +65,7 @@ async function draft(
     await expect(
       page.locator('.player-card').first().locator('.pool-slot img').first(),
     ).toHaveAttribute('src', /^\/assets\/20\d{2}\//);
-    await page.locator('.player-card').first().click();
+    await page.locator('.player-pick-button').first().click();
   }
   await page.getByRole('radio', { name: new RegExp(gamePlan, 'i') }).check();
 }
@@ -125,6 +125,8 @@ test('challenge link reproduces the same opening offer and rejects incompatible 
 
   await page.goto(path);
   await page.getByRole('button', { name: 'Aceitar desafio' }).click();
+  await expect(page.getByRole('dialog', { name: 'Começar um novo draft?' })).toBeVisible();
+  await page.getByRole('button', { name: 'Começar novo draft' }).click();
   await expect(page.locator('.player-card')).toHaveCount(3);
   expect(
     await page
@@ -180,6 +182,8 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   await expect(page.locator('.moment-history li')).toHaveCount(7);
   await page.getByRole('button', { name: 'Fechar relatório' }).click();
   await page.getByRole('button', { name: 'Jogar novamente' }).click();
+  await expect(page.getByRole('dialog', { name: 'Começar um novo draft?' })).toBeVisible();
+  await page.getByRole('button', { name: 'Começar novo draft' }).click();
   await expect(page.locator('.team-slot.filled')).toHaveCount(0);
   expect(errors).toEqual([]);
 });

@@ -44,6 +44,8 @@ test('daily challenge keeps one official local attempt and exposes the recent ar
     .getByRole('button', { name: /Jogar amistoso/ })
     .first()
     .click();
+  await expect(page.getByRole('dialog', { name: 'Começar um novo draft?' })).toBeVisible();
+  await page.getByRole('button', { name: 'Começar novo draft' }).click();
   await expect(page.locator('.player-card')).toHaveCount(3);
   await expect
     .poll(async () =>

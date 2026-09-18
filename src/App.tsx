@@ -66,6 +66,8 @@ import {
   CircleHelp,
   Flag,
   History,
+  House,
+  LogOut,
   Menu,
   RotateCcw,
   Trash2,
@@ -78,6 +80,10 @@ import {
 } from 'lucide-react';
 import { LocalDataRepository } from './data/repository';
 import type { GameData } from './data/repository';
+import { PlayerAvatar } from './components/PlayerAvatar';
+import { PlayerChoiceCarousel } from './components/PlayerChoiceCarousel';
+import { CampaignExitDialog } from './components/CampaignExitDialog';
+import type { CampaignExitAction } from './components/CampaignExitDialog';
 import { DRAFT_REGION_GROUP_IDS, ROLES } from './game/types';
 import type {
   DraftRegionGroupId,
@@ -361,7 +367,7 @@ function CampaignHistory({
 }) {
   if (!tournament.history.length) return null;
   return (
-    <div className="history campaign-history">
+    <div className="history campaign-history" id="campaign-history">
       <h2>Sua campanha</h2>
       <p>Abra qualquer jogo para ver os acontecimentos e o KDA.</p>
       {tournament.history.map((s, i) => {
@@ -525,22 +531,6 @@ function HowTo({
         Entendi, vamos jogar <ArrowRight size={20} />
       </button>
     </dialog>
-  );
-}
-function PlayerAvatar({ player, className = '' }: { player: PlayerVersion; className?: string }) {
-  return (
-    <span
-      className={`player-avatar avatar-${player.role.toLowerCase()} ${className}`}
-      role="img"
-      aria-label={`Avatar estilizado de ${player.playerName}`}
-    >
-      <span className="avatar-sun" />
-      <span className="avatar-head" />
-      <span className="avatar-body" />
-      <span className="avatar-mark" aria-hidden="true">
-        {player.playerName.charAt(0).toUpperCase()}
-      </span>
-    </span>
   );
 }
 function TeamStrip({ team, active = 5 }: { team: Team; active?: number }) {
@@ -910,85 +900,6 @@ function MatchForecast({
     </section>
   );
 }
-function PlayerCard({
-  player,
-  data,
-  onPick,
-  index,
-  selected,
-  disabled,
-  showRatings = true,
-}: {
-  player: PlayerVersion;
-  data: GameData;
-  onPick: () => void;
-  index: number;
-  selected: boolean;
-  disabled: boolean;
-  showRatings?: boolean;
-}) {
-  return (
-    <button
-      className={`player-card ${selected ? 'is-picked' : ''}`}
-      disabled={disabled}
-      aria-pressed={selected}
-      onClick={onPick}
-      aria-label={`Escolher ${player.playerName}, ${player.team}, ${player.worldsYear}`}
-      style={{ animationDelay: `${index * 65}ms` }}
-    >
-      <div className="player-info">
-        <div className="player-title">
-          <div>
-            <h2>{player.playerName}</h2>
-            <p>
-              {player.team} <span>·</span> Worlds {player.worldsYear}
-            </p>
-          </div>
-          <span className="pick-arrow">
-            <ArrowUpRight size={23} />
-          </span>
-        </div>
-        <div className="player-art">
-          <PlayerAvatar player={player} />
-          <span className="card-team">
-            {player.team}
-            <span>{player.worldsYear}</span>
-          </span>
-          <span className="card-role">{roleLabel[player.role]}</span>
-          <span className="art-caption">AVATAR ORIGINAL · PERFIL DE JOGADOR</span>
-        </div>
-        <div className="profile-label">
-          <span /> {player.profile}
-        </div>
-        <div className="pool-label">
-          <span>POOL DA SÉRIE</span>
-          <span>FIXO · G1 → G5</span>
-        </div>
-        <div className="champion-pool">
-          {player.championPool.map((slot) => {
-            const c = data.champions[slot.championId];
-            return (
-              <div key={slot.game} className="pool-slot">
-                <span>G{slot.game}</span>
-                <Art src={championArt(c, player.worldsYear).image} alt="" />
-                <b
-                  aria-label={showRatings ? `Rating ${slot.rating}` : 'Rating oculto no Almanaque'}
-                >
-                  {showRatings ? slot.rating : '?'}
-                </b>
-                <small>{c.name}</small>
-              </div>
-            );
-          })}
-        </div>
-        <span className="card-action">
-          {selected ? 'Escalado ✓' : `Escalar ${player.playerName}`}
-          <ArrowRight size={17} />
-        </span>
-      </div>
-    </button>
-  );
-}
 export default function App() {
   const [data, setData] = useState<GameData | null>(null);
   const [loadingGame, setLoadingGame] = useState(false);
@@ -1022,6 +933,14 @@ export default function App() {
   const [gamePlan, setGamePlan] = useState<GamePlan | null>(null);
   const [maintenanceBanner, setMaintenanceBanner] = useState<string | null>(null);
   const [help, setHelp] = useState(false);
+  const [exitAction, setExitAction] = useState<CampaignExitAction | null>(null);
+  const replacementStart = useRef<{
+    challenge: CampaignChallenge | null;
+    daily: DailyChallenge | null;
+    dailyOfficialAllowed: boolean;
+  } | null>(null);
+  const activeCampaign = useRef(false);
+  const routeReady = useRef(false);
   const [remaining, setRemaining] = useState<number>(DRAFT_CONFIG.exchanges);
   const [rejected, setRejected] = useState<string[]>([]);
   const [pending, setPending] = useState<string | null>(null);
@@ -1050,6 +969,36 @@ export default function App() {
   const [momentIndex, setMomentIndex] = useState(0);
   const [report, setReport] = useState<ReportSelection | null>(null);
   const title = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    activeCampaign.current = !!campaignSeed;
+  }, [campaignSeed]);
+  useEffect(() => {
+    window.history.replaceState(
+      { ...window.history.state, draftLendasScreen: 'home' },
+      '',
+      window.location.href,
+    );
+    routeReady.current = true;
+    const onPopState = (event: PopStateEvent) => {
+      const target = event.state?.draftLendasScreen as Screen | undefined;
+      if (target === 'home' || !activeCampaign.current) {
+        setScreen('home');
+        return;
+      }
+      if (target && ['draft', 'team', 'tournament', 'match', 'result'].includes(target))
+        setScreen(target);
+    };
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
+  useEffect(() => {
+    if (!routeReady.current) return;
+    const current = window.history.state?.draftLendasScreen as Screen | undefined;
+    const state = { ...window.history.state, draftLendasScreen: screen };
+    if (current === 'home' && screen !== 'home')
+      window.history.pushState(state, '', window.location.href);
+    else if (current !== screen) window.history.replaceState(state, '', window.location.href);
+  }, [screen]);
   useEffect(() => {
     let active = true;
     const saved = loadCampaign(catalog.draftRegionManifest.datasetVersion);
@@ -1106,29 +1055,8 @@ export default function App() {
   }, [screen, team.length]);
   useEffect(() => {
     if (!data || !campaignSeed || screen === 'home') return;
-    const campaign: CampaignState = {
-      seed: campaignSeed,
-      randomVersion: CAMPAIGN_RANDOM_VERSION,
-      campaignSource,
-      dailyChallengeId,
-      dailyAttemptId,
-      dailyAttemptKind,
-      gameMode,
-      gamePlan,
-      screen,
-      draftStep: team.length,
-      ...(campaignAvailability ? { draftAvailability: campaignAvailability } : {}),
-      remaining,
-      rejected,
-      rounds,
-      team,
-      preview,
-      tournament,
-      series,
-      settings,
-      playResult,
-      momentIndex,
-    };
+    const campaign = currentCampaignState();
+    if (!campaign) return;
     setHasSavedCampaign(saveCampaign(campaign, data.draftRegionManifest.datasetVersion));
   }, [
     data,
@@ -1457,6 +1385,80 @@ export default function App() {
       window.history.replaceState(null, '', cleanUrl);
     }
   }
+  function currentCampaignState(
+    campaignScreen: CampaignScreen = screen === 'home' ? 'draft' : screen,
+    campaignSettings: PlaybackSettings = settings,
+  ): CampaignState | null {
+    if (!campaignSeed) return null;
+    return {
+      seed: campaignSeed,
+      randomVersion: CAMPAIGN_RANDOM_VERSION,
+      campaignSource,
+      dailyChallengeId,
+      dailyAttemptId,
+      dailyAttemptKind,
+      gameMode,
+      gamePlan,
+      screen: campaignScreen,
+      draftStep: team.length,
+      ...(campaignAvailability ? { draftAvailability: campaignAvailability } : {}),
+      remaining,
+      rejected,
+      rounds,
+      team,
+      preview,
+      tournament,
+      series,
+      settings: campaignSettings,
+      playResult,
+      momentIndex,
+    };
+  }
+  function requestStart(
+    challenge: CampaignChallenge | null = null,
+    daily: DailyChallenge | null = null,
+    dailyOfficialAllowed = true,
+  ) {
+    if (hasSavedCampaign) {
+      replacementStart.current = { challenge, daily, dailyOfficialAllowed };
+      setExitAction('replace');
+      return;
+    }
+    void start(challenge, daily, dailyOfficialAllowed);
+  }
+  function continueLater() {
+    if (screen === 'home') return;
+    analytics.track('campaign_paused', { screen });
+    const pausedSettings = { ...settings, paused: true };
+    const campaign = currentCampaignState(screen, pausedSettings);
+    if (campaign && data)
+      setHasSavedCampaign(saveCampaign(campaign, data.draftRegionManifest.datasetVersion));
+    setSettings(pausedSettings);
+    setScreen('home');
+  }
+  function abandonCampaign() {
+    analytics.track('campaign_abandoned', { screen });
+    if (draftTimer.current) clearTimeout(draftTimer.current);
+    clearCampaign();
+    setHasSavedCampaign(false);
+    setCampaignSeed(null);
+    setPending(null);
+    setRolling(false);
+    setReport(null);
+    setExitAction(null);
+    replacementStart.current = null;
+    setScreen('home');
+  }
+  function confirmCampaignExit() {
+    if (exitAction === 'abandon') {
+      abandonCampaign();
+      return;
+    }
+    const request = replacementStart.current;
+    setExitAction(null);
+    replacementStart.current = null;
+    if (request) void start(request.challenge, request.daily, request.dailyOfficialAllowed);
+  }
   async function resume() {
     if (loadingGame) return;
     const campaign = loadCampaign(catalog.draftRegionManifest.datasetVersion);
@@ -1735,17 +1737,36 @@ export default function App() {
         Pular para o conteúdo
       </a>
       <header className="site-header">
-        <div className="brand-lockup">
+        <button
+          type="button"
+          className="brand-lockup brand-home"
+          onClick={continueLater}
+          aria-label={screen === 'home' ? 'Página inicial do Draft Lendas' : 'Continuar depois e voltar ao início'}
+        >
           <span className="brand">
             DRAFT <em>LENDAS</em>
             <span className="brand-dot">.</span>
           </span>
           <span className="brand-caption">MONTE SUA COMP HISTÓRICA</span>
-        </div>
+        </button>
         <nav>
           <span className="edition-badge">
             <span /> WORLDS EDITION
           </span>
+          {screen !== 'home' && (
+            <div className="campaign-nav">
+              <button type="button" onClick={continueLater} aria-label="Continuar depois">
+                <House size={16} /> <span>Continuar depois</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setExitAction('abandon')}
+                aria-label="Abandonar campanha"
+              >
+                <LogOut size={16} /> <span>Abandonar</span>
+              </button>
+            </div>
+          )}
           <button className="help-button" onClick={openHelp}>
             <CircleHelp size={17} />
             <span>Como jogar</span>
@@ -1813,7 +1834,7 @@ export default function App() {
                   </p>
                   <button
                     className="primary"
-                    onClick={() => void start(pendingChallenge)}
+                    onClick={() => requestStart(pendingChallenge)}
                     disabled={loadingGame}
                   >
                     {loadingGame ? 'Preparando desafio…' : 'Aceitar desafio'}
@@ -1833,7 +1854,7 @@ export default function App() {
                     challenges={dailyCatalog}
                     busy={loadingGame}
                     revision={dailyRevision}
-                    start={(daily, officialAllowed) => void start(null, daily, officialAllowed)}
+                    start={(daily, officialAllowed) => requestStart(null, daily, officialAllowed)}
                   />
                   <LocalHistoryPanel
                     revision={historyRevision}
@@ -1886,7 +1907,7 @@ export default function App() {
                   </button>
                   <button
                     className="text-button new-draft-button"
-                    onClick={() => void start()}
+                    onClick={() => requestStart()}
                     disabled={loadingGame}
                   >
                     Novo draft <RotateCcw size={15} />
@@ -1895,7 +1916,7 @@ export default function App() {
               ) : (
                 <button
                   className="primary start-button"
-                  onClick={() => void start()}
+                  onClick={() => requestStart()}
                   disabled={loadingGame}
                 >
                   {loadingGame ? 'Preparando draft…' : 'Começar draft'} <ArrowRight size={23} />
@@ -2069,29 +2090,17 @@ export default function App() {
                 </button>
               </div>
             </div>
-            <div className={`player-grid ${rolling ? 'is-rolling' : ''}`} key={offerKey(draft)}>
-              {draft.options.map((p, i) => (
-                <article className="player-option" key={p.id}>
-                  <PlayerCard
-                    player={p}
-                    data={viewData}
-                    onPick={() => choose(p)}
-                    index={i}
-                    selected={pending === p.id}
-                    disabled={!!pending || rolling}
-                    showRatings={showRatings}
-                  />
-                  <button
-                    className="player-details text-button"
-                    onClick={() => openResearch(p)}
-                    disabled={!!pending || rolling}
-                    aria-label={`Detalhes de ${p.playerName}`}
-                  >
-                    Histórico e estatísticas <ArrowUpRight size={12} />
-                  </button>
-                </article>
-              ))}
-            </div>
+            <PlayerChoiceCarousel
+              key={offerKey(draft)}
+              options={draft.options}
+              data={viewData}
+              selectedId={pending}
+              disabled={!!pending || rolling}
+              rolling={rolling}
+              showRatings={showRatings}
+              onPick={choose}
+              onDetails={openResearch}
+            />
             <div className="draft-footnote">
               <span aria-live="polite">
                 {pending
@@ -2574,9 +2583,17 @@ export default function App() {
                 })
               }
             />
-            <button className="primary" onClick={() => void start()}>
-              Jogar novamente <RotateCcw size={19} />
-            </button>
+            <div className="final-actions">
+              <button className="primary" onClick={() => requestStart()}>
+                Jogar novamente <RotateCcw size={19} />
+              </button>
+              <a className="secondary" href="#campaign-history">
+                Ver histórico <History size={18} />
+              </a>
+              <button className="secondary" onClick={continueLater}>
+                Voltar ao início <House size={18} />
+              </button>
+            </div>
             <CampaignHistory tournament={tournament} open={setReport} />
             {analyticsEnabled && (
               <Suspense fallback={null}>
@@ -2634,6 +2651,16 @@ export default function App() {
           data={viewData}
           hideStrength={!showRatings}
           close={() => setReport(null)}
+        />
+      )}
+      {exitAction && (
+        <CampaignExitDialog
+          action={exitAction}
+          onCancel={() => {
+            replacementStart.current = null;
+            setExitAction(null);
+          }}
+          onConfirm={confirmCampaignExit}
         />
       )}
     </div>

@@ -14,6 +14,8 @@ export const ANALYTICS_EVENTS = [
   'campaign_finished',
   'play_again',
   'save_resumed',
+  'campaign_paused',
+  'campaign_abandoned',
   'how_to_play_opened',
   'rating_details_opened',
   'share_started',

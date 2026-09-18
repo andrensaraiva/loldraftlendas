@@ -4,6 +4,8 @@
 
 **Atualizado em:** 2026-09-14
 
+**Execução em 2026-09-18:** Pacotes 0 e 1 concluídos. Próximo checkpoint: Pacote 2.
+
 **Objetivo:** fechar as partes mais importantes do Draft Lendas, preparar uma beta com jogadores reais e evitar aumentar o escopo com sistemas que não ajudam essa validação.
 
 ## Resultado esperado

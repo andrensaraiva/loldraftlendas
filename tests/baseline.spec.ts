@@ -10,6 +10,7 @@ const viewports = [
 ] as const;
 
 test('captures the versioned draft baseline in every required viewport', async ({ page }, testInfo) => {
+  test.skip(process.env.CAPTURE_LEGACY_BASELINE !== '1', 'Legacy reference images are immutable.');
   test.skip(testInfo.project.name !== 'desktop', 'One canonical Chromium capture set is sufficient.');
   await page.addInitScript(() => {
     localStorage.clear();
@@ -24,6 +25,27 @@ test('captures the versioned draft baseline in every required viewport', async (
     await page.waitForTimeout(800);
     await page.screenshot({
       path: `docs/screenshots/baseline/draft-${viewport.name}.png`,
+      fullPage: true,
+    });
+  }
+});
+
+test('captures the current mobile-first draft in every required viewport', async ({ page }, testInfo) => {
+  test.skip(process.env.UPDATE_PRODUCT_SCREENSHOTS !== '1', 'Run only when product screenshots change.');
+  test.skip(testInfo.project.name !== 'desktop', 'One canonical Chromium capture set is sufficient.');
+  await page.addInitScript(() => {
+    localStorage.clear();
+    Math.random = () => 0;
+  });
+
+  for (const viewport of viewports) {
+    await page.setViewportSize({ width: viewport.width, height: viewport.height });
+    await page.goto('/');
+    await page.getByRole('button', { name: 'Começar draft' }).click();
+    await expect(page.locator('.player-card')).toHaveCount(3);
+    await page.waitForTimeout(800);
+    await page.screenshot({
+      path: `docs/screenshots/draft-mobile-v2/draft-${viewport.name}.png`,
       fullPage: true,
     });
   }

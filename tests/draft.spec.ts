@@ -38,7 +38,7 @@ test('exchanges preserve context, details do not select, and five single clicks 
   await expect(page.locator('.team-slot.filled')).toHaveCount(0);
   for (let i = 0; i < 5; i++) {
     await expect(page.locator('.team-slot.filled')).toHaveCount(i);
-    await page.locator('.player-card').first().click();
+    await page.locator('.player-pick-button').first().click();
     await expect(page.locator('.team-slot.filled')).toHaveCount(i + 1);
   }
   await expect(page.getByRole('button', { name: 'Escolha um plano' })).toBeDisabled();
@@ -105,7 +105,7 @@ test('home filters persist an eligible edition and region in every draft round',
     await expect(page.getByRole('button', { name: 'Trocar região' })).toContainText(
       'OUTRAS REGIÕES',
     );
-    await page.locator('.player-card').first().click();
+    await page.locator('.player-pick-button').first().click();
   }
   await expect(page.locator('.team-slot.filled')).toHaveCount(5);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
@@ -119,7 +119,7 @@ test('a browser-local campaign can be resumed or replaced from the home screen',
   });
   await page.goto('/');
   await page.getByRole('button', { name: 'Começar draft' }).click();
-  await page.locator('.player-card').first().click();
+  await page.locator('.player-pick-button').first().click();
   await expect(page.locator('.team-slot.filled')).toHaveCount(1);
 
   await page.reload();
@@ -130,6 +130,87 @@ test('a browser-local campaign can be resumed or replaced from the home screen',
 
   await page.reload();
   await page.getByRole('button', { name: 'Novo draft' }).click();
+  await expect(page.getByRole('dialog', { name: 'Começar um novo draft?' })).toBeVisible();
+  await page.getByRole('button', { name: 'Começar novo draft' }).click();
   await expect(page.locator('.team-slot.filled')).toHaveCount(0);
   await expect(page.locator('.player-card')).toHaveCount(3);
+});
+
+test('campaign navigation preserves progress and requires confirmation before abandoning', async ({
+  page,
+}) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Começar draft' }).click();
+  await page.locator('.player-pick-button').first().click();
+  await expect(page.locator('.team-slot.filled')).toHaveCount(1);
+
+  await page.goBack();
+  await expect(page.getByRole('button', { name: 'Continuar campanha' })).toBeVisible();
+  await page.getByRole('button', { name: 'Continuar campanha' }).click();
+  await expect(page.locator('.team-slot.filled')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Continuar depois', exact: true }).click();
+  await expect(page.getByRole('button', { name: 'Continuar campanha' })).toBeVisible();
+  expect(
+    await page.evaluate(() =>
+      JSON.parse(localStorage.getItem('draft-lendas.campaign') ?? '{}').campaign?.settings?.paused,
+    ),
+  ).toBe(true);
+  await page.getByRole('button', { name: 'Continuar campanha' }).click();
+
+  await page.getByRole('button', { name: 'Abandonar campanha', exact: true }).click();
+  const dialog = page.getByRole('dialog', { name: 'Abandonar esta campanha?' });
+  await expect(dialog).toBeVisible();
+  await dialog.getByRole('button', { name: 'Manter campanha' }).click();
+  await expect(page.locator('.team-slot.filled')).toHaveCount(1);
+  await page.getByRole('button', { name: 'Abandonar campanha', exact: true }).click();
+  await page
+    .getByRole('dialog', { name: 'Abandonar esta campanha?' })
+    .getByRole('button', { name: 'Abandonar campanha' })
+    .click();
+  await expect(page.getByRole('button', { name: 'Começar draft' })).toBeVisible();
+  expect(await page.evaluate(() => localStorage.getItem('draft-lendas.campaign'))).toBeNull();
+});
+
+test('mobile carousel changes candidate without selecting on horizontal navigation', async ({
+  page,
+}, testInfo) => {
+  test.skip(testInfo.project.name !== 'mobile', 'Carousel behavior is mobile-specific.');
+  await page.goto('/');
+  await page.getByRole('button', { name: 'Começar draft' }).click();
+  await expect(page.locator('.carousel-toolbar')).toContainText('1 de 3');
+  await page.getByRole('button', { name: 'Ver próxima lenda' }).click();
+  await expect(page.locator('.carousel-toolbar')).toContainText('2 de 3');
+  await expect(page.locator('.team-slot.filled')).toHaveCount(0);
+  await page.locator('.player-grid').focus();
+  await page.keyboard.press('ArrowRight');
+  await expect(page.locator('.carousel-toolbar')).toContainText('3 de 3');
+  await expect(page.locator('.team-slot.filled')).toHaveCount(0);
+});
+
+test('draft remains contained and useful in every required viewport', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'desktop', 'The desktop project drives the full viewport matrix.');
+  const viewports = [
+    { width: 360, height: 800 },
+    { width: 390, height: 844 },
+    { width: 412, height: 915 },
+    { width: 430, height: 932 },
+    { width: 768, height: 1024 },
+    { width: 1440, height: 1000 },
+  ];
+  await page.addInitScript(() => localStorage.clear());
+
+  for (const viewport of viewports) {
+    await page.setViewportSize(viewport);
+    await page.goto('/');
+    await page.getByRole('button', { name: 'Começar draft' }).click();
+    await expect(page.locator('.player-card')).toHaveCount(3);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    const first = await page.locator('.player-card').first().boundingBox();
+    expect(first?.width).toBeGreaterThan(viewport.width <= 700 ? 250 : 200);
+    if (viewport.width <= 700) {
+      const second = await page.locator('.player-card').nth(1).boundingBox();
+      expect(second?.x).toBeLessThan(viewport.width);
+      await expect(page.locator('.player-pick-button').first()).toBeVisible();
+    }
+  }
 });

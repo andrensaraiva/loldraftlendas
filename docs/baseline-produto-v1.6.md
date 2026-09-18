@@ -56,3 +56,5 @@ Eventos adicionais previstos nos pacotes seguintes:
 ## Baseline visual
 
 As imagens em `docs/screenshots/baseline/` registram o draft antes da refatoração nos viewports obrigatórios: 360 × 800, 390 × 844, 412 × 915, 430 × 932, tablet 768 × 1024 e desktop 1440 × 1000.
+
+As imagens equivalentes em `docs/screenshots/draft-mobile-v2/` registram o resultado do Pacote 1, com carrossel mobile, CTA explícito e navegação de campanha.

@@ -125,14 +125,19 @@
   cursor: default;
   text-decoration: none;
 }
-.player-option {
+.player-carousel {
   min-width: 0;
+}
+.carousel-toolbar,
+.carousel-dots {
+  display: none;
 }
 .draft-screen .player-card {
   width: 100%;
   height: auto;
   animation-duration: 320ms;
   text-align: left;
+  color: #122013;
 }
 .draft-screen .player-art {
   height: 150px;
@@ -150,12 +155,19 @@
   margin-top: 17px;
   margin-bottom: 9px;
 }
-.draft-screen .card-action {
-  margin-top: 12px;
-  padding-top: 11px;
+.player-card-actions {
+  display: grid;
+  gap: 7px;
+  margin-top: 14px;
 }
-.draft-screen .player-card:disabled {
-  opacity: 1;
+.player-pick-button {
+  width: 100%;
+  min-height: 44px;
+  justify-content: center;
+  padding: 10px 12px;
+  font-size: 10px;
+}
+.player-pick-button:disabled {
   cursor: default;
 }
 .draft-screen .player-card.is-picked {
@@ -164,17 +176,17 @@
   background: #f5ffe9;
   transform: translateY(-3px);
 }
-.player-details {
+.player-card-actions .player-details {
   display: flex;
-  margin: 7px auto 0;
-  min-height: 26px;
+  margin: 0 auto;
+  min-height: 32px;
 }
-.player-grid {
+.player-carousel {
   transition:
     opacity 0.25s,
     transform 0.25s;
 }
-.player-grid.is-rolling {
+.player-carousel.is-rolling {
   opacity: 0.25;
   transform: translateY(5px);
   pointer-events: none;
@@ -316,7 +328,7 @@
     column-gap: 30px;
   }
   .draft-screen .team-strip,
-  .draft-screen .player-grid,
+  .draft-screen .player-carousel,
   .draft-screen .draft-footnote {
     grid-column: 1 / -1;
   }
@@ -328,9 +340,6 @@
     align-self: center;
   }
   .draft-screen .pick-counter {
-    display: none;
-  }
-  .draft-screen .card-action {
     display: none;
   }
   .draft-screen .player-info {
@@ -428,17 +437,78 @@
     width: 11px;
   }
   .draft-screen .player-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0;
+    scrollbar-width: none;
+    touch-action: pan-x pan-y;
+    padding: 2px 28px 8px 0;
+  }
+  .draft-screen .player-grid::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #5b6757;
+    font-size: 11px;
+  }
+  .carousel-toolbar > span b {
+    color: #267718;
+    font-size: 16px;
+  }
+  .carousel-toolbar > div {
+    display: flex;
+    gap: 6px;
+  }
+  .carousel-toolbar button {
+    width: 44px;
+    height: 44px;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
+    place-items: center;
+    border: 1px solid #d3ddcd;
+    border-radius: 50%;
+    background: white;
+    color: #276c1a;
+  }
+  .carousel-toolbar button:disabled {
+    opacity: 0.35;
+  }
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 5px;
+  }
+  .carousel-dots span {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: #c5cec0;
+    transition: width 0.18s, background 0.18s;
+  }
+  .carousel-dots span.active {
+    width: 20px;
+    background: #4ba928;
   }
   .draft-screen .player-card {
+    display: block;
+    flex: 0 0 calc(100% - 28px);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     min-height: 0;
     border-radius: 10px;
   }
   .draft-screen .player-art {
     width: auto;
-    height: 94px;
+    height: 170px;
     min-height: 0;
     margin: 10px -10px 0;
     border-radius: 0;
@@ -461,7 +531,11 @@
     min-width: 0;
   }
   .draft-screen .player-title h2 {
-    font-size: 25px;
+    max-width: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 30px;
     line-height: 1;
   }
   .draft-screen .player-title p {
@@ -506,14 +580,12 @@
     max-width: 40px;
     margin-top: 2px;
   }
-  .draft-screen .card-action {
-    display: none;
+  .player-card-actions {
+    margin-top: 11px;
   }
-  .player-details {
-    font-size: 9px;
-    min-height: 25px;
-    margin-top: 1px;
-    margin-bottom: 0;
+  .player-card-actions .player-details {
+    min-height: 44px;
+    font-size: 10px;
   }
   .draft-footnote {
     font-size: 9px;
@@ -529,6 +601,7 @@
   }
 }
 @media (prefers-reduced-motion: reduce) {
+  .player-carousel,
   .player-grid,
   .draft-screen .player-card {
     animation: none !important;

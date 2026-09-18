@@ -135,6 +135,19 @@ button {
   flex-direction: column;
   gap: 3px;
 }
+.brand-home {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.brand-home:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid #8bd844;
+  outline-offset: 6px;
+}
 .brand {
   font: 800 40px/0.95 var(--display);
   letter-spacing: -1px;
@@ -157,6 +170,32 @@ nav {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.campaign-nav {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.campaign-nav button {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid #dce3d7;
+  border-radius: 999px;
+  background: #fff;
+  padding: 9px 13px;
+  color: #4c5949;
+  font-size: 10px;
+  font-weight: 700;
+}
+.campaign-nav button:hover {
+  border-color: #8fbd78;
+  color: #247516;
+}
+.campaign-nav button:last-child:hover {
+  border-color: #cf8c83;
+  color: #a63d32;
 }
 .edition-badge {
   font-size: 10px;
@@ -2383,6 +2422,55 @@ main > section {
   background: var(--paper);
   color: var(--ink);
 }
+.campaign-exit-dialog {
+  width: min(460px, calc(100% - 32px));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 34px;
+  background: #fbfcf7;
+  color: #182016;
+  box-shadow: 0 24px 80px #0712053d;
+}
+.campaign-exit-dialog::backdrop {
+  background: #0b150cb8;
+  backdrop-filter: blur(4px);
+}
+.campaign-exit-dialog h2 {
+  margin: 8px 0 10px;
+  font: 800 38px/1 var(--display);
+}
+.campaign-exit-dialog > p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.exit-dialog-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: #ffe7df;
+  color: #aa3e32;
+}
+.campaign-exit-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+  margin-top: 24px;
+}
+.danger-button {
+  min-height: 54px;
+  border-radius: 6px;
+  background: #a93f34;
+  padding: 12px 16px;
+  color: white;
+  font-weight: 800;
+}
+.danger-button:hover {
+  background: #8e3027;
+}
 .help-dialog::backdrop {
   background: #15201270;
   backdrop-filter: blur(3px);
@@ -2819,6 +2907,27 @@ main > section {
   }
 }
 @media (max-width: 540px) {
+  .campaign-nav {
+    gap: 4px;
+  }
+  .campaign-nav button {
+    width: 44px;
+    min-width: 44px;
+    padding: 0;
+    justify-content: center;
+  }
+  .campaign-nav button span {
+    display: none;
+  }
+  nav:has(.campaign-nav) .mobile-menu {
+    display: none;
+  }
+  .campaign-exit-dialog {
+    padding: 28px 20px 20px;
+  }
+  .campaign-exit-actions {
+    grid-template-columns: 1fr;
+  }
   .pwa-status {
     right: 12px;
     bottom: 12px;
