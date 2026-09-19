@@ -14,6 +14,7 @@ test('daily challenge keeps one official local attempt and exposes the recent ar
     page.getByRole('heading', { name: 'Um draft igual para todo mundo.' }),
   ).toBeVisible();
   await expect(page.getByText('Oficial disponível')).toBeVisible();
+  await expect(page.locator('.daily-objective')).toContainText('Objetivo:');
   await page.screenshot({
     path: `test-results/daily-challenge-${test.info().project.name}.png`,
     fullPage: true,
@@ -31,10 +32,16 @@ test('daily challenge keeps one official local attempt and exposes the recent ar
           source: campaign.campaignSource,
           kind: campaign.dailyAttemptKind,
           mode: campaign.gameMode,
+          modifier: campaign.dailyModifierId,
         };
       }),
     )
-    .toEqual({ source: 'daily', kind: 'official', mode: 'almanac' });
+    .toMatchObject({ source: 'daily', kind: 'official', mode: 'almanac' });
+  await expect
+    .poll(async () =>
+      page.evaluate(() => JSON.parse(localStorage.getItem('draft-lendas.campaign')!).campaign.dailyModifierId),
+    )
+    .not.toBeNull();
 
   await page.goto('/');
   await expect(page.getByRole('button', { name: 'Jogar amistosamente' })).toBeVisible();

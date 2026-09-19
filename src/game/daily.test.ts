@@ -6,6 +6,8 @@ import {
   completeDailyAttempt,
   createDailyChallenge,
   dailyDateKey,
+  evaluateDailyObjective,
+  isDailyModifierEligible,
   loadDailyAttempts,
   officialDailyAttempt,
   previousDailyDate,
@@ -43,6 +45,8 @@ describe('daily challenge', () => {
     });
     expect(second).toEqual(first);
     expect(first.seed).toMatch(/^[a-z0-9]{16}$/);
+    expect(first.id).toContain(`-${first.modifier.id}`);
+    expect(first.modifier.catalogVersion).toBe(1);
     expect(createDailyChallenge('2026-09-14', 'dataset-v1', availability).seed).not.toBe(
       first.seed,
     );
@@ -63,15 +67,46 @@ describe('daily challenge', () => {
   it('allows one official local attempt and records later starts as friendly', () => {
     const local = storage();
     const clock = () => new Date('2026-09-13T12:00:00.000Z');
-    const official = beginDailyAttempt('daily-1', local, clock, () => 'attempt-1');
-    const friendly = beginDailyAttempt('daily-1', local, clock, () => 'attempt-2');
+    const official = beginDailyAttempt(
+      'daily-1',
+      'era-bridge',
+      local,
+      clock,
+      () => 'attempt-1',
+    );
+    const friendly = beginDailyAttempt(
+      'daily-1',
+      'era-bridge',
+      local,
+      clock,
+      () => 'attempt-2',
+    );
     expect(official.kind).toBe('official');
     expect(friendly.kind).toBe('friendly');
     expect(officialDailyAttempt('daily-1', local)?.id).toBe('attempt-1');
-    expect(completeDailyAttempt('attempt-1', 'Campeão mundial', local, clock)).toBe(true);
+    expect(completeDailyAttempt('attempt-1', 'Campeão mundial', true, local, clock)).toBe(true);
     expect(loadDailyAttempts(local)[0]).toMatchObject({
       completedAt: '2026-09-13T12:00:00.000Z',
       outcome: 'Campeão mundial',
+      modifierId: 'era-bridge',
+      objectiveMet: true,
     });
+  });
+
+  it('keeps modifiers eligible and evaluates their objective from the final campaign', () => {
+    const eraModifier = createDailyChallenge('2026-09-13', 'dataset-v1', availability).modifier;
+    expect(isDailyModifierEligible(eraModifier, availability)).toBe(true);
+    expect(
+      evaluateDailyObjective('era-bridge', {
+        team: [2014, 2017, 2021, 2025, 2025].map((worldsYear) => ({ worldsYear })) as never,
+        tournament: { stage: 'final', wins: 3, losses: 0, history: [], outcome: 'Campeão mundial' },
+      }),
+    ).toBe(true);
+    expect(
+      evaluateDailyObjective('all-or-nothing', {
+        team: [] as never,
+        tournament: { stage: 'final', wins: 3, losses: 0, history: [], outcome: 'Vice-campeão' },
+      }),
+    ).toBe(false);
   });
 });

@@ -33,6 +33,8 @@ const summary: CampaignSummary = {
   gameMode: 'almanac',
   gamePlan: 'teamfight',
   dailyAttemptKind: 'official',
+  dailyModifierId: 'era-bridge',
+  dailyObjectiveMet: true,
   report: {
     strongestCompositionGame: 3,
     weakestCompositionGame: 1,
@@ -77,18 +79,19 @@ describe('local campaign history', () => {
       'era_mixer',
       'undefeated',
       'daily_official',
+      'daily_objective',
     ]);
     expect(
       achievementsForCampaign({ ...summary, outcome: 'Semifinalista', losses: 3 })
         .map((achievement) => achievement.id)
         .sort(),
-    ).toEqual(['daily_official', 'era_mixer', 'first_campaign']);
+    ).toEqual(['daily_objective', 'daily_official', 'era_mixer', 'first_campaign']);
   });
 
   it('exports a portable versioned document without seeds or personal identifiers', () => {
     const exported = exportCampaignHistory([summary], new Date('2026-09-13T13:00:00.000Z'));
     expect(JSON.parse(exported)).toMatchObject({
-      version: 2,
+      version: 3,
       exportedAt: '2026-09-13T13:00:00.000Z',
       campaigns: [{ id: 'campaign-1' }],
     });
@@ -106,8 +109,28 @@ describe('local campaign history', () => {
 
   it('migrates valid version 1 summaries without inventing report highlights', () => {
     const local = storage();
-    const { report: _report, ...legacy } = summary;
+    const {
+      report: _report,
+      dailyModifierId: _dailyModifierId,
+      dailyObjectiveMet: _dailyObjectiveMet,
+      ...legacy
+    } = summary;
     local.setItem(CAMPAIGN_HISTORY_KEY, JSON.stringify({ version: 1, campaigns: [legacy] }));
-    expect(loadCampaignHistory(local)).toEqual([{ ...legacy, report: null }]);
+    expect(loadCampaignHistory(local)).toEqual([
+      { ...legacy, report: null, dailyModifierId: null, dailyObjectiveMet: null },
+    ]);
+  });
+
+  it('migrates version 2 summaries without inventing a daily objective result', () => {
+    const local = storage();
+    const {
+      dailyModifierId: _dailyModifierId,
+      dailyObjectiveMet: _dailyObjectiveMet,
+      ...versionTwo
+    } = summary;
+    local.setItem(CAMPAIGN_HISTORY_KEY, JSON.stringify({ version: 2, campaigns: [versionTwo] }));
+    expect(loadCampaignHistory(local)).toEqual([
+      { ...versionTwo, dailyModifierId: null, dailyObjectiveMet: null },
+    ]);
   });
 });

@@ -25,10 +25,12 @@ import type { AnalyticsProperties } from './game/analytics';
 import {
   beginDailyAttempt,
   completeDailyAttempt,
+  dailyModifier,
+  evaluateDailyObjective,
   officialDailyAttempt,
   recentDailyChallenges,
 } from './game/daily';
-import type { DailyAttemptKind, DailyChallenge } from './game/daily';
+import type { DailyAttemptKind, DailyChallenge, DailyModifierId } from './game/daily';
 import {
   achievementsForCampaign,
   campaignAchievements,
@@ -195,6 +197,12 @@ function dailyDateLabel(date: string): string {
     .replace('.', '');
 }
 
+function dailyHistoryLabel(campaign: CampaignSummary): string | null {
+  const modifier = dailyModifier(campaign.dailyModifierId);
+  if (!modifier || campaign.dailyObjectiveMet === null) return null;
+  return `Desafio: ${modifier.title} · objetivo ${campaign.dailyObjectiveMet ? 'cumprido' : 'não cumprido'}`;
+}
+
 function DailyChallengePanel({
   challenges,
   busy,
@@ -224,6 +232,12 @@ function DailyChallengePanel({
         Seed, edições e sorteios fixos no modo Almanaque. Sua primeira entrada de hoje é a tentativa
         oficial deste dispositivo.
       </p>
+      <article className="daily-objective">
+        <span>{today.modifier.label}</span>
+        <b>{today.modifier.title}</b>
+        <p>{today.modifier.description}</p>
+        <strong>Objetivo: {today.modifier.objective}</strong>
+      </article>
       <div className="daily-actions">
         <button className="daily-start" onClick={() => start(today, true)} disabled={busy}>
           {busy ? 'Preparando…' : official ? 'Jogar amistosamente' : 'Jogar tentativa oficial'}
@@ -231,7 +245,7 @@ function DailyChallengePanel({
         </button>
         <span className={`daily-status ${official ? 'used' : ''}`}>
           {official?.completedAt
-            ? `Oficial concluída · ${official.outcome}`
+            ? `Oficial concluída · ${official.objectiveMet ? 'objetivo cumprido' : 'objetivo não cumprido'}`
             : official
               ? 'Tentativa oficial iniciada'
               : 'Oficial disponível'}
@@ -242,8 +256,8 @@ function DailyChallengePanel({
         <div>
           {challenges.slice(1).map((challenge) => (
             <button key={challenge.id} onClick={() => start(challenge, false)} disabled={busy}>
-              <span>{dailyDateLabel(challenge.date)}</span>
-              Jogar amistoso
+              <span>{dailyDateLabel(challenge.date)} · {challenge.modifier.label}</span>
+              {challenge.modifier.objective} · Jogar amistoso
             </button>
           ))}
         </div>
@@ -300,6 +314,7 @@ function LocalHistoryPanel({ revision, changed }: { revision: number; changed: (
                       {signedModifier(campaign.report.totalPlanEffect)}
                     </em>
                   )}
+                  {dailyHistoryLabel(campaign) && <em>{dailyHistoryLabel(campaign)}</em>}
                 </div>
               ))}
             </div>
@@ -860,6 +875,7 @@ export default function App() {
   const [dailyChallengeId, setDailyChallengeId] = useState<string | null>(null);
   const [dailyAttemptId, setDailyAttemptId] = useState<string | null>(null);
   const [dailyAttemptKind, setDailyAttemptKind] = useState<DailyAttemptKind | null>(null);
+  const [dailyModifierId, setDailyModifierId] = useState<DailyModifierId | null>(null);
   const [dailyRevision, setDailyRevision] = useState(0);
   const [historyRevision, setHistoryRevision] = useState(0);
   const [dailyCatalog, setDailyCatalog] = useState(buildDailyCatalog);
@@ -994,6 +1010,7 @@ export default function App() {
     analytics.trackOnce(`daily_opened:${dailyCatalog[0].id}`, 'daily_opened', {
       campaign_source: 'daily',
       daily_id: dailyCatalog[0].id,
+      modifier_id: dailyCatalog[0].modifier.id,
     });
   }, [analyticsEnabled, dailyCatalog]);
   useEffect(() => {
@@ -1033,6 +1050,7 @@ export default function App() {
     dailyChallengeId,
     dailyAttemptId,
     dailyAttemptKind,
+    dailyModifierId,
     gameMode,
     gamePlan,
   ]);
@@ -1059,13 +1077,22 @@ export default function App() {
         campaign_source: 'challenge',
         challenge_version: CHALLENGE_VERSION,
       });
-    if (campaignSource === 'daily' && dailyChallengeId && dailyAttemptId && dailyAttemptKind) {
-      if (completeDailyAttempt(dailyAttemptId, tournament.outcome))
+    if (
+      campaignSource === 'daily' &&
+      dailyChallengeId &&
+      dailyAttemptId &&
+      dailyAttemptKind &&
+      dailyModifierId
+    ) {
+      const objectiveMet = evaluateDailyObjective(dailyModifierId, { team, tournament });
+      if (completeDailyAttempt(dailyAttemptId, tournament.outcome, objectiveMet))
         setDailyRevision((value) => value + 1);
       analytics.trackOnce('daily_completed', 'daily_completed', {
         campaign_source: 'daily',
         daily_id: dailyChallengeId,
         attempt_kind: dailyAttemptKind,
+        modifier_id: dailyModifierId,
+        objective_met: objectiveMet,
         ...properties,
       });
     }
@@ -1077,10 +1104,13 @@ export default function App() {
     dailyAttemptId,
     dailyAttemptKind,
     dailyChallengeId,
+    dailyModifierId,
     gameMode,
     gamePlan,
     screen,
     tournament.outcome,
+    tournament.history,
+    team,
   ]);
   useEffect(() => {
     if (
@@ -1109,6 +1139,10 @@ export default function App() {
       gameMode,
       gamePlan,
       dailyAttemptKind,
+      dailyModifierId,
+      dailyObjectiveMet: dailyModifierId
+        ? evaluateDailyObjective(dailyModifierId, { team, tournament })
+        : null,
       report: campaignReport.highlights,
       team: team.map((player) => ({
         playerName: player.playerName,
@@ -1122,6 +1156,7 @@ export default function App() {
     campaignSeed,
     campaignSource,
     dailyAttemptKind,
+    dailyModifierId,
     data,
     gameMode,
     gamePlan,
@@ -1276,7 +1311,14 @@ export default function App() {
     const snapshot = await loadYears(draftPlan.map((round) => round.year));
     if (!snapshot) return;
     const dailyAttempt = daily
-      ? beginDailyAttempt(daily.id, undefined, undefined, undefined, dailyOfficialAllowed)
+      ? beginDailyAttempt(
+          daily.id,
+          daily.modifier.id,
+          undefined,
+          undefined,
+          undefined,
+          dailyOfficialAllowed,
+        )
       : null;
     if (draftTimer.current) clearTimeout(draftTimer.current);
     const replay = screen === 'result';
@@ -1303,6 +1345,7 @@ export default function App() {
         campaign_source: 'daily',
         daily_id: daily.id,
         attempt_kind: dailyAttempt.kind,
+        modifier_id: daily.modifier.id,
         game_mode: selectedGameMode,
       });
     setCampaignAvailability(availability);
@@ -1311,6 +1354,7 @@ export default function App() {
     setDailyChallengeId(daily?.id ?? null);
     setDailyAttemptId(dailyAttempt?.id ?? null);
     setDailyAttemptKind(dailyAttempt?.kind ?? null);
+    setDailyModifierId(daily?.modifier.id ?? null);
     if (dailyAttempt) setDailyRevision((value) => value + 1);
     setGameMode(selectedGameMode);
     setGamePlan(selectedGamePlan);
@@ -1357,6 +1401,7 @@ export default function App() {
       dailyChallengeId,
       dailyAttemptId,
       dailyAttemptKind,
+      dailyModifierId,
       gameMode,
       gamePlan,
       screen: campaignScreen,
@@ -1448,6 +1493,7 @@ export default function App() {
     setDailyChallengeId(campaign.dailyChallengeId);
     setDailyAttemptId(campaign.dailyAttemptId);
     setDailyAttemptKind(campaign.dailyAttemptKind);
+    setDailyModifierId(campaign.dailyModifierId);
     setGameMode(campaign.gameMode);
     setGamePlan(campaign.gamePlan);
     draftLock.current = false;
@@ -1614,6 +1660,11 @@ export default function App() {
     playResult?.game ?? (series ? Math.min(series.games.length + 1, series.bestOf) : 1);
   const totalWins = tournament.history.flatMap((s) => s.games).filter((g) => g.won).length;
   const totalLosses = tournament.history.flatMap((s) => s.games).filter((g) => !g.won).length;
+  const activeDailyModifier = dailyModifier(dailyModifierId);
+  const dailyObjectiveMet =
+    dailyModifierId && tournament.outcome
+      ? evaluateDailyObjective(dailyModifierId, { team, tournament })
+      : null;
   const currentAchievements =
     screen === 'result' && tournament.outcome && campaignSeed && team.length === 5
       ? achievementsForCampaign({
@@ -1627,6 +1678,8 @@ export default function App() {
           gameMode,
           gamePlan,
           dailyAttemptKind,
+          dailyModifierId,
+          dailyObjectiveMet,
           report: null,
           team: team.map((player) => ({
             playerName: player.playerName,
@@ -2487,17 +2540,20 @@ export default function App() {
                 ? 'Cinco escolhas. Diferentes eras. O mundo é seu.'
                 : 'O próximo draft pode ser lendário. Novas composições, novas possibilidades.'}
             </p>
-            {campaignSource === 'daily' && dailyAttemptKind && (
-              <div className={`daily-result-badge ${dailyAttemptKind}`}>
+            {campaignSource === 'daily' && dailyAttemptKind && activeDailyModifier && (
+              <div
+                className={`daily-result-badge ${dailyAttemptKind} ${dailyObjectiveMet ? 'completed' : 'missed'}`}
+              >
                 <CalendarDays size={18} />
                 <span>
                   <b>
-                    Desafio diário ·{' '}
-                    {dailyAttemptKind === 'official' ? 'tentativa oficial' : 'amistosa'}
+                    {dailyObjectiveMet ? 'Objetivo cumprido' : 'Objetivo não cumprido'} ·{' '}
+                    {activeDailyModifier.title}
                   </b>
+                  {activeDailyModifier.objective}{' '}
                   {dailyAttemptKind === 'official'
-                    ? 'Resultado salvo neste dispositivo.'
-                    : 'Esta partida não substitui sua tentativa oficial.'}
+                    ? 'Resultado oficial salvo neste dispositivo.'
+                    : 'Resultado amistoso; sua tentativa oficial não foi substituída.'}
                 </span>
               </div>
             )}

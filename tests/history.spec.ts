@@ -49,7 +49,7 @@ test('local history can be inspected, exported and explicitly cleared', async ({
   const chunks: Buffer[] = [];
   for await (const chunk of stream) chunks.push(Buffer.from(chunk));
   const exported = Buffer.concat(chunks).toString('utf8');
-  expect(JSON.parse(exported)).toMatchObject({ version: 2, campaigns: [{ id: 'local-example' }] });
+  expect(JSON.parse(exported)).toMatchObject({ version: 3, campaigns: [{ id: 'local-example' }] });
   expect(exported).not.toContain('seed');
 
   page.once('dialog', (dialog) => dialog.accept());

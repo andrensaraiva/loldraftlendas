@@ -19,6 +19,7 @@ const campaign: CampaignState = {
   dailyChallengeId: null,
   dailyAttemptId: null,
   dailyAttemptKind: null,
+  dailyModifierId: null,
   gameMode: 'almanac',
   gamePlan: 'control_pick',
   screen: 'draft',
@@ -75,6 +76,7 @@ describe('campaign persistence', () => {
       dailyChallengeId: _dailyChallengeId,
       dailyAttemptId: _dailyAttemptId,
       dailyAttemptKind: _dailyAttemptKind,
+      dailyModifierId: _dailyModifierId,
       gameMode: _gameMode,
       gamePlan: _gamePlan,
       ...legacy
@@ -131,6 +133,7 @@ describe('campaign persistence', () => {
       dailyChallengeId: _dailyChallengeId,
       dailyAttemptId: _dailyAttemptId,
       dailyAttemptKind: _dailyAttemptKind,
+      dailyModifierId: _dailyModifierId,
       ...versionFour
     } = campaign;
     local.setItem(
@@ -143,6 +146,20 @@ describe('campaign persistence', () => {
       dailyChallengeId: null,
       dailyAttemptId: null,
       dailyAttemptKind: null,
+      dailyModifierId: null,
+    });
+  });
+
+  it('migrates a compatible v5 save without a daily modifier', () => {
+    const local = storage();
+    const { dailyModifierId: _dailyModifierId, ...versionFive } = campaign;
+    local.setItem(
+      CAMPAIGN_SAVE_KEY,
+      JSON.stringify({ version: 5, datasetVersion: 'dataset-v1', campaign: versionFive }),
+    );
+    expect(loadCampaign('dataset-v1', local)).toMatchObject({
+      campaignSource: 'organic',
+      dailyModifierId: null,
     });
   });
 });

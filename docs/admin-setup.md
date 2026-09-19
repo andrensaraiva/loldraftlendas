@@ -28,6 +28,11 @@ Create a Supabase project, then run these migrations in filename order in the pr
 - [20260913120000_almanac_mode.sql](../supabase/migrations/20260913120000_almanac_mode.sql)
 - [20260913130000_game_plans.sql](../supabase/migrations/20260913130000_game_plans.sql)
 - [20260913140000_daily_challenges.sql](../supabase/migrations/20260913140000_daily_challenges.sql)
+- [20260918100000_campaign_navigation_analytics.sql](../supabase/migrations/20260918100000_campaign_navigation_analytics.sql)
+- [20260918110000_campaign_report_analytics.sql](../supabase/migrations/20260918110000_campaign_report_analytics.sql)
+- [20260918120000_campaign_journey_analytics.sql](../supabase/migrations/20260918120000_campaign_journey_analytics.sql)
+- [20260918130000_onboarding_analytics.sql](../supabase/migrations/20260918130000_onboarding_analytics.sql)
+- [20260919100000_daily_modifiers_analytics.sql](../supabase/migrations/20260919100000_daily_modifiers_analytics.sql)
 
 The migrations create:
 

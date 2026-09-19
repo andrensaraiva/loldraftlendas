@@ -1,11 +1,12 @@
 import type { CampaignStorage } from './campaign';
 import type { GameMode } from './mode';
 import type { GamePlan } from './plan';
-import type { DailyAttemptKind } from './daily';
+import { isDailyModifierId } from './daily';
+import type { DailyAttemptKind, DailyModifierId } from './daily';
 import type { Role } from './types';
 import type { CampaignReportHighlights } from './report';
 
-export const CAMPAIGN_HISTORY_VERSION = 2;
+export const CAMPAIGN_HISTORY_VERSION = 3;
 export const CAMPAIGN_HISTORY_KEY = 'draft-lendas.history';
 export const MAX_CAMPAIGN_HISTORY = 30;
 
@@ -27,6 +28,8 @@ export interface CampaignSummary {
   gameMode: GameMode;
   gamePlan: GamePlan | null;
   dailyAttemptKind: DailyAttemptKind | null;
+  dailyModifierId: DailyModifierId | null;
+  dailyObjectiveMet: boolean | null;
   report: CampaignReportHighlights | null;
   team: CampaignHistoryPlayer[];
 }
@@ -38,7 +41,8 @@ export interface LocalAchievement {
     | 'almanac_champion'
     | 'era_mixer'
     | 'undefeated'
-    | 'daily_official';
+    | 'daily_official'
+    | 'daily_objective';
   title: string;
   description: string;
 }
@@ -79,6 +83,12 @@ const ACHIEVEMENTS: Array<LocalAchievement & { matches: (summary: CampaignSummar
     title: 'Compromisso diário',
     description: 'Conclua uma tentativa oficial do Desafio Diário.',
     matches: (summary) => summary.source === 'daily' && summary.dailyAttemptKind === 'official',
+  },
+  {
+    id: 'daily_objective',
+    title: 'Missão cumprida',
+    description: 'Cumpra o objetivo especial de um Desafio Diário.',
+    matches: (summary) => summary.source === 'daily' && summary.dailyObjectiveMet === true,
   },
 ];
 
@@ -127,6 +137,8 @@ function isSummary(value: unknown, legacy = false): value is CampaignSummary {
       ['aggression', 'teamfight', 'control_pick', 'scaling'].includes(summary.gamePlan ?? '')) &&
     (summary.dailyAttemptKind === null ||
       ['official', 'friendly'].includes(summary.dailyAttemptKind ?? '')) &&
+    (summary.dailyModifierId === null || isDailyModifierId(summary.dailyModifierId)) &&
+    (summary.dailyObjectiveMet === null || typeof summary.dailyObjectiveMet === 'boolean') &&
     (legacy
       ? summary.report === undefined
       : summary.report === null || isReportHighlights(summary.report)) &&
@@ -156,10 +168,33 @@ export function loadCampaignHistory(
     if (!Array.isArray(parsed.campaigns)) return [];
     if (parsed.version === CAMPAIGN_HISTORY_VERSION)
       return parsed.campaigns.filter((summary) => isSummary(summary)).slice(0, MAX_CAMPAIGN_HISTORY);
+    if (parsed.version === 2)
+      return parsed.campaigns
+        .filter((summary) => isSummary({
+          ...(summary as object),
+          dailyModifierId: null,
+          dailyObjectiveMet: null,
+        }))
+        .map((summary) => ({
+          ...(summary as Omit<CampaignSummary, 'dailyModifierId' | 'dailyObjectiveMet'>),
+          dailyModifierId: null,
+          dailyObjectiveMet: null,
+        }))
+        .slice(0, MAX_CAMPAIGN_HISTORY);
     if (parsed.version === 1)
       return parsed.campaigns
-        .filter((summary) => isSummary(summary, true))
-        .map((summary) => ({ ...summary, report: null }))
+        .filter((summary) =>
+          isSummary(
+            { ...(summary as object), dailyModifierId: null, dailyObjectiveMet: null },
+            true,
+          ),
+        )
+        .map((summary) => ({
+          ...summary,
+          report: null,
+          dailyModifierId: null,
+          dailyObjectiveMet: null,
+        }))
         .slice(0, MAX_CAMPAIGN_HISTORY);
     return [];
   } catch {

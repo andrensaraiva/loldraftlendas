@@ -50,6 +50,7 @@ Migrations Supabase, em ordem:
 12. [20260918110000_campaign_report_analytics.sql](../supabase/migrations/20260918110000_campaign_report_analytics.sql)
 13. [20260918120000_campaign_journey_analytics.sql](../supabase/migrations/20260918120000_campaign_journey_analytics.sql)
 14. [20260918130000_onboarding_analytics.sql](../supabase/migrations/20260918130000_onboarding_analytics.sql)
+15. [20260919100000_daily_modifiers_analytics.sql](../supabase/migrations/20260919100000_daily_modifiers_analytics.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -131,13 +132,15 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - A disponibilidade filtrada já é o snapshot persistido no save e no link de desafio; o convite lista explicitamente as edições e os grupos recebidos.
 - Testes de domínio cobrem 2025 + Outras Regiões e rejeitam 2015 + Outras Regiões; o E2E percorre as cinco posições do recorte válido em desktop e mobile.
 
-### Fase 3.10: Desafio Diário sem Ranking
+### Fase 3.10 e Pacote 8: Desafio Diário Especial sem Ranking
 
-- A home oferece um desafio diário no modo Almanaque com seed, dataset e regras canônicos; o calendário vira à meia-noite de `America/Sao_Paulo` e se atualiza mesmo com a aba aberta.
+- A home oferece um desafio diário no modo Almanaque com seed, dataset, regras e modificador canônicos; o calendário vira à meia-noite de `America/Sao_Paulo` e se atualiza mesmo com a aba aberta.
+- Um catálogo versionado alterna deterministicamente entre **Sem segunda chance**, **Margem curta**, **Pontes entre eras** e **Tudo ou nada**. Modificadores inelegíveis para o recorte disponível são descartados antes do sorteio.
+- Regra especial, descrição e objetivo aparecem antes do draft. No resultado, o objetivo é avaliado somente a partir da equipe e do torneio já concluídos, sem novo sorteio.
 - O arquivo expõe os seis dias anteriores como partidas amistosas. A primeira entrada do dia é oficial no armazenamento local; reentradas são amistosas e não substituem o resultado oficial.
-- Save v5 preserva identificadores e tipo da tentativa ativa, migrando saves v1–v4. O resultado final identifica claramente uma campanha oficial ou amistosa.
-- Eventos `daily_opened`, `daily_started` e `daily_completed` são anônimos e allowlisted. A migration preparada acrescenta os agregados de abertura, oficiais iniciadas/concluídas e amistosas ao dashboard.
-- Relógio, storage e gerador de ID são injetáveis nos testes. O E2E verifica a tentativa oficial, a reentrada e o arquivo em desktop e mobile.
+- Save v6 preserva identificadores, tipo da tentativa e modificador, migrando saves v1–v5. O histórico local v3 registra modificador e cumprimento sem inventar resultado em resumos antigos.
+- Eventos `daily_opened`, `daily_started` e `daily_completed` são anônimos, allowlisted e categorizados por modificador; somente a conclusão aceita o booleano de objetivo cumprido.
+- Relógio, storage e gerador de ID são injetáveis nos testes. O E2E verifica objetivo pré-draft, tentativa oficial, reentrada e arquivo em desktop e mobile.
 
 ### Fase 3.11: PWA e Recuperação Offline
 
@@ -159,7 +162,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 
 - Cada campanha concluída gera um resumo versionado no armazenamento local, separado do save ativo e limitado às 30 entradas mais recentes.
 - O resumo preserva resultado, placar, origem, modo, plano e as cinco escolhas, mas não armazena seed, e-mail, texto livre ou identificador remoto.
-- A home mostra as cinco campanhas mais recentes e seis conquistas reproduzíveis, sempre derivadas dos resumos em vez de flags mutáveis.
+- A home mostra as cinco campanhas mais recentes e sete conquistas reproduzíveis, sempre derivadas dos resumos em vez de flags mutáveis.
 - O jogador pode exportar um JSON versionado ou apagar todo o histórico após uma confirmação explícita. Falhas e formatos antigos de storage nunca bloqueiam o jogo.
 - Testes unitários cobrem deduplicação, limite, conquistas, privacidade, exportação e dados inválidos; E2E cobre visualização, download real e limpeza em desktop/mobile.
 
@@ -215,7 +218,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados após o Pacote 7: 101 testes unitários passaram; a validação de retratos confirmou 10 identidades e 20 WebPs de 768 px; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 58 execuções E2E passaram no Chromium, cobrindo desktop, mobile, arquivo, onboarding, fallbacks de retrato e os seis viewports obrigatórios, com 8 skips condicionais esperados. O bundle inicial ficou em 420,40 kB (109,01 kB gzip); o arquivo está isolado em um chunk lazy de 52,77 kB (13,30 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), sem aviso acima de 500 kB.
+Resultados registrados após o Pacote 8: 104 testes unitários passaram; a validação de retratos confirmou 10 identidades e 20 WebPs de 768 px; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 58 execuções E2E passaram no Chromium, cobrindo desktop, mobile, arquivo, desafios diários especiais, onboarding, fallbacks de retrato e os seis viewports obrigatórios, com 8 skips condicionais esperados. O bundle inicial ficou em 424,28 kB (110,17 kB gzip); o arquivo está isolado em um chunk lazy de 52,77 kB (13,30 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), sem aviso acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -223,7 +226,7 @@ O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, con
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
 
-1. Crie um projeto Supabase e aplique as quatorze migrations na ordem acima.
+1. Crie um projeto Supabase e aplique as quinze migrations na ordem acima.
 2. Crie a conta do mantenedor no Supabase Auth.
 3. Insira manualmente o UUID dela em `public.admin_users`.
 4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.
@@ -242,11 +245,17 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 - O arquivo ganhou 63 páginas de equipe, comparação entre versões de um jogador e carregamento somente dos chunks anuais necessários.
 - Cartas, detalhes, arquivo e retorno ao draft preservam o recorte elegível de edição e região.
 
-### Próxima Entrega Executável: Pacote 8, Desafios Diários Especiais
+### Pacote 8 Concluído: Desafios Diários Especiais
 
-- Versionar modificadores diários determinísticos no calendário de Brasília.
-- Exibir o objetivo antes do draft, avaliar elegibilidade no resultado e manter o histórico local dos sete dias.
-- Instrumentar o modificador sem depender de ranking, conta ou backend real.
+- Modificadores diários são versionados e determinísticos no calendário de Brasília.
+- Objetivo, elegibilidade, resultado e histórico local dos sete dias funcionam sem backend real.
+- Save, histórico e analytics preservam a categoria e o cumprimento do objetivo.
+
+### Próxima Entrega Executável: Pacote 9, Polimento da Beta
+
+- Revisar animações, celebrações, textos, estados vazios, performance, acessibilidade e PWA.
+- Ampliar a matriz automatizada para Firefox e WebKit onde o ambiente permitir.
+- Deixar smoke test pós-deploy, aparelhos físicos e painel real explicitamente preparados como validações externas.
 
 ### Aprovação Pendente: Pacote 5
 
@@ -262,7 +271,7 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 
 ### Dependência Externa Posterior
 
-- Os Pacotes 2–5, 7 e a maior parte do Pacote 8 avançam sem backend real.
+- Os Pacotes 2–5, 7 e 8 avançam sem backend real.
 - Resultado público, comparação, Open Graph dinâmico e Gate B dependem de hospedagem e Supabase reais.
 - Perfil, ranking verificado e multiplayer permanecem fora deste ciclo.
 

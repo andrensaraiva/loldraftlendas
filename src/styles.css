@@ -464,6 +464,35 @@ main > section {
   font-size: 9px;
   line-height: 1.5;
 }
+.daily-objective {
+  display: grid;
+  gap: 3px;
+  margin-bottom: 13px;
+  border-left: 3px solid var(--lime);
+  background: #ffffffb8;
+  padding: 10px 12px;
+}
+.daily-objective > span {
+  color: var(--green);
+  font-size: 7px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.daily-objective > b {
+  font: 800 17px/1 var(--display);
+}
+.daily-objective > p,
+.daily-objective > strong {
+  margin: 0;
+  font-size: 8px;
+  line-height: 1.45;
+}
+.daily-objective > p {
+  color: var(--muted);
+}
+.daily-objective > strong {
+  color: var(--ink);
+}
 .daily-actions {
   display: flex;
   align-items: center;
@@ -543,6 +572,11 @@ main > section {
   border-color: var(--line);
   background: white;
   color: var(--muted);
+}
+.daily-result-badge.missed {
+  border-color: #d3b68d;
+  background: #fff8ec;
+  color: #865713;
 }
 .daily-result-badge span {
   display: flex;

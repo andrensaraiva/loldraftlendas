@@ -1,14 +1,71 @@
 import type { CampaignStorage } from './campaign';
 import type { DraftAvailability } from './draft';
 import { DRAFT_REGION_GROUP_IDS } from './types';
+import type { Team, Tournament } from './types';
 import { campaignSeedFromText } from './random';
 import type { GameMode } from './mode';
 
-export const DAILY_CHALLENGE_VERSION = 1;
+export const DAILY_CHALLENGE_VERSION = 2;
+export const DAILY_MODIFIER_CATALOG_VERSION = 1;
 export const DAILY_ATTEMPTS_KEY = 'draft-lendas.daily-attempts';
 export const DAILY_TIME_ZONE = 'America/Sao_Paulo';
 const MAX_DAILY_ATTEMPTS = 100;
 const DATE_KEY_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+
+export type DailyModifierId =
+  | 'no-exchanges'
+  | 'single-exchange'
+  | 'era-bridge'
+  | 'all-or-nothing';
+
+export interface DailyModifier {
+  id: DailyModifierId;
+  catalogVersion: typeof DAILY_MODIFIER_CATALOG_VERSION;
+  label: string;
+  title: string;
+  description: string;
+  objective: string;
+  startingExchanges: number | null;
+}
+
+export const DAILY_MODIFIERS: readonly DailyModifier[] = [
+  {
+    id: 'no-exchanges',
+    catalogVersion: DAILY_MODIFIER_CATALOG_VERSION,
+    label: 'SEM SEGUNDA CHANCE',
+    title: 'Olho clínico',
+    description: 'As ofertas são definitivas: este draft começa sem trocas.',
+    objective: 'Chegue aos playoffs.',
+    startingExchanges: 0,
+  },
+  {
+    id: 'single-exchange',
+    catalogVersion: DAILY_MODIFIER_CATALOG_VERSION,
+    label: 'MARGEM CURTA',
+    title: 'Uma escolha para mudar tudo',
+    description: 'Você tem apenas uma troca durante todo o draft.',
+    objective: 'Vença pelo menos cinco jogos na campanha.',
+    startingExchanges: 1,
+  },
+  {
+    id: 'era-bridge',
+    catalogVersion: DAILY_MODIFIER_CATALOG_VERSION,
+    label: 'PONTES ENTRE ERAS',
+    title: 'Cronologia impossível',
+    description: 'Construa uma equipe que atravesse a história do Worlds.',
+    objective: 'Termine o draft com jogadores de quatro edições diferentes.',
+    startingExchanges: null,
+  },
+  {
+    id: 'all-or-nothing',
+    catalogVersion: DAILY_MODIFIER_CATALOG_VERSION,
+    label: 'TUDO OU NADA',
+    title: 'Só a taça importa',
+    description: 'Sem trocas e sem objetivo intermediário: a campanha exige perfeição decisiva.',
+    objective: 'Conquiste o título mundial.',
+    startingExchanges: 0,
+  },
+] as const;
 
 export interface DailyChallenge {
   id: string;
@@ -17,6 +74,7 @@ export interface DailyChallenge {
   datasetVersion: string;
   gameMode: GameMode;
   availability: DraftAvailability;
+  modifier: DailyModifier;
 }
 
 export type DailyAttemptKind = 'official' | 'friendly';
@@ -24,10 +82,17 @@ export type DailyAttemptKind = 'official' | 'friendly';
 export interface DailyAttempt {
   id: string;
   challengeId: string;
+  modifierId: DailyModifierId | null;
   kind: DailyAttemptKind;
   startedAt: string;
   completedAt: string | null;
   outcome: string | null;
+  objectiveMet: boolean | null;
+}
+
+export interface DailyObjectiveContext {
+  team: Team;
+  tournament: Tournament;
 }
 
 function browserStorage(): CampaignStorage | null {
@@ -38,6 +103,14 @@ function browserStorage(): CampaignStorage | null {
   }
 }
 
+export function isDailyModifierId(value: unknown): value is DailyModifierId {
+  return DAILY_MODIFIERS.some((modifier) => modifier.id === value);
+}
+
+export function dailyModifier(id: DailyModifierId | null): DailyModifier | null {
+  return DAILY_MODIFIERS.find((modifier) => modifier.id === id) ?? null;
+}
+
 function canonicalAvailability(availability: DraftAvailability): DraftAvailability {
   return {
     startingExchanges: availability.startingExchanges,
@@ -45,6 +118,23 @@ function canonicalAvailability(availability: DraftAvailability): DraftAvailabili
     activeRegionGroups: DRAFT_REGION_GROUP_IDS.filter((group) =>
       availability.activeRegionGroups.includes(group),
     ),
+  };
+}
+
+export function isDailyModifierEligible(
+  modifier: DailyModifier,
+  availability: DraftAvailability,
+): boolean {
+  return modifier.id !== 'era-bridge' || new Set(availability.activeYears).size >= 4;
+}
+
+export function applyDailyModifierAvailability(
+  availability: DraftAvailability,
+  modifier: DailyModifier,
+): DraftAvailability {
+  return {
+    ...availability,
+    startingExchanges: modifier.startingExchanges ?? availability.startingExchanges,
   };
 }
 
@@ -67,6 +157,11 @@ export function previousDailyDate(date: string, days = 1): string {
   return value.toISOString().slice(0, 10);
 }
 
+function modifierIndex(identity: string, count: number): number {
+  const token = campaignSeedFromText(identity);
+  return [...token].reduce((total, character) => total + character.charCodeAt(0), 0) % count;
+}
+
 export function createDailyChallenge(
   date: string,
   datasetVersion: string,
@@ -74,22 +169,34 @@ export function createDailyChallenge(
 ): DailyChallenge {
   if (!DATE_KEY_PATTERN.test(date) || !datasetVersion) throw new Error('Desafio diário inválido.');
   const rules = canonicalAvailability(availability);
+  const eligibleModifiers = DAILY_MODIFIERS.filter((modifier) =>
+    isDailyModifierEligible(modifier, rules),
+  );
+  if (!eligibleModifiers.length) throw new Error('Nenhum modificador diário elegível.');
+  const index = modifierIndex(
+    `${date}:${datasetVersion}:catalog-v${DAILY_MODIFIER_CATALOG_VERSION}`,
+    eligibleModifiers.length,
+  );
+  const modifier = eligibleModifiers[index];
+  const modifiedRules = applyDailyModifierAvailability(rules, modifier);
   const identity = [
     `daily-v${DAILY_CHALLENGE_VERSION}`,
     date,
     datasetVersion,
-    rules.startingExchanges,
-    rules.activeYears.join(','),
-    rules.activeRegionGroups.join(','),
+    modifier.id,
+    modifiedRules.startingExchanges,
+    modifiedRules.activeYears.join(','),
+    modifiedRules.activeRegionGroups.join(','),
     'almanac',
   ].join(':');
   return {
-    id: `daily-v${DAILY_CHALLENGE_VERSION}-${date}-${datasetVersion}`,
+    id: `daily-v${DAILY_CHALLENGE_VERSION}-${date}-${datasetVersion}-${modifier.id}`,
     date,
     seed: campaignSeedFromText(identity),
     datasetVersion,
     gameMode: 'almanac',
-    availability: rules,
+    availability: modifiedRules,
+    modifier,
   };
 }
 
@@ -106,17 +213,21 @@ export function recentDailyChallenges(
   );
 }
 
-function isDailyAttempt(value: unknown): value is DailyAttempt {
-  if (!value || typeof value !== 'object') return false;
+function normalizedDailyAttempt(value: unknown): DailyAttempt | null {
+  if (!value || typeof value !== 'object') return null;
   const attempt = value as Partial<DailyAttempt>;
-  return (
-    typeof attempt.id === 'string' &&
-    typeof attempt.challengeId === 'string' &&
-    ['official', 'friendly'].includes(attempt.kind ?? '') &&
-    typeof attempt.startedAt === 'string' &&
-    (attempt.completedAt === null || typeof attempt.completedAt === 'string') &&
-    (attempt.outcome === null || typeof attempt.outcome === 'string')
-  );
+  if (
+    typeof attempt.id !== 'string' ||
+    typeof attempt.challengeId !== 'string' ||
+    !['official', 'friendly'].includes(attempt.kind ?? '') ||
+    typeof attempt.startedAt !== 'string' ||
+    !(attempt.completedAt === null || typeof attempt.completedAt === 'string') ||
+    !(attempt.outcome === null || typeof attempt.outcome === 'string')
+  )
+    return null;
+  const modifierId = isDailyModifierId(attempt.modifierId) ? attempt.modifierId : null;
+  const objectiveMet = typeof attempt.objectiveMet === 'boolean' ? attempt.objectiveMet : null;
+  return { ...(attempt as DailyAttempt), modifierId, objectiveMet };
 }
 
 export function loadDailyAttempts(
@@ -125,7 +236,12 @@ export function loadDailyAttempts(
   if (!storage) return [];
   try {
     const parsed = JSON.parse(storage.getItem(DAILY_ATTEMPTS_KEY) ?? '[]') as unknown;
-    return Array.isArray(parsed) ? parsed.filter(isDailyAttempt).slice(-MAX_DAILY_ATTEMPTS) : [];
+    return Array.isArray(parsed)
+      ? parsed
+          .map(normalizedDailyAttempt)
+          .filter((attempt): attempt is DailyAttempt => !!attempt)
+          .slice(-MAX_DAILY_ATTEMPTS)
+      : [];
   } catch {
     return [];
   }
@@ -147,6 +263,7 @@ function defaultAttemptId(): string {
 
 export function beginDailyAttempt(
   challengeId: string,
+  modifierId: DailyModifierId,
   storage: CampaignStorage | null = browserStorage(),
   now: () => Date = () => new Date(),
   createId: () => string = defaultAttemptId,
@@ -161,10 +278,12 @@ export function beginDailyAttempt(
   const attempt: DailyAttempt = {
     id: createId(),
     challengeId,
+    modifierId,
     kind,
     startedAt: now().toISOString(),
     completedAt: null,
     outcome: null,
+    objectiveMet: null,
   };
   persistDailyAttempts([...attempts, attempt], storage);
   return attempt;
@@ -173,17 +292,18 @@ export function beginDailyAttempt(
 export function completeDailyAttempt(
   attemptId: string,
   outcome: string,
+  objectiveMet: boolean,
   storage: CampaignStorage | null = browserStorage(),
   now: () => Date = () => new Date(),
 ): boolean {
   const attempts = loadDailyAttempts(storage);
   const index = attempts.findIndex((attempt) => attempt.id === attemptId);
-  if (index < 0) return false;
-  if (attempts[index].completedAt) return false;
+  if (index < 0 || attempts[index].completedAt) return false;
   attempts[index] = {
     ...attempts[index],
     completedAt: now().toISOString(),
     outcome: outcome.slice(0, 80),
+    objectiveMet,
   };
   persistDailyAttempts(attempts, storage);
   return true;
@@ -198,4 +318,21 @@ export function officialDailyAttempt(
       (attempt) => attempt.challengeId === challengeId && attempt.kind === 'official',
     ) ?? null
   );
+}
+
+export function evaluateDailyObjective(
+  modifierId: DailyModifierId,
+  { team, tournament }: DailyObjectiveContext,
+): boolean {
+  const games = tournament.history.flatMap((series) => series.games);
+  switch (modifierId) {
+    case 'no-exchanges':
+      return tournament.outcome !== null && tournament.outcome !== 'Eliminado no Suíço';
+    case 'single-exchange':
+      return games.filter((game) => game.won).length >= 5;
+    case 'era-bridge':
+      return new Set(team.map((player) => player.worldsYear)).size >= 4;
+    case 'all-or-nothing':
+      return tournament.outcome === 'Campeão mundial';
+  }
 }
