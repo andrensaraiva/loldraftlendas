@@ -54,6 +54,8 @@ import {
 } from './game/random';
 import { gameModeLabel } from './game/mode';
 import type { GameMode } from './game/mode';
+import { saveOnboardingStatus, shouldOpenOnboarding } from './game/onboarding';
+import type { OnboardingStatus } from './game/onboarding';
 import { GAME_PLANS, GAME_PLAN_TAG_LABELS, gamePlanLabel } from './game/plan';
 import type { GamePlan } from './game/plan';
 import { championArt } from './data/art';
@@ -78,6 +80,7 @@ import {
   X,
   Zap,
 } from 'lucide-react';
+import OnboardingCarousel from './components/OnboardingCarousel';
 import { LocalDataRepository } from './data/repository';
 import type { GameData } from './data/repository';
 import { PlayerAvatar } from './components/PlayerAvatar';
@@ -454,100 +457,6 @@ function Art({
       fetchPriority={fetchPriority}
       decoding="async"
     />
-  );
-}
-function HowTo({
-  close,
-  years,
-  regionGroups,
-}: {
-  close: () => void;
-  years: number;
-  regionGroups: number;
-}) {
-  const dialog = useRef<HTMLDialogElement>(null);
-  useEffect(() => {
-    dialog.current?.showModal();
-  }, []);
-  return (
-    <dialog
-      ref={dialog}
-      className="help-dialog"
-      aria-labelledby="how-to-title"
-      onCancel={close}
-      onClick={(e) => {
-        if (e.target === e.currentTarget) close();
-      }}
-    >
-      <button className="icon-button close-help" onClick={close} aria-label="Fechar instruções">
-        <X />
-      </button>
-      <span className="eyebrow">O CAMINHO ATÉ O TÍTULO</span>
-      <h2 id="how-to-title">
-        Cinco escolhas.
-        <br />
-        Uma nova história.
-      </h2>
-      <ol className="instructions">
-        <li>
-          <b>Escolha suas lendas.</b>
-          <p>
-            Sorteie um ano e uma região. Use até três trocas ao longo do draft. Clique em um jogador
-            para escalá-lo e avançar.
-          </p>
-          <p>
-            No Clássico, ratings e força ficam visíveis. No Almanaque, essa orientação numérica só
-            aparece depois do resultado final; o cálculo da campanha não muda.
-          </p>
-        </li>
-        <li>
-          <b>Pense além do primeiro jogo.</b>
-          <p>
-            Os campeões são fixos: G1 no jogo 1, G2 no jogo 2 e assim por diante. Cada série
-            reinicia no G1.
-          </p>
-          <p>
-            Depois das cinco escolhas, defina Agressão, Teamfight, Controle/Pick ou Escala. O plano
-            permanece por toda a campanha e combina com as tags mostradas na equipe.
-          </p>
-        </li>
-        <li>
-          <b>Sobreviva ao Suíço.</b>
-          <p>
-            Três vitórias classificam; três derrotas eliminam. Jogos decisivos são melhor de 3. Os
-            demais, melhor de 1.
-          </p>
-        </li>
-        <li>
-          <b>Conquiste o Worlds.</b>
-          <p>
-            Quartas, semifinal e final são melhor de 5. A força combina 80% dos ratings e 20% da
-            composição. Favoritos também podem perder.
-          </p>
-          <p>
-            Escolha Acompanhar partida para ver os acontecimentos e o KDA, ou Resultado rápido para
-            avançar pelos resultados. Os dois modos percorrem o torneio sozinhos, com velocidades
-            1×, 2× e 4×. Você pode pausar ou abrir os relatórios a qualquer momento.
-          </p>
-        </li>
-      </ol>
-      <div className="data-note">
-        {years} {years === 1 ? 'edição' : 'edições'} do Worlds · {regionGroups}{' '}
-        {regionGroups === 1 ? 'grupo' : 'grupos'} de draft. Pools comprovados; ratings estimados a
-        partir das estatísticas globais por posição. A simulação e o KDA das partidas do jogo são
-        fictícios. As cartas usam avatares originais e neutros para os jogadores.
-      </div>
-      <details className="image-credits">
-        <summary>Créditos das imagens</summary>
-        <p>
-          Campeões: Riot Games / Data Dragon. Avatares dos jogadores: ilustrações originais e
-          neutras criadas para esta interface; não representam retratos oficiais ou fotorrealistas.
-        </p>
-      </details>
-      <button className="primary full" onClick={close}>
-        Entendi, vamos jogar <ArrowRight size={20} />
-      </button>
-    </dialog>
   );
 }
 function TeamStrip({ team, active = 5 }: { team: Team; active?: number }) {
@@ -956,7 +865,12 @@ export default function App() {
   const [gameMode, setGameMode] = useState<GameMode>('classic');
   const [gamePlan, setGamePlan] = useState<GamePlan | null>(null);
   const [maintenanceBanner, setMaintenanceBanner] = useState<string | null>(null);
-  const [help, setHelp] = useState(false);
+  const initialOnboarding = useRef(shouldOpenOnboarding()).current;
+  const [help, setHelp] = useState(initialOnboarding);
+  const [onboardingSource, setOnboardingSource] = useState<'automatic' | 'menu'>(
+    initialOnboarding ? 'automatic' : 'menu',
+  );
+  const onboardingOpenTracked = useRef(false);
   const [exitAction, setExitAction] = useState<CampaignExitAction | null>(null);
   const replacementStart = useRef<{
     challenge: CampaignChallenge | null;
@@ -1041,6 +955,15 @@ export default function App() {
       active = false;
     };
   }, []);
+  useEffect(() => {
+    if (!help) {
+      onboardingOpenTracked.current = false;
+      return;
+    }
+    if (!analyticsEnabled || onboardingOpenTracked.current) return;
+    onboardingOpenTracked.current = true;
+    analytics.track('onboarding_opened', { source: onboardingSource });
+  }, [analyticsEnabled, help, onboardingSource]);
   useEffect(() => {
     const interval = window.setInterval(() => {
       const current = buildDailyCatalog();
@@ -1657,7 +1580,16 @@ export default function App() {
   }
   function openHelp() {
     analytics.track('how_to_play_opened');
+    setOnboardingSource('menu');
     setHelp(true);
+  }
+  function finishOnboarding(status: OnboardingStatus, slideIndex: number) {
+    saveOnboardingStatus(status);
+    analytics.track(status === 'completed' ? 'onboarding_completed' : 'onboarding_skipped', {
+      source: onboardingSource,
+      slides_viewed: slideIndex + 1,
+    });
+    setHelp(false);
   }
   function openResearch(selection: PlayerVersion | 'method') {
     analytics.track(
@@ -2699,8 +2631,8 @@ export default function App() {
       </footer>
       <PwaStatus />
       {help && (
-        <HowTo
-          close={() => setHelp(false)}
+        <OnboardingCarousel
+          onFinish={finishOnboarding}
           years={availableYears}
           regionGroups={availableRegionGroups}
         />

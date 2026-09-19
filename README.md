@@ -65,6 +65,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - Configuração remota opcional para novos drafts: trocas iniciais, anos, grupos regionais, analytics e aviso de manutenção. Um snapshot das regras fica salvo na campanha ativa, evitando alterações retroativas.
 - Feedback contextual opcional em cada rating G1–G5: motivo categorizado e observação curta, ligado somente aos IDs históricos públicos e disponível no dashboard agregado para revisão editorial.
 - Interface responsiva, navegação por teclado, diálogo nativo, feedback de simulação e proteção contra clique duplo.
+- Onboarding versionado em cinco etapas na primeira visita, com pulo, teclado, swipe, movimento reduzido e reabertura por **Como jogar**.
 
 O Suíço é uma simulação da campanha do usuário: não existe uma tabela completa de 16 equipes, pareamento por campanha ou simulação paralela das outras chaves.
 

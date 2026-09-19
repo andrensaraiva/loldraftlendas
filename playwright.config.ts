@@ -3,7 +3,24 @@ export default defineConfig({
   testDir: './tests',
   fullyParallel: true,
   workers: 2,
-  use: { baseURL: 'http://127.0.0.1:5173', headless: true },
+  use: {
+    baseURL: 'http://127.0.0.1:5173',
+    headless: true,
+    storageState: {
+      cookies: [],
+      origins: [
+        {
+          origin: 'http://127.0.0.1:5173',
+          localStorage: [
+            {
+              name: 'draft-lendas.onboarding',
+              value: JSON.stringify({ version: 1, status: 'completed' }),
+            },
+          ],
+        },
+      ],
+    },
+  },
   webServer: {
     command: 'npm run dev -- --port 5173',
     url: 'http://127.0.0.1:5173',

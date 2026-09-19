@@ -197,7 +197,13 @@ test('draft remains contained and useful in every required viewport', async ({ p
     { width: 768, height: 1024 },
     { width: 1440, height: 1000 },
   ];
-  await page.addInitScript(() => localStorage.clear());
+  await page.addInitScript(() => {
+    localStorage.clear();
+    localStorage.setItem(
+      'draft-lendas.onboarding',
+      JSON.stringify({ version: 1, status: 'completed' }),
+    );
+  });
 
   for (const viewport of viewports) {
     await page.setViewportSize(viewport);

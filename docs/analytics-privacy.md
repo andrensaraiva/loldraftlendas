@@ -8,11 +8,12 @@ Each event contains a random campaign ID, a random browser-session ID, an event 
 
 The tracked event names are:
 
-- `session_started`, `draft_started`, `draft_completed`, `worlds_started`, `campaign_finished`, `play_again`, `save_resumed`
+- `session_started`, `draft_started`, `draft_completed`, `worlds_started`, `campaign_finished`, `play_again`, `save_resumed`, `campaign_paused`, `campaign_abandoned`
 - `game_plan_selected`
 - `roll_generated`, `exchange_used`, `player_selected`
 - `series_started`, `game_completed`, `playoffs_reached`, `worlds_won`
-- `how_to_play_opened`, `rating_details_opened`
+- `how_to_play_opened`, `onboarding_opened`, `onboarding_completed`, `onboarding_skipped`, `rating_details_opened`
+- `campaign_report_opened`, `journey_node_opened`, `journey_downloaded`
 - `share_started`, `share_completed`, `card_downloaded`
 - `challenge_opened`, `challenge_started`, `challenge_completed`, `challenge_link_copied`
 - `daily_opened`, `daily_started`, `daily_completed`
@@ -22,6 +23,8 @@ Roll, exchange, and selection events use normalized public historical player IDs
 Draft start, campaign completion, replay and challenge events may include only the categorized game mode (`classic` or `almanac`). This supports aggregate comparison of completion and replay by mode; hidden ratings, player decisions and challenge seeds are not added to that comparison.
 
 Plan selection, Worlds start, campaign completion and replay may include only one categorized game plan (`aggression`, `teamfight`, `control_pick` or `scaling`). This supports aggregate completion and title rates by plan. Champion tags and the calculated modifier stay in the local game state and are not sent.
+
+Onboarding events contain only whether the presentation opened automatically or from the menu and, on completion or skip, how many of its five slides were viewed. The versioned completion flag remains in local storage. Report and journey events contain only a tournament stage and series index when applicable; report contents and exported images are not sent.
 
 Sharing events contain only the campaign outcome and a categorized method (`file`, `link`, or `download`). The generated image, shared text, destination application, recipients, clipboard contents, and contacts are never collected. The browser's share sheet is controlled by the player and the operating system.
 

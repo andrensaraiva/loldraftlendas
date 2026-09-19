@@ -14,6 +14,10 @@ test('captures the versioned draft baseline in every required viewport', async (
   test.skip(testInfo.project.name !== 'desktop', 'One canonical Chromium capture set is sufficient.');
   await page.addInitScript(() => {
     localStorage.clear();
+    localStorage.setItem(
+      'draft-lendas.onboarding',
+      JSON.stringify({ version: 1, status: 'completed' }),
+    );
     Math.random = () => 0;
   });
 
@@ -35,6 +39,10 @@ test('captures the current mobile-first draft in every required viewport', async
   test.skip(testInfo.project.name !== 'desktop', 'One canonical Chromium capture set is sufficient.');
   await page.addInitScript(() => {
     localStorage.clear();
+    localStorage.setItem(
+      'draft-lendas.onboarding',
+      JSON.stringify({ version: 1, status: 'completed' }),
+    );
     Math.random = () => 0;
   });
 
