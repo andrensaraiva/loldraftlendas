@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { players } from '../data/players';
 import manifest from '../data/draft-region-groups.json';
 import {
+  archiveDraftAvailability,
   defaultDraftAvailability,
   publicProductConfigFromRow,
   safeDraftAvailability,
@@ -45,5 +46,15 @@ describe('public product configuration', () => {
     expect(() =>
       publicProductConfigFromRow({ ...row, active_region_groups: ['UNKNOWN'] }),
     ).toThrow();
+  });
+
+  it('turns an archive year and canonical region into an eligible draft recut', () => {
+    const base = defaultDraftAvailability(data);
+    expect(archiveDraftAvailability(data, base, '2025', 'LCK')).toMatchObject({
+      activeYears: [2025],
+      activeRegionGroups: ['KOREA'],
+    });
+    expect(archiveDraftAvailability(data, base, 'invalid', 'LCK')).toEqual(base);
+    expect(archiveDraftAvailability(data, base, '2025', 'UNKNOWN')).toEqual(base);
   });
 });

@@ -3,6 +3,7 @@ import { championArt } from '../data/art';
 import type { GameData } from '../data/repository';
 import type { PlayerVersion, Role } from '../game/types';
 import { PlayerPortrait } from './PlayerPortrait';
+import { archiveSlug } from '../archive/routes';
 
 const roleLabel: Record<Role, string> = {
   TOP: 'TOP',
@@ -107,6 +108,12 @@ export function PlayerCard({
           >
             Histórico e estatísticas <ArrowUpRight size={12} />
           </button>
+          <a
+            className="player-archive-link text-button"
+            href={`/arquivo/jogador/${archiveSlug(player.playerName)}`}
+          >
+            Ver no arquivo <ArrowUpRight size={12} />
+          </a>
         </div>
       </div>
     </article>

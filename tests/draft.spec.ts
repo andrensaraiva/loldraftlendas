@@ -25,6 +25,10 @@ test('exchanges preserve context, details do not select, and five single clicks 
   await expect(page.getByRole('dialog')).toBeVisible();
   await expect(page.locator('.evidence-slots > div')).toHaveCount(5);
   await expect(page.getByRole('button', { name: 'Discorda deste rating?' })).toHaveCount(5);
+  await expect(page.getByRole('link', { name: 'Ver todas as versões no arquivo ↗' })).toHaveAttribute(
+    'href',
+    /\/arquivo\/jogador\//,
+  );
   await page.getByRole('button', { name: 'Discorda deste rating?' }).first().click();
   await page.screenshot({
     path: `test-results/rating-feedback-${test.info().project.name}.png`,

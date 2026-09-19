@@ -2,6 +2,7 @@ export type ArchiveRoute =
   | { kind: 'index' }
   | { kind: 'edition'; year: number }
   | { kind: 'player'; slug: string }
+  | { kind: 'team'; slug: string }
   | { kind: 'champion'; id: string }
   | { kind: 'not-found' };
 
@@ -26,6 +27,8 @@ export function parseArchiveRoute(pathname: string): ArchiveRoute {
     return { kind: 'edition', year: Number(parts[2]) };
   if (parts[1] === 'jogador' && /^[a-z0-9-]{1,80}$/.test(parts[2]))
     return { kind: 'player', slug: parts[2] };
+  if (parts[1] === 'equipe' && /^[a-z0-9-]{1,100}$/.test(parts[2]))
+    return { kind: 'team', slug: parts[2] };
   if (parts[1] === 'campeao' && /^[a-zA-Z0-9-]{1,80}$/.test(parts[2]))
     return { kind: 'champion', id: parts[2] };
   return { kind: 'not-found' };

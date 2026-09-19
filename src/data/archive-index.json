@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "years": [
     {
       "year": 2014,
@@ -4747,6 +4747,1571 @@
         2024
       ],
       "appearances": 7
+    }
+  ],
+  "teams": [
+    {
+      "slug": "100-thieves",
+      "name": "100 Thieves",
+      "years": [
+        2018,
+        2021,
+        2022,
+        2025
+      ],
+      "codes": [
+        "100T"
+      ],
+      "regions": [
+        "LCS",
+        "LTA N",
+        "NA LCS"
+      ],
+      "players": [
+        "abbedagge",
+        "anda",
+        "aphromoo",
+        "closer",
+        "dhokla",
+        "eyla",
+        "fbi",
+        "huhi",
+        "quid",
+        "rikara",
+        "river",
+        "ryu",
+        "ssumday"
+      ]
+    },
+    {
+      "slug": "afreeca-freecs",
+      "name": "Afreeca Freecs",
+      "years": [
+        2018
+      ],
+      "codes": [
+        "AF"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "kiin",
+        "kramer",
+        "kuro",
+        "spirit",
+        "tusin"
+      ]
+    },
+    {
+      "slug": "alliance",
+      "name": "Alliance",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "ALL"
+      ],
+      "regions": [
+        "EU LCS"
+      ],
+      "players": [
+        "froggen",
+        "nyph",
+        "shook",
+        "tabzz",
+        "wickd"
+      ]
+    },
+    {
+      "slug": "anyone-s-legend",
+      "name": "Anyone's Legend",
+      "years": [
+        2025
+      ],
+      "codes": [
+        "AL"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "flandre",
+        "hope",
+        "kael",
+        "shanks",
+        "tarzan"
+      ]
+    },
+    {
+      "slug": "bilibili-gaming",
+      "name": "Bilibili Gaming",
+      "years": [
+        2023,
+        2024,
+        2025
+      ],
+      "codes": [
+        "BLG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "bin",
+        "elk",
+        "knight",
+        "on",
+        "shad0w",
+        "xun",
+        "yagao"
+      ]
+    },
+    {
+      "slug": "cloud9",
+      "name": "Cloud9",
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2022,
+        2023
+      ],
+      "codes": [
+        "C9"
+      ],
+      "regions": [
+        "LCS",
+        "NA LCS"
+      ],
+      "players": [
+        "balis",
+        "berserker",
+        "blaber",
+        "contractz",
+        "emenes",
+        "fudge",
+        "hai",
+        "impact",
+        "jensen",
+        "lemonnation",
+        "licorice",
+        "meteos",
+        "nisqy",
+        "perkz",
+        "smoothie",
+        "sneaky",
+        "svenskeren",
+        "vulcan",
+        "zeyzal",
+        "zven"
+      ]
+    },
+    {
+      "slug": "clutch-gaming",
+      "name": "Clutch Gaming",
+      "years": [
+        2019
+      ],
+      "codes": [
+        "CG"
+      ],
+      "regions": [
+        "LCS"
+      ],
+      "players": [
+        "cody-sun",
+        "damonte",
+        "huni",
+        "lira",
+        "vulcan"
+      ]
+    },
+    {
+      "slug": "counter-logic-gaming",
+      "name": "Counter Logic Gaming",
+      "years": [
+        2015,
+        2016
+      ],
+      "codes": [
+        "CLG"
+      ],
+      "regions": [
+        "NA LCS"
+      ],
+      "players": [
+        "aphromoo",
+        "doublelift",
+        "huhi",
+        "pobelter",
+        "stixxay",
+        "xmithie",
+        "zionspartan"
+      ]
+    },
+    {
+      "slug": "ctbc-flying-oyster",
+      "name": "CTBC Flying Oyster",
+      "years": [
+        2025
+      ],
+      "codes": [
+        "CFO"
+      ],
+      "regions": [
+        "LCP"
+      ],
+      "players": [
+        "doggo",
+        "hongq",
+        "junjia",
+        "kaiwing",
+        "rest"
+      ]
+    },
+    {
+      "slug": "damwon-gaming",
+      "name": "DAMWON Gaming",
+      "years": [
+        2019,
+        2020
+      ],
+      "codes": [
+        "DWG"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "beryl",
+        "canyon",
+        "ghost",
+        "nuclear",
+        "nuguri",
+        "showmaker"
+      ]
+    },
+    {
+      "slug": "dplus-kia",
+      "name": "Dplus Kia",
+      "years": [
+        2023,
+        2024
+      ],
+      "codes": [
+        "DK"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "aiming",
+        "canna",
+        "canyon",
+        "deft",
+        "kellin",
+        "kingen",
+        "lucid",
+        "moham",
+        "showmaker"
+      ]
+    },
+    {
+      "slug": "drx",
+      "name": "DRX",
+      "years": [
+        2020,
+        2022
+      ],
+      "codes": [
+        "DRX"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "beryl",
+        "chovy",
+        "deft",
+        "doran",
+        "keria",
+        "kingen",
+        "pyosik",
+        "zeka"
+      ]
+    },
+    {
+      "slug": "dwg-kia",
+      "name": "DWG KIA",
+      "years": [
+        2021,
+        2022
+      ],
+      "codes": [
+        "DK"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "beryl",
+        "canyon",
+        "deokdam",
+        "ghost",
+        "kellin",
+        "khan",
+        "nuguri",
+        "showmaker"
+      ]
+    },
+    {
+      "slug": "edward-gaming",
+      "name": "EDward Gaming",
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2021,
+        2022
+      ],
+      "codes": [
+        "EDG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "amazingj",
+        "clearlove",
+        "deft",
+        "flandre",
+        "fzzf",
+        "haro",
+        "iboy",
+        "jiejie",
+        "korol",
+        "meiko",
+        "mouse",
+        "namei",
+        "pawn",
+        "ray",
+        "scout",
+        "u",
+        "viper"
+      ]
+    },
+    {
+      "slug": "evil-geniuses",
+      "name": "Evil Geniuses",
+      "years": [
+        2022
+      ],
+      "codes": [
+        "EG"
+      ],
+      "regions": [
+        "LCS"
+      ],
+      "players": [
+        "impact",
+        "inspired",
+        "jojopyun",
+        "kaori",
+        "vulcan"
+      ]
+    },
+    {
+      "slug": "flyquest",
+      "name": "FlyQuest",
+      "years": [
+        2020,
+        2024,
+        2025
+      ],
+      "codes": [
+        "FLY"
+      ],
+      "regions": [
+        "LCS",
+        "LTA N"
+      ],
+      "players": [
+        "busio",
+        "bwipo",
+        "ignar",
+        "inspired",
+        "massu",
+        "powerofevil",
+        "quad",
+        "santorin",
+        "solo",
+        "wildturtle"
+      ]
+    },
+    {
+      "slug": "fnatic",
+      "name": "Fnatic",
+      "years": [
+        2014,
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "codes": [
+        "FNC"
+      ],
+      "regions": [
+        "EU LCS",
+        "LEC"
+      ],
+      "players": [
+        "adam",
+        "bean",
+        "broxah",
+        "bwipo",
+        "caps",
+        "cyanide",
+        "febiven",
+        "humanoid",
+        "huni",
+        "hylissang",
+        "jesiz",
+        "jun",
+        "mikyx",
+        "nemesis",
+        "nisqy",
+        "noah",
+        "oscarinin",
+        "poby",
+        "razork",
+        "reignover",
+        "rekkles",
+        "selfmade",
+        "soaz",
+        "trymbi",
+        "upset",
+        "wunder",
+        "xpeke",
+        "yellowstar"
+      ]
+    },
+    {
+      "slug": "funplus-phoenix",
+      "name": "FunPlus Phoenix",
+      "years": [
+        2019,
+        2021
+      ],
+      "codes": [
+        "FPX"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "crisp",
+        "doinb",
+        "gimgoon",
+        "lwx",
+        "nuguri",
+        "tian"
+      ]
+    },
+    {
+      "slug": "g2-esports",
+      "name": "G2 Esports",
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "codes": [
+        "G2"
+      ],
+      "regions": [
+        "EU LCS",
+        "LEC"
+      ],
+      "players": [
+        "brokenblade",
+        "caps",
+        "expect",
+        "flakked",
+        "hans-sama",
+        "hjarnan",
+        "jankos",
+        "labrov",
+        "mikyx",
+        "mithy",
+        "perkz",
+        "skewmond",
+        "targamas",
+        "trick",
+        "wadid",
+        "wunder",
+        "yike",
+        "zven"
+      ]
+    },
+    {
+      "slug": "gen-g",
+      "name": "Gen.G",
+      "years": [
+        2018,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "codes": [
+        "GEN"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "bdd",
+        "canyon",
+        "chovy",
+        "clid",
+        "corejj",
+        "crown",
+        "cuvee",
+        "delight",
+        "doran",
+        "duro",
+        "haru",
+        "kiin",
+        "lehends",
+        "life",
+        "peanut",
+        "peyz",
+        "rascal",
+        "ruler"
+      ]
+    },
+    {
+      "slug": "griffin",
+      "name": "Griffin",
+      "years": [
+        2019
+      ],
+      "codes": [
+        "GRF"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "chovy",
+        "lehends",
+        "sword",
+        "tarzan",
+        "viper"
+      ]
+    },
+    {
+      "slug": "h2k-gaming",
+      "name": "H2k-Gaming",
+      "years": [
+        2015,
+        2016
+      ],
+      "codes": [
+        "H2K"
+      ],
+      "regions": [
+        "EU LCS"
+      ],
+      "players": [
+        "forg1ven",
+        "hjarnan",
+        "jankos",
+        "kasing",
+        "loulex",
+        "odoamne",
+        "ryu",
+        "vander"
+      ]
+    },
+    {
+      "slug": "hanwha-life-esports",
+      "name": "Hanwha Life Esports",
+      "years": [
+        2021,
+        2024,
+        2025
+      ],
+      "codes": [
+        "HLE"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "chovy",
+        "deft",
+        "delight",
+        "doran",
+        "morgan",
+        "peanut",
+        "viper",
+        "vsta",
+        "willer",
+        "zeka",
+        "zeus"
+      ]
+    },
+    {
+      "slug": "i-may",
+      "name": "I May",
+      "years": [
+        2016
+      ],
+      "codes": [
+        "IMAY"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "amazingj",
+        "athena",
+        "avoidless",
+        "jinjiao",
+        "road"
+      ]
+    },
+    {
+      "slug": "immortals",
+      "name": "Immortals",
+      "years": [
+        2017
+      ],
+      "codes": [
+        "IMT"
+      ],
+      "regions": [
+        "NA LCS"
+      ],
+      "players": [
+        "cody-sun",
+        "flame",
+        "olleh",
+        "pobelter",
+        "xmithie"
+      ]
+    },
+    {
+      "slug": "invictus-gaming",
+      "name": "Invictus Gaming",
+      "years": [
+        2015,
+        2018,
+        2019
+      ],
+      "codes": [
+        "IG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "baolan",
+        "jackeylove",
+        "kakao",
+        "kid",
+        "kitties",
+        "ning",
+        "rookie",
+        "theshy",
+        "zz1tai"
+      ]
+    },
+    {
+      "slug": "jd-gaming",
+      "name": "JD Gaming",
+      "years": [
+        2020,
+        2022,
+        2023
+      ],
+      "codes": [
+        "JDG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "369",
+        "hope",
+        "kanavi",
+        "knight",
+        "loken",
+        "lvmao",
+        "missing",
+        "ruler",
+        "yagao",
+        "zoom"
+      ]
+    },
+    {
+      "slug": "koo-tigers",
+      "name": "KOO Tigers",
+      "years": [
+        2015
+      ],
+      "codes": [
+        "KOO"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "gorilla",
+        "hojin",
+        "kuro",
+        "pray",
+        "smeb"
+      ]
+    },
+    {
+      "slug": "kt-rolster",
+      "name": "KT Rolster",
+      "years": [
+        2015,
+        2018,
+        2023,
+        2025
+      ],
+      "codes": [
+        "KT"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "aiming",
+        "arrow",
+        "bdd",
+        "cuzz",
+        "deft",
+        "deokdam",
+        "kiin",
+        "lehends",
+        "mata",
+        "nagne",
+        "perfect",
+        "peter",
+        "piccaboo",
+        "score",
+        "smeb",
+        "ssumday",
+        "ucal"
+      ]
+    },
+    {
+      "slug": "lgd-gaming",
+      "name": "LGD Gaming",
+      "years": [
+        2015,
+        2020
+      ],
+      "codes": [
+        "LGD"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "acorn",
+        "godv",
+        "imp",
+        "kramer",
+        "langx",
+        "mark",
+        "peanut",
+        "pyl",
+        "tbq",
+        "xiye"
+      ]
+    },
+    {
+      "slug": "lmq",
+      "name": "LMQ",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "LMQ"
+      ],
+      "regions": [
+        "NA LCS"
+      ],
+      "players": [
+        "godlike",
+        "mor",
+        "noname",
+        "vasilii",
+        "xiaoweixiao"
+      ]
+    },
+    {
+      "slug": "lng-esports",
+      "name": "LNG Esports",
+      "years": [
+        2021,
+        2023,
+        2024
+      ],
+      "codes": [
+        "LNG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "ale",
+        "gala",
+        "hang",
+        "icon",
+        "iwandy",
+        "light",
+        "scout",
+        "tarzan",
+        "weiwei",
+        "zika"
+      ]
+    },
+    {
+      "slug": "longzhu-gaming",
+      "name": "Longzhu Gaming",
+      "years": [
+        2017
+      ],
+      "codes": [
+        "LZ"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "bdd",
+        "cuzz",
+        "gorilla",
+        "khan",
+        "pray"
+      ]
+    },
+    {
+      "slug": "mad-lions",
+      "name": "MAD Lions",
+      "years": [
+        2021,
+        2023
+      ],
+      "codes": [
+        "MAD"
+      ],
+      "regions": [
+        "LEC"
+      ],
+      "players": [
+        "armut",
+        "carzzy",
+        "chasy",
+        "elyoya",
+        "humanoid",
+        "hylissang",
+        "kaiser",
+        "nisqy"
+      ]
+    },
+    {
+      "slug": "mad-lions-koi",
+      "name": "MAD Lions KOI",
+      "years": [
+        2024
+      ],
+      "codes": [
+        "MAD"
+      ],
+      "regions": [
+        "LEC"
+      ],
+      "players": [
+        "alvaro",
+        "elyoya",
+        "fresskowy",
+        "myrwn",
+        "supa"
+      ]
+    },
+    {
+      "slug": "misfits-gaming",
+      "name": "Misfits Gaming",
+      "years": [
+        2017
+      ],
+      "codes": [
+        "MSF"
+      ],
+      "regions": [
+        "EU LCS"
+      ],
+      "players": [
+        "alphari",
+        "hans-sama",
+        "ignar",
+        "maxlore",
+        "powerofevil"
+      ]
+    },
+    {
+      "slug": "movistar-koi",
+      "name": "Movistar KOI",
+      "years": [
+        2025
+      ],
+      "codes": [
+        "MKOI"
+      ],
+      "regions": [
+        "LEC"
+      ],
+      "players": [
+        "alvaro",
+        "elyoya",
+        "jojopyun",
+        "myrwn",
+        "supa"
+      ]
+    },
+    {
+      "slug": "najin-white-shield",
+      "name": "NaJin White Shield",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "NJWS"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "ggoong",
+        "gorilla",
+        "save",
+        "watch",
+        "zefa"
+      ]
+    },
+    {
+      "slug": "nrg",
+      "name": "NRG",
+      "years": [
+        2023
+      ],
+      "codes": [
+        "NRG"
+      ],
+      "regions": [
+        "LCS"
+      ],
+      "players": [
+        "contractz",
+        "dhokla",
+        "fbi",
+        "ignar",
+        "palafox"
+      ]
+    },
+    {
+      "slug": "omg",
+      "name": "OMG",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "OMG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "cloud",
+        "cool",
+        "gogoing",
+        "loveling",
+        "san"
+      ]
+    },
+    {
+      "slug": "origen",
+      "name": "Origen",
+      "years": [
+        2015
+      ],
+      "codes": [
+        "OG"
+      ],
+      "regions": [
+        "EU LCS"
+      ],
+      "players": [
+        "amazing",
+        "mithy",
+        "soaz",
+        "xpeke",
+        "zven"
+      ]
+    },
+    {
+      "slug": "psg-talon",
+      "name": "PSG Talon",
+      "years": [
+        2025
+      ],
+      "codes": [
+        "PSG"
+      ],
+      "regions": [
+        "LCP"
+      ],
+      "players": [
+        "azhi",
+        "betty",
+        "karsa",
+        "maple",
+        "woody"
+      ]
+    },
+    {
+      "slug": "rogue",
+      "name": "Rogue",
+      "years": [
+        2020,
+        2021,
+        2022
+      ],
+      "codes": [
+        "RGE"
+      ],
+      "regions": [
+        "LEC"
+      ],
+      "players": [
+        "comp",
+        "finn",
+        "hans-sama",
+        "inspired",
+        "larssen",
+        "malrang",
+        "odoamne",
+        "trymbi",
+        "vander"
+      ]
+    },
+    {
+      "slug": "rox-tigers",
+      "name": "ROX Tigers",
+      "years": [
+        2016
+      ],
+      "codes": [
+        "ROX"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "gorilla",
+        "kuro",
+        "peanut",
+        "pray",
+        "smeb"
+      ]
+    },
+    {
+      "slug": "royal-never-give-up",
+      "name": "Royal Never Give Up",
+      "years": [
+        2016,
+        2017,
+        2018,
+        2019,
+        2021,
+        2022
+      ],
+      "codes": [
+        "RNG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "breathe",
+        "cryin",
+        "gala",
+        "karsa",
+        "langx",
+        "letme",
+        "looper",
+        "mata",
+        "ming",
+        "mlxg",
+        "uzi",
+        "wei",
+        "xiaohu"
+      ]
+    },
+    {
+      "slug": "samsung-blue",
+      "name": "Samsung Blue",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "SSB"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "acorn",
+        "dade",
+        "deft",
+        "heart",
+        "spirit"
+      ]
+    },
+    {
+      "slug": "samsung-galaxy",
+      "name": "Samsung Galaxy",
+      "years": [
+        2016,
+        2017
+      ],
+      "codes": [
+        "SSG"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "ambition",
+        "corejj",
+        "crown",
+        "cuvee",
+        "ruler"
+      ]
+    },
+    {
+      "slug": "samsung-white",
+      "name": "Samsung White",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "SSW"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "dandy",
+        "imp",
+        "looper",
+        "mata",
+        "pawn"
+      ]
+    },
+    {
+      "slug": "sk-gaming",
+      "name": "SK Gaming",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "SK"
+      ],
+      "regions": [
+        "EU LCS"
+      ],
+      "players": [
+        "candypanda",
+        "fredy122",
+        "gilius",
+        "jesiz",
+        "nrated"
+      ]
+    },
+    {
+      "slug": "sk-telecom-t1",
+      "name": "SK Telecom T1",
+      "years": [
+        2015,
+        2016,
+        2017,
+        2019
+      ],
+      "codes": [
+        "SKT"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "bang",
+        "bengi",
+        "clid",
+        "duke",
+        "effort",
+        "faker",
+        "huni",
+        "khan",
+        "marin",
+        "peanut",
+        "teddy",
+        "wolf"
+      ]
+    },
+    {
+      "slug": "splyce",
+      "name": "Splyce",
+      "years": [
+        2016,
+        2019
+      ],
+      "codes": [
+        "SPY"
+      ],
+      "regions": [
+        "EU LCS",
+        "LEC"
+      ],
+      "players": [
+        "humanoid",
+        "kobbe",
+        "kold",
+        "mikyx",
+        "sencux",
+        "tore",
+        "vizicsacsi",
+        "wunder",
+        "xerxe"
+      ]
+    },
+    {
+      "slug": "star-horn-royal-club",
+      "name": "Star Horn Royal Club",
+      "years": [
+        2014
+      ],
+      "codes": [
+        "SHRC"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "cola",
+        "corn",
+        "insec",
+        "uzi",
+        "zero"
+      ]
+    },
+    {
+      "slug": "suning",
+      "name": "Suning",
+      "years": [
+        2020
+      ],
+      "codes": [
+        "SN"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "angel",
+        "bin",
+        "huanfeng",
+        "sofm",
+        "swordart"
+      ]
+    },
+    {
+      "slug": "t1",
+      "name": "T1",
+      "years": [
+        2021,
+        2022,
+        2023,
+        2024,
+        2025
+      ],
+      "codes": [
+        "T1"
+      ],
+      "regions": [
+        "LCK"
+      ],
+      "players": [
+        "canna",
+        "doran",
+        "faker",
+        "gumayusi",
+        "keria",
+        "oner",
+        "zeus"
+      ]
+    },
+    {
+      "slug": "team-bds",
+      "name": "Team BDS",
+      "years": [
+        2023
+      ],
+      "codes": [
+        "BDS"
+      ],
+      "regions": [
+        "LEC"
+      ],
+      "players": [
+        "adam",
+        "crownie",
+        "labrov",
+        "nuc",
+        "sheo"
+      ]
+    },
+    {
+      "slug": "team-liquid",
+      "name": "Team Liquid",
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2023,
+        2024
+      ],
+      "codes": [
+        "TL"
+      ],
+      "regions": [
+        "LCS",
+        "NA LCS"
+      ],
+      "players": [
+        "alphari",
+        "apa",
+        "broxah",
+        "corejj",
+        "doublelift",
+        "impact",
+        "jensen",
+        "olleh",
+        "pobelter",
+        "pyosik",
+        "santorin",
+        "summit",
+        "tactical",
+        "umti",
+        "xmithie",
+        "yeon"
+      ]
+    },
+    {
+      "slug": "team-secret-whales",
+      "name": "Team Secret Whales",
+      "years": [
+        2025
+      ],
+      "codes": [
+        "TSW"
+      ],
+      "regions": [
+        "LCP"
+      ],
+      "players": [
+        "dire",
+        "eddie",
+        "hiro02",
+        "hizto",
+        "taki"
+      ]
+    },
+    {
+      "slug": "team-solomid",
+      "name": "Team SoloMid",
+      "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2020
+      ],
+      "codes": [
+        "TSM"
+      ],
+      "regions": [
+        "LCS",
+        "NA LCS"
+      ],
+      "players": [
+        "amazing",
+        "biofrost",
+        "bjergsen",
+        "broken-blade",
+        "doublelift",
+        "dyrus",
+        "hauntzer",
+        "lustboy",
+        "santorin",
+        "spica",
+        "svenskeren",
+        "wildturtle"
+      ]
+    },
+    {
+      "slug": "team-vitality",
+      "name": "Team Vitality",
+      "years": [
+        2018
+      ],
+      "codes": [
+        "VIT"
+      ],
+      "regions": [
+        "EU LCS"
+      ],
+      "players": [
+        "attila",
+        "cabochard",
+        "jactroll",
+        "jiizuke",
+        "kikis"
+      ]
+    },
+    {
+      "slug": "team-we",
+      "name": "Team WE",
+      "years": [
+        2017
+      ],
+      "codes": [
+        "WE"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "957",
+        "ben",
+        "condi",
+        "mystic",
+        "xiye"
+      ]
+    },
+    {
+      "slug": "top-esports",
+      "name": "Top Esports",
+      "years": [
+        2020,
+        2022,
+        2024,
+        2025
+      ],
+      "codes": [
+        "TES"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "369",
+        "creme",
+        "hang",
+        "jackeylove",
+        "kanavi",
+        "karsa",
+        "knight",
+        "mark",
+        "meiko",
+        "tian",
+        "wayward",
+        "yuyanjia"
+      ]
+    },
+    {
+      "slug": "vivo-keyd-stars",
+      "name": "Vivo Keyd Stars",
+      "years": [
+        2025
+      ],
+      "codes": [
+        "VKS"
+      ],
+      "regions": [
+        "LTA S"
+      ],
+      "players": [
+        "boal",
+        "disamis",
+        "mireu",
+        "morttheus",
+        "trymbi"
+      ]
+    },
+    {
+      "slug": "weibo-gaming",
+      "name": "Weibo Gaming",
+      "years": [
+        2023,
+        2024
+      ],
+      "codes": [
+        "WBG"
+      ],
+      "regions": [
+        "LPL"
+      ],
+      "players": [
+        "breathe",
+        "crisp",
+        "light",
+        "tarzan",
+        "theshy",
+        "weiwei",
+        "xiaohu"
+      ]
     }
   ]
 }

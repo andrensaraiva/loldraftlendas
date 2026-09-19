@@ -3,6 +3,7 @@ import { Check, Flag, Send, X } from 'lucide-react';
 import type { GameData } from '../data/repository';
 import type { AnalyticsTracker, RatingFeedbackReason } from '../game/analytics';
 import type { PlayerVersion } from '../game/types';
+import { archiveSlug } from '../archive/routes';
 
 const feedbackReasons: Array<{ id: RatingFeedbackReason; label: string }> = [
   { id: 'too_high', label: 'Rating alto demais' },
@@ -83,6 +84,11 @@ export function ResearchDialog({
           {player.teamName ?? player.team} · {player.historicalLeague ?? player.region} ·{' '}
           {player.worldsStats?.games} jogos no Worlds
         </p>
+      )}
+      {player && (
+        <a className="research-archive-link" href={`/arquivo/jogador/${archiveSlug(player.playerName)}`}>
+          Ver todas as versões no arquivo ↗
+        </a>
       )}
       {player?.worldsStats && !hideNumbers && (
         <p>

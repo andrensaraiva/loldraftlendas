@@ -215,7 +215,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados: 98 testes unitários passaram; a validação de retratos confirmou 10 identidades e 20 WebPs de 768 px; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões e 520 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 54 execuções E2E passaram no Chromium, cobrindo desktop, mobile, onboarding, fallbacks de retrato e os seis viewports obrigatórios, com 8 skips condicionais esperados. O bundle inicial ficou em 419,07 kB (108,61 kB gzip); o relatório final está isolado em um chunk lazy de 7,53 kB (2,26 kB gzip) e a jornada em 2,62 kB (1,26 kB gzip), sem aviso acima de 500 kB.
+Resultados registrados após o Pacote 7: 101 testes unitários passaram; a validação de retratos confirmou 10 identidades e 20 WebPs de 768 px; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 58 execuções E2E passaram no Chromium, cobrindo desktop, mobile, arquivo, onboarding, fallbacks de retrato e os seis viewports obrigatórios, com 8 skips condicionais esperados. O bundle inicial ficou em 420,40 kB (109,01 kB gzip); o arquivo está isolado em um chunk lazy de 52,77 kB (13,30 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), sem aviso acima de 500 kB.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -236,11 +236,17 @@ O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions a
 
 Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de execução](analise-7a0-e-roadmap-produto.md). A trilha **Compartilhar e Desafiar** deve avançar em paralelo ao backfill histórico, sem relaxar os gates de dados abaixo.
 
-### Próxima Entrega Executável: Pacote 7, Arquivo Histórico
+### Pacote 7 Concluído: Arquivo Histórico
 
-- Adicionar filtros por edição, posição, equipe e região com estado representado na URL.
-- Incluir ordenação, páginas de equipe e comparação entre versões de um jogador sem inflar a home.
-- Conectar cartas, detalhes, arquivo e retorno ao draft preservando o recorte elegível.
+- Filtros por posição, equipe e região, ordenação e busca ficam representados na URL.
+- O arquivo ganhou 63 páginas de equipe, comparação entre versões de um jogador e carregamento somente dos chunks anuais necessários.
+- Cartas, detalhes, arquivo e retorno ao draft preservam o recorte elegível de edição e região.
+
+### Próxima Entrega Executável: Pacote 8, Desafios Diários Especiais
+
+- Versionar modificadores diários determinísticos no calendário de Brasília.
+- Exibir o objetivo antes do draft, avaliar elegibilidade no resultado e manter o histórico local dos sete dias.
+- Instrumentar o modificador sem depender de ranking, conta ou backend real.
 
 ### Aprovação Pendente: Pacote 5
 

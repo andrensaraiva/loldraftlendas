@@ -176,10 +176,16 @@
   background: #f5ffe9;
   transform: translateY(-3px);
 }
-.player-card-actions .player-details {
+.player-card-actions .player-details,
+.player-card-actions .player-archive-link {
   display: flex;
   margin: 0 auto;
   min-height: 32px;
+  align-items: center;
+  gap: 4px;
+  color: #52604e;
+  font-size: 8px;
+  text-decoration: none;
 }
 .player-carousel {
   transition:
@@ -583,7 +589,8 @@
   .player-card-actions {
     margin-top: 11px;
   }
-  .player-card-actions .player-details {
+  .player-card-actions .player-details,
+  .player-card-actions .player-archive-link {
     min-height: 44px;
     font-size: 10px;
   }

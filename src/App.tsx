@@ -40,6 +40,7 @@ import {
 import type { CampaignSummary } from './game/history';
 import { buildCampaignReport } from './game/report';
 import {
+  archiveDraftAvailability,
   defaultDraftAvailability,
   loadPublicProductConfig,
   safeDraftAvailability,
@@ -941,14 +942,22 @@ export default function App() {
     let active = true;
     const saved = loadCampaign(catalog.draftRegionManifest.datasetVersion);
     const defaultAvailability = defaultDraftAvailability(catalog);
+    const archiveParams = new URLSearchParams(window.location.search);
+    const fromArchive = (availability: DraftAvailability) =>
+      archiveDraftAvailability(
+        catalog,
+        availability,
+        archiveParams.get('archiveYear'),
+        archiveParams.get('archiveRegion'),
+      );
     setDraftAvailabilityLimits(defaultAvailability);
-    setNextDraftAvailability(defaultAvailability);
+    setNextDraftAvailability(fromArchive(defaultAvailability));
     setHasSavedCampaign(!!saved);
     void loadPublicProductConfig().then((configuration) => {
       if (!active) return;
       const configuredAvailability = safeDraftAvailability(catalog, configuration);
       setDraftAvailabilityLimits(configuredAvailability);
-      setNextDraftAvailability(configuredAvailability);
+      setNextDraftAvailability(fromArchive(configuredAvailability));
       setMaintenanceBanner(configuration?.maintenanceBanner ?? null);
     });
     return () => {

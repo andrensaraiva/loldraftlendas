@@ -6,6 +6,7 @@ interface ArchiveIndex {
   years: Array<{ year: number }>;
   players: Array<{ slug: string }>;
   champions: Array<{ id: string }>;
+  teams: Array<{ slug: string }>;
 }
 
 const archiveIndex = JSON.parse(
@@ -19,6 +20,7 @@ function sitemapPaths(): string[] {
     ...archiveIndex.years.map((entry) => `/arquivo/edicao/${entry.year}`),
     ...archiveIndex.players.map((entry) => `/arquivo/jogador/${entry.slug}`),
     ...archiveIndex.champions.map((entry) => `/arquivo/campeao/${entry.id}`),
+    ...archiveIndex.teams.map((entry) => `/arquivo/equipe/${entry.slug}`),
   ];
 }
 

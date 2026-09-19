@@ -82,6 +82,31 @@ export function safeDraftAvailability(
     : fallback;
 }
 
+export function archiveDraftAvailability(
+  data: ProductData,
+  base: DraftAvailability,
+  yearValue: string | null,
+  canonicalRegion: string | null,
+): DraftAvailability {
+  const year = Number(yearValue);
+  if (!Number.isInteger(year) || !base.activeYears.includes(year)) return base;
+  const yearGroups = data.draftRegionManifest.groups.find((entry) => entry.year === year)?.groups;
+  if (!yearGroups) return base;
+  const activeRegionGroups = yearGroups
+    .filter(
+      (group) =>
+        base.activeRegionGroups.includes(group.id) &&
+        (!canonicalRegion || group.canonicalRegions.includes(canonicalRegion)),
+    )
+    .map((group) => group.id);
+  const candidate: DraftAvailability = {
+    ...base,
+    activeYears: [year],
+    activeRegionGroups,
+  };
+  return isDraftAvailabilityEligible(data.draftRegionManifest, candidate) ? candidate : base;
+}
+
 export async function loadPublicProductConfig(): Promise<PublicProductConfig | null> {
   const url = import.meta.env.VITE_SUPABASE_URL?.trim().replace(/\/$/, '');
   const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY?.trim();

@@ -1,10 +1,28 @@
-import { ArrowLeft, ArrowRight, BookOpen, ExternalLink, Search } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  BookOpen,
+  ExternalLink,
+  GitCompareArrows,
+  RotateCcw,
+  Search,
+  SlidersHorizontal,
+} from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import archiveIndexData from '../data/archive-index.json';
 import { championArt } from '../data/art';
 import { LocalDataRepository } from '../data/repository';
 import type { GameData } from '../data/repository';
 import type { ChampionSlot, PlayerVersion } from '../game/types';
+import { canonicalRegionFor } from '../game/regions';
+import {
+  DEFAULT_ARCHIVE_FILTERS,
+  archiveFilterSearch,
+  averagePlayerRating,
+  filterArchivePlayers,
+  parseArchiveFilters,
+} from './filters';
+import type { ArchiveFilters } from './filters';
 import { archiveSlug, parseArchiveRoute } from './routes';
 import './archive.css';
 
@@ -13,6 +31,14 @@ interface ArchiveIndex {
   years: Array<{ year: number; players: number; teams: number; champions: number }>;
   players: Array<{ slug: string; name: string; years: number[] }>;
   champions: Array<{ id: string; years: number[]; appearances: number }>;
+  teams: Array<{
+    slug: string;
+    name: string;
+    years: number[];
+    codes: string[];
+    regions: string[];
+    players: string[];
+  }>;
 }
 
 const archiveIndex = archiveIndexData as ArchiveIndex;
@@ -53,10 +79,20 @@ function PlayerEntry({
           <h2>
             <a href={`/arquivo/jogador/${archiveSlug(player.playerName)}`}>{player.playerName}</a>
           </h2>
-          <p>{player.teamName ?? player.team}</p>
+          <p>
+            <a href={`/arquivo/equipe/${archiveSlug(player.teamName ?? player.team)}`}>
+              {player.teamName ?? player.team}
+            </a>
+          </p>
         </div>
       </div>
       <p className="archive-profile">{player.profile}</p>
+      <a
+        className="archive-draft-link"
+        href={`/?archiveYear=${player.worldsYear}&archiveRegion=${encodeURIComponent(canonicalRegionFor(player))}`}
+      >
+        Usar este recorte no draft <ArrowRight size={12} />
+      </a>
       <div className="archive-pool">
         {slots.map((slot) => (
           <PoolEntry key={`${slot.game}-${slot.championId}`} player={player} slot={slot} />
@@ -95,7 +131,15 @@ function PoolEntry({ player, slot }: { player: PlayerVersion; slot: ChampionSlot
 }
 
 function ArchiveIndexPage() {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState(
+    () => new URLSearchParams(window.location.search).get('q')?.slice(0, 60) ?? '',
+  );
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    if (search) url.searchParams.set('q', search);
+    else url.searchParams.delete('q');
+    window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}`);
+  }, [search]);
   const results = useMemo(() => {
     const term = archiveSlug(search);
     if (term.length < 2) return [];
@@ -120,7 +164,16 @@ function ArchiveIndexPage() {
         detail: `Campeão · ${entry.years.join(', ')}`,
         href: `/arquivo/campeao/${entry.id}`,
       }));
-    return [...players, ...champions].slice(0, 10);
+    const teams = archiveIndex.teams
+      .filter((team) => archiveSlug(team.name).includes(term) || team.codes.some((code) => archiveSlug(code).includes(term)))
+      .slice(0, 6)
+      .map((team) => ({
+        key: `team-${team.slug}`,
+        title: team.name,
+        detail: `Equipe · ${team.years.join(', ')}`,
+        href: `/arquivo/equipe/${team.slug}`,
+      }));
+    return [...players, ...champions, ...teams].slice(0, 12);
   }, [search]);
 
   return (
@@ -134,11 +187,11 @@ function ArchiveIndexPage() {
         </p>
         <label className="archive-search">
           <Search size={19} />
-          <span className="sr-only">Buscar jogador ou campeão</span>
+          <span className="sr-only">Buscar jogador, campeão ou equipe</span>
           <input
             value={search}
             onChange={(event) => setSearch(event.target.value)}
-            placeholder="Buscar jogador ou campeão"
+            placeholder="Buscar jogador, campeão ou equipe"
           />
         </label>
         {search.length >= 2 && (
@@ -175,13 +228,131 @@ function ArchiveIndexPage() {
           ))}
         </div>
       </section>
+      <section className="archive-team-index" aria-labelledby="archive-teams-title">
+        <span className="archive-kicker">63 IDENTIDADES HISTÓRICAS</span>
+        <h2 id="archive-teams-title">Equipes no acervo.</h2>
+        <div>
+          {archiveIndex.teams.map((team) => (
+            <a key={team.slug} href={`/arquivo/equipe/${team.slug}`}>
+              <b>{team.name}</b>
+              <span>{team.years.join(' · ')}</span>
+              <small>{team.players.length} jogadores</small>
+            </a>
+          ))}
+        </div>
+      </section>
     </>
+  );
+}
+
+function EditionFilters({
+  players,
+  value,
+  onChange,
+}: {
+  players: PlayerVersion[];
+  value: ArchiveFilters;
+  onChange: (filters: ArchiveFilters) => void;
+}) {
+  const teams = [...new Map(players.map((player) => [archiveSlug(player.teamName ?? player.team), player.teamName ?? player.team])).entries()]
+    .sort((left, right) => left[1].localeCompare(right[1], 'pt-BR'));
+  const regions = [...new Set(players.map(canonicalRegionFor))].sort();
+  return (
+    <section className="archive-filters" aria-label="Filtrar versões do acervo">
+      <span><SlidersHorizontal size={16} /> FILTRAR E ORDENAR</span>
+      <label>
+        Posição
+        <select value={value.role} onChange={(event) => onChange({ ...value, role: event.target.value as ArchiveFilters['role'] })}>
+          <option value="ALL">Todas</option>
+          {Object.entries(roleNames).map(([role, label]) => <option key={role} value={role}>{label}</option>)}
+        </select>
+      </label>
+      <label>
+        Equipe
+        <select value={value.team} onChange={(event) => onChange({ ...value, team: event.target.value })}>
+          <option value="">Todas</option>
+          {teams.map(([slug, name]) => <option key={slug} value={slug}>{name}</option>)}
+        </select>
+      </label>
+      <label>
+        Região
+        <select value={value.region} onChange={(event) => onChange({ ...value, region: event.target.value })}>
+          <option value="">Todas</option>
+          {regions.map((region) => <option key={region} value={region}>{region}</option>)}
+        </select>
+      </label>
+      <label>
+        Ordem
+        <select value={value.sort} onChange={(event) => onChange({ ...value, sort: event.target.value as ArchiveFilters['sort'] })}>
+          <option value="name">Nome</option>
+          <option value="rating-desc">Maior rating médio</option>
+          <option value="rating-asc">Menor rating médio</option>
+        </select>
+      </label>
+      <button type="button" onClick={() => onChange(DEFAULT_ARCHIVE_FILTERS)}>
+        <RotateCcw size={14} /> Limpar
+      </button>
+    </section>
+  );
+}
+
+function PlayerComparison({ players }: { players: PlayerVersion[] }) {
+  const sorted = [...players].sort((left, right) => left.worldsYear - right.worldsYear);
+  const params = new URLSearchParams(window.location.search);
+  const requestedLeft = Number(params.get('de'));
+  const requestedRight = Number(params.get('para'));
+  const defaultLeft = sorted[0]?.worldsYear;
+  const defaultRight = sorted[sorted.length - 1]?.worldsYear;
+  const [years, setYears] = useState<[number, number]>([
+    sorted.some((player) => player.worldsYear === requestedLeft) ? requestedLeft : defaultLeft,
+    sorted.some((player) => player.worldsYear === requestedRight) ? requestedRight : defaultRight,
+  ]);
+  if (sorted.length < 2) return null;
+  const selected = years.map((year) => sorted.find((player) => player.worldsYear === year)!);
+  function select(index: 0 | 1, year: number) {
+    const next: [number, number] = [...years] as [number, number];
+    next[index] = year;
+    setYears(next);
+    const url = new URL(window.location.href);
+    url.searchParams.set(index === 0 ? 'de' : 'para', String(year));
+    window.history.replaceState(window.history.state, '', `${url.pathname}${url.search}`);
+  }
+  return (
+    <section className="archive-comparison" aria-labelledby="archive-comparison-title">
+      <span className="archive-kicker"><GitCompareArrows size={14} /> COMPARAR VERSÕES</span>
+      <h2 id="archive-comparison-title">A mesma lenda, em duas eras.</h2>
+      <div className="archive-comparison-selects">
+        {[0, 1].map((index) => (
+          <label key={index}>
+            {index === 0 ? 'De' : 'Para'}
+            <select
+              aria-label={index === 0 ? 'Versão inicial' : 'Versão final'}
+              value={years[index]}
+              onChange={(event) => select(index as 0 | 1, Number(event.target.value))}
+            >
+              {sorted.map((player) => <option key={player.worldsYear} value={player.worldsYear}>{player.worldsYear} · {player.team}</option>)}
+            </select>
+          </label>
+        ))}
+      </div>
+      <div className="archive-comparison-cards">
+        {selected.map((player) => (
+          <article key={player.id}>
+            <strong>{player.worldsYear}</strong>
+            <h3>{player.teamName ?? player.team}</h3>
+            <p>Rating médio <b>{averagePlayerRating(player).toFixed(1)}</b></p>
+            <small>{player.championPool.map((slot) => repository.catalog.champions[slot.championId]?.name ?? slot.championId).join(' · ')}</small>
+          </article>
+        ))}
+      </div>
+    </section>
   );
 }
 
 export default function ArchiveApp() {
   const [data, setData] = useState<GameData | null>(null);
   const [error, setError] = useState('');
+  const [filters, setFilters] = useState(() => parseArchiveFilters(new URLSearchParams(window.location.search)));
   const playerIndex =
     route.kind === 'player'
       ? archiveIndex.players.find((player) => player.slug === route.slug)
@@ -190,12 +361,25 @@ export default function ArchiveApp() {
     route.kind === 'champion'
       ? archiveIndex.champions.find((champion) => champion.id === route.id)
       : undefined;
+  const teamIndex =
+    route.kind === 'team'
+      ? archiveIndex.teams.find((team) => team.slug === route.slug)
+      : undefined;
   const years =
     route.kind === 'edition'
       ? archiveIndex.years.some((entry) => entry.year === route.year)
         ? [route.year]
         : []
-      : (playerIndex?.years ?? championIndex?.years ?? []);
+      : (playerIndex?.years ?? championIndex?.years ?? teamIndex?.years ?? []);
+
+  useEffect(() => {
+    if (route.kind !== 'edition') return;
+    window.history.replaceState(
+      window.history.state,
+      '',
+      `${window.location.pathname}${archiveFilterSearch(filters)}`,
+    );
+  }, [filters]);
 
   useEffect(() => {
     if (route.kind === 'index') {
@@ -215,7 +399,9 @@ export default function ArchiveApp() {
         ? `Worlds ${route.year}`
         : route.kind === 'player'
           ? playerIndex!.name
-          : (repository.catalog.champions[championIndex!.id]?.name ?? championIndex!.id);
+          : route.kind === 'team'
+            ? teamIndex!.name
+            : (repository.catalog.champions[championIndex!.id]?.name ?? championIndex!.id);
     archiveMetadata(title, `${title}: versões históricas, pools de campeões e fontes pesquisadas.`);
     let active = true;
     void repository
@@ -240,14 +426,25 @@ export default function ArchiveApp() {
       return data.players.filter((player) =>
         player.championPool.some((slot) => slot.championId === route.id),
       );
+    if (route.kind === 'team')
+      return data.players.filter(
+        (player) => archiveSlug(player.teamName ?? player.team) === route.slug,
+      );
     return [];
   }, [data]);
+
+  const visiblePlayers = useMemo(
+    () => (route.kind === 'edition' ? filterArchivePlayers(players, filters) : players),
+    [players, filters],
+  );
 
   const pageTitle =
     route.kind === 'edition'
       ? `Worlds ${route.year}`
       : route.kind === 'player'
         ? playerIndex?.name
+        : route.kind === 'team'
+          ? teamIndex?.name
         : route.kind === 'champion'
           ? repository.catalog.champions[route.id]?.name
           : null;
@@ -285,17 +482,31 @@ export default function ArchiveApp() {
                   ? 'EDIÇÃO DO WORLDS'
                   : route.kind === 'player'
                     ? 'JOGADOR HISTÓRICO'
-                    : 'CAMPEÃO NO ACERVO'}
+                    : route.kind === 'team'
+                      ? 'EQUIPE HISTÓRICA'
+                      : 'CAMPEÃO NO ACERVO'}
               </span>
               <h1>{pageTitle}</h1>
               <p>
-                {players.length}{' '}
-                {players.length === 1 ? 'versão encontrada' : 'versões encontradas'}
+                {visiblePlayers.length}{' '}
+                {visiblePlayers.length === 1 ? 'versão encontrada' : 'versões encontradas'}
                 {' · '}dados e fontes carregados apenas para {years.join(', ')}.
               </p>
+              {years.length > 0 && (
+                <a
+                  className="archive-heading-draft-link"
+                  href={`/?archiveYear=${years[years.length - 1]}${teamIndex?.regions[0] ? `&archiveRegion=${encodeURIComponent(teamIndex.regions[0])}` : ''}`}
+                >
+                  Levar este recorte ao draft <ArrowRight size={15} />
+                </a>
+              )}
             </section>
+            {route.kind === 'edition' && (
+              <EditionFilters players={players} value={filters} onChange={setFilters} />
+            )}
+            {route.kind === 'player' && <PlayerComparison players={players} />}
             <section className="archive-player-grid" aria-label={`Versões de ${pageTitle}`}>
-              {players.map((player) => (
+              {visiblePlayers.map((player) => (
                 <PlayerEntry
                   key={player.id}
                   player={player}

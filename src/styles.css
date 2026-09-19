@@ -2563,6 +2563,14 @@ main > section {
 .image-credits a {
   color: var(--green);
 }
+.research-archive-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 700;
+}
 @keyframes card-in {
   from {
     opacity: 0;

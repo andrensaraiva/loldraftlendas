@@ -17,6 +17,7 @@ const slug = (value) =>
 const files = (await readdir(yearsDirectory)).filter((file) => /^\d{4}\.json$/.test(file)).sort();
 const playerMap = new Map();
 const championMap = new Map();
+const teamMap = new Map();
 const years = [];
 
 for (const file of files) {
@@ -26,6 +27,23 @@ for (const file of files) {
   const champions = new Set();
   for (const player of players) {
     teams.add(player.team);
+    const teamName = player.teamName ?? player.team;
+    const teamSlug = slug(teamName);
+    const currentTeam = teamMap.get(teamSlug) ?? {
+      slug: teamSlug,
+      name: teamName,
+      years: [],
+      codes: [],
+      regions: [],
+      players: [],
+    };
+    if (!currentTeam.years.includes(year)) currentTeam.years.push(year);
+    if (!currentTeam.codes.includes(player.team)) currentTeam.codes.push(player.team);
+    const region = player.canonicalRegion ?? player.historicalLeague ?? player.region;
+    if (!currentTeam.regions.includes(region)) currentTeam.regions.push(region);
+    const teamPlayerSlug = slug(player.playerName);
+    if (!currentTeam.players.includes(teamPlayerSlug)) currentTeam.players.push(teamPlayerSlug);
+    teamMap.set(teamSlug, currentTeam);
     const playerSlug = slug(player.playerName);
     const currentPlayer = playerMap.get(playerSlug) ?? {
       slug: playerSlug,
@@ -56,7 +74,7 @@ for (const file of files) {
 
 const sortYears = (entry) => ({ ...entry, years: entry.years.sort((a, b) => a - b) });
 const index = {
-  version: 1,
+  version: 2,
   years,
   players: [...playerMap.values()]
     .map(sortYears)
@@ -64,6 +82,14 @@ const index = {
   champions: [...championMap.values()]
     .map(sortYears)
     .sort((a, b) => a.id.localeCompare(b.id, 'en')),
+  teams: [...teamMap.values()]
+    .map((entry) => ({
+      ...sortYears(entry),
+      codes: entry.codes.sort((a, b) => a.localeCompare(b, 'en')),
+      regions: entry.regions.sort((a, b) => a.localeCompare(b, 'en')),
+      players: entry.players.sort((a, b) => a.localeCompare(b, 'en')),
+    }))
+    .sort((a, b) => a.name.localeCompare(b.name, 'en')),
 };
 const output = `${JSON.stringify(index, null, 2)}\n`;
 
@@ -76,6 +102,6 @@ if (process.argv.includes('--check')) {
 } else {
   await writeFile(outputPath, output, 'utf8');
   console.log(
-    `Archive index: ${years.length} years, ${index.players.length} players, ${index.champions.length} champions.`,
+    `Archive index: ${years.length} years, ${index.players.length} players, ${index.champions.length} champions, ${index.teams.length} teams.`,
   );
 }
