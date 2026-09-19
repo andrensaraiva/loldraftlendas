@@ -2,7 +2,7 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { championArt } from '../data/art';
 import type { GameData } from '../data/repository';
 import type { PlayerVersion, Role } from '../game/types';
-import { PlayerAvatar } from './PlayerAvatar';
+import { PlayerPortrait } from './PlayerPortrait';
 
 const roleLabel: Record<Role, string> = {
   TOP: 'TOP',
@@ -50,13 +50,13 @@ export function PlayerCard({
           </span>
         </div>
         <div className="player-art">
-          <PlayerAvatar player={player} />
+          <PlayerPortrait player={player} loading={index === 0 ? 'eager' : 'lazy'} />
           <span className="card-team">
             {player.team}
             <span>{player.worldsYear}</span>
           </span>
           <span className="card-role">{roleLabel[player.role]}</span>
-          <span className="art-caption">AVATAR ORIGINAL · PERFIL DE JOGADOR</span>
+          <span className="art-caption">ILUSTRAÇÃO ARTÍSTICA · PERFIL DE JOGADOR</span>
         </div>
         <div className="profile-label">
           <span /> {player.profile}

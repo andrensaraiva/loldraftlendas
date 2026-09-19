@@ -4,7 +4,7 @@
 
 **Atualizado em:** 2026-09-14
 
-**Execução em 2026-09-19:** Pacotes 0, 1, 2, 3 e 4 concluídos. Próximo checkpoint: Pacote 5.
+**Execução em 2026-09-19:** Pacotes 0–4 concluídos. O piloto técnico do Pacote 5 está integrado e aguarda aprovação humana antes do catálogo completo. O Pacote 6 aguarda backend/hospedagem; próximo checkpoint executável: Pacote 7.
 
 **Objetivo:** fechar as partes mais importantes do Draft Lendas, preparar uma beta com jogadores reais e evitar aumentar o escopo com sistemas que não ajudam essa validação.
 

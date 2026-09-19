@@ -16,5 +16,13 @@
     "page": "https://en.wikipedia.org/wiki/Zeus_(gamer)",
     "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Zeus_2024_post-match_interview.jpg",
     "licensePage": "https://commons.wikimedia.org/wiki/File:Zeus_2024_post-match_interview.jpg"
+  },
+  {
+    "name": "Pilot v1 — Bin, Caps, CoreJJ, Doublelift, Faker, Huni, Jankos, Karsa, Meiko e Zeus",
+    "kind": "generated-artistic-illustration",
+    "generator": "OpenAI built-in image generation",
+    "status": "pending-human-approval",
+    "manifest": "/src/data/player-portraits.json",
+    "usage": "Silhuetas derivadas são exibidas até aprovação explícita; não são fotografias nem retratos oficiais."
   }
 ]

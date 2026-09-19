@@ -44,7 +44,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - 785 versões pesquisadas: Worlds 2014–2025. Regiões canônicas e grupos de draft são separados: Coreia, China, Europa, América do Norte e Outras Regiões, com fusão determinística quando uma cobertura anual não tiver três candidatos por posição. Em 2024 e 2025, Europa e América do Norte formam um grupo conjunto; em 2025, LCP e LTA Sul formam Outras Regiões. Veja [a regra de agrupamento](docs/draft-region-grouping.md).
 - Cada posição mostra exatamente três candidatos válidos do ano/grupo sorteado e prioriza combinações de times distintos.
 - Três trocas compartilhadas por draft: ano, região ou jogadores. Ações impossíveis não gastam saldo. Configuração em `src/game/draft.ts`.
-- Escolha com um clique, confirmação visual de 320 ms e avanço automático. Os cartões priorizam o nome e usam avatares originais e neutros, não fotos ou retratos fotorrealistas.
+- Escolha com um clique, confirmação visual de 320 ms e avanço automático. Os cartões priorizam o nome e usam ilustrações editoriais geradas, silhuetas derivadas e avatar CSS em três níveis de fallback; não usam fotos nem se apresentam como retratos oficiais.
 - Cinco campeões diferentes por jogador, em ordem fixa. Ratings individuais, sem overall do jogador.
 - Visão da equipe com as cinco composições e a força de cada jogo.
 - Suíço até três vitórias ou três derrotas. BO1 normal e BO3 em classificação/eliminação.
@@ -76,6 +76,8 @@ O Suíço é uma simulação da campanha do usuário: não existe uma tabela com
 O acervo anterior de 44 campeões permanece em `public/assets/champions` e `public/assets/splash`, para as fixtures e o fallback de outras eras. `scripts/download-assets.mjs` atualiza somente esse acervo padrão; não gera os assets históricos.
 
 Os 850 pares campeão/ano usam assets dos arquivos oficiais Data Dragon de cada edição, com hashes e créditos no [manifesto multi-era](data/research/multi-era/asset-manifest.json). Em 2014, o arquivo 4.14.2 contém apenas três splashes-base usados pelos pools; os outros 52 pares registram o ícone quadrado do mesmo patch como fallback explícito. `championArt` seleciona a arte histórica pelo ano para o pool G1–G5; ela não é usada como retrato do jogador. O manifesto e acervo originais de 2017 permanecem disponíveis. Fontes tipográficas também estão empacotadas localmente.
+
+O [pipeline de retratos](docs/player-portrait-pipeline.md) possui um piloto de dez ilustrações artísticas geradas para o projeto. Elas não são fotografias, materiais oficiais nem endosso dos jogadores. Até a aprovação humana explícita, a interface exibe somente as silhuetas derivadas; identidades fora do piloto usam o avatar CSS neutro.
 
 Participação e estatísticas foram conferidas com Games of Legends; limitações de acesso às demais fontes estão no relatório. Este é um projeto independente, sem vínculo com a Riot Games; League of Legends e seus personagens pertencem à Riot Games. A fase Suíça é a regra do jogo, não o formato histórico de 2017.
 

@@ -209,9 +209,9 @@ Os elencos representam formações históricas selecionadas. A base não pretend
 
 O modelo já aceita `WORLDS_DATA` e `SEASON_DATA` como origens futuras. Esses campos permitirão identificar de onde veio cada associação de jogador e campeão após uma importação validada.
 
-As artes de campeões vieram do Data Dragon e estão em `public/assets`. Não há troca automática de arte por ano histórico. Há retratos de arquivo para Faker, Huni e Zeus. Nos demais casos, o card mostra a arte do campeão G1 com legenda identificadora. Os retratos também podem ser de temporadas diferentes da versão selecionada.
+As artes de campeões vieram do Data Dragon e estão em `public/assets`. Os retratos de jogador seguem um contrato independente em `src/data/player-portraits.json`: ilustração aprovada, silhueta derivada e avatar CSS neutro. O piloto gerado tem dez identidades e permanece pendente de aprovação humana, portanto o produto usa suas silhuetas. Veja `docs/player-portrait-pipeline.md`.
 
-Os créditos estão nas instruções do jogo, no README e em `public/assets/portrait-credits.json`.
+Créditos e natureza de cada asset estão no README e em `public/assets/portrait-credits.json`. As ilustrações geradas não são fotografias, retratos oficiais nem endosso dos jogadores.
 
 ## 12. Organização técnica
 

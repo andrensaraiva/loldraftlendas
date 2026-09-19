@@ -25,6 +25,7 @@
     "data:readiness:validate": "python scripts/data/build_readiness.py --check",
     "data:archive:build": "node scripts/data/build-archive-index.mjs",
     "data:archive:validate": "node scripts/data/build-archive-index.mjs --check",
+    "assets:portraits:validate": "py -3 scripts/validate_player_portraits.py",
     "pwa:icons": "node scripts/generate-pwa-icons.mjs"
   },
   "keywords": [],

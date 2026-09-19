@@ -1,0 +1,88 @@
+{
+  "version": "pilot-v1",
+  "promptVersion": 1,
+  "status": "pending_human_approval",
+  "generatedAt": "2026-09-19",
+  "entries": [
+    {
+      "playerKey": "bin",
+      "playerName": "Bin",
+      "portrait": "/assets/players/portraits/pilot-v1/bin.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/bin.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "caps",
+      "playerName": "Caps",
+      "portrait": "/assets/players/portraits/pilot-v1/caps.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/caps.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "corejj",
+      "playerName": "CoreJJ",
+      "portrait": "/assets/players/portraits/pilot-v1/corejj.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/corejj.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 39 }
+    },
+    {
+      "playerKey": "doublelift",
+      "playerName": "Doublelift",
+      "portrait": "/assets/players/portraits/pilot-v1/doublelift.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/doublelift.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "faker",
+      "playerName": "Faker",
+      "portrait": "/assets/players/portraits/pilot-v1/faker.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/faker.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 41 }
+    },
+    {
+      "playerKey": "huni",
+      "playerName": "Huni",
+      "portrait": "/assets/players/portraits/pilot-v1/huni.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/huni.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "jankos",
+      "playerName": "Jankos",
+      "portrait": "/assets/players/portraits/pilot-v1/jankos.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/jankos.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 39 }
+    },
+    {
+      "playerKey": "karsa",
+      "playerName": "Karsa",
+      "portrait": "/assets/players/portraits/pilot-v1/karsa.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/karsa.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "meiko",
+      "playerName": "Meiko",
+      "portrait": "/assets/players/portraits/pilot-v1/meiko.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/meiko.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "zeus",
+      "playerName": "Zeus",
+      "portrait": "/assets/players/portraits/pilot-v1/zeus.webp",
+      "silhouette": "/assets/players/silhouettes/pilot-v1/zeus.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    }
+  ]
+}

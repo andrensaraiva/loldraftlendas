@@ -111,6 +111,37 @@ test('home filters persist an eligible edition and region in every draft round',
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
+test('portrait pilot uses silhouettes and falls back safely when an asset fails', async ({ page }) => {
+  await page.addInitScript(() => {
+    Math.random = () => 0;
+  });
+  await page.goto('/');
+  await page.getByText('Personalizar draft e desafio').click();
+  for (const year of [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024])
+    await page.getByRole('checkbox', { name: String(year), exact: true }).uncheck();
+  for (const group of [
+    'CHINA',
+    'EUROPA',
+    'AMÉRICA DO NORTE',
+    'OUTRAS REGIÕES',
+    'EUROPA + AMÉRICA DO NORTE',
+  ])
+    await page.getByRole('checkbox', { name: group, exact: true }).uncheck();
+  await page.getByRole('button', { name: 'Começar draft' }).click();
+
+  const zeus = page.locator('.player-card').filter({ hasText: 'Zeus' });
+  await expect(zeus).toHaveCount(1);
+  const portrait = zeus.locator('.player-portrait');
+  await expect(portrait).toHaveAttribute('data-portrait-state', 'pending');
+  await expect(portrait.locator('img')).toHaveAttribute('src', /silhouettes\/pilot-v1\/zeus\.webp$/);
+
+  await portrait.locator('img').evaluate((image) => {
+    (image as HTMLImageElement).src = '/assets/players/silhouettes/missing.webp';
+  });
+  await expect(zeus.locator('.player-avatar')).toBeVisible();
+  await expect(page.locator('.player-card .player-avatar')).toHaveCount(3);
+});
+
 test('a browser-local campaign can be resumed or replaced from the home screen', async ({
   page,
 }) => {

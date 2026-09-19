@@ -5,6 +5,7 @@ import { gamePlanLabel } from './plan';
 import type { GamePlan } from './plan';
 import type { CampaignReport } from './report';
 import { buildJourneyNodes } from './journey';
+import { playerCardArt } from '../data/player-art';
 
 export interface SharePlayer {
   role: Role;
@@ -104,6 +105,16 @@ function fitText(
   return size;
 }
 
+function loadCardImage(source: string | null): Promise<HTMLImageElement | null> {
+  if (!source || typeof Image === 'undefined') return Promise.resolve(null);
+  return new Promise((resolve) => {
+    const image = new Image();
+    image.onload = () => resolve(image);
+    image.onerror = () => resolve(null);
+    image.src = source;
+  });
+}
+
 export async function createCampaignCard(summary: CampaignShareSummary): Promise<CampaignCard> {
   if (typeof document === 'undefined') throw new Error('Card indisponível fora do navegador.');
   await document.fonts?.ready;
@@ -112,6 +123,9 @@ export async function createCampaignCard(summary: CampaignShareSummary): Promise
   canvas.height = 1350;
   const context = canvas.getContext('2d');
   if (!context) throw new Error('O navegador não conseguiu preparar o card.');
+  const playerImages = await Promise.all(
+    summary.team.map((player) => loadCardImage(playerCardArt(player.playerName))),
+  );
 
   context.fillStyle = '#f7f8f4';
   context.fillRect(0, 0, canvas.width, canvas.height);
@@ -169,10 +183,21 @@ export async function createCampaignCard(summary: CampaignShareSummary): Promise
     roundedRect(context, 91, y + 18, 88, 80, 14);
     context.fillStyle = '#b8f34a';
     context.fill();
+    const playerImage = playerImages[index];
+    if (playerImage) {
+      context.save();
+      roundedRect(context, 91, y + 18, 88, 80, 14);
+      context.clip();
+      context.drawImage(playerImage, 91, y + 14, 88, 88);
+      context.fillStyle = '#10251ac7';
+      context.fillRect(91, y + 75, 88, 23);
+      context.restore();
+    }
     context.fillStyle = '#173f2b';
     context.textAlign = 'center';
-    context.font = '800 30px "Barlow Condensed", "Arial Narrow", sans-serif';
-    context.fillText(roleLabels[player.role], 135, y + 67);
+    context.font = `800 ${playerImage ? 16 : 30}px "Barlow Condensed", "Arial Narrow", sans-serif`;
+    if (playerImage) context.fillStyle = '#b8f34a';
+    context.fillText(roleLabels[player.role], 135, y + (playerImage ? 93 : 67));
     context.textAlign = 'left';
 
     context.fillStyle = '#172019';

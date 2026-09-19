@@ -83,7 +83,7 @@ import {
 import OnboardingCarousel from './components/OnboardingCarousel';
 import { LocalDataRepository } from './data/repository';
 import type { GameData } from './data/repository';
-import { PlayerAvatar } from './components/PlayerAvatar';
+import { PlayerPortrait } from './components/PlayerPortrait';
 import { PlayerChoiceCarousel } from './components/PlayerChoiceCarousel';
 import { CampaignExitDialog } from './components/CampaignExitDialog';
 import type { CampaignExitAction } from './components/CampaignExitDialog';
@@ -473,7 +473,7 @@ function TeamStrip({ team, active = 5 }: { team: Team; active?: number }) {
               key={role}
               className={`team-slot ${i === active ? 'current' : ''} ${p ? 'filled' : ''}`}
             >
-              {p && <PlayerAvatar player={p} className="team-avatar" />}
+              {p && <PlayerPortrait player={p} className="team-avatar" />}
               <div>
                 <span className="slot-role">{roleLabel[role]}</span>
                 <b>{p ? p.playerName : '—'}</b>
@@ -2622,6 +2622,8 @@ export default function App() {
           </button>
         </span>
         <p className="riot-disclaimer">
+          Retratos de jogadores são ilustrações artísticas geradas para o projeto; não são
+          fotografias nem materiais oficiais.{' '}
           Draft Lendas isn't endorsed by Riot Games and doesn't reflect the views or opinions of
           Riot Games or anyone officially involved in producing or managing Riot Games properties.
           Riot Games, and all associated properties are trademarks or registered trademarks of Riot
