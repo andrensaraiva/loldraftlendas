@@ -115,7 +115,7 @@ test('home filters persist an eligible edition and region in every draft round',
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
-test('approved portrait pilot uses portraits and falls back safely when assets fail', async ({ page }) => {
+test('approved portrait catalog uses portraits and falls back safely when assets fail', async ({ page }) => {
   await page.addInitScript(() => {
     Math.random = () => 0;
   });

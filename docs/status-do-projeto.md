@@ -187,7 +187,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O pipeline de retratos possui guia, prompt-base, dez mestres otimizados, dez silhuetas duotone derivadas, prancha de revisão e validação reproduzível de dimensões/manifesto.
 - `PlayerPortrait` reserva dimensões e aplica o contrato retrato aprovado → silhueta → avatar CSS na carta, equipe, resultado e card compartilhável. Falhas de imagem e identidades ausentes foram cobertas por E2E.
 - As dez entradas do piloto foram aprovadas em 2026-09-20: o produto mostra os retratos e preserva silhueta e avatar CSS como fallbacks.
-- O lote `catalog-v1` acrescenta Bwipo, Canyon, Chovy, Deft, Impact, Jensen, Peanut, Ruler, Scout e Xiaohu; suas silhuetas já estão integradas e os retratos aguardam revisão visual.
+- O lote `catalog-v1` acrescenta Bwipo, Canyon, Chovy, Deft, Impact, Jensen, Peanut, Ruler, Scout e Xiaohu; seus retratos foram aprovados em 2026-09-20 e as silhuetas permanecem como fallback.
 
 ### Fase 4: Cobertura Histórica e Readiness
 
@@ -263,7 +263,7 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 
 ### Próximo Checkpoint: Dependências Externas
 
-- Revisar o lote `catalog-v1` e continuar a expansão em lotes, preservando manifesto e fallbacks do piloto aprovado.
+- Continuar a expansão do catálogo em lotes, preservando manifesto, revisão e fallbacks dos vinte retratos aprovados.
 - Configurar Supabase/hospedagem para executar o Pacote 6 e validar analytics reais.
 - Rodar o checklist físico e o trace de performance antes de abrir a beta fechada.
 

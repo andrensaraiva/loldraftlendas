@@ -1,7 +1,7 @@
 {
   "version": "catalog-v1",
   "promptVersion": 1,
-  "status": "expansion_pending_human_review",
+  "status": "catalog_approved",
   "generatedAt": "2026-09-20",
   "entries": [
     {
@@ -89,7 +89,7 @@
       "playerName": "Bwipo",
       "portrait": "/assets/players/portraits/catalog-v1/bwipo.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/bwipo.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -97,7 +97,7 @@
       "playerName": "Canyon",
       "portrait": "/assets/players/portraits/catalog-v1/canyon.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/canyon.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -105,7 +105,7 @@
       "playerName": "Chovy",
       "portrait": "/assets/players/portraits/catalog-v1/chovy.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/chovy.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -113,7 +113,7 @@
       "playerName": "Deft",
       "portrait": "/assets/players/portraits/catalog-v1/deft.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/deft.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -121,7 +121,7 @@
       "playerName": "Impact",
       "portrait": "/assets/players/portraits/catalog-v1/impact.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/impact.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -129,7 +129,7 @@
       "playerName": "Jensen",
       "portrait": "/assets/players/portraits/catalog-v1/jensen.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/jensen.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -137,7 +137,7 @@
       "playerName": "Peanut",
       "portrait": "/assets/players/portraits/catalog-v1/peanut.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/peanut.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -145,7 +145,7 @@
       "playerName": "Ruler",
       "portrait": "/assets/players/portraits/catalog-v1/ruler.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/ruler.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -153,7 +153,7 @@
       "playerName": "Scout",
       "portrait": "/assets/players/portraits/catalog-v1/scout.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/scout.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     },
     {
@@ -161,7 +161,7 @@
       "playerName": "Xiaohu",
       "portrait": "/assets/players/portraits/catalog-v1/xiaohu.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/xiaohu.webp",
-      "approval": "pending",
+      "approval": "approved",
       "focus": { "x": 50, "y": 40 }
     }
   ]

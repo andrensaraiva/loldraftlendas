@@ -21,22 +21,22 @@ O lote `pilot-v1` contém dez identidades e foi **aprovado pelo responsável do 
 
 ## Expansão `catalog-v1`
 
-O primeiro lote pós-piloto prioriza dez jogadores recorrentes no arquivo histórico. Os assets já foram gerados, normalizados e integrados ao manifesto, mas continuam como `pending`: até a aprovação visual, o produto mostra apenas suas silhuetas derivadas.
+O primeiro lote pós-piloto prioriza dez jogadores recorrentes no arquivo histórico. Os assets foram gerados, normalizados, integrados ao manifesto e **aprovados pelo responsável do projeto em 2026-09-20**. O produto agora mostra seus retratos e mantém as silhuetas como fallback.
 
 [Abrir a prancha do lote de expansão](screenshots/portrait-catalog-v1.webp)
 
 | Jogador | Função representada | Estado |
 | --- | --- | --- |
-| Bwipo | TOP | revisão pendente |
-| Canyon | JG | revisão pendente |
-| Chovy | MID | revisão pendente |
-| Deft | ADC | revisão pendente |
-| Impact | TOP | revisão pendente |
-| Jensen | MID | revisão pendente |
-| Peanut | JG | revisão pendente |
-| Ruler | ADC | revisão pendente |
-| Scout | MID | revisão pendente |
-| Xiaohu | MID | revisão pendente |
+| Bwipo | TOP | aprovado |
+| Canyon | JG | aprovado |
+| Chovy | MID | aprovado |
+| Deft | ADC | aprovado |
+| Impact | TOP | aprovado |
+| Jensen | MID | aprovado |
+| Peanut | JG | aprovado |
+| Ruler | ADC | aprovado |
+| Scout | MID | aprovado |
+| Xiaohu | MID | aprovado |
 
 ## Direção visual e prompt-base
 

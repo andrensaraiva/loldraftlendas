@@ -7,12 +7,12 @@ import {
 } from './player-art';
 
 describe('player portrait catalog manifest', () => {
-  it('contains the approved pilot and a versioned pending expansion batch', () => {
+  it('contains twenty unique approved identities in the versioned catalog', () => {
     expect(playerPortraitManifest.version).toBe('catalog-v1');
     expect(playerPortraitManifest.entries).toHaveLength(20);
     expect(new Set(playerPortraitManifest.entries.map((entry) => entry.playerKey)).size).toBe(20);
-    expect(playerPortraitManifest.entries.filter((entry) => entry.approval === 'approved')).toHaveLength(10);
-    expect(playerPortraitManifest.entries.filter((entry) => entry.approval === 'pending')).toHaveLength(10);
+    expect(playerPortraitManifest.entries.filter((entry) => entry.approval === 'approved')).toHaveLength(20);
+    expect(playerPortraitManifest.entries.filter((entry) => entry.approval === 'pending')).toHaveLength(0);
     for (const entry of playerPortraitManifest.entries) {
       expect(entry.portrait).toMatch(/^\/assets\/players\/portraits\/(pilot-v1|catalog-v1)\/.+\.webp$/);
       expect(entry.silhouette).toMatch(/^\/assets\/players\/silhouettes\/(pilot-v1|catalog-v1)\/.+\.webp$/);
@@ -31,9 +31,10 @@ describe('player portrait catalog manifest', () => {
     ]);
     expect(playerCardArt('Faker')).toContain('/portraits/');
     expect(playerPortraitSources('Deft')).toEqual([
+      '/assets/players/portraits/catalog-v1/deft.webp',
       '/assets/players/silhouettes/catalog-v1/deft.webp',
     ]);
-    expect(playerCardArt('Deft')).toContain('/silhouettes/');
+    expect(playerCardArt('Deft')).toContain('/portraits/');
     expect(playerPortraitSources('Unknown')).toEqual([]);
   });
 });

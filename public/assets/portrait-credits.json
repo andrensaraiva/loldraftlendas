@@ -29,8 +29,8 @@
     "name": "Catalog v1 — Bwipo, Canyon, Chovy, Deft, Impact, Jensen, Peanut, Ruler, Scout e Xiaohu",
     "kind": "generated-artistic-illustration",
     "generator": "OpenAI built-in image generation",
-    "status": "pending-human-approval",
+    "status": "approved-2026-09-20",
     "manifest": "/src/data/player-portraits.json",
-    "usage": "Somente silhuetas derivadas são exibidas antes da aprovação visual; não são fotografias nem retratos oficiais."
+    "usage": "Retratos aprovados são exibidos com silhueta e avatar CSS como fallbacks; não são fotografias nem retratos oficiais."
   }
 ]

@@ -23,15 +23,14 @@ def main() -> None:
     entries = data.get("entries", [])
     if data.get("version") != "catalog-v1" or len(entries) != 20:
         raise SystemExit("Catalog manifest must contain twenty entries at version catalog-v1.")
-    if data.get("status") != "expansion_pending_human_review":
-        raise SystemExit("Catalog manifest must record its pending expansion review.")
+    if data.get("status") != "catalog_approved":
+        raise SystemExit("Catalog manifest must record its explicit approval.")
     keys = [entry["playerKey"] for entry in entries]
     if len(keys) != len(set(keys)):
         raise SystemExit("Player keys must be unique.")
     approved = [entry for entry in entries if entry["approval"] == "approved"]
-    pending = [entry for entry in entries if entry["approval"] == "pending"]
-    if len(approved) != 10 or len(pending) != 10:
-        raise SystemExit("Catalog v1 must contain ten approved pilot and ten pending expansion entries.")
+    if len(approved) != 20:
+        raise SystemExit("Catalog v1 must contain twenty approved entries.")
     for entry in entries:
         if entry["approval"] not in {"approved", "pending", "rejected"}:
             raise SystemExit(f"Unexpected approval state for {entry['playerName']}.")

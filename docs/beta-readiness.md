@@ -33,7 +33,7 @@ npx playwright install chromium firefox webkit
 
 ## Validações externas pendentes
 
-1. Revisar visualmente o primeiro lote `catalog-v1` e então continuar a expansão gradual do catálogo.
+1. Continuar a expansão gradual do catálogo após a aprovação do `catalog-v1` registrada em 2026-09-20.
 2. Criar o Supabase, aplicar as quinze migrations, cadastrar o administrador e configurar as variáveis públicas.
 3. Publicar em HTTPS e executar `npm run smoke:deploy -- https://dominio`.
 4. Confirmar o funil e os erros reais no painel com eventos de uma sessão de teste.
