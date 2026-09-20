@@ -663,6 +663,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "razork",
+      "playerName": "Razork",
+      "portrait": "/assets/players/portraits/catalog-v2/razork.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/razork.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ssumday",
+      "playerName": "Ssumday",
+      "portrait": "/assets/players/portraits/catalog-v2/ssumday.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ssumday.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "tian",
+      "playerName": "Tian",
+      "portrait": "/assets/players/portraits/catalog-v2/tian.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/tian.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "trymbi",
+      "playerName": "Trymbi",
+      "portrait": "/assets/players/portraits/catalog-v2/trymbi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/trymbi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "aphromoo",
+      "playerName": "aphromoo",
+      "portrait": "/assets/players/portraits/catalog-v2/aphromoo.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/aphromoo.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "bang",
+      "playerName": "Bang",
+      "portrait": "/assets/players/portraits/catalog-v2/bang.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/bang.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "biofrost",
+      "playerName": "Biofrost",
+      "portrait": "/assets/players/portraits/catalog-v2/biofrost.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/biofrost.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "clid",
+      "playerName": "Clid",
+      "portrait": "/assets/players/portraits/catalog-v2/clid.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/clid.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "crown",
+      "playerName": "Crown",
+      "portrait": "/assets/players/portraits/catalog-v2/crown.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/crown.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cuvee",
+      "playerName": "CuVee",
+      "portrait": "/assets/players/portraits/catalog-v2/cuvee.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cuvee.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
