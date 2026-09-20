@@ -883,6 +883,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "larssen",
+      "playerName": "Larssen",
+      "portrait": "/assets/players/portraits/catalog-v2/larssen.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/larssen.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "light",
+      "playerName": "Light",
+      "portrait": "/assets/players/portraits/catalog-v2/light.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/light.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mata",
+      "playerName": "Mata",
+      "portrait": "/assets/players/portraits/catalog-v2/mata.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mata.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mithy",
+      "playerName": "Mithy",
+      "portrait": "/assets/players/portraits/catalog-v2/mithy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mithy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nisqy",
+      "playerName": "Nisqy",
+      "portrait": "/assets/players/portraits/catalog-v2/nisqy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nisqy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "on",
+      "playerName": "ON",
+      "portrait": "/assets/players/portraits/catalog-v2/on.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/on.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "oscarinin",
+      "playerName": "Oscarinin",
+      "portrait": "/assets/players/portraits/catalog-v2/oscarinin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/oscarinin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "pobelter",
+      "playerName": "Pobelter",
+      "portrait": "/assets/players/portraits/catalog-v2/pobelter.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/pobelter.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "pray",
+      "playerName": "PraY",
+      "portrait": "/assets/players/portraits/catalog-v2/pray.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/pray.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "pyosik",
+      "playerName": "Pyosik",
+      "portrait": "/assets/players/portraits/catalog-v2/pyosik.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/pyosik.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
