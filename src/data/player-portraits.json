@@ -993,6 +993,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "rookie",
+      "playerName": "Rookie",
+      "portrait": "/assets/players/portraits/catalog-v2/rookie.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/rookie.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ryu",
+      "playerName": "Ryu",
+      "portrait": "/assets/players/portraits/catalog-v2/ryu.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ryu.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "santorin",
+      "playerName": "Santorin",
+      "portrait": "/assets/players/portraits/catalog-v2/santorin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/santorin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "smeb",
+      "playerName": "Smeb",
+      "portrait": "/assets/players/portraits/catalog-v2/smeb.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/smeb.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "soaz",
+      "playerName": "sOAZ",
+      "portrait": "/assets/players/portraits/catalog-v2/soaz.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/soaz.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "svenskeren",
+      "playerName": "Svenskeren",
+      "portrait": "/assets/players/portraits/catalog-v2/svenskeren.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/svenskeren.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "theshy",
+      "playerName": "TheShy",
+      "portrait": "/assets/players/portraits/catalog-v2/theshy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/theshy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "vulcan",
+      "playerName": "Vulcan",
+      "portrait": "/assets/players/portraits/catalog-v2/vulcan.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/vulcan.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "wildturtle",
+      "playerName": "WildTurtle",
+      "portrait": "/assets/players/portraits/catalog-v2/wildturtle.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/wildturtle.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "wolf",
+      "playerName": "Wolf",
+      "portrait": "/assets/players/portraits/catalog-v2/wolf.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/wolf.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
