@@ -773,6 +773,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "cuzz",
+      "playerName": "Cuzz",
+      "portrait": "/assets/players/portraits/catalog-v2/cuzz.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cuzz.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "delight",
+      "playerName": "Delight",
+      "portrait": "/assets/players/portraits/catalog-v2/delight.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/delight.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "elk",
+      "playerName": "Elk",
+      "portrait": "/assets/players/portraits/catalog-v2/elk.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/elk.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "flandre",
+      "playerName": "Flandre",
+      "portrait": "/assets/players/portraits/catalog-v2/flandre.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/flandre.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "fudge",
+      "playerName": "Fudge",
+      "portrait": "/assets/players/portraits/catalog-v2/fudge.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/fudge.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hang",
+      "playerName": "Hang",
+      "portrait": "/assets/players/portraits/catalog-v2/hang.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hang.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "huhi",
+      "playerName": "huhi",
+      "portrait": "/assets/players/portraits/catalog-v2/huhi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/huhi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ignar",
+      "playerName": "Ignar",
+      "portrait": "/assets/players/portraits/catalog-v2/ignar.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ignar.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "khan",
+      "playerName": "Khan",
+      "portrait": "/assets/players/portraits/catalog-v2/khan.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/khan.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kuro",
+      "playerName": "Kuro",
+      "portrait": "/assets/players/portraits/catalog-v2/kuro.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kuro.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
