@@ -100,7 +100,9 @@ test('edition filters and ordering stay represented in the URL', async ({ page }
   await expect(page).toHaveURL(/equipe=t1/);
   await expect(cards).toHaveCount(1);
   await expect(cards.first()).toContainText('Faker');
-  await page.getByRole('button', { name: 'Limpar' }).click();
+  await page.getByLabel('Região').selectOption('LEC');
+  await expect(page.getByRole('heading', { name: 'Nenhuma versão combina com estes filtros.' })).toBeVisible();
+  await page.getByRole('button', { name: 'Limpar filtros' }).click();
   await expect(page).toHaveURL(/\/arquivo\/edicao\/2025$/);
   await expect(cards).toHaveCount(80);
 });

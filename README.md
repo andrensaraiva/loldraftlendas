@@ -14,6 +14,8 @@ Telemetria anônima e feedback: [política e contrato de dados](docs/analytics-p
 
 Status técnico e próximos passos: [documento de handoff](docs/status-do-projeto.md).
 
+Checklist de beta e validações externas: [beta readiness](docs/beta-readiness.md).
+
 Base original congelada: [Worlds 2017 / LCK](docs/worlds-2017-lck-research.md) · [Balanceamento de 2017](docs/worlds-2017-balance.md).
 
 Documento do protótipo original, anterior à importação histórica: [PDF](docs/COMO-O-JOGO-FOI-IMPLEMENTADO.pdf) · [Markdown](docs/COMO-O-JOGO-FOI-IMPLEMENTADO.md). As seções de dados desse documento descrevem o antigo conjunto MOCK.
@@ -163,6 +165,9 @@ npm run data:readiness:build # Regera o inventário de cobertura 2011–2025
 npm run data:readiness:validate # Falha se inventário ou relatório estiverem desatualizados
 npm run data:archive:validate # Falha se o índice público estiver desatualizado
 npm run pwa:icons          # Rasteriza o favicon aprovado nos tamanhos 192 e 512
+npm run audit:beta         # Confere budgets, manifesto, ícones, SW, robots e sitemap do build
+npm run test:e2e:cross-browser # Smoke em Chromium, Firefox e WebKit
+npm run smoke:deploy -- https://seu-dominio.example # Smoke após publicar
 ```
 
 Para baixar os CSVs de pesquisa: `npm run data:multi:download`. Para inspecionar um lote: `python scripts/data/build_multi_era.py --snapshot --year 2020 --region LPL`. O preview não substitui a produção. O limite de trocas fica em `DRAFT_CONFIG.exchanges`; a simulação aceita `DRAFT_SAMPLES` e `EXCHANGE_GAIN_THRESHOLD`.

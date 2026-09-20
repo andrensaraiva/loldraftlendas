@@ -207,7 +207,7 @@ function ArchiveIndexPage() {
                 </a>
               ))
             ) : (
-              <p>Nenhum jogador ou campeão encontrado.</p>
+              <p>Nenhum jogador, campeão ou equipe encontrado. Tente outro nome.</p>
             )}
           </div>
         )}
@@ -505,6 +505,15 @@ export default function ArchiveApp() {
               <EditionFilters players={players} value={filters} onChange={setFilters} />
             )}
             {route.kind === 'player' && <PlayerComparison players={players} />}
+            {route.kind === 'edition' && visiblePlayers.length === 0 && (
+              <section className="archive-empty" role="status">
+                <h2>Nenhuma versão combina com estes filtros.</h2>
+                <p>Limpe o recorte para voltar a explorar todos os jogadores desta edição.</p>
+                <button type="button" onClick={() => setFilters(DEFAULT_ARCHIVE_FILTERS)}>
+                  <RotateCcw size={14} /> Limpar filtros
+                </button>
+              </section>
+            )}
             <section className="archive-player-grid" aria-label={`Versões de ${pageTitle}`}>
               {visiblePlayers.map((player) => (
                 <PlayerEntry

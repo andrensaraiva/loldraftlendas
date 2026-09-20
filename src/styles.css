@@ -2369,9 +2369,59 @@ main > section {
 }
 /* Result and help */
 .final-screen {
+  position: relative;
+  overflow: hidden;
   text-align: center;
   padding-top: 42px;
   padding-bottom: 42px;
+}
+.final-celebration {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.final-celebration span {
+  --celebration-x: 0px;
+  --celebration-y: 300px;
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  width: 8px;
+  height: 20px;
+  border-radius: 2px;
+  background: var(--lime);
+  opacity: 0;
+  animation: final-celebration 1.8s cubic-bezier(0.2, 0.75, 0.25, 1) both;
+}
+.final-celebration span:nth-child(3n) {
+  background: var(--green);
+}
+.final-celebration span:nth-child(3n + 1) {
+  background: #151a17;
+}
+.final-celebration span:nth-child(1) { --celebration-x: -420px; --celebration-y: 245px; }
+.final-celebration span:nth-child(2) { --celebration-x: -350px; --celebration-y: 390px; animation-delay: 80ms; }
+.final-celebration span:nth-child(3) { --celebration-x: -285px; --celebration-y: 180px; animation-delay: 30ms; }
+.final-celebration span:nth-child(4) { --celebration-x: -220px; --celebration-y: 470px; animation-delay: 130ms; }
+.final-celebration span:nth-child(5) { --celebration-x: -150px; --celebration-y: 310px; animation-delay: 55ms; }
+.final-celebration span:nth-child(6) { --celebration-x: -75px; --celebration-y: 520px; animation-delay: 170ms; }
+.final-celebration span:nth-child(7) { --celebration-x: -25px; --celebration-y: 260px; animation-delay: 95ms; }
+.final-celebration span:nth-child(8) { --celebration-x: 70px; --celebration-y: 450px; animation-delay: 20ms; }
+.final-celebration span:nth-child(9) { --celebration-x: 145px; --celebration-y: 210px; animation-delay: 145ms; }
+.final-celebration span:nth-child(10) { --celebration-x: 215px; --celebration-y: 510px; animation-delay: 65ms; }
+.final-celebration span:nth-child(11) { --celebration-x: 280px; --celebration-y: 330px; animation-delay: 190ms; }
+.final-celebration span:nth-child(12) { --celebration-x: 345px; --celebration-y: 195px; animation-delay: 110ms; }
+.final-celebration span:nth-child(13) { --celebration-x: 400px; --celebration-y: 420px; animation-delay: 40ms; }
+.final-celebration span:nth-child(14) { --celebration-x: 455px; --celebration-y: 275px; animation-delay: 155ms; }
+@keyframes final-celebration {
+  0% { opacity: 0; transform: translate(-50%, 0) rotate(0deg) scale(0.5); }
+  12% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--celebration-x)), var(--celebration-y)) rotate(620deg) scale(1);
+  }
 }
 .final-symbol {
   background: #e9eee0;

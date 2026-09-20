@@ -218,7 +218,7 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-Resultados registrados após o Pacote 8: 104 testes unitários passaram; a validação de retratos confirmou 10 identidades e 20 WebPs de 768 px; type check e build passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 58 execuções E2E passaram no Chromium, cobrindo desktop, mobile, arquivo, desafios diários especiais, onboarding, fallbacks de retrato e os seis viewports obrigatórios, com 8 skips condicionais esperados. O bundle inicial ficou em 424,28 kB (110,17 kB gzip); o arquivo está isolado em um chunk lazy de 52,77 kB (13,30 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), sem aviso acima de 500 kB.
+Resultados registrados após o Pacote 9: 104 testes unitários passaram; a validação de retratos confirmou 10 identidades e 20 WebPs de 768 px; type check, build e auditoria estática da beta passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 62 execuções E2E passaram, incluindo a suíte Chromium desktop/mobile e smoke em Firefox/WebKit, com 8 skips condicionais esperados. O bundle inicial ficou em 424,45 kB (110,21 kB gzip); o arquivo está isolado em um chunk lazy de 53,19 kB (13,41 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), sem aviso acima de 500 kB. O smoke pós-deploy passou contra o preview de produção local.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -251,11 +251,20 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 - Objetivo, elegibilidade, resultado e histórico local dos sete dias funcionam sem backend real.
 - Save, histórico e analytics preservam a categoria e o cumprimento do objetivo.
 
-### Próxima Entrega Executável: Pacote 9, Polimento da Beta
+### Pacote 9 Concluído Localmente: Polimento da Beta
 
-- Revisar animações, celebrações, textos, estados vazios, performance, acessibilidade e PWA.
-- Ampliar a matriz automatizada para Firefox e WebKit onde o ambiente permitir.
-- Deixar smoke test pós-deploy, aparelhos físicos e painel real explicitamente preparados como validações externas.
+- A vitória mundial ganhou celebração decorativa, sem interação e desativada por `prefers-reduced-motion`; eliminações não a exibem.
+- Busca e filtros vazios do arquivo agora explicam o estado e oferecem recuperação direta.
+- A matriz possui smoke real em Chromium, Firefox e WebKit; os três navegadores gerenciados passaram localmente.
+- `audit:beta` valida budgets, idioma, viewport, manifesto, ícones, service worker, robots e as 583 URLs do sitemap.
+- `smoke:deploy` verifica home, arquivo, manifesto, robots e sitemap em qualquer URL publicada.
+- Sons não foram incluídos sem aprovação. Aparelhos físicos, trace Core Web Vitals, deploy HTTPS e painel real permanecem validações externas documentadas em [beta-readiness.md](beta-readiness.md).
+
+### Próximo Checkpoint: Dependências Externas
+
+- Aprovar o piloto do Pacote 5 para liberar o catálogo completo de retratos.
+- Configurar Supabase/hospedagem para executar o Pacote 6 e validar analytics reais.
+- Rodar o checklist físico e o trace de performance antes de abrir a beta fechada.
 
 ### Aprovação Pendente: Pacote 5
 

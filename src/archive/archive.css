@@ -331,6 +331,35 @@
   gap: 12px;
   padding-bottom: 70px;
 }
+.archive-empty {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  margin: 20px 0;
+  border: 1px dashed #bdcbb3;
+  border-radius: 9px;
+  padding: 34px 20px;
+  text-align: center;
+}
+.archive-empty h2 {
+  font: 800 27px/1 var(--display);
+}
+.archive-empty p {
+  color: var(--muted);
+  font-size: 10px;
+}
+.archive-empty button {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 4px;
+  background: var(--ink);
+  padding: 9px 13px;
+  color: white;
+  font-size: 9px;
+  font-weight: 800;
+}
 .archive-player-card {
   min-width: 0;
   border: 1px solid #dfe3da;

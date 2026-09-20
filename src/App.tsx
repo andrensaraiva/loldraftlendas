@@ -2515,6 +2515,11 @@ export default function App() {
           <section
             className={`final-screen ${tournament.outcome === 'Campeão mundial' ? 'champion' : ''}`}
           >
+            {tournament.outcome === 'Campeão mundial' && (
+              <div className="final-celebration" aria-hidden="true">
+                {Array.from({ length: 14 }, (_, index) => <span key={index} />)}
+              </div>
+            )}
             <div className="final-symbol">
               {tournament.outcome === 'Campeão mundial' ? <Trophy size={54} /> : <Flag size={48} />}
             </div>

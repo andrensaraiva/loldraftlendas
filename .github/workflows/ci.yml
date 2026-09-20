@@ -17,7 +17,7 @@ jobs:
   quality:
     name: Build, tests, and historical data
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - name: Check out source
         uses: actions/checkout@v4
@@ -36,6 +36,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install Python validation dependencies
+        run: python -m pip install -r requirements-dev.txt
+
       - name: Type check
         run: npm run typecheck
 
@@ -51,11 +54,17 @@ jobs:
       - name: Validate public archive index
         run: npm run data:archive:validate
 
+      - name: Validate player portrait assets
+        run: python scripts/validate_player_portraits.py
+
       - name: Production build
         run: npm run build
 
-      - name: Install Playwright Chromium
-        run: npx playwright install --with-deps chromium
+      - name: Audit beta build budgets and PWA files
+        run: npm run audit:beta
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium firefox webkit
 
       - name: End-to-end tests
         run: npm run test:e2e

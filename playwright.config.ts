@@ -36,5 +36,15 @@ export default defineConfig({
       name: 'mobile',
       use: { ...devices['iPhone 13'], defaultBrowserType: 'chromium' },
     },
+    {
+      name: 'firefox-smoke',
+      testMatch: /beta-smoke\.spec\.ts/,
+      use: { ...devices['Desktop Firefox'], viewport: { width: 1440, height: 1000 } },
+    },
+    {
+      name: 'webkit-smoke',
+      testMatch: /beta-smoke\.spec\.ts/,
+      use: { ...devices['Desktop Safari'], viewport: { width: 1440, height: 1000 } },
+    },
   ],
 });

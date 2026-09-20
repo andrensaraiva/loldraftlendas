@@ -84,6 +84,13 @@ test('Almanac hides numeric guidance and reveals it only after the campaign', as
   await expect(page.getByRole('heading', { level: 1 })).toContainText('CAMPEÃO', {
     timeout: 25000,
   });
+  await expect(page.locator('.final-celebration')).toHaveAttribute('aria-hidden', 'true');
+  expect(
+    await page
+      .locator('.final-celebration span')
+      .first()
+      .evaluate((element) => getComputedStyle(element).animationName),
+  ).toBe('final-celebration');
   await expect
     .poll(() =>
       page.evaluate(() => {
@@ -217,6 +224,7 @@ test('quick mode eliminates after three Swiss losses and preserves every game', 
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Eliminado no Suíço', {
     timeout: 15000,
   });
+  await expect(page.locator('.final-celebration')).toHaveCount(0);
   await expect(page.locator('.campaign-series')).toHaveCount(3);
   await expect(page.locator('.history-games button')).toHaveCount(4);
   await expect(page.locator('.history-games button.loss')).toHaveCount(4);
