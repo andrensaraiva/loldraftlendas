@@ -553,6 +553,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "crisp",
+      "playerName": "Crisp",
+      "portrait": "/assets/players/portraits/catalog-v2/crisp.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/crisp.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "elyoya",
+      "playerName": "Elyoya",
+      "portrait": "/assets/players/portraits/catalog-v2/elyoya.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/elyoya.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "fbi",
+      "playerName": "FBI",
+      "portrait": "/assets/players/portraits/catalog-v2/fbi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/fbi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "gala",
+      "playerName": "GALA",
+      "portrait": "/assets/players/portraits/catalog-v2/gala.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/gala.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "gorilla",
+      "playerName": "GorillA",
+      "portrait": "/assets/players/portraits/catalog-v2/gorilla.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/gorilla.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kanavi",
+      "playerName": "Kanavi",
+      "portrait": "/assets/players/portraits/catalog-v2/kanavi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kanavi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kiin",
+      "playerName": "Kiin",
+      "portrait": "/assets/players/portraits/catalog-v2/kiin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kiin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "lehends",
+      "playerName": "Lehends",
+      "portrait": "/assets/players/portraits/catalog-v2/lehends.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/lehends.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nuguri",
+      "playerName": "Nuguri",
+      "portrait": "/assets/players/portraits/catalog-v2/nuguri.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nuguri.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "odoamne",
+      "playerName": "Odoamne",
+      "portrait": "/assets/players/portraits/catalog-v2/odoamne.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/odoamne.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
