@@ -1433,6 +1433,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "hai",
+      "playerName": "Hai",
+      "portrait": "/assets/players/portraits/catalog-v2/hai.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hai.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hauntzer",
+      "playerName": "Hauntzer",
+      "portrait": "/assets/players/portraits/catalog-v2/hauntzer.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hauntzer.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hjarnan",
+      "playerName": "Hjarnan",
+      "portrait": "/assets/players/portraits/catalog-v2/hjarnan.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hjarnan.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hope",
+      "playerName": "Hope",
+      "portrait": "/assets/players/portraits/catalog-v2/hope.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hope.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "iboy",
+      "playerName": "iBoy",
+      "portrait": "/assets/players/portraits/catalog-v2/iboy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/iboy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "imp",
+      "playerName": "imp",
+      "portrait": "/assets/players/portraits/catalog-v2/imp.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/imp.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jesiz",
+      "playerName": "Jesiz",
+      "portrait": "/assets/players/portraits/catalog-v2/jesiz.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jesiz.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jiejie",
+      "playerName": "Jiejie",
+      "portrait": "/assets/players/portraits/catalog-v2/jiejie.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jiejie.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jojopyun",
+      "playerName": "Jojopyun",
+      "portrait": "/assets/players/portraits/catalog-v2/jojopyun.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jojopyun.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kellin",
+      "playerName": "Kellin",
+      "portrait": "/assets/players/portraits/catalog-v2/kellin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kellin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
