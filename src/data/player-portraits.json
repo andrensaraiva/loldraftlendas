@@ -1213,6 +1213,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "ambition",
+      "playerName": "Ambition",
+      "portrait": "/assets/players/portraits/catalog-v2/ambition.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ambition.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "apa",
+      "playerName": "APA",
+      "portrait": "/assets/players/portraits/catalog-v2/apa.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/apa.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "balis",
+      "playerName": "BalIs",
+      "portrait": "/assets/players/portraits/catalog-v2/balis.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/balis.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "baolan",
+      "playerName": "Baolan",
+      "portrait": "/assets/players/portraits/catalog-v2/baolan.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/baolan.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "bengi",
+      "playerName": "Bengi",
+      "portrait": "/assets/players/portraits/catalog-v2/bengi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/bengi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "berserker",
+      "playerName": "Berserker",
+      "portrait": "/assets/players/portraits/catalog-v2/berserker.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/berserker.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "breathe",
+      "playerName": "Breathe",
+      "portrait": "/assets/players/portraits/catalog-v2/breathe.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/breathe.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "busio",
+      "playerName": "Busio",
+      "portrait": "/assets/players/portraits/catalog-v2/busio.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/busio.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "canna",
+      "playerName": "Canna",
+      "portrait": "/assets/players/portraits/catalog-v2/canna.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/canna.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "carzzy",
+      "playerName": "Carzzy",
+      "portrait": "/assets/players/portraits/catalog-v2/carzzy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/carzzy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
