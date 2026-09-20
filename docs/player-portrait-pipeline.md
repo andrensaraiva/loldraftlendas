@@ -44,9 +44,12 @@ A produção integral foi autorizada pelo responsável do projeto em 2026-09-20.
 
 - Lote 01: Hans Sama, Hylissang, JackeyLove, Keria, Mikyx, Perkz, Rekkles, ShowMaker, Sneaky e Zven — aprovado e integrado.
 - Lote 02: 369, Bdd, Bjergsen, Doran, Gumayusi, Humanoid, Inspired, knight, Ming, Oner, Tarzan, Uzi, Viper, Wunder, Xmithie, BeryL, Blaber, BrokenBlade, Broxah e Clearlove — aprovado e integrado.
+- Lotes 03–13: 110 identidades adicionais — aprovadas, integradas e registradas em pranchas individuais por lote.
 
 [Abrir a prancha do lote 01](screenshots/portrait-catalog-v2-batch-01.webp)
 [Abrir a prancha do lote 02](screenshots/portrait-catalog-v2-batch-02.webp)
+
+As pranchas seguintes usam o padrão `docs/screenshots/portrait-catalog-v2-batch-NN.webp`. Após o lote 13, a cobertura é de 160 das 345 identidades visuais. A fila restante está pronta para retomar dinamicamente a partir do manifesto, sem repetir imagens já registradas.
 
 ## Direção visual e prompt-base
 
