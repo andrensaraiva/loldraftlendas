@@ -2,22 +2,22 @@
 
 ## Estado do piloto
 
-O lote `pilot-v1` contém dez identidades e está **pendente de aprovação humana**. O catálogo completo não deve ser iniciado antes dessa aprovação. Enquanto cada entrada permanecer como `pending`, o produto mostra somente a silhueta derivada; mudar uma entrada para `approved` libera o retrato mestre e mantém silhueta e avatar CSS como fallbacks.
+O lote `pilot-v1` contém dez identidades e foi **aprovado pelo responsável do projeto em 2026-09-20**. As dez entradas estão como `approved`: o produto mostra o retrato mestre e mantém silhueta e avatar CSS como fallbacks seguros. A direção visual está liberada para expansão gradual do catálogo.
 
 [Abrir a prancha dos dez retratos](screenshots/portrait-pilot-v1.webp)
 
 | Jogador | Função representada | Região de referência | Estado |
 | --- | --- | --- | --- |
-| Bin | TOP | China | pendente |
-| Caps | MID | Europa | pendente |
-| CoreJJ | SUP | América do Norte/Coreia | pendente |
-| Doublelift | ADC | América do Norte | pendente |
-| Faker | MID | Coreia | pendente |
-| Huni | TOP | Coreia/América do Norte | pendente |
-| Jankos | JG | Europa | pendente |
-| Karsa | JG | Taiwan/LCP | pendente |
-| Meiko | SUP | China | pendente |
-| Zeus | TOP | Coreia | pendente |
+| Bin | TOP | China | aprovado |
+| Caps | MID | Europa | aprovado |
+| CoreJJ | SUP | América do Norte/Coreia | aprovado |
+| Doublelift | ADC | América do Norte | aprovado |
+| Faker | MID | Coreia | aprovado |
+| Huni | TOP | Coreia/América do Norte | aprovado |
+| Jankos | JG | Europa | aprovado |
+| Karsa | JG | Taiwan/LCP | aprovado |
+| Meiko | SUP | China | aprovado |
+| Zeus | TOP | Coreia | aprovado |
 
 ## Direção visual e prompt-base
 

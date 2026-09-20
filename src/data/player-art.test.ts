@@ -7,12 +7,12 @@ import {
 } from './player-art';
 
 describe('player portrait pilot manifest', () => {
-  it('contains ten unique pending identities with versioned optimized assets', () => {
+  it('contains ten unique approved identities with versioned optimized assets', () => {
     expect(playerPortraitManifest.version).toBe('pilot-v1');
     expect(playerPortraitManifest.entries).toHaveLength(10);
     expect(new Set(playerPortraitManifest.entries.map((entry) => entry.playerKey)).size).toBe(10);
     for (const entry of playerPortraitManifest.entries) {
-      expect(entry.approval).toBe('pending');
+      expect(entry.approval).toBe('approved');
       expect(entry.portrait).toMatch(/^\/assets\/players\/portraits\/pilot-v1\/.+\.webp$/);
       expect(entry.silhouette).toMatch(/^\/assets\/players\/silhouettes\/pilot-v1\/.+\.webp$/);
       expect(entry.focus.x).toBeGreaterThanOrEqual(0);
@@ -22,12 +22,13 @@ describe('player portrait pilot manifest', () => {
     }
   });
 
-  it('uses the derived silhouette until approval and has no invented asset for unknown players', () => {
+  it('uses portrait then silhouette and has no invented asset for unknown players', () => {
     expect(playerPortraitAsset('FAKER')?.playerName).toBe('Faker');
     expect(playerPortraitSources('Faker')).toEqual([
+      '/assets/players/portraits/pilot-v1/faker.webp',
       '/assets/players/silhouettes/pilot-v1/faker.webp',
     ]);
-    expect(playerCardArt('Faker')).toContain('/silhouettes/');
+    expect(playerCardArt('Faker')).toContain('/portraits/');
     expect(playerPortraitSources('Unknown')).toEqual([]);
   });
 });

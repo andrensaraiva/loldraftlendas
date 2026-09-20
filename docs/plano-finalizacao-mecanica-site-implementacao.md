@@ -4,7 +4,7 @@
 
 **Atualizado em:** 2026-09-14
 
-**Execução em 2026-09-20:** Pacotes 0–4 e 7–9 concluídos no ambiente local. O piloto técnico do Pacote 5 está integrado e aguarda aprovação humana antes do catálogo completo. O Pacote 6 e os gates externos de beta aguardam backend, hospedagem e testes em aparelhos reais.
+**Execução em 2026-09-20:** Pacotes 0–4 e 7–9 concluídos no ambiente local. O piloto técnico do Pacote 5 foi aprovado e seus dez retratos estão liberados; a expansão do catálogo pode avançar em lotes. O Pacote 6 e os gates externos de beta aguardam backend, hospedagem e testes em aparelhos reais.
 
 **Objetivo:** fechar as partes mais importantes do Draft Lendas, preparar uma beta com jogadores reais e evitar aumentar o escopo com sistemas que não ajudam essa validação.
 

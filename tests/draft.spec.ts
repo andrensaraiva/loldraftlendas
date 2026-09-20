@@ -115,7 +115,7 @@ test('home filters persist an eligible edition and region in every draft round',
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
 });
 
-test('portrait pilot uses silhouettes and falls back safely when an asset fails', async ({ page }) => {
+test('approved portrait pilot uses portraits and falls back safely when assets fail', async ({ page }) => {
   await page.addInitScript(() => {
     Math.random = () => 0;
   });
@@ -136,9 +136,13 @@ test('portrait pilot uses silhouettes and falls back safely when an asset fails'
   const zeus = page.locator('.player-card').filter({ hasText: 'Zeus' });
   await expect(zeus).toHaveCount(1);
   const portrait = zeus.locator('.player-portrait');
-  await expect(portrait).toHaveAttribute('data-portrait-state', 'pending');
-  await expect(portrait.locator('img')).toHaveAttribute('src', /silhouettes\/pilot-v1\/zeus\.webp$/);
+  await expect(portrait).toHaveAttribute('data-portrait-state', 'approved');
+  await expect(portrait.locator('img')).toHaveAttribute('src', /portraits\/pilot-v1\/zeus\.webp$/);
 
+  await portrait.locator('img').evaluate((image) => {
+    (image as HTMLImageElement).src = '/assets/players/portraits/missing.webp';
+  });
+  await expect(portrait.locator('img')).toHaveAttribute('src', /silhouettes\/pilot-v1\/zeus\.webp$/);
   await portrait.locator('img').evaluate((image) => {
     (image as HTMLImageElement).src = '/assets/players/silhouettes/missing.webp';
   });

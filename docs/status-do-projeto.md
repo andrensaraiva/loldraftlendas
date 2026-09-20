@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-19. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–4 e o piloto técnico do Pacote 5. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
+Atualizado em 2026-09-20. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–4, 7–9 e a aprovação do piloto técnico do Pacote 5. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
 
 ## Objetivo Preservado
 
@@ -186,7 +186,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - Abertura, conclusão e pulo possuem eventos anônimos com origem e quantidade de etapas vistas, validados pela migration preparada para o Supabase real.
 - O pipeline de retratos possui guia, prompt-base, dez mestres otimizados, dez silhuetas duotone derivadas, prancha de revisão e validação reproduzível de dimensões/manifesto.
 - `PlayerPortrait` reserva dimensões e aplica o contrato retrato aprovado → silhueta → avatar CSS na carta, equipe, resultado e card compartilhável. Falhas de imagem e identidades ausentes foram cobertas por E2E.
-- Todas as entradas do piloto continuam `pending`: o produto mostra silhuetas, não os retratos, até a aprovação humana explícita exigida antes do catálogo completo.
+- As dez entradas do piloto foram aprovadas em 2026-09-20: o produto mostra os retratos e preserva silhueta e avatar CSS como fallbacks antes da expansão do catálogo.
 
 ### Fase 4: Cobertura Histórica e Readiness
 
@@ -262,14 +262,14 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 
 ### Próximo Checkpoint: Dependências Externas
 
-- Aprovar o piloto do Pacote 5 para liberar o catálogo completo de retratos.
+- Expandir o catálogo de retratos em lotes, preservando revisão, manifesto e fallbacks do piloto aprovado.
 - Configurar Supabase/hospedagem para executar o Pacote 6 e validar analytics reais.
 - Rodar o checklist físico e o trace de performance antes de abrir a beta fechada.
 
-### Aprovação Pendente: Pacote 5
+### Expansão Liberada: Pacote 5
 
-- Revisar a prancha em [player-portrait-pipeline.md](player-portrait-pipeline.md), marcando cada identidade como aprovada ou reprovada.
-- Não iniciar o catálogo completo antes dessa aprovação explícita; silhuetas e avatar CSS permanecem seguros em produção.
+- A aprovação do piloto foi registrada em [player-portrait-pipeline.md](player-portrait-pipeline.md); retratos aprovados, silhuetas e avatar CSS permanecem em três níveis de fallback.
+- A expansão do catálogo pode avançar em lotes versionados, com validação visual e técnica antes de cada publicação.
 - O Pacote 6 continua bloqueado até existir hospedagem e Supabase reais para persistência pública, limitação de abuso e Open Graph dinâmico.
 
 ### Trilha Paralela: Fase 4, Pesquisa Histórica de 2013

@@ -23,12 +23,14 @@ def main() -> None:
     entries = data.get("entries", [])
     if data.get("version") != "pilot-v1" or len(entries) != 10:
         raise SystemExit("Pilot manifest must contain ten entries at version pilot-v1.")
+    if data.get("status") != "pilot_approved":
+        raise SystemExit("Pilot manifest must record its explicit approval.")
     keys = [entry["playerKey"] for entry in entries]
     if len(keys) != len(set(keys)):
         raise SystemExit("Player keys must be unique.")
     for entry in entries:
-        if entry["approval"] not in {"pending", "approved", "rejected"}:
-            raise SystemExit(f"Invalid approval state for {entry['playerName']}.")
+        if entry["approval"] != "approved":
+            raise SystemExit(f"Approved pilot contains an unapproved entry: {entry['playerName']}.")
         for field in ("portrait", "silhouette"):
             path = public_path(entry[field])
             if path.suffix.lower() != ".webp" or not path.is_file():
