@@ -1323,6 +1323,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "closer",
+      "playerName": "Closer",
+      "portrait": "/assets/players/portraits/catalog-v2/closer.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/closer.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cody-sun",
+      "playerName": "Cody Sun",
+      "portrait": "/assets/players/portraits/catalog-v2/cody-sun.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cody-sun.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "contractz",
+      "playerName": "Contractz",
+      "portrait": "/assets/players/portraits/catalog-v2/contractz.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/contractz.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "creme",
+      "playerName": "Creme",
+      "portrait": "/assets/players/portraits/catalog-v2/creme.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/creme.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "deokdam",
+      "playerName": "deokdam",
+      "portrait": "/assets/players/portraits/catalog-v2/deokdam.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/deokdam.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "dhokla",
+      "playerName": "Dhokla",
+      "portrait": "/assets/players/portraits/catalog-v2/dhokla.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/dhokla.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "doinb",
+      "playerName": "Doinb",
+      "portrait": "/assets/players/portraits/catalog-v2/doinb.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/doinb.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "dyrus",
+      "playerName": "Dyrus",
+      "portrait": "/assets/players/portraits/catalog-v2/dyrus.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/dyrus.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "expect",
+      "playerName": "Expect",
+      "portrait": "/assets/players/portraits/catalog-v2/expect.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/expect.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ghost",
+      "playerName": "Ghost",
+      "portrait": "/assets/players/portraits/catalog-v2/ghost.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ghost.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
