@@ -1543,6 +1543,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "kingen",
+      "playerName": "Kingen",
+      "portrait": "/assets/players/portraits/catalog-v2/kingen.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kingen.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kobbe",
+      "playerName": "Kobbe",
+      "portrait": "/assets/players/portraits/catalog-v2/kobbe.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kobbe.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kramer",
+      "playerName": "Kramer",
+      "portrait": "/assets/players/portraits/catalog-v2/kramer.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kramer.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "labrov",
+      "playerName": "Labrov",
+      "portrait": "/assets/players/portraits/catalog-v2/labrov.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/labrov.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "langx",
+      "playerName": "Langx",
+      "portrait": "/assets/players/portraits/catalog-v2/langx.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/langx.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "lemonnation",
+      "playerName": "LemonNation",
+      "portrait": "/assets/players/portraits/catalog-v2/lemonnation.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/lemonnation.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "letme",
+      "playerName": "Letme",
+      "portrait": "/assets/players/portraits/catalog-v2/letme.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/letme.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "licorice",
+      "playerName": "Licorice",
+      "portrait": "/assets/players/portraits/catalog-v2/licorice.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/licorice.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "life",
+      "playerName": "Life",
+      "portrait": "/assets/players/portraits/catalog-v2/life.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/life.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "looper",
+      "playerName": "Looper",
+      "portrait": "/assets/players/portraits/catalog-v2/looper.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/looper.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
