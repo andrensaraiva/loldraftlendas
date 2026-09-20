@@ -1,8 +1,8 @@
 {
-  "version": "pilot-v1",
+  "version": "catalog-v1",
   "promptVersion": 1,
-  "status": "pilot_approved",
-  "generatedAt": "2026-09-19",
+  "status": "expansion_pending_human_review",
+  "generatedAt": "2026-09-20",
   "entries": [
     {
       "playerKey": "bin",
@@ -82,6 +82,86 @@
       "portrait": "/assets/players/portraits/pilot-v1/zeus.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/zeus.webp",
       "approval": "approved",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "bwipo",
+      "playerName": "Bwipo",
+      "portrait": "/assets/players/portraits/catalog-v1/bwipo.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/bwipo.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "canyon",
+      "playerName": "Canyon",
+      "portrait": "/assets/players/portraits/catalog-v1/canyon.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/canyon.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "chovy",
+      "playerName": "Chovy",
+      "portrait": "/assets/players/portraits/catalog-v1/chovy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/chovy.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "deft",
+      "playerName": "Deft",
+      "portrait": "/assets/players/portraits/catalog-v1/deft.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/deft.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "impact",
+      "playerName": "Impact",
+      "portrait": "/assets/players/portraits/catalog-v1/impact.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/impact.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "jensen",
+      "playerName": "Jensen",
+      "portrait": "/assets/players/portraits/catalog-v1/jensen.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/jensen.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "peanut",
+      "playerName": "Peanut",
+      "portrait": "/assets/players/portraits/catalog-v1/peanut.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/peanut.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "ruler",
+      "playerName": "Ruler",
+      "portrait": "/assets/players/portraits/catalog-v1/ruler.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/ruler.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "scout",
+      "playerName": "Scout",
+      "portrait": "/assets/players/portraits/catalog-v1/scout.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/scout.webp",
+      "approval": "pending",
+      "focus": { "x": 50, "y": 40 }
+    },
+    {
+      "playerKey": "xiaohu",
+      "playerName": "Xiaohu",
+      "portrait": "/assets/players/portraits/catalog-v1/xiaohu.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v1/xiaohu.webp",
+      "approval": "pending",
       "focus": { "x": 50, "y": 40 }
     }
   ]

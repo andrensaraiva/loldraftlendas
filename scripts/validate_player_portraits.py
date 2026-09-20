@@ -21,16 +21,20 @@ def public_path(path: str) -> Path:
 def main() -> None:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     entries = data.get("entries", [])
-    if data.get("version") != "pilot-v1" or len(entries) != 10:
-        raise SystemExit("Pilot manifest must contain ten entries at version pilot-v1.")
-    if data.get("status") != "pilot_approved":
-        raise SystemExit("Pilot manifest must record its explicit approval.")
+    if data.get("version") != "catalog-v1" or len(entries) != 20:
+        raise SystemExit("Catalog manifest must contain twenty entries at version catalog-v1.")
+    if data.get("status") != "expansion_pending_human_review":
+        raise SystemExit("Catalog manifest must record its pending expansion review.")
     keys = [entry["playerKey"] for entry in entries]
     if len(keys) != len(set(keys)):
         raise SystemExit("Player keys must be unique.")
+    approved = [entry for entry in entries if entry["approval"] == "approved"]
+    pending = [entry for entry in entries if entry["approval"] == "pending"]
+    if len(approved) != 10 or len(pending) != 10:
+        raise SystemExit("Catalog v1 must contain ten approved pilot and ten pending expansion entries.")
     for entry in entries:
-        if entry["approval"] != "approved":
-            raise SystemExit(f"Approved pilot contains an unapproved entry: {entry['playerName']}.")
+        if entry["approval"] not in {"approved", "pending", "rejected"}:
+            raise SystemExit(f"Unexpected approval state for {entry['playerName']}.")
         for field in ("portrait", "silhouette"):
             path = public_path(entry[field])
             if path.suffix.lower() != ".webp" or not path.is_file():

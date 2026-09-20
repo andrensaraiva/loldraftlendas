@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-20. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–4, 7–9 e a aprovação do piloto técnico do Pacote 5. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
+Atualizado em 2026-09-20. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–4, 7–9, a aprovação do piloto técnico e a produção do primeiro lote de expansão do Pacote 5. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
 
 ## Objetivo Preservado
 
@@ -186,7 +186,8 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - Abertura, conclusão e pulo possuem eventos anônimos com origem e quantidade de etapas vistas, validados pela migration preparada para o Supabase real.
 - O pipeline de retratos possui guia, prompt-base, dez mestres otimizados, dez silhuetas duotone derivadas, prancha de revisão e validação reproduzível de dimensões/manifesto.
 - `PlayerPortrait` reserva dimensões e aplica o contrato retrato aprovado → silhueta → avatar CSS na carta, equipe, resultado e card compartilhável. Falhas de imagem e identidades ausentes foram cobertas por E2E.
-- As dez entradas do piloto foram aprovadas em 2026-09-20: o produto mostra os retratos e preserva silhueta e avatar CSS como fallbacks antes da expansão do catálogo.
+- As dez entradas do piloto foram aprovadas em 2026-09-20: o produto mostra os retratos e preserva silhueta e avatar CSS como fallbacks.
+- O lote `catalog-v1` acrescenta Bwipo, Canyon, Chovy, Deft, Impact, Jensen, Peanut, Ruler, Scout e Xiaohu; suas silhuetas já estão integradas e os retratos aguardam revisão visual.
 
 ### Fase 4: Cobertura Histórica e Readiness
 
@@ -262,7 +263,7 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 
 ### Próximo Checkpoint: Dependências Externas
 
-- Expandir o catálogo de retratos em lotes, preservando revisão, manifesto e fallbacks do piloto aprovado.
+- Revisar o lote `catalog-v1` e continuar a expansão em lotes, preservando manifesto e fallbacks do piloto aprovado.
 - Configurar Supabase/hospedagem para executar o Pacote 6 e validar analytics reais.
 - Rodar o checklist físico e o trace de performance antes de abrir a beta fechada.
 

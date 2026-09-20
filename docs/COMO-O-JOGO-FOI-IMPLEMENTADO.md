@@ -209,7 +209,7 @@ Os elencos representam formações históricas selecionadas. A base não pretend
 
 O modelo já aceita `WORLDS_DATA` e `SEASON_DATA` como origens futuras. Esses campos permitirão identificar de onde veio cada associação de jogador e campeão após uma importação validada.
 
-As artes de campeões vieram do Data Dragon e estão em `public/assets`. Os retratos de jogador seguem um contrato independente em `src/data/player-portraits.json`: ilustração aprovada, silhueta derivada e avatar CSS neutro. O piloto gerado tem dez identidades, foi aprovado em 2026-09-20 e o produto usa seus retratos com os dois fallbacks preservados. Veja `docs/player-portrait-pipeline.md`.
+As artes de campeões vieram do Data Dragon e estão em `public/assets`. Os retratos de jogador seguem um contrato independente em `src/data/player-portraits.json`: ilustração aprovada, silhueta derivada e avatar CSS neutro. O piloto gerado tem dez identidades, foi aprovado em 2026-09-20 e o produto usa seus retratos com os dois fallbacks preservados. O primeiro lote de expansão adiciona dez identidades como `pending`, exibindo silhuetas até a revisão visual. Veja `docs/player-portrait-pipeline.md`.
 
 Créditos e natureza de cada asset estão no README e em `public/assets/portrait-credits.json`. As ilustrações geradas não são fotografias, retratos oficiais nem endosso dos jogadores.
 

@@ -19,6 +19,25 @@ O lote `pilot-v1` contém dez identidades e foi **aprovado pelo responsável do 
 | Meiko | SUP | China | aprovado |
 | Zeus | TOP | Coreia | aprovado |
 
+## Expansão `catalog-v1`
+
+O primeiro lote pós-piloto prioriza dez jogadores recorrentes no arquivo histórico. Os assets já foram gerados, normalizados e integrados ao manifesto, mas continuam como `pending`: até a aprovação visual, o produto mostra apenas suas silhuetas derivadas.
+
+[Abrir a prancha do lote de expansão](screenshots/portrait-catalog-v1.webp)
+
+| Jogador | Função representada | Estado |
+| --- | --- | --- |
+| Bwipo | TOP | revisão pendente |
+| Canyon | JG | revisão pendente |
+| Chovy | MID | revisão pendente |
+| Deft | ADC | revisão pendente |
+| Impact | TOP | revisão pendente |
+| Jensen | MID | revisão pendente |
+| Peanut | JG | revisão pendente |
+| Ruler | ADC | revisão pendente |
+| Scout | MID | revisão pendente |
+| Xiaohu | MID | revisão pendente |
+
 ## Direção visual e prompt-base
 
 Os mestres foram produzidos com a ferramenta integrada de geração de imagens, uma chamada independente por identidade. Não foi usada fotografia dentro do produto nem geração por lote que repetisse um único rosto.
@@ -44,7 +63,7 @@ O acento é ocre para TOP, teal para JG, violeta para MID, coral para ADC e azul
 Os PNGs mestres ficam preservados no diretório de geração da ferramenta. Para uma rodada aprovada, copie os mestres para uma pasta de trabalho e execute:
 
 ```sh
-py -3 scripts/build_player_portraits.py <mestres-png> public/assets/players/portraits/pilot-v1 public/assets/players/silhouettes/pilot-v1 --contact-sheet docs/screenshots/portrait-pilot-v1.webp
+py -3 scripts/build_player_portraits.py <mestres-png> public/assets/players/portraits/<versão> public/assets/players/silhouettes/<versão> --contact-sheet docs/screenshots/portrait-<versão>.webp
 npm run assets:portraits:validate
 ```
 
