@@ -43,8 +43,10 @@ O primeiro lote pós-piloto prioriza dez jogadores recorrentes no arquivo histó
 A produção integral foi autorizada pelo responsável do projeto em 2026-09-20. O arquivo histórico contém 346 nomes e 345 identidades visuais, pois `BrokenBlade` e `Broken Blade` compartilham a mesma pessoa e o mesmo asset. A expansão usa lotes versionados, inspeção visual por prancha e checkpoint no Git a cada lote.
 
 - Lote 01: Hans Sama, Hylissang, JackeyLove, Keria, Mikyx, Perkz, Rekkles, ShowMaker, Sneaky e Zven — aprovado e integrado.
+- Lote 02: 369, Bdd, Bjergsen, Doran, Gumayusi, Humanoid, Inspired, knight, Ming, Oner, Tarzan, Uzi, Viper, Wunder, Xmithie, BeryL, Blaber, BrokenBlade, Broxah e Clearlove — aprovado e integrado.
 
 [Abrir a prancha do lote 01](screenshots/portrait-catalog-v2-batch-01.webp)
+[Abrir a prancha do lote 02](screenshots/portrait-catalog-v2-batch-02.webp)
 
 ## Direção visual e prompt-base
 

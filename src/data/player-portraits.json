@@ -333,6 +333,226 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "369",
+      "playerName": "369",
+      "portrait": "/assets/players/portraits/catalog-v2/369.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/369.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "bdd",
+      "playerName": "Bdd",
+      "portrait": "/assets/players/portraits/catalog-v2/bdd.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/bdd.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "bjergsen",
+      "playerName": "Bjergsen",
+      "portrait": "/assets/players/portraits/catalog-v2/bjergsen.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/bjergsen.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "doran",
+      "playerName": "Doran",
+      "portrait": "/assets/players/portraits/catalog-v2/doran.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/doran.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "gumayusi",
+      "playerName": "Gumayusi",
+      "portrait": "/assets/players/portraits/catalog-v2/gumayusi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/gumayusi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "humanoid",
+      "playerName": "Humanoid",
+      "portrait": "/assets/players/portraits/catalog-v2/humanoid.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/humanoid.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "inspired",
+      "playerName": "Inspired",
+      "portrait": "/assets/players/portraits/catalog-v2/inspired.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/inspired.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "knight",
+      "playerName": "knight",
+      "portrait": "/assets/players/portraits/catalog-v2/knight.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/knight.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ming",
+      "playerName": "Ming",
+      "portrait": "/assets/players/portraits/catalog-v2/ming.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ming.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "oner",
+      "playerName": "Oner",
+      "portrait": "/assets/players/portraits/catalog-v2/oner.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/oner.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "tarzan",
+      "playerName": "Tarzan",
+      "portrait": "/assets/players/portraits/catalog-v2/tarzan.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/tarzan.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "uzi",
+      "playerName": "Uzi",
+      "portrait": "/assets/players/portraits/catalog-v2/uzi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/uzi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "viper",
+      "playerName": "Viper",
+      "portrait": "/assets/players/portraits/catalog-v2/viper.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/viper.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "wunder",
+      "playerName": "Wunder",
+      "portrait": "/assets/players/portraits/catalog-v2/wunder.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/wunder.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "xmithie",
+      "playerName": "Xmithie",
+      "portrait": "/assets/players/portraits/catalog-v2/xmithie.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/xmithie.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "beryl",
+      "playerName": "BeryL",
+      "portrait": "/assets/players/portraits/catalog-v2/beryl.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/beryl.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "blaber",
+      "playerName": "Blaber",
+      "portrait": "/assets/players/portraits/catalog-v2/blaber.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/blaber.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "brokenblade",
+      "playerName": "BrokenBlade",
+      "portrait": "/assets/players/portraits/catalog-v2/brokenblade.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/brokenblade.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "broxah",
+      "playerName": "Broxah",
+      "portrait": "/assets/players/portraits/catalog-v2/broxah.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/broxah.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "clearlove",
+      "playerName": "Clearlove",
+      "portrait": "/assets/players/portraits/catalog-v2/clearlove.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/clearlove.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
