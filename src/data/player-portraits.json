@@ -1653,6 +1653,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "lustboy",
+      "playerName": "Lustboy",
+      "portrait": "/assets/players/portraits/catalog-v2/lustboy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/lustboy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "lwx",
+      "playerName": "Lwx",
+      "portrait": "/assets/players/portraits/catalog-v2/lwx.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/lwx.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mark",
+      "playerName": "Mark",
+      "portrait": "/assets/players/portraits/catalog-v2/mark.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mark.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "massu",
+      "playerName": "Massu",
+      "portrait": "/assets/players/portraits/catalog-v2/massu.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/massu.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "meteos",
+      "playerName": "Meteos",
+      "portrait": "/assets/players/portraits/catalog-v2/meteos.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/meteos.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "missing",
+      "playerName": "MISSING",
+      "portrait": "/assets/players/portraits/catalog-v2/missing.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/missing.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mlxg",
+      "playerName": "Mlxg",
+      "portrait": "/assets/players/portraits/catalog-v2/mlxg.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mlxg.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mouse",
+      "playerName": "Mouse",
+      "portrait": "/assets/players/portraits/catalog-v2/mouse.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mouse.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "myrwn",
+      "playerName": "Myrwn",
+      "portrait": "/assets/players/portraits/catalog-v2/myrwn.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/myrwn.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nemesis",
+      "playerName": "Nemesis",
+      "portrait": "/assets/players/portraits/catalog-v2/nemesis.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nemesis.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
