@@ -19,12 +19,22 @@ export const playerPortraitManifest = manifest as {
   entries: PlayerPortraitAsset[];
 };
 
-const portraitsByName = new Map(
-  playerPortraitManifest.entries.map((entry) => [entry.playerName.toLocaleLowerCase(), entry]),
-);
+function portraitKey(value: string): string {
+  return value
+    .toLocaleLowerCase('en-US')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]/g, '');
+}
+
+const portraitsByName = new Map<string, PlayerPortraitAsset>();
+for (const entry of playerPortraitManifest.entries) {
+  portraitsByName.set(portraitKey(entry.playerName), entry);
+  portraitsByName.set(portraitKey(entry.playerKey), entry);
+}
 
 export function playerPortraitAsset(playerName: string): PlayerPortraitAsset | null {
-  return portraitsByName.get(playerName.toLocaleLowerCase()) ?? null;
+  return portraitsByName.get(portraitKey(playerName)) ?? null;
 }
 
 export function playerPortraitSources(playerName: string): string[] {

@@ -1,7 +1,7 @@
 {
-  "version": "catalog-v1",
+  "version": "catalog-v2",
   "promptVersion": 1,
-  "status": "catalog_approved",
+  "status": "catalog_expanding",
   "generatedAt": "2026-09-20",
   "entries": [
     {
@@ -10,7 +10,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/bin.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/bin.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "caps",
@@ -18,7 +21,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/caps.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/caps.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "corejj",
@@ -26,7 +32,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/corejj.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/corejj.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 39 }
+      "focus": {
+        "x": 50,
+        "y": 39
+      }
     },
     {
       "playerKey": "doublelift",
@@ -34,7 +43,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/doublelift.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/doublelift.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "faker",
@@ -42,7 +54,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/faker.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/faker.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 41 }
+      "focus": {
+        "x": 50,
+        "y": 41
+      }
     },
     {
       "playerKey": "huni",
@@ -50,7 +65,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/huni.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/huni.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "jankos",
@@ -58,7 +76,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/jankos.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/jankos.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 39 }
+      "focus": {
+        "x": 50,
+        "y": 39
+      }
     },
     {
       "playerKey": "karsa",
@@ -66,7 +87,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/karsa.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/karsa.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "meiko",
@@ -74,7 +98,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/meiko.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/meiko.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "zeus",
@@ -82,7 +109,10 @@
       "portrait": "/assets/players/portraits/pilot-v1/zeus.webp",
       "silhouette": "/assets/players/silhouettes/pilot-v1/zeus.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "bwipo",
@@ -90,7 +120,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/bwipo.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/bwipo.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "canyon",
@@ -98,7 +131,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/canyon.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/canyon.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "chovy",
@@ -106,7 +142,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/chovy.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/chovy.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "deft",
@@ -114,7 +153,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/deft.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/deft.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "impact",
@@ -122,7 +164,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/impact.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/impact.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "jensen",
@@ -130,7 +175,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/jensen.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/jensen.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "peanut",
@@ -138,7 +186,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/peanut.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/peanut.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "ruler",
@@ -146,7 +197,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/ruler.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/ruler.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "scout",
@@ -154,7 +208,10 @@
       "portrait": "/assets/players/portraits/catalog-v1/scout.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/scout.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     },
     {
       "playerKey": "xiaohu",
@@ -162,7 +219,120 @@
       "portrait": "/assets/players/portraits/catalog-v1/xiaohu.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v1/xiaohu.webp",
       "approval": "approved",
-      "focus": { "x": 50, "y": 40 }
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hans-sama",
+      "playerName": "Hans Sama",
+      "portrait": "/assets/players/portraits/catalog-v2/hans-sama.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hans-sama.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hylissang",
+      "playerName": "Hylissang",
+      "portrait": "/assets/players/portraits/catalog-v2/hylissang.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hylissang.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jackeylove",
+      "playerName": "JackeyLove",
+      "portrait": "/assets/players/portraits/catalog-v2/jackeylove.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jackeylove.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "keria",
+      "playerName": "Keria",
+      "portrait": "/assets/players/portraits/catalog-v2/keria.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/keria.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mikyx",
+      "playerName": "Mikyx",
+      "portrait": "/assets/players/portraits/catalog-v2/mikyx.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mikyx.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "perkz",
+      "playerName": "Perkz",
+      "portrait": "/assets/players/portraits/catalog-v2/perkz.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/perkz.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "rekkles",
+      "playerName": "Rekkles",
+      "portrait": "/assets/players/portraits/catalog-v2/rekkles.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/rekkles.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "showmaker",
+      "playerName": "ShowMaker",
+      "portrait": "/assets/players/portraits/catalog-v2/showmaker.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/showmaker.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "sneaky",
+      "playerName": "Sneaky",
+      "portrait": "/assets/players/portraits/catalog-v2/sneaky.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/sneaky.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zven",
+      "playerName": "Zven",
+      "portrait": "/assets/players/portraits/catalog-v2/zven.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zven.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }

@@ -38,6 +38,14 @@ O primeiro lote pós-piloto prioriza dez jogadores recorrentes no arquivo histó
 | Scout | MID | aprovado |
 | Xiaohu | MID | aprovado |
 
+## Catálogo completo `catalog-v2`
+
+A produção integral foi autorizada pelo responsável do projeto em 2026-09-20. O arquivo histórico contém 346 nomes e 345 identidades visuais, pois `BrokenBlade` e `Broken Blade` compartilham a mesma pessoa e o mesmo asset. A expansão usa lotes versionados, inspeção visual por prancha e checkpoint no Git a cada lote.
+
+- Lote 01: Hans Sama, Hylissang, JackeyLove, Keria, Mikyx, Perkz, Rekkles, ShowMaker, Sneaky e Zven — aprovado e integrado.
+
+[Abrir a prancha do lote 01](screenshots/portrait-catalog-v2-batch-01.webp)
+
 ## Direção visual e prompt-base
 
 Os mestres foram produzidos com a ferramenta integrada de geração de imagens, uma chamada independente por identidade. Não foi usada fotografia dentro do produto nem geração por lote que repetisse um único rosto.

@@ -188,6 +188,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - `PlayerPortrait` reserva dimensões e aplica o contrato retrato aprovado → silhueta → avatar CSS na carta, equipe, resultado e card compartilhável. Falhas de imagem e identidades ausentes foram cobertas por E2E.
 - As dez entradas do piloto foram aprovadas em 2026-09-20: o produto mostra os retratos e preserva silhueta e avatar CSS como fallbacks.
 - O lote `catalog-v1` acrescenta Bwipo, Canyon, Chovy, Deft, Impact, Jensen, Peanut, Ruler, Scout e Xiaohu; seus retratos foram aprovados em 2026-09-20 e as silhuetas permanecem como fallback.
+- A produção do `catalog-v2` foi autorizada para todas as 345 identidades visuais do arquivo; o lote 01 elevou a cobertura para 30 identidades aprovadas, com checkpoints incrementais planejados até a conclusão.
 
 ### Fase 4: Cobertura Histórica e Readiness
 

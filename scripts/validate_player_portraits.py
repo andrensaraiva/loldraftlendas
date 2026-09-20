@@ -10,6 +10,15 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "src" / "data" / "player-portraits.json"
+ARCHIVE = ROOT / "src" / "data" / "archive-index.json"
+
+
+def portrait_key(value: str) -> str:
+    import re
+    import unicodedata
+
+    normalized = unicodedata.normalize("NFD", value.lower())
+    return re.sub(r"[^a-z0-9]", "", "".join(char for char in normalized if not unicodedata.combining(char)))
 
 
 def public_path(path: str) -> Path:
@@ -21,16 +30,25 @@ def public_path(path: str) -> Path:
 def main() -> None:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     entries = data.get("entries", [])
-    if data.get("version") != "catalog-v1" or len(entries) != 20:
-        raise SystemExit("Catalog manifest must contain twenty entries at version catalog-v1.")
-    if data.get("status") != "catalog_approved":
-        raise SystemExit("Catalog manifest must record its explicit approval.")
+    archive = json.loads(ARCHIVE.read_text(encoding="utf-8"))
+    expected = {portrait_key(player["name"]) for player in archive["players"]}
+    if data.get("version") != "catalog-v2":
+        raise SystemExit("Catalog manifest must be at version catalog-v2.")
+    if data.get("status") not in {"catalog_expanding", "catalog_complete"}:
+        raise SystemExit("Catalog manifest has an unexpected expansion status.")
     keys = [entry["playerKey"] for entry in entries]
     if len(keys) != len(set(keys)):
         raise SystemExit("Player keys must be unique.")
+    identity_keys = [portrait_key(entry["playerName"]) for entry in entries]
+    if len(identity_keys) != len(set(identity_keys)):
+        raise SystemExit("Normalized player identities must be unique.")
     approved = [entry for entry in entries if entry["approval"] == "approved"]
-    if len(approved) != 20:
-        raise SystemExit("Catalog v1 must contain twenty approved entries.")
+    if len(approved) != len(entries):
+        raise SystemExit("Every published catalog entry must be approved.")
+    if not set(identity_keys).issubset(expected):
+        raise SystemExit("Manifest contains an identity outside the historical archive.")
+    if data.get("status") == "catalog_complete" and set(identity_keys) != expected:
+        raise SystemExit("Complete catalog does not cover every historical identity.")
     for entry in entries:
         if entry["approval"] not in {"approved", "pending", "rejected"}:
             raise SystemExit(f"Unexpected approval state for {entry['playerName']}.")
@@ -41,7 +59,10 @@ def main() -> None:
             with Image.open(path) as image:
                 if image.size != (768, 768) or image.format != "WEBP":
                     raise SystemExit(f"Unexpected image contract for {path}: {image.format} {image.size}")
-    print(f"Validated {len(entries)} portrait identities and {len(entries) * 2} WebP assets.")
+    print(
+        f"Validated {len(entries)}/{len(expected)} portrait identities "
+        f"and {len(entries) * 2} WebP assets."
+    )
 
 
 if __name__ == "__main__":
