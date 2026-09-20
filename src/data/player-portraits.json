@@ -1103,6 +1103,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "yagao",
+      "playerName": "Yagao",
+      "portrait": "/assets/players/portraits/catalog-v2/yagao.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/yagao.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zeka",
+      "playerName": "Zeka",
+      "portrait": "/assets/players/portraits/catalog-v2/zeka.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zeka.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "abbedagge",
+      "playerName": "Abbedagge",
+      "portrait": "/assets/players/portraits/catalog-v2/abbedagge.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/abbedagge.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "acorn",
+      "playerName": "Acorn",
+      "portrait": "/assets/players/portraits/catalog-v2/acorn.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/acorn.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "adam",
+      "playerName": "Adam",
+      "portrait": "/assets/players/portraits/catalog-v2/adam.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/adam.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "aiming",
+      "playerName": "Aiming",
+      "portrait": "/assets/players/portraits/catalog-v2/aiming.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/aiming.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "alphari",
+      "playerName": "Alphari",
+      "portrait": "/assets/players/portraits/catalog-v2/alphari.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/alphari.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "alvaro",
+      "playerName": "Alvaro",
+      "portrait": "/assets/players/portraits/catalog-v2/alvaro.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/alvaro.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "amazing",
+      "playerName": "Amazing",
+      "portrait": "/assets/players/portraits/catalog-v2/amazing.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/amazing.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "amazingj",
+      "playerName": "AmazingJ",
+      "portrait": "/assets/players/portraits/catalog-v2/amazingj.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/amazingj.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
