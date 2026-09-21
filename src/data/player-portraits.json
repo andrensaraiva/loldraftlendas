@@ -2533,6 +2533,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "fredy122",
+      "playerName": "fredy122",
+      "portrait": "/assets/players/portraits/catalog-v2/fredy122.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/fredy122.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "fresskowy",
+      "playerName": "Fresskowy",
+      "portrait": "/assets/players/portraits/catalog-v2/fresskowy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/fresskowy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "froggen",
+      "playerName": "Froggen",
+      "portrait": "/assets/players/portraits/catalog-v2/froggen.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/froggen.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "fzzf",
+      "playerName": "FZZF",
+      "portrait": "/assets/players/portraits/catalog-v2/fzzf.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/fzzf.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ggoong",
+      "playerName": "Ggoong",
+      "portrait": "/assets/players/portraits/catalog-v2/ggoong.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ggoong.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "gilius",
+      "playerName": "Gilius",
+      "portrait": "/assets/players/portraits/catalog-v2/gilius.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/gilius.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "gimgoon",
+      "playerName": "GimGoon",
+      "portrait": "/assets/players/portraits/catalog-v2/gimgoon.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/gimgoon.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "godlike",
+      "playerName": "GodLike",
+      "portrait": "/assets/players/portraits/catalog-v2/godlike.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/godlike.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "godv",
+      "playerName": "GodV",
+      "portrait": "/assets/players/portraits/catalog-v2/godv.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/godv.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "gogoing",
+      "playerName": "Gogoing",
+      "portrait": "/assets/players/portraits/catalog-v2/gogoing.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/gogoing.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
