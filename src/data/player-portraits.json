@@ -2973,6 +2973,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "loveling",
+      "playerName": "LoveLing",
+      "portrait": "/assets/players/portraits/catalog-v2/loveling.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/loveling.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "lucid",
+      "playerName": "Lucid",
+      "portrait": "/assets/players/portraits/catalog-v2/lucid.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/lucid.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "lvmao",
+      "playerName": "LvMao",
+      "portrait": "/assets/players/portraits/catalog-v2/lvmao.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/lvmao.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "malrang",
+      "playerName": "Malrang",
+      "portrait": "/assets/players/portraits/catalog-v2/malrang.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/malrang.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "maple",
+      "playerName": "Maple",
+      "portrait": "/assets/players/portraits/catalog-v2/maple.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/maple.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "marin",
+      "playerName": "MaRin",
+      "portrait": "/assets/players/portraits/catalog-v2/marin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/marin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "maxlore",
+      "playerName": "Maxlore",
+      "portrait": "/assets/players/portraits/catalog-v2/maxlore.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/maxlore.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mireu",
+      "playerName": "Mireu",
+      "portrait": "/assets/players/portraits/catalog-v2/mireu.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mireu.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "moham",
+      "playerName": "Moham",
+      "portrait": "/assets/players/portraits/catalog-v2/moham.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/moham.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mor",
+      "playerName": "Mor",
+      "portrait": "/assets/players/portraits/catalog-v2/mor.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mor.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
