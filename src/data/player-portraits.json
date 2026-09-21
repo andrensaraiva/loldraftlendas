@@ -3633,6 +3633,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "vizicsacsi",
+      "playerName": "Vizicsacsi",
+      "portrait": "/assets/players/portraits/catalog-v2/vizicsacsi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/vizicsacsi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "vsta",
+      "playerName": "Vsta",
+      "portrait": "/assets/players/portraits/catalog-v2/vsta.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/vsta.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "wadid",
+      "playerName": "WADID",
+      "portrait": "/assets/players/portraits/catalog-v2/wadid.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/wadid.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "watch",
+      "playerName": "Watch",
+      "portrait": "/assets/players/portraits/catalog-v2/watch.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/watch.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "wayward",
+      "playerName": "Wayward",
+      "portrait": "/assets/players/portraits/catalog-v2/wayward.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/wayward.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "wickd",
+      "playerName": "Wickd",
+      "portrait": "/assets/players/portraits/catalog-v2/wickd.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/wickd.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "willer",
+      "playerName": "Willer",
+      "portrait": "/assets/players/portraits/catalog-v2/willer.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/willer.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "woody",
+      "playerName": "Woody",
+      "portrait": "/assets/players/portraits/catalog-v2/woody.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/woody.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "xerxe",
+      "playerName": "Xerxe",
+      "portrait": "/assets/players/portraits/catalog-v2/xerxe.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/xerxe.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "xiaoweixiao",
+      "playerName": "XiaoWeiXiao",
+      "portrait": "/assets/players/portraits/catalog-v2/xiaoweixiao.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/xiaoweixiao.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
