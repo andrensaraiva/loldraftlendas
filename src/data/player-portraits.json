@@ -2863,6 +2863,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "kaori",
+      "playerName": "Kaori",
+      "portrait": "/assets/players/portraits/catalog-v2/kaori.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kaori.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kasing",
+      "playerName": "kaSing",
+      "portrait": "/assets/players/portraits/catalog-v2/kasing.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kasing.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kid",
+      "playerName": "Kid",
+      "portrait": "/assets/players/portraits/catalog-v2/kid.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kid.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kikis",
+      "playerName": "Kikis",
+      "portrait": "/assets/players/portraits/catalog-v2/kikis.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kikis.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kitties",
+      "playerName": "Kitties",
+      "portrait": "/assets/players/portraits/catalog-v2/kitties.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kitties.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kold",
+      "playerName": "Kold",
+      "portrait": "/assets/players/portraits/catalog-v2/kold.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kold.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "korol",
+      "playerName": "Korol",
+      "portrait": "/assets/players/portraits/catalog-v2/korol.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/korol.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "lira",
+      "playerName": "Lira",
+      "portrait": "/assets/players/portraits/catalog-v2/lira.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/lira.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "loken",
+      "playerName": "LokeN",
+      "portrait": "/assets/players/portraits/catalog-v2/loken.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/loken.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "loulex",
+      "playerName": "loulex",
+      "portrait": "/assets/players/portraits/catalog-v2/loulex.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/loulex.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
