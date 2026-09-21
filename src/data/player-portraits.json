@@ -3303,6 +3303,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "rikara",
+      "playerName": "Rikara",
+      "portrait": "/assets/players/portraits/catalog-v2/rikara.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/rikara.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "river",
+      "playerName": "River",
+      "portrait": "/assets/players/portraits/catalog-v2/river.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/river.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "road",
+      "playerName": "Road",
+      "portrait": "/assets/players/portraits/catalog-v2/road.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/road.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "san",
+      "playerName": "san",
+      "portrait": "/assets/players/portraits/catalog-v2/san.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/san.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "save",
+      "playerName": "Save",
+      "portrait": "/assets/players/portraits/catalog-v2/save.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/save.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "selfmade",
+      "playerName": "Selfmade",
+      "portrait": "/assets/players/portraits/catalog-v2/selfmade.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/selfmade.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "sencux",
+      "playerName": "Sencux",
+      "portrait": "/assets/players/portraits/catalog-v2/sencux.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/sencux.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "shad0w",
+      "playerName": "Shad0w",
+      "portrait": "/assets/players/portraits/catalog-v2/shad0w.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/shad0w.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "shanks",
+      "playerName": "Shanks",
+      "portrait": "/assets/players/portraits/catalog-v2/shanks.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/shanks.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "sheo",
+      "playerName": "Sheo",
+      "portrait": "/assets/players/portraits/catalog-v2/sheo.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/sheo.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
