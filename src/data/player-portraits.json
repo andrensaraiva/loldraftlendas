@@ -3523,6 +3523,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "taki",
+      "playerName": "Taki",
+      "portrait": "/assets/players/portraits/catalog-v2/taki.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/taki.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "targamas",
+      "playerName": "Targamas",
+      "portrait": "/assets/players/portraits/catalog-v2/targamas.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/targamas.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "tbq",
+      "playerName": "tbq",
+      "portrait": "/assets/players/portraits/catalog-v2/tbq.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/tbq.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "teddy",
+      "playerName": "Teddy",
+      "portrait": "/assets/players/portraits/catalog-v2/teddy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/teddy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "tore",
+      "playerName": "Tore",
+      "portrait": "/assets/players/portraits/catalog-v2/tore.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/tore.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "tusin",
+      "playerName": "TusiN",
+      "portrait": "/assets/players/portraits/catalog-v2/tusin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/tusin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "u",
+      "playerName": "U",
+      "portrait": "/assets/players/portraits/catalog-v2/u.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/u.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ucal",
+      "playerName": "Ucal",
+      "portrait": "/assets/players/portraits/catalog-v2/ucal.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ucal.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "umti",
+      "playerName": "UmTi",
+      "portrait": "/assets/players/portraits/catalog-v2/umti.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/umti.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "vasilii",
+      "playerName": "Vasilii",
+      "portrait": "/assets/players/portraits/catalog-v2/vasilii.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/vasilii.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
