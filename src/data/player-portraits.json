@@ -2313,6 +2313,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "crownie",
+      "playerName": "Crownie",
+      "portrait": "/assets/players/portraits/catalog-v2/crownie.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/crownie.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cryin",
+      "playerName": "Cryin",
+      "portrait": "/assets/players/portraits/catalog-v2/cryin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cryin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cyanide",
+      "playerName": "Cyanide",
+      "portrait": "/assets/players/portraits/catalog-v2/cyanide.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cyanide.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "dade",
+      "playerName": "dade",
+      "portrait": "/assets/players/portraits/catalog-v2/dade.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/dade.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "damonte",
+      "playerName": "Damonte",
+      "portrait": "/assets/players/portraits/catalog-v2/damonte.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/damonte.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "dandy",
+      "playerName": "DanDy",
+      "portrait": "/assets/players/portraits/catalog-v2/dandy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/dandy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "dire",
+      "playerName": "Dire",
+      "portrait": "/assets/players/portraits/catalog-v2/dire.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/dire.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "disamis",
+      "playerName": "Disamis",
+      "portrait": "/assets/players/portraits/catalog-v2/disamis.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/disamis.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "doggo",
+      "playerName": "Doggo",
+      "portrait": "/assets/players/portraits/catalog-v2/doggo.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/doggo.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "duke",
+      "playerName": "Duke",
+      "portrait": "/assets/players/portraits/catalog-v2/duke.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/duke.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
