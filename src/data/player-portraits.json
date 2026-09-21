@@ -2753,6 +2753,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "iwandy",
+      "playerName": "Iwandy",
+      "portrait": "/assets/players/portraits/catalog-v2/iwandy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/iwandy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jactroll",
+      "playerName": "Jactroll",
+      "portrait": "/assets/players/portraits/catalog-v2/jactroll.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jactroll.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jiizuke",
+      "playerName": "Jiizuke",
+      "portrait": "/assets/players/portraits/catalog-v2/jiizuke.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jiizuke.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jinjiao",
+      "playerName": "Jinjiao",
+      "portrait": "/assets/players/portraits/catalog-v2/jinjiao.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jinjiao.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "jun",
+      "playerName": "Jun",
+      "portrait": "/assets/players/portraits/catalog-v2/jun.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/jun.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "junjia",
+      "playerName": "JunJia",
+      "portrait": "/assets/players/portraits/catalog-v2/junjia.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/junjia.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kael",
+      "playerName": "Kael",
+      "portrait": "/assets/players/portraits/catalog-v2/kael.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kael.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kaiser",
+      "playerName": "Kaiser",
+      "portrait": "/assets/players/portraits/catalog-v2/kaiser.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kaiser.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kaiwing",
+      "playerName": "Kaiwing",
+      "portrait": "/assets/players/portraits/catalog-v2/kaiwing.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kaiwing.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "kakao",
+      "playerName": "KaKAO",
+      "portrait": "/assets/players/portraits/catalog-v2/kakao.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/kakao.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
