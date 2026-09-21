@@ -3083,6 +3083,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "morgan",
+      "playerName": "Morgan",
+      "portrait": "/assets/players/portraits/catalog-v2/morgan.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/morgan.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "morttheus",
+      "playerName": "Morttheus",
+      "portrait": "/assets/players/portraits/catalog-v2/morttheus.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/morttheus.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "mystic",
+      "playerName": "Mystic",
+      "portrait": "/assets/players/portraits/catalog-v2/mystic.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/mystic.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nagne",
+      "playerName": "Nagne",
+      "portrait": "/assets/players/portraits/catalog-v2/nagne.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nagne.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "namei",
+      "playerName": "NaMei",
+      "portrait": "/assets/players/portraits/catalog-v2/namei.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/namei.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "noname",
+      "playerName": "NoName",
+      "portrait": "/assets/players/portraits/catalog-v2/noname.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/noname.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nrated",
+      "playerName": "nRated",
+      "portrait": "/assets/players/portraits/catalog-v2/nrated.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nrated.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nuc",
+      "playerName": "nuc",
+      "portrait": "/assets/players/portraits/catalog-v2/nuc.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nuc.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nuclear",
+      "playerName": "Nuclear",
+      "portrait": "/assets/players/portraits/catalog-v2/nuclear.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nuclear.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "nyph",
+      "playerName": "Nyph",
+      "portrait": "/assets/players/portraits/catalog-v2/nyph.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/nyph.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
