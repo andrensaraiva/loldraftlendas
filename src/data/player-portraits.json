@@ -2203,6 +2203,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "boal",
+      "playerName": "Boal",
+      "portrait": "/assets/players/portraits/catalog-v2/boal.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/boal.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cabochard",
+      "playerName": "Cabochard",
+      "portrait": "/assets/players/portraits/catalog-v2/cabochard.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cabochard.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "candypanda",
+      "playerName": "CandyPanda",
+      "portrait": "/assets/players/portraits/catalog-v2/candypanda.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/candypanda.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "chasy",
+      "playerName": "Chasy",
+      "portrait": "/assets/players/portraits/catalog-v2/chasy.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/chasy.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cloud",
+      "playerName": "Cloud",
+      "portrait": "/assets/players/portraits/catalog-v2/cloud.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cloud.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cola",
+      "playerName": "Cola",
+      "portrait": "/assets/players/portraits/catalog-v2/cola.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cola.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "comp",
+      "playerName": "Comp",
+      "portrait": "/assets/players/portraits/catalog-v2/comp.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/comp.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "condi",
+      "playerName": "Condi",
+      "portrait": "/assets/players/portraits/catalog-v2/condi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/condi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "cool",
+      "playerName": "Cool",
+      "portrait": "/assets/players/portraits/catalog-v2/cool.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/cool.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "corn",
+      "playerName": "Corn",
+      "portrait": "/assets/players/portraits/catalog-v2/corn.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/corn.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
