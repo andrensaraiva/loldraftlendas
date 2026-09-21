@@ -3413,6 +3413,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "shook",
+      "playerName": "Shook",
+      "portrait": "/assets/players/portraits/catalog-v2/shook.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/shook.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "skewmond",
+      "playerName": "SkewMond",
+      "portrait": "/assets/players/portraits/catalog-v2/skewmond.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/skewmond.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "sofm",
+      "playerName": "SofM",
+      "portrait": "/assets/players/portraits/catalog-v2/sofm.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/sofm.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "solo",
+      "playerName": "Solo",
+      "portrait": "/assets/players/portraits/catalog-v2/solo.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/solo.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "spica",
+      "playerName": "Spica",
+      "portrait": "/assets/players/portraits/catalog-v2/spica.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/spica.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "stixxay",
+      "playerName": "Stixxay",
+      "portrait": "/assets/players/portraits/catalog-v2/stixxay.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/stixxay.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "summit",
+      "playerName": "Summit",
+      "portrait": "/assets/players/portraits/catalog-v2/summit.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/summit.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "sword",
+      "playerName": "Sword",
+      "portrait": "/assets/players/portraits/catalog-v2/sword.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/sword.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "swordart",
+      "playerName": "SwordArt",
+      "portrait": "/assets/players/portraits/catalog-v2/swordart.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/swordart.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "tabzz",
+      "playerName": "Tabzz",
+      "portrait": "/assets/players/portraits/catalog-v2/tabzz.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/tabzz.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
