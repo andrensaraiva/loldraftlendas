@@ -1873,6 +1873,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "spirit",
+      "playerName": "Spirit",
+      "portrait": "/assets/players/portraits/catalog-v2/spirit.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/spirit.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "supa",
+      "playerName": "Supa",
+      "portrait": "/assets/players/portraits/catalog-v2/supa.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/supa.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "tactical",
+      "playerName": "Tactical",
+      "portrait": "/assets/players/portraits/catalog-v2/tactical.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/tactical.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "trick",
+      "playerName": "Trick",
+      "portrait": "/assets/players/portraits/catalog-v2/trick.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/trick.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "upset",
+      "playerName": "Upset",
+      "portrait": "/assets/players/portraits/catalog-v2/upset.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/upset.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "vander",
+      "playerName": "Vander",
+      "portrait": "/assets/players/portraits/catalog-v2/vander.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/vander.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "wei",
+      "playerName": "Wei",
+      "portrait": "/assets/players/portraits/catalog-v2/wei.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/wei.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "weiwei",
+      "playerName": "Weiwei",
+      "portrait": "/assets/players/portraits/catalog-v2/weiwei.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/weiwei.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "xiye",
+      "playerName": "xiye",
+      "portrait": "/assets/players/portraits/catalog-v2/xiye.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/xiye.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "xpeke",
+      "playerName": "xPeke",
+      "portrait": "/assets/players/portraits/catalog-v2/xpeke.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/xpeke.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
