@@ -1,7 +1,7 @@
 {
   "version": "catalog-v2",
   "promptVersion": 1,
-  "status": "catalog_expanding",
+  "status": "catalog_complete",
   "generatedAt": "2026-09-21",
   "entries": [
     {
@@ -3738,6 +3738,61 @@
       "playerName": "XiaoWeiXiao",
       "portrait": "/assets/players/portraits/catalog-v2/xiaoweixiao.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v2/xiaoweixiao.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "yuyanjia",
+      "playerName": "yuyanjia",
+      "portrait": "/assets/players/portraits/catalog-v2/yuyanjia.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/yuyanjia.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zefa",
+      "playerName": "Zefa",
+      "portrait": "/assets/players/portraits/catalog-v2/zefa.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zefa.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zero",
+      "playerName": "Zero",
+      "portrait": "/assets/players/portraits/catalog-v2/zero.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zero.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zoom",
+      "playerName": "Zoom",
+      "portrait": "/assets/players/portraits/catalog-v2/zoom.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zoom.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zz1tai",
+      "playerName": "Zz1tai",
+      "portrait": "/assets/players/portraits/catalog-v2/zz1tai.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zz1tai.webp",
       "approval": "approved",
       "focus": {
         "x": 50,
