@@ -2,7 +2,7 @@
   "version": "catalog-v2",
   "promptVersion": 1,
   "status": "catalog_expanding",
-  "generatedAt": "2026-09-20",
+  "generatedAt": "2026-09-21",
   "entries": [
     {
       "playerKey": "bin",
@@ -1758,6 +1758,116 @@
       "playerName": "Nemesis",
       "portrait": "/assets/players/portraits/catalog-v2/nemesis.webp",
       "silhouette": "/assets/players/silhouettes/catalog-v2/nemesis.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ning",
+      "playerName": "Ning",
+      "portrait": "/assets/players/portraits/catalog-v2/ning.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ning.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "noah",
+      "playerName": "Noah",
+      "portrait": "/assets/players/portraits/catalog-v2/noah.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/noah.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "olleh",
+      "playerName": "Olleh",
+      "portrait": "/assets/players/portraits/catalog-v2/olleh.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/olleh.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "pawn",
+      "playerName": "PawN",
+      "portrait": "/assets/players/portraits/catalog-v2/pawn.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/pawn.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "peyz",
+      "playerName": "Peyz",
+      "portrait": "/assets/players/portraits/catalog-v2/peyz.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/peyz.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "powerofevil",
+      "playerName": "PowerOfEvil",
+      "portrait": "/assets/players/portraits/catalog-v2/powerofevil.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/powerofevil.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "quad",
+      "playerName": "Quad",
+      "portrait": "/assets/players/portraits/catalog-v2/quad.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/quad.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "rascal",
+      "playerName": "Rascal",
+      "portrait": "/assets/players/portraits/catalog-v2/rascal.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/rascal.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "score",
+      "playerName": "Score",
+      "portrait": "/assets/players/portraits/catalog-v2/score.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/score.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "smoothie",
+      "playerName": "Smoothie",
+      "portrait": "/assets/players/portraits/catalog-v2/smoothie.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/smoothie.webp",
       "approval": "approved",
       "focus": {
         "x": 50,
