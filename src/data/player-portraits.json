@@ -3193,6 +3193,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "palafox",
+      "playerName": "Palafox",
+      "portrait": "/assets/players/portraits/catalog-v2/palafox.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/palafox.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "perfect",
+      "playerName": "PerfecT",
+      "portrait": "/assets/players/portraits/catalog-v2/perfect.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/perfect.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "peter",
+      "playerName": "Peter",
+      "portrait": "/assets/players/portraits/catalog-v2/peter.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/peter.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "piccaboo",
+      "playerName": "Piccaboo",
+      "portrait": "/assets/players/portraits/catalog-v2/piccaboo.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/piccaboo.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "poby",
+      "playerName": "Poby",
+      "portrait": "/assets/players/portraits/catalog-v2/poby.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/poby.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "pyl",
+      "playerName": "Pyl",
+      "portrait": "/assets/players/portraits/catalog-v2/pyl.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/pyl.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "quid",
+      "playerName": "Quid",
+      "portrait": "/assets/players/portraits/catalog-v2/quid.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/quid.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ray",
+      "playerName": "Ray",
+      "portrait": "/assets/players/portraits/catalog-v2/ray.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ray.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "reignover",
+      "playerName": "Reignover",
+      "portrait": "/assets/players/portraits/catalog-v2/reignover.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/reignover.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "rest",
+      "playerName": "Rest",
+      "portrait": "/assets/players/portraits/catalog-v2/rest.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/rest.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
