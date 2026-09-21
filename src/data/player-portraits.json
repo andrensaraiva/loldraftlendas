@@ -2643,6 +2643,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "haro",
+      "playerName": "Haro",
+      "portrait": "/assets/players/portraits/catalog-v2/haro.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/haro.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "haru",
+      "playerName": "Haru",
+      "portrait": "/assets/players/portraits/catalog-v2/haru.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/haru.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "heart",
+      "playerName": "Heart",
+      "portrait": "/assets/players/portraits/catalog-v2/heart.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/heart.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hiro02",
+      "playerName": "Hiro02",
+      "portrait": "/assets/players/portraits/catalog-v2/hiro02.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hiro02.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hizto",
+      "playerName": "Hizto",
+      "portrait": "/assets/players/portraits/catalog-v2/hizto.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hizto.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hojin",
+      "playerName": "Hojin",
+      "portrait": "/assets/players/portraits/catalog-v2/hojin.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hojin.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "hongq",
+      "playerName": "HongQ",
+      "portrait": "/assets/players/portraits/catalog-v2/hongq.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/hongq.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "huanfeng",
+      "playerName": "huanfeng",
+      "portrait": "/assets/players/portraits/catalog-v2/huanfeng.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/huanfeng.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "icon",
+      "playerName": "icon",
+      "portrait": "/assets/players/portraits/catalog-v2/icon.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/icon.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "insec",
+      "playerName": "inSec",
+      "portrait": "/assets/players/portraits/catalog-v2/insec.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/insec.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
