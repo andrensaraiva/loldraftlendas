@@ -1983,6 +1983,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "xun",
+      "playerName": "Xun",
+      "portrait": "/assets/players/portraits/catalog-v2/xun.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/xun.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "yellowstar",
+      "playerName": "YellOwStaR",
+      "portrait": "/assets/players/portraits/catalog-v2/yellowstar.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/yellowstar.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "yeon",
+      "playerName": "Yeon",
+      "portrait": "/assets/players/portraits/catalog-v2/yeon.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/yeon.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "yike",
+      "playerName": "Yike",
+      "portrait": "/assets/players/portraits/catalog-v2/yike.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/yike.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zeyzal",
+      "playerName": "Zeyzal",
+      "portrait": "/assets/players/portraits/catalog-v2/zeyzal.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zeyzal.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zika",
+      "playerName": "Zika",
+      "portrait": "/assets/players/portraits/catalog-v2/zika.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zika.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "zionspartan",
+      "playerName": "ZionSpartan",
+      "portrait": "/assets/players/portraits/catalog-v2/zionspartan.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/zionspartan.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "957",
+      "playerName": "957",
+      "portrait": "/assets/players/portraits/catalog-v2/957.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/957.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ale",
+      "playerName": "Ale",
+      "portrait": "/assets/players/portraits/catalog-v2/ale.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ale.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "anda",
+      "playerName": "AnDa",
+      "portrait": "/assets/players/portraits/catalog-v2/anda.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/anda.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
