@@ -2093,6 +2093,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "angel",
+      "playerName": "Angel",
+      "portrait": "/assets/players/portraits/catalog-v2/angel.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/angel.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "armut",
+      "playerName": "Armut",
+      "portrait": "/assets/players/portraits/catalog-v2/armut.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/armut.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "arrow",
+      "playerName": "Arrow",
+      "portrait": "/assets/players/portraits/catalog-v2/arrow.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/arrow.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "athena",
+      "playerName": "Athena",
+      "portrait": "/assets/players/portraits/catalog-v2/athena.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/athena.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "attila",
+      "playerName": "Attila",
+      "portrait": "/assets/players/portraits/catalog-v2/attila.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/attila.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "avoidless",
+      "playerName": "Avoidless",
+      "portrait": "/assets/players/portraits/catalog-v2/avoidless.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/avoidless.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "azhi",
+      "playerName": "Azhi",
+      "portrait": "/assets/players/portraits/catalog-v2/azhi.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/azhi.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "bean",
+      "playerName": "BEAN",
+      "portrait": "/assets/players/portraits/catalog-v2/bean.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/bean.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "ben",
+      "playerName": "Ben",
+      "portrait": "/assets/players/portraits/catalog-v2/ben.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/ben.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "betty",
+      "playerName": "Betty",
+      "portrait": "/assets/players/portraits/catalog-v2/betty.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/betty.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
