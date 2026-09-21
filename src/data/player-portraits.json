@@ -2423,6 +2423,116 @@
         "x": 50,
         "y": 40
       }
+    },
+    {
+      "playerKey": "duro",
+      "playerName": "Duro",
+      "portrait": "/assets/players/portraits/catalog-v2/duro.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/duro.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "eddie",
+      "playerName": "Eddie",
+      "portrait": "/assets/players/portraits/catalog-v2/eddie.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/eddie.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "effort",
+      "playerName": "Effort",
+      "portrait": "/assets/players/portraits/catalog-v2/effort.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/effort.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "emenes",
+      "playerName": "EMENES",
+      "portrait": "/assets/players/portraits/catalog-v2/emenes.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/emenes.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "eyla",
+      "playerName": "Eyla",
+      "portrait": "/assets/players/portraits/catalog-v2/eyla.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/eyla.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "febiven",
+      "playerName": "FEBIVEN",
+      "portrait": "/assets/players/portraits/catalog-v2/febiven.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/febiven.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "finn",
+      "playerName": "Finn",
+      "portrait": "/assets/players/portraits/catalog-v2/finn.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/finn.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "flakked",
+      "playerName": "Flakked",
+      "portrait": "/assets/players/portraits/catalog-v2/flakked.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/flakked.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "flame",
+      "playerName": "Flame",
+      "portrait": "/assets/players/portraits/catalog-v2/flame.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/flame.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
+    },
+    {
+      "playerKey": "forg1ven",
+      "playerName": "FORG1VEN",
+      "portrait": "/assets/players/portraits/catalog-v2/forg1ven.webp",
+      "silhouette": "/assets/players/silhouettes/catalog-v2/forg1ven.webp",
+      "approval": "approved",
+      "focus": {
+        "x": 50,
+        "y": 40
+      }
     }
   ]
 }
