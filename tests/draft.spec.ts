@@ -138,6 +138,7 @@ test('approved portrait catalog uses portraits and falls back safely when assets
   const portrait = zeus.locator('.player-portrait');
   await expect(portrait).toHaveAttribute('data-portrait-state', 'approved');
   await expect(portrait.locator('img')).toHaveAttribute('src', /portraits\/pilot-v1\/zeus\.webp$/);
+  await expect(page.locator('.player-card .player-portrait')).toHaveCount(3);
 
   await portrait.locator('img').evaluate((image) => {
     (image as HTMLImageElement).src = '/assets/players/portraits/missing.webp';
@@ -147,7 +148,8 @@ test('approved portrait catalog uses portraits and falls back safely when assets
     (image as HTMLImageElement).src = '/assets/players/silhouettes/missing.webp';
   });
   await expect(zeus.locator('.player-avatar')).toBeVisible();
-  await expect(page.locator('.player-card .player-avatar')).toHaveCount(3);
+  await expect(page.locator('.player-card .player-avatar')).toHaveCount(1);
+  await expect(page.locator('.player-card .player-portrait')).toHaveCount(2);
 });
 
 test('a browser-local campaign can be resumed or replaced from the home screen', async ({

@@ -28,8 +28,9 @@ export function PlayerChoiceCarousel({
 
   function goTo(index: number) {
     const next = Math.max(0, Math.min(options.length - 1, index));
-    const item = viewport.current?.children[next] as HTMLElement | undefined;
-    item?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    const container = viewport.current;
+    const item = container?.children[next] as HTMLElement | undefined;
+    if (container && item) container.scrollTo({ left: item.offsetLeft, behavior: 'auto' });
     setActiveIndex(next);
   }
 
