@@ -91,7 +91,7 @@ begin
 end;
 $$;
 
-revoke all on function public.submit_rating_feedback(uuid, text, integer, text, integer, text, integer, text, text) from public;
+revoke all on function public.submit_rating_feedback(uuid, text, integer, text, integer, text, integer, text, text) from public, anon, authenticated;
 grant execute on function public.submit_rating_feedback(uuid, text, integer, text, integer, text, integer, text, text) to anon, authenticated;
 
 alter function public.get_admin_dashboard_metrics()
@@ -180,5 +180,5 @@ begin
 end;
 $$;
 
-revoke all on function public.get_admin_dashboard_metrics() from public;
+revoke all on function public.get_admin_dashboard_metrics() from public, anon, authenticated;
 grant execute on function public.get_admin_dashboard_metrics() to authenticated;

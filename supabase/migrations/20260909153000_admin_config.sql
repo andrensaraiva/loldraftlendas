@@ -19,7 +19,7 @@ as $$
   );
 $$;
 
-revoke all on function public.is_admin() from public;
+revoke all on function public.is_admin() from public, anon, authenticated;
 grant execute on function public.is_admin() to authenticated;
 
 create table if not exists public.product_config (
@@ -38,7 +38,7 @@ create table if not exists public.product_config (
       'EUROPE_NORTH_AMERICA'
     ]::text[]
   ),
-  analytics_enabled boolean not null default true,
+  analytics_enabled boolean not null default false,
   maintenance_banner text,
   dataset_version text not null,
   updated_at timestamptz not null default now()
@@ -57,7 +57,7 @@ values (
   3,
   array[2015, 2017, 2019, 2020, 2022, 2023],
   array['KOREA', 'CHINA', 'EUROPE', 'NORTH_AMERICA', 'OTHER_REGIONS', 'EUROPE_NORTH_AMERICA'],
-  true,
+  false,
   'multi-era-v1.0.0'
 )
 on conflict (id) do nothing;
@@ -112,5 +112,5 @@ begin
 end;
 $$;
 
-revoke all on function public.update_product_config(integer, smallint, integer[], text[], boolean, text, text) from public;
+revoke all on function public.update_product_config(integer, smallint, integer[], text[], boolean, text, text) from public, anon, authenticated;
 grant execute on function public.update_product_config(integer, smallint, integer[], text[], boolean, text, text) to authenticated;

@@ -6,6 +6,8 @@ test-results/
 playwright-report/
 *.tsbuildinfo
 .vercel/
+supabase/.temp/
+supabase/.branches/
 data/research/worlds-2017/raw/oe-2017.csv
 data/research/worlds-2017/raw/*.tgz
 __pycache__/

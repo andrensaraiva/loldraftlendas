@@ -12,7 +12,7 @@ as $$
   where id = true;
 $$;
 
-revoke all on function public.get_public_product_config() from public;
+revoke all on function public.get_public_product_config() from public, anon, authenticated;
 grant execute on function public.get_public_product_config() to anon, authenticated;
 
 create table if not exists public.analytics_events (
@@ -109,7 +109,7 @@ begin
 end;
 $$;
 
-revoke all on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) from public;
+revoke all on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) from public, anon, authenticated;
 grant execute on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) to anon, authenticated;
 
 create table if not exists public.campaign_feedback (
@@ -153,5 +153,5 @@ begin
 end;
 $$;
 
-revoke all on function public.submit_campaign_feedback(uuid, text, text) from public;
+revoke all on function public.submit_campaign_feedback(uuid, text, text) from public, anon, authenticated;
 grant execute on function public.submit_campaign_feedback(uuid, text, text) to anon, authenticated;

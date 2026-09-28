@@ -141,7 +141,7 @@ begin
     where
       event_name = 'worlds_started'
       and properties ->> 'game_plan' in ('aggression', 'teamfight', 'control_pick', 'scaling')
-    order by campaign_id, created_at desc
+    order by campaign_id, occurred_at desc
   ),
   finished as (
     select distinct on (campaign_id)
@@ -149,7 +149,7 @@ begin
       properties ->> 'outcome' as outcome
     from public.analytics_events
     where event_name = 'campaign_finished'
-    order by campaign_id, created_at desc
+    order by campaign_id, occurred_at desc
   ),
   aggregate_plans as (
     select
@@ -188,7 +188,7 @@ begin
 end;
 $$;
 
-revoke all on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) from public;
+revoke all on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) from public, anon, authenticated;
 grant execute on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) to anon, authenticated;
-revoke all on function public.get_admin_dashboard_metrics() from public;
+revoke all on function public.get_admin_dashboard_metrics() from public, anon, authenticated;
 grant execute on function public.get_admin_dashboard_metrics() to authenticated;

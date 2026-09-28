@@ -54,6 +54,8 @@ Migrations Supabase, em ordem:
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
+A preparação local da operação também está concluída: CLI/configuração Supabase versionados, replay limpo das quinze migrations, lint SQL, smoke de RLS/autenticação/allowlist/dashboard, preflight de ambiente, build de deploy protegido, headers equivalentes, cache corrigido para assets de URL estável, smoke público e workflow manual. A execução remota continua pendente e está sequenciada em [operations-runbook.md](operations-runbook.md).
+
 ### Fase 3.1: CI/CD e Qualidade
 
 - Node 22 LTS definido em [.nvmrc](../.nvmrc) e `engines` do [package.json](../package.json).
@@ -221,7 +223,7 @@ npx playwright install chromium firefox webkit
 npm run test:e2e
 ```
 
-Resultados registrados no checkpoint de 2026-09-28: 104 testes unitários passaram; a validação de retratos confirmou 345 identidades e 690 WebPs de 768 px; type check, build e auditoria estática da beta passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 62 execuções E2E passaram na CI, incluindo Chromium desktop/mobile e smoke em Firefox/WebKit, com 8 skips condicionais esperados. O bundle inicial ficou em 492,06 kB (116,70 kB gzip); o CSS inicial em 80,74 kB (16,77 kB gzip), o arquivo em um chunk lazy de 53,19 kB (13,41 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), todos dentro dos budgets vigentes. O smoke pós-deploy passou contra o preview de produção local.
+Resultados registrados no checkpoint de 2026-09-28: 104 testes unitários passaram; a validação de retratos confirmou 345 identidades e 690 WebPs de 768 px; type check, build e auditoria estática da beta passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 62 execuções E2E passaram na CI, incluindo Chromium desktop/mobile e smoke em Firefox/WebKit, com 8 skips condicionais esperados. O bundle inicial sem backend ficou em 492,06 kB (116,70 kB gzip) e o build com ambiente público do Supabase ficou em 494,54 kB (117,40 kB gzip); o CSS inicial em 80,74 kB (16,77 kB gzip), o arquivo em um chunk lazy de 53,19 kB (13,41 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), todos dentro dos budgets vigentes. O smoke pós-deploy passou contra o preview de produção local.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 

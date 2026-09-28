@@ -164,5 +164,5 @@ begin
 end;
 $$;
 
-revoke all on function public.get_admin_dashboard_metrics() from public;
+revoke all on function public.get_admin_dashboard_metrics() from public, anon, authenticated;
 grant execute on function public.get_admin_dashboard_metrics() to authenticated;

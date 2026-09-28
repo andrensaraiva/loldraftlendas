@@ -57,6 +57,17 @@ jobs:
       - name: Validate player portrait assets
         run: npm run assets:portraits:validate
 
+      - name: Validate operations preparation
+        run: npm run ops:preflight
+
+      - name: Start local Supabase database
+        run: npx supabase db start
+
+      - name: Replay and lint Supabase migrations
+        run: |
+          npx supabase db reset --local
+          npm run ops:db:lint
+
       - name: Production build
         run: npm run build
 

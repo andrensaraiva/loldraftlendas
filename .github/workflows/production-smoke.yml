@@ -1,0 +1,42 @@
+name: Production smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      site_url:
+        description: Public HTTPS origin, without a trailing slash
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    name: Public site and Supabase boundaries
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: production
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Smoke public deployment
+        run: npm run smoke:deploy
+        env:
+          SMOKE_BASE_URL: ${{ inputs.site_url }}
+
+      - name: Smoke Supabase public API and RLS
+        run: npm run smoke:supabase
+        env:
+          SUPABASE_URL: ${{ secrets.PRODUCTION_SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.PRODUCTION_SUPABASE_ANON_KEY }}

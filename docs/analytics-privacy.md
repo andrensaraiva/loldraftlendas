@@ -2,6 +2,8 @@
 
 Analytics is optional and is enabled only when the public product configuration returns `analytics_enabled: true`. If Supabase is not configured, or the configuration endpoint is unavailable, tracking stays disabled and gameplay continues normally.
 
+Fresh database installations also start with analytics disabled. An allowlisted administrator must explicitly enable it after the operational and privacy checks pass.
+
 ## Data Collected
 
 Each event contains a random campaign ID, a random browser-session ID, an event name, a coarse device type (`mobile` or `desktop`), and a restricted properties object. The application does not send account data, e-mail, IP addresses, cookies, raw user-agent strings, names of visitors, passwords, or tokens.

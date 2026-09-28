@@ -34,6 +34,7 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 ## P1 — Viabilizar beta fechada real
 
 - [ ] **4. Preparar e ativar a operação real.**
+  - [x] Versionar e validar localmente configuração, migrations/RLS, autenticação administrativa, preflight, build protegido, smokes e runbook sem criar recursos remotos.
   - [ ] Criar o projeto Supabase e aplicar as migrations na ordem documentada.
   - [ ] Configurar administrador, allowlist e variáveis públicas.
   - [ ] Validar autenticação, RLS, analytics, feedback e dashboard fora do modo demo.
@@ -76,8 +77,9 @@ Perfil de jogador, ranking verificado, multiplayer assíncrono, multiplayer em t
 
 ## Registro de execução
 
-| Data | Item | Estado | Evidência |
-| --- | --- | --- | --- |
-| 2026-09-28 | 1. Estabilizar CI e suíte E2E | Concluído | 104 unitários, TypeScript, build, auditoria, 60 E2E Chromium e cinco repetições dos cenários corrigidos passaram. O [workflow do checkpoint `48fbe23`](https://github.com/andrensaraiva/loldraftlendas/actions/runs/36468094295) passou com a matriz completa. |
-| 2026-09-28 | 2. Sincronizar documentação e estado real | Concluído | Estado atual conferido contra código, manifesto e build; relatório multi-era regenerado de forma byte-estável; 104 unitários, TypeScript, build, auditoria e todos os links locais passaram. |
-| 2026-09-28 | 3. Fechar orçamento e validação dos assets | Concluído | 345 silhuetas reconstruídas como WebP lossless, de 24,53 para 7,91 MiB (−67,8%), sem recompressão dos 31,76 MiB de retratos; segunda geração com zero divergências de hash. O validador aprovou 690 assets e passou com unitários, TypeScript, build, auditoria e E2E de retrato/PWA em desktop e mobile. |
+| Data       | Item                                       | Estado    | Evidência                                                                                                                                                                                                                                                                                                                                      |
+| ---------- | ------------------------------------------ | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 2026-09-28 | 1. Estabilizar CI e suíte E2E              | Concluído | 104 unitários, TypeScript, build, auditoria, 60 E2E Chromium e cinco repetições dos cenários corrigidos passaram. O [workflow do checkpoint `48fbe23`](https://github.com/andrensaraiva/loldraftlendas/actions/runs/36468094295) passou com a matriz completa.                                                                                 |
+| 2026-09-28 | 2. Sincronizar documentação e estado real  | Concluído | Estado atual conferido contra código, manifesto e build; relatório multi-era regenerado de forma byte-estável; 104 unitários, TypeScript, build, auditoria e todos os links locais passaram.                                                                                                                                                   |
+| 2026-09-28 | 3. Fechar orçamento e validação dos assets | Concluído | 345 silhuetas reconstruídas como WebP lossless, de 24,53 para 7,91 MiB (−67,8%), sem recompressão dos 31,76 MiB de retratos; segunda geração com zero divergências de hash. O validador aprovou 690 assets e passou com unitários, TypeScript, build, auditoria e E2E de retrato/PWA em desktop e mobile.                                      |
+| 2026-09-28 | 4A. Preparar a operação real               | Concluído | Preparação somente local: replay das quinze migrations, lint sem erros, RLS das cinco tabelas, autenticação/allowlist/dashboard, analytics desligado por padrão, ambiente HTTPS sem secrets administrativos, build protegido, headers/cache, smokes, workflow manual e runbook. Contas remotas, deploy e monitoramento permanecem desmarcados. |

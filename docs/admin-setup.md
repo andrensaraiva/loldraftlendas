@@ -16,7 +16,7 @@ Remove `VITE_ADMIN_DEMO_MODE` before configuring Supabase or deploying.
 
 ## 1. Create the Supabase Project
 
-Create a Supabase project, then run these migrations in filename order in the project's SQL Editor or through the Supabase CLI:
+Create a Supabase project, then apply these migrations in filename order through the versioned Supabase CLI workflow. Do not apply schema changes manually in the remote SQL Editor, because that bypasses migration history.
 
 - [20260909153000_admin_config.sql](../supabase/migrations/20260909153000_admin_config.sql)
 - [20260909160000_analytics_feedback.sql](../supabase/migrations/20260909160000_analytics_feedback.sql)
@@ -47,6 +47,21 @@ The migrations create:
 - A complete public configuration snapshot plus an allowlisted analytics-property schema.
 - Aggregate completion and replay comparison between Classic and Almanac modes.
 - Aggregate campaign completion and title rates for the four game plans.
+
+The initial product configuration keeps analytics disabled. Enable it from the authenticated admin only after the production RLS, ingestion, dashboard, and privacy checks pass.
+
+The repository pins the CLI and includes `supabase/config.toml`. Validate locally with Docker, inspect the remote plan, and only then apply it:
+
+```sh
+npx supabase start
+npx supabase db reset --local
+npx supabase link --project-ref PROJECT_REF
+npx supabase db push --dry-run
+npx supabase db push
+npx supabase migration list
+```
+
+The complete activation and rollback sequence is in [operations-runbook.md](operations-runbook.md).
 
 Create the maintainer account in Supabase Auth, copy its UUID, and add it in the SQL Editor:
 

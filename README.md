@@ -137,12 +137,12 @@ Um único temporizador cancelável controla a reprodução na interface. A parti
 
 A campanha ativa fica somente no navegador do jogador e pode ser apagada por **Novo draft**. Os resumos concluídos possuem limpeza explícita e separada em **Seu histórico local**. Nenhuma chave, login, perfil ou persistência remota de usuário foi adicionada.
 
-## Vercel, Firebase e Supabase depois
+## Vercel, Firebase e Supabase
 
 O frontend é estático e pode ser hospedado em qualquer uma das duas plataformas:
 
-- **Vercel:** importar o repositório, preset Vite, build `npm run build`, saída `dist`. `vercel.json` já está incluído. [Documentação oficial](https://vercel.com/docs/frameworks/frontend/vite).
-- **Firebase Hosting:** build igual, `firebase.json` incluído, diretório `dist`. Vincular um projeto Firebase antes de executar `firebase deploy --only hosting`.
+- **Vercel:** importar o repositório, preset Vite, build protegido `npm run deploy:build`, saída `dist`. `vercel.json` já está incluído. [Documentação oficial](https://vercel.com/docs/frameworks/frontend/vite).
+- **Firebase Hosting:** executar o mesmo preflight/build, com `firebase.json` e diretório `dist`, antes de `firebase deploy --only hosting`.
 
 O build usa `VITE_SITE_URL` para gerar canonical, Open Graph, Twitter Card, `robots.txt` e sitemap com URLs absolutas. Na Vercel, `VERCEL_PROJECT_PRODUCTION_URL` é usado automaticamente quando `VITE_SITE_URL` não estiver definido. Em outros provedores, configure por exemplo `VITE_SITE_URL=https://seu-dominio.example`, sem barra final.
 
@@ -151,6 +151,8 @@ Quando houver necessidade de dados remotos, implemente `DataRepository.load()` c
 Nenhum serviço remoto foi criado e nenhuma publicação foi feita. Se rankings forem adicionados, resultados competitivos precisam ser recalculados por um backend confiável, já que a simulação atual roda no navegador. Não colocar chaves administrativas em variáveis `VITE_*`.
 
 A área `/admin` usa Supabase Auth, uma allowlist explícita em `admin_users` e RLS. A migração e a configuração de variáveis locais estão no [guia de setup do Supabase](docs/admin-setup.md).
+
+A preparação operacional reproduzível, os gates de ambiente, os smokes sem gravação e o procedimento de rollback estão no [runbook de operação](docs/operations-runbook.md). Essa preparação não cria contas, não aplica migrations remotas e não publica o site.
 
 ## Verificação
 
@@ -167,9 +169,13 @@ npm run data:readiness:build # Regera o inventário de cobertura 2011–2025
 npm run data:readiness:validate # Falha se inventário ou relatório estiverem desatualizados
 npm run data:archive:validate # Falha se o índice público estiver desatualizado
 npm run pwa:icons          # Rasteriza o favicon aprovado nos tamanhos 192 e 512
+npm run ops:preflight      # Valida migrations, RLS, deploy e ambiente quando fornecido
+npm run ops:db:lint        # Reprova erros/warnings SQL com o Supabase local ativo
+npm run deploy:build       # Exige ambiente HTTPS/Supabase real antes do build de deploy
 npm run audit:beta         # Confere budgets, manifesto, ícones, SW, robots e sitemap do build
 npm run test:e2e:cross-browser # Smoke em Chromium, Firefox e WebKit
 npm run smoke:deploy -- https://seu-dominio.example # Smoke após publicar
+npm run smoke:supabase     # Smoke remoto de API/RLS sem gravar payload válido
 ```
 
 Para baixar os CSVs de pesquisa: `npm run data:multi:download`. Para inspecionar um lote: `python scripts/data/build_multi_era.py --snapshot --year 2020 --region LPL`. O preview não substitui a produção. O limite de trocas fica em `DRAFT_CONFIG.exchanges`; a simulação aceita `DRAFT_SAMPLES` e `EXCHANGE_GAIN_THRESHOLD`.

@@ -12,6 +12,7 @@ Atualizado em 2026-09-28.
 - Orçamento estático: JavaScript inicial abaixo de 500 kB e CSS inicial abaixo de 100 kB.
 - Manifesto instalável, ícones 192/512, service worker com `/admin` network-only, robots e 583 URLs no sitemap.
 - Smoke pós-deploy reproduzível para home, arquivo, manifesto, robots e sitemap.
+- Preparação operacional reproduzível para migrations/RLS, ambiente de produção, headers, deploy e smoke Supabase. As quinze migrations, o lint e o fluxo local de autenticação/allowlist/dashboard passaram; nenhuma conta ou infraestrutura remota foi criada.
 - Movimento reduzido desliga transições/animações globalmente; a celebração de título é decorativa e não captura interação.
 - Feedback curto de campanha e feedback contextual de rating já existem, mas só enviam fora do modo demo quando analytics/Supabase estiverem configurados.
 
@@ -21,6 +22,7 @@ Atualizado em 2026-09-28.
 npm test
 npm run typecheck
 npm run assets:portraits:validate
+npm run ops:preflight
 npm run build
 npm run audit:beta
 npm run test:e2e
@@ -36,7 +38,7 @@ npx playwright install chromium firefox webkit
 
 ## Validações externas pendentes
 
-1. Criar o Supabase, aplicar as quinze migrations, cadastrar o administrador e configurar as variáveis públicas.
+1. Seguir [operations-runbook.md](operations-runbook.md): criar o Supabase, reaplicar as quinze migrations, cadastrar o administrador e configurar as variáveis públicas.
 2. Publicar em HTTPS e executar `npm run smoke:deploy -- https://dominio`.
 3. Confirmar o funil e os erros reais no painel com eventos de uma sessão de teste.
 4. Testar ao menos um iPhone/Safari e um Android/Chrome físicos: instalação, rotação, teclado, compartilhamento e retorno de background.

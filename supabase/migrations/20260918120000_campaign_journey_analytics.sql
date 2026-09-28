@@ -71,5 +71,5 @@ begin
 end;
 $$;
 
-revoke all on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) from public;
+revoke all on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) from public, anon, authenticated;
 grant execute on function public.record_analytics_event(uuid, uuid, uuid, text, text, jsonb) to anon, authenticated;
