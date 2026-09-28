@@ -13,6 +13,7 @@ asset_count=len(asset_manifest['assets']);pool_count=sum(len(entry['groups'])*5 
 team_count=player_count//5;event_count=len(CONFIG);slot_label=f'{slot_count:,}'.replace(',','.')
 lines=['# Draft Lendas — pesquisa, UX e balanceamento multi-era v1.6','',
 f'A versão reúne {player_count} PlayerVersions reais, {slot_label} associações jogador–campeão e {pool_count} pools elegíveis. Foram executadas 100.000 campanhas em dez cenários e uma auditoria adicional de 10.000 drafts. A escolha estratégica e as trocas aumentam a chance de título; a LCK e a LPL continuam favorecidas. Este relatório não declara equilíbrio competitivo nem validação de diversão com pessoas reais.','',
+'> **Escopo temporal:** dados, ratings e simulações descrevem o dataset multi-era v1.6. As seções de UX e arquitetura preservam o checkpoint em que este relatório foi publicado; para o produto atual, consulte o [README](../README.md) e o [status do projeto](status-do-projeto.md).','',
 '## Escopo e cobertura','',
 '| Worlds | Patch | Jogos do evento principal | Jogadores jogáveis | Slots | Regiões |',
 '|---|---|---:|---:|---:|---|']

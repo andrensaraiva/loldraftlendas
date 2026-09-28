@@ -2,7 +2,7 @@
 
 ## Estado do piloto
 
-O lote `pilot-v1` contém dez identidades e foi **aprovado pelo responsável do projeto em 2026-09-20**. As dez entradas estão como `approved`: o produto mostra o retrato mestre e mantém silhueta e avatar CSS como fallbacks seguros. A direção visual está liberada para expansão gradual do catálogo.
+O lote `pilot-v1` contém dez identidades e foi **aprovado pelo responsável do projeto em 2026-09-20**. As dez entradas estão como `approved`: o produto mostra o retrato mestre e mantém silhueta e avatar CSS como fallbacks seguros. Essa aprovação liberou a expansão que culminou no catálogo completo descrito abaixo.
 
 [Abrir a prancha dos dez retratos](screenshots/portrait-pilot-v1.webp)
 
@@ -44,12 +44,14 @@ A produção integral foi autorizada pelo responsável do projeto em 2026-09-20.
 
 - Lote 01: Hans Sama, Hylissang, JackeyLove, Keria, Mikyx, Perkz, Rekkles, ShowMaker, Sneaky e Zven — aprovado e integrado.
 - Lote 02: 369, Bdd, Bjergsen, Doran, Gumayusi, Humanoid, Inspired, knight, Ming, Oner, Tarzan, Uzi, Viper, Wunder, Xmithie, BeryL, Blaber, BrokenBlade, Broxah e Clearlove — aprovado e integrado.
-- Lotes 03–13: 110 identidades adicionais — aprovadas, integradas e registradas em pranchas individuais por lote.
+- Lotes 03–31: 290 identidades adicionais — aprovadas, integradas e registradas em pranchas individuais por lote.
+- Lote 32: cinco identidades finais — aprovadas, integradas e registradas na prancha de encerramento.
 
 [Abrir a prancha do lote 01](screenshots/portrait-catalog-v2-batch-01.webp)
 [Abrir a prancha do lote 02](screenshots/portrait-catalog-v2-batch-02.webp)
+[Abrir a prancha do lote final](screenshots/portrait-catalog-v2-batch-32.webp)
 
-As pranchas seguintes usam o padrão `docs/screenshots/portrait-catalog-v2-batch-NN.webp`. Após o lote 13, a cobertura é de 160 das 345 identidades visuais. A fila restante está pronta para retomar dinamicamente a partir do manifesto, sem repetir imagens já registradas.
+As demais pranchas usam o padrão `docs/screenshots/portrait-catalog-v2-batch-NN.webp`. Após o lote 32, o manifesto está em `catalog_complete`: 345 das 345 identidades visuais possuem retrato e silhueta aprovados, totalizando 690 WebPs validados.
 
 ## Direção visual e prompt-base
 

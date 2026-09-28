@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-20. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–4, 7–9, a aprovação do piloto técnico e a produção do primeiro lote de expansão do Pacote 5. A branch `main` remota contém checkpoints separados de dados, produto e baseline visual.
+Atualizado em 2026-09-28. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–5 e 7–9 e a estabilização da suíte E2E. A branch `main` remota contém checkpoints separados de dados, produto, retratos, baseline visual e recuperação da CI.
 
 ## Objetivo Preservado
 
@@ -166,7 +166,7 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - O jogador pode exportar um JSON versionado ou apagar todo o histórico após uma confirmação explícita. Falhas e formatos antigos de storage nunca bloqueiam o jogo.
 - Testes unitários cobrem deduplicação, limite, conquistas, privacidade, exportação e dados inválidos; E2E cobre visualização, download real e limpeza em desktop/mobile.
 
-### Plano de Finalização: Pacotes 0–4 e piloto do Pacote 5
+### Plano de Finalização: Pacotes 0–5
 
 - Baseline visual registrada em seis viewports obrigatórios, com contratos de dados, eventos, URLs públicas futuras e orçamento dos retratos documentados.
 - `CampaignReport` puro deriva placares, fases, força, impacto do plano, compatibilidade, zebras, composições, KDA narrativo, campeões e recortes históricos sem consumir RNG.
@@ -184,11 +184,11 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - A primeira visita abre um onboarding versionado de cinco etapas; conclusão ou pulo impedem repetição automática, enquanto **Como jogar** sempre permite reabrir o fluxo.
 - O onboarding aceita setas, indicadores clicáveis e swipe, mantém o foco no diálogo nativo e desliga animações com `prefers-reduced-motion`.
 - Abertura, conclusão e pulo possuem eventos anônimos com origem e quantidade de etapas vistas, validados pela migration preparada para o Supabase real.
-- O pipeline de retratos possui guia, prompt-base, dez mestres otimizados, dez silhuetas duotone derivadas, prancha de revisão e validação reproduzível de dimensões/manifesto.
+- O pipeline de retratos possui guia, prompt-base, lotes versionados, pranchas de revisão e validação reproduzível de dimensões/manifesto.
 - `PlayerPortrait` reserva dimensões e aplica o contrato retrato aprovado → silhueta → avatar CSS na carta, equipe, resultado e card compartilhável. Falhas de imagem e identidades ausentes foram cobertas por E2E.
 - As dez entradas do piloto foram aprovadas em 2026-09-20: o produto mostra os retratos e preserva silhueta e avatar CSS como fallbacks.
 - O lote `catalog-v1` acrescenta Bwipo, Canyon, Chovy, Deft, Impact, Jensen, Peanut, Ruler, Scout e Xiaohu; seus retratos foram aprovados em 2026-09-20 e as silhuetas permanecem como fallback.
-- A produção do `catalog-v2` foi autorizada para todas as 345 identidades visuais do arquivo; os lotes 01–13 elevaram a cobertura para 160 identidades aprovadas e 320 WebPs validados. Restam 185 identidades, com retomada dinâmica pelo manifesto e checkpoints incrementais até a conclusão.
+- A produção do `catalog-v2` foi concluída no lote 32. O manifesto está em `catalog_complete`, com 345 identidades aprovadas e 690 WebPs validados; `BrokenBlade` e `Broken Blade` compartilham a mesma identidade visual.
 
 ### Fase 4: Cobertura Histórica e Readiness
 
@@ -216,11 +216,11 @@ npm test
 npm run typecheck
 npm run build
 py -3 scripts/data/validate_multi_era.py
-npx playwright install chromium
+npx playwright install chromium firefox webkit
 npm run test:e2e
 ```
 
-Resultados registrados após o Pacote 9: 104 testes unitários passaram; a validação de retratos confirmou 10 identidades e 20 WebPs de 768 px; type check, build e auditoria estática da beta passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 62 execuções E2E passaram, incluindo a suíte Chromium desktop/mobile e smoke em Firefox/WebKit, com 8 skips condicionais esperados. O bundle inicial ficou em 424,45 kB (110,21 kB gzip); o arquivo está isolado em um chunk lazy de 53,19 kB (13,41 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), sem aviso acima de 500 kB. O smoke pós-deploy passou contra o preview de produção local.
+Resultados registrados no checkpoint de 2026-09-28: 104 testes unitários passaram; a validação de retratos confirmou 345 identidades e 690 WebPs de 768 px; type check, build e auditoria estática da beta passaram; a validação histórica confirmou 785 jogadores, chunks anuais, índices compactos, 3.925 associações, 235 pools elegíveis, 1.700 registros de assets históricos e 12 crosschecks de evento; o índice público cobre 12 edições, 346 jogadores, 160 campeões, 63 equipes e 583 URLs de sitemap; 78 arquivos multi-era e os 9 arquivos congelados de 2017 foram reproduzidos byte a byte; as calibrações de estratégias e planos executaram 100 mil campanhas cada; o inventário de readiness 2011–2025 está reproduzível; 62 execuções E2E passaram na CI, incluindo Chromium desktop/mobile e smoke em Firefox/WebKit, com 8 skips condicionais esperados. O bundle inicial ficou em 492,06 kB (116,70 kB gzip); o CSS inicial em 80,74 kB (16,77 kB gzip), o arquivo em um chunk lazy de 53,19 kB (13,41 kB gzip), o relatório final em 7,53 kB (2,26 kB gzip) e a jornada em 2,63 kB (1,26 kB gzip), todos dentro dos budgets vigentes. O smoke pós-deploy passou contra o preview de produção local.
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
@@ -235,11 +235,11 @@ O Supabase não foi configurado com credenciais reais durante o desenvolvimento.
 5. Reinicie `npm run dev` e teste `/admin` com uma conta autorizada e uma conta não autorizada.
 6. Configure as mesmas variáveis públicas no provedor de deploy. Nunca use a `service_role key` em variáveis `VITE_*`.
 
-O workflow CI foi incluído, mas ainda precisa ser observado no GitHub Actions após push, pois não há token/integração do GitHub disponível localmente.
+O workflow CI foi observado após push real em 2026-09-28. Node 22, validações históricas e de retratos, build, auditoria e a matriz Playwright completa passaram no [GitHub Actions](https://github.com/andrensaraiva/loldraftlendas/actions/runs/36468094295).
 
 ## Como Retomar
 
-Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de execução](analise-7a0-e-roadmap-produto.md). A trilha **Compartilhar e Desafiar** deve avançar em paralelo ao backfill histórico, sem relaxar os gates de dados abaixo.
+Fila operacional vigente: [Plano de Prioridades e Execução](plano-prioridades-e-execucao.md). A [análise comparativa 7a0 × Draft Lendas](analise-7a0-e-roadmap-produto.md) permanece como registro histórico das decisões que originaram as entregas atuais.
 
 ### Pacote 7 Concluído: Arquivo Histórico
 
@@ -253,25 +253,24 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 - Objetivo, elegibilidade, resultado e histórico local dos sete dias funcionam sem backend real.
 - Save, histórico e analytics preservam a categoria e o cumprimento do objetivo.
 
-### Pacote 9 Concluído Localmente: Polimento da Beta
+### Pacote 9 Concluído e Validado na CI: Polimento da Beta
 
 - A vitória mundial ganhou celebração decorativa, sem interação e desativada por `prefers-reduced-motion`; eliminações não a exibem.
 - Busca e filtros vazios do arquivo agora explicam o estado e oferecem recuperação direta.
-- A matriz possui smoke real em Chromium, Firefox e WebKit; os três navegadores gerenciados passaram localmente.
+- A matriz possui smoke real em Chromium, Firefox e WebKit; os três navegadores gerenciados passaram na CI.
 - `audit:beta` valida budgets, idioma, viewport, manifesto, ícones, service worker, robots e as 583 URLs do sitemap.
 - `smoke:deploy` verifica home, arquivo, manifesto, robots e sitemap em qualquer URL publicada.
 - Sons não foram incluídos sem aprovação. Aparelhos físicos, trace Core Web Vitals, deploy HTTPS e painel real permanecem validações externas documentadas em [beta-readiness.md](beta-readiness.md).
 
 ### Próximo Checkpoint: Dependências Externas
 
-- Continuar a expansão do catálogo em lotes, preservando manifesto, revisão e fallbacks dos vinte retratos aprovados.
 - Configurar Supabase/hospedagem para executar o Pacote 6 e validar analytics reais.
 - Rodar o checklist físico e o trace de performance antes de abrir a beta fechada.
 
-### Expansão Liberada: Pacote 5
+### Pacote 5 Concluído: Catálogo de Retratos
 
-- A aprovação do piloto foi registrada em [player-portrait-pipeline.md](player-portrait-pipeline.md); retratos aprovados, silhuetas e avatar CSS permanecem em três níveis de fallback.
-- A expansão do catálogo pode avançar em lotes versionados, com validação visual e técnica antes de cada publicação.
+- A aprovação do piloto e os 32 lotes do catálogo estão registrados em [player-portrait-pipeline.md](player-portrait-pipeline.md); retratos aprovados, silhuetas e avatar CSS permanecem em três níveis de fallback.
+- O catálogo cobre as 345 identidades visuais do arquivo e o manifesto está marcado como completo.
 - O Pacote 6 continua bloqueado até existir hospedagem e Supabase reais para persistência pública, limitação de abuso e Open Graph dinâmico.
 
 ### Trilha Paralela: Fase 4, Pesquisa Histórica de 2013
@@ -282,7 +281,7 @@ Fila de produto aprovada: [Análise comparativa 7a0 × Draft Lendas e plano de e
 
 ### Dependência Externa Posterior
 
-- Os Pacotes 2–5, 7 e 8 avançam sem backend real.
+- Os Pacotes 2–5 e 7–9 foram concluídos sem backend real.
 - Resultado público, comparação, Open Graph dinâmico e Gate B dependem de hospedagem e Supabase reais.
 - Perfil, ranking verificado e multiplayer permanecem fora deste ciclo.
 

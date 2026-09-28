@@ -2,7 +2,9 @@
 
 **Data da análise:** 12 de setembro de 2026  
 **Objetivo:** identificar o que torna o 7a0 atraente para o público, comparar essas forças com o estado real do Draft Lendas e transformar os achados em uma fila de produção executável.
-**Status da decisão:** aprovada para execução em 12 de setembro de 2026.
+**Status da decisão:** aprovada em 12 de setembro de 2026 e preservada como registro histórico. O backlog vigente está no [Plano de Prioridades e Execução](plano-prioridades-e-execucao.md).
+
+> **Nota de leitura:** comparações, lacunas e filas abaixo descrevem o checkpoint original de 12/09/2026. Elas explicam por que as funcionalidades foram priorizadas, mas não devem ser usadas como lista atual de pendências.
 
 ## Decisão recomendada
 
@@ -30,10 +32,13 @@ Esse pacote deve entrar **antes de conta, ranking global ou multiplayer online**
 - ✅ **2.4 Plano de jogo:** Agressão, Teamfight, Controle/Pick e Escala usam as tags existentes, efeito explicado e limitado, persistência completa e calibração reproduzível de 100 mil campanhas.
 - ✅ **2.5 Filtros de desafio:** edição e grupo podem ser combinados na home; recortes vazios são bloqueados e o snapshot exato segue no save/link.
 - ✅ **Pacotes locais de produto 3.1–3.4:** desafio diário, PWA, arquivo público e histórico local estão concluídos.
+- ✅ **Pacotes 0–5 e 7–9:** experiência mobile, relatórios, jornada, onboarding, catálogo completo de 345 identidades, arquivo, desafios diários e polimento foram concluídos.
+- ✅ **CI observada:** o workflow completo passou após push real em 2026-09-28.
+- ⚠️ **Pacote 6:** resultado público, comparação e Open Graph específico continuam pendentes de hospedagem e backend reais.
 - ⏭️ **Próximo pacote de dados:** D6, pesquisa de viabilidade e backfill de 2013.
-- 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real e observar o workflow no GitHub Actions.
+- 🔌 **Ação externa ainda necessária:** aplicar as migrations em um Supabase real, publicar em HTTPS e validar analytics com tráfego de teste.
 
-Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila atual precisa de duas trilhas: **confiabilidade/dados** e **produto/retenção**.
+Adicionar apenas mais anos melhora variedade, mas não resolve sozinho aquisição, compartilhamento ou retorno. A fila original foi organizada em duas trilhas: **confiabilidade/dados** e **produto/retenção**.
 
 ## Escopo e método
 
@@ -105,7 +110,7 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 - manter o detalhamento pós-jogo e a seed verificável em desafios;
 - medir se derrotas com alta probabilidade aumentam abandono ou revanche.
 
-## Comparação com o estado atual do Draft Lendas
+## Comparação no checkpoint de 12/09/2026
 
 | Área                   | 7a0                                                         | Draft Lendas hoje                                                                  | Diagnóstico                                                                                                |
 | ---------------------- | ----------------------------------------------------------- | ---------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -126,7 +131,9 @@ O Draft Lendas já calcula e guarda a chance de vitória, mostra a força das du
 | Feedback de rating     | Convite específico para contestar avaliação                 | Feedback geral Bom/Ok/Ruim ao fim e detalhes com fontes                            | **Quick win:** feedback contextual por jogador/campeão.                                                    |
 | Operação               | Produto público com conteúdo atualizado continuamente       | Supabase real e observação da CI ainda pendentes                                   | **Bloqueador operacional para aprender com usuários reais.**                                               |
 
-## O que está faltando no projeto
+## O que faltava no checkpoint de 12/09/2026
+
+Os itens abaixo são mantidos para auditoria da decisão. A maioria das lacunas de produto foi fechada; as pendências atuais estão consolidadas no [checklist operacional](plano-prioridades-e-execucao.md).
 
 ### Falta para publicação e aprendizado confiáveis
 
@@ -161,7 +168,7 @@ Sem o item 1, analytics e feedback ficam inativos fora do modo de demonstração
 3. recalibração global e versionamento a cada edição;
 4. revisão externa registrada antes de `PRODUCTION_READY`.
 
-## Fila integrada aprovada
+## Fila integrada original
 
 Os tamanhos abaixo são relativos: **S** (mudança localizada), **M** (vários componentes/contratos), **L** (nova capacidade transversal) e **XL** (backend e operação novos). Não são promessa de prazo.
 

@@ -20,11 +20,11 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
   - [x] Repetir o teste instável para comprovar estabilidade.
   - [x] Executar unitários, TypeScript, build, auditoria da beta e E2E Chromium.
   - [x] Confirmar a execução do workflow no GitHub após o push.
-- [ ] **2. Sincronizar documentação e estado real do produto.**
-  - [ ] Registrar 345/345 identidades e 32 lotes do catálogo de retratos.
-  - [ ] Corrigir quantidades de conquistas, testes, bundles e retratos.
-  - [ ] Marcar roadmaps antigos como documentos históricos quando aplicável.
-  - [ ] Remover pendências que já foram implementadas.
+- [x] **2. Sincronizar documentação e estado real do produto.**
+  - [x] Registrar 345/345 identidades e 32 lotes do catálogo de retratos.
+  - [x] Corrigir quantidades de conquistas, testes, bundles e retratos.
+  - [x] Marcar roadmaps antigos como documentos históricos quando aplicável.
+  - [x] Remover pendências que já foram implementadas.
 - [ ] **3. Fechar orçamento e validação dos assets de jogadores.**
   - [ ] Medir retratos e silhuetas contra o orçamento documentado.
   - [ ] Reotimizar os arquivos ou aprovar um novo orçamento baseado em medição.
@@ -79,3 +79,4 @@ Perfil de jogador, ranking verificado, multiplayer assíncrono, multiplayer em t
 | Data | Item | Estado | Evidência |
 | --- | --- | --- | --- |
 | 2026-09-28 | 1. Estabilizar CI e suíte E2E | Concluído | 104 unitários, TypeScript, build, auditoria, 60 E2E Chromium e cinco repetições dos cenários corrigidos passaram. O [workflow do checkpoint `48fbe23`](https://github.com/andrensaraiva/loldraftlendas/actions/runs/36468094295) passou com a matriz completa. |
+| 2026-09-28 | 2. Sincronizar documentação e estado real | Concluído | Estado atual conferido contra código, manifesto e build; relatório multi-era regenerado de forma byte-estável; 104 unitários, TypeScript, build, auditoria e todos os links locais passaram. |

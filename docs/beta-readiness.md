@@ -1,11 +1,12 @@
 # Beta Readiness
 
-Atualizado em 2026-09-19.
+Atualizado em 2026-09-28.
 
 ## Validado localmente
 
 - Build de produção, TypeScript, 104 testes unitários e suíte E2E completa.
 - Smoke do fluxo público em Chromium, Firefox e WebKit.
+- Catálogo completo com 345 identidades aprovadas e 690 WebPs de 768 px validados na CI.
 - Home, início do draft e arquivo histórico sem erros de página nos três motores.
 - Orçamento estático: JavaScript inicial abaixo de 500 kB e CSS inicial abaixo de 100 kB.
 - Manifesto instalável, ícones 192/512, service worker com `/admin` network-only, robots e 583 URLs no sitemap.
@@ -33,12 +34,11 @@ npx playwright install chromium firefox webkit
 
 ## Validações externas pendentes
 
-1. Continuar a expansão gradual do catálogo após a aprovação do `catalog-v1` registrada em 2026-09-20.
-2. Criar o Supabase, aplicar as quinze migrations, cadastrar o administrador e configurar as variáveis públicas.
-3. Publicar em HTTPS e executar `npm run smoke:deploy -- https://dominio`.
-4. Confirmar o funil e os erros reais no painel com eventos de uma sessão de teste.
-5. Testar ao menos um iPhone/Safari e um Android/Chrome físicos: instalação, rotação, teclado, compartilhamento e retorno de background.
-6. Decidir sobre sons somente após teste com jogadores; nenhum áudio foi incluído sem aprovação.
+1. Criar o Supabase, aplicar as quinze migrations, cadastrar o administrador e configurar as variáveis públicas.
+2. Publicar em HTTPS e executar `npm run smoke:deploy -- https://dominio`.
+3. Confirmar o funil e os erros reais no painel com eventos de uma sessão de teste.
+4. Testar ao menos um iPhone/Safari e um Android/Chrome físicos: instalação, rotação, teclado, compartilhamento e retorno de background.
+5. Decidir sobre sons somente após teste com jogadores; nenhum áudio foi incluído sem aprovação.
 
 ## Trace de performance pendente
 

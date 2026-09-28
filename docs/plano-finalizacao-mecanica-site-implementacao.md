@@ -1,10 +1,10 @@
 # Plano de Finalização — Mecânica, Site e Implementação
 
-**Status:** aprovado para execução
+**Status:** plano histórico executado parcialmente; backlog vigente em [Plano de Prioridades e Execução](plano-prioridades-e-execucao.md)
 
-**Atualizado em:** 2026-09-14
+**Atualizado em:** 2026-09-28
 
-**Execução em 2026-09-20:** Pacotes 0–4 e 7–9 concluídos no ambiente local. O piloto técnico e o primeiro lote de expansão do Pacote 5 foram aprovados, totalizando vinte retratos liberados. O Pacote 6 e os gates externos de beta aguardam backend, hospedagem e testes em aparelhos reais.
+**Estado atual:** Pacotes 0–5 e 7–9 concluídos; o catálogo visual cobre 345/345 identidades. O Pacote 6 e os gates externos de beta continuam aguardando backend, hospedagem, métricas reais e testes em aparelhos físicos. As seções abaixo preservam o plano original e seus critérios para rastreabilidade.
 
 **Objetivo:** fechar as partes mais importantes do Draft Lendas, preparar uma beta com jogadores reais e evitar aumentar o escopo com sistemas que não ajudam essa validação.
 
@@ -765,20 +765,20 @@ Um pacote só está pronto quando:
 - chat;
 - monetização.
 
-## 11. Decisões que precisam ser confirmadas antes dos respectivos pacotes
+## 11. Decisões e estado atual
 
-Estas decisões não bloqueiam o início dos Pacotes 0–4:
+Estado das decisões registradas no plano original:
 
-1. **Hospedagem:** Vercel ou Firebase para definir a estratégia de resultado/OG dinâmico.
-2. **Retratos:** aprovar o lote piloto antes de produzir o catálogo.
-3. **Silhueta:** escolher entre recorte sólido ou tratamento duotone depois de comparar no mobile.
-4. **Estatística global:** definir amostra mínima antes de exibir percentuais na jornada; recomendação inicial: ocultar abaixo de 30 campanhas válidas.
-5. **Campeões aleatórios:** decidir somente depois da primeira baseline externa; recomendação: não incluir na primeira beta.
-6. **Som:** validar se acrescenta emoção sem prejudicar uso discreto e mobile; sempre opcional.
+1. **Hospedagem — pendente:** escolher e configurar o ambiente que servirá resultado público e Open Graph dinâmico.
+2. **Retratos — concluído:** piloto, expansão e catálogo completo foram aprovados.
+3. **Silhueta — concluído:** tratamento duotone derivado foi adotado como segundo fallback.
+4. **Estatística global — pendente:** definir amostra mínima antes de exibir percentuais globais na jornada; recomendação inicial: ocultar abaixo de 30 campanhas válidas.
+5. **Campeões aleatórios — adiado:** não incluídos na primeira beta.
+6. **Som — pendente e opcional:** validar com jogadores antes de incluir.
 
-## 12. Próxima sessão recomendada
+## 12. Sequência original — concluída
 
-Começar pelo **Pacote 0** e pelo **Pacote 1**:
+Esta era a sequência recomendada antes da execução dos Pacotes 0–4:
 
 1. registrar screenshots atuais nos viewports definidos;
 2. extrair `PlayerCard` e criar o carrossel mobile;
@@ -786,4 +786,4 @@ Começar pelo **Pacote 0** e pelo **Pacote 1**:
 4. implementar navegação segura para início, continuar depois e abandono;
 5. adicionar E2E do novo comportamento antes de avançar para relatórios.
 
-Depois disso, implementar Pacotes 2, 3 e 4 em sequência. Essa ordem coloca uma versão clara e confortável nas mãos de jogadores reais sem ampliar o motor além do necessário.
+Os Pacotes 0–4 foram concluídos. A próxima sessão deve seguir o [checklist operacional vigente](plano-prioridades-e-execucao.md), sem reiniciar esta sequência histórica.
