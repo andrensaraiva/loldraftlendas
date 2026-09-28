@@ -45,6 +45,8 @@ Eventos adicionais previstos nos pacotes seguintes:
 
 ## Orçamento de retratos
 
+> Registro histórico da baseline. O pipeline vigente usa WebP quadrado de 768 px e os limites medidos em [player-portrait-pipeline.md](player-portrait-pipeline.md).
+
 - retrato moderno: até 120 kB;
 - silhueta: até 30 kB;
 - proporção mestre: `4 / 5`;

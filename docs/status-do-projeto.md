@@ -184,11 +184,12 @@ Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privac
 - A primeira visita abre um onboarding versionado de cinco etapas; conclusão ou pulo impedem repetição automática, enquanto **Como jogar** sempre permite reabrir o fluxo.
 - O onboarding aceita setas, indicadores clicáveis e swipe, mantém o foco no diálogo nativo e desliga animações com `prefers-reduced-motion`.
 - Abertura, conclusão e pulo possuem eventos anônimos com origem e quantidade de etapas vistas, validados pela migration preparada para o Supabase real.
-- O pipeline de retratos possui guia, prompt-base, lotes versionados, pranchas de revisão e validação reproduzível de dimensões/manifesto.
+- O pipeline de retratos possui guia, prompt-base, lotes versionados, pranchas de revisão e validação reproduzível de caminho, formato, dimensões, decodificação, paleta das silhuetas e orçamento individual/agregado.
 - `PlayerPortrait` reserva dimensões e aplica o contrato retrato aprovado → silhueta → avatar CSS na carta, equipe, resultado e card compartilhável. Falhas de imagem e identidades ausentes foram cobertas por E2E.
 - As dez entradas do piloto foram aprovadas em 2026-09-20: o produto mostra os retratos e preserva silhueta e avatar CSS como fallbacks.
 - O lote `catalog-v1` acrescenta Bwipo, Canyon, Chovy, Deft, Impact, Jensen, Peanut, Ruler, Scout e Xiaohu; seus retratos foram aprovados em 2026-09-20 e as silhuetas permanecem como fallback.
 - A produção do `catalog-v2` foi concluída no lote 32. O manifesto está em `catalog_complete`, com 345 identidades aprovadas e 690 WebPs validados; `BrokenBlade` e `Broken Blade` compartilham a mesma identidade visual.
+- Os retratos ocupam 31,76/35 MiB. As silhuetas foram reconstruídas como WebP lossless determinístico e caíram de 24,53 MiB para 7,91/9 MiB; a maior unidade de cada grupo respeita 140 KiB e 30 KiB. O cache da PWA foi promovido para `runtime-v2` para descartar as versões antigas após atualização segura.
 
 ### Fase 4: Cobertura Histórica e Readiness
 
@@ -271,6 +272,7 @@ Fila operacional vigente: [Plano de Prioridades e Execução](plano-prioridades-
 
 - A aprovação do piloto e os 32 lotes do catálogo estão registrados em [player-portrait-pipeline.md](player-portrait-pipeline.md); retratos aprovados, silhuetas e avatar CSS permanecem em três níveis de fallback.
 - O catálogo cobre as 345 identidades visuais do arquivo e o manifesto está marcado como completo.
+- O orçamento aprovado e automatizado é de 140 KiB/35 MiB para retratos e 30 KiB/9 MiB para silhuetas; o carregamento continua sob demanda, com lazy loading fora da primeira carta e cache de runtime limitado.
 - O Pacote 6 continua bloqueado até existir hospedagem e Supabase reais para persistência pública, limitação de abuso e Open Graph dinâmico.
 
 ### Trilha Paralela: Fase 4, Pesquisa Histórica de 2013

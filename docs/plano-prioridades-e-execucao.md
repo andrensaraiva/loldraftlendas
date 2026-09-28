@@ -25,11 +25,11 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
   - [x] Corrigir quantidades de conquistas, testes, bundles e retratos.
   - [x] Marcar roadmaps antigos como documentos históricos quando aplicável.
   - [x] Remover pendências que já foram implementadas.
-- [ ] **3. Fechar orçamento e validação dos assets de jogadores.**
-  - [ ] Medir retratos e silhuetas contra o orçamento documentado.
-  - [ ] Reotimizar os arquivos ou aprovar um novo orçamento baseado em medição.
-  - [ ] Fazer o validador reprovar dimensões, formato ou tamanho fora do contrato.
-  - [ ] Confirmar impacto no carregamento mobile e no cache da PWA.
+- [x] **3. Fechar orçamento e validação dos assets de jogadores.**
+  - [x] Medir retratos e silhuetas contra o orçamento documentado.
+  - [x] Reotimizar os arquivos ou aprovar um novo orçamento baseado em medição.
+  - [x] Fazer o validador reprovar dimensões, formato ou tamanho fora do contrato.
+  - [x] Confirmar impacto no carregamento mobile e no cache da PWA.
 
 ## P1 — Viabilizar beta fechada real
 
@@ -80,3 +80,4 @@ Perfil de jogador, ranking verificado, multiplayer assíncrono, multiplayer em t
 | --- | --- | --- | --- |
 | 2026-09-28 | 1. Estabilizar CI e suíte E2E | Concluído | 104 unitários, TypeScript, build, auditoria, 60 E2E Chromium e cinco repetições dos cenários corrigidos passaram. O [workflow do checkpoint `48fbe23`](https://github.com/andrensaraiva/loldraftlendas/actions/runs/36468094295) passou com a matriz completa. |
 | 2026-09-28 | 2. Sincronizar documentação e estado real | Concluído | Estado atual conferido contra código, manifesto e build; relatório multi-era regenerado de forma byte-estável; 104 unitários, TypeScript, build, auditoria e todos os links locais passaram. |
+| 2026-09-28 | 3. Fechar orçamento e validação dos assets | Concluído | 345 silhuetas reconstruídas como WebP lossless, de 24,53 para 7,91 MiB (−67,8%), sem recompressão dos 31,76 MiB de retratos; segunda geração com zero divergências de hash. O validador aprovou 690 assets e passou com unitários, TypeScript, build, auditoria e E2E de retrato/PWA em desktop e mobile. |

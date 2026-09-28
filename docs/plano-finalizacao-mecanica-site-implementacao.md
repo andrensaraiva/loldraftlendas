@@ -400,7 +400,7 @@ Etapas:
 - dimensões reservadas para evitar layout shift;
 - recorte consistente e `object-position` configurável no manifesto;
 - formato moderno para o retrato e PNG/SVG somente quando necessário para transparência;
-- orçamento sugerido de até 120 kB por retrato entregue ao navegador e até 30 kB por silhueta;
+- orçamento vigente de até 140 KiB por retrato e 30 KiB por silhueta, com tetos agregados de 35 MiB e 9 MiB para o catálogo;
 - nome de arquivo estável baseado em ID canônico, não no nome exibido;
 - hash/versão no manifesto;
 - créditos e aviso de imagem gerada atualizados no site;

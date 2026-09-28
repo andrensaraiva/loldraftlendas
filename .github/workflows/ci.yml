@@ -55,7 +55,7 @@ jobs:
         run: npm run data:archive:validate
 
       - name: Validate player portrait assets
-        run: python scripts/validate_player_portraits.py
+        run: npm run assets:portraits:validate
 
       - name: Production build
         run: npm run build

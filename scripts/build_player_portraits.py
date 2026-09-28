@@ -24,13 +24,18 @@ def derive_silhouette(image: Image.Image) -> Image.Image:
     return result
 
 
+def save_silhouette(image: Image.Image, destination: Path) -> None:
+    """Persist the three-color fallback without introducing lossy color noise."""
+    derive_silhouette(image).save(destination, "WEBP", lossless=True, method=6)
+
+
 def process(source: Path, portraits: Path, silhouettes: Path) -> tuple[Path, Path]:
     with Image.open(source) as master:
         portrait = ImageOps.fit(master.convert("RGB"), SIZE, Image.Resampling.LANCZOS)
     portrait_path = portraits / f"{source.stem}.webp"
     silhouette_path = silhouettes / f"{source.stem}.webp"
     portrait.save(portrait_path, "WEBP", quality=86, method=6)
-    derive_silhouette(portrait).save(silhouette_path, "WEBP", quality=82, method=6)
+    save_silhouette(portrait, silhouette_path)
     return portrait_path, silhouette_path
 
 

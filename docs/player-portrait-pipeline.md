@@ -78,11 +78,28 @@ O acento é ocre para TOP, teal para JG, violeta para MID, coral para ADC e azul
 Os PNGs mestres ficam preservados no diretório de geração da ferramenta. Para uma rodada aprovada, copie os mestres para uma pasta de trabalho e execute:
 
 ```sh
-py -3 scripts/build_player_portraits.py <mestres-png> public/assets/players/portraits/<versão> public/assets/players/silhouettes/<versão> --contact-sheet docs/screenshots/portrait-<versão>.webp
+python scripts/build_player_portraits.py <mestres-png> public/assets/players/portraits/<versão> public/assets/players/silhouettes/<versão> --contact-sheet docs/screenshots/portrait-<versão>.webp
 npm run assets:portraits:validate
 ```
 
-O script normaliza cada imagem para 768 × 768 WebP e deriva uma versão duotone da mesma composição, sem uma segunda interpretação gerativa. O manifesto [player-portraits.json](../src/data/player-portraits.json) registra versão, estado, caminhos e foco de corte.
+O script normaliza cada imagem para 768 × 768 WebP e deriva uma versão duotone lossless da mesma composição, sem uma segunda interpretação gerativa. O manifesto [player-portraits.json](../src/data/player-portraits.json) registra versão, estado, caminhos e foco de corte.
+
+Para reconstruir de forma determinística todas as silhuetas publicadas a partir dos retratos aprovados, execute:
+
+```sh
+npm run assets:portraits:optimize
+npm run assets:portraits:validate
+```
+
+## Contrato de formato, dimensões e bytes
+
+- Retrato: WebP 768 × 768, até 140 KiB por arquivo e até 35 MiB no catálogo completo.
+- Silhueta: WebP lossless 768 × 768, até 30 KiB por arquivo e até 9 MiB no catálogo completo.
+- O validador abre e decodifica os 690 arquivos, além de reprovar caminho, formato, dimensões, paleta lossless das silhuetas, limite individual ou limite agregado fora do contrato.
+
+A medição de 2026-09-28 encontrou 31,76 MiB nos 345 retratos, com máximo de 135,22 KiB. A troca da compressão lossy por lossless nas silhuetas reduziu esse conjunto de 24,53 MiB para 7,91 MiB (−67,8%), com máximo de 29,79 KiB, sem recomprimir os retratos. Uma segunda execução do otimizador produziu zero divergências de hash.
+
+No draft, somente o primeiro retrato da oferta é eager; os demais usam lazy loading, e a silhueta só é requisitada se o retrato falhar. Uma campanha pode apresentar no máximo 15 retratos nas cinco ofertas, ou até 2,05 MiB pelo teto individual. Os assets são adicionados sob demanda ao cache de runtime da PWA, limitado a 180 entradas, sem pré-cache do catálogo inteiro. O cache foi promovido para `runtime-v2` nesta mudança para remover fallbacks antigos após a atualização segura do service worker.
 
 ## Checklist de aprovação humana
 

@@ -11,6 +11,21 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "src" / "data" / "player-portraits.json"
 ARCHIVE = ROOT / "src" / "data" / "archive-index.json"
+KIB = 1024
+MIB = 1024 * KIB
+FILE_LIMITS = {
+    "portrait": 140 * KIB,
+    "silhouette": 30 * KIB,
+}
+CATALOG_LIMITS = {
+    "portrait": 35 * MIB,
+    "silhouette": 9 * MIB,
+}
+SILHOUETTE_COLORS = {
+    (13, 36, 30),
+    (49, 93, 72),
+    (185, 243, 74),
+}
 
 
 def portrait_key(value: str) -> str:
@@ -49,6 +64,7 @@ def main() -> None:
         raise SystemExit("Manifest contains an identity outside the historical archive.")
     if data.get("status") == "catalog_complete" and set(identity_keys) != expected:
         raise SystemExit("Complete catalog does not cover every historical identity.")
+    asset_sizes: dict[str, list[int]] = {"portrait": [], "silhouette": []}
     for entry in entries:
         if entry["approval"] not in {"approved", "pending", "rejected"}:
             raise SystemExit(f"Unexpected approval state for {entry['playerName']}.")
@@ -56,12 +72,34 @@ def main() -> None:
             path = public_path(entry[field])
             if path.suffix.lower() != ".webp" or not path.is_file():
                 raise SystemExit(f"Missing optimized {field}: {path}")
+            size = path.stat().st_size
+            if size > FILE_LIMITS[field]:
+                raise SystemExit(
+                    f"{field.title()} exceeds {FILE_LIMITS[field] / KIB:.0f} KiB: "
+                    f"{path} ({size / KIB:.2f} KiB)"
+                )
+            asset_sizes[field].append(size)
             with Image.open(path) as image:
                 if image.size != (768, 768) or image.format != "WEBP":
                     raise SystemExit(f"Unexpected image contract for {path}: {image.format} {image.size}")
+                image.load()
+                if field == "silhouette":
+                    colors = image.convert("RGB").getcolors(maxcolors=len(SILHOUETTE_COLORS) + 1)
+                    actual_colors = {color for _, color in colors} if colors else set()
+                    if actual_colors != SILHOUETTE_COLORS:
+                        raise SystemExit(f"Silhouette is outside the lossless three-color palette: {path}")
+    for field, sizes in asset_sizes.items():
+        total = sum(sizes)
+        if total > CATALOG_LIMITS[field]:
+            raise SystemExit(
+                f"{field.title()} catalog exceeds {CATALOG_LIMITS[field] / MIB:.0f} MiB: "
+                f"{total / MIB:.2f} MiB"
+            )
     print(
         f"Validated {len(entries)}/{len(expected)} portrait identities "
-        f"and {len(entries) * 2} WebP assets."
+        f"and {len(entries) * 2} WebP assets. "
+        f"Portraits: {sum(asset_sizes['portrait']) / MIB:.2f}/35 MiB; "
+        f"silhouettes: {sum(asset_sizes['silhouette']) / MIB:.2f}/9 MiB."
     )
 
 

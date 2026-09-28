@@ -6,7 +6,8 @@ Atualizado em 2026-09-28.
 
 - Build de produção, TypeScript, 104 testes unitários e suíte E2E completa.
 - Smoke do fluxo público em Chromium, Firefox e WebKit.
-- Catálogo completo com 345 identidades aprovadas e 690 WebPs de 768 px validados na CI.
+- Catálogo completo com 345 identidades aprovadas e 690 WebPs de 768 px validados na CI, incluindo limites individuais e agregados de bytes.
+- Retratos em 31,76/35 MiB e silhuetas lossless em 7,91/9 MiB; somente a primeira carta é eager, e o cache de runtime não pré-carrega o catálogo.
 - Home, início do draft e arquivo histórico sem erros de página nos três motores.
 - Orçamento estático: JavaScript inicial abaixo de 500 kB e CSS inicial abaixo de 100 kB.
 - Manifesto instalável, ícones 192/512, service worker com `/admin` network-only, robots e 583 URLs no sitemap.
@@ -19,6 +20,7 @@ Atualizado em 2026-09-28.
 ```sh
 npm test
 npm run typecheck
+npm run assets:portraits:validate
 npm run build
 npm run audit:beta
 npm run test:e2e

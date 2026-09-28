@@ -5,4 +5,5 @@ src/data/*.json -text whitespace=cr-at-eol
 *.png binary
 *.jpg binary
 *.jpeg binary
+*.webp binary
 *.pdf binary

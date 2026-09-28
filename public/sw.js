@@ -1,6 +1,6 @@
 const CACHE_PREFIX = 'draft-lendas-';
 const CORE_CACHE = `${CACHE_PREFIX}core-v1`;
-const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-v1`;
+const RUNTIME_CACHE = `${CACHE_PREFIX}runtime-v2`;
 const CORE_URLS = [
   '/',
   '/manifest.webmanifest',
