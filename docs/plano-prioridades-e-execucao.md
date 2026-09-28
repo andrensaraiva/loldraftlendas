@@ -14,12 +14,12 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 
 ## P0 — Restaurar uma baseline confiável
 
-- [ ] **1. Estabilizar CI e suíte E2E.**
-  - [ ] Atualizar o teste de fallback de retratos para o catálogo completo.
-  - [ ] Remover a corrida entre navegação por teclado, estado e scroll do carrossel mobile.
-  - [ ] Repetir o teste instável para comprovar estabilidade.
-  - [ ] Executar unitários, TypeScript, build, auditoria da beta e E2E Chromium.
-  - [ ] Confirmar a execução do workflow no GitHub após o push.
+- [x] **1. Estabilizar CI e suíte E2E.**
+  - [x] Atualizar o teste de fallback de retratos para o catálogo completo.
+  - [x] Remover a corrida entre navegação por teclado, estado e scroll do carrossel mobile.
+  - [x] Repetir o teste instável para comprovar estabilidade.
+  - [x] Executar unitários, TypeScript, build, auditoria da beta e E2E Chromium.
+  - [x] Confirmar a execução do workflow no GitHub após o push.
 - [ ] **2. Sincronizar documentação e estado real do produto.**
   - [ ] Registrar 345/345 identidades e 32 lotes do catálogo de retratos.
   - [ ] Corrigir quantidades de conquistas, testes, bundles e retratos.
@@ -78,4 +78,4 @@ Perfil de jogador, ranking verificado, multiplayer assíncrono, multiplayer em t
 
 | Data | Item | Estado | Evidência |
 | --- | --- | --- | --- |
-| 2026-09-28 | 1. Estabilizar CI e suíte E2E | Em andamento | CI do commit `7c3150e` falhou em E2E; falha intermitente do carrossel reproduzida localmente. |
+| 2026-09-28 | 1. Estabilizar CI e suíte E2E | Concluído | 104 unitários, TypeScript, build, auditoria, 60 E2E Chromium e cinco repetições dos cenários corrigidos passaram. O [workflow do checkpoint `48fbe23`](https://github.com/andrensaraiva/loldraftlendas/actions/runs/36468094295) passou com a matriz completa. |
