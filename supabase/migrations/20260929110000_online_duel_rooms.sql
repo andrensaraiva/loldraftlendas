@@ -219,7 +219,6 @@ as $$
 declare
   room public.duel_rooms%rowtype;
   caller uuid := auth.uid();
-  pick_index integer;
 begin
   if caller is null then
     raise exception 'authentication required' using errcode = '42501';
