@@ -41,3 +41,14 @@ test('two players complete a local duel and resume the same result', async ({ pa
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   expect(errors).toEqual([]);
 });
+
+test('invitation room stays private until remote setup is validated', async ({ page }) => {
+  const errors: string[] = [];
+  page.on('pageerror', (error) => errors.push(error.message));
+  await page.goto('/duelo');
+  await expect(page.getByRole('link', { name: /Jogar online por convite/ })).toHaveCount(0);
+  await page.goto('/duelo/sala#ABCDEF123456');
+  await expect(page.getByRole('heading', { name: 'Convites indisponíveis.' })).toBeVisible();
+  await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+  expect(errors).toEqual([]);
+});

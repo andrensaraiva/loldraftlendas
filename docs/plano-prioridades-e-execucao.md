@@ -12,7 +12,7 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 - Pedir confirmação do responsável antes de iniciar o item seguinte.
 - Dependências externas que exijam credenciais, contas ou aparelhos físicos permanecem bloqueadas até que esses recursos sejam fornecidos.
 
-**Mudança de prioridade em 2026-09-29:** o responsável pediu uma nova revisão do 7a0 e a inclusão de multiplayer antes de configurar o Supabase remoto. O item 3A abaixo precede a retomada do item 4. A [revisão atual](revisao-7a0-2026-09-29.md) registra evidências, diferenças e dependências. Um duelo local foi implementado como primeiro incremento; a preferência para a evolução online está em aberto.
+**Mudança de prioridade em 2026-09-29:** o responsável pediu uma nova revisão do 7a0 e a inclusão de multiplayer antes de configurar o Supabase remoto. O item 3A abaixo precede a retomada do item 4. A [revisão atual](revisao-7a0-2026-09-29.md) registra evidências, diferenças e dependências. Um duelo local foi implementado como primeiro incremento; o responsável confirmou a sala online por convite como próximo passo.
 
 ## P0 — Restaurar uma baseline confiável
 
@@ -44,7 +44,9 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 - [ ] **3B. Definir a evolução do multiplayer antes da ativação remota.**
   - [x] Confirmar a [sala assíncrona por convite](duelo-online-convite.md) com o responsável e preparar fluxo, contrato, privacidade e estados de erro revisáveis.
   - [x] Versionar o catálogo de candidatos, as migrations de sala protegida e o contrato tipado de resultado.
-  - [ ] Validar replay, lint e isolamento das novas migrations na CI; testar em dois aparelhos após configurar o serviço compartilhado.
+  - [x] Preparar interface de convite e draft independente por aparelho atrás de feature flag desligada.
+  - [x] Validar replay, lint e isolamento das novas migrations na CI.
+  - [ ] Testar a partida em dois aparelhos após configurar o serviço compartilhado.
 
 ## P1 — Viabilizar beta fechada real
 
@@ -99,3 +101,4 @@ O primeiro multiplayer entrou no escopo por decisão do responsável em 2026-09-
 | 2026-09-28 | 3. Fechar orçamento e validação dos assets | Concluído | 345 silhuetas reconstruídas como WebP lossless, de 24,53 para 7,91 MiB (−67,8%), sem recompressão dos 31,76 MiB de retratos; segunda geração com zero divergências de hash. O validador aprovou 690 assets e passou com unitários, TypeScript, build, auditoria e E2E de retrato/PWA em desktop e mobile.                                      |
 | 2026-09-28 | 4A. Preparar a operação real               | Concluído | Preparação somente local: replay das quinze migrations, lint sem erros, RLS das cinco tabelas, autenticação/allowlist/dashboard, analytics desligado por padrão, ambiente HTTPS sem secrets administrativos, build protegido, headers/cache, smokes, workflow manual e runbook. Contas remotas, deploy e monitoramento permanecem desmarcados. |
 | 2026-09-29 | 3A. Revisar 7a0 e entregar duelo local     | Concluído localmente | [Revisão atual](revisao-7a0-2026-09-29.md), rota `/duelo`, ofertas iguais, planos simétricos, BO5 determinística e save isolado. 108 unitários, build, auditoria (493,43 kB de JS inicial), 62 E2E Chromium e dois smokes Firefox/WebKit passaram; 8 pulos condicionais esperados. Preferência pela próxima evolução online registrada no item 3B. |
+| 2026-09-29 | 3B. Preparar sala online por convite       | Preparação local concluída; teste remoto pendente | [Contrato e fluxo](duelo-online-convite.md), 17 migrations com replay/lint na CI, smoke SQL de isolamento, catálogo de 785 candidatos e interface sob flag desligada. O serviço Supabase compartilhado e o teste em dois aparelhos seguem no item 4. |

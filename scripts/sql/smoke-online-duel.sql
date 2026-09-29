@@ -11,8 +11,11 @@ set local role authenticated;
 do $$
 begin
   if has_table_privilege('authenticated', 'public.duel_candidates', 'select') or
-    has_table_privilege('authenticated', 'public.duel_rooms', 'select') then
-    raise exception 'duel tables allow direct client reads';
+    has_table_privilege('authenticated', 'public.duel_catalog_versions', 'select') or
+    has_table_privilege('authenticated', 'public.duel_rooms', 'select') or
+    has_table_privilege('authenticated', 'public.duel_rooms', 'insert') or
+    has_table_privilege('authenticated', 'public.duel_rooms', 'update') then
+    raise exception 'duel tables allow direct client access';
   end if;
 end;
 $$;
@@ -82,6 +85,60 @@ begin
   begin
     perform public.submit_duel_team(room_code, host_picks, 'teamfight');
     raise exception 'submitted team was changed';
+  exception when sqlstate '22023' then
+    null;
+  end;
+
+  perform set_config('request.jwt.claim.sub', '11111111-1111-4111-8111-111111111111', true);
+  room_code := public.create_duel_room();
+  snapshot := public.cancel_duel_room(room_code);
+  if snapshot->>'state' <> 'cancelled' then
+    raise exception 'cancelled room remained open';
+  end if;
+  perform set_config('request.jwt.claim.sub', '22222222-2222-4222-8222-222222222222', true);
+  begin
+    perform public.join_duel_room(room_code);
+    raise exception 'guest joined a cancelled room';
+  exception when sqlstate '22023' then
+    null;
+  end;
+
+  perform set_config('request.jwt.claim.sub', '11111111-1111-4111-8111-111111111111', true);
+  room_code := public.create_duel_room();
+  perform set_config('smoke.expired_code', room_code, true);
+end;
+$$;
+
+reset role;
+update public.duel_rooms
+set expires_at = now() - interval '1 second'
+where code = current_setting('smoke.expired_code');
+set local role authenticated;
+
+do $$
+declare
+  room_code text := current_setting('smoke.expired_code');
+  snapshot jsonb;
+  host_picks text[];
+begin
+  perform set_config('request.jwt.claim.sub', '11111111-1111-4111-8111-111111111111', true);
+  snapshot := public.get_duel_room(room_code);
+  if snapshot->>'state' <> 'expired' then
+    raise exception 'expired room remained open';
+  end if;
+  select array_agg(offer->'optionIds'->>0 order by ordinal)
+  into host_picks
+  from jsonb_array_elements(snapshot->'offers') with ordinality as options(offer, ordinal);
+  begin
+    perform public.submit_duel_team(room_code, host_picks, 'aggression');
+    raise exception 'team submitted to expired room';
+  exception when sqlstate '22023' then
+    null;
+  end;
+  perform set_config('request.jwt.claim.sub', '22222222-2222-4222-8222-222222222222', true);
+  begin
+    perform public.join_duel_room(room_code);
+    raise exception 'guest joined expired room';
   exception when sqlstate '22023' then
     null;
   end;

@@ -81,6 +81,7 @@ export default function OnlineDuelApp() {
   const [progress, setProgress] = useState<DraftProgress>(emptyProgress);
   const [busy, setBusy] = useState(false);
   const [loading, setLoading] = useState(Boolean(codePattern.test(code)));
+  const [lookupFailed, setLookupFailed] = useState(false);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState(false);
   const [details, setDetails] = useState<PlayerVersion | null>(null);
@@ -105,12 +106,16 @@ export default function OnlineDuelApp() {
     setProgress(emptyProgress());
     setLoading(true);
     setError('');
+    setLookupFailed(false);
     getOnlineDuelRoom(code)
       .then((current) => {
         if (active) setRoom(current);
       })
       .catch((cause) => {
-        if (active) setError(errorMessage(cause));
+        if (active) {
+          setError(errorMessage(cause));
+          setLookupFailed(true);
+        }
       })
       .finally(() => {
         if (active) setLoading(false);
@@ -185,21 +190,29 @@ export default function OnlineDuelApp() {
         ? 'loading'
         : !code
           ? 'create'
-          : !room
-            ? 'join'
-            : room.state === 'cancelled' || room.state === 'expired'
-              ? room.state
-              : room.state === 'complete'
-                ? 'complete'
-                : room.myPicks
-                  ? 'submitted'
-                  : !rounds
-                    ? 'loading'
-                    : progress.picks.length < 5
-                      ? 'draft'
-                      : progress.plan === null
-                        ? 'plan'
-                        : 'review';
+          : lookupFailed && !room
+            ? 'lookup-error'
+            : !room
+              ? 'join'
+              : room.state === 'cancelled' || room.state === 'expired'
+                ? room.state
+                : room.state === 'complete'
+                  ? data
+                    ? 'complete'
+                    : error
+                      ? 'load-error'
+                      : 'loading'
+                  : room.myPicks
+                    ? 'submitted'
+                    : !rounds
+                      ? error
+                        ? 'load-error'
+                        : 'loading'
+                      : progress.picks.length < 5
+                        ? 'draft'
+                        : progress.plan === null
+                          ? 'plan'
+                          : 'review';
 
   useEffect(() => {
     titleRef.current?.focus();
@@ -213,6 +226,7 @@ export default function OnlineDuelApp() {
     setRounds(null);
     setProgress(emptyProgress());
     setError('');
+    setLookupFailed(false);
     setCopied(false);
   }
 
@@ -281,6 +295,18 @@ export default function OnlineDuelApp() {
           <p className="duel-loading" role="status">
             Carregando sala…
           </p>
+        )}
+        {(stage === 'lookup-error' || stage === 'load-error') && (
+          <section className="duel-intro">
+            <span className="duel-eyebrow">SALA ONLINE</span>
+            <h1 tabIndex={-1} ref={titleRef}>
+              Não foi possível abrir a sala.
+            </h1>
+            <p>Confira sua conexão e tente novamente.</p>
+            <button className="duel-primary" onClick={() => window.location.reload()}>
+              Tentar novamente <ArrowRight size={18} />
+            </button>
+          </section>
         )}
         {stage === 'create' && (
           <section className="duel-intro">

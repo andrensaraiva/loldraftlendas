@@ -40,7 +40,7 @@ O estado visível contém código, seed, versão do dataset, ofertas, vaga do so
 
 ## Autenticação e operação
 
-O cliente fará `signInAnonymously()` somente ao criar ou aceitar um convite. Usuários anônimos usam a role `authenticated`; os RPCs administrativos existentes continuam protegidos por `is_admin()` e allowlist. Na ativação remota, habilitar **anonymous sign-ins** com limite de taxa e CAPTCHA/Turnstile, manter cadastro por e-mail desativado para visitantes e testar a RLS com três identidades: anfitrião, convidado e terceiro. [Documentação de autenticação anônima](https://supabase.com/docs/guides/auth/auth-anonymous), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
+O cliente faz `signInAnonymously()` somente ao criar ou aceitar um convite. Usuários anônimos usam a role `authenticated`; os RPCs administrativos existentes continuam protegidos por `is_admin()` e allowlist. Na ativação remota, habilitar **anonymous sign-ins** com limite de taxa e CAPTCHA/Turnstile, manter cadastro por e-mail desativado para visitantes e testar a RLS com três identidades: anfitrião, convidado e terceiro. [Documentação de autenticação anônima](https://supabase.com/docs/guides/auth/auth-anonymous), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
 
 Atualizações podem começar com consulta periódica ao RPC a cada alguns segundos enquanto a sala estiver aberta; a correção não depende de WebSocket. Realtime privado só deve ser acrescentado se a latência exigir e após testar suas políticas. Isso preserva reconexão por leitura do estado persistido. [Autorização do Realtime](https://supabase.com/docs/guides/realtime/authorization).
 

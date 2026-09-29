@@ -10,8 +10,8 @@ Este runbook separa explicitamente o que já está preparado no repositório do 
 
 - Supabase CLI fixado na versão do projeto e configuração local sem secrets em `supabase/config.toml`.
 - Analytics começa desativado na configuração inicial e só deve ser habilitado após o smoke administrativo e a conferência da política de privacidade.
-- Quinze migrations ordenadas, com gate estático para inventário, RLS, `search_path` de funções `SECURITY DEFINER` e grants explícitos.
-- Replay integral das quinze migrations anteriores e lint SQL executados em banco local limpo. Duas migrations de duelo online foram acrescentadas e entram nos mesmos gates de CI antes da ativação remota.
+- Dezessete migrations ordenadas, com gate estático para inventário, RLS, `search_path` de funções `SECURITY DEFINER` e grants explícitos.
+- Replay integral das dezessete migrations e lint SQL executados em banco local limpo na CI; o smoke da sala por convite confere autorização e entregas ocultas.
 - Smoke local aprovado para configuração pública, cinco tabelas sob RLS, bloqueio anônimo dos RPCs administrativos, autenticação, allowlist, leitura protegida e dashboard agregado.
 - Preflight de produção que recusa HTTP, domínio de exemplo, ambiente incompleto, modo demo e chave administrativa em variável `VITE_*`.
 - Builds da Vercel protegidos por `npm run deploy:build`; Firebase usa o mesmo comando antes do deploy manual.
@@ -74,9 +74,10 @@ Crie `.env.production.local`, que já está ignorado pelo Git, a partir de `.env
 VITE_SITE_URL=https://dominio-real.example
 VITE_SUPABASE_URL=https://projeto-real.supabase.co
 VITE_SUPABASE_ANON_KEY=chave-publishable-ou-anon
+VITE_ONLINE_DUEL_ENABLED=false
 ```
 
-Apesar do nome histórico da variável, prefira a chave pública `sb_publishable_...` exibida em **Connect** no Supabase. O cliente envia essa chave apenas em `apikey`; o header `Authorization` fica reservado ao JWT da sessão administrativa.
+Apesar do nome histórico da variável, prefira a chave pública `sb_publishable_...` exibida em **Connect** no Supabase. O cliente usa essa chave em `apikey`; o header `Authorization` recebe o JWT da sessão administrativa ou da sessão anônima do jogador. Só altere `VITE_ONLINE_DUEL_ENABLED` para `true` no build publicado após habilitar Auth anônima e validar a sala em dois aparelhos no staging.
 
 Não defina `VITE_ADMIN_DEMO_MODE` em staging ou produção. Nunca use `service_role`, `sb_secret_*`, senha, token pessoal ou credencial administrativa em uma variável `VITE_*`.
 
@@ -88,7 +89,7 @@ node --env-file=.env.production.local scripts/smoke-supabase.mjs
 node --env-file=.env.production.local --run deploy:build
 ```
 
-Na Vercel, cadastre as três variáveis no environment de produção; o `vercel.json` executa automaticamente `npm run deploy:build`. No Firebase, execute `node --env-file=.env.production.local --run deploy:build` e só então `firebase deploy --only hosting`.
+Na Vercel, cadastre as três variáveis obrigatórias no environment de produção; mantenha `VITE_ONLINE_DUEL_ENABLED=false` até o aceite da sala. O `vercel.json` executa automaticamente `npm run deploy:build`. No Firebase, execute `node --env-file=.env.production.local --run deploy:build` e só então `firebase deploy --only hosting`.
 
 ## 4. Validar a conta administrativa
 
@@ -114,11 +115,10 @@ No GitHub, crie o environment protegido `production`, cadastre `PRODUCTION_SUPAB
 
 ## 6. Checklist de ativação
 
-- [x] Replay local das quinze migrations, lint e smoke administrativo concluídos com Docker.
-- [ ] Replay, lint e smoke da sala por convite após acrescentar as duas migrations de 2026-09-29.
+- [x] Replay, lint e smoke da sala por convite com dezessete migrations concluídos no banco local da CI.
 - [ ] `db push --dry-run`, `db push` e `migration list` conferidos no staging.
 - [ ] Cadastro público desativado; conta mantenedora única criada e allowlisted.
-- [ ] Leitura anônima das oito tabelas públicas bloqueada por RLS; as três tabelas de duelo também negam leitura direta a usuários autenticados.
+- [ ] RLS das oito tabelas públicas conferida no staging; as três tabelas de duelo negam leitura direta inclusive a jogadores autenticados.
 - [ ] Configuração pública, analytics e feedback inválido respondendo pelo RPC esperado.
 - [ ] Login administrativo, `is_admin()`, configuração e dashboard aprovados.
 - [ ] Build protegido aprovado com as três variáveis reais.

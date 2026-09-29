@@ -43,6 +43,7 @@ async function load(pathname) {
 const home = await load('/');
 const archive = await load('/arquivo');
 const admin = await load('/admin');
+const room = await load('/duelo/sala');
 const manifest = await load('/manifest.webmanifest');
 const robots = await load('/robots.txt');
 const sitemap = await load('/sitemap.xml');
@@ -64,6 +65,11 @@ check(
   `HTTP ${admin?.response.status ?? 0}`,
 );
 check(
+  'rota SPA de convite',
+  Boolean(room?.response.ok && /<div id="root"><\/div>/i.test(room.body)),
+  `HTTP ${room?.response.status ?? 0}`,
+);
+check(
   'manifesto PWA',
   Boolean(manifest?.response.ok && /"name"\s*:\s*"Draft Lendas[^"]*"/i.test(manifest.body)),
   `HTTP ${manifest?.response.status ?? 0}`,
@@ -72,6 +78,7 @@ check(
   'robots',
   Boolean(
     robots?.response.ok &&
+    robots.body.includes('Disallow: /duelo/sala') &&
     (localHost
       ? /Sitemap:\s*https?:\/\//i.test(robots.body)
       : robots.body.includes(`Sitemap: ${baseUrl}/sitemap.xml`)),
@@ -103,7 +110,7 @@ check(
   localHost ? 'URL absoluta no build local' : baseUrl,
 );
 
-if (!localHost && home && admin && worker) {
+if (!localHost && home && admin && room && worker) {
   check(
     'header nosniff',
     home.response.headers.get('x-content-type-options') === 'nosniff',
@@ -123,6 +130,11 @@ if (!localHost && home && admin && worker) {
     'admin não indexável',
     /noindex/i.test(admin.response.headers.get('x-robots-tag') ?? ''),
     admin.response.headers.get('x-robots-tag') ?? 'ausente',
+  );
+  check(
+    'convite não indexável',
+    /noindex/i.test(room.response.headers.get('x-robots-tag') ?? ''),
+    room.response.headers.get('x-robots-tag') ?? 'ausente',
   );
   check(
     'service worker revalidável',

@@ -1,10 +1,10 @@
 # Beta Readiness
 
-Atualizado em 2026-09-28.
+Atualizado em 2026-09-29.
 
 ## Validado localmente
 
-- Build de produção, TypeScript, 104 testes unitários e suíte E2E completa.
+- Build de produção, TypeScript, 110 testes unitários e suíte E2E completa.
 - Smoke do fluxo público em Chromium, Firefox e WebKit.
 - Catálogo completo com 345 identidades aprovadas e 690 WebPs de 768 px validados na CI, incluindo limites individuais e agregados de bytes.
 - Retratos em 31,76/35 MiB e silhuetas lossless em 7,91/9 MiB; somente a primeira carta é eager, e o cache de runtime não pré-carrega o catálogo.
@@ -12,7 +12,7 @@ Atualizado em 2026-09-28.
 - Orçamento estático: JavaScript inicial abaixo de 500 kB e CSS inicial abaixo de 100 kB.
 - Manifesto instalável, ícones 192/512, service worker com `/admin` network-only, robots e 584 URLs no sitemap, incluindo `/duelo`.
 - Smoke pós-deploy reproduzível para home, arquivo, manifesto, robots e sitemap.
-- Preparação operacional reproduzível para migrations/RLS, ambiente de produção, headers, deploy e smoke Supabase. As quinze migrations anteriores, o lint e o fluxo local de autenticação/allowlist/dashboard passaram. Duas novas migrations de duelo por convite aguardam replay e smoke na CI; nenhuma conta ou infraestrutura remota foi criada.
+- Preparação operacional reproduzível para migrations/RLS, ambiente de produção, headers, deploy e smoke Supabase. As dezessete migrations, o lint e o smoke SQL de isolamento da sala passaram na CI. A interface online está atrás de uma flag desligada; nenhuma conta ou infraestrutura remota foi criada.
 - Movimento reduzido desliga transições/animações globalmente; a celebração de título é decorativa e não captura interação.
 - Feedback curto de campanha e feedback contextual de rating já existem, mas só enviam fora do modo demo quando analytics/Supabase estiverem configurados.
 
