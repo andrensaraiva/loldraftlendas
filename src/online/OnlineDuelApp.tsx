@@ -86,6 +86,7 @@ export default function OnlineDuelApp() {
   const [copied, setCopied] = useState(false);
   const [details, setDetails] = useState<PlayerVersion | null>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
+  const pendingRef = useRef(false);
 
   useEffect(() => {
     document.title = 'Sala por convite — Draft Lendas';
@@ -231,7 +232,8 @@ export default function OnlineDuelApp() {
   }
 
   async function run(action: () => Promise<void>) {
-    if (busy) return;
+    if (pendingRef.current) return;
+    pendingRef.current = true;
     setBusy(true);
     setError('');
     try {
@@ -239,6 +241,7 @@ export default function OnlineDuelApp() {
     } catch (cause) {
       setError(errorMessage(cause));
     } finally {
+      pendingRef.current = false;
       setBusy(false);
     }
   }
@@ -255,6 +258,10 @@ export default function OnlineDuelApp() {
   const currentRound = stage === 'draft' ? rounds?.[progress.picks.length] : null;
   const result = room?.state === 'complete' && data ? completedOnlineDuel(room, data) : null;
   const myIndex = room?.seat === 'host' ? 0 : 1;
+  const catalogChanged =
+    error.includes('catálogo incompatível') ||
+    error.includes('Jogadores da sala incompatíveis') ||
+    error.includes('Grupo da sala indisponível');
 
   return (
     <main className="duel-page">
@@ -300,12 +307,26 @@ export default function OnlineDuelApp() {
           <section className="duel-intro">
             <span className="duel-eyebrow">SALA ONLINE</span>
             <h1 tabIndex={-1} ref={titleRef}>
-              Não foi possível abrir a sala.
+              {catalogChanged ? 'Versão da sala indisponível.' : 'Não foi possível abrir a sala.'}
             </h1>
-            <p>Confira sua conexão e tente novamente.</p>
-            <button className="duel-primary" onClick={() => window.location.reload()}>
-              Tentar novamente <ArrowRight size={18} />
-            </button>
+            <p>
+              {catalogChanged
+                ? 'O catálogo do jogo mudou desde a criação deste convite. Crie uma nova sala para jogar com a versão atual.'
+                : 'Confira sua conexão e tente novamente.'}
+            </p>
+            {catalogChanged ? (
+              <button
+                className="duel-primary"
+                disabled={busy}
+                onClick={() => run(async () => navigateToCode(await createOnlineDuelRoom()))}
+              >
+                Criar nova sala <ArrowRight size={18} />
+              </button>
+            ) : (
+              <button className="duel-primary" onClick={() => window.location.reload()}>
+                Tentar novamente <ArrowRight size={18} />
+              </button>
+            )}
           </section>
         )}
         {stage === 'create' && (

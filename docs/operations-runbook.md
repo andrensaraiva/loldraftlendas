@@ -24,7 +24,7 @@ Este runbook separa explicitamente o que já está preparado no repositório do 
 
 - Criar projetos Supabase de staging/produção e escolher Vercel ou Firebase.
 - Reaplicar as migrations no projeto remoto vazio.
-- Criar a conta administrativa, desativar cadastro público por e-mail e inserir sua UUID na allowlist. Sessões anônimas de jogadores só devem ser habilitadas quando a sala por convite estiver pronta, com limite de taxa e CAPTCHA.
+- Criar a conta administrativa, desativar cadastro público por e-mail e inserir sua UUID na allowlist. Sessões anônimas de jogadores só devem ser habilitadas quando a sala por convite estiver pronta, com limite de taxa; CAPTCHA exige integrar o desafio no cliente antes de ligá-lo no Auth.
 - Cadastrar variáveis e secrets reais nos provedores.
 - Publicar, executar os smokes remotos e configurar alertas externos.
 
