@@ -1,6 +1,6 @@
 # Plano de Prioridades e Execução
 
-Atualizado em 2026-09-28.
+Atualizado em 2026-09-29.
 
 Este documento é o checklist operacional para levar o Draft Lendas da situação atual até uma beta pública. Cada item concluído deve passar pelos seus critérios de aceite, ser registrado aqui e enviado ao Git antes do início do próximo item.
 
@@ -11,6 +11,8 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 - Fazer commit e push ao concluir cada item.
 - Pedir confirmação do responsável antes de iniciar o item seguinte.
 - Dependências externas que exijam credenciais, contas ou aparelhos físicos permanecem bloqueadas até que esses recursos sejam fornecidos.
+
+**Mudança de prioridade em 2026-09-29:** o responsável pediu uma nova revisão do 7a0 e a inclusão de multiplayer antes de configurar o Supabase remoto. O item 3A abaixo precede a retomada do item 4. A [revisão atual](revisao-7a0-2026-09-29.md) registra evidências, diferenças e dependências. Um duelo local foi implementado como primeiro incremento; a preferência para a evolução online está em aberto.
 
 ## P0 — Restaurar uma baseline confiável
 
@@ -30,6 +32,18 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
   - [x] Reotimizar os arquivos ou aprovar um novo orçamento baseado em medição.
   - [x] Fazer o validador reprovar dimensões, formato ou tamanho fora do contrato.
   - [x] Confirmar impacto no carregamento mobile e no cache da PWA.
+
+## P0 adicional — Produto social antes da ativação remota
+
+- [x] **3A. Revisar o 7a0 atual e entregar o primeiro multiplayer do Draft Lendas.**
+  - [x] Conferir o site público atual e registrar recursos, evidências e limites da observação na [revisão de 2026-09-29](revisao-7a0-2026-09-29.md).
+  - [x] Adotar o modo local como primeiro incremento executável antes da ativação remota.
+  - [x] Especificar regras, fluxo, persistência e critérios de resultado do duelo local.
+  - [x] Validar a implementação com suíte completa, mobile e teclado; preservar campanha solo e saves existentes.
+  - [x] Registrar o que depende de serviço remoto antes de chamar qualquer fluxo de “online”.
+- [ ] **3B. Definir a evolução do multiplayer antes da ativação remota.**
+  - [ ] Confirmar com o responsável se a prioridade seguinte é sala online por convite, sala ao vivo ou avançar para o item 4 com o duelo local.
+  - [ ] Se houver sala online, preparar contrato, UX e migrations localmente; validar em dois aparelhos após configurar o serviço compartilhado.
 
 ## P1 — Viabilizar beta fechada real
 
@@ -73,7 +87,7 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 
 ## Fora do ciclo atual
 
-Perfil de jogador, ranking verificado, multiplayer assíncrono, multiplayer em tempo real, chat e monetização continuam fora do escopo. Sons permanecem opcionais e dependem de validação com usuários.
+O primeiro multiplayer entrou no escopo por decisão do responsável em 2026-09-29; o duelo local foi o primeiro incremento. Perfil de jogador, ranking verificado, chat e monetização continuam fora do escopo. Sons permanecem opcionais e dependem de validação com usuários.
 
 ## Registro de execução
 
@@ -83,3 +97,4 @@ Perfil de jogador, ranking verificado, multiplayer assíncrono, multiplayer em t
 | 2026-09-28 | 2. Sincronizar documentação e estado real  | Concluído | Estado atual conferido contra código, manifesto e build; relatório multi-era regenerado de forma byte-estável; 104 unitários, TypeScript, build, auditoria e todos os links locais passaram.                                                                                                                                                   |
 | 2026-09-28 | 3. Fechar orçamento e validação dos assets | Concluído | 345 silhuetas reconstruídas como WebP lossless, de 24,53 para 7,91 MiB (−67,8%), sem recompressão dos 31,76 MiB de retratos; segunda geração com zero divergências de hash. O validador aprovou 690 assets e passou com unitários, TypeScript, build, auditoria e E2E de retrato/PWA em desktop e mobile.                                      |
 | 2026-09-28 | 4A. Preparar a operação real               | Concluído | Preparação somente local: replay das quinze migrations, lint sem erros, RLS das cinco tabelas, autenticação/allowlist/dashboard, analytics desligado por padrão, ambiente HTTPS sem secrets administrativos, build protegido, headers/cache, smokes, workflow manual e runbook. Contas remotas, deploy e monitoramento permanecem desmarcados. |
+| 2026-09-29 | 3A. Revisar 7a0 e entregar duelo local     | Concluído localmente | [Revisão atual](revisao-7a0-2026-09-29.md), rota `/duelo`, ofertas iguais, planos simétricos, BO5 determinística e save isolado. 108 unitários, build, auditoria (493,43 kB de JS inicial), 62 E2E Chromium e dois smokes Firefox/WebKit passaram; 8 pulos condicionais esperados. Preferência pela próxima evolução online registrada no item 3B. |

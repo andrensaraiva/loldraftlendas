@@ -16,6 +16,7 @@ const archiveIndex = JSON.parse(
 function sitemapPaths(): string[] {
   return [
     '/',
+    '/duelo',
     '/arquivo',
     ...archiveIndex.years.map((entry) => `/arquivo/edicao/${entry.year}`),
     ...archiveIndex.players.map((entry) => `/arquivo/jogador/${entry.slug}`),

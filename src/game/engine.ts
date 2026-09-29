@@ -221,11 +221,12 @@ export function simulateGame(
   champions: Record<string, Champion>,
   rng: Random = Math.random,
   gamePlan: GamePlan | null = null,
+  opponentGamePlan: GamePlan | null = null,
 ): GameResult {
   if (seriesDone(series)) throw new Error('Série encerrada');
   const game = series.games.length + 1;
   const strength = teamStrength(team, game, champions, gamePlan).total;
-  const opponentStrength = teamStrength(series.opponent, game, champions).total;
+  const opponentStrength = teamStrength(series.opponent, game, champions, opponentGamePlan).total;
   const probability = winProbability(strength, opponentStrength);
   const won = rng() < probability;
   return {

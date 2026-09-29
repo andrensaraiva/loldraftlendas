@@ -10,7 +10,7 @@ Atualizado em 2026-09-28.
 - Retratos em 31,76/35 MiB e silhuetas lossless em 7,91/9 MiB; somente a primeira carta é eager, e o cache de runtime não pré-carrega o catálogo.
 - Home, início do draft e arquivo histórico sem erros de página nos três motores.
 - Orçamento estático: JavaScript inicial abaixo de 500 kB e CSS inicial abaixo de 100 kB.
-- Manifesto instalável, ícones 192/512, service worker com `/admin` network-only, robots e 583 URLs no sitemap.
+- Manifesto instalável, ícones 192/512, service worker com `/admin` network-only, robots e 584 URLs no sitemap, incluindo `/duelo`.
 - Smoke pós-deploy reproduzível para home, arquivo, manifesto, robots e sitemap.
 - Preparação operacional reproduzível para migrations/RLS, ambiente de produção, headers, deploy e smoke Supabase. As quinze migrations, o lint e o fluxo local de autenticação/allowlist/dashboard passaram; nenhuma conta ou infraestrutura remota foi criada.
 - Movimento reduzido desliga transições/animações globalmente; a celebração de título é decorativa e não captura interação.

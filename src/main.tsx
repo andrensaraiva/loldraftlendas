@@ -21,14 +21,16 @@ import './components/campaign-journey.css';
 import './components/onboarding.css';
 const AdminApp = lazy(() => import('./admin/AdminApp'));
 const ArchiveApp = lazy(() => import('./archive/ArchiveApp'));
+const DuelApp = lazy(() => import('./duel/DuelApp'));
 const isAdmin = window.location.pathname.replace(/\/+$/, '') === '/admin';
+const isDuel = window.location.pathname.replace(/\/+$/, '') === '/duelo';
 const isArchive =
   window.location.pathname === '/arquivo' || window.location.pathname.startsWith('/arquivo/');
 applyRouteMetadata(window.location.pathname);
 if (!isAdmin) registerPwa();
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <AppErrorBoundary clearSavedCampaign={isAdmin ? undefined : clearCampaign}>
+    <AppErrorBoundary clearSavedCampaign={isAdmin || isDuel ? undefined : clearCampaign}>
       {isAdmin ? (
         <Suspense
           fallback={
@@ -38,6 +40,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
           }
         >
           <AdminApp />
+        </Suspense>
+      ) : isDuel ? (
+        <Suspense fallback={<main className="loading" role="status">Carregando duelo…</main>}>
+          <DuelApp />
         </Suspense>
       ) : isArchive ? (
         <Suspense

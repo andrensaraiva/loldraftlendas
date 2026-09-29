@@ -38,6 +38,18 @@ button:disabled {
   outline: 3px solid #478920;
   outline-offset: 5px;
 }
+.duel-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-top: 16px;
+  color: #2b7417;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.duel-home-link:hover { text-decoration: underline; }
 h1:focus {
   outline: none;
 }

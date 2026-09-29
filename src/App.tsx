@@ -104,7 +104,6 @@ import type {
 } from './game/types';
 import { AutoplayControls } from './components/AutoplayControls';
 import type { PlaybackSettings } from './components/AutoplayControls';
-import { CampaignShare } from './components/CampaignShare';
 import { PwaStatus } from './components/PwaStatus';
 import {
   advanceTournament,
@@ -169,6 +168,9 @@ const SeriesReportSummary = lazy(() =>
   })),
 );
 const CampaignJourney = lazy(() => import('./components/CampaignJourney'));
+const CampaignShare = lazy(() =>
+  import('./components/CampaignShare').then((module) => ({ default: module.CampaignShare })),
+);
 type ReportSelection = { result: GameResult; series: Series };
 function draftEventProperties(round: DraftRound): AnalyticsProperties {
   return {
@@ -256,7 +258,9 @@ function DailyChallengePanel({
         <div>
           {challenges.slice(1).map((challenge) => (
             <button key={challenge.id} onClick={() => start(challenge, false)} disabled={busy}>
-              <span>{dailyDateLabel(challenge.date)} · {challenge.modifier.label}</span>
+              <span>
+                {dailyDateLabel(challenge.date)} · {challenge.modifier.label}
+              </span>
               {challenge.modifier.objective} · Jogar amistoso
             </button>
           ))}
@@ -1113,13 +1117,7 @@ export default function App() {
     team,
   ]);
   useEffect(() => {
-    if (
-      screen !== 'result' ||
-      !tournament.outcome ||
-      !campaignSeed ||
-      team.length !== 5 ||
-      !data
-    )
+    if (screen !== 'result' || !tournament.outcome || !campaignSeed || team.length !== 5 || !data)
       return;
     const games = tournament.history.flatMap((entry) => entry.games);
     const campaignReport = buildCampaignReport({
@@ -1776,7 +1774,11 @@ export default function App() {
           type="button"
           className="brand-lockup brand-home"
           onClick={continueLater}
-          aria-label={screen === 'home' ? 'Página inicial do Draft Lendas' : 'Continuar depois e voltar ao início'}
+          aria-label={
+            screen === 'home'
+              ? 'Página inicial do Draft Lendas'
+              : 'Continuar depois e voltar ao início'
+          }
         >
           <span className="brand">
             DRAFT <em>LENDAS</em>
@@ -1961,6 +1963,11 @@ export default function App() {
                 Modo {gameModeLabel(pendingChallenge?.gameMode ?? gameMode)} · 5 escolhas · Sem
                 cadastro
               </span>
+              {!pendingChallenge && (
+                <a className="duel-home-link" href="/duelo">
+                  <Swords size={18} /> Jogar duelo local com outra pessoa <ArrowRight size={17} />
+                </a>
+              )}
             </div>
             <div className="home-visual">
               <div className="hero-art">
@@ -2517,7 +2524,9 @@ export default function App() {
           >
             {tournament.outcome === 'Campeão mundial' && (
               <div className="final-celebration" aria-hidden="true">
-                {Array.from({ length: 14 }, (_, index) => <span key={index} />)}
+                {Array.from({ length: 14 }, (_, index) => (
+                  <span key={index} />
+                ))}
               </div>
             )}
             <div className="final-symbol">
@@ -2634,30 +2643,32 @@ export default function App() {
                 <CampaignReport report={activeCampaignReport} />
               </Suspense>
             )}
-            <CampaignShare
-              challengeUrl={activeChallengeUrl}
-              summary={{
-                outcome: tournament.outcome ?? 'Campanha concluída',
-                wins: totalWins,
-                losses: totalLosses,
-                confrontations: tournament.history.length,
-                challengeCode: activeChallenge ? challengeCode(activeChallenge) : undefined,
-                gameMode,
-                gamePlan,
-                team: team.map((player) => ({
-                  role: player.role,
-                  playerName: player.playerName,
-                  team: player.team,
-                  worldsYear: player.worldsYear,
-                })),
-              }}
-              onTrack={(event, method) =>
-                analytics.track(event, {
+            <Suspense fallback={null}>
+              <CampaignShare
+                challengeUrl={activeChallengeUrl}
+                summary={{
                   outcome: tournament.outcome ?? 'Campanha concluída',
-                  share_method: method,
-                })
-              }
-            />
+                  wins: totalWins,
+                  losses: totalLosses,
+                  confrontations: tournament.history.length,
+                  challengeCode: activeChallenge ? challengeCode(activeChallenge) : undefined,
+                  gameMode,
+                  gamePlan,
+                  team: team.map((player) => ({
+                    role: player.role,
+                    playerName: player.playerName,
+                    team: player.team,
+                    worldsYear: player.worldsYear,
+                  })),
+                }}
+                onTrack={(event, method) =>
+                  analytics.track(event, {
+                    outcome: tournament.outcome ?? 'Campanha concluída',
+                    share_method: method,
+                  })
+                }
+              />
+            </Suspense>
             <div className="final-actions">
               <button className="primary" onClick={() => requestStart()}>
                 Jogar novamente <RotateCcw size={19} />
@@ -2693,11 +2704,10 @@ export default function App() {
         </span>
         <p className="riot-disclaimer">
           Retratos de jogadores são ilustrações artísticas geradas para o projeto; não são
-          fotografias nem materiais oficiais.{' '}
-          Draft Lendas isn't endorsed by Riot Games and doesn't reflect the views or opinions of
-          Riot Games or anyone officially involved in producing or managing Riot Games properties.
-          Riot Games, and all associated properties are trademarks or registered trademarks of Riot
-          Games, Inc.{' '}
+          fotografias nem materiais oficiais. Draft Lendas isn't endorsed by Riot Games and doesn't
+          reflect the views or opinions of Riot Games or anyone officially involved in producing or
+          managing Riot Games properties. Riot Games, and all associated properties are trademarks
+          or registered trademarks of Riot Games, Inc.{' '}
           <a href="https://developer.riotgames.com/policies/general">Política oficial</a>.
         </p>
       </footer>

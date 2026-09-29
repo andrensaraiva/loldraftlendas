@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-28. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–5 e 7–9 e a estabilização da suíte E2E. A branch `main` remota contém checkpoints separados de dados, produto, retratos, baseline visual e recuperação da CI.
+Atualizado em 2026-09-29. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–5 e 7–9 e a estabilização da suíte E2E. A revisão atual do 7a0 e o primeiro duelo local integram o checkpoint atual, ainda sem ativação de Supabase ou hospedagem.
 
 ## Objetivo Preservado
 
@@ -227,6 +227,8 @@ Resultados registrados no checkpoint de 2026-09-28: 104 testes unitários passar
 
 O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, continue executando `npm run test:e2e` para cobrir os dois viewports.
 
+Atualização local de 2026-09-29: a [revisão atual do 7a0](revisao-7a0-2026-09-29.md) motivou o duelo local de duas pessoas em `/duelo`. O mesmo sorteio oferece três candidatos a ambos, cada lado escolhe seu plano e a BO5 usa forças simétricas e seed reproduzível. O save do duelo é independente da campanha solo. A rota tem canonical e metadados próprios, além de constar no sitemap de 584 URLs. A auditoria passou com 493,43 kB de JavaScript inicial em sete arquivos e 80,95 kB de CSS; o compartilhamento da campanha carrega sob demanda. Passaram 108 unitários, TypeScript, build, 62 testes E2E Chromium e os dois smokes Firefox/WebKit; 8 cenários condicionais foram pulados conforme esperado. Após a mudança no carregamento, os cenários de duelo e compartilhamento passaram em desktop/mobile; dois cenários mobile interrompidos por HMR durante ajustes no código passaram em nova execução estável. Não houve ativação remota.
+
 ## Configuração Externa Pendente
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
@@ -261,7 +263,7 @@ Fila operacional vigente: [Plano de Prioridades e Execução](plano-prioridades-
 - A vitória mundial ganhou celebração decorativa, sem interação e desativada por `prefers-reduced-motion`; eliminações não a exibem.
 - Busca e filtros vazios do arquivo agora explicam o estado e oferecem recuperação direta.
 - A matriz possui smoke real em Chromium, Firefox e WebKit; os três navegadores gerenciados passaram na CI.
-- `audit:beta` valida budgets, idioma, viewport, manifesto, ícones, service worker, robots e as 583 URLs do sitemap.
+- `audit:beta` valida budgets, idioma, viewport, manifesto, ícones, service worker, robots e as 584 URLs do sitemap.
 - `smoke:deploy` verifica home, arquivo, manifesto, robots e sitemap em qualquer URL publicada.
 - Sons não foram incluídos sem aprovação. Aparelhos físicos, trace Core Web Vitals, deploy HTTPS e painel real permanecem validações externas documentadas em [beta-readiness.md](beta-readiness.md).
 
@@ -287,7 +289,7 @@ Fila operacional vigente: [Plano de Prioridades e Execução](plano-prioridades-
 
 - Os Pacotes 2–5 e 7–9 foram concluídos sem backend real.
 - Resultado público, comparação, Open Graph dinâmico e Gate B dependem de hospedagem e Supabase reais.
-- Perfil, ranking verificado e multiplayer permanecem fora deste ciclo.
+- O duelo local no mesmo aparelho entrou neste ciclo por decisão do responsável em 2026-09-29; perfil, ranking verificado e salas online ainda não foram ativados.
 
 ## Comandos de Trabalho
 
