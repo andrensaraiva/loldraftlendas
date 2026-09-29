@@ -33,6 +33,8 @@ Create a Supabase project, then apply these migrations in filename order through
 - [20260918120000_campaign_journey_analytics.sql](../supabase/migrations/20260918120000_campaign_journey_analytics.sql)
 - [20260918130000_onboarding_analytics.sql](../supabase/migrations/20260918130000_onboarding_analytics.sql)
 - [20260919100000_daily_modifiers_analytics.sql](../supabase/migrations/20260919100000_daily_modifiers_analytics.sql)
+- [20260929110000_online_duel_rooms.sql](../supabase/migrations/20260929110000_online_duel_rooms.sql)
+- [20260929111000_online_duel_catalog.sql](../supabase/migrations/20260929111000_online_duel_catalog.sql)
 
 The migrations create:
 
@@ -47,6 +49,7 @@ The migrations create:
 - A complete public configuration snapshot plus an allowlisted analytics-property schema.
 - Aggregate completion and replay comparison between Classic and Almanac modes.
 - Aggregate campaign completion and title rates for the four game plans.
+- Private invitation rooms for two anonymous players, with server-generated offers and RPCs that release both teams only after both submissions. See [duelo-online-convite.md](duelo-online-convite.md).
 
 The initial product configuration keeps analytics disabled. Enable it from the authenticated admin only after the production RLS, ingestion, dashboard, and privacy checks pass.
 

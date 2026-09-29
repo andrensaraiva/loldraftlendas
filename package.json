@@ -32,6 +32,8 @@
     "data:readiness:validate": "python scripts/data/build_readiness.py --check",
     "data:archive:build": "node scripts/data/build-archive-index.mjs",
     "data:archive:validate": "node scripts/data/build-archive-index.mjs --check",
+    "data:duel:build": "node scripts/data/build-online-duel-catalog.mjs",
+    "data:duel:validate": "node scripts/data/build-online-duel-catalog.mjs --check",
     "assets:portraits:optimize": "python scripts/rebuild_player_silhouettes.py",
     "assets:portraits:validate": "python scripts/validate_player_portraits.py",
     "pwa:icons": "node scripts/generate-pwa-icons.mjs"

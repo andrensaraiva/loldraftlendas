@@ -11,7 +11,7 @@ Este runbook separa explicitamente o que já está preparado no repositório do 
 - Supabase CLI fixado na versão do projeto e configuração local sem secrets em `supabase/config.toml`.
 - Analytics começa desativado na configuração inicial e só deve ser habilitado após o smoke administrativo e a conferência da política de privacidade.
 - Quinze migrations ordenadas, com gate estático para inventário, RLS, `search_path` de funções `SECURITY DEFINER` e grants explícitos.
-- Replay integral das quinze migrations e lint SQL executados em banco local limpo; o CI repete os dois gates a cada push.
+- Replay integral das quinze migrations anteriores e lint SQL executados em banco local limpo. Duas migrations de duelo online foram acrescentadas e entram nos mesmos gates de CI antes da ativação remota.
 - Smoke local aprovado para configuração pública, cinco tabelas sob RLS, bloqueio anônimo dos RPCs administrativos, autenticação, allowlist, leitura protegida e dashboard agregado.
 - Preflight de produção que recusa HTTP, domínio de exemplo, ambiente incompleto, modo demo e chave administrativa em variável `VITE_*`.
 - Builds da Vercel protegidos por `npm run deploy:build`; Firebase usa o mesmo comando antes do deploy manual.
@@ -24,7 +24,7 @@ Este runbook separa explicitamente o que já está preparado no repositório do 
 
 - Criar projetos Supabase de staging/produção e escolher Vercel ou Firebase.
 - Reaplicar as migrations no projeto remoto vazio.
-- Criar a conta administrativa, desativar cadastro público e inserir sua UUID na allowlist.
+- Criar a conta administrativa, desativar cadastro público por e-mail e inserir sua UUID na allowlist. Sessões anônimas de jogadores só devem ser habilitadas quando a sala por convite estiver pronta, com limite de taxa e CAPTCHA.
 - Cadastrar variáveis e secrets reais nos provedores.
 - Publicar, executar os smokes remotos e configurar alertas externos.
 
@@ -55,13 +55,13 @@ npx supabase db push
 npx supabase migration list
 ```
 
-O `--dry-run` deve listar exatamente as quinze migrations descritas em [admin-setup.md](admin-setup.md) na primeira ativação. Uma única pessoa deve executar o push por vez.
+O `--dry-run` deve listar exatamente as dezessete migrations descritas em [admin-setup.md](admin-setup.md) na primeira ativação. Uma única pessoa deve executar o push por vez.
 
 No Supabase Auth:
 
 1. defina a Site URL HTTPS do domínio escolhido;
 2. crie manualmente a conta mantenedora com senha exclusiva;
-3. desative novos cadastros públicos antes da abertura;
+3. desative o cadastro público por e-mail; habilite sessões anônimas somente ao ativar a sala por convite e testar as regras de acesso descritas em [duelo-online-convite.md](duelo-online-convite.md);
 4. copie a UUID da conta e execute somente a inserção de allowlist documentada em [admin-setup.md](admin-setup.md).
 
 Mantenha `analytics_enabled=false` durante os primeiros smokes. Habilite-o no painel somente depois de confirmar RLS, ingestão, dashboard e o texto público de privacidade.
@@ -115,15 +115,17 @@ No GitHub, crie o environment protegido `production`, cadastre `PRODUCTION_SUPAB
 ## 6. Checklist de ativação
 
 - [x] Replay local das quinze migrations, lint e smoke administrativo concluídos com Docker.
+- [ ] Replay, lint e smoke da sala por convite após acrescentar as duas migrations de 2026-09-29.
 - [ ] `db push --dry-run`, `db push` e `migration list` conferidos no staging.
 - [ ] Cadastro público desativado; conta mantenedora única criada e allowlisted.
-- [ ] Leitura anônima de todas as cinco tabelas bloqueada por RLS.
+- [ ] Leitura anônima das oito tabelas públicas bloqueada por RLS; as três tabelas de duelo também negam leitura direta a usuários autenticados.
 - [ ] Configuração pública, analytics e feedback inválido respondendo pelo RPC esperado.
 - [ ] Login administrativo, `is_admin()`, configuração e dashboard aprovados.
 - [ ] Build protegido aprovado com as três variáveis reais.
 - [ ] Deploy HTTPS e smoke público aprovados.
 - [ ] Primeira campanha de teste aparece no funil agregado sem expor evento bruto.
 - [ ] Alertas de disponibilidade e erros configurados no provedor escolhido.
+- [ ] Ao ativar convites online, limitar sessões anônimas, testar três identidades e agendar a remoção de salas vencidas há mais de 30 dias.
 
 ## 7. Monitoramento e rollback
 

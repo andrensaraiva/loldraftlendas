@@ -51,6 +51,8 @@ Migrations Supabase, em ordem:
 13. [20260918120000_campaign_journey_analytics.sql](../supabase/migrations/20260918120000_campaign_journey_analytics.sql)
 14. [20260918130000_onboarding_analytics.sql](../supabase/migrations/20260918130000_onboarding_analytics.sql)
 15. [20260919100000_daily_modifiers_analytics.sql](../supabase/migrations/20260919100000_daily_modifiers_analytics.sql)
+16. [20260929110000_online_duel_rooms.sql](../supabase/migrations/20260929110000_online_duel_rooms.sql)
+17. [20260929111000_online_duel_catalog.sql](../supabase/migrations/20260929111000_online_duel_catalog.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
@@ -229,11 +231,13 @@ O Playwright completo devolveu resumo final com sucesso. Antes de um deploy, con
 
 Atualização local de 2026-09-29: a [revisão atual do 7a0](revisao-7a0-2026-09-29.md) motivou o duelo local de duas pessoas em `/duelo`. O mesmo sorteio oferece três candidatos a ambos, cada lado escolhe seu plano e a BO5 usa forças simétricas e seed reproduzível. O save do duelo é independente da campanha solo. A rota tem canonical e metadados próprios, além de constar no sitemap de 584 URLs. A auditoria passou com 493,43 kB de JavaScript inicial em sete arquivos e 80,95 kB de CSS; o compartilhamento da campanha carrega sob demanda. Passaram 108 unitários, TypeScript, build, 62 testes E2E Chromium e os dois smokes Firefox/WebKit; 8 cenários condicionais foram pulados conforme esperado. Após a mudança no carregamento, os cenários de duelo e compartilhamento passaram em desktop/mobile; dois cenários mobile interrompidos por HMR durante ajustes no código passaram em nova execução estável. Não houve ativação remota.
 
+Preparação do item 3B em 2026-09-29: a [sala assíncrona por convite](duelo-online-convite.md) foi adotada como padrão provisório. O repositório contém contrato de estados, duas migrations para salas privadas e catálogo de 785 candidatos gerado do dataset versionado, além de um smoke SQL para a CI. A opção online ainda não aparece no produto; falta confirmação do formato, replay das novas migrations e validação em dois aparelhos após ativação do serviço compartilhado.
+
 ## Configuração Externa Pendente
 
 O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
 
-1. Crie um projeto Supabase e aplique as quinze migrations na ordem acima.
+1. Crie um projeto Supabase e aplique as dezessete migrations na ordem acima, depois de validar as duas novas migrations de duelo na CI.
 2. Crie a conta do mantenedor no Supabase Auth.
 3. Insira manualmente o UUID dela em `public.admin_users`.
 4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.

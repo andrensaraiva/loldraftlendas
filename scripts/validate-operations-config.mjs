@@ -112,6 +112,8 @@ const requiredMigrations = [
   '20260918120000_campaign_journey_analytics.sql',
   '20260918130000_onboarding_analytics.sql',
   '20260919100000_daily_modifiers_analytics.sql',
+  '20260929110000_online_duel_rooms.sql',
+  '20260929111000_online_duel_catalog.sql',
 ];
 check(
   'inventário de migrations',

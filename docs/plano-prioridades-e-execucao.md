@@ -42,8 +42,10 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
   - [x] Validar a implementação com suíte completa, mobile e teclado; preservar campanha solo e saves existentes.
   - [x] Registrar o que depende de serviço remoto antes de chamar qualquer fluxo de “online”.
 - [ ] **3B. Definir a evolução do multiplayer antes da ativação remota.**
-  - [ ] Confirmar com o responsável se a prioridade seguinte é sala online por convite, sala ao vivo ou avançar para o item 4 com o duelo local.
-  - [ ] Se houver sala online, preparar contrato, UX e migrations localmente; validar em dois aparelhos após configurar o serviço compartilhado.
+  - [x] Preparar como padrão provisório a [sala assíncrona por convite](duelo-online-convite.md), com fluxo, contrato, privacidade e estados de erro revisáveis.
+  - [x] Versionar o catálogo de candidatos, as migrations de sala protegida e o contrato tipado de resultado.
+  - [ ] Confirmar com o responsável se mantém convite, prefere sala ao vivo ou segue ao item 4 apenas com o duelo local.
+  - [ ] Validar replay, lint e isolamento das novas migrations na CI; testar em dois aparelhos após configurar o serviço compartilhado.
 
 ## P1 — Viabilizar beta fechada real
 

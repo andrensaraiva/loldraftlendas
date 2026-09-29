@@ -40,6 +40,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - No mobile, as três opções usam carrossel com swipe, teclado, setas, indicador e uma prévia da próxima carta. A escolha acontece somente pelo CTA explícito **Escalar esta lenda**.
 - Modos **Clássico** e **Almanaque**: o Clássico exibe ratings e força; o Almanaque oculta toda orientação numérica durante a campanha e revela os cinco jogos no resultado final. O modo integra save, desafio e card compartilhável.
 - Duelo local em `/duelo`: duas pessoas se alternam no mesmo aparelho, recebem as mesmas três ofertas por posição, escolhem planos próprios e disputam uma melhor de cinco entre as equipes. O progresso e a seed ficam no armazenamento local, separados do save da campanha solo; não há sala online ou ranking.
+- A [sala online por convite](docs/duelo-online-convite.md) está em preparação local (contrato e migrations); ainda não aparece na interface nem depende de credenciais neste checkout.
 - Quatro planos persistentes escolhidos após o draft: **Agressão**, **Teamfight**, **Controle/Pick** e **Escala**. As tags ativas e o efeito limitado de `−1,0` a `+1,5` aparecem na composição e na prévia da partida.
 - Filtros opcionais na home restringem o draft e o futuro desafio por edição e grupo regional. Combinações vazias são bloqueadas e cada contexto do manifesto preserva três candidatos por posição.
 - Desafio Diário no modo Almanaque com seed, regras e modificador especial iguais para todos, calendário de Brasília e arquivo dos sete dias recentes. Regra e objetivo aparecem antes do draft e o resultado registra se a missão foi cumprida; a primeira entrada do dia é oficial e as demais são amistosas, sem ranking ou conta.
@@ -169,6 +170,7 @@ npm run data:multi:report    # Relatório multi-era a partir das medições
 npm run data:readiness:build # Regera o inventário de cobertura 2011–2025
 npm run data:readiness:validate # Falha se inventário ou relatório estiverem desatualizados
 npm run data:archive:validate # Falha se o índice público estiver desatualizado
+npm run data:duel:validate    # Confere os 785 candidatos da migration de duelo por convite
 npm run pwa:icons          # Rasteriza o favicon aprovado nos tamanhos 192 e 512
 npm run ops:preflight      # Valida migrations, RLS, deploy e ambiente quando fornecido
 npm run ops:db:lint        # Reprova erros/warnings SQL com o Supabase local ativo

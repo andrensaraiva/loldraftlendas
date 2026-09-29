@@ -54,6 +54,9 @@ jobs:
       - name: Validate public archive index
         run: npm run data:archive:validate
 
+      - name: Validate online duel catalog
+        run: npm run data:duel:validate
+
       - name: Validate player portrait assets
         run: npm run assets:portraits:validate
 
@@ -67,6 +70,9 @@ jobs:
         run: |
           npx supabase db reset --local
           npm run ops:db:lint
+
+      - name: Smoke online duel room isolation
+        run: npx supabase db query --local --file scripts/sql/smoke-online-duel.sql
 
       - name: Production build
         run: npm run build
