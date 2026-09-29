@@ -42,6 +42,7 @@ if (
   !baseUrl ||
   !anonKey ||
   anonKey.length < 20 ||
+  /your-(?:anon|public|publishable)-key/i.test(anonKey) ||
   anonKey.startsWith('sb_secret_') ||
   jwtRole(anonKey) === 'service_role'
 ) {
@@ -49,12 +50,12 @@ if (
   process.exit(2);
 }
 
-async function request(path, init = {}, bearer = anonKey) {
+async function request(path, init = {}, bearer) {
   const response = await fetch(`${baseUrl}${path}`, {
     ...init,
     headers: {
       apikey: anonKey,
-      Authorization: `Bearer ${bearer}`,
+      ...(bearer ? { Authorization: `Bearer ${bearer}` } : {}),
       'Content-Type': 'application/json',
       ...init.headers,
     },
@@ -166,7 +167,6 @@ if ((adminEmail && !adminPassword) || (!adminEmail && adminPassword)) {
   const login = await request(
     '/auth/v1/token?grant_type=password',
     { method: 'POST', body: JSON.stringify({ email: adminEmail, password: adminPassword }) },
-    anonKey,
   );
   const accessToken = login.body?.access_token;
   report(

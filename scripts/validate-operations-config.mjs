@@ -212,7 +212,7 @@ if (requireEnvironment || hasAnyEnvironment) {
   const safePublicKey = Boolean(
     anonKey &&
     anonKey.length >= 20 &&
-    !/your-anon-key|service[_-]?role/i.test(anonKey) &&
+    !/your-(?:anon|public|publishable)-key|service[_-]?role/i.test(anonKey) &&
     !anonKey.startsWith('sb_secret_') &&
     (role === null || role === 'anon'),
   );

@@ -76,6 +76,8 @@ VITE_SUPABASE_URL=https://projeto-real.supabase.co
 VITE_SUPABASE_ANON_KEY=chave-publishable-ou-anon
 ```
 
+Apesar do nome histórico da variável, prefira a chave pública `sb_publishable_...` exibida em **Connect** no Supabase. O cliente envia essa chave apenas em `apikey`; o header `Authorization` fica reservado ao JWT da sessão administrativa.
+
 Não defina `VITE_ADMIN_DEMO_MODE` em staging ou produção. Nunca use `service_role`, `sb_secret_*`, senha, token pessoal ou credencial administrativa em uma variável `VITE_*`.
 
 Valide o arquivo e produza o build:

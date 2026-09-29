@@ -410,7 +410,6 @@ class SupabaseAnalyticsTransport implements AnalyticsTransport {
       keepalive: true,
       headers: {
         apikey: this.anonKey,
-        Authorization: `Bearer ${this.anonKey}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(body),

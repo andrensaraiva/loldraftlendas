@@ -116,7 +116,6 @@ export async function loadPublicProductConfig(): Promise<PublicProductConfig | n
       method: 'POST',
       headers: {
         apikey: anonKey,
-        Authorization: `Bearer ${anonKey}`,
         'Content-Type': 'application/json',
       },
       body: '{}',

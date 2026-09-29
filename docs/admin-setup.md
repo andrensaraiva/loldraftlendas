@@ -81,7 +81,7 @@ VITE_SUPABASE_URL=https://your-project.supabase.co
 VITE_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-The anon key is expected to be public. Never use a service-role key or any administrative secret in a `VITE_*` variable.
+`VITE_SUPABASE_ANON_KEY` is a legacy variable name and accepts the current `sb_publishable_...` key from the project's Connect panel. The key is public. Never use a secret or service-role key in a `VITE_*` variable.
 
 Restart `npm run dev`, then visit `/admin`. The short-lived admin session is kept only in browser `sessionStorage`; Supabase RLS remains the actual authorization boundary.
 

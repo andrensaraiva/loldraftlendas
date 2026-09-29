@@ -1,9 +1,10 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import { players } from '../data/players';
 import manifest from '../data/draft-region-groups.json';
 import {
   archiveDraftAvailability,
   defaultDraftAvailability,
+  loadPublicProductConfig,
   publicProductConfigFromRow,
   safeDraftAvailability,
 } from './product-config';
@@ -19,7 +20,27 @@ const row = {
   dataset_version: manifest.datasetVersion,
 };
 
+afterEach(() => {
+  vi.unstubAllEnvs();
+  vi.unstubAllGlobals();
+});
+
 describe('public product configuration', () => {
+  it('loads the public RPC with a publishable key and no bearer token', async () => {
+    vi.stubEnv('VITE_SUPABASE_URL', 'https://project.supabase.co');
+    vi.stubEnv('VITE_SUPABASE_ANON_KEY', 'sb_publishable_test');
+    const fetchMock = vi.fn(async () => new Response(JSON.stringify(row), { status: 200 }));
+    vi.stubGlobal('fetch', fetchMock);
+
+    expect(await loadPublicProductConfig()).toMatchObject({ startingExchanges: 2 });
+    expect(fetchMock).toHaveBeenCalledWith(
+      'https://project.supabase.co/rest/v1/rpc/get_public_product_config',
+      expect.objectContaining({
+        headers: { apikey: 'sb_publishable_test', 'Content-Type': 'application/json' },
+      }),
+    );
+  });
+
   it('applies only a dataset-compatible, role-valid configuration to new drafts', () => {
     expect(safeDraftAvailability(data, publicProductConfigFromRow(row))).toMatchObject({
       startingExchanges: 2,
