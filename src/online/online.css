@@ -1,0 +1,96 @@
+.online-content {
+  max-width: 1100px;
+}
+.online-enter {
+  margin-top: 38px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+.online-enter label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+.online-enter > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.online-enter input {
+  width: min(100%, 240px);
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #aabca0;
+  border-radius: 6px;
+  background: white;
+  color: var(--ink);
+  font: 700 18px var(--display);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.online-enter button,
+.online-room-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 9px 14px;
+  border: 1px solid #b3c5a6;
+  border-radius: 6px;
+  background: white;
+  color: #275a1b;
+  font-weight: 800;
+}
+.online-enter button:hover,
+.online-room-actions button:hover {
+  background: #f1fbe8;
+}
+.online-room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 28px;
+  padding: 16px 18px;
+  border: 1px solid #cbd8bf;
+  border-radius: 8px;
+  background: #f7fcef;
+}
+.online-room > div:first-child {
+  display: grid;
+  gap: 3px;
+}
+.online-room small {
+  color: #526849;
+  font-size: 11px;
+  font-weight: 700;
+}
+.online-room strong {
+  font: 800 28px var(--display);
+  letter-spacing: 0.1em;
+}
+.online-room-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.online-status {
+  padding: 14px;
+  border: 1px solid #cbd8bf;
+  border-radius: 6px;
+  background: white;
+  font-weight: 700;
+}
+@media (max-width: 700px) {
+  .online-room {
+    align-items: stretch;
+  }
+  .online-room-actions {
+    width: 100%;
+  }
+  .online-room-actions button {
+    flex: 1;
+  }
+}

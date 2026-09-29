@@ -168,6 +168,13 @@ export default function DuelApp() {
             <button className="duel-primary" onClick={startDuel} disabled={busy}>
               {busy ? 'Preparando ofertas…' : 'Começar duelo'} <ArrowRight size={20} />
             </button>
+            {import.meta.env.VITE_ONLINE_DUEL_ENABLED === 'true' &&
+              import.meta.env.VITE_SUPABASE_URL &&
+              import.meta.env.VITE_SUPABASE_ANON_KEY && (
+                <a className="duel-online-link" href="/duelo/sala">
+                  Jogar online por convite <ArrowRight size={18} />
+                </a>
+              )}
           </section>
         )}
         {error && (

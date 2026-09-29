@@ -44,7 +44,7 @@ export default defineConfig(({ mode }) => {
           this.emitFile({
             type: 'asset',
             fileName: 'robots.txt',
-            source: `User-agent: *\nAllow: /\nDisallow: /admin\nSitemap: ${siteUrl}/sitemap.xml\n`,
+            source: `User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /duelo/sala\nSitemap: ${siteUrl}/sitemap.xml\n`,
           });
           this.emitFile({
             type: 'asset',

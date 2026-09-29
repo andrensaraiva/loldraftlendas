@@ -1,11 +1,11 @@
 # Duelo online por convite — contrato e fluxo
 
-Decisão provisória de 2026-09-29 para o item 3B: preparar uma sala assíncrona de duas pessoas. A escolha foi feita como padrão recomendado enquanto se aguarda a preferência do responsável. A interface pública só deve ser ligada depois de configurar um Supabase compartilhado e validar a partida em dois aparelhos.
+Decisão confirmada pelo responsável em 2026-09-29 para o item 3B: preparar uma sala assíncrona de duas pessoas por convite. A interface pública só deve ser ligada depois de configurar um Supabase compartilhado e validar a partida em dois aparelhos.
 
 ## Experiência
 
 1. O anfitrião escolhe **Criar sala**. Uma sessão anônima identifica seu aparelho, sem pedir e-mail. O servidor sorteia uma seed, cinco contextos e três IDs de lendas para cada posição, usando o catálogo versionado. A sala recebe código de 12 caracteres e expira em sete dias.
-2. O anfitrião copia o convite (`/duelo/sala/CODIGO`) ou o código. O convidado entra no próprio aparelho; o primeiro acesso válido ocupa a segunda vaga. Outros usuários não conseguem consultar a sala.
+2. O anfitrião copia o convite (`/duelo/sala#CODIGO`) ou o código. O fragmento não é enviado ao servidor web. O convidado entra no próprio aparelho; o primeiro acesso válido ocupa a segunda vaga. Outros usuários não conseguem consultar a sala.
 3. Ambos montam suas equipes independentemente, a partir das mesmas ofertas, e escolhem um plano. Cada lado envia suas cinco escolhas uma vez. A sala mostra **Aguardando adversário** enquanto falta uma entrega, sem revelar picks ou plano do outro lado.
 4. Quando os dois enviam, cada aparelho recebe o estado final e calcula a mesma BO5 determinística com o motor existente. Recarregar a página recupera o estado da sessão anônima. Uma sessão perdida por limpeza dos dados do navegador não pode ser recuperada sem autenticação permanente.
 5. Qualquer participante pode cancelar a sala. Convites vencidos ou cancelados não aceitam novas entradas nem entregas. A interface deve explicar o motivo e oferecer criar outra sala.
@@ -26,7 +26,7 @@ O primeiro lançamento é amistoso. Não gera ranking nem resultado público. A 
 
 ## Contrato do banco
 
-As migrations `20260929110000_online_duel_rooms.sql` e `20260929111000_online_duel_catalog.sql` acrescentam duas tabelas com RLS e sem leitura ou escrita direta para clientes. Apenas RPCs `SECURITY DEFINER` com autorização explícita são expostos a usuários autenticados:
+As migrations `20260929110000_online_duel_rooms.sql` e `20260929111000_online_duel_catalog.sql` acrescentam três tabelas com RLS e sem leitura ou escrita direta para clientes. Apenas RPCs `SECURITY DEFINER` com autorização explícita são expostos a usuários autenticados:
 
 | RPC                                   | Entrada                  | Saída          | Regra                                                                                                                       |
 | ------------------------------------- | ------------------------ | -------------- | --------------------------------------------------------------------------------------------------------------------------- |

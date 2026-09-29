@@ -24,4 +24,8 @@ export function applyRouteMetadata(pathname: string, documentRoot: Document = do
       .querySelector('meta[name="twitter:description"]')
       ?.setAttribute('content', description);
   }
+  if (route === '/duelo/sala') {
+    documentRoot.title = 'Sala de duelo — Draft Lendas';
+    documentRoot.querySelector('meta[name="robots"]')?.setAttribute('content', 'noindex, nofollow');
+  }
 }
