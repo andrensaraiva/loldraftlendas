@@ -44,6 +44,12 @@ Up to 50 unsent events are held in browser-local storage and retried on later in
 
 The development-only `VITE_ADMIN_DEMO_MODE=true` setting uses an in-memory transport. It allows visual testing of the feedback form but sends and retains no analytics or feedback.
 
+## Temporary Room Chat
+
+Invitation-room chat is separate from analytics and feedback. Messages travel through private Realtime Broadcast channels between the two participants and remain only in page memory (up to 60 messages, 300 characters each). The app writes no chat history to its database, browser storage, campaign saves, or analytics queue. Leaving or reloading discards that browser's messages; late arrivals receive no replay.
+
+Muting hides and discards the opponent's messages for the player who chose it. Only the mute preference is stored locally, by room and seat. It is not broadcast to the other participant. Unmuting accepts future messages and does not restore discarded messages.
+
 ## Administrative Reporting
 
 Only users in `admin_users` can call `get_admin_dashboard_metrics()`. The RPC returns aggregate counts, sharing and challenge conversion totals, completion/replay rates by game mode, completion/title rates by game plan, top-ten ranked public player IDs, device totals, categorized rating-review totals, and up to ten recent optional notes of each feedback type. It does not return raw analytics-event rows or anonymous campaign identifiers to the browser.

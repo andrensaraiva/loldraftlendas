@@ -1,4 +1,4 @@
-import type { BrowserContext } from '@playwright/test';
+import type { BrowserContext, WebSocketRoute } from '@playwright/test';
 import manifest from '../../src/data/draft-region-groups.json' with { type: 'json' };
 import players from '../../src/data/years/2017.json' with { type: 'json' };
 import { ROLES } from '../../src/game/types';
@@ -14,6 +14,27 @@ type Room = {
   guestTeam: Submission | null;
   closed: 'cancelled' | 'expired' | null;
 };
+
+type ChatPeer = { socket: WebSocketRoute; topic: string; joinRef: string; write: boolean };
+
+// Phoenix v2 uses JSON for control frames and a binary envelope for broadcasts.
+function chatFrame(raw: string | Buffer): [string, string, string, string, Record<string, any>] {
+  if (typeof raw === 'string') return JSON.parse(raw);
+  if (raw[0] !== 3 || raw[6] !== 1) throw new Error('Unsupported test broadcast frame');
+  let offset = 7;
+  const fields = [1, 2, 3, 4, 5].map((index) => {
+    const value = raw.subarray(offset, offset + raw[index]).toString('utf8');
+    offset += raw[index];
+    return value;
+  });
+  return [
+    fields[0],
+    fields[1],
+    fields[2],
+    'broadcast',
+    { event: fields[3], payload: JSON.parse(raw.subarray(offset).toString('utf8')) },
+  ];
+}
 
 const offers = ROLES.map((role) => ({
   role,
@@ -37,6 +58,8 @@ export class InvitationServer {
   datasetVersion = manifest.datasetVersion;
   failReads = false;
   failSubmissions = false;
+  failChatSends = false;
+  private chatPeers = new Set<ChatPeer>();
 
   private snapshot(room: Room, user: number): OnlineDuelRoom {
     const seat = user === room.host ? 'host' : 'guest';
@@ -80,6 +103,65 @@ export class InvitationServer {
       ]
         .map((value) => Buffer.from(JSON.stringify(value)).toString('base64url'))
         .join('.') + '.test';
+    await context.routeWebSocket('wss://duel-tests.supabase.test/realtime/v1/**', (socket) => {
+      const remove = (topic?: string) => {
+        for (const peer of this.chatPeers)
+          if (peer.socket === socket && (!topic || peer.topic === topic))
+            this.chatPeers.delete(peer);
+      };
+      socket.onClose(() => remove());
+      socket.onMessage((raw) => {
+        const [joinRef, ref, topic, event, payload] = chatFrame(raw);
+        const reply = (status = 'ok', response = {}) =>
+          socket.send(JSON.stringify([joinRef, ref, topic, 'phx_reply', { status, response }]));
+        if (event === 'heartbeat' || event === 'access_token') {
+          reply();
+          return;
+        }
+        if (event === 'phx_leave') {
+          remove(topic);
+          reply();
+          return;
+        }
+        if (event === 'phx_join') {
+          const match = /^realtime:duel-chat:([A-F0-9]{12}):(host|guest)$/.exec(topic);
+          const room = match ? this.rooms.get(match[1]) : null;
+          if (
+            !room ||
+            room.closed ||
+            ![room.host, room.guest].includes(user) ||
+            payload.access_token !== jwt ||
+            !payload.config?.private
+          ) {
+            reply('error', { message: 'Unauthorized test chat' });
+            return;
+          }
+          remove(topic);
+          this.chatPeers.add({
+            socket,
+            topic,
+            joinRef,
+            write: match![2] === (room.host === user ? 'host' : 'guest'),
+          });
+          reply();
+          return;
+        }
+        if (event === 'broadcast') {
+          const sender = [...this.chatPeers].find(
+            (peer) => peer.socket === socket && peer.topic === topic,
+          );
+          if (!sender?.write || this.failChatSends) {
+            reply('error');
+            return;
+          }
+          for (const peer of this.chatPeers) {
+            if (peer.topic === topic && peer !== sender)
+              peer.socket.send(JSON.stringify([peer.joinRef, null, topic, 'broadcast', payload]));
+          }
+          reply();
+        }
+      });
+    });
     await context.route('https://duel-tests.supabase.test/**', async (route) => {
       const request = route.request();
       const path = new URL(request.url()).pathname;

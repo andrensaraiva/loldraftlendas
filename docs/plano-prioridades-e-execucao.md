@@ -52,6 +52,11 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 
 ## P1 — Viabilizar beta fechada real
 
+- [x] **3C. Chat temporário da sala, solicitado em 2026-09-30.**
+  - [x] Confirmar escopo exclusivo dos dois participantes, sem histórico, com silenciamento individual e privado.
+  - [x] Implementar Broadcast privado com autorização por posição, descarte ao sair/recarregar e preferência de mute local.
+  - [x] Validar banco, interface desktop/mobile e mensagens reais no Supabase; aplicar a migration 21 e remover dados de teste.
+
 - [ ] **4. Preparar e ativar a operação real.**
   - [x] Versionar e validar localmente configuração, migrations/RLS, autenticação administrativa, preflight, build protegido, smokes e runbook sem criar recursos remotos.
   - [x] Recuperar três migrations do histórico remoto e validar replay das vinte versões, lint e smokes SQL de catálogo e salas.
@@ -94,7 +99,7 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
 
 ## Fora do ciclo atual
 
-O primeiro multiplayer entrou no escopo por decisão do responsável em 2026-09-29; o duelo local foi o primeiro incremento. Perfil de jogador, ranking verificado, chat e monetização continuam fora do escopo. Sons permanecem opcionais e dependem de validação com usuários.
+O primeiro multiplayer entrou no escopo por decisão do responsável em 2026-09-29; o duelo local foi o primeiro incremento. O chat temporário entre participantes da sala foi autorizado em 2026-09-30. Perfil de jogador, ranking verificado, chat global e monetização continuam fora do escopo. Sons permanecem opcionais e dependem de validação com usuários.
 
 ## Registro de execução
 

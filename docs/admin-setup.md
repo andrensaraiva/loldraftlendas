@@ -38,6 +38,7 @@ Create a Supabase project, then apply these migrations in filename order through
 - [20260921190000_grant_admin_product_config_select.sql](../supabase/migrations/20260921190000_grant_admin_product_config_select.sql)
 - [20260929110000_online_duel_rooms.sql](../supabase/migrations/20260929110000_online_duel_rooms.sql)
 - [20260929111000_online_duel_catalog.sql](../supabase/migrations/20260929111000_online_duel_catalog.sql)
+- [20260930150000_room_chat_broadcast.sql](../supabase/migrations/20260930150000_room_chat_broadcast.sql)
 
 The migrations create:
 
@@ -58,7 +59,9 @@ The initial product configuration keeps analytics disabled. Enable it from the a
 
 The three migrations dated September 21 were recovered from the existing remote migration history on September 30. They fix dashboard ordering, synchronize the legacy dataset/year combination with `multi-era-v1.6.0` and Worlds 2014–2025, and grant authenticated config reads subject to RLS. All twenty migrations passed a fresh local replay and SQL lint. The remote smoke rejects a dataset version that differs from the frontend and checks direct anonymous access to all eight public tables.
 
-Project `qiduotxlyyilpirvxgvm` now has all twenty migrations. Its existing admin account and product configuration were preserved; only the two invitation migrations were pending. Anonymous sign-ins are enabled with `auth.rate_limit.anonymous_users=30`, and a real two-session invitation match passed. The local ignored `.env.local` connects to this project with the online flag enabled. Frontend hosting, physical-device testing, and an actual admin password login remain pending; see the deployment record in [operations-runbook.md](operations-runbook.md).
+Project `qiduotxlyyilpirvxgvm` now has twenty-one migrations, including private room chat. Its existing admin account and product configuration were preserved. Anonymous sign-ins are enabled with `auth.rate_limit.anonymous_users=30`, and a real two-session invitation match passed. The local ignored `.env.local` connects to this project with the online flag enabled. Frontend hosting, physical-device testing, and an actual admin password login remain pending; see the deployment record in [operations-runbook.md](operations-runbook.md).
+
+The chat migration adds only an authorization helper and two Realtime policies. Both participants may receive messages; each can send only on their own seat's topic. WebSocket Broadcast does not persist chat messages. No chat table, analytics event, or replay request is added. See [the chat contract](duelo-online-convite.md#chat-temporário-da-sala).
 
 The repository pins the CLI and includes `supabase/config.toml`. Validate locally with Docker, inspect the remote plan, and only then apply it:
 

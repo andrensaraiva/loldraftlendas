@@ -17,7 +17,7 @@ const client =
       })
     : null;
 
-function requireClient() {
+export function requireClient() {
   if (!client) throw new Error('Convites online indisponíveis no momento.');
   return client;
 }

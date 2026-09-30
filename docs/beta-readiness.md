@@ -4,7 +4,7 @@ Atualizado em 2026-09-30.
 
 ## Validado localmente
 
-- Build de produção, TypeScript, 110 testes unitários e suíte E2E completa.
+- Build de produção, TypeScript e 113 testes unitários. A suíte E2E completa mantém a evidência dos checkpoints anteriores; convite e chat foram revalidados no incremento abaixo.
 - Incremento de 2026-09-30: 14 testes da interface online habilitada com Auth/RPC simulados e seis regressões públicas/duelo em Chromium desktop/mobile. Build, TypeScript, auditoria, preflight e catálogo passaram; suíte completa, Firefox/WebKit e replay SQL preservam a evidência do checkpoint anterior.
 - Smoke do fluxo público em Chromium, Firefox e WebKit.
 - Catálogo completo com 345 identidades aprovadas e 690 WebPs de 768 px validados na CI, incluindo limites individuais e agregados de bytes.
@@ -26,6 +26,8 @@ Atualizado em 2026-09-30.
 - O teste não substitui login real do administrador, hospedagem HTTPS, CI do novo commit ou aparelhos físicos. Detalhes em [operations-runbook.md](operations-runbook.md).
 
 ## Comandos de aceite
+
+Incremento do chat em 2026-09-30: 21 migrations sincronizadas, replay/lint e três smokes SQL locais aprovados; smoke SQL de chat e teste com duas sessões reais mais um terceiro no Supabase aprovados. A suíte simulada passou 18 E2E desktop/mobile, incluindo mensagens temporárias, mute/unmute privado e recuperação de envio. Os quatro cenários de chat passaram novamente após ajustar reconexão e restauração da página. Nenhuma mensagem foi persistida; dados de teste removidos. Frontend HTTPS e aparelhos físicos continuam pendentes.
 
 ```sh
 npm test

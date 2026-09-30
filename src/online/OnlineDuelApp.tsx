@@ -20,6 +20,7 @@ import '../duel/duel.css';
 import './online.css';
 
 const repository = new LocalDataRepository();
+const RoomChat = lazy(() => import('./RoomChat'));
 const ResearchDialog = lazy(() =>
   import('../components/ResearchDialog').then((module) => ({ default: module.ResearchDialog })),
 );
@@ -673,6 +674,16 @@ export default function OnlineDuelApp() {
               Criar nova sala <ArrowRight size={18} />
             </button>
           </section>
+        )}
+        {room && room.code === code && !['cancelled', 'expired'].includes(room.state) && (
+          <Suspense fallback={null}>
+            <RoomChat
+              key={`${room.code}:${room.seat}`}
+              code={room.code}
+              seat={room.seat}
+              expiresAt={room.expiresAt}
+            />
+          </Suspense>
         )}
         {visibleError && (
           <p className="duel-error" role="alert">

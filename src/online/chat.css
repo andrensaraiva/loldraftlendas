@@ -1,0 +1,122 @@
+.room-chat {
+  margin-top: 32px;
+  padding: 20px;
+  border: 1px solid #cbd8bf;
+  border-radius: 8px;
+  background: #f7fcef;
+  text-align: left;
+}
+.room-chat header,
+.room-chat h2,
+.room-chat button,
+.room-chat-compose {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.room-chat header {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.room-chat h2 {
+  margin: 0;
+  font: 800 26px var(--display);
+}
+.room-chat button {
+  justify-content: center;
+  min-height: 44px;
+  padding: 9px 12px;
+  border: 1px solid #b3c5a6;
+  border-radius: 6px;
+  background: white;
+  color: #275a1b;
+  font-weight: 800;
+}
+.room-chat button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.room-chat button[aria-pressed='true'] {
+  border-color: #866b23;
+  color: #684a05;
+}
+.room-chat-note,
+.room-chat-status,
+.room-chat-empty,
+.room-chat-muted {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.room-chat-note,
+.room-chat-status,
+.room-chat-empty {
+  color: #526849;
+}
+.room-chat-muted {
+  color: #684a05;
+}
+.room-chat-log {
+  height: 220px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 12px;
+  margin: 14px 0;
+  border: 1px solid #dce5d5;
+  border-radius: 6px;
+  background: white;
+}
+.room-chat-message {
+  max-width: 88%;
+  width: fit-content;
+  margin: 0 0 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #f1f3ee;
+  overflow-wrap: anywhere;
+}
+.room-chat-message.own {
+  margin-left: auto;
+  background: #e7f4da;
+}
+.room-chat-message b {
+  font-size: 11px;
+  color: #526849;
+}
+.room-chat-message p {
+  margin: 3px 0 0;
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.room-chat label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.room-chat-compose input {
+  flex: 1;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #aabca0;
+  border-radius: 6px;
+  background: white;
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+}
+.room-chat form small {
+  display: block;
+  margin-top: 5px;
+  color: #526849;
+  font-size: 11px;
+}
+@media (max-width: 700px) {
+  .room-chat {
+    padding: 14px;
+  }
+  .room-chat header button {
+    width: 100%;
+  }
+}

@@ -77,6 +77,9 @@ jobs:
       - name: Smoke initial product catalog
         run: docker exec -i supabase_db_loldraftlendas psql -U postgres -d postgres -v ON_ERROR_STOP=1 < scripts/sql/smoke-product-config.sql
 
+      - name: Smoke private room chat authorization
+        run: docker exec -i supabase_db_loldraftlendas psql -U postgres -d postgres -v ON_ERROR_STOP=1 < scripts/sql/smoke-room-chat.sql
+
       - name: Production build
         run: npm run build
 

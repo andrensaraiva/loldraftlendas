@@ -117,6 +117,7 @@ const requiredMigrations = [
   '20260921190000_grant_admin_product_config_select.sql',
   '20260929110000_online_duel_rooms.sql',
   '20260929111000_online_duel_catalog.sql',
+  '20260930150000_room_chat_broadcast.sql',
 ];
 check(
   'inventário de migrations',

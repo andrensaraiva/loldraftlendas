@@ -24,7 +24,20 @@ Os controles seguem o padrão de teclado e toque do duelo local. A ação de env
 
 O primeiro lançamento é amistoso. Não gera ranking nem resultado público. A seed e as ofertas são geradas no banco; o cliente não escolhe candidatos arbitrários. Cada entrega é validada contra os três IDs de cada posição. O placar é reproduzido nos dois clientes, mas a simulação ainda não é uma prova verificável por servidor, requisito para ranking futuro.
 
-## Contrato do banco
+## Chat temporário da sala
+
+Em 2026-09-30, o responsável pediu um chat simples e esclareceu que ele deve ser visto somente pelas duas pessoas da mesma sala.
+
+- O chat aparece durante o draft, a espera e o resultado; sair, trocar de sala ou recarregar descarta as mensagens daquele navegador. Quem entra depois não recebe histórico. São mantidas no máximo 60 mensagens em memória, com até 300 caracteres cada.
+- **Silenciar adversário** remove as mensagens recebidas da tela e ignora novas mensagens dele. A preferência fica apenas no navegador, por sala e posição; não é enviada nem avisada ao adversário. **Mostrar mensagens do adversário** volta a aceitar mensagens novas, sem recuperar as descartadas. O jogador silenciado continua recebendo o que o outro envia.
+- Texto é renderizado como texto, sem HTML ou links automáticos. Falha de envio preserva o rascunho para retry; queda de conexão do chat não interrompe o draft. O chat sai da interface ao cancelar ou vencer a sala.
+- O transporte usa [Realtime Broadcast](https://supabase.com/docs/guides/realtime/broadcast) por WebSocket, sem tabela de chat, gravação em storage, analytics ou replay. A confirmação de envio indica recebimento pelo serviço; mensagens só chegam a participantes conectados naquele instante.
+- A migration `20260930150000_room_chat_broadcast.sql` autoriza dois canais privados, `duel-chat:CODIGO:host` e `duel-chat:CODIGO:guest`. A função `can_access_duel_chat` verifica a identidade, participação e validade da sala. Ambos podem receber; só o dono da posição pode publicar no canal dela. A interface identifica o remetente pelo canal autorizado, ignorando identidades declaradas no payload.
+- Conforme a [autorização do Realtime](https://supabase.com/docs/guides/realtime/authorization), as permissões são conferidas na conexão e renovação do JWT. Cancelar/expirar impede novas conexões; o cliente normal fecha os canais quando observa o encerramento. Revogação instantânea de um cliente modificado já conectado não é garantida pelo cache do serviço.
+
+`scripts/sql/smoke-room-chat.sql` cobre anfitrião, convidado, terceiro, falsificação de posição, tópicos inválidos, cancelamento e expiração. A suíte `test:e2e:online` inclui chat temporário, silenciamento privado e reversível, recarga, texto sem HTML e recuperação de envio em desktop/mobile.
+
+## Banco das salas
 
 As migrations `20260929110000_online_duel_rooms.sql` e `20260929111000_online_duel_catalog.sql` acrescentam três tabelas com RLS e sem leitura ou escrita direta para clientes. Apenas RPCs `SECURITY DEFINER` com autorização explícita são expostos a usuários autenticados:
 

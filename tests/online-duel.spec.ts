@@ -29,6 +29,112 @@ async function nextPoll(page: Page, server: InvitationServer) {
   await expect.poll(() => server.reads, { timeout: 8000 }).toBeGreaterThan(reads);
 }
 
+async function chatReady(page: Page) {
+  await expect(page.locator('.room-chat-status')).toContainText('Chat conectado.');
+}
+
+async function sendChat(page: Page, text: string) {
+  await page.getByLabel('Sua mensagem', { exact: true }).fill(text);
+  await page.locator('.room-chat').getByRole('button', { name: 'Enviar', exact: true }).click();
+  await expect(page.getByRole('log')).toContainText(text);
+}
+
+test('room chat is ephemeral and muting is private, persistent and reversible', async ({
+  page,
+  context,
+  browser,
+}, testInfo) => {
+  const server = new InvitationServer();
+  await server.attach(context);
+  await createRoom(page);
+  await chatReady(page);
+  await sendChat(page, 'Antes do convidado');
+  const guestContext = await browser.newContext({
+    ...testInfo.project.use,
+    storageState: { cookies: [], origins: [] },
+  });
+  try {
+    await server.attach(guestContext);
+    const guest = await guestContext.newPage();
+    await guest.goto(page.url());
+    await guest.getByRole('button', { name: 'Entrar no duelo' }).click();
+    await chatReady(guest);
+    await expect(guest.getByRole('log')).not.toContainText('Antes do convidado');
+    await sendChat(guest, 'Olá, boa partida!');
+    await expect(page.getByRole('log')).toContainText('Olá, boa partida!');
+    await page.getByRole('button', { name: 'Silenciar adversário', exact: true }).click();
+    await expect(page.getByRole('log')).not.toContainText('Olá, boa partida!');
+    await expect(
+      guest.getByRole('button', { name: 'Silenciar adversário', exact: true }),
+    ).toHaveAttribute('aria-pressed', 'false');
+    await sendChat(guest, 'Não deve aparecer');
+    await sendChat(page, 'Minha mensagem continua chegando');
+    await expect(guest.getByRole('log')).toContainText('Minha mensagem continua chegando');
+    await expect(page.getByRole('log')).not.toContainText('Não deve aparecer');
+    await page.reload();
+    await chatReady(page);
+    await expect(page.getByRole('log')).toHaveText('Nenhuma mensagem nesta visita.');
+    await expect(
+      page.getByRole('button', { name: 'Mostrar mensagens do adversário' }),
+    ).toHaveAttribute('aria-pressed', 'true');
+    await page.getByRole('button', { name: 'Mostrar mensagens do adversário' }).click();
+    await sendChat(guest, '<img src=x onerror=alert(1)>');
+    await expect(page.getByRole('log')).toContainText('<img src=x onerror=alert(1)>');
+    await expect(page.getByRole('log').locator('img')).toHaveCount(0);
+    await expect(page.getByRole('log')).not.toContainText('Não deve aparecer');
+    await guest.reload();
+    await chatReady(guest);
+    await expect(guest.getByRole('log')).toHaveText('Nenhuma mensagem nesta visita.');
+    await page.evaluate(() => {
+      dispatchEvent(new PageTransitionEvent('pagehide', { persisted: true }));
+      dispatchEvent(new PageTransitionEvent('pageshow', { persisted: true }));
+    });
+    await chatReady(page);
+    await expect(page.getByRole('log')).toHaveText('Nenhuma mensagem nesta visita.');
+    await sendChat(guest, 'Mensagem após voltar');
+    await expect(page.getByRole('log')).toContainText('Mensagem após voltar');
+    for (const participant of [page, guest]) {
+      const storage = await participant.evaluate(() =>
+        JSON.stringify({ ...localStorage, ...sessionStorage }),
+      );
+      expect(storage).not.toContain('Minha mensagem continua chegando');
+      expect(storage).not.toContain('Não deve aparecer');
+      expect(
+        await participant.evaluate(() => document.documentElement.scrollWidth <= innerWidth),
+      ).toBe(true);
+    }
+    await page.evaluate(() => {
+      location.hash = 'INVALIDO';
+    });
+    await expect(page.getByRole('heading', { name: 'Código inválido.' })).toBeVisible();
+    await expect(page.getByRole('log')).toHaveCount(0);
+  } finally {
+    await guestContext.close();
+  }
+});
+
+test('chat send failure keeps the draft text and does not interrupt player choices', async ({
+  page,
+  context,
+}) => {
+  const server = new InvitationServer();
+  await server.attach(context);
+  await createRoom(page);
+  await chatReady(page);
+  server.failChatSends = true;
+  await page.getByLabel('Sua mensagem', { exact: true }).fill('Tentar de novo');
+  await page.locator('.room-chat').getByRole('button', { name: 'Enviar', exact: true }).click();
+  await expect(page.getByRole('alert')).toContainText('Envio não confirmado');
+  await expect(page.getByLabel('Sua mensagem', { exact: true })).toHaveValue('Tentar de novo');
+  await expect(page.getByRole('log')).not.toContainText('Tentar de novo');
+  await page.locator('.player-pick-button').first().click();
+  await expect(page.getByRole('heading', { name: 'Escolha seu JUNGLE.' })).toBeVisible();
+  server.failChatSends = false;
+  await page.locator('.room-chat').getByRole('button', { name: 'Enviar', exact: true }).click();
+  await expect(page.getByRole('log')).toContainText('Tentar de novo');
+  await expect(page.getByLabel('Sua mensagem', { exact: true })).toHaveValue('');
+});
+
 test('two independent sessions resume drafts and receive the same final series', async ({
   page,
   context,

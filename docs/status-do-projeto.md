@@ -56,10 +56,11 @@ Migrations Supabase, em ordem:
 18. [20260921190000_grant_admin_product_config_select.sql](../supabase/migrations/20260921190000_grant_admin_product_config_select.sql)
 19. [20260929110000_online_duel_rooms.sql](../supabase/migrations/20260929110000_online_duel_rooms.sql)
 20. [20260929111000_online_duel_catalog.sql](../supabase/migrations/20260929111000_online_duel_catalog.sql)
+21. [20260930150000_room_chat_broadcast.sql](../supabase/migrations/20260930150000_room_chat_broadcast.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
-A preparação operacional inclui CLI/configuração Supabase versionados, replay limpo das vinte migrations, lint SQL, smokes, preflight de ambiente, build de deploy protegido, headers equivalentes e workflow manual. O projeto remoto está sincronizado; a ativação e as pendências de hospedagem estão em [operations-runbook.md](operations-runbook.md).
+A preparação operacional inclui CLI/configuração Supabase versionados, replay limpo das 21 migrations, lint SQL, smokes, preflight de ambiente, build de deploy protegido, headers equivalentes e workflow manual. O projeto remoto está sincronizado; a ativação e as pendências de hospedagem estão em [operations-runbook.md](operations-runbook.md).
 
 ### Fase 3.1: CI/CD e Qualidade
 
@@ -245,6 +246,8 @@ Em 2026-09-30, o responsável autorizou a conexão ao projeto existente `qiduotx
 O replay das vinte migrations, o lint e os smokes SQL de catálogo/salas passaram localmente. Como a conexão PostgreSQL direta não estava disponível, as duas migrations pendentes de convite foram aplicadas por HTTPS em uma transação validada previamente, preservando versões, nomes e statements no histórico. O remoto ficou com vinte migrations, oito tabelas com RLS e 785 candidatos.
 
 Auth anônima está habilitada com limite 30. O `.env.local` ignorado pelo Git usa URL/chave pública reais e `VITE_ONLINE_DUEL_ENABLED=true`. O servidor local atende em `http://localhost:5173`; a sala fica em `/duelo/sala`. Duas sessões Chromium independentes (desktop e emulação iPhone 13) passaram pelo convite, draft, retomada, entrega e resultado idêntico após recarga. Uma terceira identidade teve acesso negado à sala, ao dashboard e às tabelas de duelo. O smoke HTTP e o smoke SQL de isolamento passaram no remoto. Os três usuários de teste e sua sala foram removidos; restaram a conta e o administrador originais.
+
+Atualização do chat em 2026-09-30: a pedido do responsável, cada sala ganhou um chat temporário exclusivo dos dois participantes. Mensagens só ficam na memória da página e somem ao sair/recarregar; silenciar o adversário remove as anteriores, ignora as novas e salva somente essa preferência no navegador, sem avisá-lo. A migration 21 autoriza canais privados por posição, impedindo um participante de se passar pelo outro. Replay/lint, três smokes SQL, 113 unitários, 18 E2E, build e auditoria passaram. Quatro E2E de chat foram repetidos após ajustar reconexão e descarte ao restaurar a página. O teste no Supabase real validou envio bidirecional, ausência de replay, mute/unmute, recarga, bloqueio de terceiro/falsificação e cancelamento. Dados de teste foram removidos e zero mensagens permaneceram no banco.
 
 Ainda faltam:
 

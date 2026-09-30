@@ -10,7 +10,7 @@ Este runbook registra a preparação reproduzível e a ativação autorizada do 
 
 - Supabase CLI fixado na versão do projeto e configuração local sem secrets em `supabase/config.toml`.
 - Analytics começa desativado na configuração inicial e só deve ser habilitado após o smoke administrativo e a conferência da política de privacidade.
-- Vinte migrations ordenadas, com gate estático para inventário, RLS, `search_path` de funções `SECURITY DEFINER` e grants explícitos.
+- Vinte e uma migrations ordenadas, com gate estático para inventário, RLS, `search_path` de funções `SECURITY DEFINER` e grants explícitos.
 - Replay integral das dezessete migrations e lint SQL executados em banco local limpo na CI; o smoke da sala por convite confere autorização e entregas ocultas.
 - Em 2026-09-30, replay das vinte migrations, lint e smokes SQL de catálogo e salas passaram no banco local. As três migrations de 2026-09-21 foram recuperadas do histórico remoto existente; corrigem dashboard, catálogo inicial e grant de leitura administrativa sob RLS.
 - Smoke local aprovado para configuração pública, cinco tabelas sob RLS, bloqueio anônimo dos RPCs administrativos, autenticação, allowlist, leitura protegida e dashboard agregado.
@@ -32,6 +32,12 @@ Este runbook registra a preparação reproduzível e a ativação autorizada do 
 - Smoke HTTP remoto aprovado: configuração no dataset `multi-era-v1.6.0`, acesso anônimo bloqueado às oito tabelas, RPCs administrativos protegidos e rejeição de payloads inválidos de analytics e feedback. O smoke SQL de isolamento de salas passou em transação revertida.
 - Partida real em dois contextos Chromium independentes, desktop e emulação iPhone 13: convite, retomada do draft, picks ocultos, resultado idêntico de cinco jogos (3 × 2) e recarga. Uma terceira sessão real teve leitura/entrada na sala e acesso administrativo negados; as três tabelas de duelo recusaram leitura direta autenticada. Sem erros de página ou overflow.
 - Os três usuários anônimos de teste e sua sala foram removidos com lista explícita de UUIDs e guardas contra contas administrativas ou participantes externos. Conferência final: vinte migrations, oito tabelas com RLS, 785 candidatos, zero salas, uma conta e um administrador. A configuração existente foi preservada, inclusive `analytics_enabled=true`.
+
+### Chat privado ativado em 2026-09-30
+
+- A migration `20260930150000_room_chat_broadcast.sql` foi aplicada por HTTPS com conferência das vinte versões anteriores e registro transacional da versão 21. Acrescenta a função de autorização e duas políticas em `realtime.messages`; não cria tabela ou histórico de mensagens.
+- Replay limpo das 21 migrations, lint e os três smokes SQL (catálogo, salas e chat) passaram localmente. O smoke SQL de chat também passou no remoto. Passaram 113 unitários e 18 E2E de convite/chat em desktop/mobile; após ajustar reconexão e descarte ao restaurar a página pelo navegador, os quatro E2E de chat passaram novamente. Build e auditoria passaram.
+- Duas sessões Chromium reais trocaram mensagens; entrada tardia e recarga não recuperaram histórico. Silenciamento privado e reversível, falsificação de remetente negada, terceira identidade recusada e encerramento após cancelamento foram verificados. Sete identidades dos testes foram removidas com guardas; usuários/salas fora dessa lista foram preservados. A consulta final encontrou zero mensagens `duel-chat:*` persistidas e duas políticas de chat, mantendo o administrador original.
 
 ### Ainda não executado
 
@@ -67,7 +73,7 @@ npx supabase db push
 npx supabase migration list
 ```
 
-Em um projeto vazio, o `--dry-run` deve listar as vinte migrations descritas em [admin-setup.md](admin-setup.md). Em um projeto existente, confira primeiro o histórico remoto e aplique apenas as pendentes. Uma única pessoa deve executar o push por vez. O projeto ativado em 2026-09-30 já contém todas as vinte versões.
+Em um projeto vazio, o `--dry-run` deve listar as 21 migrations descritas em [admin-setup.md](admin-setup.md). Em um projeto existente, confira primeiro o histórico remoto e aplique apenas as pendentes. Uma única pessoa deve executar o push por vez. O projeto ativado em 2026-09-30 já contém todas as 21 versões.
 
 No Supabase Auth:
 
