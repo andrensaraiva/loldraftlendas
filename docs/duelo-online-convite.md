@@ -54,7 +54,15 @@ Execute `npm run test:e2e:online`. A configuração `playwright.online.config.ts
 
 Em 2026-09-30, passaram sete cenários em cada viewport (14 execuções): duas sessões independentes com retomada e a mesma BO5, catálogo incompatível após polling, falha no download do dataset e recuperação, troca para código vazio/inválido, falhas de consulta/envio com retry e encerramento por cancelamento/expiração. O foco acompanha cada posição do draft; mensagens de carregamento e ações não são apagadas por consultas automáticas. Consultas periódicas não se sobrepõem e respostas de consultas antigas são ignoradas depois de sair da sala.
 
-Esses testes verificam o contrato HTTP e a interface. A autorização real continua coberta pelo smoke SQL; Auth remoto, RLS real e dois aparelhos físicos ainda precisam do aceite abaixo. A suíte foi adicionada ao workflow de CI e seus artefatos ficam em `test-results/online`.
+Esses testes verificam o contrato HTTP e a interface. A autorização real também é coberta pelo smoke SQL. A suíte foi adicionada ao workflow de CI e seus artefatos ficam em `test-results/online`.
+
+### Validação no Supabase compartilhado em 2026-09-30
+
+O projeto `qiduotxlyyilpirvxgvm` recebeu as duas migrations de convite, com catálogo de 785 candidatos e histórico total de vinte versões sincronizado. Auth anônima foi habilitada com limite 30, e o frontend local usa a chave pública publishable com a flag online ligada.
+
+Dois contextos Chromium independentes, desktop e emulação iPhone 13, concluíram convite, draft, retomada, envio e a mesma BO5 de cinco jogos (3 × 2), preservada após recarga. O convidado não recebeu os picks/plano do anfitrião antes da própria entrega. Uma terceira sessão real não conseguiu consultar/ocupar a sala, abrir o dashboard ou ler diretamente as tabelas de duelo. Os smokes SQL e HTTP passaram; os usuários e a sala criados pelo teste foram removidos. O cadastro administrativo existente foi preservado.
+
+Este aceite cobre o backend real com frontend local. Hospedagem HTTPS, dois aparelhos físicos e retenção agendada permanecem pendentes no [runbook](operations-runbook.md).
 
 ### Gates remotos e de banco
 
@@ -64,4 +72,4 @@ Esses testes verificam o contrato HTTP e a interface. A autorização real conti
 - Corrida por uma vaga, duplicata de envio, código inválido, expiração, cancelamento e versão incompatível são cobertos.
 - Smoke remoto confirma configuração de Auth anônima, limitação de abuso e ausência de acesso administrativo para jogadores.
 
-Até esses testes, `/duelo` continua oferecendo apenas o duelo local já publicado. A criação e a conexão remotas dependem do item 4 do plano.
+O exemplo de ambiente mantém `VITE_ONLINE_DUEL_ENABLED=false` para builds públicos até concluir os gates externos. Nesta máquina, `.env.local` habilita `/duelo/sala` contra o Supabase compartilhado.

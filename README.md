@@ -40,7 +40,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 - No mobile, as três opções usam carrossel com swipe, teclado, setas, indicador e uma prévia da próxima carta. A escolha acontece somente pelo CTA explícito **Escalar esta lenda**.
 - Modos **Clássico** e **Almanaque**: o Clássico exibe ratings e força; o Almanaque oculta toda orientação numérica durante a campanha e revela os cinco jogos no resultado final. O modo integra save, desafio e card compartilhável.
 - Duelo local em `/duelo`: duas pessoas se alternam no mesmo aparelho, recebem as mesmas três ofertas por posição, escolhem planos próprios e disputam uma melhor de cinco entre as equipes. O progresso e a seed ficam no armazenamento local, separados do save da campanha solo; não há sala online ou ranking.
-- A [sala online por convite](docs/duelo-online-convite.md) tem interface e migrations preparadas. O link só aparece quando `VITE_ONLINE_DUEL_ENABLED=true` e as duas variáveis públicas do Supabase estão configuradas; a ativação exige validar duas pessoas em aparelhos separados.
+- A [sala online por convite](docs/duelo-online-convite.md) está conectada ao Supabase e foi validada com duas sessões reais em 2026-09-30. O link aparece quando `VITE_ONLINE_DUEL_ENABLED=true` e as duas variáveis públicas do Supabase estão configuradas. A flag está ligada no ambiente local; hospedagem e teste em aparelhos físicos continuam pendentes.
 - Quatro planos persistentes escolhidos após o draft: **Agressão**, **Teamfight**, **Controle/Pick** e **Escala**. As tags ativas e o efeito limitado de `−1,0` a `+1,5` aparecem na composição e na prévia da partida.
 - Filtros opcionais na home restringem o draft e o futuro desafio por edição e grupo regional. Combinações vazias são bloqueadas e cada contexto do manifesto preserva três candidatos por posição.
 - Desafio Diário no modo Almanaque com seed, regras e modificador especial iguais para todos, calendário de Brasília e arquivo dos sete dias recentes. Regra e objetivo aparecem antes do draft e o resultado registra se a missão foi cumprida; a primeira entrada do dia é oficial e as demais são amistosas, sem ranking ou conta.
@@ -137,7 +137,7 @@ O relatório é uma apresentação fictícia gerada depois de sortear o resultad
 
 Um único temporizador cancelável controla a reprodução na interface. A partida é sorteada uma vez; mudar velocidade, modo ou pausar não a sorteia novamente. O resultado só entra no placar da série ao terminar sua apresentação. Relatórios e o estado da campanha são mantidos no armazenamento local até começar outro draft; o formato do save é versionado e invalidado quando o dataset muda.
 
-A campanha ativa fica somente no navegador do jogador e pode ser apagada por **Novo draft**. Os resumos concluídos possuem limpeza explícita e separada em **Seu histórico local**. Nenhuma chave, login, perfil ou persistência remota de usuário foi adicionada.
+A campanha ativa fica somente no navegador do jogador e pode ser apagada por **Novo draft**. Os resumos concluídos possuem limpeza explícita e separada em **Seu histórico local**. Convites online usam sessões anônimas e salas persistidas no Supabase; não há perfil ou login por e-mail para jogadores.
 
 ## Vercel, Firebase e Supabase
 
@@ -150,11 +150,11 @@ O build usa `VITE_SITE_URL` para gerar canonical, Open Graph, Twitter Card, `rob
 
 Quando houver necessidade de dados remotos, implemente `DataRepository.load()` com Supabase ou Firestore e substitua a instância local em `App.tsx`. Retorne `{ players, champions, draftRegionManifest }`; o motor e as telas continuam usando o mesmo contrato. Em Supabase, uma futura modelagem pode separar `champions`, `player_versions` e `champion_pool_slots` (chave composta `player_version_id + game`). Em Firestore, versões podem conter os cinco slots, mantendo a coleção de campeões separada.
 
-Nenhum serviço remoto foi criado e nenhuma publicação foi feita. Se rankings forem adicionados, resultados competitivos precisam ser recalculados por um backend confiável, já que a simulação atual roda no navegador. Não colocar chaves administrativas em variáveis `VITE_*`.
+O projeto Supabase existente `qiduotxlyyilpirvxgvm` foi conectado em 2026-09-30, com vinte migrations sincronizadas, Auth anônima e 785 candidatos para as salas. O frontend ainda precisa de hospedagem pública. Se rankings forem adicionados, resultados competitivos precisam ser recalculados por um backend confiável, já que a simulação atual roda no navegador. Não colocar chaves administrativas em variáveis `VITE_*`.
 
 A área `/admin` usa Supabase Auth, uma allowlist explícita em `admin_users` e RLS. A migração e a configuração de variáveis locais estão no [guia de setup do Supabase](docs/admin-setup.md).
 
-A preparação operacional reproduzível, os gates de ambiente, os smokes sem gravação e o procedimento de rollback estão no [runbook de operação](docs/operations-runbook.md). Essa preparação não cria contas, não aplica migrations remotas e não publica o site.
+A preparação reproduzível, os gates de ambiente, os smokes, o registro da ativação remota e o procedimento de rollback estão no [runbook de operação](docs/operations-runbook.md).
 
 ## Verificação
 

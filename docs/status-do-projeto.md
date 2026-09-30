@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-30. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–5 e 7–9 e a estabilização da suíte E2E. A revisão atual do 7a0, o duelo local e a validação da interface de convite integram o checkpoint atual, ainda sem ativação de Supabase ou hospedagem.
+Atualizado em 2026-09-30. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–5 e 7–9 e a estabilização da suíte E2E. O checkpoint atual inclui duelo local, interface de convite e Supabase remoto ativado e testado. A hospedagem HTTPS continua pendente.
 
 ## Objetivo Preservado
 
@@ -51,12 +51,15 @@ Migrations Supabase, em ordem:
 13. [20260918120000_campaign_journey_analytics.sql](../supabase/migrations/20260918120000_campaign_journey_analytics.sql)
 14. [20260918130000_onboarding_analytics.sql](../supabase/migrations/20260918130000_onboarding_analytics.sql)
 15. [20260919100000_daily_modifiers_analytics.sql](../supabase/migrations/20260919100000_daily_modifiers_analytics.sql)
-16. [20260929110000_online_duel_rooms.sql](../supabase/migrations/20260929110000_online_duel_rooms.sql)
-17. [20260929111000_online_duel_catalog.sql](../supabase/migrations/20260929111000_online_duel_catalog.sql)
+16. [20260921142000_fix_game_plan_dashboard_timestamp.sql](../supabase/migrations/20260921142000_fix_game_plan_dashboard_timestamp.sql)
+17. [20260921183500_sync_product_config_dataset.sql](../supabase/migrations/20260921183500_sync_product_config_dataset.sql)
+18. [20260921190000_grant_admin_product_config_select.sql](../supabase/migrations/20260921190000_grant_admin_product_config_select.sql)
+19. [20260929110000_online_duel_rooms.sql](../supabase/migrations/20260929110000_online_duel_rooms.sql)
+20. [20260929111000_online_duel_catalog.sql](../supabase/migrations/20260929111000_online_duel_catalog.sql)
 
 Documentação operacional: [admin-setup.md](admin-setup.md) e [analytics-privacy.md](analytics-privacy.md).
 
-A preparação local da operação também está concluída: CLI/configuração Supabase versionados, replay limpo das quinze migrations, lint SQL, smoke de RLS/autenticação/allowlist/dashboard, preflight de ambiente, build de deploy protegido, headers equivalentes, cache corrigido para assets de URL estável, smoke público e workflow manual. A execução remota continua pendente e está sequenciada em [operations-runbook.md](operations-runbook.md).
+A preparação operacional inclui CLI/configuração Supabase versionados, replay limpo das vinte migrations, lint SQL, smokes, preflight de ambiente, build de deploy protegido, headers equivalentes e workflow manual. O projeto remoto está sincronizado; a ativação e as pendências de hospedagem estão em [operations-runbook.md](operations-runbook.md).
 
 ### Fase 3.1: CI/CD e Qualidade
 
@@ -235,16 +238,22 @@ Preparação do item 3B em 2026-09-29: o responsável confirmou a [sala assíncr
 
 Incremento local de 2026-09-30 no item 3B: `npm run test:e2e:online` cobre a interface habilitada com Auth/RPC simulados em servidor separado. Passaram 14 cenários em Chromium desktop/mobile, incluindo sessões independentes, retomada, mesma BO5 e recuperação de falhas, além de seis regressões de rotas públicas e duelo local. Foram corrigidos o desaparecimento de erros de catálogo/download após polling, os controles da sala anterior ao alterar o fragmento e o foco entre escolhas. Polling não acumula consultas nem aplica respostas após abandonar a sala. Passaram também os 110 unitários, TypeScript, build, auditoria (494,02 kB de JavaScript inicial e 80,95 kB de CSS), preflight e catálogo de 785 candidatos; a comparação do SQL gerado agora tolera CRLF do checkout Windows. Não foram repetidos o replay SQL (Docker instalado, mas inativo), a suíte E2E completa nem os smokes Firefox/WebKit nesta sessão. Os testes simulados não substituem o Supabase compartilhado e os aparelhos reais.
 
-## Configuração Externa Pendente
+## Supabase Ativado e Pendências Externas
 
-O Supabase não foi configurado com credenciais reais durante o desenvolvimento. Para ativar admin, analytics e dashboard fora do modo demo:
+Em 2026-09-30, o responsável autorizou a conexão ao projeto existente `qiduotxlyyilpirvxgvm`. A CLI foi autenticada e vinculada. O remoto já tinha dezoito migrations, uma conta administrativa e configuração no dataset `multi-era-v1.6.0`, com analytics ligado. Três migrations de 2026-09-21 ausentes no checkout foram recuperadas dos statements do histórico remoto; nenhuma configuração existente foi sobrescrita.
 
-1. Crie um projeto Supabase e aplique as dezessete migrations na ordem acima, depois de validar as duas novas migrations de duelo na CI.
-2. Crie a conta do mantenedor no Supabase Auth.
-3. Insira manualmente o UUID dela em `public.admin_users`.
-4. Crie `.env.local` a partir de [.env.example](../.env.example) e informe `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`.
-5. Reinicie `npm run dev` e teste `/admin` com uma conta autorizada e uma conta não autorizada.
-6. Configure as mesmas variáveis públicas no provedor de deploy. Nunca use a `service_role key` em variáveis `VITE_*`.
+O replay das vinte migrations, o lint e os smokes SQL de catálogo/salas passaram localmente. Como a conexão PostgreSQL direta não estava disponível, as duas migrations pendentes de convite foram aplicadas por HTTPS em uma transação validada previamente, preservando versões, nomes e statements no histórico. O remoto ficou com vinte migrations, oito tabelas com RLS e 785 candidatos.
+
+Auth anônima está habilitada com limite 30. O `.env.local` ignorado pelo Git usa URL/chave pública reais e `VITE_ONLINE_DUEL_ENABLED=true`. O servidor local atende em `http://localhost:5173`; a sala fica em `/duelo/sala`. Duas sessões Chromium independentes (desktop e emulação iPhone 13) passaram pelo convite, draft, retomada, entrega e resultado idêntico após recarga. Uma terceira identidade teve acesso negado à sala, ao dashboard e às tabelas de duelo. O smoke HTTP e o smoke SQL de isolamento passaram no remoto. Os três usuários de teste e sua sala foram removidos; restaram a conta e o administrador originais.
+
+Ainda faltam:
+
+1. Validar login por senha do administrador existente e conferir uma campanha no funil real. Credenciais administrativas não foram fornecidas ao smoke.
+2. Escolher hospedagem HTTPS e configurar o ambiente público, Site URL e redirects. O frontend não foi publicado.
+3. Revisar cadastro por e-mail, executar smoke pós-deploy, configurar monitoramento e retenção de salas/sessões anônimas.
+4. Testar dois aparelhos físicos antes de habilitar convites no build público. A emulação mobile não conclui esse aceite.
+
+As alterações desta sessão estão locais; o push anterior falhou por falta de credencial GitHub. A nova versão da CI ainda precisa executar após o envio.
 
 O workflow CI foi observado após push real em 2026-09-28. Node 22, validações históricas e de retratos, build, auditoria e a matriz Playwright completa passaram no [GitHub Actions](https://github.com/andrensaraiva/loldraftlendas/actions/runs/36468094295).
 
@@ -275,7 +284,7 @@ Fila operacional vigente: [Plano de Prioridades e Execução](plano-prioridades-
 
 ### Próximo Checkpoint: Dependências Externas
 
-- Configurar Supabase/hospedagem para executar o Pacote 6 e validar analytics reais.
+- Publicar o frontend conectado ao Supabase, validar analytics reais e preparar o Pacote 6.
 - Rodar o checklist físico e o trace de performance antes de abrir a beta fechada.
 
 ### Pacote 5 Concluído: Catálogo de Retratos
@@ -283,7 +292,7 @@ Fila operacional vigente: [Plano de Prioridades e Execução](plano-prioridades-
 - A aprovação do piloto e os 32 lotes do catálogo estão registrados em [player-portrait-pipeline.md](player-portrait-pipeline.md); retratos aprovados, silhuetas e avatar CSS permanecem em três níveis de fallback.
 - O catálogo cobre as 345 identidades visuais do arquivo e o manifesto está marcado como completo.
 - O orçamento aprovado e automatizado é de 140 KiB/35 MiB para retratos e 30 KiB/9 MiB para silhuetas; o carregamento continua sob demanda, com lazy loading fora da primeira carta e cache de runtime limitado.
-- O Pacote 6 continua bloqueado até existir hospedagem e Supabase reais para persistência pública, limitação de abuso e Open Graph dinâmico.
+- O Pacote 6 ainda depende de hospedagem e implementação de persistência pública, limitação de abuso e Open Graph dinâmico; o Supabase compartilhado já está conectado.
 
 ### Trilha Paralela: Fase 4, Pesquisa Histórica de 2013
 
@@ -294,8 +303,8 @@ Fila operacional vigente: [Plano de Prioridades e Execução](plano-prioridades-
 ### Dependência Externa Posterior
 
 - Os Pacotes 2–5 e 7–9 foram concluídos sem backend real.
-- Resultado público, comparação, Open Graph dinâmico e Gate B dependem de hospedagem e Supabase reais.
-- O duelo local no mesmo aparelho entrou neste ciclo por decisão do responsável em 2026-09-29; perfil, ranking verificado e salas online ainda não foram ativados.
+- Resultado público, comparação, Open Graph dinâmico e Gate B dependem de hospedagem e implementação no backend compartilhado.
+- O duelo local entrou em 2026-09-29; as salas online foram ativadas no Supabase em 2026-09-30 e testadas pelo frontend local. Perfil e ranking verificado continuam fora do escopo.
 
 ## Comandos de Trabalho
 
@@ -319,8 +328,8 @@ npm.cmd run dev
 
 ## Limites Deliberados
 
-- Conta anônima e persistência remota de salas por convite estão preparadas, mas desativadas até a validação no Supabase compartilhado; perfil e ranking de jogadores ainda não existem.
+- Sessões anônimas e persistência de salas estão ativas no Supabase; a flag está ligada no ambiente local. Perfil e ranking de jogadores ainda não existem.
 - O modo demo não autentica, não envia requests e não preserva métricas, feedback ou configurações.
 - A fase Suíça é a regra da campanha, não uma tabela histórica completa de todas as equipes.
-- Dados remotos de jogadores não foram migrados para Supabase; o jogo continua consumindo o snapshot local pesquisado.
+- O jogo continua consumindo o snapshot local pesquisado; o banco recebe apenas o catálogo mínimo de 785 candidatos necessário ao sorteio das salas.
 - Não marcar um ano como `PRODUCTION_READY` nem habilitar um ano novo no draft sem todos os gates e a revisão exigida.

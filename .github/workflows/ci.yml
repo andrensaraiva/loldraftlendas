@@ -74,6 +74,9 @@ jobs:
       - name: Smoke online duel room isolation
         run: docker exec -i supabase_db_loldraftlendas psql -U postgres -d postgres -v ON_ERROR_STOP=1 < scripts/sql/smoke-online-duel.sql
 
+      - name: Smoke initial product catalog
+        run: docker exec -i supabase_db_loldraftlendas psql -U postgres -d postgres -v ON_ERROR_STOP=1 < scripts/sql/smoke-product-config.sql
+
       - name: Production build
         run: npm run build
 

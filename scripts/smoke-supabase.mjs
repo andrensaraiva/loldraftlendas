@@ -1,4 +1,9 @@
 import { randomUUID } from 'node:crypto';
+import { readFile } from 'node:fs/promises';
+
+const manifest = JSON.parse(
+  await readFile(new URL('../src/data/draft-region-groups.json', import.meta.url), 'utf8'),
+);
 
 const rawUrl = process.env.SUPABASE_URL ?? process.env.VITE_SUPABASE_URL;
 const anonKey = process.env.SUPABASE_ANON_KEY ?? process.env.VITE_SUPABASE_ANON_KEY;
@@ -86,6 +91,11 @@ report(
     typeof config.dataset_version === 'string',
   `${publicConfig.response.status} ${baseUrl}`,
 );
+report(
+  'catálogo compatível com o frontend',
+  publicConfig.response.ok && config?.dataset_version === manifest.datasetVersion,
+  `esperado ${manifest.datasetVersion}; recebido ${config?.dataset_version ?? 'ausente'}`,
+);
 
 for (const table of [
   'admin_users',
@@ -93,6 +103,9 @@ for (const table of [
   'analytics_events',
   'campaign_feedback',
   'rating_feedback',
+  'duel_rooms',
+  'duel_candidates',
+  'duel_catalog_versions',
 ]) {
   const result = await request(`/rest/v1/${table}?select=*&limit=1`, { method: 'GET' });
   const hidden =
@@ -164,10 +177,10 @@ report(
 if ((adminEmail && !adminPassword) || (!adminEmail && adminPassword)) {
   report('credenciais administrativas', false, 'e-mail e senha devem ser fornecidos juntos');
 } else if (adminEmail && adminPassword) {
-  const login = await request(
-    '/auth/v1/token?grant_type=password',
-    { method: 'POST', body: JSON.stringify({ email: adminEmail, password: adminPassword }) },
-  );
+  const login = await request('/auth/v1/token?grant_type=password', {
+    method: 'POST',
+    body: JSON.stringify({ email: adminEmail, password: adminPassword }),
+  });
   const accessToken = login.body?.access_token;
   report(
     'autenticação administrativa',

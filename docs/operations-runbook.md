@@ -1,8 +1,8 @@
 # Runbook de Preparação e Ativação Operacional
 
-Atualizado em 2026-09-28.
+Atualizado em 2026-09-30.
 
-Este runbook separa explicitamente o que já está preparado no repositório do que depende de contas, credenciais e uma autorização posterior. Nenhum projeto remoto, usuário, secret ou deploy é criado pelos passos de preparação local.
+Este runbook registra a preparação reproduzível e a ativação autorizada do Supabase em 2026-09-30. A hospedagem HTTPS do frontend continua pendente.
 
 ## Estado atual
 
@@ -10,23 +10,35 @@ Este runbook separa explicitamente o que já está preparado no repositório do 
 
 - Supabase CLI fixado na versão do projeto e configuração local sem secrets em `supabase/config.toml`.
 - Analytics começa desativado na configuração inicial e só deve ser habilitado após o smoke administrativo e a conferência da política de privacidade.
-- Dezessete migrations ordenadas, com gate estático para inventário, RLS, `search_path` de funções `SECURITY DEFINER` e grants explícitos.
+- Vinte migrations ordenadas, com gate estático para inventário, RLS, `search_path` de funções `SECURITY DEFINER` e grants explícitos.
 - Replay integral das dezessete migrations e lint SQL executados em banco local limpo na CI; o smoke da sala por convite confere autorização e entregas ocultas.
+- Em 2026-09-30, replay das vinte migrations, lint e smokes SQL de catálogo e salas passaram no banco local. As três migrations de 2026-09-21 foram recuperadas do histórico remoto existente; corrigem dashboard, catálogo inicial e grant de leitura administrativa sob RLS.
 - Smoke local aprovado para configuração pública, cinco tabelas sob RLS, bloqueio anônimo dos RPCs administrativos, autenticação, allowlist, leitura protegida e dashboard agregado.
 - Preflight de produção que recusa HTTP, domínio de exemplo, ambiente incompleto, modo demo e chave administrativa em variável `VITE_*`.
 - Builds da Vercel protegidos por `npm run deploy:build`; Firebase usa o mesmo comando antes do deploy manual.
 - Headers equivalentes nos dois provedores e cache imutável restrito a JS, CSS e fontes com hash. Retratos, silhuetas e demais imagens de URL estável continuam revalidáveis.
 - Smoke HTTPS para rotas, canonical, sitemap, PWA, headers e cache.
 - Smoke Supabase sem gravação válida para configuração pública, isolamento RLS e validações negativas; autenticação, allowlist e dashboard podem ser incluídos com credenciais temporárias de operador.
+- O smoke remoto exige a mesma versão de catálogo do frontend e confere acesso anônimo às oito tabelas públicas. Uma configuração antiga personalizada exige revisão explícita antes da ativação.
 - Workflow manual `Production smoke`, protegido pelo environment `production` do GitHub.
+
+### Ativação remota em 2026-09-30
+
+- Projeto indicado pelo responsável: `LOLDraftLendas` (`qiduotxlyyilpirvxgvm`). CLI autenticada e projeto vinculado. O banco já continha dezoito migrations, uma conta e um administrador autorizado.
+- Recuperadas as três migrations de 2026-09-21 ausentes no checkout a partir dos statements registrados no remoto. Aplicadas somente as duas migrations de salas de 2026-09-29, totalizando vinte versões e 785 candidatos.
+- As portas PostgreSQL 5432/6543 não estavam acessíveis nesta máquina; `db push --dry-run` não concluiu. A aplicação usou `supabase db query` pela Management API HTTPS em uma transação com conferência do histórico anterior, locks e registro das versões, nomes e statements canônicos em `supabase_migrations.schema_migrations`. O mesmo lote foi ensaiado no banco local antes da aplicação. Não houve reset remoto nem reaplicação das dezoito versões existentes.
+- Habilitado somente `auth.enable_anonymous_sign_ins=true`; o limite `auth.rate_limit.anonymous_users=30` foi mantido. O diff posterior confirmou zero alterações declaradas pendentes. As demais configurações de Auth foram preservadas.
+- `.env.local`, ignorado pelo Git, contém URL e chave pública publishable reais, `VITE_SITE_URL=http://localhost:5173` e `VITE_ONLINE_DUEL_ENABLED=true`. A flag pública de exemplo continua desligada até o aceite da hospedagem e dos aparelhos físicos.
+- Smoke HTTP remoto aprovado: configuração no dataset `multi-era-v1.6.0`, acesso anônimo bloqueado às oito tabelas, RPCs administrativos protegidos e rejeição de payloads inválidos de analytics e feedback. O smoke SQL de isolamento de salas passou em transação revertida.
+- Partida real em dois contextos Chromium independentes, desktop e emulação iPhone 13: convite, retomada do draft, picks ocultos, resultado idêntico de cinco jogos (3 × 2) e recarga. Uma terceira sessão real teve leitura/entrada na sala e acesso administrativo negados; as três tabelas de duelo recusaram leitura direta autenticada. Sem erros de página ou overflow.
+- Os três usuários anônimos de teste e sua sala foram removidos com lista explícita de UUIDs e guardas contra contas administrativas ou participantes externos. Conferência final: vinte migrations, oito tabelas com RLS, 785 candidatos, zero salas, uma conta e um administrador. A configuração existente foi preservada, inclusive `analytics_enabled=true`.
 
 ### Ainda não executado
 
-- Criar projetos Supabase de staging/produção e escolher Vercel ou Firebase.
-- Reaplicar as migrations no projeto remoto vazio.
-- Criar a conta administrativa, desativar cadastro público por e-mail e inserir sua UUID na allowlist. Sessões anônimas de jogadores só devem ser habilitadas quando a sala por convite estiver pronta, com limite de taxa; CAPTCHA exige integrar o desafio no cliente antes de ligá-lo no Auth.
-- Cadastrar variáveis e secrets reais nos provedores.
-- Publicar, executar os smokes remotos e configurar alertas externos.
+- Validar login administrativo por senha e o funil com uma campanha real; o smoke remoto não recebeu credenciais do administrador existente.
+- Revisar cadastro público por e-mail e definir Site URL/redirects após escolher a hospedagem. CAPTCHA exige integrar o desafio no cliente antes de ligá-lo no Auth.
+- Escolher Vercel ou Firebase, cadastrar o ambiente do frontend, publicar em HTTPS e executar o smoke público.
+- Testar dois aparelhos físicos, configurar alertas e agendar retenção de salas/usuários anônimos. A emulação mobile não substitui os aparelhos.
 
 ## 1. Validar a preparação local
 
@@ -55,7 +67,7 @@ npx supabase db push
 npx supabase migration list
 ```
 
-O `--dry-run` deve listar exatamente as dezessete migrations descritas em [admin-setup.md](admin-setup.md) na primeira ativação. Uma única pessoa deve executar o push por vez.
+Em um projeto vazio, o `--dry-run` deve listar as vinte migrations descritas em [admin-setup.md](admin-setup.md). Em um projeto existente, confira primeiro o histórico remoto e aplique apenas as pendentes. Uma única pessoa deve executar o push por vez. O projeto ativado em 2026-09-30 já contém todas as vinte versões.
 
 No Supabase Auth:
 
@@ -116,16 +128,19 @@ No GitHub, crie o environment protegido `production`, cadastre `PRODUCTION_SUPAB
 ## 6. Checklist de ativação
 
 - [x] Replay, lint e smoke da sala por convite com dezessete migrations concluídos no banco local da CI.
-- [ ] `db push --dry-run`, `db push` e `migration list` conferidos no staging.
-- [ ] Cadastro público desativado; conta mantenedora única criada e allowlisted.
-- [ ] RLS das oito tabelas públicas conferida no staging; as três tabelas de duelo negam leitura direta inclusive a jogadores autenticados.
-- [ ] Configuração pública, analytics e feedback inválido respondendo pelo RPC esperado.
+- [x] Replay das vinte migrations, lint, catálogo inicial e isolamento das salas validados localmente em 2026-09-30; workflow atualizado para incluir o smoke de catálogo.
+- [x] Histórico remoto conferido e duas migrations pendentes aplicadas por HTTPS com registro transacional; vinte versões sincronizadas.
+- [x] Conta mantenedora existente e allowlist preservadas.
+- [ ] Cadastro público por e-mail revisado e URLs de Auth ajustadas à hospedagem.
+- [x] RLS das oito tabelas públicas conferida no remoto; as três tabelas de duelo negam leitura direta inclusive a jogadores autenticados.
+- [x] Configuração pública, analytics e feedback inválido respondendo pelo RPC esperado.
+- [x] Auth anônima habilitada com limite 30; partida real com duas sessões e isolamento contra uma terceira aprovados.
 - [ ] Login administrativo, `is_admin()`, configuração e dashboard aprovados.
 - [ ] Build protegido aprovado com as três variáveis reais.
 - [ ] Deploy HTTPS e smoke público aprovados.
 - [ ] Primeira campanha de teste aparece no funil agregado sem expor evento bruto.
 - [ ] Alertas de disponibilidade e erros configurados no provedor escolhido.
-- [ ] Ao ativar convites online, limitar sessões anônimas, testar três identidades e agendar a remoção de salas vencidas há mais de 30 dias.
+- [ ] Antes de publicar convites, testar dois aparelhos físicos e agendar a remoção de salas vencidas há mais de 30 dias.
 
 ## 7. Monitoramento e rollback
 

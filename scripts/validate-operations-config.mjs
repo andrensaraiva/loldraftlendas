@@ -112,6 +112,9 @@ const requiredMigrations = [
   '20260918120000_campaign_journey_analytics.sql',
   '20260918130000_onboarding_analytics.sql',
   '20260919100000_daily_modifiers_analytics.sql',
+  '20260921142000_fix_game_plan_dashboard_timestamp.sql',
+  '20260921183500_sync_product_config_dataset.sql',
+  '20260921190000_grant_admin_product_config_select.sql',
   '20260929110000_online_duel_rooms.sql',
   '20260929111000_online_duel_catalog.sql',
 ];

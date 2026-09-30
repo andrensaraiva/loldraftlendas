@@ -13,9 +13,17 @@ Atualizado em 2026-09-30.
 - Orçamento estático: JavaScript inicial abaixo de 500 kB e CSS inicial abaixo de 100 kB.
 - Manifesto instalável, ícones 192/512, service worker com `/admin` network-only, robots e 584 URLs no sitemap, incluindo `/duelo`.
 - Smoke pós-deploy reproduzível para home, arquivo, manifesto, robots e sitemap.
-- Preparação operacional reproduzível para migrations/RLS, ambiente de produção, headers, deploy e smoke Supabase. As dezessete migrations, o lint e o smoke SQL de isolamento da sala passaram na CI. A interface online está atrás de uma flag desligada; nenhuma conta ou infraestrutura remota foi criada.
+- Preparação operacional reproduzível para migrations/RLS, ambiente de produção, headers, deploy e smoke Supabase. As dezessete migrations do checkpoint anterior passaram na CI; após recuperar três versões do histórico remoto, as vinte migrations, lint e smokes SQL de configuração/salas passaram em banco local limpo em 2026-09-30.
 - Movimento reduzido desliga transições/animações globalmente; a celebração de título é decorativa e não captura interação.
 - Feedback curto de campanha e feedback contextual de rating já existem, mas só enviam fora do modo demo quando analytics/Supabase estiverem configurados.
+
+## Supabase validado em 2026-09-30
+
+- Projeto `qiduotxlyyilpirvxgvm` conectado; vinte migrations sincronizadas, 785 candidatos e oito tabelas com RLS. Administrador e configuração existentes preservados.
+- Auth anônima habilitada com limite 30; `.env.local` configurado com chave pública e convites habilitados para teste local.
+- Smoke HTTP remoto e smoke SQL de isolamento aprovados. A configuração pública usa a mesma versão do catálogo do frontend.
+- Dois contextos Chromium independentes (desktop e emulação mobile) completaram a mesma BO5 com convite, retomada e recarga. Terceira sessão sem acesso à sala, ao admin ou às tabelas de duelo. Dados de teste removidos.
+- O teste não substitui login real do administrador, hospedagem HTTPS, CI do novo commit ou aparelhos físicos. Detalhes em [operations-runbook.md](operations-runbook.md).
 
 ## Comandos de aceite
 
@@ -40,7 +48,7 @@ npx playwright install chromium firefox webkit
 
 ## Validações externas pendentes
 
-1. Seguir [operations-runbook.md](operations-runbook.md): criar o Supabase, aplicar as dezessete migrations, cadastrar o administrador e configurar as variáveis públicas.
+1. Seguir [operations-runbook.md](operations-runbook.md): validar o login do administrador existente e configurar o ambiente do provedor de hospedagem.
 2. Publicar em HTTPS e executar `npm run smoke:deploy -- https://dominio`.
 3. Confirmar o funil e os erros reais no painel com eventos de uma sessão de teste.
 4. Testar ao menos um iPhone/Safari e um Android/Chrome físicos: instalação, rotação, teclado, compartilhamento e retorno de background.

@@ -47,14 +47,17 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
   - [x] Preparar interface de convite e draft independente por aparelho atrás de feature flag desligada.
   - [x] Validar replay, lint e isolamento das novas migrations na CI.
   - [x] Cobrir a interface habilitada em desktop/mobile com Auth e RPC simulados, retomada, resultado compartilhado e recuperação de falhas.
+  - [x] Validar convite, draft, resultado e retomada com duas sessões reais no Supabase, além do isolamento contra uma terceira identidade.
   - [ ] Testar a partida em dois aparelhos após configurar o serviço compartilhado.
 
 ## P1 — Viabilizar beta fechada real
 
 - [ ] **4. Preparar e ativar a operação real.**
   - [x] Versionar e validar localmente configuração, migrations/RLS, autenticação administrativa, preflight, build protegido, smokes e runbook sem criar recursos remotos.
-  - [ ] Criar o projeto Supabase e aplicar as migrations na ordem documentada.
-  - [ ] Configurar administrador, allowlist e variáveis públicas.
+  - [x] Recuperar três migrations do histórico remoto e validar replay das vinte versões, lint e smokes SQL de catálogo e salas.
+  - [x] Conectar o projeto Supabase existente e aplicar as duas migrations pendentes com histórico sincronizado.
+  - [x] Preservar administrador/allowlist existentes e configurar URL, chave pública e flag no ambiente local.
+  - [x] Validar Auth anônima, RLS, isolamento de sala e payloads inválidos de analytics/feedback no remoto.
   - [ ] Validar autenticação, RLS, analytics, feedback e dashboard fora do modo demo.
   - [ ] Publicar em HTTPS e executar o smoke pós-deploy.
   - [ ] Configurar monitoramento operacional e conferir eventos do funil.
@@ -104,3 +107,4 @@ O primeiro multiplayer entrou no escopo por decisão do responsável em 2026-09-
 | 2026-09-29 | 3A. Revisar 7a0 e entregar duelo local     | Concluído localmente | [Revisão atual](revisao-7a0-2026-09-29.md), rota `/duelo`, ofertas iguais, planos simétricos, BO5 determinística e save isolado. 108 unitários, build, auditoria (493,43 kB de JS inicial), 62 E2E Chromium e dois smokes Firefox/WebKit passaram; 8 pulos condicionais esperados. Preferência pela próxima evolução online registrada no item 3B. |
 | 2026-09-29 | 3B. Preparar sala online por convite       | Preparação local concluída; teste remoto pendente | [Contrato e fluxo](duelo-online-convite.md), 17 migrations com replay/lint na CI, smoke SQL de isolamento, catálogo de 785 candidatos e interface sob flag desligada. O serviço Supabase compartilhado e o teste em dois aparelhos seguem no item 4. |
 | 2026-09-30 | 3B. Validar e corrigir a interface de convite | Incremento local concluído; teste remoto pendente | 14 E2E com Auth/RPC simulados e seis regressões públicas/duelo passaram em Chromium desktop/mobile. Corrigidos erros apagados pelo polling, controles de sala anterior e foco entre escolhas. 110 unitários, TypeScript, build, auditoria (494,02 kB de JS inicial), preflight e catálogo de 785 candidatos passaram. O validador do catálogo aceita CRLF sem alterar a migration. A nova suíte integra o workflow; nenhuma ativação remota foi realizada. |
+| 2026-09-30 | 4B. Ativar Supabase e validar convite real | Backend ativado; hospedagem e aparelhos físicos pendentes | Projeto `qiduotxlyyilpirvxgvm` conectado; três migrations recuperadas do histórico remoto e duas de convite aplicadas por HTTPS, com vinte versões sincronizadas. Replay/lint/smokes locais e remotos passaram. Auth anônima habilitada com limite 30. Duas sessões Chromium completaram a mesma BO5; terceira identidade bloqueada. Dados de teste removidos, administrador e configuração preservados. Login administrativo por senha e frontend HTTPS continuam pendentes. |

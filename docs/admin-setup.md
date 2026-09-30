@@ -33,6 +33,9 @@ Create a Supabase project, then apply these migrations in filename order through
 - [20260918120000_campaign_journey_analytics.sql](../supabase/migrations/20260918120000_campaign_journey_analytics.sql)
 - [20260918130000_onboarding_analytics.sql](../supabase/migrations/20260918130000_onboarding_analytics.sql)
 - [20260919100000_daily_modifiers_analytics.sql](../supabase/migrations/20260919100000_daily_modifiers_analytics.sql)
+- [20260921142000_fix_game_plan_dashboard_timestamp.sql](../supabase/migrations/20260921142000_fix_game_plan_dashboard_timestamp.sql)
+- [20260921183500_sync_product_config_dataset.sql](../supabase/migrations/20260921183500_sync_product_config_dataset.sql)
+- [20260921190000_grant_admin_product_config_select.sql](../supabase/migrations/20260921190000_grant_admin_product_config_select.sql)
 - [20260929110000_online_duel_rooms.sql](../supabase/migrations/20260929110000_online_duel_rooms.sql)
 - [20260929111000_online_duel_catalog.sql](../supabase/migrations/20260929111000_online_duel_catalog.sql)
 
@@ -52,6 +55,10 @@ The migrations create:
 - Private invitation rooms for two anonymous players, with server-generated offers and RPCs that release both teams only after both submissions. See [duelo-online-convite.md](duelo-online-convite.md).
 
 The initial product configuration keeps analytics disabled. Enable it from the authenticated admin only after the production RLS, ingestion, dashboard, and privacy checks pass.
+
+The three migrations dated September 21 were recovered from the existing remote migration history on September 30. They fix dashboard ordering, synchronize the legacy dataset/year combination with `multi-era-v1.6.0` and Worlds 2014–2025, and grant authenticated config reads subject to RLS. All twenty migrations passed a fresh local replay and SQL lint. The remote smoke rejects a dataset version that differs from the frontend and checks direct anonymous access to all eight public tables.
+
+Project `qiduotxlyyilpirvxgvm` now has all twenty migrations. Its existing admin account and product configuration were preserved; only the two invitation migrations were pending. Anonymous sign-ins are enabled with `auth.rate_limit.anonymous_users=30`, and a real two-session invitation match passed. The local ignored `.env.local` connects to this project with the online flag enabled. Frontend hosting, physical-device testing, and an actual admin password login remain pending; see the deployment record in [operations-runbook.md](operations-runbook.md).
 
 The repository pins the CLI and includes `supabase/config.toml`. Validate locally with Docker, inspect the remote plan, and only then apply it:
 
