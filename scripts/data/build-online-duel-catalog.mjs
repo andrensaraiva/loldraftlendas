@@ -66,7 +66,8 @@ const sql = [
 ].join('\n');
 
 if (process.argv.includes('--check')) {
-  const current = await readFile(target, 'utf8');
+  // Git may check SQL out with CRLF on Windows; compare the SQL content.
+  const current = (await readFile(target, 'utf8')).replaceAll('\r\n', '\n');
   if (current !== sql) throw new Error('Online duel catalog migration is out of date');
   console.log(
     `Online duel catalog matches ${rows.length} entries from ${manifest.datasetVersion}.`,

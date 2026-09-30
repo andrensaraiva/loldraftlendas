@@ -1,10 +1,11 @@
 # Beta Readiness
 
-Atualizado em 2026-09-29.
+Atualizado em 2026-09-30.
 
 ## Validado localmente
 
 - Build de produção, TypeScript, 110 testes unitários e suíte E2E completa.
+- Incremento de 2026-09-30: 14 testes da interface online habilitada com Auth/RPC simulados e seis regressões públicas/duelo em Chromium desktop/mobile. Build, TypeScript, auditoria, preflight e catálogo passaram; suíte completa, Firefox/WebKit e replay SQL preservam a evidência do checkpoint anterior.
 - Smoke do fluxo público em Chromium, Firefox e WebKit.
 - Catálogo completo com 345 identidades aprovadas e 690 WebPs de 768 px validados na CI, incluindo limites individuais e agregados de bytes.
 - Retratos em 31,76/35 MiB e silhuetas lossless em 7,91/9 MiB; somente a primeira carta é eager, e o cache de runtime não pré-carrega o catálogo.
@@ -26,6 +27,7 @@ npm run ops:preflight
 npm run build
 npm run audit:beta
 npm run test:e2e
+npm run test:e2e:online
 npm run test:e2e:cross-browser
 npm run smoke:deploy -- https://seu-dominio.example
 ```

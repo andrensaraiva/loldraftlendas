@@ -83,6 +83,8 @@ export default function OnlineDuelApp() {
   const [loading, setLoading] = useState(Boolean(codePattern.test(code)));
   const [lookupFailed, setLookupFailed] = useState(false);
   const [error, setError] = useState('');
+  const [loadError, setLoadError] = useState('');
+  const [pollError, setPollError] = useState('');
   const [copied, setCopied] = useState(false);
   const [details, setDetails] = useState<PlayerVersion | null>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
@@ -96,18 +98,22 @@ export default function OnlineDuelApp() {
   }, []);
 
   useEffect(() => {
+    setRoom(null);
+    setData(null);
+    setRounds(null);
+    setProgress(emptyProgress());
+    setError('');
+    setLoadError('');
+    setPollError('');
+    setLookupFailed(false);
+    setCopied(false);
+    setDetails(null);
     if (!onlineDuelAvailable() || !codePattern.test(code)) {
       setLoading(false);
       return;
     }
     let active = true;
-    setRoom(null);
-    setData(null);
-    setRounds(null);
-    setProgress(emptyProgress());
     setLoading(true);
-    setError('');
-    setLookupFailed(false);
     getOnlineDuelRoom(code)
       .then((current) => {
         if (active) setRoom(current);
@@ -130,6 +136,7 @@ export default function OnlineDuelApp() {
     if (!room || rounds || !['waiting_guest', 'drafting', 'complete'].includes(room.state)) return;
     let active = true;
     setLoading(true);
+    setLoadError('');
     repository
       .loadYears(room.offers.map((offer) => offer.year))
       .then((loaded) => {
@@ -144,7 +151,7 @@ export default function OnlineDuelApp() {
         );
       })
       .catch((cause) => {
-        if (active) setError(errorMessage(cause));
+        if (active) setLoadError(errorMessage(cause));
       })
       .finally(() => {
         if (active) setLoading(false);
@@ -165,22 +172,35 @@ export default function OnlineDuelApp() {
 
   useEffect(() => {
     if (!room || ['complete', 'cancelled', 'expired'].includes(room.state)) return;
+    let active = true;
+    let requesting = false;
     const interval = window.setInterval(() => {
+      if (requesting) return;
+      requesting = true;
       getOnlineDuelRoom(room.code)
         .then((current) => {
+          if (!active) return;
           if (current) {
             setRoom((previous) => {
               if (previous?.code !== current.code) return previous;
-              if (previous.state === 'complete' || previous.state === 'cancelled') return previous;
+              if (['complete', 'cancelled', 'expired'].includes(previous.state)) return previous;
               if (previous.myPicks && !current.myPicks) return previous;
               return current;
             });
-            setError('');
-          } else setError('Sua sessão não consegue mais acessar esta sala.');
+            setPollError('');
+          } else setPollError('Sua sessão não consegue mais acessar esta sala.');
         })
-        .catch((cause) => setError(errorMessage(cause)));
+        .catch((cause) => {
+          if (active) setPollError(errorMessage(cause));
+        })
+        .finally(() => {
+          requesting = false;
+        });
     }, 5000);
-    return () => window.clearInterval(interval);
+    return () => {
+      active = false;
+      window.clearInterval(interval);
+    };
   }, [room?.code, room?.state]);
 
   const stage = !onlineDuelAvailable()
@@ -200,13 +220,13 @@ export default function OnlineDuelApp() {
                 : room.state === 'complete'
                   ? data
                     ? 'complete'
-                    : error
+                    : loadError
                       ? 'load-error'
                       : 'loading'
                   : room.myPicks
                     ? 'submitted'
                     : !rounds
-                      ? error
+                      ? loadError
                         ? 'load-error'
                         : 'loading'
                       : progress.picks.length < 5
@@ -217,7 +237,7 @@ export default function OnlineDuelApp() {
 
   useEffect(() => {
     titleRef.current?.focus();
-  }, [stage]);
+  }, [stage, progress.picks.length]);
 
   function navigateToCode(next: string) {
     window.history.replaceState(null, '', next ? `/duelo/sala#${next}` : '/duelo/sala');
@@ -227,6 +247,8 @@ export default function OnlineDuelApp() {
     setRounds(null);
     setProgress(emptyProgress());
     setError('');
+    setLoadError('');
+    setPollError('');
     setLookupFailed(false);
     setCopied(false);
   }
@@ -236,6 +258,7 @@ export default function OnlineDuelApp() {
     pendingRef.current = true;
     setBusy(true);
     setError('');
+    setPollError('');
     try {
       await action();
     } catch (cause) {
@@ -259,9 +282,10 @@ export default function OnlineDuelApp() {
   const result = room?.state === 'complete' && data ? completedOnlineDuel(room, data) : null;
   const myIndex = room?.seat === 'host' ? 0 : 1;
   const catalogChanged =
-    error.includes('catálogo incompatível') ||
-    error.includes('Jogadores da sala incompatíveis') ||
-    error.includes('Grupo da sala indisponível');
+    loadError.includes('catálogo incompatível') ||
+    loadError.includes('Jogadores da sala incompatíveis') ||
+    loadError.includes('Grupo da sala indisponível');
+  const visibleError = loadError || error || pollError;
 
   return (
     <main className="duel-page">
@@ -650,9 +674,9 @@ export default function OnlineDuelApp() {
             </button>
           </section>
         )}
-        {error && (
+        {visibleError && (
           <p className="duel-error" role="alert">
-            {error}
+            {visibleError}
           </p>
         )}
         {room && !['cancelled', 'expired', 'complete'].includes(room.state) && (

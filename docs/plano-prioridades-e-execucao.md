@@ -1,6 +1,6 @@
 # Plano de Prioridades e Execução
 
-Atualizado em 2026-09-29.
+Atualizado em 2026-09-30.
 
 Este documento é o checklist operacional para levar o Draft Lendas da situação atual até uma beta pública. Cada item concluído deve passar pelos seus critérios de aceite, ser registrado aqui e enviado ao Git antes do início do próximo item.
 
@@ -46,6 +46,7 @@ Este documento é o checklist operacional para levar o Draft Lendas da situaçã
   - [x] Versionar o catálogo de candidatos, as migrations de sala protegida e o contrato tipado de resultado.
   - [x] Preparar interface de convite e draft independente por aparelho atrás de feature flag desligada.
   - [x] Validar replay, lint e isolamento das novas migrations na CI.
+  - [x] Cobrir a interface habilitada em desktop/mobile com Auth e RPC simulados, retomada, resultado compartilhado e recuperação de falhas.
   - [ ] Testar a partida em dois aparelhos após configurar o serviço compartilhado.
 
 ## P1 — Viabilizar beta fechada real
@@ -102,3 +103,4 @@ O primeiro multiplayer entrou no escopo por decisão do responsável em 2026-09-
 | 2026-09-28 | 4A. Preparar a operação real               | Concluído | Preparação somente local: replay das quinze migrations, lint sem erros, RLS das cinco tabelas, autenticação/allowlist/dashboard, analytics desligado por padrão, ambiente HTTPS sem secrets administrativos, build protegido, headers/cache, smokes, workflow manual e runbook. Contas remotas, deploy e monitoramento permanecem desmarcados. |
 | 2026-09-29 | 3A. Revisar 7a0 e entregar duelo local     | Concluído localmente | [Revisão atual](revisao-7a0-2026-09-29.md), rota `/duelo`, ofertas iguais, planos simétricos, BO5 determinística e save isolado. 108 unitários, build, auditoria (493,43 kB de JS inicial), 62 E2E Chromium e dois smokes Firefox/WebKit passaram; 8 pulos condicionais esperados. Preferência pela próxima evolução online registrada no item 3B. |
 | 2026-09-29 | 3B. Preparar sala online por convite       | Preparação local concluída; teste remoto pendente | [Contrato e fluxo](duelo-online-convite.md), 17 migrations com replay/lint na CI, smoke SQL de isolamento, catálogo de 785 candidatos e interface sob flag desligada. O serviço Supabase compartilhado e o teste em dois aparelhos seguem no item 4. |
+| 2026-09-30 | 3B. Validar e corrigir a interface de convite | Incremento local concluído; teste remoto pendente | 14 E2E com Auth/RPC simulados e seis regressões públicas/duelo passaram em Chromium desktop/mobile. Corrigidos erros apagados pelo polling, controles de sala anterior e foco entre escolhas. 110 unitários, TypeScript, build, auditoria (494,02 kB de JS inicial), preflight e catálogo de 785 candidatos passaram. O validador do catálogo aceita CRLF sem alterar a migration. A nova suíte integra o workflow; nenhuma ativação remota foi realizada. |

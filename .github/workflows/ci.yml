@@ -86,6 +86,9 @@ jobs:
       - name: End-to-end tests
         run: npm run test:e2e
 
+      - name: Invitation frontend with simulated Auth and RPC
+        run: npm run test:e2e:online
+
       - name: Upload Playwright artifacts
         if: ${{ always() }}
         uses: actions/upload-artifact@v4

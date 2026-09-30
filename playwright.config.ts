@@ -1,6 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
+  testIgnore: /online-duel\.spec\.ts/,
   fullyParallel: true,
   workers: 2,
   use: {

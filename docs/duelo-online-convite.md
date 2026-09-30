@@ -48,6 +48,16 @@ As salas deixam de aceitar ações após sete dias. Na operação remota, agenda
 
 ## Aceite antes de exibir a opção no produto
 
+### Validação automatizada da interface
+
+Execute `npm run test:e2e:online`. A configuração `playwright.online.config.ts` inicia um servidor separado na porta 5174 com a opção online habilitada e intercepta Auth/RPC com um serviço simulado em memória. Não exige conta, credenciais nem conexão com Supabase. O service worker fica fora desse ambiente para permitir falhas de rede controladas; a suíte pública continua cobrindo a PWA e a opção online desativada.
+
+Em 2026-09-30, passaram sete cenários em cada viewport (14 execuções): duas sessões independentes com retomada e a mesma BO5, catálogo incompatível após polling, falha no download do dataset e recuperação, troca para código vazio/inválido, falhas de consulta/envio com retry e encerramento por cancelamento/expiração. O foco acompanha cada posição do draft; mensagens de carregamento e ações não são apagadas por consultas automáticas. Consultas periódicas não se sobrepõem e respostas de consultas antigas são ignoradas depois de sair da sala.
+
+Esses testes verificam o contrato HTTP e a interface. A autorização real continua coberta pelo smoke SQL; Auth remoto, RLS real e dois aparelhos físicos ainda precisam do aceite abaixo. A suíte foi adicionada ao workflow de CI e seus artefatos ficam em `test-results/online`.
+
+### Gates remotos e de banco
+
 - Replay e lint das migrations em banco limpo; catálogo gerado de modo reproduzível a partir do dataset atual.
 - Anfitrião e convidado terminam em dois navegadores/aparelhos e veem o mesmo placar após atualizar.
 - Terceiro participante não lê a sala; convidado não vê as escolhas do anfitrião antes de enviar.

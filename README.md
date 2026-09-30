@@ -197,6 +197,7 @@ python scripts/data/verify_reproducibility.py # Compara geração offline byte a
 npm run typecheck # TypeScript sem emitir bundle
 npm test          # Regras do jogo
 npm run test:e2e  # Fluxo completo no Playwright Chromium
+npm run test:e2e:online # Interface de convite habilitada, com Auth/RPC simulados; sem Supabase real
 npm run build     # TypeScript e bundle de produção
 ```
 
