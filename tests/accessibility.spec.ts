@@ -19,6 +19,12 @@ test('public navigation, landmarks and dialogs work with the keyboard', async ({
 
 test('metadata is indexable only on the public route', async ({ page }) => {
   await page.goto('/');
+  await expect(page).toHaveTitle('KingOfRift — Monte sua história');
+  await expect(page.getByRole('button', { name: 'Página inicial do KingOfRift' })).toBeVisible();
+  await expect(page.locator('meta[property="og:site_name"]')).toHaveAttribute(
+    'content',
+    'KingOfRift',
+  );
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute(
     'href',
     'http://localhost:5173/',
@@ -30,7 +36,7 @@ test('metadata is indexable only on the public route', async ({ page }) => {
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /index/);
 
   await page.goto('/admin');
-  await expect(page).toHaveTitle('Admin — Draft Lendas');
+  await expect(page).toHaveTitle('Admin — KingOfRift');
   await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow');
 });
 
@@ -38,7 +44,7 @@ test('the current Riot legal notice is visible from the public route', async ({ 
   await page.goto('/');
 
   const footer = page.locator('footer');
-  await expect(footer).toContainText("Draft Lendas isn't endorsed by Riot Games");
+  await expect(footer).toContainText("KingOfRift isn't endorsed by Riot Games");
   await expect(footer.getByRole('link', { name: 'Política oficial' })).toHaveAttribute(
     'href',
     'https://developer.riotgames.com/policies/general',

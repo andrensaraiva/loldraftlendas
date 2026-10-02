@@ -34,12 +34,12 @@ describe('campaign sharing', () => {
   });
 
   it('creates a stable and filesystem-safe card name', () => {
-    expect(campaignCardFileName(summary)).toBe('draft-lendas-campeao-mundial.png');
+    expect(campaignCardFileName(summary)).toBe('kingofrift-campeao-mundial.png');
     expect(campaignCardFileName({ ...summary, outcome: '  ???  ' })).toBe(
-      'draft-lendas-campanha.png',
+      'kingofrift-campanha.png',
     );
     expect(journeyCardFileName({ outcome: 'Campeão mundial' })).toBe(
-      'draft-lendas-jornada-campeao-mundial.png',
+      'kingofrift-jornada-campeao-mundial.png',
     );
   });
 });

@@ -92,7 +92,7 @@ export default function OnlineDuelApp() {
   const pendingRef = useRef(false);
 
   useEffect(() => {
-    document.title = 'Sala por convite — Draft Lendas';
+    document.title = 'Sala por convite — KingOfRift';
     const onHashChange = () => setCode(hashCode());
     window.addEventListener('hashchange', onHashChange);
     return () => window.removeEventListener('hashchange', onHashChange);

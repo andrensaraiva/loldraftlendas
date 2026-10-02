@@ -10,7 +10,7 @@ test('two players complete a local duel and resume the same result', async ({ pa
   await page.goto('/');
   await page.getByRole('link', { name: /Jogar duelo local/ }).click();
   await expect(page).toHaveURL(/\/duelo$/);
-  await expect(page).toHaveTitle('Duelo local — Draft Lendas');
+  await expect(page).toHaveTitle('Duelo local — KingOfRift');
   await expect(page.locator('link[rel="canonical"]')).toHaveAttribute('href', /\/duelo$/);
   await page.getByRole('button', { name: 'Começar duelo' }).click();
   await expect(page.getByRole('heading', { name: 'Escolha seu TOP.' })).toBeVisible();

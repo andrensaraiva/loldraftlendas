@@ -178,13 +178,16 @@ check(
 );
 
 const siteUrl = configuredUrl(
-  process.env.VITE_SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL,
+  process.env.VITE_SITE_URL ||
+    process.env.VERCEL_PROJECT_PRODUCTION_URL ||
+    process.env.VITE_VERCEL_PROJECT_PRODUCTION_URL,
 );
 const supabaseUrl = configuredUrl(process.env.VITE_SUPABASE_URL);
 const anonKey = process.env.VITE_SUPABASE_ANON_KEY?.trim();
 const hasAnyEnvironment = Boolean(
   process.env.VITE_SITE_URL ||
   process.env.VERCEL_PROJECT_PRODUCTION_URL ||
+  process.env.VITE_VERCEL_PROJECT_PRODUCTION_URL ||
   process.env.VITE_SUPABASE_URL ||
   process.env.VITE_SUPABASE_ANON_KEY ||
   process.env.VITE_ADMIN_DEMO_MODE,

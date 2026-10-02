@@ -1,6 +1,6 @@
-# Draft Lendas
+# KingOfRift
 
-Protótipo jogável em português inspirado na referência visual: fundo claro, tipografia editorial, verde lima e cartas de jogadores com pools visíveis. React + TypeScript + Vite, sem conta e sem backend.
+Jogo em português com campanha solo, arquivo histórico e duelo entre duas pessoas. A interface usa React, TypeScript e Vite; o duelo por convite e o painel administrativo usam Supabase. A campanha solo funciona sem cadastro.
 
 Pesquisa e balanceamento do dataset atual: **[Multi-era v1.6: dados, simulações e 100.000 campanhas](docs/multi-era-balance-v1.md)**. As seções de UX desse relatório preservam o checkpoint em que a pesquisa foi publicada.
 
@@ -33,14 +33,23 @@ Abra `http://localhost:5173`. Para gerar a versão de produção: `npm run build
 
 O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Windows, use `npm.cmd` caso sua política de PowerShell bloqueie o wrapper `npm.ps1`.
 
+## Para concluir a beta
+
+- Criar ou conectar a conta Vercel ao GitHub, importar este repositório e configurar as variáveis públicas do frontend e as URLs de Auth. A primeira URL pode ser a fornecida pela Vercel; o [runbook](docs/operations-runbook.md) detalha a publicação.
+- Publicar o frontend e executar o [smoke pós-deploy](docs/operations-runbook.md) no domínio definitivo.
+- Validar o login administrativo, uma campanha no funil real, o monitoramento e a retenção de salas e sessões anônimas.
+- Testar convite e chat em dois aparelhos físicos, além de PWA, teclado, rotação e compartilhamento em iPhone/Safari e Android/Chrome.
+
+O [status do projeto](docs/status-do-projeto.md) registra os testes já executados e as demais dependências da beta pública.
+
 ## O que está implementado
 
 - Home e instruções.
 - Cinco escolhas imediatas: TOP → JUNGLE → MID → ADC → SUPPORT. Cada posição sorteia ano e grupo regional dentre grupos disponíveis.
 - No mobile, as três opções usam carrossel com swipe, teclado, setas, indicador e uma prévia da próxima carta. A escolha acontece somente pelo CTA explícito **Escalar esta lenda**.
 - Modos **Clássico** e **Almanaque**: o Clássico exibe ratings e força; o Almanaque oculta toda orientação numérica durante a campanha e revela os cinco jogos no resultado final. O modo integra save, desafio e card compartilhável.
-- Duelo local em `/duelo`: duas pessoas se alternam no mesmo aparelho, recebem as mesmas três ofertas por posição, escolhem planos próprios e disputam uma melhor de cinco entre as equipes. O progresso e a seed ficam no armazenamento local, separados do save da campanha solo; não há sala online ou ranking.
-- A [sala online por convite](docs/duelo-online-convite.md) está conectada ao Supabase e foi validada com duas sessões reais em 2026-09-30. O link aparece quando `VITE_ONLINE_DUEL_ENABLED=true` e as duas variáveis públicas do Supabase estão configuradas. A flag está ligada no ambiente local; hospedagem e teste em aparelhos físicos continuam pendentes.
+- Duelo local em `/duelo`: duas pessoas se alternam no mesmo aparelho, recebem as mesmas três ofertas por posição, escolhem planos próprios e disputam uma melhor de cinco entre as equipes. O progresso e a seed ficam no armazenamento local, separados do save da campanha solo.
+- A [sala online por convite](docs/duelo-online-convite.md) está conectada ao Supabase e foi validada com duas sessões reais em 2026-09-30. O link aparece quando `VITE_ONLINE_DUEL_ENABLED=true` e as duas variáveis públicas do Supabase estão configuradas. O checkout atual precisa de um `.env.local` para ativar a sala localmente; hospedagem e teste em aparelhos físicos continuam pendentes.
 - O chat da sala é exclusivo dos dois participantes, sem histórico salvo. Cada pessoa pode silenciar o adversário só para si, sem avisá-lo; a preferência fica no navegador e as mensagens desaparecem ao sair ou recarregar.
 - Quatro planos persistentes escolhidos após o draft: **Agressão**, **Teamfight**, **Controle/Pick** e **Escala**. As tags ativas e o efeito limitado de `−1,0` a `+1,5` aparecem na composição e na prévia da partida.
 - Filtros opcionais na home restringem o draft e o futuro desafio por edição e grupo regional. Combinações vazias são bloqueadas e cada contexto do manifesto preserva três candidatos por posição.

@@ -1,12 +1,12 @@
 export function applyRouteMetadata(pathname: string, documentRoot: Document = document): void {
   const route = pathname.replace(/\/+$/, '');
   if (route === '/admin') {
-    documentRoot.title = 'Admin — Draft Lendas';
+    documentRoot.title = 'Admin — KingOfRift';
     const robots = documentRoot.querySelector<HTMLMetaElement>('meta[name="robots"]');
     robots?.setAttribute('content', 'noindex, nofollow');
   }
   if (route === '/duelo') {
-    const title = 'Duelo local — Draft Lendas';
+    const title = 'Duelo local — KingOfRift';
     const description =
       'Monte equipes com as mesmas ofertas, passe o aparelho e dispute uma final melhor de cinco com outra pessoa.';
     const canonical = documentRoot.querySelector<HTMLLinkElement>('link[rel="canonical"]');
@@ -25,7 +25,7 @@ export function applyRouteMetadata(pathname: string, documentRoot: Document = do
       ?.setAttribute('content', description);
   }
   if (route === '/duelo/sala') {
-    documentRoot.title = 'Sala de duelo — Draft Lendas';
+    documentRoot.title = 'Sala de duelo — KingOfRift';
     documentRoot.querySelector('meta[name="robots"]')?.setAttribute('content', 'noindex, nofollow');
   }
 }

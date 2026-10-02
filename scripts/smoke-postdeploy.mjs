@@ -35,6 +35,16 @@ async function load(pathname) {
     const response = await fetch(`${baseUrl}${pathname}`, { redirect: 'follow' });
     return { response, body: await response.text() };
   } catch (error) {
+    if (parsedBaseUrl.hostname === 'localhost') {
+      try {
+        const ipv4Url = new URL(`${baseUrl}${pathname}`);
+        ipv4Url.hostname = '127.0.0.1';
+        const response = await fetch(ipv4Url, { redirect: 'follow' });
+        return { response, body: await response.text() };
+      } catch {
+        // Report the original local request error below.
+      }
+    }
     check(pathname, false, error instanceof Error ? error.message : String(error));
     return null;
   }
@@ -51,7 +61,7 @@ const worker = await load('/sw.js');
 
 check(
   'home',
-  Boolean(home?.response.ok && /<title>Draft Lendas[^<]+<\/title>/i.test(home.body)),
+  Boolean(home?.response.ok && /<title>KingOfRift[^<]+<\/title>/i.test(home.body)),
   `HTTP ${home?.response.status ?? 0}`,
 );
 check(
@@ -71,7 +81,7 @@ check(
 );
 check(
   'manifesto PWA',
-  Boolean(manifest?.response.ok && /"name"\s*:\s*"Draft Lendas[^"]*"/i.test(manifest.body)),
+  Boolean(manifest?.response.ok && /"name"\s*:\s*"KingOfRift[^"]*"/i.test(manifest.body)),
   `HTTP ${manifest?.response.status ?? 0}`,
 );
 check(

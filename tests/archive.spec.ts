@@ -10,7 +10,7 @@ test('archive index stays lightweight and searches public player/champion routes
   await page.goto('/arquivo');
   await expect(page.getByRole('heading', { name: 'O Worlds, lenda por lenda.' })).toBeVisible();
   await expect(page.locator('.archive-editions a')).toHaveCount(12);
-  await expect(page).toHaveTitle('Arquivo histórico — Draft Lendas');
+  await expect(page).toHaveTitle('Arquivo histórico — KingOfRift');
   expect(annualRequests).toEqual([]);
 
   await expect(page.locator('.archive-team-index a')).toHaveCount(63);

@@ -12,7 +12,7 @@ test('web app manifest exposes installable Chromium icons and standalone metadat
   }, manifestHref);
   expect(manifest).toMatchObject({
     id: '/',
-    name: 'Draft Lendas — Monte sua história',
+    name: 'KingOfRift — Monte sua história',
     start_url: '/?source=pwa',
     scope: '/',
     display: 'standalone',

@@ -60,7 +60,7 @@ export default function DuelApp() {
   const [details, setDetails] = useState<PlayerVersion | null>(null);
 
   useEffect(() => {
-    document.title = 'Duelo local — Draft Lendas';
+    document.title = 'Duelo local — KingOfRift';
   }, []);
 
   useEffect(() => {
@@ -141,7 +141,7 @@ export default function DuelApp() {
     <main className="duel-page">
       <header className="duel-header">
         <a href="/" className="duel-back">
-          <ArrowLeft size={18} /> Draft Lendas
+          <ArrowLeft size={18} /> KingOfRift
         </a>
         <span>DUELO LOCAL · 2 JOGADORES</span>
       </header>

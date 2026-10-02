@@ -17,7 +17,7 @@ export class AppErrorBoundary extends Component<Props, State> {
   }
 
   componentDidCatch(error: Error, info: ErrorInfo): void {
-    console.error('Draft Lendas render failure', error, info.componentStack);
+    console.error('KingOfRift render failure', error, info.componentStack);
   }
 
   private reload = () => window.location.reload();

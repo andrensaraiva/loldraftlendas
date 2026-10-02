@@ -49,11 +49,11 @@ function safeOutcomeSlug(outcome: string): string {
 }
 
 export function campaignCardFileName(summary: CampaignShareSummary): string {
-  return `draft-lendas-${safeOutcomeSlug(summary.outcome) || 'campanha'}.png`;
+  return `kingofrift-${safeOutcomeSlug(summary.outcome) || 'campanha'}.png`;
 }
 
 export function journeyCardFileName(report: Pick<CampaignReport, 'outcome'>): string {
-  return `draft-lendas-jornada-${safeOutcomeSlug(report.outcome) || 'campanha'}.png`;
+  return `kingofrift-jornada-${safeOutcomeSlug(report.outcome) || 'campanha'}.png`;
 }
 
 export function campaignShareText(summary: CampaignShareSummary, challengeUrl?: string): string {
@@ -67,7 +67,7 @@ export function campaignShareText(summary: CampaignShareSummary, challengeUrl?: 
     ? ` Desafio ${summary.challengeCode ?? ''}: tente vencer meu draft nas mesmas condições: ${challengeUrl}`
     : '';
   const plan = summary.gamePlan ? `, plano ${gamePlanLabel(summary.gamePlan)}` : '';
-  return `Meu Draft Lendas no modo ${gameModeLabel(summary.gameMode)}${plan} terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?${challenge}`;
+  return `Meu KingOfRift no modo ${gameModeLabel(summary.gameMode)}${plan} terminou como ${summary.outcome}: ${summary.wins}V–${summary.losses}D. ${lineup}. Você faria um draft melhor?${challenge}`;
 }
 
 function roundedRect(
@@ -228,7 +228,7 @@ export async function createCampaignCard(summary: CampaignShareSummary): Promise
   context.textAlign = 'right';
   context.font = '700 25px "DM Sans", Arial, sans-serif';
   context.fillText(
-    summary.challengeCode ? `DESAFIO ${summary.challengeCode}` : 'DRAFT LENDAS',
+    summary.challengeCode ? `DESAFIO ${summary.challengeCode}` : 'KINGOFRIFT',
     1008,
     1289,
   );
@@ -255,7 +255,7 @@ export async function createJourneyCard(report: CampaignReport): Promise<Campaig
   context.fillRect(0, 0, canvas.width, 24);
   context.fillStyle = '#173f2b';
   context.font = '800 48px "Barlow Condensed", "Arial Narrow", sans-serif';
-  context.fillText('DRAFT LENDAS.', 70, 94);
+  context.fillText('KINGOFRIFT.', 70, 94);
   context.fillStyle = '#172019';
   context.font = '800 70px "Barlow Condensed", "Arial Narrow", sans-serif';
   context.fillText('SUA JORNADA', 70, 178);

@@ -181,13 +181,13 @@ test('quick mode automatically wins Swiss and all playoffs, keeps reports and re
   await page.getByRole('button', { name: 'Baixar jornada' }).click();
   const journeyDownload = await journeyDownloadPromise;
   expect(journeyDownload.suggestedFilename()).toBe(
-    'draft-lendas-jornada-campeao-mundial.png',
+    'kingofrift-jornada-campeao-mundial.png',
   );
   await expect(page.locator('.journey-status')).toContainText('Imagem da jornada baixada');
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Baixar card' }).click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toBe('draft-lendas-campeao-mundial.png');
+  expect(download.suggestedFilename()).toBe('kingofrift-campeao-mundial.png');
   await expect(page.locator('.share-status')).toContainText('Card baixado');
   await expect(page.locator('.campaign-series')).toHaveCount(8);
   await expect(page.locator('.history-games button')).toHaveCount(20);

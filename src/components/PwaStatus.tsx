@@ -60,7 +60,7 @@ export function PwaStatus() {
               .then(() => setInstallPrompt(null));
           }}
         >
-          <Download size={16} /> Instalar Draft Lendas
+          <Download size={16} /> Instalar KingOfRift
         </button>
       )}
       {update?.waiting && (

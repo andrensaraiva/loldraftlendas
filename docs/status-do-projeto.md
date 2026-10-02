@@ -1,6 +1,6 @@
 # Status do Projeto e Handoff
 
-Atualizado em 2026-09-30. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–5 e 7–9 e a estabilização da suíte E2E. O checkpoint atual inclui duelo local, interface de convite e Supabase remoto ativado e testado. A hospedagem HTTPS continua pendente.
+Atualizado em 2026-10-02. Este documento registra o ponto de parada após as Fases 1, 2, 3.1–3.13, a expansão da Fase 4, os Pacotes 0–5 e 7–9 e a estabilização da suíte E2E. O checkpoint atual inclui duelo local, interface de convite e Supabase remoto ativado e testado. A hospedagem HTTPS continua pendente.
 
 ## Objetivo Preservado
 
@@ -248,6 +248,12 @@ O replay das vinte migrations, o lint e os smokes SQL de catálogo/salas passara
 Auth anônima está habilitada com limite 30. O `.env.local` ignorado pelo Git usa URL/chave pública reais e `VITE_ONLINE_DUEL_ENABLED=true`. O servidor local atende em `http://localhost:5173`; a sala fica em `/duelo/sala`. Duas sessões Chromium independentes (desktop e emulação iPhone 13) passaram pelo convite, draft, retomada, entrega e resultado idêntico após recarga. Uma terceira identidade teve acesso negado à sala, ao dashboard e às tabelas de duelo. O smoke HTTP e o smoke SQL de isolamento passaram no remoto. Os três usuários de teste e sua sala foram removidos; restaram a conta e o administrador originais.
 
 Atualização do chat em 2026-09-30: a pedido do responsável, cada sala ganhou um chat temporário exclusivo dos dois participantes. Mensagens só ficam na memória da página e somem ao sair/recarregar; silenciar o adversário remove as anteriores, ignora as novas e salva somente essa preferência no navegador, sem avisá-lo. A migration 21 autoriza canais privados por posição, impedindo um participante de se passar pelo outro. Replay/lint, três smokes SQL, 113 unitários, 18 E2E, build e auditoria passaram. Quatro E2E de chat foram repetidos após ajustar reconexão e descarte ao restaurar a página. O teste no Supabase real validou envio bidirecional, ausência de replay, mute/unmute, recarga, bloqueio de terceiro/falsificação e cancelamento. Dados de teste foram removidos e zero mensagens permaneceram no banco.
+
+Revalidação local em 2026-10-02: após `npm ci` com Node 22, passaram os 113 testes unitários, TypeScript, build, preflight operacional e auditoria estática da beta. A suíte E2E completa terminou com 66 testes aprovados e oito skips condicionais esperados, incluindo os smokes Firefox e WebKit. Os 18 E2E do convite/chat com Auth e RPC simulados passaram em desktop/mobile. O README foi corrigido para refletir o backend já ativo. Este checkout não contém `.env.local`; portanto, esta revalidação não incluiu um novo smoke remoto, login administrativo ou aparelhos físicos.
+
+Identidade pública em 2026-10-02: o nome exibido foi alterado para **KingOfRift** em home, abas, metadados sociais, manifesto PWA, instalação e compartilhamento. O favicon e os ícones PWA passaram a mostrar um K; os caches do service worker foram versionados para entregar a nova identidade. Chaves locais e URLs dos assets existentes mantêm seus identificadores para preservar saves e compatibilidade. Após a alteração passaram novamente 113 unitários, TypeScript, build, auditoria estática, 66 E2E gerais com oito skips condicionais e 18 E2E do convite/chat simulados. O smoke da build de produção passou localmente; o script agora tenta IPv4 quando `localhost` resolver para IPv6 e o servidor local só ouvir IPv4.
+
+Escolha operacional em 2026-10-02: o responsável optou pela Vercel e vai criar ou conectar a conta ao GitHub. O build passou a aceitar também `VITE_VERCEL_PROJECT_PRODUCTION_URL` como origem canônica automática da primeira publicação; o [runbook](operations-runbook.md) registra os passos específicos. O build protegido e a auditoria passaram com variáveis públicas fictícias, e o HTML e o sitemap apontaram para a URL simulada. Neste ambiente, Vercel e Supabase CLI estão sem login, e as variáveis públicas reais não estão presentes. A publicação HTTPS ainda depende dessa conexão e da configuração do ambiente.
 
 Ainda faltam:
 

@@ -1,6 +1,6 @@
 # Runbook de Preparação e Ativação Operacional
 
-Atualizado em 2026-09-30.
+Atualizado em 2026-10-02.
 
 Este runbook registra a preparação reproduzível e a ativação autorizada do Supabase em 2026-09-30. A hospedagem HTTPS do frontend continua pendente.
 
@@ -107,7 +107,16 @@ node --env-file=.env.production.local scripts/smoke-supabase.mjs
 node --env-file=.env.production.local --run deploy:build
 ```
 
-Na Vercel, cadastre as três variáveis obrigatórias no environment de produção; mantenha `VITE_ONLINE_DUEL_ENABLED=false` até o aceite da sala. O `vercel.json` executa automaticamente `npm run deploy:build`. No Firebase, execute `node --env-file=.env.production.local --run deploy:build` e só então `firebase deploy --only hosting`.
+Na Vercel, cadastre as duas variáveis públicas do Supabase em Production. A URL do site pode vir das variáveis de sistema da Vercel no primeiro deploy; depois de escolhida a URL estável, `VITE_SITE_URL` pode defini-la explicitamente. Mantenha `VITE_ONLINE_DUEL_ENABLED=false` até o aceite da sala. O `vercel.json` executa automaticamente `npm run deploy:build`. No Firebase, as três variáveis são necessárias: execute `node --env-file=.env.production.local --run deploy:build` e só então `firebase deploy --only hosting`.
+
+### Primeira publicação do KingOfRift na Vercel
+
+1. Entre na Vercel com a conta GitHub que administra `andrensaraiva/loldraftlendas` e importe esse repositório. Use o preset **Vite**, diretório raiz `.` e a branch `main`. O `vercel.json` já define `npm run deploy:build`, `dist`, rotas SPA e headers.
+2. Antes de concluir o primeiro deploy, configure em **Production** `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` com a URL e a chave **publishable** do projeto Supabase existente. Defina `VITE_ONLINE_DUEL_ENABLED=false` para a primeira publicação; não defina `VITE_ADMIN_DEMO_MODE`.
+3. Em **Settings → Environment Variables**, mantenha **Automatically expose System Environment Variables** ligado. Enquanto não houver domínio personalizado, o build usa `VERCEL_PROJECT_PRODUCTION_URL` (ou `VITE_VERCEL_PROJECT_PRODUCTION_URL`) para canonical, sitemap e metadados. Depois de conhecer a URL estável, você pode definir `VITE_SITE_URL=https://<dominio-da-vercel>` e fazer novo deploy.
+4. No Supabase Auth, defina **Site URL** com a URL HTTPS estável e adicione redirects exatos necessários para o fluxo administrativo. Não use a URL temporária de um commit como Site URL. Execute os smokes da seção 5 contra a URL publicada antes de divulgar a beta.
+
+A [documentação da Vercel](https://vercel.com/docs/git) descreve a importação pelo GitHub e a [exposição das variáveis de sistema](https://vercel.com/docs/environment-variables/system-environment-variables). A [documentação do Supabase](https://supabase.com/docs/guides/auth/redirect-urls) explica Site URL e redirects.
 
 ## 4. Validar a conta administrativa
 

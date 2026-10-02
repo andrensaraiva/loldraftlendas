@@ -44,7 +44,7 @@ test('local history can be inspected, exported and explicitly cleared', async ({
   const downloadPromise = page.waitForEvent('download');
   await page.getByRole('button', { name: 'Exportar JSON' }).click();
   const download = await downloadPromise;
-  expect(download.suggestedFilename()).toMatch(/^draft-lendas-historico-\d{4}-\d{2}-\d{2}\.json$/);
+  expect(download.suggestedFilename()).toMatch(/^kingofrift-historico-\d{4}-\d{2}-\d{2}\.json$/);
   const stream = await download.createReadStream();
   const chunks: Buffer[] = [];
   for await (const chunk of stream) chunks.push(Buffer.from(chunk));

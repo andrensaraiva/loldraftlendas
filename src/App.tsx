@@ -280,7 +280,7 @@ function LocalHistoryPanel({ revision, changed }: { revision: number; changed: (
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement('a');
     anchor.href = url;
-    anchor.download = `draft-lendas-historico-${new Date().toISOString().slice(0, 10)}.json`;
+    anchor.download = `kingofrift-historico-${new Date().toISOString().slice(0, 10)}.json`;
     anchor.click();
     URL.revokeObjectURL(url);
   }
@@ -1776,12 +1776,12 @@ export default function App() {
           onClick={continueLater}
           aria-label={
             screen === 'home'
-              ? 'Página inicial do Draft Lendas'
+              ? 'Página inicial do KingOfRift'
               : 'Continuar depois e voltar ao início'
           }
         >
           <span className="brand">
-            DRAFT <em>LENDAS</em>
+            King<em>OfRift</em>
             <span className="brand-dot">.</span>
           </span>
           <span className="brand-caption">MONTE SUA COMP HISTÓRICA</span>
@@ -2691,7 +2691,7 @@ export default function App() {
       </main>
       <footer className="site-footer">
         <span>
-          DRAFT LENDAS<span className="footer-dot"> / </span> UM NOVO JEITO DE VIVER O WORLDS.
+          KINGOFRIFT<span className="footer-dot"> / </span> UM NOVO JEITO DE VIVER O WORLDS.
           <a className="archive-footer-link" href="/arquivo">
             Arquivo histórico
           </a>
@@ -2704,7 +2704,7 @@ export default function App() {
         </span>
         <p className="riot-disclaimer">
           Retratos de jogadores são ilustrações artísticas geradas para o projeto; não são
-          fotografias nem materiais oficiais. Draft Lendas isn't endorsed by Riot Games and doesn't
+          fotografias nem materiais oficiais. KingOfRift isn't endorsed by Riot Games and doesn't
           reflect the views or opinions of Riot Games or anyone officially involved in producing or
           managing Riot Games properties. Riot Games, and all associated properties are trademarks
           or registered trademarks of Riot Games, Inc.{' '}

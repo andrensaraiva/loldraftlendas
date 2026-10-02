@@ -47,7 +47,7 @@ const route = parseArchiveRoute(window.location.pathname);
 const roleNames = { TOP: 'TOP', JUNGLE: 'JUNGLE', MID: 'MID', ADC: 'ADC', SUPPORT: 'SUPORTE' };
 
 function archiveMetadata(title: string, description: string) {
-  document.title = `${title} — Draft Lendas`;
+  document.title = `${title} — KingOfRift`;
   document.querySelector('meta[name="description"]')?.setAttribute('content', description);
   document.querySelector('meta[property="og:title"]')?.setAttribute('content', title);
   document.querySelector('meta[property="og:description"]')?.setAttribute('content', description);
@@ -385,7 +385,7 @@ export default function ArchiveApp() {
     if (route.kind === 'index') {
       archiveMetadata(
         'Arquivo histórico',
-        'Explore jogadores, campeões, edições e fontes do acervo pesquisado do Draft Lendas.',
+        'Explore jogadores, campeões, edições e fontes do acervo pesquisado do KingOfRift.',
       );
       return;
     }

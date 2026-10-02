@@ -60,13 +60,13 @@ export function CampaignShare({
       const text = campaignShareText(summary, challengeUrl);
       if (canShareFile(file)) {
         onTrack('share_started', 'file');
-        await navigator.share({ title: 'Meu Draft Lendas', text, files: [file] });
+        await navigator.share({ title: 'Meu KingOfRift', text, files: [file] });
         onTrack('share_completed', 'file');
         setStatus('Campanha compartilhada.');
       } else if (typeof navigator.share === 'function') {
         onTrack('share_started', 'link');
         await navigator.share({
-          title: 'Meu Draft Lendas',
+          title: 'Meu KingOfRift',
           text,
           url: challengeUrl ?? window.location.origin,
         });

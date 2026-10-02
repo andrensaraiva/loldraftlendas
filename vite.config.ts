@@ -33,7 +33,11 @@ function absoluteSiteUrl(configuredUrl: string | undefined): string {
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
-  const siteUrl = absoluteSiteUrl(env.VITE_SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL);
+  const siteUrl = absoluteSiteUrl(
+    env.VITE_SITE_URL ||
+      process.env.VERCEL_PROJECT_PRODUCTION_URL ||
+      env.VITE_VERCEL_PROJECT_PRODUCTION_URL,
+  );
   return {
     plugins: [
       react(),
