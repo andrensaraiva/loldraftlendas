@@ -21,7 +21,7 @@ YEARS = range(2011, 2026)
 ROLES = ["TOP", "JUNGLE", "MID", "ADC", "SUPPORT"]
 REQUIRED_RESEARCH = ["matches", "evidence", "rosters", "normalization", "coverage"]
 LEGAL_NOTICE = (
-    "Draft Lendas isn't endorsed by Riot Games and doesn't reflect the views or opinions of "
+    "KingOfRift isn't endorsed by Riot Games and doesn't reflect the views or opinions of "
     "Riot Games or anyone officially involved in producing or managing Riot Games properties. "
     "Riot Games, and all associated properties are trademarks or registered trademarks of Riot "
     "Games, Inc."

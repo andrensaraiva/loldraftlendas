@@ -214,7 +214,7 @@ Este inventário é derivado apenas dos artefatos locais. Um ano não é promovi
 
 Fonte conferida em 2026-09-09: [General Policies](https://developer.riotgames.com/policies/general), atualizada pela Riot em 2025-05-29. O texto também está visível no rodapé da aplicação.
 
-> Draft Lendas isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
+> KingOfRift isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing Riot Games properties. Riot Games, and all associated properties are trademarks or registered trademarks of Riot Games, Inc.
 
 A conferência e este inventário não constituem aconselhamento jurídico, licença ou aprovação da Riot Games.
 
