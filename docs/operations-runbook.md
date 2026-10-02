@@ -2,7 +2,7 @@
 
 Atualizado em 2026-10-02.
 
-Este runbook registra a preparação reproduzível e a ativação autorizada do Supabase em 2026-09-30. A hospedagem HTTPS do frontend continua pendente.
+Este runbook registra a preparação reproduzível e a ativação autorizada do Supabase em 2026-09-30. A hospedagem HTTPS do frontend continua pendente. O estado específico da conta Vercel e o próximo passo estão em [retomada-publicacao-vercel.md](retomada-publicacao-vercel.md).
 
 ## Estado atual
 
@@ -28,7 +28,7 @@ Este runbook registra a preparação reproduzível e a ativação autorizada do 
 - Recuperadas as três migrations de 2026-09-21 ausentes no checkout a partir dos statements registrados no remoto. Aplicadas somente as duas migrations de salas de 2026-09-29, totalizando vinte versões e 785 candidatos.
 - As portas PostgreSQL 5432/6543 não estavam acessíveis nesta máquina; `db push --dry-run` não concluiu. A aplicação usou `supabase db query` pela Management API HTTPS em uma transação com conferência do histórico anterior, locks e registro das versões, nomes e statements canônicos em `supabase_migrations.schema_migrations`. O mesmo lote foi ensaiado no banco local antes da aplicação. Não houve reset remoto nem reaplicação das dezoito versões existentes.
 - Habilitado somente `auth.enable_anonymous_sign_ins=true`; o limite `auth.rate_limit.anonymous_users=30` foi mantido. O diff posterior confirmou zero alterações declaradas pendentes. As demais configurações de Auth foram preservadas.
-- `.env.local`, ignorado pelo Git, contém URL e chave pública publishable reais, `VITE_SITE_URL=http://localhost:5173` e `VITE_ONLINE_DUEL_ENABLED=true`. A flag pública de exemplo continua desligada até o aceite da hospedagem e dos aparelhos físicos.
+- Na validação de 2026-09-30, `.env.local` continha URL e chave pública publishable reais, `VITE_SITE_URL=http://localhost:5173` e `VITE_ONLINE_DUEL_ENABLED=true`. O arquivo atual mudou após vincular a Vercel CLI; veja o [ponto de retomada](retomada-publicacao-vercel.md). A flag pública de exemplo continua desligada até o aceite da hospedagem e dos aparelhos físicos.
 - Smoke HTTP remoto aprovado: configuração no dataset `multi-era-v1.6.0`, acesso anônimo bloqueado às oito tabelas, RPCs administrativos protegidos e rejeição de payloads inválidos de analytics e feedback. O smoke SQL de isolamento de salas passou em transação revertida.
 - Partida real em dois contextos Chromium independentes, desktop e emulação iPhone 13: convite, retomada do draft, picks ocultos, resultado idêntico de cinco jogos (3 × 2) e recarga. Uma terceira sessão real teve leitura/entrada na sala e acesso administrativo negados; as três tabelas de duelo recusaram leitura direta autenticada. Sem erros de página ou overflow.
 - Os três usuários anônimos de teste e sua sala foram removidos com lista explícita de UUIDs e guardas contra contas administrativas ou participantes externos. Conferência final: vinte migrations, oito tabelas com RLS, 785 candidatos, zero salas, uma conta e um administrador. A configuração existente foi preservada, inclusive `analytics_enabled=true`.
@@ -43,7 +43,7 @@ Este runbook registra a preparação reproduzível e a ativação autorizada do 
 
 - Validar login administrativo por senha e o funil com uma campanha real; o smoke remoto não recebeu credenciais do administrador existente.
 - Revisar cadastro público por e-mail e definir Site URL/redirects após escolher a hospedagem. CAPTCHA exige integrar o desafio no cliente antes de ligá-lo no Auth.
-- Escolher Vercel ou Firebase, cadastrar o ambiente do frontend, publicar em HTTPS e executar o smoke público.
+- Adicionar a chave pública do Supabase no projeto Vercel já vinculado, publicar em HTTPS e executar o smoke público.
 - Testar dois aparelhos físicos, configurar alertas e agendar retenção de salas/usuários anônimos. A emulação mobile não substitui os aparelhos.
 
 ## 1. Validar a preparação local

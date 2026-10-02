@@ -14,6 +14,8 @@ Telemetria anônima e feedback: [política e contrato de dados](docs/analytics-p
 
 Status técnico e próximos passos: [documento de handoff](docs/status-do-projeto.md).
 
+Ponto de retomada da publicação: [KingOfRift na Vercel](docs/retomada-publicacao-vercel.md).
+
 Ordem de execução vigente: [plano de prioridades e checklist](docs/plano-prioridades-e-execucao.md).
 
 Checklist de beta e validações externas: [beta readiness](docs/beta-readiness.md).
@@ -35,8 +37,7 @@ O projeto usa Node 22 LTS (`.nvmrc`; `>=22 <23`) e npm 10 ou superior. Em Window
 
 ## Para concluir a beta
 
-- Criar ou conectar a conta Vercel ao GitHub, importar este repositório e configurar as variáveis públicas do frontend e as URLs de Auth. A primeira URL pode ser a fornecida pela Vercel; o [runbook](docs/operations-runbook.md) detalha a publicação.
-- Publicar o frontend e executar o [smoke pós-deploy](docs/operations-runbook.md) no domínio definitivo.
+- Adicionar a chave pública do Supabase em Production na Vercel, concluir o primeiro deploy e executar o [smoke pós-deploy](docs/operations-runbook.md) no domínio estável. A conta, o projeto e as demais variáveis já estão configurados; veja o [ponto de retomada](docs/retomada-publicacao-vercel.md).
 - Validar o login administrativo, uma campanha no funil real, o monitoramento e a retenção de salas e sessões anônimas.
 - Testar convite e chat em dois aparelhos físicos, além de PWA, teclado, rotação e compartilhamento em iPhone/Safari e Android/Chrome.
 
